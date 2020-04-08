@@ -9,19 +9,19 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
 {% raw %}
   <span class='slacklog-message' id='1585753354.097200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585753354.097200'>2日 00:02:35</a>
     <span class='slacklog-text'><code>receiver.MethodByName(&#34;Method1&#34;).Call([reflect.ValueOf(1), reflect.ValueOf(&#34;aa&#34;)])</code> でも無さげ。syntax error。文法違うのか?</span>
   </span>
   <span class='slacklog-message' id='1585754047.097700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585754047.097700'>2日 00:14:08</a>
     <span class='slacklog-text'><code>receiver.MethodByName(&#34;Method1&#34;).Call({reflect.ValueOf(1), reflect.ValueOf(&#34;aa&#34;)})</code>も違う。</span>
   </span>
   <span class='slacklog-message' id='1585754078.098300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585754078.098300'>2日 00:14:39</a>
     <span class='slacklog-text'>ValueOfがValue返えすので、基本的な考えかたは間違ってない?</span>
   </span>
@@ -61,19 +61,19 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585755597.100000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585755597.100000'>2日 00:39:58</a>
     <span class='slacklog-text'><pre>package main<br><br>import (<br>	&#34;log&#34;<br>	&#34;reflect&#34;<br>)<br><br>type MyStruct struct {<br>}<br><br>func (ms *MyStruct) method1(i int, s string) {<br>	log.Printf(&#34;foobar&#34;)<br>}<br>func main() {<br>	ms := &amp;MyStruct{}<br>	receiver := reflect.ValueOf(ms)<br>	log.Println(&#34;before&#34;)<br>	ret := receiver.MethodByName(&#34;Method1&#34;).Call([]reflect.Value{reflect.ValueOf(1), reflect.ValueOf(&#34;aa&#34;)})<br>	log.Println(&#34;after %V&#34;, ret)<br>}</pre><br>で、<br><pre>[master]$ ./main<br>2020/04/02 00:38:46 before<br>panic: reflect: call of reflect.Value.Call on zero Value<br><br>goroutine 1 [running]:<br>reflect.flag.mustBe(...)<br>        /usr/lib/go/src/reflect/value.go:208<br>reflect.Value.Call(0x0, 0x0, 0x0, 0xc000053f48, 0x2, 0x2, 0x0, 0x0, 0x4e94c0)<br>        /usr/lib/go/src/reflect/value.go:319 +0x16d<br>main.main()<br>        /home/vikke/go/src/github.com/reflection/main.go:18 +0x2aa</pre><br>なエラーが出ます。</span>
   </span>
   <span class='slacklog-message' id='1585755643.100500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585755643.100500'>2日 00:40:44</a>
     <span class='slacklog-text'>Go, 難しいアルネ</span>
   </span>
   <span class='slacklog-message' id='1585755662.100900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585755662.100900'>2日 00:41:03</a>
     <span class='slacklog-text'>ってか、rubyに毒されすぎてたよ。わたし。</span>
   </span>
@@ -91,13 +91,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585755830.101700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585755830.101700'>2日 00:43:51</a>
     <span class='slacklog-text'>死にたい。</span>
   </span>
   <span class='slacklog-message' id='1585755947.102000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585755947.102000'>2日 00:45:48</a>
     <span class='slacklog-text'>通りました。本当に死にたい。</span>
   </span>
@@ -161,7 +161,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585786406.110100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
-    <span class='slacklog-name'>0Δ</span>
+    <span class='slacklog-name'>0Delta</span>
     <a class='slacklog-datetime' href='#1585786406.110100'>2日 09:13:27</a>
     <span class='slacklog-text'>channel作成する時はいつもnew使ってますねー</span>
   </span>
@@ -173,7 +173,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585786504.110700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
-    <span class='slacklog-name'>0Δ</span>
+    <span class='slacklog-name'>0Delta</span>
     <a class='slacklog-datetime' href='#1585786504.110700'>2日 09:15:05</a>
     <span class='slacklog-text'>あ、makeだったか (いつもコピペなのがバレる)</span>
   </span>
@@ -319,13 +319,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585789127.127400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
-    <span class='slacklog-name'>0Δ</span>
+    <span class='slacklog-name'>0Delta</span>
     <a class='slacklog-datetime' href='#1585789127.127400'>2日 09:58:48</a>
     <span class='slacklog-text'>ポインタのポインタを何の抵抗もなく受け入れてしまえるのは何故だろうか……<br>いやパフォーマンスは悪いだろうけど</span>
   </span>
   <span class='slacklog-message' id='1585790930.128800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585790930.128800'>2日 10:28:51</a>
     <span class='slacklog-text'>リフレクション楽しいですけど難しい。</span>
   </span>
@@ -337,19 +337,19 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585791332.130600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585791332.130600'>2日 10:35:33</a>
     <span class='slacklog-text'>そうですね。KoRoNさんも言ってたし。</span>
   </span>
   <span class='slacklog-message' id='1585791409.131300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585791409.131300'>2日 10:36:50</a>
     <span class='slacklog-text'>まじでGo初心者がreflect使うのはやめたほうが良い。</span>
   </span>
   <span class='slacklog-message' id='1585791431.131800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585791431.131800'>2日 10:37:12</a>
     <span class='slacklog-text'>正しく動かすには馬鹿みたいにコードが長くなってGoの旨味なにもなくなるから</span>
   </span>
@@ -367,25 +367,25 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585791982.134500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585791982.134500'>2日 10:46:23</a>
     <span class='slacklog-text'>名前の文字列を間違えてメソッド呼び出せなくてってのはあるあるですよねw</span>
   </span>
   <span class='slacklog-message' id='1585792024.135800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585792024.135800'>2日 10:47:05</a>
     <span class='slacklog-text'>python-c++バインディングで中身取り出しに使ったくらいだな、最近は。<br>基本言語の機能を使うだけ(not reflect)で実現できることで設計するのが普通というか普通に設計するとその言語の機能で実現できることになる、はずみたいなくらいには大概の言語は機能が足りてる</span>
   </span>
   <span class='slacklog-message' id='1585792042.136600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585792042.136600'>2日 10:47:23</a>
     <span class='slacklog-text'>文字列で表れるのSQL味がある</span>
   </span>
   <span class='slacklog-message' id='1585792042.136700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585792042.136700'>2日 10:47:23</a>
     <span class='slacklog-text'>名前の部分定数にしときゃ大丈夫だろって思ったら、その定数の値がまちがってたみたいなのもあるあるですね!</span>
   </span>
@@ -397,13 +397,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585792206.138300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
-    <span class='slacklog-name'>0Δ</span>
+    <span class='slacklog-name'>0Delta</span>
     <a class='slacklog-datetime' href='#1585792206.138300'>2日 10:50:07</a>
     <span class='slacklog-text'>pythonみたいな動的メソッド定義をしようとreflect使った事があるけど、それやるならmap使ってチェックした法が色々安全だとわかったこのごろ。</span>
   </span>
   <span class='slacklog-message' id='1585792527.139200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585792527.139200'>2日 10:55:28</a>
     <span class='slacklog-text'>以前javaでreflection使って、良い感じになったのに味をしめてる。</span>
   </span>
@@ -421,13 +421,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585792728.141500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585792728.141500'>2日 10:58:49</a>
     <span class='slacklog-text'>ぼくはリフレクションでディスパッチは言語問わず悪いアイデアだと思いますねぇ。</span>
   </span>
   <span class='slacklog-message' id='1585792789.142100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585792789.142100'>2日 10:59:50</a>
     <span class='slacklog-text'>仕事でそういうコード見せられたらガチギレする自信あるw</span>
   </span>
@@ -439,13 +439,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585792860.142800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585792860.142800'>2日 11:01:01</a>
     <span class='slacklog-text'>安全制御が低いduck typingはeasy reflection感があるけど...まあ大概は実害はないか</span>
   </span>
   <span class='slacklog-message' id='1585792886.143500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585792886.143500'>2日 11:01:27</a>
     <span class='slacklog-text'>静的コンパイルされるduck typingはまあ...というところ(好みの問題)</span>
   </span>
@@ -469,13 +469,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585793195.147700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585793195.147700'>2日 11:06:36</a>
     <span class='slacklog-text'>変数展開した関数定義したり、execで文字列実行したり(evalもある)、他にも多数w</span>
   </span>
   <span class='slacklog-message' id='1585793199.147900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585793199.147900'>2日 11:06:40</a>
     <span class='slacklog-text'>こういう条件でディスパッチしてますよ、っていうのがコード構成ではなく言語構造のほうにはみ出てしまうのがアウトだと私は考えてます。やったほうがスマートに見えるんですが、あとあとの読むときを考えると、ね。</span>
   </span>
@@ -547,7 +547,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585806336.159300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585806336.159300'>2日 14:45:37</a>
     <span class='slacklog-text'>「型情報を持ってない」ではなく「型情報が一致しない」</span>
   </span>
@@ -607,7 +607,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585806570.163600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
-    <span class='slacklog-name'></span>
+    <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585806570.163600'>2日 14:49:31</a>
     <span class='slacklog-text'></span>
   </span>
@@ -689,13 +689,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585807440.170000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585807440.170000'>2日 15:04:01</a>
     <span class='slacklog-text'>静的で型強めな言語でのブラックホールというところですねえ...</span>
   </span>
   <span class='slacklog-message' id='1585807447.170200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585807447.170200'>2日 15:04:08</a>
     <span class='slacklog-text'>そのばあい <code>interface{}</code> っていう型の nil になるんすよ。</span>
   </span>
@@ -735,7 +735,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585813444.175100'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585813444.175100'>2日 16:44:05</a>
     <span class='slacklog-text'>まあ手続き的にはそうですね、という感覚はわかる(逆にそれ以外がないことの保障が大変だけど)</span>
   </span>
@@ -775,7 +775,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585813711.178200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585813711.178200'>2日 16:48:32</a>
     <span class='slacklog-text'>記述の文句は、たぶんthrowより言語的な明確さがないことと、スペース区切りな複数単語だからという気がしないでもない<br>(try/catchと差はそこまでないと思うので...)</span>
   </span>
@@ -799,7 +799,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585813863.180700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585813863.180700'>2日 16:51:04</a>
     <span class='slacklog-text'>ミス記述を許しちゃうのは、ちょっとだけnnnみたいな(Cのifで代入、みたいな)</span>
   </span>
@@ -823,7 +823,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585814209.183100'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585814209.183100'>2日 16:56:50</a>
     <span class='slacklog-text'>あ、検知できるならfoooってカンジですねw(うるさい)</span>
   </span>
@@ -835,7 +835,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585815997.185900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585815997.185900'>2日 17:26:38</a>
     <span class='slacklog-text'><pre>package main<br><br>import &#34;log&#34;<br><br>type I interface {<br>	Do(s string)<br>}<br><br>type S struct {<br>	S string<br>}<br><br>func (sp *S) Do(s string) string {<br>	return sp.S + s<br>}<br><br>func main() {<br>	s := S{S: &#34;abc&#34;}<br>	tmp := s.Do(&#34;foobar&#34;)<br>	log.Println(tmp)<br>}</pre><br>これって、<code>(sp *S) Do(s string) string</code>ってinterfaceを実装したmethodと言えますか?</span>
   </span>
@@ -847,7 +847,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585816076.187300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585816076.187300'>2日 17:27:57</a>
     <span class='slacklog-text'><pre>type I interface {<br>	Do(s string) string<br>}</pre><br>だと良いのか。</span>
   </span>
@@ -859,31 +859,31 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585816103.188300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585816103.188300'>2日 17:28:24</a>
     <span class='slacklog-text'>明示的にimportしないから、良くわからなくなる。</span>
   </span>
   <span class='slacklog-message' id='1585816197.189700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585816197.189700'>2日 17:29:58</a>
     <span class='slacklog-text'>javaだと、 <code>List l = new LinkedList()</code> みたいに抽象化にInterfaceつかえるけど、Goでの使い方が今一ピンと来てない。</span>
   </span>
   <span class='slacklog-message' id='1585816278.190500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585816278.190500'>2日 17:31:19</a>
     <span class='slacklog-text'>重箱の隅ですが <code>I</code> っていう名前は慣習的にNGで、この場合なら <code>Doer</code> とする。</span>
   </span>
   <span class='slacklog-message' id='1585816290.190800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585816290.190800'>2日 17:31:31</a>
     <span class='slacklog-text'>ほー。</span>
   </span>
   <span class='slacklog-message' id='1585816338.191600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585816338.191600'>2日 17:32:19</a>
     <span class='slacklog-text'>行為者、実行者(Doer)</span>
   </span>
@@ -895,7 +895,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585816430.192900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585816430.192900'>2日 17:33:51</a>
     <span class='slacklog-text'>頭の切り替え必要。</span>
   </span>
@@ -907,7 +907,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585816554.193900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585816554.193900'>2日 17:35:55</a>
     <span class='slacklog-text'>ｴｰ!!!</span>
   </span>
@@ -937,13 +937,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585817240.199300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585817240.199300'>2日 17:47:21</a>
     <span class='slacklog-text'>マルチファイルのgoplayground、たぶん慣れない人にはわかってもらえない…</span>
   </span>
   <span class='slacklog-message' id='1585817320.199700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585817320.199700'>2日 17:48:41</a>
     <span class='slacklog-text'>これ入れるとわかりやすくなる。 <a href='https://chrome.google.com/webstore/detail/go-playground-addons/kjhcofplemokahbgknjgabnkidaabnde'>https://chrome.google.com/webstore/detail/go-playground-addons/kjhcofplemokahbgknjgabnkidaabnde</a></span>
     <span class='slacklog-attachments'>
@@ -1065,7 +1065,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585819027.214600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585819027.214600'>2日 18:17:08</a>
     <span class='slacklog-text'>言語の仕組みについて繰り返し練習しないと覚えられそうにない...という感覚がある(DIが必要になるタイプの経験があまりない..)</span>
   </span>
@@ -1165,7 +1165,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585820528.226900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585820528.226900'>2日 18:42:09</a>
     <span class='slacklog-text'>DIかどうかはともかくとして、コンポーネント間の依存が複雑になるとコンポーネントの初期化がオブジェクトの引き渡しで実質スパゲッティになるんですよ。それを切るってのがDIの目的の一つ。</span>
   </span>
@@ -1189,7 +1189,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585820601.228800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585820601.228800'>2日 18:43:22</a>
     <span class='slacklog-text'>コンパイルせずに振る舞いを変えられる。</span>
   </span>
@@ -1201,7 +1201,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585820663.229500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585820663.229500'>2日 18:44:24</a>
     <span class='slacklog-text'>運用まで行かなくとも、コンパイルが遅いやつには有利かも?</span>
   </span>
@@ -1231,7 +1231,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585820761.231500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585820761.231500'>2日 18:46:02</a>
     <span class='slacklog-text'>僕が仕事で書いて使ってる go用のDIっぽいの。DIとは謳ってないけどw<br><a href='https://github.com/koron-go/materialize'>https://github.com/koron-go/materialize</a></span>
     <span class='slacklog-attachments'>
@@ -1245,7 +1245,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585820776.231900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585820776.231900'>2日 18:46:17</a>
     <span class='slacklog-text'>*component&#39;s dependency separator*</span>
   </span>
@@ -1269,7 +1269,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585820923.235700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585820923.235700'>2日 18:48:44</a>
     <span class='slacklog-text'>googleのコード生成式のもあったけど、いくつかの理由でダイナミックなほうが良いなってなった。</span>
   </span>
@@ -1293,7 +1293,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585821090.238900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585821090.238900'>2日 18:51:31</a>
     <span class='slacklog-text'>まぁ、Javaのやつはほんとツラいよね。ソースコードが馬鹿みたいに追いにくい。<br><br>注入されたのがコード生成されたやつだったりすると絶望しかかる。</span>
   </span>
@@ -1305,13 +1305,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585821139.240000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585821139.240000'>2日 18:52:20</a>
     <span class='slacklog-text'>コンストラクタ用の関数いっぱい書いておいて、あとは自動でそれを呼び出すコードを生成する感じ。</span>
   </span>
   <span class='slacklog-message' id='1585821164.240600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585821164.240600'>2日 18:52:45</a>
     <span class='slacklog-text'>仕事は終わった。これからはreflectionのお時間ぬははははは</span>
   </span>
@@ -1323,7 +1323,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585821188.241400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585821188.241400'>2日 18:53:09</a>
     <span class='slacklog-text'>そんなイメージ</span>
   </span>
@@ -1437,7 +1437,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585821812.257500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585821812.257500'>2日 19:03:33</a>
     <span class='slacklog-text'>僕のやつ、structポインタでも interface でも要求できる。もちろん登録忘れてたらランタイムにエラーになっちゃうけどw</span>
   </span>
@@ -1455,7 +1455,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585821899.260200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585821899.260200'>2日 19:05:00</a>
     <span class='slacklog-text'>僕、後者のやつ嫌で採用しなかった。</span>
   </span>
@@ -1485,7 +1485,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585822072.265400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822072.265400'>2日 19:07:53</a>
     <span class='slacklog-text'>その引数すらDIで調達しちゃうイメージ。</span>
   </span>
@@ -1521,7 +1521,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585822287.269500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822287.269500'>2日 19:11:28</a>
     <span class='slacklog-text'>コンストラクタとしてシンプルな関数を登録しておくんです。<br><br><code>func() (*T, error)</code> みたいなね。<br><br>そうすると *T か *T が満たす interface を要求したときにこの関数が1度だけ呼び出されるようになってるんです。<br><br>で、この関数からDIを呼び出して必要な引数をパッケージした値を要求できる。</span>
   </span>
@@ -1563,13 +1563,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585822438.273900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822438.273900'>2日 19:13:59</a>
     <span class='slacklog-text'>正確に言うと、この登録する関数が必要な場所から必要な方法で好きに引数を集めてこれるってことかな…</span>
   </span>
   <span class='slacklog-message' id='1585822488.275500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822488.275500'>2日 19:14:49</a>
     <span class='slacklog-text'>rubyとかobjectc?w</span>
   </span>
@@ -1581,7 +1581,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585822518.276800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822518.276800'>2日 19:15:19</a>
     <span class='slacklog-text'>いやいや名前じゃなくて型で呼び出すんですよ。</span>
   </span>
@@ -1593,13 +1593,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585822536.277500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822536.277500'>2日 19:15:37</a>
     <span class='slacklog-text'><a href='https://github.com/koron-go/materialize/#gettings-started'>https://github.com/koron-go/materialize/#gettings-started</a></span>
   </span>
   <span class='slacklog-message' id='1585822544.277900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822544.277900'>2日 19:15:45</a>
     <span class='slacklog-text'>↑の例見ていただけると。</span>
   </span>
@@ -1617,7 +1617,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585822668.280400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822668.280400'>2日 19:17:49</a>
     <span class='slacklog-text'>フィールドでやるやつだとマッピングの振る舞いが暗黙的になっちゃうんですが、この方法だと明示的にどこから取ってくるってのをコードで書くことになるんです。<br><br>複数の値をいっぺんに取ってきて1つでも取れなかったらエラー、みたいなのを書きやすくしてます。</span>
   </span>
@@ -1629,13 +1629,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585822796.281100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822796.281100'>2日 19:19:57</a>
     <span class='slacklog-text'>実は<br><br><code>func(mx *materialize.Context) (*T, error)</code><br><br>っていう関数も登録できてこの mx を通じていい感じに必須で要求したり、無くてもよいよ～ってのを書けるんです。</span>
   </span>
   <span class='slacklog-message' id='1585822869.283600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585822869.283600'>2日 19:21:10</a>
     <span class='slacklog-text'>交換可能性がテスト用途だけならオーバーキルだと思ってて、またそれ以外で実際に入れ替えることが僕の経歴上にはなかったよ…</span>
   </span>
@@ -1653,7 +1653,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585823004.287100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585823004.287100'>2日 19:23:25</a>
     <span class='slacklog-text'>えmockてテスト用途以外で?</span>
   </span>
@@ -1683,13 +1683,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585823294.291800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585823294.291800'>2日 19:28:15</a>
     <span class='slacklog-text'>11行目の mx.Resolve で循環参照が切れる。</span>
   </span>
   <span class='slacklog-message' id='1585823372.292000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585823372.292000'>2日 19:29:33</a>
     <span class='slacklog-text'>12～14行目の文字列は、ヒント情報。interfaceで要求して被った場合に1つに絞り込むために利用する。</span>
   </span>
@@ -1713,7 +1713,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585823552.295200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585823552.295200'>2日 19:32:33</a>
     <span class='slacklog-text'>そうそう。Javaでできることをやりたいんじゃなくて、Goに合った形にしたかったのね。</span>
   </span>
@@ -1731,19 +1731,19 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585823939.297000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585823939.297000'>2日 19:39:00</a>
     <span class='slacklog-text'>いやいやコレが結構シンプルにできてんですよw</span>
   </span>
   <span class='slacklog-message' id='1585824078.298800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585824078.298800'>2日 19:41:19</a>
     <span class='slacklog-text'>そういやAOPも、実際何が起こっているのかわかりにくくなっただけで、僕はあんま恩恵を受けられなかったんだよな…</span>
   </span>
   <span class='slacklog-message' id='1585824144.299800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585824144.299800'>2日 19:42:25</a>
     <span class='slacklog-text'>書くよりも読む(動作を追う)ことが多いからなのかもだけど。</span>
   </span>
@@ -1791,7 +1791,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585825835.311200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585825835.311200'>2日 20:10:36</a>
     <span class='slacklog-text'>話ぶった切ってすいません。質問です。<br><a href='https://github.com/vikke/go_reflection/blob/master/main.go#L10'>https://github.com/vikke/go_reflection/blob/master/main.go#L10</a><br>のhogeを文字列でもらった場合に、動的にhogeを作るにはどうしたらよいですか? reflectionにnamespaceやpackageに関するマニュアルを見つけられませんでした。</span>
     <span class='slacklog-attachments'>
@@ -1844,7 +1844,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585826917.315000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585826917.315000'>2日 20:28:38</a>
     <span class='slacklog-text'>名前空間と構造体名とメソッド名を外から与えて、メソッドを起動出来ないかなと。<br><a href='https://golang.org/pkg/reflect/'>https://golang.org/pkg/reflect/</a><br>みてるんだけど、それっぽいのにゃい。</span>
     <span class='slacklog-attachments'>
@@ -1878,7 +1878,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585829958.318100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585829958.318100'>2日 21:19:19</a>
     <span class='slacklog-text'>それはトリッキーですね。面白いです。plugin.Openっていうのがあるのですね。</span>
   </span>
@@ -1920,7 +1920,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585830965.321300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585830965.321300'>2日 21:36:06</a>
     <span class='slacklog-text'>rubyってエラーがあった場所でreturnしちゃう事多いですけど、Goの作法ってどんな感じですか?</span>
   </span>
@@ -1938,7 +1938,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585831507.322500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585831507.322500'>2日 21:45:08</a>
     <span class='slacklog-text'>early returnで良いんですね。</span>
   </span>
@@ -2030,7 +2030,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585873229.330300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585873229.330300'>3日 09:20:30</a>
     <span class='slacklog-text'>goでtemplate method patternもどきすら書けない。うぉおおおぉおぉぉ</span>
   </span>
@@ -2042,13 +2042,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585873488.331200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585873488.331200'>3日 09:24:49</a>
     <span class='slacklog-text'>言語の構造と方針が違うから、そのままハマるのが少ないってところでしょうかね?</span>
   </span>
   <span class='slacklog-message' id='1585873515.331900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585873515.331900'>3日 09:25:16</a>
     <span class='slacklog-text'>理念に近いものならそれなりに翻訳できるものはあると思いますが...</span>
   </span>
@@ -2060,7 +2060,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585873636.334600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585873636.334600'>3日 09:27:17</a>
     <span class='slacklog-text'>ただ、設計理念の共有のための「パターン」でもあるから<br>&gt;  いい感じにやればそれに近くなるから特に意識する必要がない<br>は、若干脳筋的で、それもどうかな、という気がしないでもないw</span>
   </span>
@@ -2078,7 +2078,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585873684.336500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585873684.336500'>3日 09:28:05</a>
     <span class='slacklog-text'>まあ実インプリメントの時は、パターンは理念で言語イディオムで適切に実装できることが大事かな、はわかる</span>
   </span>
@@ -2096,7 +2096,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585873831.340600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585873831.340600'>3日 09:30:32</a>
     <span class='slacklog-text'>ですねえ</span>
   </span>
@@ -2114,7 +2114,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585873988.343100'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585873988.343100'>3日 09:33:09</a>
     <span class='slacklog-text'>まあ、「バズワード」と思って(そのつもりじゃなく、流行りに)寄ってくタイプはだめでしょうかね...<br>理解しようとして学ぶなら、無理な適用はしないとおもいます</span>
   </span>
@@ -2126,7 +2126,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585874108.345300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585874108.345300'>3日 09:35:09</a>
     <span class='slacklog-text'>あれは継承というより、インタフェースの実装がされてればできるから、Goでは適用しやすい?という気はする</span>
   </span>
@@ -2182,7 +2182,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585875064.350800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585875064.350800'>3日 09:51:05</a>
     <span class='slacklog-text'>Go、GoFだぁ～(ちがう)</span>
   </span>
@@ -2194,7 +2194,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585875124.352400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585875124.352400'>3日 09:52:05</a>
     <span class='slacklog-text'>言語機能の少なさをカバーしてる面もあるので、もうちょっと簡素なベース語を作ってもよさそう</span>
   </span>
@@ -2212,7 +2212,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585875172.354000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585875172.354000'>3日 09:52:53</a>
     <span class='slacklog-text'>まあ、素データ構造とコレクションフレームワークの対比みたいなもんで、知識は必要なんだろうけど、それで会話しなくなった単語、みたいなのはありますね(一部)</span>
   </span>
@@ -2224,7 +2224,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585875433.356300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585875433.356300'>3日 09:57:14</a>
     <span class='slacklog-text'>まあ移譲したものをかかえれば同じ、という気もしないでもないですが...ちょっといいわましが変りますもんね</span>
   </span>
@@ -2279,7 +2279,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585877097.358500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585877097.358500'>3日 10:24:58</a>
     <span class='slacklog-text'>ゲリー、音が...(まだつかったことない)</span>
   </span>
@@ -2297,25 +2297,25 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585878756.364600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585878756.364600'>3日 10:52:37</a>
     <span class='slacklog-text'><pre>package main<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Receiver interface {<br>	Do()<br>}<br><br>type MyReceiver struct {<br>}<br><br>func (w Receiver) Do() {<br>	log.Println(&#34;Do&#34;)<br>}<br><br>func main() {<br>	mr := MyReceiver{}<br>	<a href='http://mr.Do|mr.Do'>mr.Do</a>()<br>}</pre><br>これって <code>func (w Receiver) Do() {</code>で  エラーになるんですけど、Interfaceで受けるって事は出来ないんでしょうか?(まー出来ないからエラーになるんだけど)。どうやるのがGoっぽいですか?</span>
   </span>
   <span class='slacklog-message' id='1585878825.365800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585878825.365800'>3日 10:53:46</a>
     <span class='slacklog-text'>interface にメソッドの実装はできないんすよ。少し前のJavaもそうだったでしょ?</span>
   </span>
   <span class='slacklog-message' id='1585878845.366100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585878845.366100'>3日 10:54:06</a>
     <span class='slacklog-text'>interfaceを受け取る <del>メソッド</del> 関数なら書けるはず。</span>
   </span>
   <span class='slacklog-message' id='1585878928.367100'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585878928.367100'>3日 10:55:29</a>
     <span class='slacklog-text'>上でmattnさんがやってるこれ<br><a href='https://vim-jp.slack.com/archives/CGABGC8LA/p1585874193345600'>https://vim-jp.slack.com/archives/CGABGC8LA/p1585874193345600</a><br>みたいにやるのがいいのかな</span>
     <span class='slacklog-attachments'>
@@ -2326,85 +2326,85 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585878949.367400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585878949.367400'>3日 10:55:50</a>
     <span class='slacklog-text'>ちゃんと理解してきます。</span>
   </span>
   <span class='slacklog-message' id='1585879053.367900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585879053.367900'>3日 10:57:34</a>
     <span class='slacklog-text'>インターフェースに実装を書くんじゃなくて、レシーバーをインターフェースで指定出来ないかなーと。</span>
   </span>
   <span class='slacklog-message' id='1585879105.368100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585879105.368100'>3日 10:58:26</a>
     <span class='slacklog-text'>んー意図が伝わらない。</span>
   </span>
   <span class='slacklog-message' id='1585879143.368300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585879143.368300'>3日 10:59:04</a>
     <span class='slacklog-text'>何をしたいのかがわからない。</span>
   </span>
   <span class='slacklog-message' id='1585879179.368500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585879179.368500'>3日 10:59:40</a>
     <span class='slacklog-text'>まず MyReceiver は Do を実装してないので Receiver になってないですよね。そのチェックをコンパイル時にしたいってこと?</span>
   </span>
   <span class='slacklog-message' id='1585879219.368700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585879219.368700'>3日 11:00:20</a>
     <span class='slacklog-text'>あー、色々と僕が駄目です。出直してきます。</span>
   </span>
   <span class='slacklog-message' id='1585879657.369400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585879657.369400'>3日 11:07:38</a>
     <span class='slacklog-text'>凄い初歩的な事聞きますが、MyReceiverはDoを実装していないという部分なんですが、 <code>func ( w Receiver) Do() {</code> で実装しているつもりなんですが、これでは駄目?</span>
   </span>
   <span class='slacklog-message' id='1585879696.369900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585879696.369900'>3日 11:08:17</a>
     <span class='slacklog-text'><code>func (w *MyReceiver) Do() { ...</code> としたほうが良いです。</span>
   </span>
   <span class='slacklog-message' id='1585879772.370100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585879772.370100'>3日 11:09:33</a>
     <span class='slacklog-text'>そこを、MyReceiverという構造体では無く interfaceにしたいという話です。interfaceにしたいわけでは無くて、やりたい事は、ダックタイプでDo()が呼べればなんでも良いんですけど。</span>
   </span>
   <span class='slacklog-message' id='1585879778.370300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585879778.370300'>3日 11:09:39</a>
     <span class='slacklog-text'>ポイントは2つで、Receiver → MyReceiverにすることとポインタにすること。<br><br>ポインタにするのはメモリ効率とかその辺。I/Fで扱うと非ポインタだとboxingが起こるんじゃなかったかな。</span>
   </span>
   <span class='slacklog-message' id='1585879810.370500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585879810.370500'>3日 11:10:11</a>
     <span class='slacklog-text'>その言い方だとやっぱ根本的にI/F理解できてない気がしますね。</span>
   </span>
   <span class='slacklog-message' id='1585879818.370700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585879818.370700'>3日 11:10:19</a>
     <span class='slacklog-text'>やはり。</span>
   </span>
   <span class='slacklog-message' id='1585879824.370900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585879824.370900'>3日 11:10:25</a>
     <span class='slacklog-text'>出直してきます。</span>
   </span>
   <span class='slacklog-message' id='1585880222.371800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585880222.371800'>3日 11:17:03</a>
     <span class='slacklog-text'>ちょっとサンプル書いたんでこれ実行したり書き換えたりして遊んでみてください。RunでWeb上で実行できるんで。<br><a href='https://play.golang.org/p/RTq46_kWqW4'>https://play.golang.org/p/RTq46_kWqW4</a></span>
   </span>
@@ -2416,7 +2416,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585880330.373600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585880330.373600'>3日 11:18:51</a>
     <span class='slacklog-text'>普通の log.New に os.Stderr を渡すか os.Create() の戻り値を渡すかで説明できちゃうんですけどね。どっちも io.Writer 渡すわけだから。</span>
   </span>
@@ -2428,25 +2428,25 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585880515.375000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585880515.375000'>3日 11:21:56</a>
     <span class='slacklog-text'>マンモスありがとうございます。</span>
   </span>
   <span class='slacklog-message' id='1585883306.376300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585883306.376300'>3日 12:08:27</a>
     <span class='slacklog-text'>Syntax Errorって一番ださいよね。</span>
   </span>
   <span class='slacklog-message' id='1585883474.376600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585883474.376600'>3日 12:11:15</a>
     <span class='slacklog-text'>まぁしゃーないんじゃない?</span>
   </span>
   <span class='slacklog-message' id='1585884637.377300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585884637.377300'>3日 12:30:38</a>
     <span class='slacklog-text'>それも原因がわからないSyntax Errorはださい</span>
   </span>
@@ -2464,7 +2464,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585885188.380400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585885188.380400'>3日 12:39:49</a>
     <span class='slacklog-text'>いや、完全に自分のせいですよ。コンパイラのせいなんて0.0001%の確立では?</span>
   </span>
@@ -2476,13 +2476,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585885352.381600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585885352.381600'>3日 12:42:33</a>
     <span class='slacklog-text'><pre> syntax error: non-declaration statement outside function body</pre><br>って、なんね。宣言場所間違っとるとね?</span>
   </span>
   <span class='slacklog-message' id='1585885393.382000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585885393.382000'>3日 12:43:14</a>
     <span class='slacklog-text'>関数の外に非宣言ステートメントがある...?</span>
   </span>
@@ -2512,7 +2512,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585886743.386500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585886743.386500'>3日 13:05:44</a>
     <span class='slacklog-text'>ある説明見てたけどRustのコンパイラは丁寧で厳しい教師という感じですねえ</span>
   </span>
@@ -2530,13 +2530,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585886901.388900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585886901.388900'>3日 13:08:22</a>
     <span class='slacklog-text'>目立っちゃうから、というのもあるかも &gt; コンパイラ</span>
   </span>
   <span class='slacklog-message' id='1585886939.389300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585886939.389300'>3日 13:09:00</a>
     <span class='slacklog-text'><a href='https://linux.srad.jp/story/14/07/28/0945215/'>https://linux.srad.jp/story/14/07/28/0945215/</a></span>
     <span class='slacklog-attachments'>
@@ -2590,7 +2590,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585889467.391600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585889467.391600'>3日 13:51:08</a>
     <span class='slacklog-text'>methodの頭にfuncと書き忘れたという忘れたいミス。</span>
   </span>
@@ -2648,7 +2648,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585896199.396000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585896199.396000'>3日 15:43:20</a>
     <span class='slacklog-text'>structを動的に作るんでしたっけ?</span>
   </span>
@@ -2670,7 +2670,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585896260.397700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585896260.397700'>3日 15:44:21</a>
     <span class='slacklog-text'>んーORM系はreflect駆使しないとできないよね。</span>
   </span>
@@ -2696,7 +2696,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585896300.398900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585896300.398900'>3日 15:45:01</a>
     <span class='slacklog-text'>ちなみに昨日の koron-go/materialize もリフレクションないと成立しない。</span>
   </span>
@@ -2708,7 +2708,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585896406.399900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585896406.399900'>3日 15:46:47</a>
     <span class='slacklog-text'><a href='https://github.com/koron-go/materialize/blob/cf17f2b04e60328eb42f3ba0691fbce5d812c050/materialize.go#L55'>https://github.com/koron-go/materialize/blob/cf17f2b04e60328eb42f3ba0691fbce5d812c050/materialize.go#L55</a></span>
     <span class='slacklog-attachments'>
@@ -2722,7 +2722,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585896452.401900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585896452.401900'>3日 15:47:33</a>
     <span class='slacklog-text'>言葉で言うと「ライブラリ成立時に取り扱う型について何の前提も持ち込めない」場合はreflectに頼むしかないんですよね。</span>
   </span>
@@ -2734,13 +2734,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585896464.402500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585896464.402500'>3日 15:47:45</a>
     <span class='slacklog-text'>いやコード生成があるか。</span>
   </span>
   <span class='slacklog-message' id='1585896469.403000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585896469.403000'>3日 15:47:50</a>
     <span class='slacklog-text'>動的にオブジェクト(goならstruct)生成のORMやらのバインディングはリフレクションの添加というか、その視点にたって動く機能ですもんね..</span>
   </span>
@@ -2890,7 +2890,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585897657.416200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585897657.416200'>3日 16:07:38</a>
     <span class='slacklog-text'>今僕は雰囲気でGoを書いている。</span>
   </span>
@@ -3070,7 +3070,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585902259.432400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/f588267d3e7e23475cad3933226c1e96.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-48.png'>
-    <span class='slacklog-name'>dictav</span>
+    <span class='slacklog-name'>Shintaro Abe</span>
     <a class='slacklog-datetime' href='#1585902259.432400'>3日 17:24:20</a>
     <span class='slacklog-text'>retag ちょっと使ってます<br><a href='https://github.com/sevlyar/retag'>https://github.com/sevlyar/retag</a></span>
     <span class='slacklog-attachments'>
@@ -3084,7 +3084,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585903102.432800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585903102.432800'>3日 17:38:23</a>
     <span class='slacklog-text'>gopls、ときどきおかしくなるよねw</span>
   </span>
@@ -3186,7 +3186,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585914264.444600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585914264.444600'>3日 20:44:25</a>
     <span class='slacklog-text'>型アサーションでデータが欠落する事ってあります?<br><pre>    18: func SendMail(script module.Script, opt interface{}) {<br>    19:         v, _ := opt.(pb.OrderCancelAtShopParam)<br>=&gt;  20:         log.Printf(&#34;SendMail: %s&#34;, v.GetScriptName())<br>    21:<br>    22:         impl := module.InOutLoggerImpl{}<br>    23:         <a href='http://impl.In|impl.In'>impl.In</a>()<br>    24:         script.Exec(opt)<br>    25:         impl.Out()<br>(dlv) p opt<br>interface {}(*<a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam'>github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam</a>) *{<br>        Id: 1,<br>        ScriptName: &#34;OrderCancelAtShop&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}<br>(dlv) p v<br><a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam'>github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam</a> {<br>        Id: 0,<br>        ScriptName: &#34;&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}</pre><br>こんな感じで、型アサーションの前後でIdとScriptNameが欠落してしまってます。</span>
   </span>
@@ -3204,7 +3204,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585914676.446600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585914676.446600'>3日 20:51:17</a>
     <span class='slacklog-text'><pre>=&gt;  20:         log.Printf(&#34;ok: %s&#34;, ok)<br>    21:         log.Printf(&#34;SendMail: %s&#34;, v.GetScriptName())<br>    22:<br>    23:         impl := module.InOutLoggerImpl{}<br>    24:         <a href='http://impl.In|impl.In'>impl.In</a>()<br>    25:         script.Exec(opt)<br>(dlv) p ok<br>false<br>(dlv) p v<br><a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam'>github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam</a> {<br>        Id: 0,<br>        ScriptName: &#34;&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}<br>(</pre><br>falseでした。型を思い込んでました。ありがとうございます。</span>
   </span>
@@ -3216,25 +3216,25 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585914739.447300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585914739.447300'>3日 20:52:20</a>
     <span class='slacklog-text'>確かに。。。面目無い。</span>
   </span>
   <span class='slacklog-message' id='1585914748.447500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585914748.447500'>3日 20:52:29</a>
     <span class='slacklog-text'>ESP力はんぱない。</span>
   </span>
   <span class='slacklog-message' id='1585920882.447900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585920882.447900'>3日 22:34:43</a>
     <span class='slacklog-text'>型アサーションしたあとのOKチェックは必須。</span>
   </span>
   <span class='slacklog-message' id='1585920911.448400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585920911.448400'>3日 22:35:12</a>
     <span class='slacklog-text'>絶対に型があってると思ってもチェックすべし。</span>
   </span>
@@ -3246,7 +3246,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585924793.450400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585924793.450400'>3日 23:39:54</a>
     <span class='slacklog-text'>循環参照うぇーーーー。これ直すの大変だなー。というポエム。</span>
   </span>
@@ -3318,7 +3318,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585984705.457400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585984705.457400'>4日 16:18:26</a>
     <span class='slacklog-text'>ん～</span>
   </span>
@@ -3330,7 +3330,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585984732.458300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585984732.458300'>4日 16:18:53</a>
     <span class='slacklog-text'>2つ疑問があって、最初見た時に記事にあったベンチ結果が消えたのと、あとNormalのほうなんでcopyつかわないの?</span>
   </span>
@@ -3390,7 +3390,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585985216.461000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585985216.461000'>4日 16:26:57</a>
     <span class='slacklog-text'>キャッシュメモリとかが響く?</span>
   </span>
@@ -3402,7 +3402,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585985229.461400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585985229.461400'>4日 16:27:10</a>
     <span class='slacklog-text'>まあcopyですよね...</span>
   </span>
@@ -3420,7 +3420,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585985373.463000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585985373.463000'>4日 16:29:34</a>
     <span class='slacklog-text'>unmanageな機能ってところですか</span>
   </span>
@@ -3450,7 +3450,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585985704.466100'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585985704.466100'>4日 16:35:05</a>
     <span class='slacklog-text'>insertが頻発する場合は、array-link-listなやつを作っちゃって、ですかねえ</span>
   </span>
@@ -3480,7 +3480,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1585991920.471700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585991920.471700'>4日 18:18:41</a>
     <span class='slacklog-text'>逆に最終的なフラットなメモリ空間を想像して齟齬がでたりしてw</span>
   </span>
@@ -3498,7 +3498,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586073712.477500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1586073712.477500'>5日 17:01:53</a>
     <span class='slacklog-text'>interfaceと実装は同じpackageじゃないと駄目。覚えた。</span>
   </span>
@@ -3528,7 +3528,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586074751.478800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1586074751.478800'>5日 17:19:12</a>
     <span class='slacklog-text'>あれ? さっき書いてて、同じパッケージにしてねってメッセージが出たんだが。幻?</span>
   </span>
@@ -3540,7 +3540,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586075125.479500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
-    <span class='slacklog-name'>vikke</span>
+    <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1586075125.479500'>5日 17:25:26</a>
     <span class='slacklog-text'><a href='https://qiita.com/Yarimizu14/items/e93097c4f4cfd5468259'>https://qiita.com/Yarimizu14/items/e93097c4f4cfd5468259</a> な話?</span>
     <span class='slacklog-attachments'>
@@ -3596,13 +3596,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586092289.483100'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586092289.483100'>5日 22:11:30</a>
     <span class='slacklog-text'>good</span>
   </span>
   <span class='slacklog-message' id='1586092310.483600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586092310.483600'>5日 22:11:51</a>
     <span class='slacklog-text'>しかしlinuxbrewがうまくいかないと、どうしました?</span>
   </span>
@@ -3626,7 +3626,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586093528.486100'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586093528.486100'>5日 22:32:09</a>
     <span class='slacklog-text'>5getter (いま5chだから) はあれですね...</span>
   </span>
@@ -3668,13 +3668,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586094456.490400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586094456.490400'>5日 22:47:37</a>
     <span class='slacklog-text'>手動インストールしたほうがよかったかもですね</span>
   </span>
   <span class='slacklog-message' id='1586094502.491300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586094502.491300'>5日 22:48:23</a>
     <span class='slacklog-text'>あー、でも今はbashインストーラだから、その後の段階かもしれないですし、ちょっと面倒ですね</span>
   </span>
@@ -3754,7 +3754,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586130111.001800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586130111.001800'>6日 08:41:52</a>
     <span class='slacklog-text'>とはいえ、特にCIなら、都度コンンパイルよりはプリビルドバイナリだよな、というのもなきにしもあらず..</span>
   </span>
@@ -3852,7 +3852,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586164549.017900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586164549.017900'>6日 18:15:50</a>
     <span class='slacklog-text'>リポジトリでわかるとはいえ、かぶりまくり</span>
   </span>
@@ -3880,7 +3880,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586164729.018900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
-    <span class='slacklog-name'></span>
+    <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1586164729.018900'>6日 18:18:50</a>
     <span class='slacklog-text'></span>
   </span>
@@ -3898,7 +3898,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586164880.019600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
-    <span class='slacklog-name'></span>
+    <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1586164880.019600'>6日 18:21:21</a>
     <span class='slacklog-text'>ぜんぜんわからない</span>
   </span>
@@ -3910,7 +3910,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586165219.020200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
-    <span class='slacklog-name'></span>
+    <span class='slacklog-name'>raa0121</span>
     <a class='slacklog-datetime' href='#1586165219.020200'>6日 18:27:00</a>
     <span class='slacklog-text'></span>
   </span>
@@ -3940,7 +3940,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586165432.022700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
-    <span class='slacklog-name'></span>
+    <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1586165432.022700'>6日 18:30:33</a>
     <span class='slacklog-text'></span>
   </span>
@@ -4142,13 +4142,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586222380.046500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586222380.046500'>7日 10:19:41</a>
     <span class='slacklog-text'>これめちゃくちゃ良い資料だな…</span>
   </span>
   <span class='slacklog-message' id='1586222415.047100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586222415.047100'>7日 10:20:16</a>
     <span class='slacklog-text'>ただ初学者には図の意味からしてわからんから、解説必須な感じ。</span>
   </span>
@@ -4204,7 +4204,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586248273.052600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248273.052600'>7日 17:31:14</a>
     <span class='slacklog-text'>古いのすぐ見れるけど、どこみればええの?</span>
   </span>
@@ -4228,7 +4228,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586248477.054200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248477.054200'>7日 17:34:38</a>
     <span class='slacklog-text'>まったくおなじだったわ</span>
   </span>
@@ -4252,7 +4252,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586248618.055900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248618.055900'>7日 17:36:59</a>
     <span class='slacklog-text'>通るわw</span>
   </span>
@@ -4264,7 +4264,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586248655.056500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248655.056500'>7日 17:37:36</a>
     <span class='slacklog-text'>でねdefer消すとbだけ残る</span>
   </span>
@@ -4276,13 +4276,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586248669.057000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248669.057000'>7日 17:37:50</a>
     <span class='slacklog-text'>1.14にしてやってみるね</span>
   </span>
   <span class='slacklog-message' id='1586248751.057600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248751.057600'>7日 17:39:12</a>
     <span class='slacklog-text'>1.14.1 だと a, b両方残って b はreadonlyっぽい</span>
   </span>
@@ -4300,13 +4300,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586248837.059400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248837.059400'>7日 17:40:38</a>
     <span class='slacklog-text'>ふむ。やっぱ 1.13.9 だと、b が書き込み可能で残ってる。</span>
   </span>
   <span class='slacklog-message' id='1586248855.060000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248855.060000'>7日 17:40:56</a>
     <span class='slacklog-text'>ioutil.WriteFileのpermがちゃんと動いてなかった説濃厚</span>
   </span>
@@ -4342,13 +4342,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586248920.061600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248920.061600'>7日 17:42:01</a>
     <span class='slacklog-text'>えっと両方とも書き込み可能で作成されてたわ。</span>
   </span>
   <span class='slacklog-message' id='1586248925.061800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248925.061800'>7日 17:42:06</a>
     <span class='slacklog-text'>スクショ要る?</span>
   </span>
@@ -4360,37 +4360,37 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586248947.062500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248947.062500'>7日 17:42:28</a>
     <span class='slacklog-text'>ええ。</span>
   </span>
   <span class='slacklog-message' id='1586248958.062900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586248958.062900'>7日 17:42:39</a>
     <span class='slacklog-text'>っていうか書き込み不可だと、os.Removeは失敗しますのう。</span>
   </span>
   <span class='slacklog-message' id='1586249245.063600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586249245.063600'>7日 17:47:26</a>
     <span class='slacklog-text'>あれ? 1.13.9 の syscall/syscall_windows.go の Open が perm 使ってないよ?w</span>
   </span>
   <span class='slacklog-message' id='1586249282.063900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586249282.063900'>7日 17:48:03</a>
     <span class='slacklog-text'><code>h, e := CreateFile(pathp, access, sharemode, sa, createmode, FILE_ATTRIBUTE_NORMAL, 0)</code> こうなってるw</span>
   </span>
   <span class='slacklog-message' id='1586249303.064000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'></span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586249303.064000'>7日 17:48:24</a>
     <span class='slacklog-text'>一方で1.14.1 はこう</span>
   </span>
   <span class='slacklog-message' id='1586249312.064500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586249312.064500'>7日 17:48:33</a>
     <span class='slacklog-text'>これはワロスw</span>
   </span>
@@ -4428,13 +4428,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586249620.065900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586249620.065900'>7日 17:53:41</a>
     <span class='slacklog-text'>それですなw</span>
   </span>
   <span class='slacklog-message' id='1586249646.066400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586249646.066400'>7日 17:54:07</a>
     <span class='slacklog-text'>問題があるとすると os.Remove() がREADONLYファイルに失敗することかも。</span>
   </span>
@@ -4500,7 +4500,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586249983.070800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586249983.070800'>7日 17:59:44</a>
     <span class='slacklog-text'>エクスプローラーからだと消せるんだけど…shell32.dllが頑張ってんのか…</span>
   </span>
@@ -4512,7 +4512,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586250194.073700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586250194.073700'>7日 18:03:15</a>
     <span class='slacklog-text'>OSの差異だから、os.Removeの仕様としてやってくれると助かるのは助かりますねぇ。</span>
   </span>
@@ -4524,13 +4524,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586250256.075800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586250256.075800'>7日 18:04:17</a>
     <span class='slacklog-text'>ちなみにですが、逆にUnixだとディレクトリのパーミッションチェックとかどうなんでしょう?</span>
   </span>
   <span class='slacklog-message' id='1586250260.076000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-    <span class='slacklog-name'>koron</span>
+    <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1586250260.076000'>7日 18:04:21</a>
     <span class='slacklog-text'>事前にチェックしてないなら、やってみてエラー見てos.Chmod(+w)ケースかな</span>
   </span>
@@ -4568,7 +4568,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586252415.078200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
-    <span class='slacklog-name'>k-takata</span>
+    <span class='slacklog-name'>Ken Takata</span>
     <a class='slacklog-datetime' href='#1586252415.078200'>7日 18:40:16</a>
     <span class='slacklog-text'>ディレクトリの場合にはREADONLYビットを落としてリトライはしないのかな？</span>
   </span>
@@ -4610,13 +4610,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586253271.081400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
-    <span class='slacklog-name'>k-takata</span>
+    <span class='slacklog-name'>Ken Takata</span>
     <a class='slacklog-datetime' href='#1586253271.081400'>7日 18:54:32</a>
     <span class='slacklog-text'>RemoveDirectoryもro消せなかったような。</span>
   </span>
   <span class='slacklog-message' id='1586253476.083000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
-    <span class='slacklog-name'>k-takata</span>
+    <span class='slacklog-name'>Ken Takata</span>
     <a class='slacklog-datetime' href='#1586253476.083000'>7日 18:57:57</a>
     <span class='slacklog-text'>しかし、Unix系はファイル・ディレクトリ自身ではなく、それがあるディレクトリがroだと消せないという動きだから、動作が違ってややこしい。</span>
   </span>
@@ -4628,7 +4628,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586262369.084200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586262369.084200'>7日 21:26:10</a>
     <span class='slacklog-text'>ですねえ<br>そしてもしかして誤解されてるかもですが、「Unix系のファイル削除で、その親のディレクトリのパーミッション不足の時の動作はどうなんだろう」だったんです...とはいえたぶん考慮されてるかな?</span>
   </span>
@@ -4640,7 +4640,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
   </span>
   <span class='slacklog-message' id='1586262709.085200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586262709.085200'>7日 21:31:50</a>
     <span class='slacklog-text'>たしかに</span>
   </span>

@@ -9,13 +9,13 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
 {% raw %}
   <span class='slacklog-message' id='1585731172.102200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585731172.102200'>1日 17:52:53</a>
     <span class='slacklog-text'><code>質問</code><br>シェルでエスケープコード混りの文字で表示文字だけを取得する定番の方法ってなにがあるでしょう?<br>rel <a href='/slacklog/dotfiles/'>#dotfiles</a></span>
   </span>
   <span class='slacklog-message' id='1585731310.103700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585731310.103700'>1日 17:55:11</a>
     <span class='slacklog-text'>PS1で右寄せするに表示文字数をカウントしたいのですが、文字数カウントが素の文字列(エスケープコードを含む)で処理してしまうので、これに表示文字列だけを入れたい</span>
   </span>
@@ -27,7 +27,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585732619.104600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585732619.104600'>1日 18:17:00</a>
     <span class='slacklog-text'>あー、直に除去するしかないかな...なるべく外部コマンド使わずに(shellはbash)すめばなと思いましたが</span>
   </span>
@@ -39,25 +39,25 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585732901.106700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585732901.106700'>1日 18:21:42</a>
     <span class='slacklog-text'>そうですよね...<br>ありがとうございます。</span>
   </span>
   <span class='slacklog-message' id='1585766908.109300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-03-22/585354086471_dd542d5201f2874092dd_48.jpg'>
-    <span class='slacklog-name'>fumi</span>
+    <span class='slacklog-name'>Takahashi Fumihiro</span>
     <a class='slacklog-datetime' href='#1585766908.109300'>2日 03:48:29</a>
     <span class='slacklog-text'>すでにご存知かもしれませんが ↓ の「カーソルの位置」のあたりとか参考になるでしょうか？<br><a href='https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA'>https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA</a><br><br><pre>rightprompt()<br>{<br>    printf &#34;%*s&#34; $COLUMNS &#34;right prompt&#34;<br>}<br><br>export PS1=&#39;\[$(tput sc; rightprompt; tput rc)\]left prompt &gt; &#39;</pre><br>PS1 では <code>\[</code> <code>\]</code> で囲まれている部分は non-printing characters となります文字数にカウントされません<br><a href='https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html'>https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html</a></span>
   </span>
   <span class='slacklog-message' id='1585774484.112000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585774484.112000'>2日 05:54:45</a>
     <span class='slacklog-text'>ありがとうございます。<br>一応知ってはいましたが、今抱えてる条件だとちょっと期待した結果にならない(出来ないというか)でした</span>
   </span>
   <span class='slacklog-message' id='1585774573.113700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1585774573.113700'>2日 05:56:14</a>
     <span class='slacklog-text'>オフィシャルなところで利用方法に制限付けてるし、たぶん無理だよな…</span>
   </span>
@@ -75,7 +75,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585824912.120000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585824912.120000'>2日 19:55:13</a>
     <span class='slacklog-text'>すいません、vimscript中でタブ幅考慮した見た目の文字数分ごとにテキスト切り取る方法探してるんですけどどうやったらいいですかね？</span>
   </span>
@@ -87,7 +87,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585824982.120500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
-    <span class='slacklog-name'></span>
+    <span class='slacklog-name'>vimhelp</span>
     <a class='slacklog-datetime' href='#1585824982.120500'>2日 19:56:23</a>
     <span class='slacklog-text'><pre><br>strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*<br>                結果は数値で、文字列 {expr} が {col} (最初の桁はゼロ)で始まる<br>                時のスクリーン上での表示セル幅を返す。<br>                {col} が省略されたときはゼロが使われる。{col} には計算を開始す<br>                るスクリーン上の列の位置を指定する。これはタブ文字の幅の計算に<br>                影響する。<br>                計算にはカレントウィンドウのオプションが使用される。&#39;tabstop&#39;<br>                や &#39;display&#39; のような表示を変更するようなオプションが影響す<br>                る。<br>                {expr} に幅が曖昧 (Ambiguous) な東アジアの文字が含まれていると<br>                きは、文字幅は &#39;ambiwidth&#39; の設定に依存する。<br>                |strlen()|, |strwidth()|, |strchars()| も参照。<br> <br>                |method| としても使用できる:  <br>                        GetText()-&gt;strdisplaywidth()<br></pre></span>
   </span>
@@ -111,13 +111,13 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585825263.124800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585825263.124800'>2日 20:01:04</a>
     <span class='slacklog-text'>これ使って、次の範囲、また次の範囲...って切り出したいんですけど、strdisplaywidth()と実際の長さの差をどうやったらいいだろう...ってなってて</span>
   </span>
   <span class='slacklog-message' id='1585825293.125500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585825293.125500'>2日 20:01:34</a>
     <span class='slacklog-text'>ループ回して地道に調整するしかないんですかね</span>
   </span>
@@ -135,7 +135,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585825443.127800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585825443.127800'>2日 20:04:04</a>
     <span class='slacklog-text'>それですね＞表示されてる長さ</span>
   </span>
@@ -193,13 +193,13 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585825788.133500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-17/331536821795_2102b9fe65a8287cf20b_48.jpg'>
-    <span class='slacklog-name'>machakann</span>
+    <span class='slacklog-name'>Masaaki Nakamura</span>
     <a class='slacklog-datetime' href='#1585825788.133500'>2日 20:09:49</a>
     <span class='slacklog-text'>見た目 n 桁目のバイト位置を二分探索で探す関数を昔書いた気がする</span>
   </span>
   <span class='slacklog-message' id='1585825822.134200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585825822.134200'>2日 20:10:23</a>
     <span class='slacklog-text'>この話の結果、tyruさんがカラースキーム関係の関数突っ込んだんならわざわざカラースキームいじるプラグインの為の作業を進める必要が揺らいでいます…</span>
   </span>
@@ -217,7 +217,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585825915.135500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585825915.135500'>2日 20:11:56</a>
     <span class='slacklog-text'>いやなんか、こっちはこっちで暇つぶしとして始めてしまったんで文句もへったくれもないんですけど</span>
   </span>
@@ -229,13 +229,13 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585825971.136600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585825971.136600'>2日 20:12:52</a>
     <span class='slacklog-text'>とりあえずctermの色に対する知見はめちゃめちゃ理解しまして...</span>
   </span>
   <span class='slacklog-message' id='1585826043.137800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585826043.137800'>2日 20:14:04</a>
     <span class='slacklog-text'>スクリプト内でのハイライトのコマンドの記述が想定すればするほどまとまらなくてつらい</span>
   </span>
@@ -253,7 +253,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1585826473.139200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1585826473.139200'>2日 20:21:14</a>
     <span class='slacklog-text'>ぼんやりしながらいい方法考えてます</span>
   </span>
@@ -317,7 +317,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1586068511.146300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586068511.146300'>5日 15:35:12</a>
     <span class='slacklog-text'>vim発見クイズのときと、ガチvimの時の差がはげしいw</span>
   </span>
@@ -335,7 +335,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1586069667.152200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-    <span class='slacklog-name'>Nicholas</span>
+    <span class='slacklog-name'>Yusuke Itoh</span>
     <a class='slacklog-datetime' href='#1586069667.152200'>5日 15:54:28</a>
     <span class='slacklog-text'>ファイルを編集するだけでvimを使えることの満足が得られる<br>→vimの学習はそんなに難しくない</span>
   </span>
@@ -357,7 +357,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1586075636.153500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586075636.153500'>5日 17:33:57</a>
     <span class='slacklog-text'>neocomplete関係はわからないな...</span>
   </span>
@@ -387,7 +387,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   </span>
   <span class='slacklog-message' id='1586078047.156900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-    <span class='slacklog-name'>tsuyoshi_cho</span>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#1586078047.156900'>5日 18:14:08</a>
     <span class='slacklog-text'>あー</span>
   </span>
