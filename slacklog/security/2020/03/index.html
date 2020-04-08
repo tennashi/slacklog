@@ -10,160 +10,800 @@ title: vim-jp.slack.com log - &#35security - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>tsuyoshi_cho 17日 16:05:10: アカウントもGmailで+つかってサービス別にしてるので、なにか漏洩は検知できるはず、だがいまの所ない...</pre>
-<pre>kyoh86 17日 16:05:32: アカウント分けるの、ある時から面倒くさくなって止めてしまったなぁ…</pre>
-<pre>thinca 17日 16:05:49: 分けたいのに `+` が入ってると受け付けてくれないサービスがある…</pre>
-<pre>kyoh86 17日 16:06:24: +が入ってると受け付けないけど、 `@` の直前に `.` があっても許す</pre>
-<pre>tsuyoshi_cho 17日 16:06:34: なのでだめなときはそのまま
-ただアングラ気味(マイナーというかサービスがサブカル的というか)はGmailのサブアカウントで登録したり</pre>
-<pre>tsuyoshi_cho 17日 16:06:53: どんな文字列もクォートすれば...(たいがいだめ)</pre>
-<pre>thinca 17日 16:06:59: メールアドレスの RFC ちゃんと読んでほしい</pre>
-<pre>tsuyoshi_cho 17日 16:07:15: そして完全対応で死ぬ</pre>
-<pre>thinca 17日 16:07:22: 正確に従おうとするとまあ死ぬ</pre>
-<pre>kyoh86 17日 16:07:27: 「登録できないんだけど」と問い合わせが来る</pre>
-<pre>tsuyoshi_cho 17日 16:07:49: 酷いのは、登録は受け付けるくせに、ログインフォームで `+` で弾かれる</pre>
-<pre>tsuyoshi_cho 17日 16:08:02: これは問い合せして直させる(サービスorメールアドレス)</pre>
-<pre>tsuyoshi_cho 17日 16:08:18: あと、地味に登録のメールの大文字小文字の状態を保持したり、しなかったりする</pre>
-<pre>tsuyoshi_cho 17日 16:08:37: そのまま入れないと入れなかったり、登録で大文字あっても小文字じゃないと入れなかったり</pre>
-<pre>tsuyoshi_cho 17日 16:08:51: 受け入れは寛容に、をしてほしい...</pre>
-<pre>tsuyoshi_cho 17日 16:12:14: ちなみに弾かれると、最悪アカウント削除すらできないというときもあったorz</pre>
-<pre>kyoh86 17日 16:13:55: フォームのその手のダルいですね</pre>
-<pre>kyoh86 17日 16:14:04: IT Proのフォームがやばかったの思い出した</pre>
-<pre>tsuyoshi_cho 17日 16:14:17: あれはひどかった記憶</pre>
-<pre>kyoh86 17日 16:15:16: 最近日経新聞社のWEB担当の人にあったけど、
-今はだいぶ色々頑張ってるみたいですね</pre>
-<pre>tyru 17日 16:15:42: どの ID/PW がどのサービスで使えるのか全く ~分からない~ 分からなかった</pre>
-<pre>tsuyoshi_cho 17日 16:15:47: 日経(Webは)はわりと改善した感じ、記事にもなってましたっけ</pre>
-<pre>kyoh86 17日 16:16:38: 記事にもなってましたね</pre>
-<pre>thinca 18日 10:51:42: 使える記号の種類を選べるパスワードジェネレータが少ないが、なぜか日本のサービスは一部の記号のみ許可みたいなことをするので、ジェネレータで記号が使えずに結局記号なしで生成してしまう</pre>
-<pre>mattn 18日 10:54:46: <https://github.com/mattn/genpw></pre>
-<pre>thinca 18日 10:55:29: パスワード生成、lesspass を使っている</pre>
-<pre>mattn 18日 10:57:01: 記号のありなし(最小出現個数)、数字のありなし、を指定できる物が無かったので作った。</pre>
-<pre>mattn 18日 10:57:27: pwgen を勧められたけどあの羅列の中から条件にあったの探すの非常に無駄時間。</pre>
-<pre>thinca 18日 10:57:59: ああ、これも記号を選べるわけではないのか</pre>
-<pre>thinca 18日 10:59:50: lesspass は、Web サイトとログインIDとマスターパスワードからランダムっぽいパスワードを生成しつつもマスターパスワード(と生成するのに使う文字種とか)を覚えておけば復元が可能なのでパスワード管理サービスがなくなっても最悪なんとかなるみたいな代物です</pre>
-<pre>mattn 18日 11:01:48: オンラインのパスワード生成、まったく信用してない。</pre>
-<pre>thinca 18日 11:02:01: <https://github.com/thinca/config/blob/master/dotfiles/dot.vim/vimrc#L1557-L1579></pre>
-<pre>kyoh86 18日 11:19:50: パスワード生成、絶対に捨てないと決めてる本の各ページの1文字目から取っている…</pre>
-<pre>kyoh86 18日 11:20:01: 記号だけ換字表作ってるけど</pre>
-<pre>thinca 18日 11:50:21: モバイルPASMO、秘密の質問が強制でかつ生で保存している</pre>
-<pre>mattn 18日 11:52:01: 最悪、人が介在しないといけない可能性があるという方針なら〇だけどセキュリティ的には×</pre>
-<pre>mattn 18日 11:53:17: 客「秘密の質問を忘れてしまって」
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:05:10</span>
+<span class='slacklog-text'>アカウントもGmailで+つかってサービス別にしてるので、なにか漏洩は検知できるはず、だがいまの所ない...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>17日 16:05:32</span>
+<span class='slacklog-text'>アカウント分けるの、ある時から面倒くさくなって止めてしまったなぁ…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>17日 16:05:49</span>
+<span class='slacklog-text'>分けたいのに `+` が入ってると受け付けてくれないサービスがある…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>17日 16:06:24</span>
+<span class='slacklog-text'>+が入ってると受け付けないけど、 `@` の直前に `.` があっても許す</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:06:34</span>
+<span class='slacklog-text'>なのでだめなときはそのまま
+ただアングラ気味(マイナーというかサービスがサブカル的というか)はGmailのサブアカウントで登録したり</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:06:53</span>
+<span class='slacklog-text'>どんな文字列もクォートすれば...(たいがいだめ)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>17日 16:06:59</span>
+<span class='slacklog-text'>メールアドレスの RFC ちゃんと読んでほしい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:07:15</span>
+<span class='slacklog-text'>そして完全対応で死ぬ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>17日 16:07:22</span>
+<span class='slacklog-text'>正確に従おうとするとまあ死ぬ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>17日 16:07:27</span>
+<span class='slacklog-text'>「登録できないんだけど」と問い合わせが来る</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:07:49</span>
+<span class='slacklog-text'>酷いのは、登録は受け付けるくせに、ログインフォームで `+` で弾かれる</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:08:02</span>
+<span class='slacklog-text'>これは問い合せして直させる(サービスorメールアドレス)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:08:18</span>
+<span class='slacklog-text'>あと、地味に登録のメールの大文字小文字の状態を保持したり、しなかったりする</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:08:37</span>
+<span class='slacklog-text'>そのまま入れないと入れなかったり、登録で大文字あっても小文字じゃないと入れなかったり</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:08:51</span>
+<span class='slacklog-text'>受け入れは寛容に、をしてほしい...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:12:14</span>
+<span class='slacklog-text'>ちなみに弾かれると、最悪アカウント削除すらできないというときもあったorz</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>17日 16:13:55</span>
+<span class='slacklog-text'>フォームのその手のダルいですね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>17日 16:14:04</span>
+<span class='slacklog-text'>IT Proのフォームがやばかったの思い出した</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:14:17</span>
+<span class='slacklog-text'>あれはひどかった記憶</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>17日 16:15:16</span>
+<span class='slacklog-text'>最近日経新聞社のWEB担当の人にあったけど、
+今はだいぶ色々頑張ってるみたいですね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>17日 16:15:42</span>
+<span class='slacklog-text'>どの ID/PW がどのサービスで使えるのか全く ~分からない~ 分からなかった</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 16:15:47</span>
+<span class='slacklog-text'>日経(Webは)はわりと改善した感じ、記事にもなってましたっけ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>17日 16:16:38</span>
+<span class='slacklog-text'>記事にもなってましたね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 10:51:42</span>
+<span class='slacklog-text'>使える記号の種類を選べるパスワードジェネレータが少ないが、なぜか日本のサービスは一部の記号のみ許可みたいなことをするので、ジェネレータで記号が使えずに結局記号なしで生成してしまう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 10:54:46</span>
+<span class='slacklog-text'>&lt;https://github.com/mattn/genpw&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 10:55:29</span>
+<span class='slacklog-text'>パスワード生成、lesspass を使っている</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 10:57:01</span>
+<span class='slacklog-text'>記号のありなし(最小出現個数)、数字のありなし、を指定できる物が無かったので作った。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 10:57:27</span>
+<span class='slacklog-text'>pwgen を勧められたけどあの羅列の中から条件にあったの探すの非常に無駄時間。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 10:57:59</span>
+<span class='slacklog-text'>ああ、これも記号を選べるわけではないのか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 10:59:50</span>
+<span class='slacklog-text'>lesspass は、Web サイトとログインIDとマスターパスワードからランダムっぽいパスワードを生成しつつもマスターパスワード(と生成するのに使う文字種とか)を覚えておけば復元が可能なのでパスワード管理サービスがなくなっても最悪なんとかなるみたいな代物です</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 11:01:48</span>
+<span class='slacklog-text'>オンラインのパスワード生成、まったく信用してない。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 11:02:01</span>
+<span class='slacklog-text'>&lt;https://github.com/thinca/config/blob/master/dotfiles/dot.vim/vimrc#L1557-L1579&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 11:19:50</span>
+<span class='slacklog-text'>パスワード生成、絶対に捨てないと決めてる本の各ページの1文字目から取っている…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 11:20:01</span>
+<span class='slacklog-text'>記号だけ換字表作ってるけど</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 11:50:21</span>
+<span class='slacklog-text'>モバイルPASMO、秘密の質問が強制でかつ生で保存している</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 11:52:01</span>
+<span class='slacklog-text'>最悪、人が介在しないといけない可能性があるという方針なら〇だけどセキュリティ的には×</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 11:53:17</span>
+<span class='slacklog-text'>客「秘密の質問を忘れてしまって」
 オペレータ「えー、なんとかの名前です」
 客「あー、ペットの名前」
 オペレータ「はい」
 客「シンカです、シンカ」
-オペレータ「本人確認しました」</pre>
-<pre>kuu 18日 11:54:38: ペットなのか…</pre>
-<pre>kuu 18日 11:55:31: 頼むから秘密の質問じゃなくてパスワードリセットにしてくれ～っていつも思う</pre>
-<pre>thinca 18日 11:55:41: 秘密の質問、何が秘密なのか全くわからないしリスクを上げているだけなので今すぐやめてほしい (N回目)</pre>
-<pre>thinca 18日 11:56:00: なぜ日本の企業は何も学ばないのか</pre>
-<pre>u 18日 11:57:40: 秘密の質問はほんとうによくない文明</pre>
-<pre>u 18日 11:57:51: あとパスワード文字数上限と文字種固定もよくない文明</pre>
-<pre>YMD 18日 11:58:10: 法律で決まってるんじゃないかって勘ぐってしまうくらいにどこも秘密の質問だらけでつらい</pre>
-<pre>kuu 18日 11:58:23: この手のセキュリティインシデントで一番怖いの身内だし、案外人間身内を信用するので脆弱</pre>
-<pre>kuu 18日 11:59:37: 妙に短いパスワードを要求してくるサイト、平文保存してるのではって思う</pre>
-<pre>tsuyoshi_cho 18日 12:00:56: パスワード、無限はさすがに別の厄介さがあるだろうし期待しないけど200とか十分長く受け付けて欲しい。</pre>
-<pre>mattn 18日 12:06:31: 僕はパスワード厳しめなんだけど奥さんが緩い方なので、家族共有のアカウントがつらい。</pre>
-<pre>u 18日 12:06:59: 暗号学を専門としてた友人がパスワード文字数最低120文字とかだったので僕もそういう感じにしてます</pre>
-<pre>u 18日 12:07:05: 普通に手入力ですらすら入力してました</pre>
-<pre>u 18日 12:07:09: いわゆるパスフレーズ</pre>
-<pre>mattn 18日 12:07:39: 英語圏はいいよなー</pre>
-<pre>mattn 18日 12:08:11: 日本だと「パスフレーズ」と言いながら実質「パスワード」になってしまってる感ある。</pre>
-<pre>tsuyoshi_cho 18日 12:12:36: 自社のパスワードが、定期更新なし、代わりに最低24字(だったか)になったのは革新的かつ嬉しかった</pre>
-<pre>u 18日 12:13:13: :erai:</pre>
-<pre>kyoh86 18日 12:18:33: 定期更新なしは総務省からもお達し出てますね確か</pre>
-<pre>kuu 18日 12:19:31: 定期更新強要されたときは二つパスワードを用意して交互に入力することでやり過ごした</pre>
-<pre>koron 18日 12:20:14: 過去n個のパスワードを覚えてるサービスがあってね… Salesforce っていうんですけど n=10 だったかな…</pre>
-<pre>kyoh86 18日 12:22:07: 未だにセキュリティチェックシートの記入を要求してくるお客さんで
+オペレータ「本人確認しました」</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 11:54:38</span>
+<span class='slacklog-text'>ペットなのか…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 11:55:31</span>
+<span class='slacklog-text'>頼むから秘密の質問じゃなくてパスワードリセットにしてくれ～っていつも思う</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 11:55:41</span>
+<span class='slacklog-text'>秘密の質問、何が秘密なのか全くわからないしリスクを上げているだけなので今すぐやめてほしい (N回目)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 11:56:00</span>
+<span class='slacklog-text'>なぜ日本の企業は何も学ばないのか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>18日 11:57:40</span>
+<span class='slacklog-text'>秘密の質問はほんとうによくない文明</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>18日 11:57:51</span>
+<span class='slacklog-text'>あとパスワード文字数上限と文字種固定もよくない文明</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-12-05/849455683763_7884afb59ae5cd33e24f_48.jpg'>
+<span class='slacklog-name'>YMD</span>
+<span class='slacklog-datetime'>18日 11:58:10</span>
+<span class='slacklog-text'>法律で決まってるんじゃないかって勘ぐってしまうくらいにどこも秘密の質問だらけでつらい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 11:58:23</span>
+<span class='slacklog-text'>この手のセキュリティインシデントで一番怖いの身内だし、案外人間身内を信用するので脆弱</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 11:59:37</span>
+<span class='slacklog-text'>妙に短いパスワードを要求してくるサイト、平文保存してるのではって思う</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 12:00:56</span>
+<span class='slacklog-text'>パスワード、無限はさすがに別の厄介さがあるだろうし期待しないけど200とか十分長く受け付けて欲しい。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 12:06:31</span>
+<span class='slacklog-text'>僕はパスワード厳しめなんだけど奥さんが緩い方なので、家族共有のアカウントがつらい。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>18日 12:06:59</span>
+<span class='slacklog-text'>暗号学を専門としてた友人がパスワード文字数最低120文字とかだったので僕もそういう感じにしてます</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>18日 12:07:05</span>
+<span class='slacklog-text'>普通に手入力ですらすら入力してました</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>18日 12:07:09</span>
+<span class='slacklog-text'>いわゆるパスフレーズ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 12:07:39</span>
+<span class='slacklog-text'>英語圏はいいよなー</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 12:08:11</span>
+<span class='slacklog-text'>日本だと「パスフレーズ」と言いながら実質「パスワード」になってしまってる感ある。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 12:12:36</span>
+<span class='slacklog-text'>自社のパスワードが、定期更新なし、代わりに最低24字(だったか)になったのは革新的かつ嬉しかった</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>18日 12:13:13</span>
+<span class='slacklog-text'>:erai:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:18:33</span>
+<span class='slacklog-text'>定期更新なしは総務省からもお達し出てますね確か</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 12:19:31</span>
+<span class='slacklog-text'>定期更新強要されたときは二つパスワードを用意して交互に入力することでやり過ごした</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>18日 12:20:14</span>
+<span class='slacklog-text'>過去n個のパスワードを覚えてるサービスがあってね… Salesforce っていうんですけど n=10 だったかな…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:22:07</span>
+<span class='slacklog-text'>未だにセキュリティチェックシートの記入を要求してくるお客さんで
 「パスワードの変更は義務付けていますか」みたいな質問来るから、
-毎回総務省のPDF貼り付けて「かえって危険性が増すため実施してません」と回答している</pre>
-<pre>mattn 18日 12:22:31: 一番下に数字付けてインクリメントするやつですね。</pre>
-<pre>kyoh86 18日 12:22:35: 笑</pre>
-<pre>mattn 18日 12:24:21: 覚えるパスワードを1つ長くしたら強度は同じなので実質同じ。</pre>
-<pre>thinca 18日 12:26:50: 総務省、そろそろ秘密の質問もやめろと言ってほしい
-そもそも秘密の質問って日本以外で流行ってる国あるのかな。確かパスワードの定期変更が危険ってのは海外の何かがソースで総務省はそれに従った形だった気がする</pre>
-<pre>kyoh86 18日 12:27:18: NISTですかね</pre>
-<pre>kuu 18日 12:27:40: 秘密の質問、Mojangの垢取る時に入れさせられた気がする</pre>
-<pre>kuu 18日 12:27:51: 記憶違いだったらごめんなさい感</pre>
-<pre>kyoh86 18日 12:28:19: <https://en.wikipedia.org/wiki/Security_question></pre>
-<pre>kyoh86 18日 12:28:38: それっぽいページはある（えいごがよめないのでほんとうにそれかはわからない）</pre>
-<pre>kyoh86 18日 12:29:15: &gt; As a form of self-service password reset, security questions have reduced information technology help desk costs
-それっぽい</pre>
-<pre>thinca 18日 12:30:47: 日本語のページもあるのね <https://ja.wikipedia.org/wiki/%E7%A7%98%E5%AF%86%E3%81%AE%E8%B3%AA%E5%95%8F></pre>
-<pre>thinca 18日 12:31:04: &gt; 秘密の質問に対する最も堅牢なセキュリティ対策は、「秘密の質問を使わない」ことである。
-わかりみしかない</pre>
-<pre>kyoh86 18日 12:31:31: 結局秘密の質問の回答をパスワードマネージャーに記録する必要が生じて</pre>
-<pre>kyoh86 18日 12:31:34: 手間ばかり増す…</pre>
-<pre>kyoh86 18日 12:32:16: IPA仕事しろ…</pre>
-<pre>kyoh86 18日 12:32:32: 家から徒歩5分くらいのところにあるから毎日殴り込みに行きたい衝動にカラれてしまう</pre>
-<pre>u 18日 12:34:06: 秘密の質問残念ながらいろんな国のサービスで実在してます</pre>
-<pre>kuu 18日 12:35:32: 登録が面倒なサービス、そもそもサービスの利用を諦めることがよくある</pre>
-<pre>mattn 18日 12:35:58: 昔同僚が面倒だからと「母親の旧姓の苗字は？」みたいな質問の答えに「母親の旧姓の苗字は？」を入れてるって言っててさすがに「あかんやろ」って言った。</pre>
-<pre>mattn 18日 12:36:39: まぁ実際の母親の苗字がバレないという利点はある。</pre>
-<pre>kuu 18日 12:36:54: 質問を質問で返すなぁーっ！！</pre>
-<pre>tsuyoshi_cho 18日 12:38:24: 秘密の質問、ランダムひらがな20文字くらい。パスワードマネージャーに入れる :totemoturai:</pre>
-<pre>kuu 18日 12:39:27: それもはや忘れると詰む系のパスワードなのでは</pre>
-<pre>kuu 18日 12:39:55: 秘密の質問とは一体…</pre>
-<pre>kyoh86 18日 12:40:11: Google パスワードマネージャーのアプリ出ないかなあ</pre>
-<pre>mattn 18日 12:41:37: Microsoft Authenticator、好きなのであの仕組み Google も真似してほしい。</pre>
-<pre>YMD 18日 12:41:38: 秘密の質問は母親の旧姓とかほぼ公開情報みたいなものではなくへそくりの隠し場所は？とか本当に秘密みたいな質問も追加してほしい</pre>
-<pre>johejo 18日 13:07:42: モバイルpasmo 特定の端末でしかモバイルSuicaと併用できないみたいでがっかりしている。
+毎回総務省のPDF貼り付けて「かえって危険性が増すため実施してません」と回答している</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 12:22:31</span>
+<span class='slacklog-text'>一番下に数字付けてインクリメントするやつですね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:22:35</span>
+<span class='slacklog-text'>笑</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 12:24:21</span>
+<span class='slacklog-text'>覚えるパスワードを1つ長くしたら強度は同じなので実質同じ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 12:26:50</span>
+<span class='slacklog-text'>総務省、そろそろ秘密の質問もやめろと言ってほしい
+そもそも秘密の質問って日本以外で流行ってる国あるのかな。確かパスワードの定期変更が危険ってのは海外の何かがソースで総務省はそれに従った形だった気がする</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:27:18</span>
+<span class='slacklog-text'>NISTですかね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 12:27:40</span>
+<span class='slacklog-text'>秘密の質問、Mojangの垢取る時に入れさせられた気がする</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 12:27:51</span>
+<span class='slacklog-text'>記憶違いだったらごめんなさい感</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:28:19</span>
+<span class='slacklog-text'>&lt;https://en.wikipedia.org/wiki/Security_question&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:28:38</span>
+<span class='slacklog-text'>それっぽいページはある（えいごがよめないのでほんとうにそれかはわからない）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:29:15</span>
+<span class='slacklog-text'>&amp;gt; As a form of self-service password reset, security questions have reduced information technology help desk costs
+それっぽい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 12:30:47</span>
+<span class='slacklog-text'>日本語のページもあるのね &lt;https://ja.wikipedia.org/wiki/%E7%A7%98%E5%AF%86%E3%81%AE%E8%B3%AA%E5%95%8F&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 12:31:04</span>
+<span class='slacklog-text'>&amp;gt; 秘密の質問に対する最も堅牢なセキュリティ対策は、「秘密の質問を使わない」ことである。
+わかりみしかない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:31:31</span>
+<span class='slacklog-text'>結局秘密の質問の回答をパスワードマネージャーに記録する必要が生じて</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:31:34</span>
+<span class='slacklog-text'>手間ばかり増す…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:32:16</span>
+<span class='slacklog-text'>IPA仕事しろ…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:32:32</span>
+<span class='slacklog-text'>家から徒歩5分くらいのところにあるから毎日殴り込みに行きたい衝動にカラれてしまう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>18日 12:34:06</span>
+<span class='slacklog-text'>秘密の質問残念ながらいろんな国のサービスで実在してます</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 12:35:32</span>
+<span class='slacklog-text'>登録が面倒なサービス、そもそもサービスの利用を諦めることがよくある</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 12:35:58</span>
+<span class='slacklog-text'>昔同僚が面倒だからと「母親の旧姓の苗字は？」みたいな質問の答えに「母親の旧姓の苗字は？」を入れてるって言っててさすがに「あかんやろ」って言った。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 12:36:39</span>
+<span class='slacklog-text'>まぁ実際の母親の苗字がバレないという利点はある。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 12:36:54</span>
+<span class='slacklog-text'>質問を質問で返すなぁーっ！！</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 12:38:24</span>
+<span class='slacklog-text'>秘密の質問、ランダムひらがな20文字くらい。パスワードマネージャーに入れる :totemoturai:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 12:39:27</span>
+<span class='slacklog-text'>それもはや忘れると詰む系のパスワードなのでは</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 12:39:55</span>
+<span class='slacklog-text'>秘密の質問とは一体…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>kyoh86</span>
+<span class='slacklog-datetime'>18日 12:40:11</span>
+<span class='slacklog-text'>Google パスワードマネージャーのアプリ出ないかなあ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 12:41:37</span>
+<span class='slacklog-text'>Microsoft Authenticator、好きなのであの仕組み Google も真似してほしい。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-12-05/849455683763_7884afb59ae5cd33e24f_48.jpg'>
+<span class='slacklog-name'>YMD</span>
+<span class='slacklog-datetime'>18日 12:41:38</span>
+<span class='slacklog-text'>秘密の質問は母親の旧姓とかほぼ公開情報みたいなものではなくへそくりの隠し場所は？とか本当に秘密みたいな質問も追加してほしい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>18日 13:07:42</span>
+<span class='slacklog-text'>モバイルpasmo 特定の端末でしかモバイルSuicaと併用できないみたいでがっかりしている。
 アプリ起動した瞬間にエラーが出た。。。
-秘密の質問とかどうでもいいからなんとかしてくれー</pre>
-<pre>tsuyoshi_cho 18日 13:09:10: これはセキュアエレメントなりなんなりのチップの実装内容量っぽい(カードの切り替えIFが見えた)ので、サービス側ではどうしようもないと思う。
-どうしても使うならSuicaを削除するしかない...</pre>
-<pre>tsuyoshi_cho 18日 13:09:58: SuicaやPASMOをオンラインロッカーに仕舞える作りくらいは欲いけど</pre>
-<pre>tsuyoshi_cho 18日 13:11:10: だた、カードのIDがチップで変わる(える)ことのセキュリティも絡むので、預けられたとしても、チャージ金額とかくらいしか意味がない...定期なり他との登録もやりなおしになるだろうし</pre>
-<pre>yutakatay 18日 13:11:28: 私も今朝乗り換えましたけど、案外モバイルSuica削除するのは簡単でしたよ。</pre>
-<pre>tsuyoshi_cho 18日 13:11:53: 定期があるので...定期切り替え時に必要かも含めてどうするか検討しよう</pre>
-<pre>yutakatay 18日 13:12:19: ですね。私も定期も乗り換えられるかと思ってましたが無理でしたね。</pre>
-<pre>yutakatay 18日 13:13:18: モバイルSuica残高がある場合は、Amazonでギフト（チャージ版）→電子マネーで購入→モバイルSuica支払い
+秘密の質問とかどうでもいいからなんとかしてくれー</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:09:10</span>
+<span class='slacklog-text'>これはセキュアエレメントなりなんなりのチップの実装内容量っぽい(カードの切り替えIFが見えた)ので、サービス側ではどうしようもないと思う。
+どうしても使うならSuicaを削除するしかない...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:09:58</span>
+<span class='slacklog-text'>SuicaやPASMOをオンラインロッカーに仕舞える作りくらいは欲いけど</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:11:10</span>
+<span class='slacklog-text'>だた、カードのIDがチップで変わる(える)ことのセキュリティも絡むので、預けられたとしても、チャージ金額とかくらいしか意味がない...定期なり他との登録もやりなおしになるだろうし</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+<span class='slacklog-name'>yutakatay</span>
+<span class='slacklog-datetime'>18日 13:11:28</span>
+<span class='slacklog-text'>私も今朝乗り換えましたけど、案外モバイルSuica削除するのは簡単でしたよ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:11:53</span>
+<span class='slacklog-text'>定期があるので...定期切り替え時に必要かも含めてどうするか検討しよう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+<span class='slacklog-name'>yutakatay</span>
+<span class='slacklog-datetime'>18日 13:12:19</span>
+<span class='slacklog-text'>ですね。私も定期も乗り換えられるかと思ってましたが無理でしたね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+<span class='slacklog-name'>yutakatay</span>
+<span class='slacklog-datetime'>18日 13:13:18</span>
+<span class='slacklog-text'>モバイルSuica残高がある場合は、Amazonでギフト（チャージ版）→電子マネーで購入→モバイルSuica支払い
 モバイルSuicaを機種変更設定にしてFelicaから削除
 
-みたいな感じでした</pre>
-<pre>tsuyoshi_cho 18日 13:13:32: いま、モバイルSuicaの利用の利点は
+みたいな感じでした</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:13:32</span>
+<span class='slacklog-text'>いま、モバイルSuicaの利用の利点は
 1. オートチャージをスマホで
 2. 定期が一体
 3. JRE Pointからのチャージ
-なので、必要になるとしたら路線的にJRがないときだけかな...</pre>
-<pre>tsuyoshi_cho 18日 13:13:39: あ、ギフトはいいですね</pre>
-<pre>tsuyoshi_cho 18日 13:13:54: 機種変更か、なるほど</pre>
-<pre>yutakatay 18日 13:14:17: ですね。私は非JR民なんでほしかった。</pre>
-<pre>tsuyoshi_cho 18日 13:16:14: 最寄りは私鉄なので、覚えておかないとな</pre>
-<pre>johejo 18日 13:17:58: なるほど、どちらも使いたいので新しい端末買います。</pre>
-<pre>johejo 18日 13:19:06: こういうイベントは買い替えのいいタイミングだな....</pre>
-<pre>tsuyoshi_cho 18日 13:35:35: そして今日はdocomoの発表だったという...w</pre>
-<pre>yutakatay 18日 13:36:19: そろそろ買い替え時だから次はPixel4aにしようかな</pre>
-<pre>kuu 18日 13:37:17: Pixel欲しいが優先順位が低い</pre>
-<pre>thinca 18日 13:37:17: モバイルSuicaは使ってなかったし残高も0にしてあったので退会した</pre>
-<pre>tyru 18日 15:49:34: ちょうど Pixel 4 買えるかと思ったけど今のスマホが生き延びてしまって買えなかった
-廉価版なんてあるんだ &gt;Pixel 4a</pre>
-<pre>yutakatay 18日 15:50:17: リーク情報的には５月に出るらしいですよ。</pre>
-<pre>yutakatay 18日 15:50:31: コロナあって不透明感はありますが</pre>
-<pre>kuu 18日 15:50:53: &gt; 今のスマホが生き延びてしまって買えなかった
-分かり手</pre>
-<pre>tsuyoshi_cho 18日 16:08:40: 5Gはまだいいけど(料金は納得するが、そこまで使わない(節約できてしまう)ので)、arrows 5G F-51A 欲しいな...</pre>
-<pre>thinca 18日 16:25:57: スマホ、イヤホンジャックがどんどん淘汰されていっているのつらい</pre>
-<pre>tsuyoshi_cho 18日 16:28:11: コネクタはtype-cでいいんだけど(防水と薄型の両方で)、type-cを上下に2つほしい</pre>
-<pre>tyru 18日 16:28:25: ちょうど USB-C → イヤホンジャックアダプタ買った
-2つほしいわかる</pre>
-<pre>tsuyoshi_cho 18日 16:28:29: あと内蔵音源あるので、ちゃんとアクセサリーモード対応してほしい</pre>
-<pre>mattn 18日 16:28:49: 遅延のない bluetooth ください。</pre>
-<pre>tsuyoshi_cho 18日 16:28:50: 上下にあると充電してのイヤフォンでのゲームはかどる</pre>
-<pre>tsuyoshi_cho 18日 16:29:17: というか充電の抜き差しも発生しちゃうので、できればQiにも対応しててくれ...</pre>
-<pre>tyru 18日 16:30:14: Qi 充電中は流石にゲームできないですよね？（できるデバイスとか方法あったら教えてほしい…）</pre>
-<pre>tsuyoshi_cho 18日 16:34:26: あ、同時はさすがに無理なので、普段使いのときに充電で抜き差ししたくない、を実現するためです</pre>
-<pre>thinca 18日 16:40:17: Qi の充電台、充電のためにこの値段出すのかって気持ちになって買えない。誰かください</pre>
-<pre>thinca 18日 16:41:41: イヤホンジャックアダプタ、持ち歩く小物増えるのつらいなって気持ちでいっぱい。でも最終的にはそうするしかなさそうなんだよなー。bluetooth は遅延するからゲームに使えない</pre>
-<pre>tsuyoshi_cho 18日 16:44:00: 中古だと800くらいで売ってるのは見た
-ジャックはもうイヤフォンにつけっぱ(いっそ抜けないようにするものがほしい)でやるならありな気がしている</pre>
-<pre>tsuyoshi_cho 18日 16:47:00: ただ、気持ちはわかる、イヤフォンジャックというかあれがもっと先に形状進化してればなーとか思う</pre>
-<pre>thinca 18日 16:50:48: ゲーム機に挿したりするからなー</pre>
-<pre>thinca 18日 16:51:28: まあでももしかしたら Switch は Type-C の口でもいけるのかも。試したことないけど</pre>
-<pre>tsuyoshi_cho 18日 16:58:30: <https://www.makkyon.com/2017/10/24/nintendo-switch-aptxll/>
-アクセサリーモードじゃなくて、USB-DACならいけるっぽいですね</pre>
-<pre>thinca 18日 17:04:11: 色々規格がありすぎてどれがどう違うのか全然わからない</pre>
-<pre>tsuyoshi_cho 19日 22:59:14: <https://b.hatena.ne.jp/entry/s/github.com/secretlint/secretlint>
-ほう</pre>
+なので、必要になるとしたら路線的にJRがないときだけかな...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:13:39</span>
+<span class='slacklog-text'>あ、ギフトはいいですね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:13:54</span>
+<span class='slacklog-text'>機種変更か、なるほど</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+<span class='slacklog-name'>yutakatay</span>
+<span class='slacklog-datetime'>18日 13:14:17</span>
+<span class='slacklog-text'>ですね。私は非JR民なんでほしかった。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:16:14</span>
+<span class='slacklog-text'>最寄りは私鉄なので、覚えておかないとな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>18日 13:17:58</span>
+<span class='slacklog-text'>なるほど、どちらも使いたいので新しい端末買います。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>18日 13:19:06</span>
+<span class='slacklog-text'>こういうイベントは買い替えのいいタイミングだな....</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 13:35:35</span>
+<span class='slacklog-text'>そして今日はdocomoの発表だったという...w</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+<span class='slacklog-name'>yutakatay</span>
+<span class='slacklog-datetime'>18日 13:36:19</span>
+<span class='slacklog-text'>そろそろ買い替え時だから次はPixel4aにしようかな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 13:37:17</span>
+<span class='slacklog-text'>Pixel欲しいが優先順位が低い</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 13:37:17</span>
+<span class='slacklog-text'>モバイルSuicaは使ってなかったし残高も0にしてあったので退会した</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>18日 15:49:34</span>
+<span class='slacklog-text'>ちょうど Pixel 4 買えるかと思ったけど今のスマホが生き延びてしまって買えなかった
+廉価版なんてあるんだ &amp;gt;Pixel 4a</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+<span class='slacklog-name'>yutakatay</span>
+<span class='slacklog-datetime'>18日 15:50:17</span>
+<span class='slacklog-text'>リーク情報的には５月に出るらしいですよ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+<span class='slacklog-name'>yutakatay</span>
+<span class='slacklog-datetime'>18日 15:50:31</span>
+<span class='slacklog-text'>コロナあって不透明感はありますが</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>18日 15:50:53</span>
+<span class='slacklog-text'>&amp;gt; 今のスマホが生き延びてしまって買えなかった
+分かり手</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:08:40</span>
+<span class='slacklog-text'>5Gはまだいいけど(料金は納得するが、そこまで使わない(節約できてしまう)ので)、arrows 5G F-51A 欲しいな...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 16:25:57</span>
+<span class='slacklog-text'>スマホ、イヤホンジャックがどんどん淘汰されていっているのつらい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:28:11</span>
+<span class='slacklog-text'>コネクタはtype-cでいいんだけど(防水と薄型の両方で)、type-cを上下に2つほしい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>18日 16:28:25</span>
+<span class='slacklog-text'>ちょうど USB-C → イヤホンジャックアダプタ買った
+2つほしいわかる</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:28:29</span>
+<span class='slacklog-text'>あと内蔵音源あるので、ちゃんとアクセサリーモード対応してほしい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>18日 16:28:49</span>
+<span class='slacklog-text'>遅延のない bluetooth ください。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:28:50</span>
+<span class='slacklog-text'>上下にあると充電してのイヤフォンでのゲームはかどる</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:29:17</span>
+<span class='slacklog-text'>というか充電の抜き差しも発生しちゃうので、できればQiにも対応しててくれ...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>18日 16:30:14</span>
+<span class='slacklog-text'>Qi 充電中は流石にゲームできないですよね？（できるデバイスとか方法あったら教えてほしい…）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:34:26</span>
+<span class='slacklog-text'>あ、同時はさすがに無理なので、普段使いのときに充電で抜き差ししたくない、を実現するためです</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 16:40:17</span>
+<span class='slacklog-text'>Qi の充電台、充電のためにこの値段出すのかって気持ちになって買えない。誰かください</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 16:41:41</span>
+<span class='slacklog-text'>イヤホンジャックアダプタ、持ち歩く小物増えるのつらいなって気持ちでいっぱい。でも最終的にはそうするしかなさそうなんだよなー。bluetooth は遅延するからゲームに使えない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:44:00</span>
+<span class='slacklog-text'>中古だと800くらいで売ってるのは見た
+ジャックはもうイヤフォンにつけっぱ(いっそ抜けないようにするものがほしい)でやるならありな気がしている</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:47:00</span>
+<span class='slacklog-text'>ただ、気持ちはわかる、イヤフォンジャックというかあれがもっと先に形状進化してればなーとか思う</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 16:50:48</span>
+<span class='slacklog-text'>ゲーム機に挿したりするからなー</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 16:51:28</span>
+<span class='slacklog-text'>まあでももしかしたら Switch は Type-C の口でもいけるのかも。試したことないけど</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>18日 16:58:30</span>
+<span class='slacklog-text'>&lt;https://www.makkyon.com/2017/10/24/nintendo-switch-aptxll/&gt;
+アクセサリーモードじゃなくて、USB-DACならいけるっぽいですね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>18日 17:04:11</span>
+<span class='slacklog-text'>色々規格がありすぎてどれがどう違うのか全然わからない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>19日 22:59:14</span>
+<span class='slacklog-text'>&lt;https://b.hatena.ne.jp/entry/s/github.com/secretlint/secretlint&gt;
+ほう</span>
+</span>
 {% endraw %}

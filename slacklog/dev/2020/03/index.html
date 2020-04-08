@@ -10,112 +10,521 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>mattn 9日 16:21:26: tag kind にマルチバイト「λ」入れたいと思った事がない。 <https://github.com/vim/vim/issues/5724></pre>
-<pre>k-takata 9日 16:22:35: Bramがこんな時間に活動してる！</pre>
-<pre>tsuyoshi_cho 9日 16:22:55: Julia使いな人なのかな...?</pre>
-<pre>thinca 9日 23:59:07: <https://github.com/vim-jp/lang-ja/pull/123></pre>
-<pre>mattn 10日 00:01:02: 修正okだと思いますが、ちなみに興味で聞きたいのですがこれって何かの文章が続く感じの奴ですか？</pre>
-<pre> 10日 00:06:07: quickfix にはタイトルを設定できるんですが、そのタイトルが後に続きます。</pre>
-<pre> 10日 00:09:12: ちなみに行頭から 34 バイト分(固定)は必ず余白があくようになっており、:language C でやるといい感じになったりします…</pre>
-<pre>mattn 10日 15:59:18: 最近 Bram、この時間帯に活動してるなぁ。</pre>
-<pre>k-takata 10日 16:19:41: 朝8時か</pre>
-<pre>koron 10日 16:21:37: 朝活</pre>
-<pre>k-takata 12日 14:55:46: 今日のオレオレビルドからlambda高速化パッチを入れてみた。常用してみる。
-<https://github.com/k-takata/vim-kt/releases/tag/v8.2.0373>
-体感できる差はないだろうけど。</pre>
-<pre>k-takata 12日 16:26:27: Vimのhash (dict)の実装、Rubyのhash (st.c)に差し替えたら速くなったりしないかなーって妄想してる。</pre>
-<pre>k-takata 12日 16:27:29: <https://github.com/ruby/ruby/blob/master/st.c></pre>
-<pre>thinca 12日 16:28:39: Vim の実装は素朴ですからね…
-ライセンス的には問題はない?</pre>
-<pre>mattn 12日 16:34:21: 普通に klib 使っちゃダメなのかしら。</pre>
-<pre>mattn 12日 16:34:22: <https://github.com/attractivechaos/klib></pre>
-<pre>mattn 12日 16:34:36: khash めっちゃ速いで。</pre>
-<pre>mattn 12日 16:35:48: 昔 FNV-1 hashmap を書いた事があるけど khash に勝てなかった。</pre>
-<pre>mattn 12日 16:35:54: <https://github.com/mattn/picohashmap></pre>
-<pre>tsuyoshi_cho 12日 16:36:09: vimだと、hashdosは大丈夫、でいいのかな...？</pre>
-<pre>mattn 12日 16:36:53: ```picohashmap put: 2.781000 [sec]
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>9日 16:21:26</span>
+<span class='slacklog-text'>tag kind にマルチバイト「λ」入れたいと思った事がない。 &lt;https://github.com/vim/vim/issues/5724&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>9日 16:22:35</span>
+<span class='slacklog-text'>Bramがこんな時間に活動してる！</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>9日 16:22:55</span>
+<span class='slacklog-text'>Julia使いな人なのかな...?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>9日 23:59:07</span>
+<span class='slacklog-text'>&lt;https://github.com/vim-jp/lang-ja/pull/123&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>10日 00:01:02</span>
+<span class='slacklog-text'>修正okだと思いますが、ちなみに興味で聞きたいのですがこれって何かの文章が続く感じの奴ですか？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>10日 00:06:07</span>
+<span class='slacklog-text'>quickfix にはタイトルを設定できるんですが、そのタイトルが後に続きます。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>10日 00:09:12</span>
+<span class='slacklog-text'>ちなみに行頭から 34 バイト分(固定)は必ず余白があくようになっており、:language C でやるといい感じになったりします…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>10日 15:59:18</span>
+<span class='slacklog-text'>最近 Bram、この時間帯に活動してるなぁ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>10日 16:19:41</span>
+<span class='slacklog-text'>朝8時か</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>10日 16:21:37</span>
+<span class='slacklog-text'>朝活</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>12日 14:55:46</span>
+<span class='slacklog-text'>今日のオレオレビルドからlambda高速化パッチを入れてみた。常用してみる。
+&lt;https://github.com/k-takata/vim-kt/releases/tag/v8.2.0373&gt;
+体感できる差はないだろうけど。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>12日 16:26:27</span>
+<span class='slacklog-text'>Vimのhash (dict)の実装、Rubyのhash (st.c)に差し替えたら速くなったりしないかなーって妄想してる。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>12日 16:27:29</span>
+<span class='slacklog-text'>&lt;https://github.com/ruby/ruby/blob/master/st.c&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>12日 16:28:39</span>
+<span class='slacklog-text'>Vim の実装は素朴ですからね…
+ライセンス的には問題はない?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:34:21</span>
+<span class='slacklog-text'>普通に klib 使っちゃダメなのかしら。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:34:22</span>
+<span class='slacklog-text'>&lt;https://github.com/attractivechaos/klib&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:34:36</span>
+<span class='slacklog-text'>khash めっちゃ速いで。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:35:48</span>
+<span class='slacklog-text'>昔 FNV-1 hashmap を書いた事があるけど khash に勝てなかった。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:35:54</span>
+<span class='slacklog-text'>&lt;https://github.com/mattn/picohashmap&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>12日 16:36:09</span>
+<span class='slacklog-text'>vimだと、hashdosは大丈夫、でいいのかな...？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:36:53</span>
+<span class='slacklog-text'>```picohashmap put: 2.781000 [sec]
 picohashmap get: 1.103000 [sec]
 C++ stl put: 5.126669 [sec]
 C++ stl get: 1.272198 [sec]
 klib hash put: 0.252785 [sec]
-klib hash get: 0.036985 [sec]```</pre>
-<pre>mattn 12日 16:37:01: klib バケモンすぎる。</pre>
-<pre>mattn 12日 16:38:44: khash が使ってるこれがたぶん凄い効いてる。 <http://research.cs.vt.edu/AVresearch/hashing/quadratic.php></pre>
-<pre>tsuyoshi_cho 12日 16:39:08: すご</pre>
-<pre>mattn 12日 16:39:18: というところまで思い出して悔しい記憶がよみがえってきた。</pre>
-<pre>k-takata 12日 16:40:46: Rubyのハッシュは2.4で高速化されたけど、どっちが速いかな？</pre>
-<pre>mattn 12日 16:42:40: なんか小細工が見えるw <https://github.com/ruby/ruby/blob/74c398b82f80c30e8123f53e354b6518be3fe9aa/st.c#L739></pre>
-<pre>tsuyoshi_cho 12日 16:43:12: <https://employment.en-japan.com/engineerhub/entry/2018/01/11/110000>
-ちょっと前のhashdosの時の構造説明(1.9があって、1.8の対策なので微妙)</pre>
-<pre>mattn 12日 16:43:28: これって分岐予測のヒントですよね。</pre>
-<pre>mattn 12日 16:43:31: `__builtin_expect` とか。</pre>
-<pre>mattn 12日 16:43:39: そこまでやると速いだろうなー。</pre>
-<pre>mattn 12日 16:44:55: <https://qiita.com/jnchito/items/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1></pre>
-<pre>mattn 12日 16:44:58: これじゃないすかね。</pre>
-<pre>mattn 12日 16:45:57: ちなみに僕のは C++ の stdlib には勝った。</pre>
-<pre>mattn 12日 16:46:37: .oO( と心を落ち着かせて khash に負けた事を記憶から消し去った )</pre>
-<pre>k-takata 12日 22:00:45: とりあえず、Rubyのst.[ch]を単体でビルドできるようにしたパッチ。
-<https://github.com/k-takata/ruby/commit/d0f9d3560571463a8fc78020134073b731171cf2>
-少し古いバージョンはonigmoに組み込んであるけど、このバージョンはまだ試してない。</pre>
-<pre>mattn 13日 07:29:17: k-takata さんに悲しいお知らせだ。 <https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket|https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket></pre>
-<pre>k-takata 13日 08:26:31: すでにosdnに移っています。</pre>
-<pre>k-takata 13日 10:48:14: パッチのリポジトリはここです。
-<https://osdn.net/users/k_takata/pf/vim-ktakata-mq/wiki/FrontPage></pre>
-<pre>k-takata 13日 16:12:13: Ruby の st に比べると khash の方が圧倒的に速かった。
-<https://gist.github.com/k-takata/25ae2df8d236764ac33a77fa69410a45></pre>
-<pre>k-takata 13日 16:13:02: Vimに組み込むことを考えると、文字列をキーにしたベンチマークの方がいいのだろうけど。</pre>
-<pre>tsuyoshi_cho 13日 16:14:39: 桁1つ違いますねえ</pre>
-<pre>k-takata 13日 16:24:22: 肝心のVimのhashを計ってないけど、たぶんkhashの方が速いだろうねー</pre>
-<pre>mattn 13日 16:34:10: khash はバケモンです。</pre>
-<pre>mattn 13日 16:34:41: picohashmap の README.md にも書いた気がする。</pre>
-<pre> 13日 16:34:49: </pre>
-<pre>k-takata 13日 16:42:25: さっきのベンチマーク、picohashmapのコードをそのまま拝借しましたｗ</pre>
-<pre>k-takata 13日 16:44:45: picohashmap自体は試してないけど、mattnさんのベンチマーク結果と見比べると、stの方が若干速そう。</pre>
-<pre>mattn 13日 16:47:15: すごい</pre>
-<pre>mattn 13日 16:48:12: khash get がどちゃくそ速いのか。</pre>
-<pre>mattn 13日 16:48:48: まぁでも改善してもそんな変わらないレベルですねここ。</pre>
-<pre>k-takata 13日 18:07:02: 文字列をキーにすると、ちょっと差が縮まったかな。
-```&gt;khash_test
+klib hash get: 0.036985 [sec]```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:37:01</span>
+<span class='slacklog-text'>klib バケモンすぎる。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:38:44</span>
+<span class='slacklog-text'>khash が使ってるこれがたぶん凄い効いてる。 &lt;http://research.cs.vt.edu/AVresearch/hashing/quadratic.php&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>12日 16:39:08</span>
+<span class='slacklog-text'>すご</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:39:18</span>
+<span class='slacklog-text'>というところまで思い出して悔しい記憶がよみがえってきた。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>12日 16:40:46</span>
+<span class='slacklog-text'>Rubyのハッシュは2.4で高速化されたけど、どっちが速いかな？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:42:40</span>
+<span class='slacklog-text'>なんか小細工が見えるw &lt;https://github.com/ruby/ruby/blob/74c398b82f80c30e8123f53e354b6518be3fe9aa/st.c#L739&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>12日 16:43:12</span>
+<span class='slacklog-text'>&lt;https://employment.en-japan.com/engineerhub/entry/2018/01/11/110000&gt;
+ちょっと前のhashdosの時の構造説明(1.9があって、1.8の対策なので微妙)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:43:28</span>
+<span class='slacklog-text'>これって分岐予測のヒントですよね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:43:31</span>
+<span class='slacklog-text'>`__builtin_expect` とか。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:43:39</span>
+<span class='slacklog-text'>そこまでやると速いだろうなー。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:44:55</span>
+<span class='slacklog-text'>&lt;https://qiita.com/jnchito/items/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:44:58</span>
+<span class='slacklog-text'>これじゃないすかね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:45:57</span>
+<span class='slacklog-text'>ちなみに僕のは C++ の stdlib には勝った。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>12日 16:46:37</span>
+<span class='slacklog-text'>.oO( と心を落ち着かせて khash に負けた事を記憶から消し去った )</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>12日 22:00:45</span>
+<span class='slacklog-text'>とりあえず、Rubyのst.[ch]を単体でビルドできるようにしたパッチ。
+&lt;https://github.com/k-takata/ruby/commit/d0f9d3560571463a8fc78020134073b731171cf2&gt;
+少し古いバージョンはonigmoに組み込んであるけど、このバージョンはまだ試してない。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>13日 07:29:17</span>
+<span class='slacklog-text'>k-takata さんに悲しいお知らせだ。 &lt;https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket|https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>13日 08:26:31</span>
+<span class='slacklog-text'>すでにosdnに移っています。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>13日 10:48:14</span>
+<span class='slacklog-text'>パッチのリポジトリはここです。
+&lt;https://osdn.net/users/k_takata/pf/vim-ktakata-mq/wiki/FrontPage&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>13日 16:12:13</span>
+<span class='slacklog-text'>Ruby の st に比べると khash の方が圧倒的に速かった。
+&lt;https://gist.github.com/k-takata/25ae2df8d236764ac33a77fa69410a45&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>13日 16:13:02</span>
+<span class='slacklog-text'>Vimに組み込むことを考えると、文字列をキーにしたベンチマークの方がいいのだろうけど。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>13日 16:14:39</span>
+<span class='slacklog-text'>桁1つ違いますねえ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>13日 16:24:22</span>
+<span class='slacklog-text'>肝心のVimのhashを計ってないけど、たぶんkhashの方が速いだろうねー</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>13日 16:34:10</span>
+<span class='slacklog-text'>khash はバケモンです。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>13日 16:34:41</span>
+<span class='slacklog-text'>picohashmap の README.md にも書いた気がする。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>13日 16:34:49</span>
+<span class='slacklog-text'></span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>13日 16:42:25</span>
+<span class='slacklog-text'>さっきのベンチマーク、picohashmapのコードをそのまま拝借しましたｗ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>13日 16:44:45</span>
+<span class='slacklog-text'>picohashmap自体は試してないけど、mattnさんのベンチマーク結果と見比べると、stの方が若干速そう。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>13日 16:47:15</span>
+<span class='slacklog-text'>すごい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>13日 16:48:12</span>
+<span class='slacklog-text'>khash get がどちゃくそ速いのか。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>13日 16:48:48</span>
+<span class='slacklog-text'>まぁでも改善してもそんな変わらないレベルですねここ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>13日 18:07:02</span>
+<span class='slacklog-text'>文字列をキーにすると、ちょっと差が縮まったかな。
+```&amp;gt;khash_test
 klib hash put: 4.223000 [sec]
 klib hash get: 2.414000 [sec]
 
-&gt;st_test
+&amp;gt;st_test
 st hash put: 5.829000 [sec]
 st hash get: 3.870000 [sec]```
-putの方は `strdup` でキーをコピーするようにしたから遅くなって当然だけど、getが一気に遅くなったなー。</pre>
-<pre>kuu 13日 22:28:05: Vimのterminal、ひょっとしてたまにカーソル位置に行が存在しないケースがある？
-ターミナルの存在するタブでcmdwin開いたら`E315: ml_get: 無効なlnumです: 9287` とか出てきた</pre>
-<pre> 13日 22:28:49: バックトレースも貼っておきます</pre>
-<pre>tsuyoshi_cho 13日 22:31:08: 2D RPGの枠の外みたいな...</pre>
-<pre>kuu 13日 22:34:55: `#24`の`scroll_to_fraction`の中でカーソル位置を取ったものがlnumとして渡ってるので恐らく枠の外参照しちゃってるんだと思うんですが、別のvimで再現しようとしても上手くいかないので手詰まり</pre>
-<pre>mattn 13日 23:21:15: Windows では起きなかった。</pre>
-<pre>kuu 13日 23:22:38: Linuxでも何度も再現しようとしてるけど起きない</pre>
-<pre>kuu 13日 23:22:58: ここまで再現度低いなら問題ない気もするんだけどなんか気持ち悪い</pre>
-<pre>tyru 17日 00:46:30: 期待
-<https://github.com/vim/vim/pull/5727#issuecomment-599392935>
-&gt; This is ready to be included.</pre>
-<pre>k-takata 17日 07:39:03: Bramからの反応がない…</pre>
-<pre>koron 17日 09:17:35: updateもないから、バカンスでどっか行っちゃって…って今の時勢だと行けないかw</pre>
-<pre>tsuyoshi_cho 17日 09:18:23: バカンス(室内で趣味に没頭)とかだったりして...</pre>
-<pre>koron 17日 09:18:51: 彼、趣味、プログラミングやん…</pre>
-<pre>kuu 17日 09:19:04: いつも通りw</pre>
-<pre>tsuyoshi_cho 17日 09:19:05: ですね... Vim10 作るとかになってしまうw</pre>
-<pre>mattn 17日 09:21:20: ウガンダ行ったかな？</pre>
-<pre>mattn 17日 09:21:42: 今は渡航は無か。</pre>
-<pre>mattn 17日 09:22:35: vimconf の翌日にハッカソン開いて Bram なかなか来ないなと思ってたら GitHub に新しいコミットあった時は皆で笑った。</pre>
-<pre>tsuyoshi_cho 17日 09:23:06: さすBramでしたねえ(Twitterで拝見してた)</pre>
-<pre>u 17日 10:02:41: 全員「(いいから早く来いよ!)」気分で全会一致しましたね、せっかく会場から徒歩n分なのにw</pre>
-<pre>koron 17日 10:33:41: Bramが止まっていたのはスカイツリーの横のホテルなんで、電車とか乗り継ぎで30分くらいかな。</pre>
-<pre>koron 17日 10:34:36: ここ <https://richmondhotel.jp/tokyo-oshiage/></pre>
-<pre>k-takata 17日 10:36:22: 押上、いわゆるpush up</pre>
-<pre>koron 17日 10:36:53: 押上、初見で正しく読める人の少ない駅</pre>
-<pre>u 17日 10:37:20: 徒歩n分 (n = 60)</pre>
-<pre>u 17日 10:37:44: 押上の対概念: 引下</pre>
-<pre>mattn 17日 10:41:56: 残念、それは私の押上さんだ。</pre>
-<pre>koron 17日 10:42:17: <https://goo.gl/maps/PpcY8SeVt9HWCQ3r6></pre>
-<pre>koron 17日 10:42:35: 岐阜にあったわ… ＜引下</pre>
-<pre>u 17日 13:54:00: それそれ</pre>
-<pre>ichizok 20日 05:53:48: メモリリークを直していて発見
+putの方は `strdup` でキーをコピーするようにしたから遅くなって当然だけど、getが一気に遅くなったなー。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>13日 22:28:05</span>
+<span class='slacklog-text'>Vimのterminal、ひょっとしてたまにカーソル位置に行が存在しないケースがある？
+ターミナルの存在するタブでcmdwin開いたら`E315: ml_get: 無効なlnumです: 9287` とか出てきた</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>13日 22:28:49</span>
+<span class='slacklog-text'>バックトレースも貼っておきます</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>13日 22:31:08</span>
+<span class='slacklog-text'>2D RPGの枠の外みたいな...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>13日 22:34:55</span>
+<span class='slacklog-text'>`#24`の`scroll_to_fraction`の中でカーソル位置を取ったものがlnumとして渡ってるので恐らく枠の外参照しちゃってるんだと思うんですが、別のvimで再現しようとしても上手くいかないので手詰まり</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>13日 23:21:15</span>
+<span class='slacklog-text'>Windows では起きなかった。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>13日 23:22:38</span>
+<span class='slacklog-text'>Linuxでも何度も再現しようとしてるけど起きない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>13日 23:22:58</span>
+<span class='slacklog-text'>ここまで再現度低いなら問題ない気もするんだけどなんか気持ち悪い</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>17日 00:46:30</span>
+<span class='slacklog-text'>期待
+&lt;https://github.com/vim/vim/pull/5727#issuecomment-599392935&gt;
+&amp;gt; This is ready to be included.</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>17日 07:39:03</span>
+<span class='slacklog-text'>Bramからの反応がない…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>17日 09:17:35</span>
+<span class='slacklog-text'>updateもないから、バカンスでどっか行っちゃって…って今の時勢だと行けないかw</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 09:18:23</span>
+<span class='slacklog-text'>バカンス(室内で趣味に没頭)とかだったりして...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>17日 09:18:51</span>
+<span class='slacklog-text'>彼、趣味、プログラミングやん…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>17日 09:19:04</span>
+<span class='slacklog-text'>いつも通りw</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 09:19:05</span>
+<span class='slacklog-text'>ですね... Vim10 作るとかになってしまうw</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>17日 09:21:20</span>
+<span class='slacklog-text'>ウガンダ行ったかな？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>17日 09:21:42</span>
+<span class='slacklog-text'>今は渡航は無か。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>17日 09:22:35</span>
+<span class='slacklog-text'>vimconf の翌日にハッカソン開いて Bram なかなか来ないなと思ってたら GitHub に新しいコミットあった時は皆で笑った。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 09:23:06</span>
+<span class='slacklog-text'>さすBramでしたねえ(Twitterで拝見してた)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>17日 10:02:41</span>
+<span class='slacklog-text'>全員「(いいから早く来いよ!)」気分で全会一致しましたね、せっかく会場から徒歩n分なのにw</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>17日 10:33:41</span>
+<span class='slacklog-text'>Bramが止まっていたのはスカイツリーの横のホテルなんで、電車とか乗り継ぎで30分くらいかな。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>17日 10:34:36</span>
+<span class='slacklog-text'>ここ &lt;https://richmondhotel.jp/tokyo-oshiage/&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>17日 10:36:22</span>
+<span class='slacklog-text'>押上、いわゆるpush up</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>17日 10:36:53</span>
+<span class='slacklog-text'>押上、初見で正しく読める人の少ない駅</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>17日 10:37:20</span>
+<span class='slacklog-text'>徒歩n分 (n = 60)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>17日 10:37:44</span>
+<span class='slacklog-text'>押上の対概念: 引下</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>17日 10:41:56</span>
+<span class='slacklog-text'>残念、それは私の押上さんだ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>17日 10:42:17</span>
+<span class='slacklog-text'>&lt;https://goo.gl/maps/PpcY8SeVt9HWCQ3r6&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>17日 10:42:35</span>
+<span class='slacklog-text'>岐阜にあったわ… ＜引下</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+<span class='slacklog-name'>u</span>
+<span class='slacklog-datetime'>17日 13:54:00</span>
+<span class='slacklog-text'>それそれ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
+<span class='slacklog-name'>ichizok</span>
+<span class='slacklog-datetime'>20日 05:53:48</span>
+<span class='slacklog-text'>メモリリークを直していて発見
 ```def! F0(): number
   return 0
 enddef
@@ -136,170 +545,851 @@ def! F2(): number
 enddef
 
 echo F1()
-echo F2()```</pre>
-<pre>tsuyoshi_cho 20日 11:50:12: 前にちょっと話題になってた、Windowsのコンソールでコマンドウィンドウが変になるやつ、確定パターンがあったので、撮影</pre>
-<pre>tsuyoshi_cho 20日 11:51:36: <https://gyazo.com/5925117438bb70d33491416f200855a5></pre>
-<pre>tsuyoshi_cho 20日 11:52:48: わかってれば、あわてないが...知らないとビビる</pre>
-<pre>kuu 20日 11:57:57: 再現手順があるのはいい話</pre>
-<pre>tsuyoshi_cho 20日 12:01:08: ただ、自分のぐっちゃぐちゃな環境(プラグインが多い)こともあって、他での再現性は不明...
-一応Windowsのcmdでgit rebase -iして、最初の行に居る状態でEscすると出ます、一度移動すると出ないっぽいが、場合によっては出たりはする(commit のeditでも出たり出なかったり)</pre>
-<pre>ntak 20日 15:45:57: 右下の「金金」のあたりに 8.1.2132 が適用されていない vim.exe を Insider build cmd.exe で運用した結果の面影が見えます
-もしくは git core.editor が呼ぶ vim.exe が notermguicolor 状態であっても「金金」にはなります (未PR)</pre>
-<pre>mattn 20日 15:47:37: 金金...</pre>
-<pre>ntak 20日 15:48:14: ふたつの…金…</pre>
-<pre>mattn 20日 15:53:34: <https://ja.wikipedia.org/wiki/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91></pre>
-<pre>kuu 20日 15:54:18: 社畜</pre>
-<pre>ntak 20日 16:01:58: 24時間戦えますか、と同時期に職業選択の自由ラララ～とやっていたのが思い出され、CMコントかと</pre>
-<pre>tsuyoshi_cho 20日 16:50:20: vim-tuxが、まだ400いってない</pre>
-<pre>tsuyoshi_cho 20日 17:03:04: Insider buildではなく 8.2.357でtermguicolorはonですね</pre>
-<pre>tsuyoshi_cho 20日 17:07:49: (GIT_EDITORにvim-tuxなvimを使うようにしてある...のでgit for winのvimではないのです)</pre>
-<pre>バクダンくん 20日 19:59:47: coc.nvimとconptyでターミナル終了時にVimが落ちる件、誰に文句言ったらいいかわからないのでとりあえずvim-jp/issuesにかきました
-<https://github.com/vim-jp/issues/issues/1338></pre>
-<pre>kuu 20日 20:00:33: vimが落ちるのはプラグインが原因でも大体vimのせい</pre>
-<pre>バクダンくん 20日 20:13:46: 何度か落としているうちにvimが耐性を獲得して最小再現手順だと落ちなくなってしまった……</pre>
-<pre>tsuyoshi_cho 20日 20:21:32: vimは進化する(よくない方向に)</pre>
-<pre>koron 20日 21:05:01: なんか異世界Vimだな</pre>
-<pre>tsuyoshi_cho 20日 21:27:56: `set spell` 魔法を設置</pre>
-<pre>tsuyoshi_cho 20日 21:31:07: `\v` very magic</pre>
-<pre>ntak 21日 00:58:14: あれー…「金金」の半角かぶったような表示形態は別ケースがあるってことか…あとは highlight Normal の vimrc での変更に追従していない (未PR) くらいしか思い当たらない…
+echo F2()```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 11:50:12</span>
+<span class='slacklog-text'>前にちょっと話題になってた、Windowsのコンソールでコマンドウィンドウが変になるやつ、確定パターンがあったので、撮影</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 11:51:36</span>
+<span class='slacklog-text'>&lt;https://gyazo.com/5925117438bb70d33491416f200855a5&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 11:52:48</span>
+<span class='slacklog-text'>わかってれば、あわてないが...知らないとビビる</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>20日 11:57:57</span>
+<span class='slacklog-text'>再現手順があるのはいい話</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 12:01:08</span>
+<span class='slacklog-text'>ただ、自分のぐっちゃぐちゃな環境(プラグインが多い)こともあって、他での再現性は不明...
+一応Windowsのcmdでgit rebase -iして、最初の行に居る状態でEscすると出ます、一度移動すると出ないっぽいが、場合によっては出たりはする(commit のeditでも出たり出なかったり)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/c6d8122d8d387de4854743595cfcd9a0.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0003-48.png'>
+<span class='slacklog-name'>ntak</span>
+<span class='slacklog-datetime'>20日 15:45:57</span>
+<span class='slacklog-text'>右下の「金金」のあたりに 8.1.2132 が適用されていない vim.exe を Insider build cmd.exe で運用した結果の面影が見えます
+もしくは git core.editor が呼ぶ vim.exe が notermguicolor 状態であっても「金金」にはなります (未PR)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>20日 15:47:37</span>
+<span class='slacklog-text'>金金...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/c6d8122d8d387de4854743595cfcd9a0.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0003-48.png'>
+<span class='slacklog-name'>ntak</span>
+<span class='slacklog-datetime'>20日 15:48:14</span>
+<span class='slacklog-text'>ふたつの…金…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>20日 15:53:34</span>
+<span class='slacklog-text'>&lt;https://ja.wikipedia.org/wiki/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>20日 15:54:18</span>
+<span class='slacklog-text'>社畜</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/c6d8122d8d387de4854743595cfcd9a0.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0003-48.png'>
+<span class='slacklog-name'>ntak</span>
+<span class='slacklog-datetime'>20日 16:01:58</span>
+<span class='slacklog-text'>24時間戦えますか、と同時期に職業選択の自由ラララ～とやっていたのが思い出され、CMコントかと</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 16:50:20</span>
+<span class='slacklog-text'>vim-tuxが、まだ400いってない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 17:03:04</span>
+<span class='slacklog-text'>Insider buildではなく 8.2.357でtermguicolorはonですね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 17:07:49</span>
+<span class='slacklog-text'>(GIT_EDITORにvim-tuxなvimを使うようにしてある...のでgit for winのvimではないのです)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6b58a0397ae4e1045da22ce63cd61012.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-48.png'>
+<span class='slacklog-name'>バクダンくん</span>
+<span class='slacklog-datetime'>20日 19:59:47</span>
+<span class='slacklog-text'>coc.nvimとconptyでターミナル終了時にVimが落ちる件、誰に文句言ったらいいかわからないのでとりあえずvim-jp/issuesにかきました
+&lt;https://github.com/vim-jp/issues/issues/1338&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>20日 20:00:33</span>
+<span class='slacklog-text'>vimが落ちるのはプラグインが原因でも大体vimのせい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6b58a0397ae4e1045da22ce63cd61012.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-48.png'>
+<span class='slacklog-name'>バクダンくん</span>
+<span class='slacklog-datetime'>20日 20:13:46</span>
+<span class='slacklog-text'>何度か落としているうちにvimが耐性を獲得して最小再現手順だと落ちなくなってしまった……</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 20:21:32</span>
+<span class='slacklog-text'>vimは進化する(よくない方向に)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>20日 21:05:01</span>
+<span class='slacklog-text'>なんか異世界Vimだな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 21:27:56</span>
+<span class='slacklog-text'>`set spell` 魔法を設置</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>20日 21:31:07</span>
+<span class='slacklog-text'>`\v` very magic</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/c6d8122d8d387de4854743595cfcd9a0.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0003-48.png'>
+<span class='slacklog-name'>ntak</span>
+<span class='slacklog-datetime'>21日 00:58:14</span>
+<span class='slacklog-text'>あれー…「金金」の半角かぶったような表示形態は別ケースがあるってことか…あとは highlight Normal の vimrc での変更に追従していない (未PR) くらいしか思い当たらない…
 ConPTY のはたぶんいま解決できた気がします。
-パイプでシーケンス漏れを起こす件がまだ治っていないようです。再現ができなくて…</pre>
-<pre>tsuyoshi_cho 21日 10:09:19: 大変ですね...、こちらは報告だけレベルなので、なにかあれば確認とか手伝います</pre>
-<pre>mattn 21日 10:28:27: パイプの件は僕も再現100%じゃないのがつらい。</pre>
-<pre>mattn 23日 14:54:56: gvim.exe でウィンドウ移動して画面下半分が隠れる様にして `:reg` とか実行すると描画がひどい事なる。</pre>
-<pre> 23日 14:55:14: </pre>
-<pre> 23日 14:58:23: これは酷い</pre>
-<pre>tsuyoshi_cho 23日 14:58:46: ステータスが上にあがるのが全部軌跡になってのこる感</pre>
-<pre>koron 23日 14:58:47: あれ? それdirectxがらみの、前報告にあったやつと同じやつじゃないの?</pre>
-<pre>tsuyoshi_cho 23日 14:59:19: あ、あれと同一か...なるほど</pre>
-<pre>koron 23日 14:59:42: OSが画面外の描画をバッファしないからスクロールインするとおかしく成るやつ。</pre>
-<pre>kuu 24日 00:57:06: terminalなんかバグっぽい挙動するな</pre>
-<pre>kuu 24日 00:58:31: Vimのterminalって引数渡すとシェルみたいに区切ってコマンド実行するけど、末尾にスペースが入ってると空の引数を渡してしまう</pre>
-<pre>kuu 24日 01:18:09: ジョブの区切り方がおかしいんか、明日調べよ</pre>
-<pre>ゴリラ 24日 01:50:41: なんか前に似たようなのに当たったことがあるがする
-でも、あれは自分のミスだった気がした</pre>
-<pre>kuu 25日 00:00:57: `misc2.c#mch_parse_cmd`まで行き着いた</pre>
-<pre>tyru 25日 17:20:35: vim のソースで clangd のオプションを `compile_flags.txt` か `compile_commands.json` に書くと思いますが、vim をいじっている方はどんなオプションを指定しているでしょうか。
-自分は手で `compile_flags.txt` を書いてたんですが自動生成してくれるツールを見つけた所です <https://github.com/nickdiego/compiledb>
-ただ手で書いても自動生成しても同じエラーが起きてて、 `#include &lt;limits.h&gt;` とか `#include &lt;stdio.h&gt;` とか標準ヘッダーを見てくれない現象に悩んでいます…</pre>
-<pre> 25日 17:21:12: compile_flags.txt はこれです</pre>
-<pre>tsuyoshi_cho 25日 17:21:14: まえにmattnさんがツールを列挙してましたが</pre>
-<pre>tsuyoshi_cho 25日 17:21:29: <https://mattn.kaoriya.net/software/vim/20181225235003.htm></pre>
-<pre>tsuyoshi_cho 25日 17:21:54: 自分はcompiledbが死んでしまうことあるのでbear</pre>
-<pre>tsuyoshi_cho 25日 17:22:10: <https://github.com/rizsotto/Bear></pre>
-<pre>tyru 25日 17:22:39: ふむふむ、いくつかあるんですね</pre>
-<pre>tyru 25日 17:22:55: 標準ヘッダーの関数とか参照できてますか？</pre>
-<pre>tsuyoshi_cho 25日 17:24:01: なんか特定のフォルダのヘッダが見えない状態にはなります...
-標準ヘッダーについては、実は作業環境的に特殊で見える状態になるかはちょっと材料になりそうにないですね...</pre>
-<pre>tsuyoshi_cho 25日 17:24:15: 大体見えてるのでオッケーくらい</pre>
-<pre>tsuyoshi_cho 25日 17:25:01: (compiledbが完了してくんなかったり、死んだりすることと、環境の特殊さと量があるため妥協するしかなく)</pre>
-<pre>mattn 25日 17:25:40: clangd の LS は若干変な動きしてて LspDefinition で proto の方を見に行ったりしますね。</pre>
-<pre>tsuyoshi_cho 25日 17:26:14: なおjsonには定義がちゃんとあるのは確認していて、それで見える見えないに差があるので、clangdが変なんじゃないか疑惑がある</pre>
-<pre>tyru 25日 17:29:17: clangd むずかしい</pre>
-<pre>kuu 25日 17:38:04: 僕はclangd切ってますね、ctagsでどうにかなりますし</pre>
-<pre>tyru 25日 17:42:07: 本当それで vim/vim だと現状 ctags のが快適なんだよなぁ… 無理に使うことはないし使い分けでいいか</pre>
-<pre>mattn 25日 17:42:56: ctags 結構マッチするし、速いし、うまいし、やすいですね。</pre>
-<pre>raa0121 25日 17:43:21: ctags はファーストフードだった…！？</pre>
-<pre>mattn 25日 17:43:22: gopls くらいちゃんとジャンプできると使う価値あるけど clangd なんか変。</pre>
-<pre>thinca 25日 17:44:01: C か C++ かで変わりそう? (流れを何も追ってないが)</pre>
-<pre>tyru 25日 17:44:33: リポジトリ = vim/vim ですね。まぁ C でもあの規模は時間かかるかも…</pre>
-<pre>tsuyoshi_cho 25日 17:45:16: C++でC的だったり変だとより挙動がアテにならんかもしれません、ただれを除いてもclangdはサーバ的部分(パーサじゃなく)がちょっと変</pre>
-<pre>mattn 25日 17:45:57: プロトタイプと実装の区別がついてないのが残念。</pre>
-<pre>tsuyoshi_cho 25日 17:46:41: C/C++、ヘッダに実装が置けるというのがありますしね...大変そうではある</pre>
-<pre>mattn 25日 17:46:54: compiler_flags.txt から -Iproto 消せばいいんかな。</pre>
-<pre>mattn 25日 17:47:31: もしくは一番最後に持ってく。</pre>
-<pre>presuku 25日 17:55:11: Xubuntu 18.04 ですが、以下のような compile_flags.txt で `src/main.c` の`#include &lt;limits.h&gt;` が見つからない的なエラーはないですねぇ
+パイプでシーケンス漏れを起こす件がまだ治っていないようです。再現ができなくて…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>21日 10:09:19</span>
+<span class='slacklog-text'>大変ですね...、こちらは報告だけレベルなので、なにかあれば確認とか手伝います</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>21日 10:28:27</span>
+<span class='slacklog-text'>パイプの件は僕も再現100%じゃないのがつらい。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>23日 14:54:56</span>
+<span class='slacklog-text'>gvim.exe でウィンドウ移動して画面下半分が隠れる様にして `:reg` とか実行すると描画がひどい事なる。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>23日 14:55:14</span>
+<span class='slacklog-text'></span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>23日 14:58:23</span>
+<span class='slacklog-text'>これは酷い</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 14:58:46</span>
+<span class='slacklog-text'>ステータスが上にあがるのが全部軌跡になってのこる感</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>23日 14:58:47</span>
+<span class='slacklog-text'>あれ? それdirectxがらみの、前報告にあったやつと同じやつじゃないの?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 14:59:19</span>
+<span class='slacklog-text'>あ、あれと同一か...なるほど</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>23日 14:59:42</span>
+<span class='slacklog-text'>OSが画面外の描画をバッファしないからスクロールインするとおかしく成るやつ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>24日 00:57:06</span>
+<span class='slacklog-text'>terminalなんかバグっぽい挙動するな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>24日 00:58:31</span>
+<span class='slacklog-text'>Vimのterminalって引数渡すとシェルみたいに区切ってコマンド実行するけど、末尾にスペースが入ってると空の引数を渡してしまう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>24日 01:18:09</span>
+<span class='slacklog-text'>ジョブの区切り方がおかしいんか、明日調べよ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>24日 01:50:41</span>
+<span class='slacklog-text'>なんか前に似たようなのに当たったことがあるがする
+でも、あれは自分のミスだった気がした</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>25日 00:00:57</span>
+<span class='slacklog-text'>`misc2.c#mch_parse_cmd`まで行き着いた</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 17:20:35</span>
+<span class='slacklog-text'>vim のソースで clangd のオプションを `compile_flags.txt` か `compile_commands.json` に書くと思いますが、vim をいじっている方はどんなオプションを指定しているでしょうか。
+自分は手で `compile_flags.txt` を書いてたんですが自動生成してくれるツールを見つけた所です &lt;https://github.com/nickdiego/compiledb&gt;
+ただ手で書いても自動生成しても同じエラーが起きてて、 `#include &amp;lt;limits.h&amp;gt;` とか `#include &amp;lt;stdio.h&amp;gt;` とか標準ヘッダーを見てくれない現象に悩んでいます…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>25日 17:21:12</span>
+<span class='slacklog-text'>compile_flags.txt はこれです</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:21:14</span>
+<span class='slacklog-text'>まえにmattnさんがツールを列挙してましたが</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:21:29</span>
+<span class='slacklog-text'>&lt;https://mattn.kaoriya.net/software/vim/20181225235003.htm&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:21:54</span>
+<span class='slacklog-text'>自分はcompiledbが死んでしまうことあるのでbear</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:22:10</span>
+<span class='slacklog-text'>&lt;https://github.com/rizsotto/Bear&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 17:22:39</span>
+<span class='slacklog-text'>ふむふむ、いくつかあるんですね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 17:22:55</span>
+<span class='slacklog-text'>標準ヘッダーの関数とか参照できてますか？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:24:01</span>
+<span class='slacklog-text'>なんか特定のフォルダのヘッダが見えない状態にはなります...
+標準ヘッダーについては、実は作業環境的に特殊で見える状態になるかはちょっと材料になりそうにないですね...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:24:15</span>
+<span class='slacklog-text'>大体見えてるのでオッケーくらい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:25:01</span>
+<span class='slacklog-text'>(compiledbが完了してくんなかったり、死んだりすることと、環境の特殊さと量があるため妥協するしかなく)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 17:25:40</span>
+<span class='slacklog-text'>clangd の LS は若干変な動きしてて LspDefinition で proto の方を見に行ったりしますね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:26:14</span>
+<span class='slacklog-text'>なおjsonには定義がちゃんとあるのは確認していて、それで見える見えないに差があるので、clangdが変なんじゃないか疑惑がある</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 17:29:17</span>
+<span class='slacklog-text'>clangd むずかしい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>25日 17:38:04</span>
+<span class='slacklog-text'>僕はclangd切ってますね、ctagsでどうにかなりますし</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 17:42:07</span>
+<span class='slacklog-text'>本当それで vim/vim だと現状 ctags のが快適なんだよなぁ… 無理に使うことはないし使い分けでいいか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 17:42:56</span>
+<span class='slacklog-text'>ctags 結構マッチするし、速いし、うまいし、やすいですね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>25日 17:43:21</span>
+<span class='slacklog-text'>ctags はファーストフードだった…！？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 17:43:22</span>
+<span class='slacklog-text'>gopls くらいちゃんとジャンプできると使う価値あるけど clangd なんか変。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>25日 17:44:01</span>
+<span class='slacklog-text'>C か C++ かで変わりそう? (流れを何も追ってないが)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 17:44:33</span>
+<span class='slacklog-text'>リポジトリ = vim/vim ですね。まぁ C でもあの規模は時間かかるかも…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:45:16</span>
+<span class='slacklog-text'>C++でC的だったり変だとより挙動がアテにならんかもしれません、ただれを除いてもclangdはサーバ的部分(パーサじゃなく)がちょっと変</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 17:45:57</span>
+<span class='slacklog-text'>プロトタイプと実装の区別がついてないのが残念。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>25日 17:46:41</span>
+<span class='slacklog-text'>C/C++、ヘッダに実装が置けるというのがありますしね...大変そうではある</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 17:46:54</span>
+<span class='slacklog-text'>compiler_flags.txt から -Iproto 消せばいいんかな。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 17:47:31</span>
+<span class='slacklog-text'>もしくは一番最後に持ってく。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>25日 17:55:11</span>
+<span class='slacklog-text'>Xubuntu 18.04 ですが、以下のような compile_flags.txt で `src/main.c` の`#include &amp;lt;limits.h&amp;gt;` が見つからない的なエラーはないですねぇ
 ```-DHAVE_CONFIG_H
 -I.
 -Isrc
--Isrc/proto```</pre>
-<pre>mattn 25日 17:56:19: clangd、その名の通り clang でビルドされてるので gcc のヘッダが見えない事があったりしましたね。昔は。</pre>
-<pre>presuku 25日 17:56:42: あ、参照の話だったのか…</pre>
-<pre>mattn 25日 17:57:00: あ、原因がそれかどうかは分からないですが。</pre>
-<pre>tyru 25日 18:46:24: <@UD73ZNZAP> あ、まさに `#include &lt;limits.h&gt;` とかの話です。
-うーん見せてもらったやつ全部列挙してあるな</pre>
-<pre>presuku 25日 19:34:23: `limits.h` とか`stdio.h` とかコンパイラの標準のInclude pathに依存しそうなので、そのあたりですかねぇ… (そのあたりもちゃんと指定してるっぽいのですけど）
-自分のところは Xubuntu なので llvm clang の repogitory から clangd 入れてるのですが、この辺りでハマったことはないんですよね</pre>
-<pre>バクダンくん 25日 20:49:31: 大抵のMakefileプロジェクトはBear使えばなんとかなるのでは
-というおきもち</pre>
-<pre>kuu 25日 20:51:06: 熊じゃないのか… <https://github.com/rizsotto/Bear></pre>
-<pre>ichizok 25日 22:49:12: 5行目をHomebrewのllvmのパスに変えた以外はこのまま vim/src/compile_flags.txt に置いて試してみましたが、標準ヘッダも探せてます</pre>
-<pre>ichizok 25日 22:52:16: 6行目は `-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include` で `usr/include` 必要では (現象とは関係なさそうですが)</pre>
-<pre>tyru 26日 06:26:05: おっ 試してみます :pray:</pre>
-<pre>presuku 26日 11:59:33: vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、
+-Isrc/proto```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 17:56:19</span>
+<span class='slacklog-text'>clangd、その名の通り clang でビルドされてるので gcc のヘッダが見えない事があったりしましたね。昔は。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>25日 17:56:42</span>
+<span class='slacklog-text'>あ、参照の話だったのか…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 17:57:00</span>
+<span class='slacklog-text'>あ、原因がそれかどうかは分からないですが。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 18:46:24</span>
+<span class='slacklog-text'>&lt;@UD73ZNZAP&gt; あ、まさに `#include &amp;lt;limits.h&amp;gt;` とかの話です。
+うーん見せてもらったやつ全部列挙してあるな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>25日 19:34:23</span>
+<span class='slacklog-text'>`limits.h` とか`stdio.h` とかコンパイラの標準のInclude pathに依存しそうなので、そのあたりですかねぇ… (そのあたりもちゃんと指定してるっぽいのですけど）
+自分のところは Xubuntu なので llvm clang の repogitory から clangd 入れてるのですが、この辺りでハマったことはないんですよね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6b58a0397ae4e1045da22ce63cd61012.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-48.png'>
+<span class='slacklog-name'>バクダンくん</span>
+<span class='slacklog-datetime'>25日 20:49:31</span>
+<span class='slacklog-text'>大抵のMakefileプロジェクトはBear使えばなんとかなるのでは
+というおきもち</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>25日 20:51:06</span>
+<span class='slacklog-text'>熊じゃないのか… &lt;https://github.com/rizsotto/Bear&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
+<span class='slacklog-name'>ichizok</span>
+<span class='slacklog-datetime'>25日 22:49:12</span>
+<span class='slacklog-text'>5行目をHomebrewのllvmのパスに変えた以外はこのまま vim/src/compile_flags.txt に置いて試してみましたが、標準ヘッダも探せてます</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
+<span class='slacklog-name'>ichizok</span>
+<span class='slacklog-datetime'>25日 22:52:16</span>
+<span class='slacklog-text'>6行目は `-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include` で `usr/include` 必要では (現象とは関係なさそうですが)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 06:26:05</span>
+<span class='slacklog-text'>おっ 試してみます :pray:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 11:59:33</span>
+<span class='slacklog-text'>vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、
 ```let g:lsp_settings = {
-      \  'clangd': {'cmd': ['clangd-9', '--background-index', '-j=4']},
+      \  &#39;clangd&#39;: {&#39;cmd&#39;: [&#39;clangd-9&#39;, &#39;--background-index&#39;, &#39;-j=4&#39;]},
       \ }```
-と設定したら、ちゃんと *.c に飛ぶようになった。ちなみに LspDeclaration すると *.pro に飛ぶ。</pre>
-<pre>mattn 26日 12:02:45: 何が違うんだろう。</pre>
-<pre>mattn 26日 12:03:23: なんとなくだけど拡張子で見てそうな気がするんだよなーこれ。
-&gt; .h じゃない、つまりソース</pre>
-<pre>presuku 26日 13:24:27: 単純な話で compile_commands.json のような DB がないと clangd が他のソースファイルがあることがわからないからかなと、今となっては思ってます。 pro は include されてるから分かるみたいな。同一ファイル内にある static 関数には普通に飛べていたし。</pre>
-<pre>mattn 26日 13:26:39: bear、Windows でビルドが大変なのでなんとかしてほしい。</pre>
-<pre>presuku 26日 13:28:55: おう…そういう問題があるのですね…つらい。。compiledb でも同じような compile_commands.json になると思うのでそちらをつかうかですかねぇ</pre>
-<pre>mattn 26日 13:31:29: ですねー。雑に `$ ls *.c *.h | make-ccjson` みたいなコマンドが欲しくなってきた。</pre>
-<pre>presuku 26日 13:36:03: 確かにー。だいぶ昔は便利ツールなかった（知らなかった）ので vim の Makefile に↓の貼り付けて無理やり compile_commands.json  作ってました
-<https://gist.github.com/presuku/9aea6725da3a20ce109bb17f7f9bb0dd></pre>
-<pre>mattn 26日 13:40:29: 僕も専用の作るかな。
+と設定したら、ちゃんと *.c に飛ぶようになった。ちなみに LspDeclaration すると *.pro に飛ぶ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>26日 12:02:45</span>
+<span class='slacklog-text'>何が違うんだろう。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>26日 12:03:23</span>
+<span class='slacklog-text'>なんとなくだけど拡張子で見てそうな気がするんだよなーこれ。
+&amp;gt; .h じゃない、つまりソース</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 13:24:27</span>
+<span class='slacklog-text'>単純な話で compile_commands.json のような DB がないと clangd が他のソースファイルがあることがわからないからかなと、今となっては思ってます。 pro は include されてるから分かるみたいな。同一ファイル内にある static 関数には普通に飛べていたし。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>26日 13:26:39</span>
+<span class='slacklog-text'>bear、Windows でビルドが大変なのでなんとかしてほしい。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 13:28:55</span>
+<span class='slacklog-text'>おう…そういう問題があるのですね…つらい。。compiledb でも同じような compile_commands.json になると思うのでそちらをつかうかですかねぇ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>26日 13:31:29</span>
+<span class='slacklog-text'>ですねー。雑に `$ ls *.c *.h | make-ccjson` みたいなコマンドが欲しくなってきた。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 13:36:03</span>
+<span class='slacklog-text'>確かにー。だいぶ昔は便利ツールなかった（知らなかった）ので vim の Makefile に↓の貼り付けて無理やり compile_commands.json  作ってました
+&lt;https://gist.github.com/presuku/9aea6725da3a20ce109bb17f7f9bb0dd&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>26日 13:40:29</span>
+<span class='slacklog-text'>僕も専用の作るかな。
 ```$ make-ccjson compile_flags.txt *.c *.h```
-が出来れば機能は十分そうだし。</pre>
-<pre>tyru 26日 13:42:24: compiledb は出力見てるんでしたっけ</pre>
-<pre>tyru 26日 13:42:51: シンプルなのほしい</pre>
-<pre>mattn 26日 13:43:11: はい、そうですね。 &gt; 出力</pre>
-<pre>tsuyoshi_cho 26日 13:43:42: いちおうdefineの定義も受けることで中のifdefとか効いてきますしね...</pre>
-<pre>tsuyoshi_cho 26日 13:44:09: clang(LLVM)がバックエンドなんだし、たぶん...</pre>
-<pre>tsuyoshi_cho 26日 13:44:19: LLVIMじゃない(手がすべった)</pre>
-<pre>mattn 26日 13:46:47: compiledb は以前使った時は手直しを何度かやったので
-```$ make 2&gt;&amp;1 | tee output
-$ compiledb &lt; output```
-みたいな事をやってた。</pre>
-<pre>kuu 26日 20:29:02: 現状Vim本体のデバッグにTermDebug以上の方法を思い付かないんだけどみんなどうやってるのか気になり手</pre>
-<pre>rbtnn 26日 20:37:59: Vim内の変数に入れちゃう</pre>
-<pre>kuu 26日 20:38:43: print系か</pre>
-<pre>koron 26日 20:45:01: visual studioで…</pre>
-<pre>presuku 26日 20:48:12: cgdb 使ってるけど gdb -tui でも良いかなという感じ</pre>
-<pre>kuu 26日 20:48:53: `gdb -tui`したらなんかかっこいいの出てきた</pre>
-<pre>kuu 26日 20:49:17: これでattachすれば十分戦える気がしてきた</pre>
-<pre>presuku 26日 20:51:50: 普通に起動して Ctrl-x Ctrl-a でも同じ。でも、コードに色つかないので少し見にくいのですよね…</pre>
-<pre>kuu 26日 20:52:19: このシンタックスハイライトどうやってるのか気になりだしてきた…</pre>
-<pre>presuku 26日 20:56:59: あれ gdb -tui ってシンタックスハイライト付くんでしたっけ？</pre>
-<pre>kuu 26日 21:00:13: こちらだと付いてますね</pre>
-<pre>presuku 26日 21:01:12: おー、すばらしい。こちらのは Ubuntu 18.04 のなので、幾分古いのでそれかな</pre>
-<pre> 26日 21:01:37: </pre>
-<pre>kuu 26日 21:01:47: こんな具合に</pre>
-<pre>presuku 26日 21:05:34: ほんとだほんとだー。GDB 9.1 新しい… こちらは 8.1 でした。</pre>
-<pre>kuu 26日 21:07:04: Archなもので</pre>
-<pre>kuu 26日 21:07:09: LinuxBrewには9.1あるな</pre>
-<pre>presuku 26日 21:08:54: なんとなく LinuxBrew とか使ってない…</pre>
-<pre>kuu 26日 21:18:59: jobの引数区切るやつってWindowsだと使われないんだったっけ</pre>
-<pre>kuu 26日 21:19:49: コマンド側で解釈してるって誰かが言ってた記憶あったけど、だとしたらUnixでしか呼ばれないか</pre>
-<pre>mattn 26日 21:41:31: 僕は普通に起動して別の端末から gdb で attach。この方法だと Windows でも UNIX でも共通して使えるので。</pre>
-<pre>k-takata 26日 22:03:28: Windows派なんで、OutputDebugString()というデバッグ文字列出力用のAPIを使って、printfデバッグすることが多いかな。メモリ異常系のバグはDebugビルドしてVisualStudioのデバッガ上で実行。</pre>
-<pre>k-takata 26日 22:04:13: Unixでのデバッグは自分がやらなくても、もっと詳しい人がやってくれることが多いから…ｗ</pre>
-<pre>kuu 26日 22:04:52: WindowsだとVS強いな</pre>
-<pre>kuu 26日 22:09:10: terminalの末尾スペースのやつテスト書けたのでようやく先に進める</pre>
-<pre>kuu 26日 22:15:18: terminalにテスト書いたけどよく考えたらjobの問題だなこれ</pre>
-<pre>kuu 26日 23:13:36: PRed</pre>
-<pre>kuu 26日 23:14:05: 作業物凄い遅いんで精進したい</pre>
-<pre>mattn 27日 00:00:16: Visual Studio のデバッガ、超便利なんだけど僕がせっかちすぎて起動を待てないというのがある。</pre>
-<pre>mattn 27日 00:00:40: あと普段 mingw なので Visual Studio でデバッグする時にビルドしなおさないといけなくて、それが億劫。</pre>
-<pre>tsuyoshi_cho 27日 00:06:29: mattnさん、Visutal Studioの再コンパイルが完了するまえにfixしそうな勢い(ジョジョになんかそんな名言があったような)</pre>
-<pre>tsuyoshi_cho 27日 00:06:58: &gt;  「ブッ殺す」と心の中で思ったならッ!その時スデに行動は終わっているんだッ!</pre>
-<pre>tsuyoshi_cho 27日 00:07:00: か</pre>
-<pre>tsuyoshi_cho 27日 00:08:21: &gt;  「直す」と心の中で思ったならッ!その時スデにパッチ作成は終わっているんだッ!</pre>
-<pre>kuu 27日 00:09:47: 「PRした」なら使ってもいいッ！</pre>
-<pre>presuku 27日 10:23:58: MS 出身の先輩は WinDbg を使ってたなぁ</pre>
-<pre>thinca 28日 15:38:33: パッチ番号の 法則が 乱れる！</pre>
-<pre>mattn 28日 15:39:07: <https://github.com/vim/vim/commit/495282b6e7e418d072a8ab53c9056b269dc308b7></pre>
-<pre>mattn 28日 15:39:10: ぶぉ</pre>
-<pre>tsuyoshi_cho 28日 15:39:38: かぶってたの...</pre>
-<pre>k-takata 28日 15:43:35: コミットメッセージとタグが変になったって言ってた。
-<https://groups.google.com/d/msg/vim_dev/LcPF0m4-JxI/vQE14CELAwAJ></pre>
-<pre>k-takata 28日 15:47:46: 8.2.0463に8.2.0464のメッセージとタグが付いちゃって、本当の8.2.0464にはタグが付いてないのか。</pre>
-<pre>mattn 28日 15:48:37: タグはまぁ直せるからいいかな</pre>
-<pre>k-takata 29日 10:34:17: タグが直った</pre>
-<pre>kuu 29日 22:06:54: 前にissue投げたやつ、えらい修正雑だなと思ったら案の定問題起きてるらしい
-<https://github.com/vim/vim/issues/5807#issuecomment-605418494></pre>
-<pre>kuu 29日 22:07:04: ほんまに申し訳ない</pre>
-<pre>kuu 30日 00:19:07: 直ったらしい <https://github.com/vim/vim/commit/0fff44152d06e6b662ad4bef172af07a041d2f3f></pre>
+が出来れば機能は十分そうだし。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 13:42:24</span>
+<span class='slacklog-text'>compiledb は出力見てるんでしたっけ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 13:42:51</span>
+<span class='slacklog-text'>シンプルなのほしい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>26日 13:43:11</span>
+<span class='slacklog-text'>はい、そうですね。 &amp;gt; 出力</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>26日 13:43:42</span>
+<span class='slacklog-text'>いちおうdefineの定義も受けることで中のifdefとか効いてきますしね...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>26日 13:44:09</span>
+<span class='slacklog-text'>clang(LLVM)がバックエンドなんだし、たぶん...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>26日 13:44:19</span>
+<span class='slacklog-text'>LLVIMじゃない(手がすべった)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>26日 13:46:47</span>
+<span class='slacklog-text'>compiledb は以前使った時は手直しを何度かやったので
+```$ make 2&amp;gt;&amp;amp;1 | tee output
+$ compiledb &amp;lt; output```
+みたいな事をやってた。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 20:29:02</span>
+<span class='slacklog-text'>現状Vim本体のデバッグにTermDebug以上の方法を思い付かないんだけどみんなどうやってるのか気になり手</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-09-23/442107143383_29fb96601f522825702a_48.jpg'>
+<span class='slacklog-name'>rbtnn</span>
+<span class='slacklog-datetime'>26日 20:37:59</span>
+<span class='slacklog-text'>Vim内の変数に入れちゃう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 20:38:43</span>
+<span class='slacklog-text'>print系か</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>26日 20:45:01</span>
+<span class='slacklog-text'>visual studioで…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 20:48:12</span>
+<span class='slacklog-text'>cgdb 使ってるけど gdb -tui でも良いかなという感じ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 20:48:53</span>
+<span class='slacklog-text'>`gdb -tui`したらなんかかっこいいの出てきた</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 20:49:17</span>
+<span class='slacklog-text'>これでattachすれば十分戦える気がしてきた</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 20:51:50</span>
+<span class='slacklog-text'>普通に起動して Ctrl-x Ctrl-a でも同じ。でも、コードに色つかないので少し見にくいのですよね…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 20:52:19</span>
+<span class='slacklog-text'>このシンタックスハイライトどうやってるのか気になりだしてきた…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 20:56:59</span>
+<span class='slacklog-text'>あれ gdb -tui ってシンタックスハイライト付くんでしたっけ？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 21:00:13</span>
+<span class='slacklog-text'>こちらだと付いてますね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 21:01:12</span>
+<span class='slacklog-text'>おー、すばらしい。こちらのは Ubuntu 18.04 のなので、幾分古いのでそれかな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>26日 21:01:37</span>
+<span class='slacklog-text'></span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 21:01:47</span>
+<span class='slacklog-text'>こんな具合に</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 21:05:34</span>
+<span class='slacklog-text'>ほんとだほんとだー。GDB 9.1 新しい… こちらは 8.1 でした。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 21:07:04</span>
+<span class='slacklog-text'>Archなもので</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 21:07:09</span>
+<span class='slacklog-text'>LinuxBrewには9.1あるな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>26日 21:08:54</span>
+<span class='slacklog-text'>なんとなく LinuxBrew とか使ってない…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 21:18:59</span>
+<span class='slacklog-text'>jobの引数区切るやつってWindowsだと使われないんだったっけ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 21:19:49</span>
+<span class='slacklog-text'>コマンド側で解釈してるって誰かが言ってた記憶あったけど、だとしたらUnixでしか呼ばれないか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>26日 21:41:31</span>
+<span class='slacklog-text'>僕は普通に起動して別の端末から gdb で attach。この方法だと Windows でも UNIX でも共通して使えるので。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>26日 22:03:28</span>
+<span class='slacklog-text'>Windows派なんで、OutputDebugString()というデバッグ文字列出力用のAPIを使って、printfデバッグすることが多いかな。メモリ異常系のバグはDebugビルドしてVisualStudioのデバッガ上で実行。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>26日 22:04:13</span>
+<span class='slacklog-text'>Unixでのデバッグは自分がやらなくても、もっと詳しい人がやってくれることが多いから…ｗ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 22:04:52</span>
+<span class='slacklog-text'>WindowsだとVS強いな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 22:09:10</span>
+<span class='slacklog-text'>terminalの末尾スペースのやつテスト書けたのでようやく先に進める</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 22:15:18</span>
+<span class='slacklog-text'>terminalにテスト書いたけどよく考えたらjobの問題だなこれ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 23:13:36</span>
+<span class='slacklog-text'>PRed</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 23:14:05</span>
+<span class='slacklog-text'>作業物凄い遅いんで精進したい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>27日 00:00:16</span>
+<span class='slacklog-text'>Visual Studio のデバッガ、超便利なんだけど僕がせっかちすぎて起動を待てないというのがある。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>27日 00:00:40</span>
+<span class='slacklog-text'>あと普段 mingw なので Visual Studio でデバッグする時にビルドしなおさないといけなくて、それが億劫。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>27日 00:06:29</span>
+<span class='slacklog-text'>mattnさん、Visutal Studioの再コンパイルが完了するまえにfixしそうな勢い(ジョジョになんかそんな名言があったような)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>27日 00:06:58</span>
+<span class='slacklog-text'>&amp;gt;  「ブッ殺す」と心の中で思ったならッ!その時スデに行動は終わっているんだッ!</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>27日 00:07:00</span>
+<span class='slacklog-text'>か</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>27日 00:08:21</span>
+<span class='slacklog-text'>&amp;gt;  「直す」と心の中で思ったならッ!その時スデにパッチ作成は終わっているんだッ!</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>27日 00:09:47</span>
+<span class='slacklog-text'>「PRした」なら使ってもいいッ！</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
+<span class='slacklog-name'>presuku</span>
+<span class='slacklog-datetime'>27日 10:23:58</span>
+<span class='slacklog-text'>MS 出身の先輩は WinDbg を使ってたなぁ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>28日 15:38:33</span>
+<span class='slacklog-text'>パッチ番号の 法則が 乱れる！</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>28日 15:39:07</span>
+<span class='slacklog-text'>&lt;https://github.com/vim/vim/commit/495282b6e7e418d072a8ab53c9056b269dc308b7&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>28日 15:39:10</span>
+<span class='slacklog-text'>ぶぉ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>28日 15:39:38</span>
+<span class='slacklog-text'>かぶってたの...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>28日 15:43:35</span>
+<span class='slacklog-text'>コミットメッセージとタグが変になったって言ってた。
+&lt;https://groups.google.com/d/msg/vim_dev/LcPF0m4-JxI/vQE14CELAwAJ&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>28日 15:47:46</span>
+<span class='slacklog-text'>8.2.0463に8.2.0464のメッセージとタグが付いちゃって、本当の8.2.0464にはタグが付いてないのか。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>28日 15:48:37</span>
+<span class='slacklog-text'>タグはまぁ直せるからいいかな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>29日 10:34:17</span>
+<span class='slacklog-text'>タグが直った</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>29日 22:06:54</span>
+<span class='slacklog-text'>前にissue投げたやつ、えらい修正雑だなと思ったら案の定問題起きてるらしい
+&lt;https://github.com/vim/vim/issues/5807#issuecomment-605418494&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>29日 22:07:04</span>
+<span class='slacklog-text'>ほんまに申し訳ない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>30日 00:19:07</span>
+<span class='slacklog-text'>直ったらしい &lt;https://github.com/vim/vim/commit/0fff44152d06e6b662ad4bef172af07a041d2f3f&gt;</span>
+</span>
 {% endraw %}

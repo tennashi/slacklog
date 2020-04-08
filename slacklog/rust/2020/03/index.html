@@ -10,26 +10,96 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>lambdalisue 24日 10:22:11: 前提: rust で書いた CLI アプリケーションのバージョンを git タグから取得したい
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:22:11</span>
+<span class='slacklog-text'>前提: rust で書いた CLI アプリケーションのバージョンを git タグから取得したい
 質問: どうすればよいでしょう？
 
 1. `git_version` みたいなの使ってビルド時に解決し CLI ではそれを使う（`Cargo.toml` の `version` は `0.1.0` とかで固定）
 2. 何かしらのすごい方法で `Cargo.toml` の `version` と Git のタグを同期して `CARGO_PKG_VERSION` とかを CLI で返す
-3. もっと良い方法</pre>
-<pre>lambdalisue 24日 10:25:15: あー別に rust は Cargo 必須というわけではないから `Cargo.toml` の `version` とアプリケーションのバージョンは別か... ってことは 1. が最適解かなぁ....?</pre>
-<pre>lambdalisue 24日 10:27:23: <https://www.reddit.com/r/rust/comments/aa95c5/cargo_package_version_from_git_tag/></pre>
-<pre>h-michael 24日 10:28:22: alacrittyはこうやってました
-<https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29|https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29></pre>
-<pre>lambdalisue 24日 10:30:04: <https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/src/cli.rs#L76></pre>
-<pre>lambdalisue 24日 10:30:09: なるほど...</pre>
-<pre>lambdalisue 24日 10:30:25: <https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/Cargo.toml#L3></pre>
-<pre>lambdalisue 24日 10:31:38: `Cargo.toml` の `version` を手動管理した上で `GIT_HASH` があれば、そちらも表示する　的な運用ですね</pre>
-<pre>lambdalisue 24日 10:32:08: <https://github.com/alacritty/alacritty/commit/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e>
+3. もっと良い方法</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:25:15</span>
+<span class='slacklog-text'>あー別に rust は Cargo 必須というわけではないから `Cargo.toml` の `version` とアプリケーションのバージョンは別か... ってことは 1. が最適解かなぁ....?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:27:23</span>
+<span class='slacklog-text'>&lt;https://www.reddit.com/r/rust/comments/aa95c5/cargo_package_version_from_git_tag/&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/c83c988365a0fabc4c83cdb600268d59.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-48.png'>
+<span class='slacklog-name'>h-michael</span>
+<span class='slacklog-datetime'>24日 10:28:22</span>
+<span class='slacklog-text'>alacrittyはこうやってました
+&lt;https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29|https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:30:04</span>
+<span class='slacklog-text'>&lt;https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/src/cli.rs#L76&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:30:09</span>
+<span class='slacklog-text'>なるほど...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:30:25</span>
+<span class='slacklog-text'>&lt;https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/Cargo.toml#L3&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:31:38</span>
+<span class='slacklog-text'>`Cargo.toml` の `version` を手動管理した上で `GIT_HASH` があれば、そちらも表示する　的な運用ですね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:32:08</span>
+<span class='slacklog-text'>&lt;https://github.com/alacritty/alacritty/commit/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e&gt;
 
-できれば "Bump version" 的なコミットをしたくないw</pre>
-<pre>h-michael 24日 10:33:13: crates.ioの登録があるから仕方ないですかねー</pre>
-<pre>lambdalisue 24日 10:33:50: cargo release みたいなコマンドでラップするしかないか...</pre>
-<pre>lambdalisue 24日 10:35:08: やはり CLI のバージョンは Cargo パッケージのバージョンとは異なる、という立ち位置で考えるのが良さそうですね</pre>
-<pre>lambdalisue 24日 10:35:25: <http://crates.io|crates.io> に登録するわけではないし..</pre>
-<pre>lambdalisue 24日 10:41:58: ひとまず `Cargo.toml` の `version` は `0.1.0` とかに固定して、別枠で <https://docs.rs/git-version/0.3.4/git_version/> とか使ってアプリケーションバージョンを定義することにしました :bow:</pre>
+できれば &#34;Bump version&#34; 的なコミットをしたくないw</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/c83c988365a0fabc4c83cdb600268d59.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-48.png'>
+<span class='slacklog-name'>h-michael</span>
+<span class='slacklog-datetime'>24日 10:33:13</span>
+<span class='slacklog-text'>crates.ioの登録があるから仕方ないですかねー</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:33:50</span>
+<span class='slacklog-text'>cargo release みたいなコマンドでラップするしかないか...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:35:08</span>
+<span class='slacklog-text'>やはり CLI のバージョンは Cargo パッケージのバージョンとは異なる、という立ち位置で考えるのが良さそうですね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:35:25</span>
+<span class='slacklog-text'>&lt;http://crates.io|crates.io&gt; に登録するわけではないし..</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>24日 10:41:58</span>
+<span class='slacklog-text'>ひとまず `Cargo.toml` の `version` は `0.1.0` とかに固定して、別枠で &lt;https://docs.rs/git-version/0.3.4/git_version/&gt; とか使ってアプリケーションバージョンを定義することにしました :bow:</span>
+</span>
 {% endraw %}

@@ -10,170 +10,684 @@ title: vim-jp.slack.com log - &#35docker - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>raa0121 16日 12:10:15: Dockerfile 内で、
-```RUN mkdir /usr/src/app &amp;&amp; \
-    apk update &amp;&amp; \
-    apk add --virtual .build build-base openssl-dev curl &amp;&amp; \
-    curl -LO <https://github.com/mattn/goreman/releases/download/v0.3.4/goreman_linux_amd64.zip> &amp;&amp; \
-    unzip -d /usr/local/bin goreman_linux_amd64.zip &amp;&amp; \
-    rm goreman_linux_amd64.zip &amp;&amp; \
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>16日 12:10:15</span>
+<span class='slacklog-text'>Dockerfile 内で、
+```RUN mkdir /usr/src/app &amp;amp;&amp;amp; \
+    apk update &amp;amp;&amp;amp; \
+    apk add --virtual .build build-base openssl-dev curl &amp;amp;&amp;amp; \
+    curl -LO &lt;https://github.com/mattn/goreman/releases/download/v0.3.4/goreman_linux_amd64.zip&gt; &amp;amp;&amp;amp; \
+    unzip -d /usr/local/bin goreman_linux_amd64.zip &amp;amp;&amp;amp; \
+    rm goreman_linux_amd64.zip &amp;amp;&amp;amp; \
     chmod 755 /usr/local/bin/goreman```
-しても、 `sh: goreman: not found` って言われるんですが、なにか知見をお持ちの方いらっしゃいませんか？</pre>
-<pre>raa0121 16日 12:12:57: あ、ローカルと docker で ldd の結果が違う…
+しても、 `sh: goreman: not found` って言われるんですが、なにか知見をお持ちの方いらっしゃいませんか？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>16日 12:12:57</span>
+<span class='slacklog-text'>あ、ローカルと docker で ldd の結果が違う…
 ```$ ldd goreman
         linux-vdso.so.1 (0x00007ffdda76f000)
-        libpthread.so.0 =&gt; /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f5fedb23000)
-        libc.so.6 =&gt; /lib/x86_64-linux-gnu/libc.so.6 (0x00007f5fed732000)
+        libpthread.so.0 =&amp;gt; /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f5fedb23000)
+        libc.so.6 =&amp;gt; /lib/x86_64-linux-gnu/libc.so.6 (0x00007f5fed732000)
         /lib64/ld-linux-x86-64.so.2 (0x00007f5fedd42000)```
 ```# ldd /usr/local/bin/goreman
         /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)
-        libpthread.so.0 =&gt; /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)
-        libc.so.6 =&gt; /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)```</pre>
-<pre>kuu 16日 12:13:16: alpineですよね、あれlibcが違うんで</pre>
-<pre>lambdalisue 16日 12:13:23: aline って musl jya</pre>
-<pre>lambdalisue 16日 12:14:10: alpine ベースの golang でビルドして `COPY --from=builder` するのがよさそう</pre>
-<pre>raa0121 16日 12:14:41: んー そこまでするんだったら、foreman そのまま使ってもいいかも…？</pre>
-<pre>lambdalisue 16日 12:15:18: ファイルサイズを気にしているのではなく？</pre>
-<pre>raa0121 16日 12:15:33: Ruby なプロジェクトなので、内部に、ruby があるんですよね</pre>
-<pre>lambdalisue 16日 12:15:42: ファイルサイズ気にしないなら alpine じゃなくて ubuntu 使えば良いのでは感</pre>
-<pre>lambdalisue 16日 12:15:55: (ubuntu もけっこうちいさいし)</pre>
-<pre>lambdalisue 16日 12:15:59: あーなるほど</pre>
-<pre>lambdalisue 16日 12:16:12: ruby あんなら foreman でよいのではw</pre>
-<pre>lambdalisue 16日 12:17:18: 個人的には alpine で消耗するくらいならベース ubuntu にしちゃえばいいじゃん派</pre>
-<pre>kuu 16日 12:18:04: alpineで遊んでた時にそのへんの知見それなりに得たけどそんなに役に立たない</pre>
-<pre>lambdalisue 16日 12:18:07: Ubuntu 新しめのだと 30 MB 切るし、十分じゃね感ある</pre>
-<pre>lambdalisue 16日 12:18:33: Windows container 使ってる側からすると Linux 全部誤差</pre>
-<pre>raa0121 16日 12:18:42: 手が勝手に、 `FROM hoge-x.x-alpine` って打ってしまって…</pre>
-<pre>lambdalisue 16日 12:18:54: www</pre>
-<pre>thinca 16日 12:19:47: thinca/vim は alpine で 14MB</pre>
-<pre>lambdalisue 16日 12:19:55: つおい</pre>
-<pre>mattn 16日 12:20:50: alpine 好きー、あるぱぃんすきー、あるぺんすきー、アルペンスキー！</pre>
-<pre>lambdalisue 16日 12:21:07: Windowsバイナリコンパイルようイメージが 15 GB ある</pre>
-<pre>lambdalisue 16日 12:21:24: なので単位が MB の時点で僕にっては誤差</pre>
-<pre> 16日 12:22:03: docker images の出力（一部）</pre>
-<pre>mattn 16日 12:22:14: Windows Container、問題ばっかりでて辛そう。</pre>
-<pre>lambdalisue 16日 12:22:25: 実際無茶苦茶辛いです</pre>
-<pre>raa0121 16日 12:23:19: さっき、docker image prune -a したら、40.2GB 空いたんだど、その一覧見ると、そこまで感ある</pre>
-<pre>johejo 16日 12:23:45: ubuntuはデフォルトだとmirrorが遅いからalpineが面倒なときはdebian slimをよく使ってます</pre>
-<pre>mattn 16日 12:23:49: 何 TB のディスク使ってるんだろう。</pre>
-<pre>lambdalisue 16日 12:23:49: （上記はダブってるので全部の足し算ではないですよー）</pre>
-<pre>tsuyoshi_cho 16日 12:24:03: 現状、できあいのツールをホストするコンテナとしてしか使い~憎い~難いですねえ...</pre>
-<pre>lambdalisue 16日 12:24:32: Windows 版のバイナリ作るのに便利ではあるんですよ...</pre>
-<pre>tsuyoshi_cho 16日 12:24:52: まあ、がんばる価値はあるとは思います..</pre>
-<pre>kuu 16日 12:25:16: 自宅CIみたいな</pre>
-<pre>raa0121 16日 12:25:18: ライセンスってどうなんです？</pre>
-<pre>lambdalisue 16日 12:26:13: <https://docs.microsoft.com/ja-jp/virtualization/windowscontainers/about/faq#how-are-containers-licensed-is-there-a-limit-to-the-number-of-containers-i-can-run|ライセンス ></pre>
-<pre>raa0121 16日 12:26:57: 強い</pre>
-<pre>mattn 16日 12:27:19: あくまでコンテナの話。</pre>
-<pre>mattn 16日 12:27:49: VPS とかで寝かせるとそれはそれで掛かる。</pre>
-<pre>johejo 16日 12:28:42: kubernetesもいちおうwindowsコンテナサポートしてるらしい。どれくらい使われているかは知らない...</pre>
-<pre>lambdalisue 16日 12:29:17: Windows コンテナ実行するのに Windows が必要なのが面倒なんですよねぇ。まぁ当たり前っちゃ当たり前ですが</pre>
-<pre>mattn 16日 12:32:32: Windows、クラウドで寝かせててもライセンス料かかるのが微妙にお高くなってる程度に使ってます。</pre>
-<pre>koron 16日 12:48:21: `RUN apk add --no-cache ca-certificates libc6-compat` goでビルドしたバイナリをalpineで使うときのおまじない</pre>
-<pre>lambdalisue 16日 12:49:37: `libc6-compat` なんて便利なものがあるのかー</pre>
-<pre>koron 16日 12:50:12: これやるとcircleci/goでビルドしたバイナリがalpineで動く</pre>
-<pre>johejo 16日 13:05:58: CGO_ENABLED=0 でpure Go実装を使うのとlibcのgetaddrinfo(3)をつかうのってどっちがいいんだろうか...</pre>
-<pre>ycino 16日 13:29:58: alpineのRuby、バグが残ってそうなんでUbuntuの方がいい気がします</pre>
-<pre>ycino 16日 13:30:26: 解決してないんじゃないかなぁこれ
-<https://bugs.ruby-lang.org/issues/14387></pre>
-<pre>tennashi 16日 13:33:50: <https://www.slideshare.net/yaegashi/golang-binary-hacks-150386886>
-これと似たような話っぽい...?</pre>
-<pre>kuu 16日 13:37:03: 話全然関係ないけど一瞬ヤエガッシーさんかと思った</pre>
-<pre>k-takata 16日 14:47:42: へえ、WindowsのPE形式だとデフォルトのスタックサイズなどを設定できるけど、ELF形式にも同じような機能あるんだ。</pre>
-<pre>tyru 21日 01:36:24: 自宅サーバを docker で管理したくて、ノードは2台でこのコンテナはこっち（ノードA）、このコンテンツはこっち（ノードB）みたいに設定や CLI から指定したいです。
-こういうのやるには k8s とかがいいんでしょうか</pre>
-<pre>johejo 21日 01:45:45: その用途だとまさにk8sですね 
+        libpthread.so.0 =&amp;gt; /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)
+        libc.so.6 =&amp;gt; /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>16日 12:13:16</span>
+<span class='slacklog-text'>alpineですよね、あれlibcが違うんで</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:13:23</span>
+<span class='slacklog-text'>aline って musl jya</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:14:10</span>
+<span class='slacklog-text'>alpine ベースの golang でビルドして `COPY --from=builder` するのがよさそう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>16日 12:14:41</span>
+<span class='slacklog-text'>んー そこまでするんだったら、foreman そのまま使ってもいいかも…？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:15:18</span>
+<span class='slacklog-text'>ファイルサイズを気にしているのではなく？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>16日 12:15:33</span>
+<span class='slacklog-text'>Ruby なプロジェクトなので、内部に、ruby があるんですよね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:15:42</span>
+<span class='slacklog-text'>ファイルサイズ気にしないなら alpine じゃなくて ubuntu 使えば良いのでは感</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:15:55</span>
+<span class='slacklog-text'>(ubuntu もけっこうちいさいし)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:15:59</span>
+<span class='slacklog-text'>あーなるほど</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:16:12</span>
+<span class='slacklog-text'>ruby あんなら foreman でよいのではw</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:17:18</span>
+<span class='slacklog-text'>個人的には alpine で消耗するくらいならベース ubuntu にしちゃえばいいじゃん派</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>16日 12:18:04</span>
+<span class='slacklog-text'>alpineで遊んでた時にそのへんの知見それなりに得たけどそんなに役に立たない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:18:07</span>
+<span class='slacklog-text'>Ubuntu 新しめのだと 30 MB 切るし、十分じゃね感ある</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:18:33</span>
+<span class='slacklog-text'>Windows container 使ってる側からすると Linux 全部誤差</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>16日 12:18:42</span>
+<span class='slacklog-text'>手が勝手に、 `FROM hoge-x.x-alpine` って打ってしまって…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:18:54</span>
+<span class='slacklog-text'>www</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>16日 12:19:47</span>
+<span class='slacklog-text'>thinca/vim は alpine で 14MB</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:19:55</span>
+<span class='slacklog-text'>つおい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>16日 12:20:50</span>
+<span class='slacklog-text'>alpine 好きー、あるぱぃんすきー、あるぺんすきー、アルペンスキー！</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:21:07</span>
+<span class='slacklog-text'>Windowsバイナリコンパイルようイメージが 15 GB ある</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:21:24</span>
+<span class='slacklog-text'>なので単位が MB の時点で僕にっては誤差</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>16日 12:22:03</span>
+<span class='slacklog-text'>docker images の出力（一部）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>16日 12:22:14</span>
+<span class='slacklog-text'>Windows Container、問題ばっかりでて辛そう。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:22:25</span>
+<span class='slacklog-text'>実際無茶苦茶辛いです</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>16日 12:23:19</span>
+<span class='slacklog-text'>さっき、docker image prune -a したら、40.2GB 空いたんだど、その一覧見ると、そこまで感ある</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>16日 12:23:45</span>
+<span class='slacklog-text'>ubuntuはデフォルトだとmirrorが遅いからalpineが面倒なときはdebian slimをよく使ってます</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>16日 12:23:49</span>
+<span class='slacklog-text'>何 TB のディスク使ってるんだろう。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:23:49</span>
+<span class='slacklog-text'>（上記はダブってるので全部の足し算ではないですよー）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>16日 12:24:03</span>
+<span class='slacklog-text'>現状、できあいのツールをホストするコンテナとしてしか使い~憎い~難いですねえ...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:24:32</span>
+<span class='slacklog-text'>Windows 版のバイナリ作るのに便利ではあるんですよ...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>16日 12:24:52</span>
+<span class='slacklog-text'>まあ、がんばる価値はあるとは思います..</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>16日 12:25:16</span>
+<span class='slacklog-text'>自宅CIみたいな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>16日 12:25:18</span>
+<span class='slacklog-text'>ライセンスってどうなんです？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:26:13</span>
+<span class='slacklog-text'>&lt;https://docs.microsoft.com/ja-jp/virtualization/windowscontainers/about/faq#how-are-containers-licensed-is-there-a-limit-to-the-number-of-containers-i-can-run|ライセンス &gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>16日 12:26:57</span>
+<span class='slacklog-text'>強い</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>16日 12:27:19</span>
+<span class='slacklog-text'>あくまでコンテナの話。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>16日 12:27:49</span>
+<span class='slacklog-text'>VPS とかで寝かせるとそれはそれで掛かる。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>16日 12:28:42</span>
+<span class='slacklog-text'>kubernetesもいちおうwindowsコンテナサポートしてるらしい。どれくらい使われているかは知らない...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:29:17</span>
+<span class='slacklog-text'>Windows コンテナ実行するのに Windows が必要なのが面倒なんですよねぇ。まぁ当たり前っちゃ当たり前ですが</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>16日 12:32:32</span>
+<span class='slacklog-text'>Windows、クラウドで寝かせててもライセンス料かかるのが微妙にお高くなってる程度に使ってます。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>16日 12:48:21</span>
+<span class='slacklog-text'>`RUN apk add --no-cache ca-certificates libc6-compat` goでビルドしたバイナリをalpineで使うときのおまじない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
+<span class='slacklog-name'>lambdalisue</span>
+<span class='slacklog-datetime'>16日 12:49:37</span>
+<span class='slacklog-text'>`libc6-compat` なんて便利なものがあるのかー</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>16日 12:50:12</span>
+<span class='slacklog-text'>これやるとcircleci/goでビルドしたバイナリがalpineで動く</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>16日 13:05:58</span>
+<span class='slacklog-text'>CGO_ENABLED=0 でpure Go実装を使うのとlibcのgetaddrinfo(3)をつかうのってどっちがいいんだろうか...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+<span class='slacklog-name'>ycino</span>
+<span class='slacklog-datetime'>16日 13:29:58</span>
+<span class='slacklog-text'>alpineのRuby、バグが残ってそうなんでUbuntuの方がいい気がします</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+<span class='slacklog-name'>ycino</span>
+<span class='slacklog-datetime'>16日 13:30:26</span>
+<span class='slacklog-text'>解決してないんじゃないかなぁこれ
+&lt;https://bugs.ruby-lang.org/issues/14387&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
+<span class='slacklog-name'>tennashi</span>
+<span class='slacklog-datetime'>16日 13:33:50</span>
+<span class='slacklog-text'>&lt;https://www.slideshare.net/yaegashi/golang-binary-hacks-150386886&gt;
+これと似たような話っぽい...?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>16日 13:37:03</span>
+<span class='slacklog-text'>話全然関係ないけど一瞬ヤエガッシーさんかと思った</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>16日 14:47:42</span>
+<span class='slacklog-text'>へえ、WindowsのPE形式だとデフォルトのスタックサイズなどを設定できるけど、ELF形式にも同じような機能あるんだ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 01:36:24</span>
+<span class='slacklog-text'>自宅サーバを docker で管理したくて、ノードは2台でこのコンテナはこっち（ノードA）、このコンテンツはこっち（ノードB）みたいに設定や CLI から指定したいです。
+こういうのやるには k8s とかがいいんでしょうか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>21日 01:45:45</span>
+<span class='slacklog-text'>その用途だとまさにk8sですね 
 nodeSelectorとかAffinityで特定のノードにpodを寄せられますね。
-ただステートフルな要素（ストレージとか）が絡んでくると色々めんどくさいとは思います。</pre>
-<pre>tyru 21日 01:50:17: なるほど
-ストレージは RAID 付きの HDD ケース（裸族の～みたいなやつとか）につないでファイルサーバのデータもコンテナのデータもなんもかんもそこにぶっこもうと思ってます（自宅サーバで mdadm とか LVM とかもう疲れちゃった…）</pre>
-<pre>tyru 21日 01:51:57: 2台体制で冗長化してサービスごとに分けようかと思ってます… いやユーザ数=1なんだから負荷考えなくてよくて夜中にまとめてバックアップとかでもいいんだよな…うーん</pre>
-<pre>johejo 21日 01:53:42: 個人的にはよっぽどのこと（GPU付きノードに載せないといけないとか）がない限り特定のノードに寄せずにk8sのスケジューラに全部おまかせでいいんじゃないかと思ってます。</pre>
-<pre>johejo 21日 01:57:04: （自宅サーバにk8sは明らかにオーバースペックなので学習/管理コストのほうが上回るとは思います...）</pre>
-<pre>tyru 21日 01:57:41: （正直学習も兼ねてます…）</pre>
-<pre>johejo 21日 02:00:15: いきなり自前クラスタは構築から難易度高いのでマネージドとかkind, minikubeで慣れてからが良いと思います。マネージドも面倒みるの結構大変...</pre>
-<pre>tyru 21日 02:01:38: おお、見てみます。正直学習も兼ねてるとはいえ自宅サーバ復活の目的の方が大きいので…</pre>
-<pre>tyru 21日 02:02:04: スケジューラって無効にして手動でノード指定もできたりします？</pre>
-<pre>johejo 21日 02:04:11: 無効はできるのか... ちょっとわかりません... このラベルのついたnodeに置いてくれってスケジューラにお願いする感じです</pre>
-<pre>tyru 21日 02:05:53: ふむふむ
-2台に active, standby 割り当てて全部 active に置けばよさそう？</pre>
-<pre>tyru 21日 02:07:31: もうなんかディストリビューションというかベアメタルというか、インストールしさえすればシュッと k8s 環境が手に入るならそれでもいい（学習も兼ねている、とは…）</pre>
-<pre>tyru 21日 02:10:51: いや流石にハマった時つらいか…</pre>
-<pre>tyru 21日 02:19:15: ここらへん本当覚えることがかなり多いなー
-明日また調べてみます。ありがとうございました</pre>
-<pre>tennashi 21日 03:15:17: docker swarm でもよさそう</pre>
-<pre>tyru 21日 04:01:56: なんか全てが k8s になってってる印象なんですがどうなんでしょう…</pre>
-<pre>koron 21日 10:30:09: nomad 使ってるところもありますお</pre>
-<pre>koron 21日 10:30:34: <https://nomadproject.io/></pre>
-<pre>ycino 21日 14:55:23: これちょうどよさそう？ <https://k8slens.dev/></pre>
-<pre>johejo 21日 15:51:14: gui版k9sか <https://github.com/derailed/k9s|https://github.com/derailed/k9s></pre>
-<pre>tyru 21日 16:07:04: おー全部知らなかった… それぞれ Web UI / GUI / TUI ついてるのか
-調べてみます</pre>
-<pre>vikke 23日 09:18:03: ここって、dockerに関する質問しても良いのかしら。それともvimと絡んでないと駄目？</pre>
-<pre>mattn 23日 09:21:44: 絡んでなくても全然かまいません。</pre>
-<pre>vikke 23日 09:31:59: ```FROM php:7.2-fpm-alpine
+ただステートフルな要素（ストレージとか）が絡んでくると色々めんどくさいとは思います。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 01:50:17</span>
+<span class='slacklog-text'>なるほど
+ストレージは RAID 付きの HDD ケース（裸族の～みたいなやつとか）につないでファイルサーバのデータもコンテナのデータもなんもかんもそこにぶっこもうと思ってます（自宅サーバで mdadm とか LVM とかもう疲れちゃった…）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 01:51:57</span>
+<span class='slacklog-text'>2台体制で冗長化してサービスごとに分けようかと思ってます… いやユーザ数=1なんだから負荷考えなくてよくて夜中にまとめてバックアップとかでもいいんだよな…うーん</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>21日 01:53:42</span>
+<span class='slacklog-text'>個人的にはよっぽどのこと（GPU付きノードに載せないといけないとか）がない限り特定のノードに寄せずにk8sのスケジューラに全部おまかせでいいんじゃないかと思ってます。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>21日 01:57:04</span>
+<span class='slacklog-text'>（自宅サーバにk8sは明らかにオーバースペックなので学習/管理コストのほうが上回るとは思います...）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 01:57:41</span>
+<span class='slacklog-text'>（正直学習も兼ねてます…）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>21日 02:00:15</span>
+<span class='slacklog-text'>いきなり自前クラスタは構築から難易度高いのでマネージドとかkind, minikubeで慣れてからが良いと思います。マネージドも面倒みるの結構大変...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 02:01:38</span>
+<span class='slacklog-text'>おお、見てみます。正直学習も兼ねてるとはいえ自宅サーバ復活の目的の方が大きいので…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 02:02:04</span>
+<span class='slacklog-text'>スケジューラって無効にして手動でノード指定もできたりします？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>21日 02:04:11</span>
+<span class='slacklog-text'>無効はできるのか... ちょっとわかりません... このラベルのついたnodeに置いてくれってスケジューラにお願いする感じです</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 02:05:53</span>
+<span class='slacklog-text'>ふむふむ
+2台に active, standby 割り当てて全部 active に置けばよさそう？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 02:07:31</span>
+<span class='slacklog-text'>もうなんかディストリビューションというかベアメタルというか、インストールしさえすればシュッと k8s 環境が手に入るならそれでもいい（学習も兼ねている、とは…）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 02:10:51</span>
+<span class='slacklog-text'>いや流石にハマった時つらいか…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 02:19:15</span>
+<span class='slacklog-text'>ここらへん本当覚えることがかなり多いなー
+明日また調べてみます。ありがとうございました</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
+<span class='slacklog-name'>tennashi</span>
+<span class='slacklog-datetime'>21日 03:15:17</span>
+<span class='slacklog-text'>docker swarm でもよさそう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 04:01:56</span>
+<span class='slacklog-text'>なんか全てが k8s になってってる印象なんですがどうなんでしょう…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>21日 10:30:09</span>
+<span class='slacklog-text'>nomad 使ってるところもありますお</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>21日 10:30:34</span>
+<span class='slacklog-text'>&lt;https://nomadproject.io/&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+<span class='slacklog-name'>ycino</span>
+<span class='slacklog-datetime'>21日 14:55:23</span>
+<span class='slacklog-text'>これちょうどよさそう？ &lt;https://k8slens.dev/&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>21日 15:51:14</span>
+<span class='slacklog-text'>gui版k9sか &lt;https://github.com/derailed/k9s|https://github.com/derailed/k9s&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>21日 16:07:04</span>
+<span class='slacklog-text'>おー全部知らなかった… それぞれ Web UI / GUI / TUI ついてるのか
+調べてみます</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 09:18:03</span>
+<span class='slacklog-text'>ここって、dockerに関する質問しても良いのかしら。それともvimと絡んでないと駄目？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>23日 09:21:44</span>
+<span class='slacklog-text'>絡んでなくても全然かまいません。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 09:31:59</span>
+<span class='slacklog-text'>```FROM php:7.2-fpm-alpine
 
 RUN apk --update add --no-cache build-base autoconf freetype-dev libpng-dev libjpeg-turbo-dev
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-    &amp;&amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql```
+    &amp;amp;&amp;amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql```
 こんなDockerfileを、macでbuildすると成功して、ArchLinuxでbuildすると、
-```rm: can't remove '/usr/src/php/sapi/phpdbg/tests': Directory not empty
-rm: can't remove '/usr/src/php/ext/standard/tests/network': Directory not empty
-rm: can't remove '/usr/src/php/ext/standard/tests/url': Directory not empty
-rm: can't remove '/usr/src/php/ext/mysqlnd': Directory not empty
-rm: can't remove '/usr/src/php/ext/phar/tests/tar/files': Directory not empty
-rm: can't remove '/usr/src/php/ext/phar/tests/cache_list/files': Directory not empty
-rm: can't remove '/usr/src/php/ext/mbstring/oniguruma/src': Directory not empty
-rm: can't remove '/usr/src/php/ext/hash/tests': Directory not empty
-rm: can't remove '/usr/src/php/ext/gmp/tests': Directory not empty
-rm: can't remove '/usr/src/php/ext/xsl/tests': Directory not empty
-rm: can't remove '/usr/src/php/ext/gd/libgd': Directory not empty
-rm: can't remove '/usr/src/php/ext/soap/tests/soap12': Directory not empty
-rm: can't remove '/usr/src/php/ext/soap/tests/interop/Round3/GroupD': Directory not empty
-rm: can't remove '/usr/src/php/Zend/tests/return_types': Directory not empty
-rm: can't remove '/usr/src/php/tests/output': Directory not empty```
+```rm: can&#39;t remove &#39;/usr/src/php/sapi/phpdbg/tests&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/standard/tests/network&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/standard/tests/url&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/mysqlnd&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/phar/tests/tar/files&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/phar/tests/cache_list/files&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/mbstring/oniguruma/src&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/hash/tests&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/gmp/tests&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/xsl/tests&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/gd/libgd&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/soap/tests/soap12&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/soap/tests/interop/Round3/GroupD&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/Zend/tests/return_types&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/tests/output&#39;: Directory not empty```
 と怒られます。
 実際、macでは、/usr/src/php.tar.xzと、php.tar.xz.ascしか無いですが、Archの方は、php.tar.xzが展開さて、php directoryが存在している状態になってます。
 これってどういう現象でしょうか。というか、`docker-php-ext-configure`でphp.tar.xzが展開されているのはわかったのですが、どう対処したら良いのかわかりません。
-どなたか智恵を。</pre>
-<pre> 23日 10:08:09: Ubuntuですが、そのまま行けましたね</pre>
-<pre>ゴリラ 23日 10:09:20: Dockerの環境の差分があるのかなぁ</pre>
-<pre>ゴリラ 23日 10:10:30: ArchのDockerのバージョンはMacと同じですか？</pre>
-<pre>vikke 23日 10:11:14: 一緒ですね。19.03.8です。</pre>
-<pre>vikke 23日 10:11:22: なんだろう。</pre>
-<pre>tsuyoshi_cho 23日 10:12:31: 冪等性を考えると、phpのセットアップをホストの機能に依存しないようにする(マルチステージビルドでPHP環境作るものを用意して、そっからimport的な)
-といいのではないかという気がします</pre>
-<pre>ゴリラ 23日 10:13:17: あれ、ホスト依存しているんですか？</pre>
-<pre>ゴリラ 23日 10:13:36: Dockerfileの中身を見ているけど、依存していないように見える</pre>
-<pre>tsuyoshi_cho 23日 10:13:56: あ、依存ではない...か? でも docker-php-ext-configureって最初から入ってる?</pre>
-<pre>vikke 23日 10:14:19: alpineなので最初から入ってます。</pre>
-<pre>ゴリラ 23日 10:14:20: ```php:7.2-fpm-alpine```
-に入っているんじゃないかなと</pre>
-<pre>tsuyoshi_cho 23日 10:14:41: あー、すんません検討違いでした、無視しておいてください</pre>
-<pre>ゴリラ 23日 10:14:45: なので、そもそもビルドで挙動が変わるのは変な感じはありますね</pre>
-<pre>0Δ 23日 10:14:58: バグの予感</pre>
-<pre>vikke 23日 10:15:13: docker-php-ext-configure のバグ?</pre>
-<pre>tsuyoshi_cho 23日 10:15:23: ```/usr/include/ ```
-がホスト側の話かと思ってしまった...</pre>
-<pre>vikke 23日 10:15:41: 全部中のログですね。</pre>
-<pre>tsuyoshi_cho 23日 10:16:04: そりゃそうですよね、謎だなあ</pre>
-<pre>ゴリラ 23日 10:16:06: docker-php-ext-configure の 中身を除くと良いかもですね
-ディレクトリが展開される契機はなにか、を知れば差分をしれそう</pre>
-<pre>ゴリラ 23日 10:16:45: もしくはMacとArchのビルドログを比較して、どこで差分出ているのか</pre>
-<pre>ゴリラ 23日 10:16:52: を見るのが早いかも</pre>
-<pre>ゴリラ 23日 10:17:33: 何かしらの判定があってディレクトリ展開しているなら、その判定条件が差分なはずなので、
-その判定条件を調べるって感じですかね</pre>
-<pre>vikke 23日 10:18:17: ただ、中から、外って見えないですよね。外が何かの判定って出来るのかな。</pre>
-<pre>vikke 23日 10:18:37: とりあえずdocker-php-ext-configure追ってみます。</pre>
-<pre>tsuyoshi_cho 23日 10:19:16: (RUNしかしてませんしねえ ADD/COPYもないので、初回のルート取り込みくらいだし、それも同じはず)</pre>
-<pre>vikke 23日 10:20:16: 夢であってほしい。</pre>
-<pre>vikke 23日 10:26:37: ```Installing shared extensions:     /usr/local/lib/php/extensions/no-debug-non-zts-20170718/
+どなたか智恵を。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>23日 10:08:09</span>
+<span class='slacklog-text'>Ubuntuですが、そのまま行けましたね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:09:20</span>
+<span class='slacklog-text'>Dockerの環境の差分があるのかなぁ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:10:30</span>
+<span class='slacklog-text'>ArchのDockerのバージョンはMacと同じですか？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:11:14</span>
+<span class='slacklog-text'>一緒ですね。19.03.8です。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:11:22</span>
+<span class='slacklog-text'>なんだろう。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:12:31</span>
+<span class='slacklog-text'>冪等性を考えると、phpのセットアップをホストの機能に依存しないようにする(マルチステージビルドでPHP環境作るものを用意して、そっからimport的な)
+といいのではないかという気がします</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:13:17</span>
+<span class='slacklog-text'>あれ、ホスト依存しているんですか？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:13:36</span>
+<span class='slacklog-text'>Dockerfileの中身を見ているけど、依存していないように見える</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:13:56</span>
+<span class='slacklog-text'>あ、依存ではない...か? でも docker-php-ext-configureって最初から入ってる?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:14:19</span>
+<span class='slacklog-text'>alpineなので最初から入ってます。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:14:20</span>
+<span class='slacklog-text'>```php:7.2-fpm-alpine```
+に入っているんじゃないかなと</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:14:41</span>
+<span class='slacklog-text'>あー、すんません検討違いでした、無視しておいてください</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:14:45</span>
+<span class='slacklog-text'>なので、そもそもビルドで挙動が変わるのは変な感じはありますね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 10:14:58</span>
+<span class='slacklog-text'>バグの予感</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:15:13</span>
+<span class='slacklog-text'>docker-php-ext-configure のバグ?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:15:23</span>
+<span class='slacklog-text'>```/usr/include/ ```
+がホスト側の話かと思ってしまった...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:15:41</span>
+<span class='slacklog-text'>全部中のログですね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:16:04</span>
+<span class='slacklog-text'>そりゃそうですよね、謎だなあ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:16:06</span>
+<span class='slacklog-text'>docker-php-ext-configure の 中身を除くと良いかもですね
+ディレクトリが展開される契機はなにか、を知れば差分をしれそう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:16:45</span>
+<span class='slacklog-text'>もしくはMacとArchのビルドログを比較して、どこで差分出ているのか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:16:52</span>
+<span class='slacklog-text'>を見るのが早いかも</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:17:33</span>
+<span class='slacklog-text'>何かしらの判定があってディレクトリ展開しているなら、その判定条件が差分なはずなので、
+その判定条件を調べるって感じですかね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:18:17</span>
+<span class='slacklog-text'>ただ、中から、外って見えないですよね。外が何かの判定って出来るのかな。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:18:37</span>
+<span class='slacklog-text'>とりあえずdocker-php-ext-configure追ってみます。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:19:16</span>
+<span class='slacklog-text'>(RUNしかしてませんしねえ ADD/COPYもないので、初回のルート取り込みくらいだし、それも同じはず)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:20:16</span>
+<span class='slacklog-text'>夢であってほしい。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:26:37</span>
+<span class='slacklog-text'>```Installing shared extensions:     /usr/local/lib/php/extensions/no-debug-non-zts-20170718/
 find . -name \*.gcno -o -name \*.gcda | xargs rm -f
 find . -name \*.lo -o -name \*.o | xargs rm -f
 find . -name \*.la -o -name \*.a | xargs rm -f
 find . -name \*.so | xargs rm -f
 find . -name .libs -a -type d|xargs rm -rf
-rm -f <http://libphp.la|libphp.la>       modules/* libs/*
+rm -f &lt;http://libphp.la|libphp.la&gt;       modules/* libs/*
 WARNING: Ignoring APKINDEX.70f61090.tar.gz: No such file or directory
 WARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory
 (1/4) Purging .phpize-deps-configure (20200323.012316)
@@ -183,17 +697,22 @@ WARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory
 Executing busybox-1.31.1-r9.trigger
 OK: 226 MiB in 60 packages
 Removing intermediate container c1f923c5bf9c
- ---&gt; 4df79b02e0ff
+ ---&amp;gt; 4df79b02e0ff
 Successfully built 4df79b02e0ff
 Successfully tagged lastest:latest```
-こっちmacのログ.</pre>
-<pre>vikke 23日 10:27:33: ```Installing shared extensions:     /usr/local/lib/php/extensions/no-debug-non-zts-20170718/
+こっちmacのログ.</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:27:33</span>
+<span class='slacklog-text'>```Installing shared extensions:     /usr/local/lib/php/extensions/no-debug-non-zts-20170718/
 find . -name \*.gcno -o -name \*.gcda | xargs rm -f
 find . -name \*.lo -o -name \*.o | xargs rm -f
 find . -name \*.la -o -name \*.a | xargs rm -f
 find . -name \*.so | xargs rm -f
 find . -name .libs -a -type d|xargs rm -rf
-rm -f <http://libphp.la|libphp.la>       modules/* libs/*
+rm -f &lt;http://libphp.la|libphp.la&gt;       modules/* libs/*
 WARNING: Ignoring APKINDEX.70f61090.tar.gz: No such file or directory
 WARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory
 (1/4) Purging .phpize-deps-configure (20200323.012116)
@@ -202,69 +721,294 @@ WARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory
 (4/4) Purging re2c (1.3-r0)
 Executing busybox-1.31.1-r9.trigger
 OK: 226 MiB in 60 packages
-rm: can't remove '/usr/src/php/sapi/phpdbg/tests': Directory not empty
-rm: can't remove '/usr/src/php/ext/standard/tests/network': Directory not empty
-rm: can't remove '/usr/src/php/ext/standard/tests/url': Directory not empty
-rm: can't remove '/usr/src/php/ext/mysqlnd': Directory not empty
-rm: can't remove '/usr/src/php/ext/phar/tests/tar/files': Directory not empty
-rm: can't remove '/usr/src/php/ext/phar/tests/cache_list/files': Directory not empty
-rm: can't remove '/usr/src/php/ext/mbstring/oniguruma/src': Directory not empty
-rm: can't remove '/usr/src/php/ext/hash/tests': Directory not empty
-rm: can't remove '/usr/src/php/ext/gmp/tests': Directory not empty
-rm: can't remove '/usr/src/php/ext/xsl/tests': Directory not empty
-rm: can't remove '/usr/src/php/ext/gd/libgd': Directory not empty
-rm: can't remove '/usr/src/php/ext/soap/tests/soap12': Directory not empty
-rm: can't remove '/usr/src/php/ext/soap/tests/interop/Round3/GroupD': Directory not empty
-rm: can't remove '/usr/src/php/Zend/tests/return_types': Directory not empty
-rm: can't remove '/usr/src/php/tests/output': Directory not empty
-The command '/bin/sh -c docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/     &amp;&amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql' returned a non-zero code: 1```
-こっちArchLinuxのログ。</pre>
-<pre>vikke 23日 10:27:54: Archの方が処理終わった後に掃除しようとしてコケれるっぽい。</pre>
-<pre>ゴリラ 23日 10:28:45: ぱっと見、コケるまではおなじっぽい</pre>
-<pre>ゴリラ 23日 10:28:49: ふむ…</pre>
-<pre>tsuyoshi_cho 23日 10:28:50: エラー自体は、たぶんrmが `-f` がなくて失敗ですかね</pre>
-<pre>tsuyoshi_cho 23日 10:29:29: 逆になんでmacはファイルが先に消えてる(か生成されてないか)なのか</pre>
-<pre>tsuyoshi_cho 23日 10:30:07: 勝手に展開(archだけ)、はさすがにない気はする...</pre>
-<pre>0Δ 23日 10:30:21: あれ、archで成功してしまった……</pre>
-<pre>kuu 23日 10:30:24: なんか見たことある気が</pre>
-<pre>ゴリラ 23日 10:30:35: 成功者がいた</pre>
-<pre>kuu 23日 10:30:35: ファイルシステムにxfs使ってます？</pre>
-<pre>kuu 23日 10:30:50: もしそうならあのfs、Docker未対応です</pre>
-<pre>vikke 23日 10:31:35: ぎゃ、、、</pre>
-<pre>vikke 23日 10:31:51: ext4?</pre>
-<pre>vikke 23日 10:32:06: xfs使ってます。</pre>
-<pre>ゴリラ 23日 10:32:21: deltaさんのファイルシステムはなんだろう</pre>
-<pre> 23日 10:32:28: Archのログです</pre>
-<pre>ゴリラ 23日 10:32:53: <https://qiita.com/amatsus/items/aa2a58b0d5800312b6fa></pre>
-<pre>0Δ 23日 10:33:01: こっちのfsはext4ですね。</pre>
-<pre>ゴリラ 23日 10:33:04: これ、ファイルシステムが原因くさい</pre>
-<pre>vikke 23日 10:33:41: /var/lib/dockerの入っているpartitionだけext4にすれば良いのかにゃ?</pre>
-<pre>vikke 23日 10:34:10: (あっちこっちで質問魔)</pre>
-<pre>ゴリラ 23日 10:34:13: ```d_typeをサポートしないファイルシステムでOverlayするとwhiteoutファイルをDT_CHRと判定できないため、消したはずのファイル(やディレクトリ)が中途半端に見えてしまいます。```
-</pre>
-<pre>vikke 23日 10:34:31: 完全にこれや。</pre>
-<pre>kuu 23日 10:34:32: それそれ、overlayfs絡みで対応してない仕様があるのでファイルの削除が認識できない</pre>
-<pre>ゴリラ 23日 10:34:46: コンテナが作成されるところがext4にすれば行けそうな雰囲気</pre>
-<pre>ゴリラ 23日 10:35:04: `/var/lib/docker`配下で良さそうな雰囲気（やったことがない）</pre>
-<pre>vikke 23日 10:35:44: /home 別パーティションに切ってるから、resizeして、/var/lib/dockerにmountかなー</pre>
-<pre>kuu 23日 10:36:13: これ、前に踏みぬいて半日くらい消えたなあ…</pre>
-<pre>ゴリラ 23日 10:36:21: :totemoturai:</pre>
-<pre>tsuyoshi_cho 23日 10:36:33: うあー</pre>
-<pre>0Δ 23日 10:36:44: :tiken:</pre>
-<pre>vikke 23日 10:37:00: これは大きな知見だ。</pre>
-<pre>ゴリラ 23日 10:37:35: :tiken:</pre>
-<pre>vikke 23日 10:37:52: linuxって、single user modeってあるんだっけ? FreeBSDだとsingle user modeで立ち上げれば、daemon走ってない、mountもされてない状況に入れるんだけど。</pre>
-<pre>kuu 23日 10:38:24: systemctlでdockerだけ切ってしまえばいいのでは</pre>
-<pre>0Δ 23日 10:38:30: それだ</pre>
-<pre>tsuyoshi_cho 23日 10:38:41: ありはしますが、たしかにサービス停止が無難</pre>
-<pre>vikke 23日 10:39:17: /homeを一端umountしないと、resize出来ないですよね?</pre>
-<pre>tsuyoshi_cho 23日 10:39:42: あー、homeのリサイズなら、たしかにシングルユーザーになってやったほうがよさげか</pre>
-<pre>kuu 23日 10:40:40: 最近はライブリサイズできるらしいが、シングルになったほうが安全な気はする</pre>
-<pre>thinca 23日 10:42:01: 私はこういうときなんかのインストールイメージでマシンを立ち上げちゃう</pre>
-<pre>kuu 23日 10:42:14: 何かしらのGUI出るライブディストロ動かしてGParted辺り入れるのが一番楽</pre>
-<pre>0Δ 23日 10:52:53: xfsで成功してしまったのですが()</pre>
-<pre>vikke 23日 10:54:08: マジデ!!!!!</pre>
-<pre>vikke 23日 10:55:17: ```$ cat /etc/fstab
+rm: can&#39;t remove &#39;/usr/src/php/sapi/phpdbg/tests&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/standard/tests/network&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/standard/tests/url&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/mysqlnd&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/phar/tests/tar/files&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/phar/tests/cache_list/files&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/mbstring/oniguruma/src&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/hash/tests&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/gmp/tests&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/xsl/tests&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/gd/libgd&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/soap/tests/soap12&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/ext/soap/tests/interop/Round3/GroupD&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/Zend/tests/return_types&#39;: Directory not empty
+rm: can&#39;t remove &#39;/usr/src/php/tests/output&#39;: Directory not empty
+The command &#39;/bin/sh -c docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/     &amp;amp;&amp;amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql&#39; returned a non-zero code: 1```
+こっちArchLinuxのログ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:27:54</span>
+<span class='slacklog-text'>Archの方が処理終わった後に掃除しようとしてコケれるっぽい。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:28:45</span>
+<span class='slacklog-text'>ぱっと見、コケるまではおなじっぽい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:28:49</span>
+<span class='slacklog-text'>ふむ…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:28:50</span>
+<span class='slacklog-text'>エラー自体は、たぶんrmが `-f` がなくて失敗ですかね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:29:29</span>
+<span class='slacklog-text'>逆になんでmacはファイルが先に消えてる(か生成されてないか)なのか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:30:07</span>
+<span class='slacklog-text'>勝手に展開(archだけ)、はさすがにない気はする...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 10:30:21</span>
+<span class='slacklog-text'>あれ、archで成功してしまった……</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 10:30:24</span>
+<span class='slacklog-text'>なんか見たことある気が</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:30:35</span>
+<span class='slacklog-text'>成功者がいた</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 10:30:35</span>
+<span class='slacklog-text'>ファイルシステムにxfs使ってます？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 10:30:50</span>
+<span class='slacklog-text'>もしそうならあのfs、Docker未対応です</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:31:35</span>
+<span class='slacklog-text'>ぎゃ、、、</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:31:51</span>
+<span class='slacklog-text'>ext4?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:32:06</span>
+<span class='slacklog-text'>xfs使ってます。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:32:21</span>
+<span class='slacklog-text'>deltaさんのファイルシステムはなんだろう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'></span>
+<span class='slacklog-datetime'>23日 10:32:28</span>
+<span class='slacklog-text'>Archのログです</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:32:53</span>
+<span class='slacklog-text'>&lt;https://qiita.com/amatsus/items/aa2a58b0d5800312b6fa&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 10:33:01</span>
+<span class='slacklog-text'>こっちのfsはext4ですね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:33:04</span>
+<span class='slacklog-text'>これ、ファイルシステムが原因くさい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:33:41</span>
+<span class='slacklog-text'>/var/lib/dockerの入っているpartitionだけext4にすれば良いのかにゃ?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:34:10</span>
+<span class='slacklog-text'>(あっちこっちで質問魔)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:34:13</span>
+<span class='slacklog-text'>```d_typeをサポートしないファイルシステムでOverlayするとwhiteoutファイルをDT_CHRと判定できないため、消したはずのファイル(やディレクトリ)が中途半端に見えてしまいます。```
+</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:34:31</span>
+<span class='slacklog-text'>完全にこれや。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 10:34:32</span>
+<span class='slacklog-text'>それそれ、overlayfs絡みで対応してない仕様があるのでファイルの削除が認識できない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:34:46</span>
+<span class='slacklog-text'>コンテナが作成されるところがext4にすれば行けそうな雰囲気</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:35:04</span>
+<span class='slacklog-text'>`/var/lib/docker`配下で良さそうな雰囲気（やったことがない）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:35:44</span>
+<span class='slacklog-text'>/home 別パーティションに切ってるから、resizeして、/var/lib/dockerにmountかなー</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 10:36:13</span>
+<span class='slacklog-text'>これ、前に踏みぬいて半日くらい消えたなあ…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:36:21</span>
+<span class='slacklog-text'>:totemoturai:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:36:33</span>
+<span class='slacklog-text'>うあー</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 10:36:44</span>
+<span class='slacklog-text'>:tiken:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:37:00</span>
+<span class='slacklog-text'>これは大きな知見だ。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+<span class='slacklog-name'>ゴリラ</span>
+<span class='slacklog-datetime'>23日 10:37:35</span>
+<span class='slacklog-text'>:tiken:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:37:52</span>
+<span class='slacklog-text'>linuxって、single user modeってあるんだっけ? FreeBSDだとsingle user modeで立ち上げれば、daemon走ってない、mountもされてない状況に入れるんだけど。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 10:38:24</span>
+<span class='slacklog-text'>systemctlでdockerだけ切ってしまえばいいのでは</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 10:38:30</span>
+<span class='slacklog-text'>それだ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:38:41</span>
+<span class='slacklog-text'>ありはしますが、たしかにサービス停止が無難</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:39:17</span>
+<span class='slacklog-text'>/homeを一端umountしないと、resize出来ないですよね?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 10:39:42</span>
+<span class='slacklog-text'>あー、homeのリサイズなら、たしかにシングルユーザーになってやったほうがよさげか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 10:40:40</span>
+<span class='slacklog-text'>最近はライブリサイズできるらしいが、シングルになったほうが安全な気はする</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>23日 10:42:01</span>
+<span class='slacklog-text'>私はこういうときなんかのインストールイメージでマシンを立ち上げちゃう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 10:42:14</span>
+<span class='slacklog-text'>何かしらのGUI出るライブディストロ動かしてGParted辺り入れるのが一番楽</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 10:52:53</span>
+<span class='slacklog-text'>xfsで成功してしまったのですが()</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:54:08</span>
+<span class='slacklog-text'>マジデ!!!!!</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 10:55:17</span>
+<span class='slacklog-text'>```$ cat /etc/fstab
 # /dev/nvme0n1p5
 UUID=2a0e38bd-15eb-4cab-9e2f-3065a494d675       /               xfs             rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota        0 1
 
@@ -275,9 +1019,19 @@ UUID=87fa2305-8368-4c57-a93d-30d424fdca21       /home           xfs             
 UUID=9A1C-78D9          /boot           vfat            rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro        0 2
 
 /swap                   none            swap            defaults        0 0```
-わしのfstab。mount option、なにか違うのかな。。。</pre>
-<pre>kuu 23日 11:00:23: overlay使ってなければならないけどそのへん？</pre>
-<pre>0Δ 23日 11:01:20: こんな状況です。
+わしのfstab。mount option、なにか違うのかな。。。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 11:00:23</span>
+<span class='slacklog-text'>overlay使ってなければならないけどそのへん？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 11:01:20</span>
+<span class='slacklog-text'>こんな状況です。
 ```Filesystem      Size  Used Avail Use% Mounted on
 dev             954M     0  954M   0% /dev
 run             963M  872K  962M   1% /run
@@ -287,12 +1041,32 @@ tmpfs           963M     0  963M   0% /sys/fs/cgroup
 tmpfs           963M  7.5M  955M   1% /tmp
 /dev/sda1       300M  280K  300M   1% /boot/efi
 tmpfs           193M   28K  193M   1% /run/user/1000
-/dev/sdb1        16G  666M   16G   5% /var/lib/docker```</pre>
-<pre>0Δ 23日 11:02:25: 単純に別ディスク作成して、 `/var/lib/docker` にアタッチしてdocker再起動しただけ
-これだと見てくれないという事かな……</pre>
-<pre>kuu 23日 11:02:42: `docker info`(でしたっけ)の結果ってどうなってます？</pre>
-<pre>kuu 23日 11:03:06: あーそこ再マウントしてるか</pre>
-<pre>0Δ 23日 11:03:21: ```[zdelta@0delta-pc ~]$ docker info
+/dev/sdb1        16G  666M   16G   5% /var/lib/docker```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 11:02:25</span>
+<span class='slacklog-text'>単純に別ディスク作成して、 `/var/lib/docker` にアタッチしてdocker再起動しただけ
+これだと見てくれないという事かな……</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 11:02:42</span>
+<span class='slacklog-text'>`docker info`(でしたっけ)の結果ってどうなってます？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 11:03:06</span>
+<span class='slacklog-text'>あーそこ再マウントしてるか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 11:03:21</span>
+<span class='slacklog-text'>```[zdelta@0delta-pc ~]$ docker info
 Client:
  Debug Mode: false
 
@@ -334,13 +1108,18 @@ Server:
  ID: HA5E:XUXL:SLDZ:XKQJ:5AQD:3GEG:XUBS:L35M:63BI:UQM5:7L6L:RU6B
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
- Registry: <https://index.docker.io/v1/>
+ Registry: &lt;https://index.docker.io/v1/&gt;
  Labels:
  Experimental: false
  Insecure Registries:
   127.0.0.0/8
- Live Restore Enabled: false```</pre>
-<pre>vikke 23日 11:03:30: ```$ docker info
+ Live Restore Enabled: false```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 11:03:30</span>
+<span class='slacklog-text'>```$ docker info
 Client:
  Debug Mode: false
 
@@ -352,7 +1131,7 @@ Server:
  Images: 27
  Server Version: 19.03.8-ce
  Storage Driver: overlay2
-  Backing Filesystem: &lt;unknown&gt;
+  Backing Filesystem: &amp;lt;unknown&amp;gt;
   Supports d_type: true
   Native Overlay Diff: false
  Logging Driver: json-file
@@ -382,44 +1161,175 @@ Server:
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Username: vikke
- Registry: <https://index.docker.io/v1/>
+ Registry: &lt;https://index.docker.io/v1/&gt;
  Labels:
  Experimental: false
  Insecure Registries:
   127.0.0.0/8
- Live Restore Enabled: false```</pre>
-<pre>raa0121 23日 11:03:45: `Backing Filesystem: &lt;unknown&gt;`</pre>
-<pre>0Δ 23日 11:03:50: はい。このへんか
+ Live Restore Enabled: false```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>23日 11:03:45</span>
+<span class='slacklog-text'>`Backing Filesystem: &amp;lt;unknown&amp;gt;`</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 11:03:50</span>
+<span class='slacklog-text'>はい。このへんか
 ``` Storage Driver: overlay2
   Backing Filesystem: xfs
-  Supports d_type: true```</pre>
-<pre>0Δ 23日 11:04:51: なるほど。ココで既にdockerがおかしいって言っていたのか</pre>
-<pre>vikke 23日 11:07:26: ```ストレージ・ドライバを設定するには dockerd コマンドで --storage-driver=&lt;名前&gt; オプションを使うか、あるいは、 /etc/default/docker ファイル中の DOCKER_OPTS 行を編集します。```
-<http://docs.docker.jp/engine/userguide/storagedriver/selectadriver.html#a-pluggable-storage-driver-architecture></pre>
-<pre>tsuyoshi_cho 23日 11:07:37: いまはxfsもd_type trueなのか?</pre>
-<pre>vikke 23日 11:08:37: infoの結果がそう言ってますねー。</pre>
-<pre>vikke 23日 11:08:45: ぐぬぬぬぬ</pre>
-<pre>vikke 23日 11:16:19: `/etc/default/docker` が無い。。。</pre>
-<pre>raa0121 23日 11:19:41: `/etc/systemd/system/multi-user.targe.wants/docker.service` に書くのがいいかな…？</pre>
-<pre>raa0121 23日 11:21:12: `/etc/default/docker` だと、systemd には反映されないっぽいし</pre>
-<pre>dohq 23日 11:42:37: `/etc/docker/daemon.json` に書けばよいのでは</pre>
-<pre>vikke 23日 11:58:54: パーティションリサイズしたら、/home mount出来なくなったwww</pre>
-<pre>vikke 23日 13:44:26: ところで、`/etc/systemd/system/multi-user.targe.wants/docker.service`ないしは`/etc/docker/daemon.json` になんて書けば良かったんですか？後学の為に。</pre>
-<pre>thinca 23日 13:52:43: パーティションリサイズの前に FS のリサイズをしないと? (さすがにそこはしましたかね…)</pre>
-<pre>raa0121 23日 13:57:10: docker が Backing filesystem として、 xfs を認識してないので、そこに何か書いて、解決する状況じゃないかもです</pre>
-<pre>dohq 23日 14:04:49: storage-driver変更でやりくりするもんだと思ってたのでそれならdaemon.jsonに書けば…と思ってアレしました</pre>
-<pre>vikke 23日 14:07:59: <https://serverfault.com/questions/81262/how-can-you-shrink-an-xfs-filesystem>
-xfs cannot be shrunk.これか。</pre>
-<pre>Polly 23日 15:20:43: <@U06ECBRTJ> has a poll for you!</pre>
-<pre>kuu 23日 15:25:02: なんも契約しとらんので必然的にHub行き</pre>
-<pre>tsuyoshi_cho 23日 15:27:03: これ見て、見付けた記事
-<https://qiita.com/suecharo/items/a5e0cd3fe6d31443c536>
-<https://qiita.com/homines22/items/6d28461d97906e42f57c></pre>
-<pre>koron 23日 15:39:59: 仕事では Harbor つかってる。</pre>
-<pre>koron 23日 15:41:11: <https://goharbor.io/></pre>
-<pre>mattn 23日 15:46:22: harbor ってもしかして appharbor の harbor?</pre>
-<pre>mattn 23日 15:46:52: 違うぽかった。</pre>
-<pre>kuu 23日 15:51:51: 毎回パッケージ落としてくるのが嫌で、シェルスクリプト使ってパッケージキャッシュ共有してイメージ構築してるけどこのへん上手くできないものか</pre>
-<pre>johejo 23日 17:44:39: 仕事はAzure縛りなのでACR プライベートはDockerHub</pre>
-<pre>johejo 23日 17:44:55: quay.io使ってみたい 特に使い心地は変わんないとは思うが</pre>
+  Supports d_type: true```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
+<span class='slacklog-name'>0Δ</span>
+<span class='slacklog-datetime'>23日 11:04:51</span>
+<span class='slacklog-text'>なるほど。ココで既にdockerがおかしいって言っていたのか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 11:07:26</span>
+<span class='slacklog-text'>```ストレージ・ドライバを設定するには dockerd コマンドで --storage-driver=&amp;lt;名前&amp;gt; オプションを使うか、あるいは、 /etc/default/docker ファイル中の DOCKER_OPTS 行を編集します。```
+&lt;http://docs.docker.jp/engine/userguide/storagedriver/selectadriver.html#a-pluggable-storage-driver-architecture&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 11:07:37</span>
+<span class='slacklog-text'>いまはxfsもd_type trueなのか?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 11:08:37</span>
+<span class='slacklog-text'>infoの結果がそう言ってますねー。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 11:08:45</span>
+<span class='slacklog-text'>ぐぬぬぬぬ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 11:16:19</span>
+<span class='slacklog-text'>`/etc/default/docker` が無い。。。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>23日 11:19:41</span>
+<span class='slacklog-text'>`/etc/systemd/system/multi-user.targe.wants/docker.service` に書くのがいいかな…？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>23日 11:21:12</span>
+<span class='slacklog-text'>`/etc/default/docker` だと、systemd には反映されないっぽいし</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2017-12-09/284380828226_585d265f54113004e478_48.jpg'>
+<span class='slacklog-name'>dohq</span>
+<span class='slacklog-datetime'>23日 11:42:37</span>
+<span class='slacklog-text'>`/etc/docker/daemon.json` に書けばよいのでは</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 11:58:54</span>
+<span class='slacklog-text'>パーティションリサイズしたら、/home mount出来なくなったwww</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 13:44:26</span>
+<span class='slacklog-text'>ところで、`/etc/systemd/system/multi-user.targe.wants/docker.service`ないしは`/etc/docker/daemon.json` になんて書けば良かったんですか？後学の為に。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>23日 13:52:43</span>
+<span class='slacklog-text'>パーティションリサイズの前に FS のリサイズをしないと? (さすがにそこはしましたかね…)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>raa0121</span>
+<span class='slacklog-datetime'>23日 13:57:10</span>
+<span class='slacklog-text'>docker が Backing filesystem として、 xfs を認識してないので、そこに何か書いて、解決する状況じゃないかもです</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2017-12-09/284380828226_585d265f54113004e478_48.jpg'>
+<span class='slacklog-name'>dohq</span>
+<span class='slacklog-datetime'>23日 14:04:49</span>
+<span class='slacklog-text'>storage-driver変更でやりくりするもんだと思ってたのでそれならdaemon.jsonに書けば…と思ってアレしました</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+<span class='slacklog-name'>vikke</span>
+<span class='slacklog-datetime'>23日 14:07:59</span>
+<span class='slacklog-text'>&lt;https://serverfault.com/questions/81262/how-can-you-shrink-an-xfs-filesystem&gt;
+xfs cannot be shrunk.これか。</span>
+</span>
+Polly 23日 15:20:43: <@U06ECBRTJ> has a poll for you!
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 15:25:02</span>
+<span class='slacklog-text'>なんも契約しとらんので必然的にHub行き</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>23日 15:27:03</span>
+<span class='slacklog-text'>これ見て、見付けた記事
+&lt;https://qiita.com/suecharo/items/a5e0cd3fe6d31443c536&gt;
+&lt;https://qiita.com/homines22/items/6d28461d97906e42f57c&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>23日 15:39:59</span>
+<span class='slacklog-text'>仕事では Harbor つかってる。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>23日 15:41:11</span>
+<span class='slacklog-text'>&lt;https://goharbor.io/&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>23日 15:46:22</span>
+<span class='slacklog-text'>harbor ってもしかして appharbor の harbor?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>23日 15:46:52</span>
+<span class='slacklog-text'>違うぽかった。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>23日 15:51:51</span>
+<span class='slacklog-text'>毎回パッケージ落としてくるのが嫌で、シェルスクリプト使ってパッケージキャッシュ共有してイメージ構築してるけどこのへん上手くできないものか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>23日 17:44:39</span>
+<span class='slacklog-text'>仕事はAzure縛りなのでACR プライベートはDockerHub</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+<span class='slacklog-name'>johejo</span>
+<span class='slacklog-datetime'>23日 17:44:55</span>
+<span class='slacklog-text'>quay.io使ってみたい 特に使い心地は変わんないとは思うが</span>
+</span>
 {% endraw %}

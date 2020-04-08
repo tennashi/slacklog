@@ -10,71 +10,321 @@ title: vim-jp.slack.com log - &#35vim-script - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>tyru 15日 15:50:48: <https://vim-jp.slack.com/archives/C03C4RC9F/p1584197115237900>
-これ知らんかった。多分 vimlparser でもサポートされてないな</pre>
-<pre>tyru 19日 18:51:15: <https://twitter.com/_tyru_/status/1240576358196973569></pre>
-<pre>tyru 19日 18:53:14: <@UBQ2H65JQ> これってどのスクリプトで見たか覚えてるでしょうか？</pre>
-<pre>tyru 19日 18:53:38: vimlparser の test は pass してる</pre>
-<pre>tyru 19日 18:54:26: いや正確には↑を vimlparser の test に書いても pass する…</pre>
-<pre>mattn 19日 18:55:08: うひ</pre>
-<pre>thinca 19日 18:57:53: エラーが発生している桁も知りたい</pre>
-<pre>mattn 19日 19:00:38: スマホで解像度低いんですが Trailing Character なんですか？</pre>
-<pre>mattn 19日 19:07:03: vimlparser のテストで成功して vint でエラーになるとしたら正規表現が間違ってるパターンかも。</pre>
-<pre>tyru 19日 19:17:44: です `E488: Trailing characters: -`</pre>
-<pre>tyru 19日 19:18:19: でも vimlparser のエラーに見えるんですよね。
-vint が E488 出してるのかな</pre>
-<pre>tyru 19日 19:19:43: んん？ `vint {vimrc}` すると出ないな…</pre>
-<pre>tyru 19日 19:26:21: あー vim-language-server でした。。。</pre>
-<pre>tyru 19日 19:27:00: 一旦 `:LspUninstallServer vim-language-server` したらなくなった。</pre>
-<pre>tyru 19日 19:27:23: ちなみに vint は efm-langserver 経由で走らせてる</pre>
-<pre>rbtnn 19日 19:29:32: スクリプトじゃなくてヘルプを読んでいたら見つけました。
-<https://github.com/vim/vim/blob/master/runtime/doc/eval.txt#L1513|https://github.com/vim/vim/blob/master/runtime/doc/eval.txt#L1513></pre>
-<pre>tyru 19日 19:30:17: おおなるほど。ありがとうございます。</pre>
-<pre>tyru 19日 19:33:49: <@UAZ33BKV2> さんも言ってたと思うんですが、ここと <#CBNFS2BR6|vint> マージしちゃいませんかね？
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>15日 15:50:48</span>
+<span class='slacklog-text'>&lt;https://vim-jp.slack.com/archives/C03C4RC9F/p1584197115237900&gt;
+これ知らんかった。多分 vimlparser でもサポートされてないな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 18:51:15</span>
+<span class='slacklog-text'>&lt;https://twitter.com/_tyru_/status/1240576358196973569&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 18:53:14</span>
+<span class='slacklog-text'>&lt;@UBQ2H65JQ&gt; これってどのスクリプトで見たか覚えてるでしょうか？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 18:53:38</span>
+<span class='slacklog-text'>vimlparser の test は pass してる</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 18:54:26</span>
+<span class='slacklog-text'>いや正確には↑を vimlparser の test に書いても pass する…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>19日 18:55:08</span>
+<span class='slacklog-text'>うひ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>19日 18:57:53</span>
+<span class='slacklog-text'>エラーが発生している桁も知りたい</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>19日 19:00:38</span>
+<span class='slacklog-text'>スマホで解像度低いんですが Trailing Character なんですか？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>19日 19:07:03</span>
+<span class='slacklog-text'>vimlparser のテストで成功して vint でエラーになるとしたら正規表現が間違ってるパターンかも。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:17:44</span>
+<span class='slacklog-text'>です `E488: Trailing characters: -`</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:18:19</span>
+<span class='slacklog-text'>でも vimlparser のエラーに見えるんですよね。
+vint が E488 出してるのかな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:19:43</span>
+<span class='slacklog-text'>んん？ `vint {vimrc}` すると出ないな…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:26:21</span>
+<span class='slacklog-text'>あー vim-language-server でした。。。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:27:00</span>
+<span class='slacklog-text'>一旦 `:LspUninstallServer vim-language-server` したらなくなった。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:27:23</span>
+<span class='slacklog-text'>ちなみに vint は efm-langserver 経由で走らせてる</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-09-23/442107143383_29fb96601f522825702a_48.jpg'>
+<span class='slacklog-name'>rbtnn</span>
+<span class='slacklog-datetime'>19日 19:29:32</span>
+<span class='slacklog-text'>スクリプトじゃなくてヘルプを読んでいたら見つけました。
+&lt;https://github.com/vim/vim/blob/master/runtime/doc/eval.txt#L1513|https://github.com/vim/vim/blob/master/runtime/doc/eval.txt#L1513&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:30:17</span>
+<span class='slacklog-text'>おおなるほど。ありがとうございます。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:33:49</span>
+<span class='slacklog-text'>&lt;@UAZ33BKV2&gt; さんも言ってたと思うんですが、ここと &lt;#CBNFS2BR6|vint&gt; マージしちゃいませんかね？
 話題的にかぶる事も多いので。
-#vim-script-syntax とか？</pre>
-<pre>tyru 19日 19:34:38: 冗長だし #vim-script でいいか</pre>
-<pre>thinca 19日 19:34:46: よさそう</pre>
-<pre>tyru 19日 19:35:12: じゃあここを #vim-script としてあちらはアーカイブする感じでいいですかね</pre>
-<pre>tyru 19日 19:35:28: もうちょっと待つけど</pre>
-<pre>k-takata 19日 21:41:32: `:function {'&lt;lambda&gt;42'}` な表記、完全に忘れてたけどドキュメントに書いたの僕だよなー。7.4.2119 でクロージャ対応したときから載ってるし。</pre>
-<pre>tyru 25日 19:48:54: #vim-script へのリネーム忘れてた。今やります</pre>
-<pre>tyru 25日 19:49:30: あ、権限なかった（終）</pre>
-<pre>tyru 25日 19:50:11: ↑どなたかお願いします :bow:</pre>
-<pre>tyru 25日 19:50:40: ところで vim-language-server の vimlparser が最新版になりました <https://github.com/iamcco/vim-language-server/pull/35></pre>
-<pre>mattn 25日 21:27:46: どね</pre>
-<pre>tyru 26日 06:21:47: あざ！</pre>
-<pre>tyru 26日 06:23:08: <#CBNFS2BR6|vint> のアーカイブはしなくてもいいか</pre>
-<pre>tyru 26日 22:58:08: リストは負のインデックスでアクセスできるのに文字列には負のインデックスでアクセスできないのなんでなんだよ
+#vim-script-syntax とか？</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:34:38</span>
+<span class='slacklog-text'>冗長だし #vim-script でいいか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>19日 19:34:46</span>
+<span class='slacklog-text'>よさそう</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:35:12</span>
+<span class='slacklog-text'>じゃあここを #vim-script としてあちらはアーカイブする感じでいいですかね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>19日 19:35:28</span>
+<span class='slacklog-text'>もうちょっと待つけど</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+<span class='slacklog-name'>k-takata</span>
+<span class='slacklog-datetime'>19日 21:41:32</span>
+<span class='slacklog-text'>`:function {&#39;&amp;lt;lambda&amp;gt;42&#39;}` な表記、完全に忘れてたけどドキュメントに書いたの僕だよなー。7.4.2119 でクロージャ対応したときから載ってるし。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 19:48:54</span>
+<span class='slacklog-text'>#vim-script へのリネーム忘れてた。今やります</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 19:49:30</span>
+<span class='slacklog-text'>あ、権限なかった（終）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 19:50:11</span>
+<span class='slacklog-text'>↑どなたかお願いします :bow:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>25日 19:50:40</span>
+<span class='slacklog-text'>ところで vim-language-server の vimlparser が最新版になりました &lt;https://github.com/iamcco/vim-language-server/pull/35&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>25日 21:27:46</span>
+<span class='slacklog-text'>どね</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 06:21:47</span>
+<span class='slacklog-text'>あざ！</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 06:23:08</span>
+<span class='slacklog-text'>&lt;#CBNFS2BR6|vint&gt; のアーカイブはしなくてもいいか</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 22:58:08</span>
+<span class='slacklog-text'>リストは負のインデックスでアクセスできるのに文字列には負のインデックスでアクセスできないのなんでなんだよ
 ```
-" 3
+&#34; 3
 :echo [1,2,3][-1]
-" 空文字
-:echo 'foo'[-1]</pre>
-<pre>kuu 26日 22:59:56: &gt; 文字列の長さよりも大きなインデックスが指定された場合、結果は空文字列になる。負
-&gt; 数のインデックスを指定すると、結果は常に空文字列になる(後方互換性のため)。
-&gt; 最後のバイトを得るには[-1:]を使うこと。</pre>
-<pre>kuu 26日 23:00:07: Vim scriptですからねー:totemoturai:</pre>
-<pre>tyru 26日 23:01:08: お、たしかにスライス使えばいけたのか。毎回諦めてた…</pre>
-<pre>tyru 26日 23:01:18: :tiken:</pre>
-<pre>tsuyoshi_cho 26日 23:01:26: サモハンキンポー(さもありなん)</pre>
-<pre>kuu 26日 23:01:34: これ、今ならscriptversionで挙動変えてもいいのかもしれないな</pre>
-<pre>tyru 26日 23:01:45: たしかに</pre>
-<pre>tyru 27日 02:10:58: 【悲報】is, isnot が変数名に使えない
+&#34; 空文字
+:echo &#39;foo&#39;[-1]</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 22:59:56</span>
+<span class='slacklog-text'>&amp;gt; 文字列の長さよりも大きなインデックスが指定された場合、結果は空文字列になる。負
+&amp;gt; 数のインデックスを指定すると、結果は常に空文字列になる(後方互換性のため)。
+&amp;gt; 最後のバイトを得るには[-1:]を使うこと。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 23:00:07</span>
+<span class='slacklog-text'>Vim scriptですからねー:totemoturai:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 23:01:08</span>
+<span class='slacklog-text'>お、たしかにスライス使えばいけたのか。毎回諦めてた…</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 23:01:18</span>
+<span class='slacklog-text'>:tiken:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>26日 23:01:26</span>
+<span class='slacklog-text'>サモハンキンポー(さもありなん)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+<span class='slacklog-name'>kuu</span>
+<span class='slacklog-datetime'>26日 23:01:34</span>
+<span class='slacklog-text'>これ、今ならscriptversionで挙動変えてもいいのかもしれないな</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>26日 23:01:45</span>
+<span class='slacklog-text'>たしかに</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>27日 02:10:58</span>
+<span class='slacklog-text'>【悲報】is, isnot が変数名に使えない
 ```let [ih, is, il] = ihsl
 unexpected token: is```
-これダメだった</pre>
-<pre>tyru 27日 02:11:26: while は OK だった。演算子だけだろうか（とはいえテストケース追加した方が良さそう）</pre>
-<pre>tyru 27日 02:15:44: <https://github.com/vim-jp/vim-vimlparser/issues/169></pre>
-<pre>thinca 27日 10:27:28: これは vimlparser がパースできないと言う話? Vim 本体?</pre>
-<pre>mattn 27日 10:36:22: Vim は出来るぽいすね。</pre>
-<pre>mattn 27日 10:37:10: ```let [is, great] = ['マンボウ', 'すごい']
-echo is great```</pre>
-<pre>thinca 27日 10:37:39: てことは vimlparser の話か</pre>
-<pre>thinca 27日 10:38:51: while はコマンドだけど is は式だからかな。処理のされ方が違いそう (※コードは全く読んでない)</pre>
-<pre>tyru 27日 17:34:05: そもそも式でなく identifier のはずなんですよねぇ</pre>
-<pre>koron 27日 18:13:41: tokenizer が先に token として認識しちゃってそう。
-<https://github.com/vim-jp/vim-vimlparser/blob/4139d51700ed72702bd9f7352e5359ac0cf54c6c/autoload/vimlparser.vim#L3301-L3310></pre>
-<pre>koron 27日 18:14:37: issueに転載しといた</pre>
-<pre>mattn 27日 18:46:12: Vim script は逐次で処理するので事前に tokenizer で種別決定できない辛さがあるなぁ。</pre>
+これダメだった</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>27日 02:11:26</span>
+<span class='slacklog-text'>while は OK だった。演算子だけだろうか（とはいえテストケース追加した方が良さそう）</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>27日 02:15:44</span>
+<span class='slacklog-text'>&lt;https://github.com/vim-jp/vim-vimlparser/issues/169&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>27日 10:27:28</span>
+<span class='slacklog-text'>これは vimlparser がパースできないと言う話? Vim 本体?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>27日 10:36:22</span>
+<span class='slacklog-text'>Vim は出来るぽいすね。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>27日 10:37:10</span>
+<span class='slacklog-text'>```let [is, great] = [&#39;マンボウ&#39;, &#39;すごい&#39;]
+echo is great```</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>27日 10:37:39</span>
+<span class='slacklog-text'>てことは vimlparser の話か</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+<span class='slacklog-name'>thinca</span>
+<span class='slacklog-datetime'>27日 10:38:51</span>
+<span class='slacklog-text'>while はコマンドだけど is は式だからかな。処理のされ方が違いそう (※コードは全く読んでない)</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+<span class='slacklog-name'>tyru</span>
+<span class='slacklog-datetime'>27日 17:34:05</span>
+<span class='slacklog-text'>そもそも式でなく identifier のはずなんですよねぇ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>27日 18:13:41</span>
+<span class='slacklog-text'>tokenizer が先に token として認識しちゃってそう。
+&lt;https://github.com/vim-jp/vim-vimlparser/blob/4139d51700ed72702bd9f7352e5359ac0cf54c6c/autoload/vimlparser.vim#L3301-L3310&gt;</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+<span class='slacklog-name'>koron</span>
+<span class='slacklog-datetime'>27日 18:14:37</span>
+<span class='slacklog-text'>issueに転載しといた</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+<span class='slacklog-name'>mattn</span>
+<span class='slacklog-datetime'>27日 18:46:12</span>
+<span class='slacklog-text'>Vim script は逐次で処理するので事前に tokenizer で種別決定できない辛さがあるなぁ。</span>
+</span>
 {% endraw %}

@@ -10,21 +10,66 @@ title: vim-jp.slack.com log - &#35english - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>takets 17日 08:56:50: &gt; |nvim_buf_attach| will take keyword args for the callbacks.
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>takets</span>
+<span class='slacklog-datetime'>17日 08:56:50</span>
+<span class='slacklog-text'>&amp;gt; |nvim_buf_attach| will take keyword args for the callbacks.
 |nvim_buf_attach| はコールバックに対してキーワード引数を取得します。
 と訳したのですが、ここの for どのように訳すのが良いのでしょうか。
 
 for は `～方面に` とか `～のために` と使うものと考えていたのですが、
-どちらもしっくりこない感じがあります。</pre>
-<pre>tsuyoshi_cho 17日 09:10:08: xxはコールバックでキーワード引数を取ります。だとちょっと技術文的で簡略的すぎかな...</pre>
-<pre>takets 17日 09:12:27: 最初の訳の `コールバックに対して` 取るという訳だと、意味が逆になるので、 for を ～でと訳するほうがよさそう感あります</pre>
-<pre>takets 17日 09:12:48: 前置詞ぜんぜんわからない</pre>
-<pre>tsuyoshi_cho 17日 09:17:50: あー、どっちがどっちなのかは わたしも前置詞ナニモワカラナイ状態なのでアテにはならずです...辞書~秘孔~引こう...</pre>
-<pre>takets 17日 09:38:00: :haisho:</pre>
-<pre>tsuyoshi_cho 17日 09:41:18: <https://dictionary.goo.ne.jp/word/en/for/#ej-33042>
+どちらもしっくりこない感じがあります。</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 09:10:08</span>
+<span class='slacklog-text'>xxはコールバックでキーワード引数を取ります。だとちょっと技術文的で簡略的すぎかな...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>takets</span>
+<span class='slacklog-datetime'>17日 09:12:27</span>
+<span class='slacklog-text'>最初の訳の `コールバックに対して` 取るという訳だと、意味が逆になるので、 for を ～でと訳するほうがよさそう感あります</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>takets</span>
+<span class='slacklog-datetime'>17日 09:12:48</span>
+<span class='slacklog-text'>前置詞ぜんぜんわからない</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 09:17:50</span>
+<span class='slacklog-text'>あー、どっちがどっちなのかは わたしも前置詞ナニモワカラナイ状態なのでアテにはならずです...辞書~秘孔~引こう...</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>takets</span>
+<span class='slacklog-datetime'>17日 09:38:00</span>
+<span class='slacklog-text'>:haisho:</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+<span class='slacklog-name'>tsuyoshi_cho</span>
+<span class='slacklog-datetime'>17日 09:41:18</span>
+<span class='slacklog-text'>&lt;https://dictionary.goo.ne.jp/word/en/for/#ej-33042&gt;
 ~のために、だと自身がcallbackとして動作する場合には必要、みたいになるし
 ~に対する、だとcallbackを受け取る場合に必要だし
-まあ、これは受けとるだから、~に対して、がよさそげ?</pre>
-<pre>takets 17日 09:45:03: ~に対してだと、やや固い印象があるので、 |nvim_buf_attach|はコールバック *から* 取得する、のほうが伝わりやすいかなぁ</pre>
-<pre>takets 17日 09:46:06: となると、 forではなくfromであってほしい気もしますが、伝わりやすくするための意訳ということで……</pre>
+まあ、これは受けとるだから、~に対して、がよさそげ?</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>takets</span>
+<span class='slacklog-datetime'>17日 09:45:03</span>
+<span class='slacklog-text'>~に対してだと、やや固い印象があるので、 |nvim_buf_attach|はコールバック *から* 取得する、のほうが伝わりやすいかなぁ</span>
+</span>
+<span class='slacklog-message'>
+<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+<span class='slacklog-name'>takets</span>
+<span class='slacklog-datetime'>17日 09:46:06</span>
+<span class='slacklog-text'>となると、 forではなくfromであってほしい気もしますが、伝わりやすくするための意訳ということで……</span>
+</span>
 {% endraw %}
