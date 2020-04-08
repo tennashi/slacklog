@@ -7,298 +7,314 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
 <h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
 
 {% raw %}
-<span class='slacklog-message' id='1585731172.102200'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1585731172.102200'>1日 17:52:53</a>
-<span class='slacklog-text'>`質問`
+  <span class='slacklog-message' id='1585731172.102200'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1585731172.102200'>1日 17:52:53</a>
+  <span class='slacklog-text'>`質問`
 シェルでエスケープコード混りの文字で表示文字だけを取得する定番の方法ってなにがあるでしょう?
-rel <#CNX3F8RFC|dotfiles></span>
-</span>
-<span class='slacklog-message' id='1585731310.103700'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1585731310.103700'>1日 17:55:11</a>
-<span class='slacklog-text'>PS1で右寄せするに表示文字数をカウントしたいのですが、文字数カウントが素の文字列(エスケープコードを含む)で処理してしまうので、これに表示文字列だけを入れたい</span>
-</span>
-<span class='slacklog-message' id='1585731635.103900'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
-<span class='slacklog-name'>itchyny</span>
-<a class='slacklog-datetime' href='#1585731635.103900'>1日 18:00:36</a>
-<span class='slacklog-text'>`sed $'s|\x1B\\[[0-9;]*[a-zA-Z]||g'` こういうやつですか</span>
-</span>
-<span class='slacklog-message' id='1585732619.104600'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1585732619.104600'>1日 18:17:00</a>
-<span class='slacklog-text'>あー、直に除去するしかないかな...なるべく外部コマンド使わずに(shellはbash)すめばなと思いましたが</span>
-</span>
-<span class='slacklog-message' id='1585732842.106300'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-<span class='slacklog-name'>yutakatay</span>
-<a class='slacklog-datetime' href='#1585732842.106300'>1日 18:20:43</a>
-<span class='slacklog-text'>たぶん難しいですね（特にbashrcに記述するレベルのコマンドだと）。。。
+rel &lt;#CNX3F8RFC|dotfiles&gt;</span>
+  </span>
+  <span class='slacklog-message' id='1585731310.103700'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1585731310.103700'>1日 17:55:11</a>
+  <span class='slacklog-text'>PS1で右寄せするに表示文字数をカウントしたいのですが、文字数カウントが素の文字列(エスケープコードを含む)で処理してしまうので、これに表示文字列だけを入れたい</span>
+  </span>
+  <span class='slacklog-message' id='1585731635.103900'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
+  <span class='slacklog-name'>itchyny</span>
+  <a class='slacklog-datetime' href='#1585731635.103900'>1日 18:00:36</a>
+  <span class='slacklog-text'>`sed $&#39;s|\x1B\\[[0-9;]*[a-zA-Z]||g&#39;` こういうやつですか</span>
+  </span>
+  <span class='slacklog-message' id='1585732619.104600'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1585732619.104600'>1日 18:17:00</a>
+  <span class='slacklog-text'>あー、直に除去するしかないかな...なるべく外部コマンド使わずに(shellはbash)すめばなと思いましたが</span>
+  </span>
+  <span class='slacklog-message' id='1585732842.106300'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+  <span class='slacklog-name'>yutakatay</span>
+  <a class='slacklog-datetime' href='#1585732842.106300'>1日 18:20:43</a>
+  <span class='slacklog-text'>たぶん難しいですね（特にbashrcに記述するレベルのコマンドだと）。。。
 scriptコマンドとかでとったログのエスケープ文字とかも結局sedかperlで削除すること多いんで・・・</span>
-</span>
-<span class='slacklog-message' id='1585732901.106700'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1585732901.106700'>1日 18:21:42</a>
-<span class='slacklog-text'>そうですよね...
+  </span>
+  <span class='slacklog-message' id='1585732901.106700'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1585732901.106700'>1日 18:21:42</a>
+  <span class='slacklog-text'>そうですよね...
 ありがとうございます。</span>
-</span>
-<span class='slacklog-message' id='1585766908.109300'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-03-22/585354086471_dd542d5201f2874092dd_48.jpg'>
-<span class='slacklog-name'>fumi</span>
-<a class='slacklog-datetime' href='#1585766908.109300'>2日 03:48:29</a>
-<span class='slacklog-text'>すでにご存知かもしれませんが ↓ の「カーソルの位置」のあたりとか参考になるでしょうか？
-<https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA>
+  </span>
+  <span class='slacklog-message' id='1585766908.109300'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-03-22/585354086471_dd542d5201f2874092dd_48.jpg'>
+  <span class='slacklog-name'>fumi</span>
+  <a class='slacklog-datetime' href='#1585766908.109300'>2日 03:48:29</a>
+  <span class='slacklog-text'>すでにご存知かもしれませんが ↓ の「カーソルの位置」のあたりとか参考になるでしょうか？
+&lt;https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA&gt;
 
 ```rightprompt()
 {
-    printf "%*s" $COLUMNS "right prompt"
+    printf &#34;%*s&#34; $COLUMNS &#34;right prompt&#34;
 }
 
-export PS1='\[$(tput sc; rightprompt; tput rc)\]left prompt &gt; '```
+export PS1=&#39;\[$(tput sc; rightprompt; tput rc)\]left prompt &gt; &#39;```
 PS1 では `\[` `\]` で囲まれている部分は non-printing characters となります文字数にカウントされません
-<https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html></span>
-</span>
-<span class='slacklog-message' id='1585774484.112000'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1585774484.112000'>2日 05:54:45</a>
-<span class='slacklog-text'>ありがとうございます。
+&lt;https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html&gt;</span>
+  </span>
+  <span class='slacklog-message' id='1585774484.112000'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1585774484.112000'>2日 05:54:45</a>
+  <span class='slacklog-text'>ありがとうございます。
 一応知ってはいましたが、今抱えてる条件だとちょっと期待した結果にならない(出来ないというか)でした</span>
-</span>
-<span class='slacklog-message' id='1585774573.113700'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1585774573.113700'>2日 05:56:14</a>
-<span class='slacklog-text'>オフィシャルなところで利用方法に制限付けてるし、たぶん無理だよな…</span>
-</span>
-<span class='slacklog-message' id='1585806102.118100'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
-<span class='slacklog-name'>kyoh86</span>
-<a class='slacklog-datetime' href='#1585806102.118100'>2日 14:41:43</a>
-<span class='slacklog-text'>そうか、RPROMPTってzshだけか</span>
-</span>
-<span class='slacklog-message' id='1585806157.118800'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
-<span class='slacklog-name'>kyoh86</span>
-<a class='slacklog-datetime' href='#1585806157.118800'>2日 14:42:38</a>
-<span class='slacklog-text'>bash使ってた頃は、RLMでトライした覚えがあるけど、成功したかは覚えていない…</span>
-</span>
-<span class='slacklog-message' id='1585824912.120000'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585824912.120000'>2日 19:55:13</a>
-<span class='slacklog-text'>すいません、vimscript中でタブ幅考慮した見た目の文字数分ごとにテキスト切り取る方法探してるんですけどどうやったらいいですかね？</span>
-</span>
-<span class='slacklog-message' id='1585824981.120400'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1585824981.120400'>2日 19:56:22</a>
-<span class='slacklog-text'>:h strdisplaywidth()</span>
-</span>
-<span class='slacklog-message' id='1585824982.120500'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
-<span class='slacklog-name'></span>
-<a class='slacklog-datetime' href='#1585824982.120500'>2日 19:56:23</a>
-<span class='slacklog-text'>```
+  </span>
+  <span class='slacklog-message' id='1585774573.113700'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1585774573.113700'>2日 05:56:14</a>
+  <span class='slacklog-text'>オフィシャルなところで利用方法に制限付けてるし、たぶん無理だよな…</span>
+  </span>
+  <span class='slacklog-message' id='1585806102.118100'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+  <span class='slacklog-name'>kyoh86</span>
+  <a class='slacklog-datetime' href='#1585806102.118100'>2日 14:41:43</a>
+  <span class='slacklog-text'>そうか、RPROMPTってzshだけか</span>
+  </span>
+  <span class='slacklog-message' id='1585806157.118800'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+  <span class='slacklog-name'>kyoh86</span>
+  <a class='slacklog-datetime' href='#1585806157.118800'>2日 14:42:38</a>
+  <span class='slacklog-text'>bash使ってた頃は、RLMでトライした覚えがあるけど、成功したかは覚えていない…</span>
+  </span>
+  <span class='slacklog-message' id='1585824912.120000'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585824912.120000'>2日 19:55:13</a>
+  <span class='slacklog-text'>すいません、vimscript中でタブ幅考慮した見た目の文字数分ごとにテキスト切り取る方法探してるんですけどどうやったらいいですかね？</span>
+  </span>
+  <span class='slacklog-message' id='1585824981.120400'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1585824981.120400'>2日 19:56:22</a>
+  <span class='slacklog-text'>:h strdisplaywidth()</span>
+  </span>
+  <span class='slacklog-message' id='1585824982.120500'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
+  <span class='slacklog-name'></span>
+  <a class='slacklog-datetime' href='#1585824982.120500'>2日 19:56:23</a>
+  <span class='slacklog-text'>```
 strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
                 結果は数値で、文字列 {expr} が {col} (最初の桁はゼロ)で始まる
                 時のスクリーン上での表示セル幅を返す。
                 {col} が省略されたときはゼロが使われる。{col} には計算を開始す
                 るスクリーン上の列の位置を指定する。これはタブ文字の幅の計算に
                 影響する。
-                計算にはカレントウィンドウのオプションが使用される。'tabstop'
-                や 'display' のような表示を変更するようなオプションが影響す
+                計算にはカレントウィンドウのオプションが使用される。&#39;tabstop&#39;
+                や &#39;display&#39; のような表示を変更するようなオプションが影響す
                 る。
                 {expr} に幅が曖昧 (Ambiguous) な東アジアの文字が含まれていると
-                きは、文字幅は 'ambiwidth' の設定に依存する。
+                きは、文字幅は &#39;ambiwidth&#39; の設定に依存する。
                 |strlen()|, |strwidth()|, |strchars()| も参照。
  
                 |method| としても使用できる:  
                         GetText()-&gt;strdisplaywidth()
 ```</span>
-</span>
-<span class='slacklog-message' id='1585825040.121200'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1585825040.121200'>2日 19:57:21</a>
-<span class='slacklog-text'>カレントバッファ/ウィンドウのオプションの値が影響を及ぼす関数、Vim script に結構あるけどやめてほしい…</span>
-</span>
-<span class='slacklog-message' id='1585825109.122500'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
-<span class='slacklog-name'>tyru</span>
-<a class='slacklog-datetime' href='#1585825109.122500'>2日 19:58:30</a>
-<span class='slacklog-text'>まーでも用途的にしゃーない感はある…
-それこそ <#CGABGC8LA|golang> で言ってた DI の話じゃないけど、&amp;tabstop, &amp;ambiwidth とかを引数で受け付けるようにするとか</span>
-</span>
-<span class='slacklog-message' id='1585825114.122600'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
-<span class='slacklog-name'>kuu</span>
-<a class='slacklog-datetime' href='#1585825114.122600'>2日 19:58:35</a>
-<span class='slacklog-text'>getbufvarやgetwinvarみたいに差し込めるようにしてほしさある</span>
-</span>
-<span class='slacklog-message' id='1585825263.124800'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585825263.124800'>2日 20:01:04</a>
-<span class='slacklog-text'>これ使って、次の範囲、また次の範囲...って切り出したいんですけど、strdisplaywidth()と実際の長さの差をどうやったらいいだろう...ってなってて</span>
-</span>
-<span class='slacklog-message' id='1585825293.125500'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585825293.125500'>2日 20:01:34</a>
-<span class='slacklog-text'>ループ回して地道に調整するしかないんですかね</span>
-</span>
-<span class='slacklog-message' id='1585825352.126500'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
-<span class='slacklog-name'>kuu</span>
-<a class='slacklog-datetime' href='#1585825352.126500'>2日 20:02:33</a>
-<span class='slacklog-text'>長さってstrlenで拾えるやつとstrcharsで拾えるやつもありますが、そういうことではなく？</span>
-</span>
-<span class='slacklog-message' id='1585825423.127400'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
-<span class='slacklog-name'>kuu</span>
-<a class='slacklog-datetime' href='#1585825423.127400'>2日 20:03:44</a>
-<span class='slacklog-text'>表示されてる長さごとに切り出したいという話かな、だとしたらループ回すしかなさそう</span>
-</span>
-<span class='slacklog-message' id='1585825443.127800'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585825443.127800'>2日 20:04:04</a>
-<span class='slacklog-text'>それですね＞表示されてる長さ</span>
-</span>
-<span class='slacklog-message' id='1585825583.129900'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1585825583.129900'>2日 20:06:24</a>
-<span class='slacklog-text'>1. 文字列を１文字単位で区切ります `split(str, '\zs')`
-2. 各文字の幅を取ります `map(chars, '[v:val, strdisplaywidth(v:val)]')`
+  </span>
+  <span class='slacklog-message' id='1585825040.121200'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1585825040.121200'>2日 19:57:21</a>
+  <span class='slacklog-text'>カレントバッファ/ウィンドウのオプションの値が影響を及ぼす関数、Vim script に結構あるけどやめてほしい…</span>
+  </span>
+  <span class='slacklog-message' id='1585825109.122500'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+  <span class='slacklog-name'>tyru</span>
+  <a class='slacklog-datetime' href='#1585825109.122500'>2日 19:58:30</a>
+  <span class='slacklog-text'>まーでも用途的にしゃーない感はある…
+それこそ &lt;#CGABGC8LA|golang&gt; で言ってた DI の話じゃないけど、&amp;tabstop, &amp;ambiwidth とかを引数で受け付けるようにするとか</span>
+  </span>
+  <span class='slacklog-message' id='1585825114.122600'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+  <span class='slacklog-name'>kuu</span>
+  <a class='slacklog-datetime' href='#1585825114.122600'>2日 19:58:35</a>
+  <span class='slacklog-text'>getbufvarやgetwinvarみたいに差し込めるようにしてほしさある</span>
+  </span>
+  <span class='slacklog-message' id='1585825263.124800'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585825263.124800'>2日 20:01:04</a>
+  <span class='slacklog-text'>これ使って、次の範囲、また次の範囲...って切り出したいんですけど、strdisplaywidth()と実際の長さの差をどうやったらいいだろう...ってなってて</span>
+  </span>
+  <span class='slacklog-message' id='1585825293.125500'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585825293.125500'>2日 20:01:34</a>
+  <span class='slacklog-text'>ループ回して地道に調整するしかないんですかね</span>
+  </span>
+  <span class='slacklog-message' id='1585825352.126500'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+  <span class='slacklog-name'>kuu</span>
+  <a class='slacklog-datetime' href='#1585825352.126500'>2日 20:02:33</a>
+  <span class='slacklog-text'>長さってstrlenで拾えるやつとstrcharsで拾えるやつもありますが、そういうことではなく？</span>
+  </span>
+  <span class='slacklog-message' id='1585825423.127400'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+  <span class='slacklog-name'>kuu</span>
+  <a class='slacklog-datetime' href='#1585825423.127400'>2日 20:03:44</a>
+  <span class='slacklog-text'>表示されてる長さごとに切り出したいという話かな、だとしたらループ回すしかなさそう</span>
+  </span>
+  <span class='slacklog-message' id='1585825443.127800'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585825443.127800'>2日 20:04:04</a>
+  <span class='slacklog-text'>それですね＞表示されてる長さ</span>
+  </span>
+  <span class='slacklog-message' id='1585825583.129900'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1585825583.129900'>2日 20:06:24</a>
+  <span class='slacklog-text'>1. 文字列を１文字単位で区切ります `split(str, &#39;\zs&#39;)`
+2. 各文字の幅を取ります `map(chars, &#39;[v:val, strdisplaywidth(v:val)]&#39;)`
 3. 目的の長さ未満になるところを探してそこまでをくっつけていきます</span>
-</span>
-<span class='slacklog-message' id='1585825694.130400'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1585825694.130400'>2日 20:08:15</a>
-<span class='slacklog-text'>そのようにしてあれやこれやとがんばったのがこちらになります
-<https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415></span>
-</span>
-<span class='slacklog-message' id='1585825704.130800'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1585825704.130800'>2日 20:08:25</a>
-<span class='slacklog-text'>つまり vital.vim を入れれば解決</span>
-</span>
-<span class='slacklog-message' id='1585825718.131100'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
-<span class='slacklog-name'>kuu</span>
-<a class='slacklog-datetime' href='#1585825718.131100'>2日 20:08:39</a>
-<span class='slacklog-text'>:goodpoem:</span>
-</span>
-<span class='slacklog-message' id='1585825767.132500'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
-<span class='slacklog-name'>tyru</span>
-<a class='slacklog-datetime' href='#1585825767.132500'>2日 20:09:28</a>
-<span class='slacklog-text'>3分クッキング</span>
-</span>
-<span class='slacklog-message' id='1585825786.133300'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1585825786.133300'>2日 20:09:47</a>
-<span class='slacklog-text'>ドキュメントはこちら <https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268></span>
-</span>
-<span class='slacklog-message' id='1585825788.133500'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-17/331536821795_2102b9fe65a8287cf20b_48.jpg'>
-<span class='slacklog-name'>machakann</span>
-<a class='slacklog-datetime' href='#1585825788.133500'>2日 20:09:49</a>
-<span class='slacklog-text'>見た目 n 桁目のバイト位置を二分探索で探す関数を昔書いた気がする</span>
-</span>
-<span class='slacklog-message' id='1585825822.134200'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585825822.134200'>2日 20:10:23</a>
-<span class='slacklog-text'>この話の結果、tyruさんがカラースキーム関係の関数突っ込んだんならわざわざカラースキームいじるプラグインの為の作業を進める必要が揺らいでいます…</span>
-</span>
-<span class='slacklog-message' id='1585825883.134600'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
-<span class='slacklog-name'>tyru</span>
-<a class='slacklog-datetime' href='#1585825883.134600'>2日 20:11:24</a>
-<span class='slacklog-text'>すみませんすみません</span>
-</span>
-<span class='slacklog-message' id='1585825884.134700'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1585825884.134700'>2日 20:11:25</a>
-<span class='slacklog-text'>みんなで協力すると早くできる</span>
-</span>
-<span class='slacklog-message' id='1585825915.135500'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585825915.135500'>2日 20:11:56</a>
-<span class='slacklog-text'>いやなんか、こっちはこっちで暇つぶしとして始めてしまったんで文句もへったくれもないんですけど</span>
-</span>
-<span class='slacklog-message' id='1585825920.135700'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
-<span class='slacklog-name'>kuu</span>
-<a class='slacklog-datetime' href='#1585825920.135700'>2日 20:12:01</a>
-<span class='slacklog-text'>必要かどうかはともかくとして作るとVim scriptちからが上がります</span>
-</span>
-<span class='slacklog-message' id='1585825971.136600'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585825971.136600'>2日 20:12:52</a>
-<span class='slacklog-text'>とりあえずctermの色に対する知見はめちゃめちゃ理解しまして...</span>
-</span>
-<span class='slacklog-message' id='1585826043.137800'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585826043.137800'>2日 20:14:04</a>
-<span class='slacklog-text'>スクリプト内でのハイライトのコマンドの記述が想定すればするほどまとまらなくてつらい</span>
-</span>
-<span class='slacklog-message' id='1585826053.138100'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
-<span class='slacklog-name'>tyru</span>
-<a class='slacklog-datetime' href='#1585826053.138100'>2日 20:14:14</a>
-<span class='slacklog-text'>風呂入ったらほんきだす</span>
-</span>
-<span class='slacklog-message' id='1585826427.138600'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
-<span class='slacklog-name'>tyru</span>
-<a class='slacklog-datetime' href='#1585826427.138600'>2日 20:20:28</a>
-<span class='slacklog-text'>いや昨日ほとんど寝てないんだった…</span>
-</span>
-<span class='slacklog-message' id='1585826473.139200'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1585826473.139200'>2日 20:21:14</a>
-<span class='slacklog-text'>ぼんやりしながらいい方法考えてます</span>
-</span>
-[Vim]の新着質問一覧｜teratail（テラテイル） 2日 23:31:24: <https://teratail.com/questions/250989?rss=all|mac側でコピーした内容をtmuxでペーストする方法>
-<https://www.noobs.tokyo/entry/2018/09/05/123711>
+  </span>
+  <span class='slacklog-message' id='1585825694.130400'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1585825694.130400'>2日 20:08:15</a>
+  <span class='slacklog-text'>そのようにしてあれやこれやとがんばったのがこちらになります
+&lt;https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415&gt;</span>
+    <span class='slacklog-attachments'>
+          <span class='slacklog-attachment slacklog-attachment-github'>
+            <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+            <span class='slacklog-attachment-github-servicename'>GitHub</span>
+            <span class='slacklog-attachment-github-title'><a href='https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415'>vim-jp/vital.vim</a></span>
+            <span class='slacklog-attachment-github-text'>A comprehensive Vim utility functions for Vim plugins - vim-jp/vital.vim</span>
+          </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585825704.130800'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1585825704.130800'>2日 20:08:25</a>
+  <span class='slacklog-text'>つまり vital.vim を入れれば解決</span>
+  </span>
+  <span class='slacklog-message' id='1585825718.131100'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+  <span class='slacklog-name'>kuu</span>
+  <a class='slacklog-datetime' href='#1585825718.131100'>2日 20:08:39</a>
+  <span class='slacklog-text'>:goodpoem:</span>
+  </span>
+  <span class='slacklog-message' id='1585825767.132500'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+  <span class='slacklog-name'>tyru</span>
+  <a class='slacklog-datetime' href='#1585825767.132500'>2日 20:09:28</a>
+  <span class='slacklog-text'>3分クッキング</span>
+  </span>
+  <span class='slacklog-message' id='1585825786.133300'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1585825786.133300'>2日 20:09:47</a>
+  <span class='slacklog-text'>ドキュメントはこちら &lt;https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268&gt;</span>
+    <span class='slacklog-attachments'>
+          <span class='slacklog-attachment slacklog-attachment-github'>
+            <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+            <span class='slacklog-attachment-github-servicename'>GitHub</span>
+            <span class='slacklog-attachment-github-title'><a href='https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268'>vim-jp/vital.vim</a></span>
+            <span class='slacklog-attachment-github-text'>A comprehensive Vim utility functions for Vim plugins - vim-jp/vital.vim</span>
+          </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585825788.133500'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-17/331536821795_2102b9fe65a8287cf20b_48.jpg'>
+  <span class='slacklog-name'>machakann</span>
+  <a class='slacklog-datetime' href='#1585825788.133500'>2日 20:09:49</a>
+  <span class='slacklog-text'>見た目 n 桁目のバイト位置を二分探索で探す関数を昔書いた気がする</span>
+  </span>
+  <span class='slacklog-message' id='1585825822.134200'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585825822.134200'>2日 20:10:23</a>
+  <span class='slacklog-text'>この話の結果、tyruさんがカラースキーム関係の関数突っ込んだんならわざわざカラースキームいじるプラグインの為の作業を進める必要が揺らいでいます…</span>
+  </span>
+  <span class='slacklog-message' id='1585825883.134600'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+  <span class='slacklog-name'>tyru</span>
+  <a class='slacklog-datetime' href='#1585825883.134600'>2日 20:11:24</a>
+  <span class='slacklog-text'>すみませんすみません</span>
+  </span>
+  <span class='slacklog-message' id='1585825884.134700'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1585825884.134700'>2日 20:11:25</a>
+  <span class='slacklog-text'>みんなで協力すると早くできる</span>
+  </span>
+  <span class='slacklog-message' id='1585825915.135500'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585825915.135500'>2日 20:11:56</a>
+  <span class='slacklog-text'>いやなんか、こっちはこっちで暇つぶしとして始めてしまったんで文句もへったくれもないんですけど</span>
+  </span>
+  <span class='slacklog-message' id='1585825920.135700'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+  <span class='slacklog-name'>kuu</span>
+  <a class='slacklog-datetime' href='#1585825920.135700'>2日 20:12:01</a>
+  <span class='slacklog-text'>必要かどうかはともかくとして作るとVim scriptちからが上がります</span>
+  </span>
+  <span class='slacklog-message' id='1585825971.136600'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585825971.136600'>2日 20:12:52</a>
+  <span class='slacklog-text'>とりあえずctermの色に対する知見はめちゃめちゃ理解しまして...</span>
+  </span>
+  <span class='slacklog-message' id='1585826043.137800'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585826043.137800'>2日 20:14:04</a>
+  <span class='slacklog-text'>スクリプト内でのハイライトのコマンドの記述が想定すればするほどまとまらなくてつらい</span>
+  </span>
+  <span class='slacklog-message' id='1585826053.138100'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+  <span class='slacklog-name'>tyru</span>
+  <a class='slacklog-datetime' href='#1585826053.138100'>2日 20:14:14</a>
+  <span class='slacklog-text'>風呂入ったらほんきだす</span>
+  </span>
+  <span class='slacklog-message' id='1585826427.138600'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+  <span class='slacklog-name'>tyru</span>
+  <a class='slacklog-datetime' href='#1585826427.138600'>2日 20:20:28</a>
+  <span class='slacklog-text'>いや昨日ほとんど寝てないんだった…</span>
+  </span>
+  <span class='slacklog-message' id='1585826473.139200'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1585826473.139200'>2日 20:21:14</a>
+  <span class='slacklog-text'>ぼんやりしながらいい方法考えてます</span>
+  </span>
+[Vim]の新着質問一覧｜teratail（テラテイル） 2日 23:31:24: &lt;https://teratail.com/questions/250989?rss=all|mac側でコピーした内容をtmuxでペーストする方法&gt;
+&lt;https://www.noobs.tokyo/entry/2018/09/05/123711&gt;
 ↑のサイトを参考にして、macとtmuxのクリップボードを共有化を試みたのですが  
-tmux =&gt; mac　についてはクリップボードを共有できているのですが
-mac =&gt; tmux の時に、クリップボードを共有することができません。  
+tmux =&amp;gt; mac　についてはクリップボードを共有できているのですが
+mac =&amp;gt; tmux の時に、クリップボードを共有することができません。  
 なにか解決方法はありませんでしょうか？  
 tmux 3.0a
 MacOS 10.15.4
 
-<https://teratail.com/questions/250989?rss=all|続きを見る>
-<span class='slacklog-message' id='1585840106.142400'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1585840106.142400'>3日 00:08:27</a>
-<span class='slacklog-text'>一瞬騙されそうになったけど Vim 関係ないな?</span>
-</span>
-<span class='slacklog-message' id='1585840372.142700'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
-<span class='slacklog-name'>ゴリラ</span>
-<a class='slacklog-datetime' href='#1585840372.142700'>3日 00:12:53</a>
-<span class='slacklog-text'>回答しようとしたけど、意図よくわからんってなってやめた</span>
-</span>
-[Vim]の新着質問一覧｜teratail（テラテイル） 5日 15:31:14: <https://teratail.com/questions/251509?rss=all|pythonのPATHをMacで通したい>
+&lt;https://teratail.com/questions/250989?rss=all|続きを見る&gt;
+  <span class='slacklog-message' id='1585840106.142400'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1585840106.142400'>3日 00:08:27</a>
+  <span class='slacklog-text'>一瞬騙されそうになったけど Vim 関係ないな?</span>
+  </span>
+  <span class='slacklog-message' id='1585840372.142700'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+  <span class='slacklog-name'>ゴリラ</span>
+  <a class='slacklog-datetime' href='#1585840372.142700'>3日 00:12:53</a>
+  <span class='slacklog-text'>回答しようとしたけど、意図よくわからんってなってやめた</span>
+  </span>
+[Vim]の新着質問一覧｜teratail（テラテイル） 5日 15:31:14: &lt;https://teratail.com/questions/251509?rss=all|pythonのPATHをMacで通したい&gt;
 Macにてpythonの環境設定を行いたい
 python3.7.7をインストールし、これのpathを通したいのだが
 どのようにすれば良いのでしょうか。  
@@ -324,39 +340,39 @@ pathを記入する
 %source ~/.bash_profile
 わからなか...
 
-<https://teratail.com/questions/251509?rss=all|続きを見る>
-<span class='slacklog-message' id='1586068484.145800'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-<span class='slacklog-name'>yutakatay</span>
-<a class='slacklog-datetime' href='#1586068484.145800'>5日 15:34:45</a>
-<span class='slacklog-text'>vim要素0.01....</span>
-</span>
-<span class='slacklog-message' id='1586068511.146300'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1586068511.146300'>5日 15:35:12</a>
-<span class='slacklog-text'>vim発見クイズのときと、ガチvimの時の差がはげしいw</span>
-</span>
-<span class='slacklog-message' id='1586069045.149800'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
-<span class='slacklog-name'>johejo</span>
-<a class='slacklog-datetime' href='#1586069045.149800'>5日 15:44:06</a>
-<span class='slacklog-text'>質問内容はほぼvimに関係ないけど、vimでファイルを開いて編集はできているようなのでvimmerとしての第一歩は踏めているのでは（錯乱）</span>
-</span>
-<span class='slacklog-message' id='1586069315.150200'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
-<span class='slacklog-name'>kuu</span>
-<a class='slacklog-datetime' href='#1586069315.150200'>5日 15:48:36</a>
-<span class='slacklog-text'>ファイルを編集するだけで賞賛されるエディタ</span>
-</span>
-<span class='slacklog-message' id='1586069667.152200'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
-<span class='slacklog-name'>Nicholas</span>
-<a class='slacklog-datetime' href='#1586069667.152200'>5日 15:54:28</a>
-<span class='slacklog-text'>ファイルを編集するだけでvimを使えることの満足が得られる
+&lt;https://teratail.com/questions/251509?rss=all|続きを見る&gt;
+  <span class='slacklog-message' id='1586068484.145800'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+  <span class='slacklog-name'>yutakatay</span>
+  <a class='slacklog-datetime' href='#1586068484.145800'>5日 15:34:45</a>
+  <span class='slacklog-text'>vim要素0.01....</span>
+  </span>
+  <span class='slacklog-message' id='1586068511.146300'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1586068511.146300'>5日 15:35:12</a>
+  <span class='slacklog-text'>vim発見クイズのときと、ガチvimの時の差がはげしいw</span>
+  </span>
+  <span class='slacklog-message' id='1586069045.149800'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
+  <span class='slacklog-name'>johejo</span>
+  <a class='slacklog-datetime' href='#1586069045.149800'>5日 15:44:06</a>
+  <span class='slacklog-text'>質問内容はほぼvimに関係ないけど、vimでファイルを開いて編集はできているようなのでvimmerとしての第一歩は踏めているのでは（錯乱）</span>
+  </span>
+  <span class='slacklog-message' id='1586069315.150200'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+  <span class='slacklog-name'>kuu</span>
+  <a class='slacklog-datetime' href='#1586069315.150200'>5日 15:48:36</a>
+  <span class='slacklog-text'>ファイルを編集するだけで賞賛されるエディタ</span>
+  </span>
+  <span class='slacklog-message' id='1586069667.152200'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+  <span class='slacklog-name'>Nicholas</span>
+  <a class='slacklog-datetime' href='#1586069667.152200'>5日 15:54:28</a>
+  <span class='slacklog-text'>ファイルを編集するだけでvimを使えることの満足が得られる
 →vimの学習はそんなに難しくない</span>
-</span>
-[Vim]の新着質問一覧｜teratail（テラテイル） 5日 17:31:18: <https://teratail.com/questions/251545?rss=all|vimでコードの自動補完と同時に不思議な空間が挿入される>
+  </span>
+[Vim]の新着質問一覧｜teratail（テラテイル） 5日 17:31:18: &lt;https://teratail.com/questions/251545?rss=all|vimでコードの自動補完と同時に不思議な空間が挿入される&gt;
 前提
 vim初学者です。
 iTermからmac vimを使用しています。  
@@ -374,192 +390,192 @@ iTermからmac vimを使用しています。
 自分の.vimrc
 関係がありそうな部分のみ抜粋し...
 
-<https://teratail.com/questions/251545?rss=all|続きを見る>
-<span class='slacklog-message' id='1586075636.153500'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1586075636.153500'>5日 17:33:57</a>
-<span class='slacklog-text'>neocomplete関係はわからないな...</span>
-</span>
-<span class='slacklog-message' id='1586076141.154000'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-<span class='slacklog-name'>yutakatay</span>
-<a class='slacklog-datetime' href='#1586076141.154000'>5日 17:42:22</a>
-<span class='slacklog-text'>未だにneocom使ってる人いるんだ・・・</span>
-</span>
-<span class='slacklog-message' id='1586076170.154200'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
-<span class='slacklog-name'>heavenshell</span>
-<a class='slacklog-datetime' href='#1586076170.154200'>5日 17:42:51</a>
-<span class='slacklog-text'>はい。</span>
-</span>
-<span class='slacklog-message' id='1586076250.155300'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-<span class='slacklog-name'>yutakatay</span>
-<a class='slacklog-datetime' href='#1586076250.155300'>5日 17:44:11</a>
-<span class='slacklog-text'>Neobundle＋Noecomplete+Unite、なにもかも皆懐かしい</span>
-</span>
-<span class='slacklog-message' id='1586077973.156200'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
-<span class='slacklog-name'>luma</span>
-<a class='slacklog-datetime' href='#1586077973.156200'>5日 18:12:54</a>
-<span class='slacklog-text'>これ neosnippet 展開した時のやつだ （目印で特殊な記号みたいなのが入って，conceal でかくされている（とかだと思う））</span>
-</span>
-<span class='slacklog-message' id='1586078047.156900'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
-<span class='slacklog-name'>tsuyoshi_cho</span>
-<a class='slacklog-datetime' href='#1586078047.156900'>5日 18:14:08</a>
-<span class='slacklog-text'>あー</span>
-</span>
-<span class='slacklog-message' id='1586078047.157000'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
-<span class='slacklog-name'>luma</span>
-<a class='slacklog-datetime' href='#1586078047.157000'>5日 18:14:08</a>
-<span class='slacklog-text'>スニペットでジャンプせずにescapeしたらこうなる，スニペット編集してください，とかだな</span>
-</span>
-<span class='slacklog-message' id='1586078061.157200'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
-<span class='slacklog-name'>luma</span>
-<a class='slacklog-datetime' href='#1586078061.157200'>5日 18:14:22</a>
-<span class='slacklog-text'>回答するか</span>
-</span>
-<span class='slacklog-message' id='1586078412.157400'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
-<span class='slacklog-name'>luma</span>
-<a class='slacklog-datetime' href='#1586078412.157400'>5日 18:20:13</a>
-<span class='slacklog-text'>これ言語なんだろ</span>
-</span>
-<span class='slacklog-message' id='1586078469.157600'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
-<span class='slacklog-name'>luma</span>
-<a class='slacklog-datetime' href='#1586078469.157600'>5日 18:21:10</a>
-<span class='slacklog-text'>Rubyっぽいな</span>
-</span>
-<span class='slacklog-message' id='1586079050.157900'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
-<span class='slacklog-name'>luma</span>
-<a class='slacklog-datetime' href='#1586079050.157900'>5日 18:30:51</a>
-<span class='slacklog-text'>回答 Done.</span>
-</span>
-<span class='slacklog-message' id='1586103619.160300'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586103619.160300'>6日 01:20:20</a>
-<span class='slacklog-text'>質問です。
+&lt;https://teratail.com/questions/251545?rss=all|続きを見る&gt;
+  <span class='slacklog-message' id='1586075636.153500'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1586075636.153500'>5日 17:33:57</a>
+  <span class='slacklog-text'>neocomplete関係はわからないな...</span>
+  </span>
+  <span class='slacklog-message' id='1586076141.154000'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+  <span class='slacklog-name'>yutakatay</span>
+  <a class='slacklog-datetime' href='#1586076141.154000'>5日 17:42:22</a>
+  <span class='slacklog-text'>未だにneocom使ってる人いるんだ・・・</span>
+  </span>
+  <span class='slacklog-message' id='1586076170.154200'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+  <span class='slacklog-name'>heavenshell</span>
+  <a class='slacklog-datetime' href='#1586076170.154200'>5日 17:42:51</a>
+  <span class='slacklog-text'>はい。</span>
+  </span>
+  <span class='slacklog-message' id='1586076250.155300'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+  <span class='slacklog-name'>yutakatay</span>
+  <a class='slacklog-datetime' href='#1586076250.155300'>5日 17:44:11</a>
+  <span class='slacklog-text'>Neobundle＋Noecomplete+Unite、なにもかも皆懐かしい</span>
+  </span>
+  <span class='slacklog-message' id='1586077973.156200'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+  <span class='slacklog-name'>luma</span>
+  <a class='slacklog-datetime' href='#1586077973.156200'>5日 18:12:54</a>
+  <span class='slacklog-text'>これ neosnippet 展開した時のやつだ （目印で特殊な記号みたいなのが入って，conceal でかくされている（とかだと思う））</span>
+  </span>
+  <span class='slacklog-message' id='1586078047.156900'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+  <span class='slacklog-name'>tsuyoshi_cho</span>
+  <a class='slacklog-datetime' href='#1586078047.156900'>5日 18:14:08</a>
+  <span class='slacklog-text'>あー</span>
+  </span>
+  <span class='slacklog-message' id='1586078047.157000'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+  <span class='slacklog-name'>luma</span>
+  <a class='slacklog-datetime' href='#1586078047.157000'>5日 18:14:08</a>
+  <span class='slacklog-text'>スニペットでジャンプせずにescapeしたらこうなる，スニペット編集してください，とかだな</span>
+  </span>
+  <span class='slacklog-message' id='1586078061.157200'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+  <span class='slacklog-name'>luma</span>
+  <a class='slacklog-datetime' href='#1586078061.157200'>5日 18:14:22</a>
+  <span class='slacklog-text'>回答するか</span>
+  </span>
+  <span class='slacklog-message' id='1586078412.157400'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+  <span class='slacklog-name'>luma</span>
+  <a class='slacklog-datetime' href='#1586078412.157400'>5日 18:20:13</a>
+  <span class='slacklog-text'>これ言語なんだろ</span>
+  </span>
+  <span class='slacklog-message' id='1586078469.157600'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+  <span class='slacklog-name'>luma</span>
+  <a class='slacklog-datetime' href='#1586078469.157600'>5日 18:21:10</a>
+  <span class='slacklog-text'>Rubyっぽいな</span>
+  </span>
+  <span class='slacklog-message' id='1586079050.157900'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+  <span class='slacklog-name'>luma</span>
+  <a class='slacklog-datetime' href='#1586079050.157900'>5日 18:30:51</a>
+  <span class='slacklog-text'>回答 Done.</span>
+  </span>
+  <span class='slacklog-message' id='1586103619.160300'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586103619.160300'>6日 01:20:20</a>
+  <span class='slacklog-text'>質問です。
 deopleteなどで表示したポップアップの選択をループすることってできるんでしょうか？一番下までスクロールしたら、一番上まで戻るというような挙動です。</span>
-</span>
-<span class='slacklog-message' id='1586118526.162000'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586118526.162000'>6日 05:28:47</a>
-<span class='slacklog-text'>Vimのデフォルトの挙動では間に補完なしを挟むだけでループすると思うのですが</span>
-</span>
-<span class='slacklog-message' id='1586118533.162400'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586118533.162400'>6日 05:28:54</a>
-<span class='slacklog-text'>その挙動は必要ありますか？</span>
-</span>
-<span class='slacklog-message' id='1586169188.165400'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586169188.165400'>6日 19:33:09</a>
-<span class='slacklog-text'>絶対必要というわけではないのですが、うっかり一番下を通り過ぎてしまったときや、一番上なのに上に行ってしまったりしたときに、新たにポップアップを開くとき一文字戻ったり、手動で開いたりするのがすこーし手間かなぁと思いました。</span>
-</span>
-<span class='slacklog-message' id='1586171734.165700'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
-<span class='slacklog-name'>thinca</span>
-<a class='slacklog-datetime' href='#1586171734.165700'>6日 20:15:35</a>
-<span class='slacklog-text'>勝手に閉じたりはしないと思います</span>
-</span>
-<span class='slacklog-message' id='1586172881.166500'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586172881.166500'>6日 20:34:42</a>
-<span class='slacklog-text'>いや、そのときにループしますよ。開き直す必要はありません</span>
-</span>
-<span class='slacklog-message' id='1586174821.170000'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586174821.170000'>6日 21:07:02</a>
-<span class='slacklog-text'>C-nで下へ、C-pで上へと送ってるんですが、一番下まで行くと、Pattern not found とでて閉じてしまいます。ubuntuとmacとwindowsでもなるんですが...。そうでですか、ならないはずなんですか。</span>
-</span>
-<span class='slacklog-message' id='1586176140.170500'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586176140.170500'>6日 21:29:01</a>
-<span class='slacklog-text'>あ、これはdeopleteの問題ぽいぞ</span>
-</span>
-<span class='slacklog-message' id='1586176150.170800'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586176150.170800'>6日 21:29:11</a>
-<span class='slacklog-text'>deoplete使ってませんか</span>
-</span>
-<span class='slacklog-message' id='1586176179.171300'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586176179.171300'>6日 21:29:40</a>
-<span class='slacklog-text'>deoplete使ってます。最新版です。</span>
-</span>
-<span class='slacklog-message' id='1586176224.171600'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586176224.171600'>6日 21:30:25</a>
-<span class='slacklog-text'>あーやはり</span>
-</span>
-<span class='slacklog-message' id='1586176317.172800'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586176317.172800'>6日 21:31:58</a>
-<span class='slacklog-text'>一応自分のdeopleteの設定を全部削除しても発生したので、(enable以外)deopleteではないと思ってました。</span>
-</span>
-<span class='slacklog-message' id='1586176466.173200'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586176466.173200'>6日 21:34:27</a>
-<span class='slacklog-text'>直したのでdeopleteを最新版にしてください</span>
-</span>
-<span class='slacklog-message' id='1586176570.174200'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586176570.174200'>6日 21:36:11</a>
-<span class='slacklog-text'>直っていることを確認しました。ありがとうございます！</span>
-</span>
-<span class='slacklog-message' id='1586176618.174500'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586176618.174500'>6日 21:36:59</a>
-<span class='slacklog-text'>これで安心ですね</span>
-</span>
-<span class='slacklog-message' id='1586176660.175700'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586176660.175700'>6日 21:37:41</a>
-<span class='slacklog-text'>はい。お手数おかけしました。</span>
-</span>
-<span class='slacklog-message' id='1586176678.176400'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586176678.176400'>6日 21:37:59</a>
-<span class='slacklog-text'>ちなみにこの問題は別のバグを直そうとしたときにエンバグしてたようです</span>
-</span>
-<span class='slacklog-message' id='1586176730.177400'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586176730.177400'>6日 21:38:51</a>
-<span class='slacklog-text'>はーなるほど。記憶違いでなければ、以前は発生しなかった気がするんですよね。</span>
-</span>
-<span class='slacklog-message' id='1586176787.177800'>
-<img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
-<span class='slacklog-name'>nabezokodaikon</span>
-<a class='slacklog-datetime' href='#1586176787.177800'>6日 21:39:48</a>
-<span class='slacklog-text'>いつもありがとうございます。お疲れ様です。</span>
-</span>
-<span class='slacklog-message' id='1586177417.178600'>
-<img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
-<span class='slacklog-name'>Shougo</span>
-<a class='slacklog-datetime' href='#1586177417.178600'>6日 21:50:18</a>
-<span class='slacklog-text'>はい。最近の修正によるエンバグなので認識は正しいです</span>
-</span>
+  </span>
+  <span class='slacklog-message' id='1586118526.162000'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586118526.162000'>6日 05:28:47</a>
+  <span class='slacklog-text'>Vimのデフォルトの挙動では間に補完なしを挟むだけでループすると思うのですが</span>
+  </span>
+  <span class='slacklog-message' id='1586118533.162400'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586118533.162400'>6日 05:28:54</a>
+  <span class='slacklog-text'>その挙動は必要ありますか？</span>
+  </span>
+  <span class='slacklog-message' id='1586169188.165400'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586169188.165400'>6日 19:33:09</a>
+  <span class='slacklog-text'>絶対必要というわけではないのですが、うっかり一番下を通り過ぎてしまったときや、一番上なのに上に行ってしまったりしたときに、新たにポップアップを開くとき一文字戻ったり、手動で開いたりするのがすこーし手間かなぁと思いました。</span>
+  </span>
+  <span class='slacklog-message' id='1586171734.165700'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+  <span class='slacklog-name'>thinca</span>
+  <a class='slacklog-datetime' href='#1586171734.165700'>6日 20:15:35</a>
+  <span class='slacklog-text'>勝手に閉じたりはしないと思います</span>
+  </span>
+  <span class='slacklog-message' id='1586172881.166500'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586172881.166500'>6日 20:34:42</a>
+  <span class='slacklog-text'>いや、そのときにループしますよ。開き直す必要はありません</span>
+  </span>
+  <span class='slacklog-message' id='1586174821.170000'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586174821.170000'>6日 21:07:02</a>
+  <span class='slacklog-text'>C-nで下へ、C-pで上へと送ってるんですが、一番下まで行くと、Pattern not found とでて閉じてしまいます。ubuntuとmacとwindowsでもなるんですが...。そうでですか、ならないはずなんですか。</span>
+  </span>
+  <span class='slacklog-message' id='1586176140.170500'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586176140.170500'>6日 21:29:01</a>
+  <span class='slacklog-text'>あ、これはdeopleteの問題ぽいぞ</span>
+  </span>
+  <span class='slacklog-message' id='1586176150.170800'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586176150.170800'>6日 21:29:11</a>
+  <span class='slacklog-text'>deoplete使ってませんか</span>
+  </span>
+  <span class='slacklog-message' id='1586176179.171300'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586176179.171300'>6日 21:29:40</a>
+  <span class='slacklog-text'>deoplete使ってます。最新版です。</span>
+  </span>
+  <span class='slacklog-message' id='1586176224.171600'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586176224.171600'>6日 21:30:25</a>
+  <span class='slacklog-text'>あーやはり</span>
+  </span>
+  <span class='slacklog-message' id='1586176317.172800'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586176317.172800'>6日 21:31:58</a>
+  <span class='slacklog-text'>一応自分のdeopleteの設定を全部削除しても発生したので、(enable以外)deopleteではないと思ってました。</span>
+  </span>
+  <span class='slacklog-message' id='1586176466.173200'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586176466.173200'>6日 21:34:27</a>
+  <span class='slacklog-text'>直したのでdeopleteを最新版にしてください</span>
+  </span>
+  <span class='slacklog-message' id='1586176570.174200'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586176570.174200'>6日 21:36:11</a>
+  <span class='slacklog-text'>直っていることを確認しました。ありがとうございます！</span>
+  </span>
+  <span class='slacklog-message' id='1586176618.174500'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586176618.174500'>6日 21:36:59</a>
+  <span class='slacklog-text'>これで安心ですね</span>
+  </span>
+  <span class='slacklog-message' id='1586176660.175700'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586176660.175700'>6日 21:37:41</a>
+  <span class='slacklog-text'>はい。お手数おかけしました。</span>
+  </span>
+  <span class='slacklog-message' id='1586176678.176400'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586176678.176400'>6日 21:37:59</a>
+  <span class='slacklog-text'>ちなみにこの問題は別のバグを直そうとしたときにエンバグしてたようです</span>
+  </span>
+  <span class='slacklog-message' id='1586176730.177400'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586176730.177400'>6日 21:38:51</a>
+  <span class='slacklog-text'>はーなるほど。記憶違いでなければ、以前は発生しなかった気がするんですよね。</span>
+  </span>
+  <span class='slacklog-message' id='1586176787.177800'>
+  <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
+  <span class='slacklog-name'>nabezokodaikon</span>
+  <a class='slacklog-datetime' href='#1586176787.177800'>6日 21:39:48</a>
+  <span class='slacklog-text'>いつもありがとうございます。お疲れ様です。</span>
+  </span>
+  <span class='slacklog-message' id='1586177417.178600'>
+  <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+  <span class='slacklog-name'>Shougo</span>
+  <a class='slacklog-datetime' href='#1586177417.178600'>6日 21:50:18</a>
+  <span class='slacklog-text'>はい。最近の修正によるエンバグなので認識は正しいです</span>
+  </span>
 {% endraw %}
