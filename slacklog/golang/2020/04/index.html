@@ -35,18 +35,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
             <span class='slacklog-attachment-twitter-authoricon'><img src='https://pbs.twimg.com/profile_images/1142704713156026368/qafj2_Vy_normal.jpg'></span>
             <span class='slacklog-attachment-twitter-authorname'>ゴリラ@バナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナ</span>
             <span class='slacklog-attachment-twitter-authorsubname'>@gorilla0513</span>
-            <span class='slacklog-attachment-twitter-text'>Macで次のディレクトリ構成で
-cd test/api &amp;amp;&amp;amp; go run main.goするとエラーになるんだけど、この構成あかん？
-
-cannot find module providing package &lt;http://github.com/test/api/gorilla&gt;
-
-tree test/
-test/
-└── api
-    ├── go.mod
-    ├── gorilla
-    │   └── gorilla.go
-    └── main.go</span>
+            <span class='slacklog-attachment-twitter-text'>Macで次のディレクトリ構成で<br>cd test/api &amp;&amp; go run main.goするとエラーになるんだけど、この構成あかん？<br><br>cannot find module providing package <a href='http://github.com/test/api/gorilla'>http://github.com/test/api/gorilla</a><br><br>tree test/<br>test/<br>└── api<br>    ├── go.mod<br>    ├── gorilla<br>    │   └── gorilla.go<br>    └── main.go</span>
             <span class='slacklog-attachment-twitter-footericon'><img src='https://a.slack-edge.com/80588/img/services/twitter_pixel_snapped_32.png'></span>
             <span class='slacklog-attachment-twitter-footer'>Twitter</span>
           </span>
@@ -1360,7 +1349,7 @@ test/
             <span class='slacklog-attachment-twitter-authoricon'><img src='https://pbs.twimg.com/profile_images/378800000251552195/5b54e030a12bb39e4219ab8ba442a810_normal.png'></span>
             <span class='slacklog-attachment-twitter-authorname'>Kuniwak</span>
             <span class='slacklog-attachment-twitter-authorsubname'>@orga_chem</span>
-            <span class='slacklog-attachment-twitter-text'>初めまして。その記事の著者です。おっしゃる通り、バニラDIは **ほぼ** コンストラクタ注入の言い換えです（記事中でも言及があります）。あえて別の名前をつけたのは、DIに特別なライブラリ（=DIコンテナ）が必ずしも必要ではないことを強調するためです。（続く &lt;https://twitter.com/_yyu_/status/1037954329578106880&gt;</span>
+            <span class='slacklog-attachment-twitter-text'>初めまして。その記事の著者です。おっしゃる通り、バニラDIは **ほぼ** コンストラクタ注入の言い換えです（記事中でも言及があります）。あえて別の名前をつけたのは、DIに特別なライブラリ（=DIコンテナ）が必ずしも必要ではないことを強調するためです。（続く <a href='https://twitter.com/_yyu_/status/1037954329578106880'>https://twitter.com/_yyu_/status/1037954329578106880</a></span>
             <span class='slacklog-attachment-twitter-footericon'><img src='https://a.slack-edge.com/80588/img/services/twitter_pixel_snapped_32.png'></span>
             <span class='slacklog-attachment-twitter-footer'>Twitter</span>
           </span>
@@ -1368,8 +1357,7 @@ test/
             <span class='slacklog-attachment-twitter-authoricon'><img src='https://pbs.twimg.com/profile_images/1198179592520921088/w0T_BnoX_normal.jpg'></span>
             <span class='slacklog-attachment-twitter-authorname'>吉村 優 / YOSHIMURA Yuu</span>
             <span class='slacklog-attachment-twitter-authorsubname'>@_yyu_</span>
-            <span class='slacklog-attachment-twitter-text'>もしもし夏休み子どもDI電話相談ですか、この記事で著者らが「バニラDI」と言っているのはコンストラクタインジェクションと何が違うのでしょうか。またこれの課題である“依存の依存が書きにくい”という問題を「設計破綻」と言っていますがどうなんでしょうか。
-&lt;https://swet.dena.com/entry/2018/05/09/195714&gt;</span>
+            <span class='slacklog-attachment-twitter-text'>もしもし夏休み子どもDI電話相談ですか、この記事で著者らが「バニラDI」と言っているのはコンストラクタインジェクションと何が違うのでしょうか。またこれの課題である“依存の依存が書きにくい”という問題を「設計破綻」と言っていますがどうなんでしょうか。<br><a href='https://swet.dena.com/entry/2018/05/09/195714'>https://swet.dena.com/entry/2018/05/09/195714</a></span>
             <span class='slacklog-attachment-twitter-footericon'><img src='https://a.slack-edge.com/80588/img/services/twitter_pixel_snapped_32.png'></span>
             <span class='slacklog-attachment-twitter-footer'>Twitter</span>
           </span>
@@ -2332,29 +2320,7 @@ test/
   <span class='slacklog-text'>上でmattnさんがやってるこれ<br><a href='https://vim-jp.slack.com/archives/CGABGC8LA/p1585874193345600'>https://vim-jp.slack.com/archives/CGABGC8LA/p1585874193345600</a><br>みたいにやるのがいいのかな</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
-            <div class='slacklog-attachment-other-text'>```package main
-
-type Base struct { }
-
-func (b *Base) DoSomething() {
-	println(&#34;Yes, We Can!&#34;)
-}
-
-type Derived struct {
-	Base
-}
-
-func (rd *Derived) Say() {
-	println(&#34;セイ&#34;)
-}
-
-
-func main() {
-	var d Derived
-
-	d.Say()
-	d.DoSomething()
-}```</div>
+            <div class='slacklog-attachment-other-text'><code>package main<br><br>type Base struct { }<br><br>func (b *Base) DoSomething() {<br>	println(&#34;Yes, We Can!&#34;)<br>}<br><br>type Derived struct {<br>	Base<br>}<br><br>func (rd *Derived) Say() {<br>	println(&#34;セイ&#34;)<br>}<br><br><br>func main() {<br>	var d Derived<br><br>	d.Say()<br>	d.DoSomething()<br>}</code></div>
           </span>
     </span>
   </span>
@@ -2638,7 +2604,7 @@ func main() {
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
             <span class='slacklog-attachment-github-servicename'>GitHub</span>
             <span class='slacklog-attachment-github-title'><a href='https://github.com/golang/go/issues/35950'>proposal: cmd/go: support embedding static assets (files) in binaries · Issue #35950 · golang/go</a></span>
-            <span class='slacklog-attachment-github-text'>There are many tools to embed static asset files into binaries: &lt;https://godoc.org/perkeep.org/pkg/fileembed&gt; / &lt;http://perkeep.org/pkg/fileembed/genfileembed|perkeep.org/pkg/fileembed/genfileembed&gt; &lt;https://godoc.org/github.com/gobuffalo/packr&gt; htt...</span>
+            <span class='slacklog-attachment-github-text'>There are many tools to embed static asset files into binaries: <a href='https://godoc.org/perkeep.org/pkg/fileembed&gt; / &lt;http://perkeep.org/pkg/fileembed/genfileembed|perkeep.org/pkg/fileembed/genfileembed'>perkeep.org/pkg/fileembed/genfileembed</a> <a href='https://godoc.org/github.com/gobuffalo/packr'>https://godoc.org/github.com/gobuffalo/packr</a> htt...</span>
           </span>
     </span>
   </span>
@@ -2652,7 +2618,7 @@ func main() {
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
             <span class='slacklog-attachment-github-servicename'>GitHub</span>
             <span class='slacklog-attachment-github-title'><a href='https://github.com/golang/go/issues/36982'>go.dev: serve status badge similar to godoc.org · Issue #36982 · golang/go</a></span>
-            <span class='slacklog-attachment-github-text'>What did you do? It would be nice to have a badge that can be used on other sites (e.g. &lt;http://github.com|github.com&gt;) that link to the documentation page of the module / package. For example, using a URL like this: ...</span>
+            <span class='slacklog-attachment-github-text'>What did you do? It would be nice to have a badge that can be used on other sites (e.g. <a href='http://github.com|github.com'>github.com</a>) that link to the documentation page of the module / package. For example, using a URL like this: ...</span>
           </span>
     </span>
   </span>
@@ -3320,7 +3286,7 @@ func main() {
             <span class='slacklog-attachment-twitter-authoricon'><img src='https://pbs.twimg.com/profile_images/1022150732634419200/yZg4xLsO_normal.jpg'></span>
             <span class='slacklog-attachment-twitter-authorname'>mattn</span>
             <span class='slacklog-attachment-twitter-authorsubname'>@mattn_jp</span>
-            <span class='slacklog-attachment-twitter-text'>書いた。 / “Big Sky :: Go 言語のスライス挿入ベンチマーク” &lt;https://htn.to/4mZ5nY9HW5&gt;</span>
+            <span class='slacklog-attachment-twitter-text'>書いた。 / “Big Sky :: Go 言語のスライス挿入ベンチマーク” <a href='https://htn.to/4mZ5nY9HW5'>https://htn.to/4mZ5nY9HW5</a></span>
             <span class='slacklog-attachment-twitter-footericon'><img src='https://a.slack-edge.com/80588/img/services/twitter_pixel_snapped_32.png'></span>
             <span class='slacklog-attachment-twitter-footer'>Twitter</span>
           </span>
@@ -3606,7 +3572,7 @@ func main() {
               <span class='slacklog-attachment-other-servicename'>Qiita</span>
             </div>
             <div class='slacklog-attachment-other-title'><a href='https://qiita.com/kyoh86/items/f5e007bc004c34b2d314'>goで作ったツールインストールするの面倒くさい - Qiita</a></div>
-            <div class='slacklog-attachment-other-text'>## goでツール作ろう 「まくる」と言うほどには作ってないけど。 ところで、go製のツールいっぱいあるけど、管理だるくない？ install は楽ちん。 ``` $ go get &lt;http://github.com/foo/bar|github.com/foo/bar&gt; ``` ...</div>
+            <div class='slacklog-attachment-other-text'>## goでツール作ろう 「まくる」と言うほどには作ってないけど。 ところで、go製のツールいっぱいあるけど、管理だるくない？ install は楽ちん。 <code> $ go get <a href='http://github.com/foo/bar|github.com/foo/bar'>github.com/foo/bar</a> </code> ...</div>
           </span>
     </span>
   </span>
@@ -3734,9 +3700,7 @@ func main() {
             <span class='slacklog-attachment-twitter-authoricon'><img src='https://pbs.twimg.com/profile_images/1022150732634419200/yZg4xLsO_normal.jpg'></span>
             <span class='slacklog-attachment-twitter-authorname'>mattn</span>
             <span class='slacklog-attachment-twitter-authorsubname'>@mattn_jp</span>
-            <span class='slacklog-attachment-twitter-text'>Go の testing.T と testing.B に TempDir が追加された。テストの間だけテンポラリディレクトリを利用するのに便利。 #golang
-
-&lt;https://github.com/golang/go/commit/888a0c8ef6afb752aafd147eda40d62796d87cb3&gt;</span>
+            <span class='slacklog-attachment-twitter-text'>Go の testing.T と testing.B に TempDir が追加された。テストの間だけテンポラリディレクトリを利用するのに便利。 #golang<br><br><a href='https://github.com/golang/go/commit/888a0c8ef6afb752aafd147eda40d62796d87cb3'>https://github.com/golang/go/commit/888a0c8ef6afb752aafd147eda40d62796d87cb3</a></span>
             <span class='slacklog-attachment-twitter-footericon'><img src='https://a.slack-edge.com/80588/img/services/twitter_pixel_snapped_32.png'></span>
             <span class='slacklog-attachment-twitter-footer'>Twitter</span>
           </span>
@@ -3908,13 +3872,7 @@ func main() {
             <span class='slacklog-attachment-twitter-authoricon'><img src='https://pbs.twimg.com/profile_images/1420034183/gally___normal.jpg'></span>
             <span class='slacklog-attachment-twitter-authorname'>xatier@命短し飲め飲め乙女</span>
             <span class='slacklog-attachment-twitter-authorsubname'>@xatierlikeLee</span>
-            <span class='slacklog-attachment-twitter-text'>大神就是一言不合就寫個 lisp 直譯器粗奶
-
-Big Sky :: Go言語で Lisp 処理系を作った。
- &lt;https://mattn.kaoriya.net/software/lang/go/20200405211020.htm&gt;
-
-golisp/ops.go at master · mattn/golisp
- &lt;https://github.com/mattn/golisp/blob/master/ops.go&gt;</span>
+            <span class='slacklog-attachment-twitter-text'>大神就是一言不合就寫個 lisp 直譯器粗奶<br><br>Big Sky :: Go言語で Lisp 処理系を作った。<br> <a href='https://mattn.kaoriya.net/software/lang/go/20200405211020.htm'>https://mattn.kaoriya.net/software/lang/go/20200405211020.htm</a><br><br>golisp/ops.go at master · mattn/golisp<br> <a href='https://github.com/mattn/golisp/blob/master/ops.go'>https://github.com/mattn/golisp/blob/master/ops.go</a></span>
             <span class='slacklog-attachment-twitter-footericon'><img src='https://a.slack-edge.com/80588/img/services/twitter_pixel_snapped_32.png'></span>
             <span class='slacklog-attachment-twitter-footer'>Twitter</span>
           </span>
@@ -4056,7 +4014,7 @@ golisp/ops.go at master · mattn/golisp
             <span class='slacklog-attachment-twitter-authoricon'><img src='https://pbs.twimg.com/profile_images/1420034183/gally___normal.jpg'></span>
             <span class='slacklog-attachment-twitter-authorname'>xatier@命短し飲め飲め乙女</span>
             <span class='slacklog-attachment-twitter-authorsubname'>@xatierlikeLee</span>
-            <span class='slacklog-attachment-twitter-text'>&lt;https://twitter.com/mattn_jp|@mattn_jp&gt; 流石プロです ... と感じw</span>
+            <span class='slacklog-attachment-twitter-text'><a href='https://twitter.com/mattn_jp|@mattn_jp'>@mattn_jp</a> 流石プロです ... と感じw</span>
             <span class='slacklog-attachment-twitter-footericon'><img src='https://a.slack-edge.com/80588/img/services/twitter_pixel_snapped_32.png'></span>
             <span class='slacklog-attachment-twitter-footer'>Twitter</span>
           </span>
@@ -4216,7 +4174,7 @@ golisp/ops.go at master · mattn/golisp
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
             <span class='slacklog-attachment-github-servicename'>GitHub</span>
             <span class='slacklog-attachment-github-title'><a href='https://github.com/golang/go/issues/38287'>os: Regression in Rename over read only file on Windows on 1.14 · Issue #38287 · golang/go</a></span>
-            <span class='slacklog-attachment-github-text'>On Windows 10, in Go 1.13, it used to be possible to rename over a read only file (like it is in Unix). In Go 1.14 it is not. I&amp;amp;#39;m not seeing anything specific about this in the release notes, w...</span>
+            <span class='slacklog-attachment-github-text'>On Windows 10, in Go 1.13, it used to be possible to rename over a read only file (like it is in Unix). In Go 1.14 it is not. I&amp;#39;m not seeing anything specific about this in the release notes, w...</span>
           </span>
     </span>
   </span>
@@ -4446,7 +4404,7 @@ golisp/ops.go at master · mattn/golisp
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
             <span class='slacklog-attachment-github-servicename'>GitHub</span>
             <span class='slacklog-attachment-github-title'><a href='https://github.com/golang/go/commit/16f0f9c8e1e767d10d483939981e3b2242554c33'>syscall: respect permission bits on file opening on Windows · golang/go@16f0f9c</a></span>
-            <span class='slacklog-attachment-github-text'>On Windows, os.Chmod and syscall.Chmod toggle the FILE_ATTRIBUTES_ READONLY flag depending on the permission bits. That&amp;amp;#39;s a bit odd but I guess some compromises were made at some point and this...</span>
+            <span class='slacklog-attachment-github-text'>On Windows, os.Chmod and syscall.Chmod toggle the FILE_ATTRIBUTES_ READONLY flag depending on the permission bits. That&amp;#39;s a bit odd but I guess some compromises were made at some point and this...</span>
           </span>
     </span>
   </span>
@@ -4502,7 +4460,7 @@ golisp/ops.go at master · mattn/golisp
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
             <span class='slacklog-attachment-github-servicename'>GitHub</span>
             <span class='slacklog-attachment-github-title'><a href='https://github.com/golang/go/issues/26295'>os: Remove/RemoveAll should remove read-only folders on Windows · Issue #26295 · golang/go</a></span>
-            <span class='slacklog-attachment-github-text'>What version of Go are you using (go version)? go version go1.10.2 windows/amd64 Does this issue reproduce with the latest release? Untested, but I don&amp;amp;#39;t see any changes that would have fixed i...</span>
+            <span class='slacklog-attachment-github-text'>What version of Go are you using (go version)? go version go1.10.2 windows/amd64 Does this issue reproduce with the latest release? Untested, but I don&amp;#39;t see any changes that would have fixed i...</span>
           </span>
     </span>
   </span>
