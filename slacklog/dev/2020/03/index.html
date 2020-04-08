@@ -10,71 +10,71 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>mattn 1583738485.343500: tag kind にマルチバイト「λ」入れたいと思った事がない。 <https://github.com/vim/vim/issues/5724></pre>
-<pre>k-takata 1583738554.343900: Bramがこんな時間に活動してる！</pre>
-<pre>tsuyoshi_cho 1583738574.344200: Julia使いな人なのかな...?</pre>
-<pre>thinca 1583765946.344500: <https://github.com/vim-jp/lang-ja/pull/123></pre>
-<pre>mattn 1583766061.345300: 修正okだと思いますが、ちなみに興味で聞きたいのですがこれって何かの文章が続く感じの奴ですか？</pre>
-<pre> 1583766366.345400: quickfix にはタイトルを設定できるんですが、そのタイトルが後に続きます。</pre>
-<pre> 1583766551.345800: ちなみに行頭から 34 バイト分(固定)は必ず余白があくようになっており、:language C でやるといい感じになったりします…</pre>
-<pre>mattn 1583823557.346400: 最近 Bram、この時間帯に活動してるなぁ。</pre>
-<pre>k-takata 1583824780.346700: 朝8時か</pre>
-<pre>koron 1583824896.346900: 朝活</pre>
-<pre>k-takata 1583992545.348300: 今日のオレオレビルドからlambda高速化パッチを入れてみた。常用してみる。
+<pre>mattn 9日 16:21:26: tag kind にマルチバイト「λ」入れたいと思った事がない。 <https://github.com/vim/vim/issues/5724></pre>
+<pre>k-takata 9日 16:22:35: Bramがこんな時間に活動してる！</pre>
+<pre>tsuyoshi_cho 9日 16:22:55: Julia使いな人なのかな...?</pre>
+<pre>thinca 9日 23:59:07: <https://github.com/vim-jp/lang-ja/pull/123></pre>
+<pre>mattn 10日 00:01:02: 修正okだと思いますが、ちなみに興味で聞きたいのですがこれって何かの文章が続く感じの奴ですか？</pre>
+<pre> 10日 00:06:07: quickfix にはタイトルを設定できるんですが、そのタイトルが後に続きます。</pre>
+<pre> 10日 00:09:12: ちなみに行頭から 34 バイト分(固定)は必ず余白があくようになっており、:language C でやるといい感じになったりします…</pre>
+<pre>mattn 10日 15:59:18: 最近 Bram、この時間帯に活動してるなぁ。</pre>
+<pre>k-takata 10日 16:19:41: 朝8時か</pre>
+<pre>koron 10日 16:21:37: 朝活</pre>
+<pre>k-takata 12日 14:55:46: 今日のオレオレビルドからlambda高速化パッチを入れてみた。常用してみる。
 <https://github.com/k-takata/vim-kt/releases/tag/v8.2.0373>
 体感できる差はないだろうけど。</pre>
-<pre>k-takata 1583997986.350500: Vimのhash (dict)の実装、Rubyのhash (st.c)に差し替えたら速くなったりしないかなーって妄想してる。</pre>
-<pre>k-takata 1583998048.350700: <https://github.com/ruby/ruby/blob/master/st.c></pre>
-<pre>thinca 1583998118.351500: Vim の実装は素朴ですからね…
+<pre>k-takata 12日 16:26:27: Vimのhash (dict)の実装、Rubyのhash (st.c)に差し替えたら速くなったりしないかなーって妄想してる。</pre>
+<pre>k-takata 12日 16:27:29: <https://github.com/ruby/ruby/blob/master/st.c></pre>
+<pre>thinca 12日 16:28:39: Vim の実装は素朴ですからね…
 ライセンス的には問題はない?</pre>
-<pre>mattn 1583998460.351900: 普通に klib 使っちゃダメなのかしら。</pre>
-<pre>mattn 1583998461.352100: <https://github.com/attractivechaos/klib></pre>
-<pre>mattn 1583998475.352400: khash めっちゃ速いで。</pre>
-<pre>mattn 1583998547.352900: 昔 FNV-1 hashmap を書いた事があるけど khash に勝てなかった。</pre>
-<pre>mattn 1583998553.353100: <https://github.com/mattn/picohashmap></pre>
-<pre>tsuyoshi_cho 1583998568.353600: vimだと、hashdosは大丈夫、でいいのかな...？</pre>
-<pre>mattn 1583998612.354100: ```picohashmap put: 2.781000 [sec]
+<pre>mattn 12日 16:34:21: 普通に klib 使っちゃダメなのかしら。</pre>
+<pre>mattn 12日 16:34:22: <https://github.com/attractivechaos/klib></pre>
+<pre>mattn 12日 16:34:36: khash めっちゃ速いで。</pre>
+<pre>mattn 12日 16:35:48: 昔 FNV-1 hashmap を書いた事があるけど khash に勝てなかった。</pre>
+<pre>mattn 12日 16:35:54: <https://github.com/mattn/picohashmap></pre>
+<pre>tsuyoshi_cho 12日 16:36:09: vimだと、hashdosは大丈夫、でいいのかな...？</pre>
+<pre>mattn 12日 16:36:53: ```picohashmap put: 2.781000 [sec]
 picohashmap get: 1.103000 [sec]
 C++ stl put: 5.126669 [sec]
 C++ stl get: 1.272198 [sec]
 klib hash put: 0.252785 [sec]
 klib hash get: 0.036985 [sec]```</pre>
-<pre>mattn 1583998620.354400: klib バケモンすぎる。</pre>
-<pre>mattn 1583998723.354700: khash が使ってるこれがたぶん凄い効いてる。 <http://research.cs.vt.edu/AVresearch/hashing/quadratic.php></pre>
-<pre>tsuyoshi_cho 1583998747.355000: すご</pre>
-<pre>mattn 1583998757.355300: というところまで思い出して悔しい記憶がよみがえってきた。</pre>
-<pre>k-takata 1583998845.356400: Rubyのハッシュは2.4で高速化されたけど、どっちが速いかな？</pre>
-<pre>mattn 1583998959.356800: なんか小細工が見えるw <https://github.com/ruby/ruby/blob/74c398b82f80c30e8123f53e354b6518be3fe9aa/st.c#L739></pre>
-<pre>tsuyoshi_cho 1583998991.357400: <https://employment.en-japan.com/engineerhub/entry/2018/01/11/110000>
+<pre>mattn 12日 16:37:01: klib バケモンすぎる。</pre>
+<pre>mattn 12日 16:38:44: khash が使ってるこれがたぶん凄い効いてる。 <http://research.cs.vt.edu/AVresearch/hashing/quadratic.php></pre>
+<pre>tsuyoshi_cho 12日 16:39:08: すご</pre>
+<pre>mattn 12日 16:39:18: というところまで思い出して悔しい記憶がよみがえってきた。</pre>
+<pre>k-takata 12日 16:40:46: Rubyのハッシュは2.4で高速化されたけど、どっちが速いかな？</pre>
+<pre>mattn 12日 16:42:40: なんか小細工が見えるw <https://github.com/ruby/ruby/blob/74c398b82f80c30e8123f53e354b6518be3fe9aa/st.c#L739></pre>
+<pre>tsuyoshi_cho 12日 16:43:12: <https://employment.en-japan.com/engineerhub/entry/2018/01/11/110000>
 ちょっと前のhashdosの時の構造説明(1.9があって、1.8の対策なので微妙)</pre>
-<pre>mattn 1583999007.357900: これって分岐予測のヒントですよね。</pre>
-<pre>mattn 1583999010.358100: `__builtin_expect` とか。</pre>
-<pre>mattn 1583999018.358300: そこまでやると速いだろうなー。</pre>
-<pre>mattn 1583999094.358500: <https://qiita.com/jnchito/items/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1></pre>
-<pre>mattn 1583999097.358700: これじゃないすかね。</pre>
-<pre>mattn 1583999156.359200: ちなみに僕のは C++ の stdlib には勝った。</pre>
-<pre>mattn 1583999196.359900: .oO( と心を落ち着かせて khash に負けた事を記憶から消し去った )</pre>
-<pre>k-takata 1584018044.363200: とりあえず、Rubyのst.[ch]を単体でビルドできるようにしたパッチ。
+<pre>mattn 12日 16:43:28: これって分岐予測のヒントですよね。</pre>
+<pre>mattn 12日 16:43:31: `__builtin_expect` とか。</pre>
+<pre>mattn 12日 16:43:39: そこまでやると速いだろうなー。</pre>
+<pre>mattn 12日 16:44:55: <https://qiita.com/jnchito/items/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1></pre>
+<pre>mattn 12日 16:44:58: これじゃないすかね。</pre>
+<pre>mattn 12日 16:45:57: ちなみに僕のは C++ の stdlib には勝った。</pre>
+<pre>mattn 12日 16:46:37: .oO( と心を落ち着かせて khash に負けた事を記憶から消し去った )</pre>
+<pre>k-takata 12日 22:00:45: とりあえず、Rubyのst.[ch]を単体でビルドできるようにしたパッチ。
 <https://github.com/k-takata/ruby/commit/d0f9d3560571463a8fc78020134073b731171cf2>
 少し古いバージョンはonigmoに組み込んであるけど、このバージョンはまだ試してない。</pre>
-<pre>mattn 1584052156.364600: k-takata さんに悲しいお知らせだ。 <https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket|https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket></pre>
-<pre>k-takata 1584055590.365300: すでにosdnに移っています。</pre>
-<pre>k-takata 1584064093.366000: パッチのリポジトリはここです。
+<pre>mattn 13日 07:29:17: k-takata さんに悲しいお知らせだ。 <https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket|https://bitbucket.org/blog/sunsetting-mercurial-support-in-bitbucket></pre>
+<pre>k-takata 13日 08:26:31: すでにosdnに移っています。</pre>
+<pre>k-takata 13日 10:48:14: パッチのリポジトリはここです。
 <https://osdn.net/users/k_takata/pf/vim-ktakata-mq/wiki/FrontPage></pre>
-<pre>k-takata 1584083532.367200: Ruby の st に比べると khash の方が圧倒的に速かった。
+<pre>k-takata 13日 16:12:13: Ruby の st に比べると khash の方が圧倒的に速かった。
 <https://gist.github.com/k-takata/25ae2df8d236764ac33a77fa69410a45></pre>
-<pre>k-takata 1584083581.367900: Vimに組み込むことを考えると、文字列をキーにしたベンチマークの方がいいのだろうけど。</pre>
-<pre>tsuyoshi_cho 1584083678.368100: 桁1つ違いますねえ</pre>
-<pre>k-takata 1584084261.369000: 肝心のVimのhashを計ってないけど、たぶんkhashの方が速いだろうねー</pre>
-<pre>mattn 1584084849.369300: khash はバケモンです。</pre>
-<pre>mattn 1584084880.369600: picohashmap の README.md にも書いた気がする。</pre>
-<pre> 1584084888.369700: </pre>
-<pre>k-takata 1584085344.370800: さっきのベンチマーク、picohashmapのコードをそのまま拝借しましたｗ</pre>
-<pre>k-takata 1584085484.371700: picohashmap自体は試してないけど、mattnさんのベンチマーク結果と見比べると、stの方が若干速そう。</pre>
-<pre>mattn 1584085634.372000: すごい</pre>
-<pre>mattn 1584085691.372300: khash get がどちゃくそ速いのか。</pre>
-<pre>mattn 1584085727.372600: まぁでも改善してもそんな変わらないレベルですねここ。</pre>
-<pre>k-takata 1584090421.374700: 文字列をキーにすると、ちょっと差が縮まったかな。
+<pre>k-takata 13日 16:13:02: Vimに組み込むことを考えると、文字列をキーにしたベンチマークの方がいいのだろうけど。</pre>
+<pre>tsuyoshi_cho 13日 16:14:39: 桁1つ違いますねえ</pre>
+<pre>k-takata 13日 16:24:22: 肝心のVimのhashを計ってないけど、たぶんkhashの方が速いだろうねー</pre>
+<pre>mattn 13日 16:34:10: khash はバケモンです。</pre>
+<pre>mattn 13日 16:34:41: picohashmap の README.md にも書いた気がする。</pre>
+<pre> 13日 16:34:49: </pre>
+<pre>k-takata 13日 16:42:25: さっきのベンチマーク、picohashmapのコードをそのまま拝借しましたｗ</pre>
+<pre>k-takata 13日 16:44:45: picohashmap自体は試してないけど、mattnさんのベンチマーク結果と見比べると、stの方が若干速そう。</pre>
+<pre>mattn 13日 16:47:15: すごい</pre>
+<pre>mattn 13日 16:48:12: khash get がどちゃくそ速いのか。</pre>
+<pre>mattn 13日 16:48:48: まぁでも改善してもそんな変わらないレベルですねここ。</pre>
+<pre>k-takata 13日 18:07:02: 文字列をキーにすると、ちょっと差が縮まったかな。
 ```&gt;khash_test
 klib hash put: 4.223000 [sec]
 klib hash get: 2.414000 [sec]
@@ -83,39 +83,39 @@ klib hash get: 2.414000 [sec]
 st hash put: 5.829000 [sec]
 st hash get: 3.870000 [sec]```
 putの方は `strdup` でキーをコピーするようにしたから遅くなって当然だけど、getが一気に遅くなったなー。</pre>
-<pre>kuu 1584106084.376200: Vimのterminal、ひょっとしてたまにカーソル位置に行が存在しないケースがある？
+<pre>kuu 13日 22:28:05: Vimのterminal、ひょっとしてたまにカーソル位置に行が存在しないケースがある？
 ターミナルの存在するタブでcmdwin開いたら`E315: ml_get: 無効なlnumです: 9287` とか出てきた</pre>
-<pre> 1584106128.376600: バックトレースも貼っておきます</pre>
-<pre>tsuyoshi_cho 1584106267.377100: 2D RPGの枠の外みたいな...</pre>
-<pre>kuu 1584106494.379000: `#24`の`scroll_to_fraction`の中でカーソル位置を取ったものがlnumとして渡ってるので恐らく枠の外参照しちゃってるんだと思うんですが、別のvimで再現しようとしても上手くいかないので手詰まり</pre>
-<pre>mattn 1584109274.379200: Windows では起きなかった。</pre>
-<pre>kuu 1584109357.379600: Linuxでも何度も再現しようとしてるけど起きない</pre>
-<pre>kuu 1584109377.380100: ここまで再現度低いなら問題ない気もするんだけどなんか気持ち悪い</pre>
-<pre>tyru 1584373589.380800: 期待
+<pre> 13日 22:28:49: バックトレースも貼っておきます</pre>
+<pre>tsuyoshi_cho 13日 22:31:08: 2D RPGの枠の外みたいな...</pre>
+<pre>kuu 13日 22:34:55: `#24`の`scroll_to_fraction`の中でカーソル位置を取ったものがlnumとして渡ってるので恐らく枠の外参照しちゃってるんだと思うんですが、別のvimで再現しようとしても上手くいかないので手詰まり</pre>
+<pre>mattn 13日 23:21:15: Windows では起きなかった。</pre>
+<pre>kuu 13日 23:22:38: Linuxでも何度も再現しようとしてるけど起きない</pre>
+<pre>kuu 13日 23:22:58: ここまで再現度低いなら問題ない気もするんだけどなんか気持ち悪い</pre>
+<pre>tyru 17日 00:46:30: 期待
 <https://github.com/vim/vim/pull/5727#issuecomment-599392935>
 &gt; This is ready to be included.</pre>
-<pre>k-takata 1584398342.381500: Bramからの反応がない…</pre>
-<pre>koron 1584404254.382200: updateもないから、バカンスでどっか行っちゃって…って今の時勢だと行けないかw</pre>
-<pre>tsuyoshi_cho 1584404302.382700: バカンス(室内で趣味に没頭)とかだったりして...</pre>
-<pre>koron 1584404330.383100: 彼、趣味、プログラミングやん…</pre>
-<pre>kuu 1584404343.383500: いつも通りw</pre>
-<pre>tsuyoshi_cho 1584404344.383600: ですね... Vim10 作るとかになってしまうw</pre>
-<pre>mattn 1584404479.383900: ウガンダ行ったかな？</pre>
-<pre>mattn 1584404501.384300: 今は渡航は無か。</pre>
-<pre>mattn 1584404554.385200: vimconf の翌日にハッカソン開いて Bram なかなか来ないなと思ってたら GitHub に新しいコミットあった時は皆で笑った。</pre>
-<pre>tsuyoshi_cho 1584404585.385600: さすBramでしたねえ(Twitterで拝見してた)</pre>
-<pre>u 1584406960.386800: 全員「(いいから早く来いよ!)」気分で全会一致しましたね、せっかく会場から徒歩n分なのにw</pre>
-<pre>koron 1584408820.387700: Bramが止まっていたのはスカイツリーの横のホテルなんで、電車とか乗り継ぎで30分くらいかな。</pre>
-<pre>koron 1584408875.387900: ここ <https://richmondhotel.jp/tokyo-oshiage/></pre>
-<pre>k-takata 1584408981.388500: 押上、いわゆるpush up</pre>
-<pre>koron 1584409012.389000: 押上、初見で正しく読める人の少ない駅</pre>
-<pre>u 1584409039.389300: 徒歩n分 (n = 60)</pre>
-<pre>u 1584409063.389900: 押上の対概念: 引下</pre>
-<pre>mattn 1584409315.390400: 残念、それは私の押上さんだ。</pre>
-<pre>koron 1584409336.390600: <https://goo.gl/maps/PpcY8SeVt9HWCQ3r6></pre>
-<pre>koron 1584409354.391000: 岐阜にあったわ… ＜引下</pre>
-<pre>u 1584420839.391500: それそれ</pre>
-<pre>ichizok 1584651227.392700: メモリリークを直していて発見
+<pre>k-takata 17日 07:39:03: Bramからの反応がない…</pre>
+<pre>koron 17日 09:17:35: updateもないから、バカンスでどっか行っちゃって…って今の時勢だと行けないかw</pre>
+<pre>tsuyoshi_cho 17日 09:18:23: バカンス(室内で趣味に没頭)とかだったりして...</pre>
+<pre>koron 17日 09:18:51: 彼、趣味、プログラミングやん…</pre>
+<pre>kuu 17日 09:19:04: いつも通りw</pre>
+<pre>tsuyoshi_cho 17日 09:19:05: ですね... Vim10 作るとかになってしまうw</pre>
+<pre>mattn 17日 09:21:20: ウガンダ行ったかな？</pre>
+<pre>mattn 17日 09:21:42: 今は渡航は無か。</pre>
+<pre>mattn 17日 09:22:35: vimconf の翌日にハッカソン開いて Bram なかなか来ないなと思ってたら GitHub に新しいコミットあった時は皆で笑った。</pre>
+<pre>tsuyoshi_cho 17日 09:23:06: さすBramでしたねえ(Twitterで拝見してた)</pre>
+<pre>u 17日 10:02:41: 全員「(いいから早く来いよ!)」気分で全会一致しましたね、せっかく会場から徒歩n分なのにw</pre>
+<pre>koron 17日 10:33:41: Bramが止まっていたのはスカイツリーの横のホテルなんで、電車とか乗り継ぎで30分くらいかな。</pre>
+<pre>koron 17日 10:34:36: ここ <https://richmondhotel.jp/tokyo-oshiage/></pre>
+<pre>k-takata 17日 10:36:22: 押上、いわゆるpush up</pre>
+<pre>koron 17日 10:36:53: 押上、初見で正しく読める人の少ない駅</pre>
+<pre>u 17日 10:37:20: 徒歩n分 (n = 60)</pre>
+<pre>u 17日 10:37:44: 押上の対概念: 引下</pre>
+<pre>mattn 17日 10:41:56: 残念、それは私の押上さんだ。</pre>
+<pre>koron 17日 10:42:17: <https://goo.gl/maps/PpcY8SeVt9HWCQ3r6></pre>
+<pre>koron 17日 10:42:35: 岐阜にあったわ… ＜引下</pre>
+<pre>u 17日 13:54:00: それそれ</pre>
+<pre>ichizok 20日 05:53:48: メモリリークを直していて発見
 ```def! F0(): number
   return 0
 enddef
@@ -137,169 +137,169 @@ enddef
 
 echo F1()
 echo F2()```</pre>
-<pre>tsuyoshi_cho 1584672611.393500: 前にちょっと話題になってた、Windowsのコンソールでコマンドウィンドウが変になるやつ、確定パターンがあったので、撮影</pre>
-<pre>tsuyoshi_cho 1584672695.394100: <https://gyazo.com/5925117438bb70d33491416f200855a5></pre>
-<pre>tsuyoshi_cho 1584672767.394600: わかってれば、あわてないが...知らないとビビる</pre>
-<pre>kuu 1584673076.394800: 再現手順があるのはいい話</pre>
-<pre>tsuyoshi_cho 1584673267.396300: ただ、自分のぐっちゃぐちゃな環境(プラグインが多い)こともあって、他での再現性は不明...
+<pre>tsuyoshi_cho 20日 11:50:12: 前にちょっと話題になってた、Windowsのコンソールでコマンドウィンドウが変になるやつ、確定パターンがあったので、撮影</pre>
+<pre>tsuyoshi_cho 20日 11:51:36: <https://gyazo.com/5925117438bb70d33491416f200855a5></pre>
+<pre>tsuyoshi_cho 20日 11:52:48: わかってれば、あわてないが...知らないとビビる</pre>
+<pre>kuu 20日 11:57:57: 再現手順があるのはいい話</pre>
+<pre>tsuyoshi_cho 20日 12:01:08: ただ、自分のぐっちゃぐちゃな環境(プラグインが多い)こともあって、他での再現性は不明...
 一応Windowsのcmdでgit rebase -iして、最初の行に居る状態でEscすると出ます、一度移動すると出ないっぽいが、場合によっては出たりはする(commit のeditでも出たり出なかったり)</pre>
-<pre>ntak 1584686756.402200: 右下の「金金」のあたりに 8.1.2132 が適用されていない vim.exe を Insider build cmd.exe で運用した結果の面影が見えます
+<pre>ntak 20日 15:45:57: 右下の「金金」のあたりに 8.1.2132 が適用されていない vim.exe を Insider build cmd.exe で運用した結果の面影が見えます
 もしくは git core.editor が呼ぶ vim.exe が notermguicolor 状態であっても「金金」にはなります (未PR)</pre>
-<pre>mattn 1584686856.402400: 金金...</pre>
-<pre>ntak 1584686893.402800: ふたつの…金…</pre>
-<pre>mattn 1584687213.404300: <https://ja.wikipedia.org/wiki/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91></pre>
-<pre>kuu 1584687257.404800: 社畜</pre>
-<pre>ntak 1584687717.406500: 24時間戦えますか、と同時期に職業選択の自由ラララ～とやっていたのが思い出され、CMコントかと</pre>
-<pre>tsuyoshi_cho 1584690619.407600: vim-tuxが、まだ400いってない</pre>
-<pre>tsuyoshi_cho 1584691383.408300: Insider buildではなく 8.2.357でtermguicolorはonですね</pre>
-<pre>tsuyoshi_cho 1584691668.409100: (GIT_EDITORにvim-tuxなvimを使うようにしてある...のでgit for winのvimではないのです)</pre>
-<pre>バクダンくん 1584701986.409700: coc.nvimとconptyでターミナル終了時にVimが落ちる件、誰に文句言ったらいいかわからないのでとりあえずvim-jp/issuesにかきました
+<pre>mattn 20日 15:47:37: 金金...</pre>
+<pre>ntak 20日 15:48:14: ふたつの…金…</pre>
+<pre>mattn 20日 15:53:34: <https://ja.wikipedia.org/wiki/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91></pre>
+<pre>kuu 20日 15:54:18: 社畜</pre>
+<pre>ntak 20日 16:01:58: 24時間戦えますか、と同時期に職業選択の自由ラララ～とやっていたのが思い出され、CMコントかと</pre>
+<pre>tsuyoshi_cho 20日 16:50:20: vim-tuxが、まだ400いってない</pre>
+<pre>tsuyoshi_cho 20日 17:03:04: Insider buildではなく 8.2.357でtermguicolorはonですね</pre>
+<pre>tsuyoshi_cho 20日 17:07:49: (GIT_EDITORにvim-tuxなvimを使うようにしてある...のでgit for winのvimではないのです)</pre>
+<pre>バクダンくん 20日 19:59:47: coc.nvimとconptyでターミナル終了時にVimが落ちる件、誰に文句言ったらいいかわからないのでとりあえずvim-jp/issuesにかきました
 <https://github.com/vim-jp/issues/issues/1338></pre>
-<pre>kuu 1584702032.410500: vimが落ちるのはプラグインが原因でも大体vimのせい</pre>
-<pre>バクダンくん 1584702825.411400: 何度か落としているうちにvimが耐性を獲得して最小再現手順だと落ちなくなってしまった……</pre>
-<pre>tsuyoshi_cho 1584703291.412100: vimは進化する(よくない方向に)</pre>
-<pre>koron 1584705900.412400: なんか異世界Vimだな</pre>
-<pre>tsuyoshi_cho 1584707275.412900: `set spell` 魔法を設置</pre>
-<pre>tsuyoshi_cho 1584707466.413400: `\v` very magic</pre>
-<pre>ntak 1584719893.416800: あれー…「金金」の半角かぶったような表示形態は別ケースがあるってことか…あとは highlight Normal の vimrc での変更に追従していない (未PR) くらいしか思い当たらない…
+<pre>kuu 20日 20:00:33: vimが落ちるのはプラグインが原因でも大体vimのせい</pre>
+<pre>バクダンくん 20日 20:13:46: 何度か落としているうちにvimが耐性を獲得して最小再現手順だと落ちなくなってしまった……</pre>
+<pre>tsuyoshi_cho 20日 20:21:32: vimは進化する(よくない方向に)</pre>
+<pre>koron 20日 21:05:01: なんか異世界Vimだな</pre>
+<pre>tsuyoshi_cho 20日 21:27:56: `set spell` 魔法を設置</pre>
+<pre>tsuyoshi_cho 20日 21:31:07: `\v` very magic</pre>
+<pre>ntak 21日 00:58:14: あれー…「金金」の半角かぶったような表示形態は別ケースがあるってことか…あとは highlight Normal の vimrc での変更に追従していない (未PR) くらいしか思い当たらない…
 ConPTY のはたぶんいま解決できた気がします。
 パイプでシーケンス漏れを起こす件がまだ治っていないようです。再現ができなくて…</pre>
-<pre>tsuyoshi_cho 1584752958.417700: 大変ですね...、こちらは報告だけレベルなので、なにかあれば確認とか手伝います</pre>
-<pre>mattn 1584754106.419000: パイプの件は僕も再現100%じゃないのがつらい。</pre>
-<pre>mattn 1584942895.419900: gvim.exe でウィンドウ移動して画面下半分が隠れる様にして `:reg` とか実行すると描画がひどい事なる。</pre>
-<pre> 1584942913.420000: </pre>
-<pre> 1584943102.420400: これは酷い</pre>
-<pre>tsuyoshi_cho 1584943125.421400: ステータスが上にあがるのが全部軌跡になってのこる感</pre>
-<pre>koron 1584943126.421500: あれ? それdirectxがらみの、前報告にあったやつと同じやつじゃないの?</pre>
-<pre>tsuyoshi_cho 1584943158.421900: あ、あれと同一か...なるほど</pre>
-<pre>koron 1584943181.422400: OSが画面外の描画をバッファしないからスクロールインするとおかしく成るやつ。</pre>
-<pre>kuu 1584979025.422800: terminalなんかバグっぽい挙動するな</pre>
-<pre>kuu 1584979110.423700: Vimのterminalって引数渡すとシェルみたいに区切ってコマンド実行するけど、末尾にスペースが入ってると空の引数を渡してしまう</pre>
-<pre>kuu 1584980288.424400: ジョブの区切り方がおかしいんか、明日調べよ</pre>
-<pre>ゴリラ 1584982240.425700: なんか前に似たようなのに当たったことがあるがする
+<pre>tsuyoshi_cho 21日 10:09:19: 大変ですね...、こちらは報告だけレベルなので、なにかあれば確認とか手伝います</pre>
+<pre>mattn 21日 10:28:27: パイプの件は僕も再現100%じゃないのがつらい。</pre>
+<pre>mattn 23日 14:54:56: gvim.exe でウィンドウ移動して画面下半分が隠れる様にして `:reg` とか実行すると描画がひどい事なる。</pre>
+<pre> 23日 14:55:14: </pre>
+<pre> 23日 14:58:23: これは酷い</pre>
+<pre>tsuyoshi_cho 23日 14:58:46: ステータスが上にあがるのが全部軌跡になってのこる感</pre>
+<pre>koron 23日 14:58:47: あれ? それdirectxがらみの、前報告にあったやつと同じやつじゃないの?</pre>
+<pre>tsuyoshi_cho 23日 14:59:19: あ、あれと同一か...なるほど</pre>
+<pre>koron 23日 14:59:42: OSが画面外の描画をバッファしないからスクロールインするとおかしく成るやつ。</pre>
+<pre>kuu 24日 00:57:06: terminalなんかバグっぽい挙動するな</pre>
+<pre>kuu 24日 00:58:31: Vimのterminalって引数渡すとシェルみたいに区切ってコマンド実行するけど、末尾にスペースが入ってると空の引数を渡してしまう</pre>
+<pre>kuu 24日 01:18:09: ジョブの区切り方がおかしいんか、明日調べよ</pre>
+<pre>ゴリラ 24日 01:50:41: なんか前に似たようなのに当たったことがあるがする
 でも、あれは自分のミスだった気がした</pre>
-<pre>kuu 1585062056.426500: `misc2.c#mch_parse_cmd`まで行き着いた</pre>
-<pre>tyru 1585124434.000300: vim のソースで clangd のオプションを `compile_flags.txt` か `compile_commands.json` に書くと思いますが、vim をいじっている方はどんなオプションを指定しているでしょうか。
+<pre>kuu 25日 00:00:57: `misc2.c#mch_parse_cmd`まで行き着いた</pre>
+<pre>tyru 25日 17:20:35: vim のソースで clangd のオプションを `compile_flags.txt` か `compile_commands.json` に書くと思いますが、vim をいじっている方はどんなオプションを指定しているでしょうか。
 自分は手で `compile_flags.txt` を書いてたんですが自動生成してくれるツールを見つけた所です <https://github.com/nickdiego/compiledb>
 ただ手で書いても自動生成しても同じエラーが起きてて、 `#include &lt;limits.h&gt;` とか `#include &lt;stdio.h&gt;` とか標準ヘッダーを見てくれない現象に悩んでいます…</pre>
-<pre> 1585124471.000700: compile_flags.txt はこれです</pre>
-<pre>tsuyoshi_cho 1585124473.001100: まえにmattnさんがツールを列挙してましたが</pre>
-<pre>tsuyoshi_cho 1585124488.001400: <https://mattn.kaoriya.net/software/vim/20181225235003.htm></pre>
-<pre>tsuyoshi_cho 1585124513.002200: 自分はcompiledbが死んでしまうことあるのでbear</pre>
-<pre>tsuyoshi_cho 1585124529.002600: <https://github.com/rizsotto/Bear></pre>
-<pre>tyru 1585124558.003300: ふむふむ、いくつかあるんですね</pre>
-<pre>tyru 1585124574.003700: 標準ヘッダーの関数とか参照できてますか？</pre>
-<pre>tsuyoshi_cho 1585124640.004800: なんか特定のフォルダのヘッダが見えない状態にはなります...
+<pre> 25日 17:21:12: compile_flags.txt はこれです</pre>
+<pre>tsuyoshi_cho 25日 17:21:14: まえにmattnさんがツールを列挙してましたが</pre>
+<pre>tsuyoshi_cho 25日 17:21:29: <https://mattn.kaoriya.net/software/vim/20181225235003.htm></pre>
+<pre>tsuyoshi_cho 25日 17:21:54: 自分はcompiledbが死んでしまうことあるのでbear</pre>
+<pre>tsuyoshi_cho 25日 17:22:10: <https://github.com/rizsotto/Bear></pre>
+<pre>tyru 25日 17:22:39: ふむふむ、いくつかあるんですね</pre>
+<pre>tyru 25日 17:22:55: 標準ヘッダーの関数とか参照できてますか？</pre>
+<pre>tsuyoshi_cho 25日 17:24:01: なんか特定のフォルダのヘッダが見えない状態にはなります...
 標準ヘッダーについては、実は作業環境的に特殊で見える状態になるかはちょっと材料になりそうにないですね...</pre>
-<pre>tsuyoshi_cho 1585124654.005200: 大体見えてるのでオッケーくらい</pre>
-<pre>tsuyoshi_cho 1585124700.006000: (compiledbが完了してくんなかったり、死んだりすることと、環境の特殊さと量があるため妥協するしかなく)</pre>
-<pre>mattn 1585124739.006500: clangd の LS は若干変な動きしてて LspDefinition で proto の方を見に行ったりしますね。</pre>
-<pre>tsuyoshi_cho 1585124773.006900: なおjsonには定義がちゃんとあるのは確認していて、それで見える見えないに差があるので、clangdが変なんじゃないか疑惑がある</pre>
-<pre>tyru 1585124956.007200: clangd むずかしい</pre>
-<pre>kuu 1585125483.009600: 僕はclangd切ってますね、ctagsでどうにかなりますし</pre>
-<pre>tyru 1585125726.010600: 本当それで vim/vim だと現状 ctags のが快適なんだよなぁ… 無理に使うことはないし使い分けでいいか</pre>
-<pre>mattn 1585125775.011400: ctags 結構マッチするし、速いし、うまいし、やすいですね。</pre>
-<pre>raa0121 1585125800.012000: ctags はファーストフードだった…！？</pre>
-<pre>mattn 1585125801.012100: gopls くらいちゃんとジャンプできると使う価値あるけど clangd なんか変。</pre>
-<pre>thinca 1585125840.012400: C か C++ かで変わりそう? (流れを何も追ってないが)</pre>
-<pre>tyru 1585125872.012900: リポジトリ = vim/vim ですね。まぁ C でもあの規模は時間かかるかも…</pre>
-<pre>tsuyoshi_cho 1585125915.013800: C++でC的だったり変だとより挙動がアテにならんかもしれません、ただれを除いてもclangdはサーバ的部分(パーサじゃなく)がちょっと変</pre>
-<pre>mattn 1585125956.014100: プロトタイプと実装の区別がついてないのが残念。</pre>
-<pre>tsuyoshi_cho 1585126000.014600: C/C++、ヘッダに実装が置けるというのがありますしね...大変そうではある</pre>
-<pre>mattn 1585126013.014900: compiler_flags.txt から -Iproto 消せばいいんかな。</pre>
-<pre>mattn 1585126050.015300: もしくは一番最後に持ってく。</pre>
-<pre>presuku 1585126510.017300: Xubuntu 18.04 ですが、以下のような compile_flags.txt で `src/main.c` の`#include &lt;limits.h&gt;` が見つからない的なエラーはないですねぇ
+<pre>tsuyoshi_cho 25日 17:24:15: 大体見えてるのでオッケーくらい</pre>
+<pre>tsuyoshi_cho 25日 17:25:01: (compiledbが完了してくんなかったり、死んだりすることと、環境の特殊さと量があるため妥協するしかなく)</pre>
+<pre>mattn 25日 17:25:40: clangd の LS は若干変な動きしてて LspDefinition で proto の方を見に行ったりしますね。</pre>
+<pre>tsuyoshi_cho 25日 17:26:14: なおjsonには定義がちゃんとあるのは確認していて、それで見える見えないに差があるので、clangdが変なんじゃないか疑惑がある</pre>
+<pre>tyru 25日 17:29:17: clangd むずかしい</pre>
+<pre>kuu 25日 17:38:04: 僕はclangd切ってますね、ctagsでどうにかなりますし</pre>
+<pre>tyru 25日 17:42:07: 本当それで vim/vim だと現状 ctags のが快適なんだよなぁ… 無理に使うことはないし使い分けでいいか</pre>
+<pre>mattn 25日 17:42:56: ctags 結構マッチするし、速いし、うまいし、やすいですね。</pre>
+<pre>raa0121 25日 17:43:21: ctags はファーストフードだった…！？</pre>
+<pre>mattn 25日 17:43:22: gopls くらいちゃんとジャンプできると使う価値あるけど clangd なんか変。</pre>
+<pre>thinca 25日 17:44:01: C か C++ かで変わりそう? (流れを何も追ってないが)</pre>
+<pre>tyru 25日 17:44:33: リポジトリ = vim/vim ですね。まぁ C でもあの規模は時間かかるかも…</pre>
+<pre>tsuyoshi_cho 25日 17:45:16: C++でC的だったり変だとより挙動がアテにならんかもしれません、ただれを除いてもclangdはサーバ的部分(パーサじゃなく)がちょっと変</pre>
+<pre>mattn 25日 17:45:57: プロトタイプと実装の区別がついてないのが残念。</pre>
+<pre>tsuyoshi_cho 25日 17:46:41: C/C++、ヘッダに実装が置けるというのがありますしね...大変そうではある</pre>
+<pre>mattn 25日 17:46:54: compiler_flags.txt から -Iproto 消せばいいんかな。</pre>
+<pre>mattn 25日 17:47:31: もしくは一番最後に持ってく。</pre>
+<pre>presuku 25日 17:55:11: Xubuntu 18.04 ですが、以下のような compile_flags.txt で `src/main.c` の`#include &lt;limits.h&gt;` が見つからない的なエラーはないですねぇ
 ```-DHAVE_CONFIG_H
 -I.
 -Isrc
 -Isrc/proto```</pre>
-<pre>mattn 1585126578.017900: clangd、その名の通り clang でビルドされてるので gcc のヘッダが見えない事があったりしましたね。昔は。</pre>
-<pre>presuku 1585126601.018300: あ、参照の話だったのか…</pre>
-<pre>mattn 1585126619.018600: あ、原因がそれかどうかは分からないですが。</pre>
-<pre>tyru 1585129583.019500: <@UD73ZNZAP> あ、まさに `#include &lt;limits.h&gt;` とかの話です。
+<pre>mattn 25日 17:56:19: clangd、その名の通り clang でビルドされてるので gcc のヘッダが見えない事があったりしましたね。昔は。</pre>
+<pre>presuku 25日 17:56:42: あ、参照の話だったのか…</pre>
+<pre>mattn 25日 17:57:00: あ、原因がそれかどうかは分からないですが。</pre>
+<pre>tyru 25日 18:46:24: <@UD73ZNZAP> あ、まさに `#include &lt;limits.h&gt;` とかの話です。
 うーん見せてもらったやつ全部列挙してあるな</pre>
-<pre>presuku 1585132462.023800: `limits.h` とか`stdio.h` とかコンパイラの標準のInclude pathに依存しそうなので、そのあたりですかねぇ… (そのあたりもちゃんと指定してるっぽいのですけど）
+<pre>presuku 25日 19:34:23: `limits.h` とか`stdio.h` とかコンパイラの標準のInclude pathに依存しそうなので、そのあたりですかねぇ… (そのあたりもちゃんと指定してるっぽいのですけど）
 自分のところは Xubuntu なので llvm clang の repogitory から clangd 入れてるのですが、この辺りでハマったことはないんですよね</pre>
-<pre>バクダンくん 1585136970.025700: 大抵のMakefileプロジェクトはBear使えばなんとかなるのでは
+<pre>バクダンくん 25日 20:49:31: 大抵のMakefileプロジェクトはBear使えばなんとかなるのでは
 というおきもち</pre>
-<pre>kuu 1585137065.026000: 熊じゃないのか… <https://github.com/rizsotto/Bear></pre>
-<pre>ichizok 1585144151.026100: 5行目をHomebrewのllvmのパスに変えた以外はこのまま vim/src/compile_flags.txt に置いて試してみましたが、標準ヘッダも探せてます</pre>
-<pre>ichizok 1585144335.026300: 6行目は `-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include` で `usr/include` 必要では (現象とは関係なさそうですが)</pre>
-<pre>tyru 1585171564.026500: おっ 試してみます :pray:</pre>
-<pre>presuku 1585191572.030200: vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、
+<pre>kuu 25日 20:51:06: 熊じゃないのか… <https://github.com/rizsotto/Bear></pre>
+<pre>ichizok 25日 22:49:12: 5行目をHomebrewのllvmのパスに変えた以外はこのまま vim/src/compile_flags.txt に置いて試してみましたが、標準ヘッダも探せてます</pre>
+<pre>ichizok 25日 22:52:16: 6行目は `-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include` で `usr/include` 必要では (現象とは関係なさそうですが)</pre>
+<pre>tyru 26日 06:26:05: おっ 試してみます :pray:</pre>
+<pre>presuku 26日 11:59:33: vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、
 ```let g:lsp_settings = {
       \  'clangd': {'cmd': ['clangd-9', '--background-index', '-j=4']},
       \ }```
 と設定したら、ちゃんと *.c に飛ぶようになった。ちなみに LspDeclaration すると *.pro に飛ぶ。</pre>
-<pre>mattn 1585191764.030400: 何が違うんだろう。</pre>
-<pre>mattn 1585191802.030900: なんとなくだけど拡張子で見てそうな気がするんだよなーこれ。
+<pre>mattn 26日 12:02:45: 何が違うんだろう。</pre>
+<pre>mattn 26日 12:03:23: なんとなくだけど拡張子で見てそうな気がするんだよなーこれ。
 &gt; .h じゃない、つまりソース</pre>
-<pre>presuku 1585196666.033500: 単純な話で compile_commands.json のような DB がないと clangd が他のソースファイルがあることがわからないからかなと、今となっては思ってます。 pro は include されてるから分かるみたいな。同一ファイル内にある static 関数には普通に飛べていたし。</pre>
-<pre>mattn 1585196798.034000: bear、Windows でビルドが大変なのでなんとかしてほしい。</pre>
-<pre>presuku 1585196934.035400: おう…そういう問題があるのですね…つらい。。compiledb でも同じような compile_commands.json になると思うのでそちらをつかうかですかねぇ</pre>
-<pre>mattn 1585197088.036200: ですねー。雑に `$ ls *.c *.h | make-ccjson` みたいなコマンドが欲しくなってきた。</pre>
-<pre>presuku 1585197362.038100: 確かにー。だいぶ昔は便利ツールなかった（知らなかった）ので vim の Makefile に↓の貼り付けて無理やり compile_commands.json  作ってました
+<pre>presuku 26日 13:24:27: 単純な話で compile_commands.json のような DB がないと clangd が他のソースファイルがあることがわからないからかなと、今となっては思ってます。 pro は include されてるから分かるみたいな。同一ファイル内にある static 関数には普通に飛べていたし。</pre>
+<pre>mattn 26日 13:26:39: bear、Windows でビルドが大変なのでなんとかしてほしい。</pre>
+<pre>presuku 26日 13:28:55: おう…そういう問題があるのですね…つらい。。compiledb でも同じような compile_commands.json になると思うのでそちらをつかうかですかねぇ</pre>
+<pre>mattn 26日 13:31:29: ですねー。雑に `$ ls *.c *.h | make-ccjson` みたいなコマンドが欲しくなってきた。</pre>
+<pre>presuku 26日 13:36:03: 確かにー。だいぶ昔は便利ツールなかった（知らなかった）ので vim の Makefile に↓の貼り付けて無理やり compile_commands.json  作ってました
 <https://gist.github.com/presuku/9aea6725da3a20ce109bb17f7f9bb0dd></pre>
-<pre>mattn 1585197628.038900: 僕も専用の作るかな。
+<pre>mattn 26日 13:40:29: 僕も専用の作るかな。
 ```$ make-ccjson compile_flags.txt *.c *.h```
 が出来れば機能は十分そうだし。</pre>
-<pre>tyru 1585197743.039300: compiledb は出力見てるんでしたっけ</pre>
-<pre>tyru 1585197770.039500: シンプルなのほしい</pre>
-<pre>mattn 1585197790.039700: はい、そうですね。 &gt; 出力</pre>
-<pre>tsuyoshi_cho 1585197821.040200: いちおうdefineの定義も受けることで中のifdefとか効いてきますしね...</pre>
-<pre>tsuyoshi_cho 1585197848.040600: clang(LLVM)がバックエンドなんだし、たぶん...</pre>
-<pre>tsuyoshi_cho 1585197858.040900: LLVIMじゃない(手がすべった)</pre>
-<pre>mattn 1585198006.041700: compiledb は以前使った時は手直しを何度かやったので
+<pre>tyru 26日 13:42:24: compiledb は出力見てるんでしたっけ</pre>
+<pre>tyru 26日 13:42:51: シンプルなのほしい</pre>
+<pre>mattn 26日 13:43:11: はい、そうですね。 &gt; 出力</pre>
+<pre>tsuyoshi_cho 26日 13:43:42: いちおうdefineの定義も受けることで中のifdefとか効いてきますしね...</pre>
+<pre>tsuyoshi_cho 26日 13:44:09: clang(LLVM)がバックエンドなんだし、たぶん...</pre>
+<pre>tsuyoshi_cho 26日 13:44:19: LLVIMじゃない(手がすべった)</pre>
+<pre>mattn 26日 13:46:47: compiledb は以前使った時は手直しを何度かやったので
 ```$ make 2&gt;&amp;1 | tee output
 $ compiledb &lt; output```
 みたいな事をやってた。</pre>
-<pre>kuu 1585222141.042400: 現状Vim本体のデバッグにTermDebug以上の方法を思い付かないんだけどみんなどうやってるのか気になり手</pre>
-<pre>rbtnn 1585222678.042900: Vim内の変数に入れちゃう</pre>
-<pre>kuu 1585222722.043200: print系か</pre>
-<pre>koron 1585223100.043600: visual studioで…</pre>
-<pre>presuku 1585223291.044900: cgdb 使ってるけど gdb -tui でも良いかなという感じ</pre>
-<pre>kuu 1585223332.045200: `gdb -tui`したらなんかかっこいいの出てきた</pre>
-<pre>kuu 1585223356.045700: これでattachすれば十分戦える気がしてきた</pre>
-<pre>presuku 1585223509.046700: 普通に起動して Ctrl-x Ctrl-a でも同じ。でも、コードに色つかないので少し見にくいのですよね…</pre>
-<pre>kuu 1585223538.047000: このシンタックスハイライトどうやってるのか気になりだしてきた…</pre>
-<pre>presuku 1585223818.047900: あれ gdb -tui ってシンタックスハイライト付くんでしたっけ？</pre>
-<pre>kuu 1585224012.048200: こちらだと付いてますね</pre>
-<pre>presuku 1585224071.049100: おー、すばらしい。こちらのは Ubuntu 18.04 のなので、幾分古いのでそれかな</pre>
-<pre> 1585224096.049200: </pre>
-<pre>kuu 1585224106.049700: こんな具合に</pre>
-<pre>presuku 1585224333.050500: ほんとだほんとだー。GDB 9.1 新しい… こちらは 8.1 でした。</pre>
-<pre>kuu 1585224423.050900: Archなもので</pre>
-<pre>kuu 1585224428.051200: LinuxBrewには9.1あるな</pre>
-<pre>presuku 1585224533.052600: なんとなく LinuxBrew とか使ってない…</pre>
-<pre>kuu 1585225138.053200: jobの引数区切るやつってWindowsだと使われないんだったっけ</pre>
-<pre>kuu 1585225188.054300: コマンド側で解釈してるって誰かが言ってた記憶あったけど、だとしたらUnixでしか呼ばれないか</pre>
-<pre>mattn 1585226490.055100: 僕は普通に起動して別の端末から gdb で attach。この方法だと Windows でも UNIX でも共通して使えるので。</pre>
-<pre>k-takata 1585227807.057600: Windows派なんで、OutputDebugString()というデバッグ文字列出力用のAPIを使って、printfデバッグすることが多いかな。メモリ異常系のバグはDebugビルドしてVisualStudioのデバッガ上で実行。</pre>
-<pre>k-takata 1585227852.058500: Unixでのデバッグは自分がやらなくても、もっと詳しい人がやってくれることが多いから…ｗ</pre>
-<pre>kuu 1585227891.058800: WindowsだとVS強いな</pre>
-<pre>kuu 1585228149.059200: terminalの末尾スペースのやつテスト書けたのでようやく先に進める</pre>
-<pre>kuu 1585228517.059700: terminalにテスト書いたけどよく考えたらjobの問題だなこれ</pre>
-<pre>kuu 1585232015.059900: PRed</pre>
-<pre>kuu 1585232044.060200: 作業物凄い遅いんで精進したい</pre>
-<pre>mattn 1585234815.060800: Visual Studio のデバッガ、超便利なんだけど僕がせっかちすぎて起動を待てないというのがある。</pre>
-<pre>mattn 1585234839.061500: あと普段 mingw なので Visual Studio でデバッグする時にビルドしなおさないといけなくて、それが億劫。</pre>
-<pre>tsuyoshi_cho 1585235188.062500: mattnさん、Visutal Studioの再コンパイルが完了するまえにfixしそうな勢い(ジョジョになんかそんな名言があったような)</pre>
-<pre>tsuyoshi_cho 1585235217.062900: &gt;  「ブッ殺す」と心の中で思ったならッ!その時スデに行動は終わっているんだッ!</pre>
-<pre>tsuyoshi_cho 1585235219.063100: か</pre>
-<pre>tsuyoshi_cho 1585235300.063600: &gt;  「直す」と心の中で思ったならッ!その時スデにパッチ作成は終わっているんだッ!</pre>
-<pre>kuu 1585235386.064100: 「PRした」なら使ってもいいッ！</pre>
-<pre>presuku 1585272237.065000: MS 出身の先輩は WinDbg を使ってたなぁ</pre>
-<pre>thinca 1585377512.066800: パッチ番号の 法則が 乱れる！</pre>
-<pre>mattn 1585377546.067100: <https://github.com/vim/vim/commit/495282b6e7e418d072a8ab53c9056b269dc308b7></pre>
-<pre>mattn 1585377549.067400: ぶぉ</pre>
-<pre>tsuyoshi_cho 1585377577.067600: かぶってたの...</pre>
-<pre>k-takata 1585377814.068500: コミットメッセージとタグが変になったって言ってた。
+<pre>kuu 26日 20:29:02: 現状Vim本体のデバッグにTermDebug以上の方法を思い付かないんだけどみんなどうやってるのか気になり手</pre>
+<pre>rbtnn 26日 20:37:59: Vim内の変数に入れちゃう</pre>
+<pre>kuu 26日 20:38:43: print系か</pre>
+<pre>koron 26日 20:45:01: visual studioで…</pre>
+<pre>presuku 26日 20:48:12: cgdb 使ってるけど gdb -tui でも良いかなという感じ</pre>
+<pre>kuu 26日 20:48:53: `gdb -tui`したらなんかかっこいいの出てきた</pre>
+<pre>kuu 26日 20:49:17: これでattachすれば十分戦える気がしてきた</pre>
+<pre>presuku 26日 20:51:50: 普通に起動して Ctrl-x Ctrl-a でも同じ。でも、コードに色つかないので少し見にくいのですよね…</pre>
+<pre>kuu 26日 20:52:19: このシンタックスハイライトどうやってるのか気になりだしてきた…</pre>
+<pre>presuku 26日 20:56:59: あれ gdb -tui ってシンタックスハイライト付くんでしたっけ？</pre>
+<pre>kuu 26日 21:00:13: こちらだと付いてますね</pre>
+<pre>presuku 26日 21:01:12: おー、すばらしい。こちらのは Ubuntu 18.04 のなので、幾分古いのでそれかな</pre>
+<pre> 26日 21:01:37: </pre>
+<pre>kuu 26日 21:01:47: こんな具合に</pre>
+<pre>presuku 26日 21:05:34: ほんとだほんとだー。GDB 9.1 新しい… こちらは 8.1 でした。</pre>
+<pre>kuu 26日 21:07:04: Archなもので</pre>
+<pre>kuu 26日 21:07:09: LinuxBrewには9.1あるな</pre>
+<pre>presuku 26日 21:08:54: なんとなく LinuxBrew とか使ってない…</pre>
+<pre>kuu 26日 21:18:59: jobの引数区切るやつってWindowsだと使われないんだったっけ</pre>
+<pre>kuu 26日 21:19:49: コマンド側で解釈してるって誰かが言ってた記憶あったけど、だとしたらUnixでしか呼ばれないか</pre>
+<pre>mattn 26日 21:41:31: 僕は普通に起動して別の端末から gdb で attach。この方法だと Windows でも UNIX でも共通して使えるので。</pre>
+<pre>k-takata 26日 22:03:28: Windows派なんで、OutputDebugString()というデバッグ文字列出力用のAPIを使って、printfデバッグすることが多いかな。メモリ異常系のバグはDebugビルドしてVisualStudioのデバッガ上で実行。</pre>
+<pre>k-takata 26日 22:04:13: Unixでのデバッグは自分がやらなくても、もっと詳しい人がやってくれることが多いから…ｗ</pre>
+<pre>kuu 26日 22:04:52: WindowsだとVS強いな</pre>
+<pre>kuu 26日 22:09:10: terminalの末尾スペースのやつテスト書けたのでようやく先に進める</pre>
+<pre>kuu 26日 22:15:18: terminalにテスト書いたけどよく考えたらjobの問題だなこれ</pre>
+<pre>kuu 26日 23:13:36: PRed</pre>
+<pre>kuu 26日 23:14:05: 作業物凄い遅いんで精進したい</pre>
+<pre>mattn 27日 00:00:16: Visual Studio のデバッガ、超便利なんだけど僕がせっかちすぎて起動を待てないというのがある。</pre>
+<pre>mattn 27日 00:00:40: あと普段 mingw なので Visual Studio でデバッグする時にビルドしなおさないといけなくて、それが億劫。</pre>
+<pre>tsuyoshi_cho 27日 00:06:29: mattnさん、Visutal Studioの再コンパイルが完了するまえにfixしそうな勢い(ジョジョになんかそんな名言があったような)</pre>
+<pre>tsuyoshi_cho 27日 00:06:58: &gt;  「ブッ殺す」と心の中で思ったならッ!その時スデに行動は終わっているんだッ!</pre>
+<pre>tsuyoshi_cho 27日 00:07:00: か</pre>
+<pre>tsuyoshi_cho 27日 00:08:21: &gt;  「直す」と心の中で思ったならッ!その時スデにパッチ作成は終わっているんだッ!</pre>
+<pre>kuu 27日 00:09:47: 「PRした」なら使ってもいいッ！</pre>
+<pre>presuku 27日 10:23:58: MS 出身の先輩は WinDbg を使ってたなぁ</pre>
+<pre>thinca 28日 15:38:33: パッチ番号の 法則が 乱れる！</pre>
+<pre>mattn 28日 15:39:07: <https://github.com/vim/vim/commit/495282b6e7e418d072a8ab53c9056b269dc308b7></pre>
+<pre>mattn 28日 15:39:10: ぶぉ</pre>
+<pre>tsuyoshi_cho 28日 15:39:38: かぶってたの...</pre>
+<pre>k-takata 28日 15:43:35: コミットメッセージとタグが変になったって言ってた。
 <https://groups.google.com/d/msg/vim_dev/LcPF0m4-JxI/vQE14CELAwAJ></pre>
-<pre>k-takata 1585378065.069600: 8.2.0463に8.2.0464のメッセージとタグが付いちゃって、本当の8.2.0464にはタグが付いてないのか。</pre>
-<pre>mattn 1585378116.069900: タグはまぁ直せるからいいかな</pre>
-<pre>k-takata 1585445656.070100: タグが直った</pre>
-<pre>kuu 1585487213.071200: 前にissue投げたやつ、えらい修正雑だなと思ったら案の定問題起きてるらしい
+<pre>k-takata 28日 15:47:46: 8.2.0463に8.2.0464のメッセージとタグが付いちゃって、本当の8.2.0464にはタグが付いてないのか。</pre>
+<pre>mattn 28日 15:48:37: タグはまぁ直せるからいいかな</pre>
+<pre>k-takata 29日 10:34:17: タグが直った</pre>
+<pre>kuu 29日 22:06:54: 前にissue投げたやつ、えらい修正雑だなと思ったら案の定問題起きてるらしい
 <https://github.com/vim/vim/issues/5807#issuecomment-605418494></pre>
-<pre>kuu 1585487223.071700: ほんまに申し訳ない</pre>
-<pre>kuu 1585495146.071900: 直ったらしい <https://github.com/vim/vim/commit/0fff44152d06e6b662ad4bef172af07a041d2f3f></pre>
+<pre>kuu 29日 22:07:04: ほんまに申し訳ない</pre>
+<pre>kuu 30日 00:19:07: 直ったらしい <https://github.com/vim/vim/commit/0fff44152d06e6b662ad4bef172af07a041d2f3f></pre>
 {% endraw %}

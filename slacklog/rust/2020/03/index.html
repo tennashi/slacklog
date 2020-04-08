@@ -10,26 +10,26 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>lambdalisue 1585012930.069800: 前提: rust で書いた CLI アプリケーションのバージョンを git タグから取得したい
+<pre>lambdalisue 24日 10:22:11: 前提: rust で書いた CLI アプリケーションのバージョンを git タグから取得したい
 質問: どうすればよいでしょう？
 
 1. `git_version` みたいなの使ってビルド時に解決し CLI ではそれを使う（`Cargo.toml` の `version` は `0.1.0` とかで固定）
 2. 何かしらのすごい方法で `Cargo.toml` の `version` と Git のタグを同期して `CARGO_PKG_VERSION` とかを CLI で返す
 3. もっと良い方法</pre>
-<pre>lambdalisue 1585013114.070900: あー別に rust は Cargo 必須というわけではないから `Cargo.toml` の `version` とアプリケーションのバージョンは別か... ってことは 1. が最適解かなぁ....?</pre>
-<pre>lambdalisue 1585013242.071100: <https://www.reddit.com/r/rust/comments/aa95c5/cargo_package_version_from_git_tag/></pre>
-<pre>h-michael 1585013301.071800: alacrittyはこうやってました
+<pre>lambdalisue 24日 10:25:15: あー別に rust は Cargo 必須というわけではないから `Cargo.toml` の `version` とアプリケーションのバージョンは別か... ってことは 1. が最適解かなぁ....?</pre>
+<pre>lambdalisue 24日 10:27:23: <https://www.reddit.com/r/rust/comments/aa95c5/cargo_package_version_from_git_tag/></pre>
+<pre>h-michael 24日 10:28:22: alacrittyはこうやってました
 <https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29|https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29></pre>
-<pre>lambdalisue 1585013403.072100: <https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/src/cli.rs#L76></pre>
-<pre>lambdalisue 1585013408.072400: なるほど...</pre>
-<pre>lambdalisue 1585013424.072600: <https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/Cargo.toml#L3></pre>
-<pre>lambdalisue 1585013497.073300: `Cargo.toml` の `version` を手動管理した上で `GIT_HASH` があれば、そちらも表示する　的な運用ですね</pre>
-<pre>lambdalisue 1585013527.073700: <https://github.com/alacritty/alacritty/commit/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e>
+<pre>lambdalisue 24日 10:30:04: <https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/src/cli.rs#L76></pre>
+<pre>lambdalisue 24日 10:30:09: なるほど...</pre>
+<pre>lambdalisue 24日 10:30:25: <https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/Cargo.toml#L3></pre>
+<pre>lambdalisue 24日 10:31:38: `Cargo.toml` の `version` を手動管理した上で `GIT_HASH` があれば、そちらも表示する　的な運用ですね</pre>
+<pre>lambdalisue 24日 10:32:08: <https://github.com/alacritty/alacritty/commit/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e>
 
 できれば "Bump version" 的なコミットをしたくないw</pre>
-<pre>h-michael 1585013592.074700: crates.ioの登録があるから仕方ないですかねー</pre>
-<pre>lambdalisue 1585013629.075000: cargo release みたいなコマンドでラップするしかないか...</pre>
-<pre>lambdalisue 1585013707.075800: やはり CLI のバージョンは Cargo パッケージのバージョンとは異なる、という立ち位置で考えるのが良さそうですね</pre>
-<pre>lambdalisue 1585013724.076100: <http://crates.io|crates.io> に登録するわけではないし..</pre>
-<pre>lambdalisue 1585014117.077400: ひとまず `Cargo.toml` の `version` は `0.1.0` とかに固定して、別枠で <https://docs.rs/git-version/0.3.4/git_version/> とか使ってアプリケーションバージョンを定義することにしました :bow:</pre>
+<pre>h-michael 24日 10:33:13: crates.ioの登録があるから仕方ないですかねー</pre>
+<pre>lambdalisue 24日 10:33:50: cargo release みたいなコマンドでラップするしかないか...</pre>
+<pre>lambdalisue 24日 10:35:08: やはり CLI のバージョンは Cargo パッケージのバージョンとは異なる、という立ち位置で考えるのが良さそうですね</pre>
+<pre>lambdalisue 24日 10:35:25: <http://crates.io|crates.io> に登録するわけではないし..</pre>
+<pre>lambdalisue 24日 10:41:58: ひとまず `Cargo.toml` の `version` は `0.1.0` とかに固定して、別枠で <https://docs.rs/git-version/0.3.4/git_version/> とか使ってアプリケーションバージョンを定義することにしました :bow:</pre>
 {% endraw %}

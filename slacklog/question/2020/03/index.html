@@ -10,118 +10,118 @@ title: vim-jp.slack.com log - &#35question - 2020年03月
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 {% raw %}
-<pre>koron 1583716548.491400: 一応Windowsのgvimで手作業で imi=1 にしてから fFtTr にはいると langmap はONになるんですよね。</pre>
-<pre>presuku 1583726593.491600: 別な方法で解決されてたのですね、よかったです！掘り返してもうしわけなかったです…</pre>
-<pre>tsuyoshi_cho 1583736395.494000: `質問です`
+<pre>koron 9日 10:15:49: 一応Windowsのgvimで手作業で imi=1 にしてから fFtTr にはいると langmap はONになるんですよね。</pre>
+<pre>presuku 9日 13:03:14: 別な方法で解決されてたのですね、よかったです！掘り返してもうしわけなかったです…</pre>
+<pre>tsuyoshi_cho 9日 15:46:36: `質問です`
 lessで `-F / --quit-if-one-screen`  付きのとき、プロンプトが&gt;1のために流れてしまう分ができます。
 なにか解決策ってありますか? (lessにカットオフ=1画面というサイズ情報をそれより少なくできれば..、とは思ったのですが)</pre>
-<pre>tsuyoshi_cho 1583736604.494700: `-F`のときは、全画面を流さないでEOFからプロンプトに戻せるといいんだけどなあ...</pre>
-<pre>tsuyoshi_cho 1583737061.495200: うーん、再度調べたけどやっぱ無理そう...?</pre>
-<pre>thinca 1583737091.495400: 方法あるなら私も知りたい</pre>
-<pre>tsuyoshi_cho 1583737118.495600: ですよね...oh</pre>
-<pre> 1583889063.001000: 【質問です】Deniteについての質問です。普段`:Denite file/rec file_mru buffer`などをよく使うのですが、file/recの候補に.editorconfigなどドットから始まるファイルが出てこないので調べたところ、以下のuniteのissueを見つけました。
+<pre>tsuyoshi_cho 9日 15:50:05: `-F`のときは、全画面を流さないでEOFからプロンプトに戻せるといいんだけどなあ...</pre>
+<pre>tsuyoshi_cho 9日 15:57:42: うーん、再度調べたけどやっぱ無理そう...?</pre>
+<pre>thinca 9日 15:58:12: 方法あるなら私も知りたい</pre>
+<pre>tsuyoshi_cho 9日 15:58:39: ですよね...oh</pre>
+<pre> 11日 10:11:04: 【質問です】Deniteについての質問です。普段`:Denite file/rec file_mru buffer`などをよく使うのですが、file/recの候補に.editorconfigなどドットから始まるファイルが出てこないので調べたところ、以下のuniteのissueを見つけました。
 <https://github.com/Shougo/unite.vim/issues/894>
 この内容とdeniteのhelpを見比べて、deniteでもデフォルトでmatcher/hide_hidden_filesが有効になっているため自分でsourceのmatcherを上書きしないと出てこないのだと理解しました。
 <https://github.com/Shougo/denite.nvim/blob/51fb80b66faaff5117e661ebcffc773577763ecd/doc/denite.txt#L1432-L1434>
 これをもとにこのように設定したのですが、`:Denite file/rec`の結果には画像の通りドットから始まるファイルが出てこないです。`.git/`については`matcher/ignore_globs`の対象に設定しているので出てこなくてもいいのですが、.editorconfigは出したいです。直すべきところわかる方いたら教えて下さい。よろしくお願いします。
 ```call denite#custom#source('file/rec', 'matchers', ['matcher/fuzzy'])```</pre>
-<pre>Shougo 1583892183.001700: その画面はdefxではないでしょうか</pre>
-<pre>Shougo 1583892392.003000: 手元でデフォルト設定で試しましたけど.editorconfigがリストに出ますよ</pre>
-<pre>Shougo 1583892440.003700: なので、最小構成を作ってだれでもテストできるようにしてくださいと私はいうしかないです</pre>
-<pre>hrsh7th 1583893415.004500: @tk denite の file/rec をカスタマイズしていませんか？</pre>
-<pre>yutakatay 1583912051.008200: 普段fold使わない人なんですが、ちょっととあるファイルで折りたたみの必要に迫られています。
+<pre>Shougo 11日 11:03:04: その画面はdefxではないでしょうか</pre>
+<pre>Shougo 11日 11:06:33: 手元でデフォルト設定で試しましたけど.editorconfigがリストに出ますよ</pre>
+<pre>Shougo 11日 11:07:21: なので、最小構成を作ってだれでもテストできるようにしてくださいと私はいうしかないです</pre>
+<pre>hrsh7th 11日 11:23:36: @tk denite の file/rec をカスタマイズしていませんか？</pre>
+<pre>yutakatay 11日 16:34:12: 普段fold使わない人なんですが、ちょっととあるファイルで折りたたみの必要に迫られています。
 普段使わないので `z` も他にマッピングしてしまってるで、新しく `Z` を割り当てようとしているんですが、ライトに使う場合って、 `zo` , `zO` , `zc` くらいをremapしとけばいいですかね？？
 
 foldユーザーのみなさん教えてください :bow:</pre>
-<pre>tsuyoshi_cho 1583912203.009200: 自分は使うわりに適当なので、事故らない&amp;覚えられる&amp;必要なのを徐々にマッピングしていけばいいんじゃないか、くらいしか言えないかなあ...</pre>
-<pre>yutakatay 1583912235.009700: 最低限これだけは使うだろ的なのが知りたいんですよね。</pre>
-<pre>yutakatay 1583912257.010100: fold使うのにこれ使わないとつらい的な</pre>
-<pre>tsuyoshi_cho 1583912302.011200: enableにした後だったら、だけど、disableにするマッピングと全開くと閉じる(1段)があれば、とりあえずはいいかな、自分は</pre>
-<pre>yutakatay 1583912336.012100: 全閉じ、全開けだけな感じですか。なるほど</pre>
-<pre>tsuyoshi_cho 1583912350.012400: ただ、開け閉めを
+<pre>tsuyoshi_cho 11日 16:36:44: 自分は使うわりに適当なので、事故らない&amp;覚えられる&amp;必要なのを徐々にマッピングしていけばいいんじゃないか、くらいしか言えないかなあ...</pre>
+<pre>yutakatay 11日 16:37:16: 最低限これだけは使うだろ的なのが知りたいんですよね。</pre>
+<pre>yutakatay 11日 16:37:38: fold使うのにこれ使わないとつらい的な</pre>
+<pre>tsuyoshi_cho 11日 16:38:23: enableにした後だったら、だけど、disableにするマッピングと全開くと閉じる(1段)があれば、とりあえずはいいかな、自分は</pre>
+<pre>yutakatay 11日 16:38:57: 全閉じ、全開けだけな感じですか。なるほど</pre>
+<pre>tsuyoshi_cho 11日 16:39:11: ただ、開け閉めを
 <https://github.com/arecarn/vim-fold-cycle>
 にまかせて&lt;CR&gt;ですませてるから参考になるかなあ?</pre>
-<pre>yutakatay 1583912386.013700: CRはいろいろなものが取り合って混沌としてるからfoldごときに渡したくないw</pre>
-<pre>tsuyoshi_cho 1583912392.013900: 1. enable-&gt;disable
+<pre>yutakatay 11日 16:39:47: CRはいろいろなものが取り合って混沌としてるからfoldごときに渡したくないw</pre>
+<pre>tsuyoshi_cho 11日 16:39:53: 1. enable-&gt;disable
 2. fold -&gt; all open
 3. 1 level close
 4. 1level open/close &lt;plugin&gt;</pre>
-<pre>tsuyoshi_cho 1583912484.014600: normalのCRなんで、これについては、なんとかなってる
+<pre>tsuyoshi_cho 11日 16:41:25: normalのCRなんで、これについては、なんとかなってる
 insertのCRが死ぬ...</pre>
-<pre>yutakatay 1583912500.014800: insert CRはやばい</pre>
-<pre>yutakatay 1583912565.015500: insert CRは仮想化してほしい
+<pre>yutakatay 11日 16:41:41: insert CRはやばい</pre>
+<pre>yutakatay 11日 16:42:46: insert CRは仮想化してほしい
 inoremap &lt;CR1&gt;　みたいな</pre>
-<pre>thinca 1583912619.016000: 全部開く `zR` 全部閉じる `zM` 1つ開く `zo`</pre>
-<pre>thinca 1583912654.016600: カーソル下を全部開く `zO` も使うかな</pre>
-<pre>thinca 1583912696.017600: カーソル位置のテキストが見えるように開く `zv` 意外に色々使ってるな、私w</pre>
-<pre>thinca 1583912713.018100: 折りたたみ自体は私もそんなには使わないのだけど。デフォルトは全部開きっぱなし</pre>
-<pre>tsuyoshi_cho 1583912742.018600: あとは個人の好みのスタイルを探すしかないのかもしれない...</pre>
-<pre>mattn 1583913031.018900: fold まったく使わない</pre>
-<pre>0Δ 1583913232.019500: 個人的に `zx` (再計算) も良く使いますね</pre>
-<pre>k-takata 1583913766.020400: (fold嫌いなので `set foldlevelstart=99` とかやってる)</pre>
-<pre>machakann 1583922537.021300: `l` とか水平移動で折りたたみ開けるので `zo` はあまり使わないです</pre>
-<pre>kuu 1583922558.021600: 水平移動で折りたたみ開くやつはよくやる</pre>
-<pre>yutakatay 1583922775.022300: ほんとだ！簡単に開けたw</pre>
-<pre>machakann 1583922849.023300: `'foldopen'` オプションの値によります</pre>
-<pre>ycino 1583922853.023500: よく `l` で開く</pre>
-<pre>tk 1583945400.025700: Shougoさんおっしゃるとおりでデフォルトだと出ました。内容理解せずにこちらをコピペしていたのが原因でした。お手数おかけしました。
+<pre>thinca 11日 16:43:40: 全部開く `zR` 全部閉じる `zM` 1つ開く `zo`</pre>
+<pre>thinca 11日 16:44:15: カーソル下を全部開く `zO` も使うかな</pre>
+<pre>thinca 11日 16:44:57: カーソル位置のテキストが見えるように開く `zv` 意外に色々使ってるな、私w</pre>
+<pre>thinca 11日 16:45:14: 折りたたみ自体は私もそんなには使わないのだけど。デフォルトは全部開きっぱなし</pre>
+<pre>tsuyoshi_cho 11日 16:45:43: あとは個人の好みのスタイルを探すしかないのかもしれない...</pre>
+<pre>mattn 11日 16:50:32: fold まったく使わない</pre>
+<pre>0Δ 11日 16:53:53: 個人的に `zx` (再計算) も良く使いますね</pre>
+<pre>k-takata 11日 17:02:47: (fold嫌いなので `set foldlevelstart=99` とかやってる)</pre>
+<pre>machakann 11日 19:28:58: `l` とか水平移動で折りたたみ開けるので `zo` はあまり使わないです</pre>
+<pre>kuu 11日 19:29:19: 水平移動で折りたたみ開くやつはよくやる</pre>
+<pre>yutakatay 11日 19:32:56: ほんとだ！簡単に開けたw</pre>
+<pre>machakann 11日 19:34:10: `'foldopen'` オプションの値によります</pre>
+<pre>ycino 11日 19:34:14: よく `l` で開く</pre>
+<pre>tk 12日 01:50:01: Shougoさんおっしゃるとおりでデフォルトだと出ました。内容理解せずにこちらをコピペしていたのが原因でした。お手数おかけしました。
 <https://github.com/Shougo/denite.nvim/blob/b6e2c7df9402f293bad1dc45f5d41b3dc5d8a9b1/doc/denite.txt#L152-L153></pre>
-<pre>tk 1583945475.026000: file/recのcommandをこちらをコピペしてカスタマイズしていました。これがカスタマイズという認識もなかったのですがhelpをよく読んだらわかりました。お手数おかけしました。
+<pre>tk 12日 01:51:16: file/recのcommandをこちらをコピペしてカスタマイズしていました。これがカスタマイズという認識もなかったのですがhelpをよく読んだらわかりました。お手数おかけしました。
 <https://github.com/Shougo/denite.nvim/blob/b6e2c7df9402f293bad1dc45f5d41b3dc5d8a9b1/doc/denite.txt#L152-L153></pre>
-<pre>tyru 1583946996.027000: 最低限これだけは使うだろ的 fold マッピング、自分はこれですね `nnoremap z&lt;Space&gt; zMzvzz`
+<pre>tyru 12日 02:16:37: 最低限これだけは使うだろ的 fold マッピング、自分はこれですね `nnoremap z&lt;Space&gt; zMzvzz`
 これの他にはたまに `zM`, `zR` を使うくらい</pre>
-<pre>Shougo 1583960612.027100: なるほど</pre>
-<pre>monaqa 1583962944.028300: 私は `za` / `zA` でトグルすることが多いですね（開くマップと閉じるマップを使い分けるのがだるかっただけ）</pre>
-<pre>バクダンくん 1583964860.030700: 折畳めっちゃ使うさん
+<pre>Shougo 12日 06:03:33: なるほど</pre>
+<pre>monaqa 12日 06:42:25: 私は `za` / `zA` でトグルすることが多いですね（開くマップと閉じるマップを使い分けるのがだるかっただけ）</pre>
+<pre>バクダンくん 12日 07:14:21: 折畳めっちゃ使うさん
 `zj` `zk` は折畳の開閉に関わらずジャンプ対象にしてしまうので、閉じられた折畳のみを対象としてジャンプする関数作って `zj` `zk` にマッピングしてます :benri:</pre>
-<pre>バクダンくん 1583965913.033800: 今見たらその関数、一度Stack Overflowからコピペしたものが気に入らなくて自分で作り直した形跡があるけど、何が気に入らなかったのかわからない
+<pre>バクダンくん 12日 07:31:54: 今見たらその関数、一度Stack Overflowからコピペしたものが気に入らなくて自分で作り直した形跡があるけど、何が気に入らなかったのかわからない
 &lt;expr&gt;マッピングになってるし、CmdlineEnterが走らないようにしたかったのかな</pre>
-<pre>ゴリラ 1583966340.034800: &lt;expr&gt; を使ったことがないけど、どういうときに使うんですか？</pre>
-<pre>kuu 1583966408.036300: 例えば、ノーマルでgjをjに単純にマッピングすると、カウント入力してj使うときに折り返しあると期待してるであろう動作をしないんですが</pre>
-<pre>kuu 1583966449.037600: カウントがあるかはVim scriptから取れるので、カウントがあるかないかでjとgjを切り替えたりとか、そういったことができます</pre>
-<pre>kuu 1583966540.038800: Vim scriptでマッピングの中身を動的に生成できる</pre>
-<pre>バクダンくん 1583967132.040800: 僕の↑の例では、マッピングからExコマンド実行する代わりに、目的地の行番号計算して `G` でジャンプするコマンドを組み立ててますね</pre>
-<pre>vim_jp 1584003159.042400: <https://groups.google.com/d/msg/vim_jp/aGgIMoNPBBI/UD6nLs2FDQAJ|Cygwin screen で gvim を使用して cygwin が文字化け>
+<pre>ゴリラ 12日 07:39:01: &lt;expr&gt; を使ったことがないけど、どういうときに使うんですか？</pre>
+<pre>kuu 12日 07:40:09: 例えば、ノーマルでgjをjに単純にマッピングすると、カウント入力してj使うときに折り返しあると期待してるであろう動作をしないんですが</pre>
+<pre>kuu 12日 07:40:50: カウントがあるかはVim scriptから取れるので、カウントがあるかないかでjとgjを切り替えたりとか、そういったことができます</pre>
+<pre>kuu 12日 07:42:21: Vim scriptでマッピングの中身を動的に生成できる</pre>
+<pre>バクダンくん 12日 07:52:13: 僕の↑の例では、マッピングからExコマンド実行する代わりに、目的地の行番号計算して `G` でジャンプするコマンドを組み立ててますね</pre>
+<pre>vim_jp 12日 17:52:40: <https://groups.google.com/d/msg/vim_jp/aGgIMoNPBBI/UD6nLs2FDQAJ|Cygwin screen で gvim を使用して cygwin が文字化け>
 長年 Gvim にお世話になっています。 Cygwin screen から gvim を動かし、すぐ :q[Enter] で終了すると、cygwin が文字化けします。 Cygwin 32 bit % zsh --version zsh 5.5.1 (i686-pc-cygwin) % screen --version Screen version 4.08.00 (GNU) 05-Feb-20 Gvim を 8.2 (2019 Dec 12) から 8.0 (2016 Sep 12) にして発生しなくなりました。</pre>
-<pre>yutakatay 1584003296.043000: Cygwinもscreenもなにもかもみな懐かしい</pre>
-<pre>mattn 1584003448.043400: 死愚陰</pre>
-<pre>tsuyoshi_cho 1584003514.043900: 巣苦離院</pre>
-<pre>k-takata 1584003648.045300: gvimの実行によって文字化けが発生する原因がさっぱり思い当たらない。なんだこりゃ？</pre>
-<pre>mattn 1584003804.045500: どれです？</pre>
-<pre>mattn 1584003815.045700: あ、↑か</pre>
-<pre>mattn 1584003927.046800: cygwin/msys2 ってプロセスの stdout を attach して実行してますけど、もしかして gvim.exe のどこかで printf("\x1b["); 的な事やってたしして。普段は見えないけど。</pre>
-<pre>k-takata 1584004673.047400: `gvim &gt; log.txt` とかしてもらうのがいいのかな？</pre>
-<pre>phyllite 1584006956.048000: きぐうぃん派がいたような記憶 &lt; 死愚陰</pre>
-<pre>tsuyoshi_cho 1584007004.048400: 鬼愚陰か...</pre>
-<pre>kyoh86 1584008311.048900: 金爆かな？</pre>
-<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1584023492.049200: <https://teratail.com/questions/246775?rss=all|vimで特定の行、位置を指定したsyntax highlightは可能か>
+<pre>yutakatay 12日 17:54:57: Cygwinもscreenもなにもかもみな懐かしい</pre>
+<pre>mattn 12日 17:57:29: 死愚陰</pre>
+<pre>tsuyoshi_cho 12日 17:58:35: 巣苦離院</pre>
+<pre>k-takata 12日 18:00:49: gvimの実行によって文字化けが発生する原因がさっぱり思い当たらない。なんだこりゃ？</pre>
+<pre>mattn 12日 18:03:25: どれです？</pre>
+<pre>mattn 12日 18:03:36: あ、↑か</pre>
+<pre>mattn 12日 18:05:28: cygwin/msys2 ってプロセスの stdout を attach して実行してますけど、もしかして gvim.exe のどこかで printf("\x1b["); 的な事やってたしして。普段は見えないけど。</pre>
+<pre>k-takata 12日 18:17:54: `gvim &gt; log.txt` とかしてもらうのがいいのかな？</pre>
+<pre>phyllite 12日 18:55:57: きぐうぃん派がいたような記憶 &lt; 死愚陰</pre>
+<pre>tsuyoshi_cho 12日 18:56:45: 鬼愚陰か...</pre>
+<pre>kyoh86 12日 19:18:32: 金爆かな？</pre>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 12日 23:31:33: <https://teratail.com/questions/246775?rss=all|vimで特定の行、位置を指定したsyntax highlightは可能か>
 つい先日vimを使い始めた者です。  
 vim scriptで特定の行、位置(例: 10行目45文字目から60文字目)といった位置を指定した文字色の変更やハイライトは可能なのでしょうか。  
 具体的には、「nywコマンドやnyyコマンドで文字をヤンクした際、ヤンクされた範囲だけが(ペーストされるまで、或いはカーソルが移動するまで)色の変化等で強調される」ようなVim Scriptファイルを書いてみようと思ったのですが、  
 無名レジスタからヤンクされた文字列を取得する方法は見つかっても、それを編集画面上で強調して表示する方法が...
 
 <https://teratail.com/questions/246775?rss=all|続きを見る></pre>
-<pre>mattn 1584024109.049500: 難しいんじゃないかな。</pre>
-<pre>tsuyoshi_cho 1584024259.050100: 一時的に着色するプラグインはなくはない...けどまあ面倒そう...</pre>
-<pre>kuu 1584024287.050500: matchaddpos使えば着色は可能だけど難しい</pre>
-<pre>mattn 1584024354.050900: yank した領域、という所が難しい。</pre>
-<pre>mattn 1584024373.051400: piyo pi|yo piyo で yiw</pre>
-<pre>yutakatay 1584024407.051800: RRethy/vim-illuminate
+<pre>mattn 12日 23:41:50: 難しいんじゃないかな。</pre>
+<pre>tsuyoshi_cho 12日 23:44:20: 一時的に着色するプラグインはなくはない...けどまあ面倒そう...</pre>
+<pre>kuu 12日 23:44:48: matchaddpos使えば着色は可能だけど難しい</pre>
+<pre>mattn 12日 23:45:55: yank した領域、という所が難しい。</pre>
+<pre>mattn 12日 23:46:14: piyo pi|yo piyo で yiw</pre>
+<pre>yutakatay 12日 23:46:48: RRethy/vim-illuminate
 じゃだめなんですかね？？</pre>
-<pre>mattn 1584024442.052000: <https://github.com/machakann/vim-highlightedyank/blob/931cc6bd53e4a1fdbe592751f0e13c0e401f0a49/autoload/highlightedyank.vim#L135-L159></pre>
-<pre>mattn 1584024447.052400: これくらい書かないといけない。</pre>
-<pre>yutakatay 1584024447.052500: ちがったこいつじゃない</pre>
-<pre>yutakatay 1584024548.052800: <https://github.com/haya14busa/vim-operator-flashy>
+<pre>mattn 12日 23:47:23: <https://github.com/machakann/vim-highlightedyank/blob/931cc6bd53e4a1fdbe592751f0e13c0e401f0a49/autoload/highlightedyank.vim#L135-L159></pre>
+<pre>mattn 12日 23:47:28: これくらい書かないといけない。</pre>
+<pre>yutakatay 12日 23:47:28: ちがったこいつじゃない</pre>
+<pre>yutakatay 12日 23:49:09: <https://github.com/haya14busa/vim-operator-flashy>
 こっちでした</pre>
-<pre>mattn 1584024700.053900: 必ず visual 選択してから yank する人だと話は早いけど、そうじゃないならカーソル位置から一番近い所にあるテキストを検索する事になる。</pre>
-<pre>mattn 1584024723.054200: この API 欲しいなぁとずっと思ってる。</pre>
-<pre>tsuyoshi_cho 1584024790.054800: 素直にやると微妙に事故るんですよね...</pre>
-<pre>hotoolong 1584281850.058200: [質問] nvimでFloating Window を開くと背景がピンクになります。背景色を変更したいのです。どうすればいいでしょうか？</pre>
-<pre>kuu 1584281961.059500: `:hi NormalFloat &lt;ctermbg or guibg&gt;=#&lt;任意のカラーコード&gt;` といった感じのコマンドを実行すればとりあえずは色変わります</pre>
-<pre>kuu 1584281986.060000: ターミナルがフルカラーに対応してればguiで、してなければctermの方で</pre>
-<pre>kuu 1584282051.060500: 個人的には何かしらのカラースキームを導入することをおすすめします</pre>
-<pre>hotoolong 1584282270.061500: ありがとうございます！変更できました！</pre>
-<pre>ansanloms 1584328843.061900: `質問です`
+<pre>mattn 12日 23:51:41: 必ず visual 選択してから yank する人だと話は早いけど、そうじゃないならカーソル位置から一番近い所にあるテキストを検索する事になる。</pre>
+<pre>mattn 12日 23:52:04: この API 欲しいなぁとずっと思ってる。</pre>
+<pre>tsuyoshi_cho 12日 23:53:11: 素直にやると微妙に事故るんですよね...</pre>
+<pre>hotoolong 15日 23:17:31: [質問] nvimでFloating Window を開くと背景がピンクになります。背景色を変更したいのです。どうすればいいでしょうか？</pre>
+<pre>kuu 15日 23:19:22: `:hi NormalFloat &lt;ctermbg or guibg&gt;=#&lt;任意のカラーコード&gt;` といった感じのコマンドを実行すればとりあえずは色変わります</pre>
+<pre>kuu 15日 23:19:47: ターミナルがフルカラーに対応してればguiで、してなければctermの方で</pre>
+<pre>kuu 15日 23:20:52: 個人的には何かしらのカラースキームを導入することをおすすめします</pre>
+<pre>hotoolong 15日 23:24:31: ありがとうございます！変更できました！</pre>
+<pre>ansanloms 16日 12:20:44: `質問です`
 
 はじめて質問させていただきます。何卒宜しくお願い致します。
 
@@ -178,18 +178,18 @@ set viewoptions-=options```
 
 
 何卒宜しくお願い致します。</pre>
-<pre>itchyny 1584329840.062400: `++nested` をつけるとどうなりますか
+<pre>itchyny 16日 12:37:21: `++nested` をつけるとどうなりますか
 `autocmd BufRead * ++nested if expand('%') != '' &amp;&amp; &amp;buftype !~ 'nofile' | silent loadview | endif`</pre>
-<pre>tsuyoshi_cho 1584330510.063100: redrawしたらどうなりますか?</pre>
-<pre>tsuyoshi_cho 1584330544.063600: (redrawstatusでもいいかも?)</pre>
-<pre>kuu 1584330593.064000: loadviewでstatusline破壊されてるのではって感じする</pre>
-<pre>tsuyoshi_cho 1584330675.065700: っぽいですが、(自動的な復帰もふくめて)どうなんでしょうね...</pre>
-<pre>ansanloms 1584330705.066300: <@UAZ33BKV2>
+<pre>tsuyoshi_cho 16日 12:48:31: redrawしたらどうなりますか?</pre>
+<pre>tsuyoshi_cho 16日 12:49:05: (redrawstatusでもいいかも?)</pre>
+<pre>kuu 16日 12:49:54: loadviewでstatusline破壊されてるのではって感じする</pre>
+<pre>tsuyoshi_cho 16日 12:51:16: っぽいですが、(自動的な復帰もふくめて)どうなんでしょうね...</pre>
+<pre>ansanloms 16日 12:51:46: <@UAZ33BKV2>
 ありがとうございます。
 `:redraw` および `:redrawstatus` を実施しましたが変化はありませんでした。
 ※ `:e` で再読み込みすればステータスラインが表示されます。</pre>
-<pre>itchyny 1584330738.066600: `vim 上で test.txt を読み込む` この具体的な操作が知りたい</pre>
-<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1584337888.067000: <https://teratail.com/questions/247437?rss=all|vscodeのインストールについて>
+<pre>itchyny 16日 12:52:19: `vim 上で test.txt を読み込む` この具体的な操作が知りたい</pre>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 16日 14:51:29: <https://teratail.com/questions/247437?rss=all|vscodeのインストールについて>
 前提・実現したいこと
 iPad Proで、vscodeをインストールしたいのですが、可能でしょうか？  
 自分でも調べましたが、難しいのかな？と感じています。YouTubeを見ていたらブログも見ましたが、他の言語はできても、vscodeは難しいのか、詳しく書かれたものがなかったため、
@@ -198,141 +198,141 @@ iPad Proで、vscodeをインストールしたいのですが、可能でし�
 よろしくお願いいたします。  
 
 <https://teratail.com/questions/247437?rss=all|続きを見る></pre>
-<pre>0Δ 1584338548.067700: Vim関係無いと思ったら、回答の中に「Vimなら行けるよ！」ってのがあった…</pre>
-<pre>kuu 1584338567.068100: 多分タグのvimに反応してる</pre>
-<pre>kuu 1584338592.069100: これteratailの作りが悪いんかな、質問したことないからわからん</pre>
-<pre>itchyny 1584338610.069500: すぐに見れなさそうなのでGitHubにissue立てていただけますか。時間があるときに見ます。</pre>
-<pre>mattn 1584338632.070200: なんでタグに vim 入れるんですかね。</pre>
-<pre>0Δ 1584338657.071200: `Vi` まで書いてサジェストされたのをポンしている疑惑</pre>
-<pre>mattn 1584338674.071600: いやこれ手動ですよ。</pre>
-<pre>thinca 1584338684.071700: 質問の仕方がわからない人がする質問が流れてくるのが正直しんどい。ここみたいにチャットならまだちょっとずつやり取りしてお互いの認識を埋めていけるけど、質問サイトは回答したあと質問者が音沙汰なしなんてのが平気で起きるからそりゃ回答者もやる気をなくす</pre>
-<pre>mattn 1584338703.072000: CROS まったく関係なくて笑う</pre>
-<pre>mattn 1584338726.072800: ぶっ CORS (放送禁止)</pre>
-<pre>koron 1584338743.073400: しんどいのなら流すのやめたら?</pre>
-<pre>eihigh 1584338745.073500: と思ったときには（以下略</pre>
-<pre>kuu 1584338748.073700: teratailさんごめんなさい</pre>
-<pre>thinca 1584338799.075200: 救ってあげられる質問も流れてくることがあるのがなんとも。まあ簡単な質問はあっち側の人が速攻で回答しちゃってるというのはあるけど…</pre>
-<pre>0Δ 1584338800.075300: 逆に考えよう、僕等が正しい方法を積極的に流す事でteratailを浄化できると</pre>
-<pre>thinca 1584338868.076500: とりあえず Stack Overflow みたいに編集できるようにさせてくれるだけでもだいぶ違うのだけどなー</pre>
-<pre>tsuyoshi_cho 1584338929.077600: まあ、タグが酷いから、というのを答えられそうなのだけ答えるつもり、くらいの軽い気持ちで十分だという免罪符になるとしておけば、心は平穏かもしれない</pre>
-<pre>ansanloms 1584341759.078000: <@U7H4TJEG0>
+<pre>0Δ 16日 15:02:29: Vim関係無いと思ったら、回答の中に「Vimなら行けるよ！」ってのがあった…</pre>
+<pre>kuu 16日 15:02:48: 多分タグのvimに反応してる</pre>
+<pre>kuu 16日 15:03:13: これteratailの作りが悪いんかな、質問したことないからわからん</pre>
+<pre>itchyny 16日 15:03:31: すぐに見れなさそうなのでGitHubにissue立てていただけますか。時間があるときに見ます。</pre>
+<pre>mattn 16日 15:03:53: なんでタグに vim 入れるんですかね。</pre>
+<pre>0Δ 16日 15:04:18: `Vi` まで書いてサジェストされたのをポンしている疑惑</pre>
+<pre>mattn 16日 15:04:35: いやこれ手動ですよ。</pre>
+<pre>thinca 16日 15:04:45: 質問の仕方がわからない人がする質問が流れてくるのが正直しんどい。ここみたいにチャットならまだちょっとずつやり取りしてお互いの認識を埋めていけるけど、質問サイトは回答したあと質問者が音沙汰なしなんてのが平気で起きるからそりゃ回答者もやる気をなくす</pre>
+<pre>mattn 16日 15:05:04: CROS まったく関係なくて笑う</pre>
+<pre>mattn 16日 15:05:27: ぶっ CORS (放送禁止)</pre>
+<pre>koron 16日 15:05:44: しんどいのなら流すのやめたら?</pre>
+<pre>eihigh 16日 15:05:46: と思ったときには（以下略</pre>
+<pre>kuu 16日 15:05:49: teratailさんごめんなさい</pre>
+<pre>thinca 16日 15:06:40: 救ってあげられる質問も流れてくることがあるのがなんとも。まあ簡単な質問はあっち側の人が速攻で回答しちゃってるというのはあるけど…</pre>
+<pre>0Δ 16日 15:06:41: 逆に考えよう、僕等が正しい方法を積極的に流す事でteratailを浄化できると</pre>
+<pre>thinca 16日 15:07:49: とりあえず Stack Overflow みたいに編集できるようにさせてくれるだけでもだいぶ違うのだけどなー</pre>
+<pre>tsuyoshi_cho 16日 15:08:50: まあ、タグが酷いから、というのを答えられそうなのだけ答えるつもり、くらいの軽い気持ちで十分だという免罪符になるとしておけば、心は平穏かもしれない</pre>
+<pre>ansanloms 16日 15:56:00: <@U7H4TJEG0>
 お手数をおかけします。
 当該、下記に作成いたしました。
 <https://github.com/itchyny/lightline.vim/issues/430>
 
 何卒よろしくお願いします。</pre>
-<pre>itchyny 1584354240.078500: :h FileChangedShellPost</pre>
-<pre> 1584354241.078600: ```
+<pre>itchyny 16日 19:24:01: :h FileChangedShellPost</pre>
+<pre> 16日 19:24:02: ```
                                                         *FileChangedShellPost*
 FileChangedShellPost            Vimの外部でファイルが変更されたのを検出・対処
                                 した後。ステータスラインを更新するのに使える。
 ```</pre>
-<pre>itchyny 1584354250.078800: こんなのしらなんだ</pre>
-<pre>itchyny 1584354405.079400: issue報告助かりました (lightlineにbugラベルをつけるのは久しぶりです)</pre>
-<pre>monaqa 1584361043.082300: teratail の件，VSCode に関するタグが出てこないのが原因っぽいですね．
+<pre>itchyny 16日 19:24:11: こんなのしらなんだ</pre>
+<pre>itchyny 16日 19:26:46: issue報告助かりました (lightlineにbugラベルをつけるのは久しぶりです)</pre>
+<pre>monaqa 16日 21:17:24: teratail の件，VSCode に関するタグが出てこないのが原因っぽいですね．
 しかも今，質問画面を試しに開いてみたら，入力されたタグが存在しない場合はエラーになるみたいです（タグ追加には問い合わせが必要）．
 たしかにこの仕様なら「VSCode の質問したいのに VSCode のタグがない．代わりに似たようなエディタの Vim をつけとくか」なんて心理がはたらく人がいてもおかしくないかも...</pre>
-<pre>monaqa 1584361048.082600: 似たようなエディタ（名前が）</pre>
-<pre>kuu 1584361122.083000: JavaとJavaScriptくらい違う</pre>
-<pre>tsuyoshi_cho 1584361165.083900: Emacs LispとECMAScriptくらい違うかもw</pre>
-<pre>monaqa 1584361176.084200: そして今気づいたけど，タグ名「Visual Studio Code」で，「vscode」と打っても補完候補にあがってこないのか</pre>
-<pre>yutakatay 1584361351.084900: Archでもvscodeでインストールできなくていつもあれ？？ってなるんですよね・・・</pre>
-<pre>kuu 1584361450.085600: vscode無いのか…と最初見た時は思ったな</pre>
-<pre>mattn 1584362169.086200: まぁでも客観的に見ても teratail で質問する人の多くがタグをちゃんと付けられない。</pre>
-<pre>kuu 1584362244.086800: 正しくタグを付けられる人の多くが自己解決能力があるというのは皮肉っぽい</pre>
-<pre>heavenshell 1584362263.087000: タグは人類に早すぎた。</pre>
-<pre>mattn 1584362312.087600: たぶん何かをカテゴライズできる力があるとググる時の単語が作れるんでしょうね。</pre>
-<pre>mattn 1584362323.087900: それが無いから質問してる。</pre>
-<pre>mattn 1584362402.089200: だいぶ前に奥さんに、ググる時の絞り方を誉められたことがあったけど、なんか違うんでしょうな。普段ググってる人達は。</pre>
-<pre>heavenshell 1584362408.089400: つまり求められるのは質問内容を解析して適切なタグをつけるシステム</pre>
-<pre>hrsh7th 1584362426.089800: お金になりそう</pre>
-<pre>kuu 1584362441.090100: 人がググるのを見ていて、適切に区切るというのをしていなくて、まずそこからかってなったことがある</pre>
-<pre>kuu 1584362463.090400: 検索エンジンに文章を入力するのを観測した</pre>
-<pre>mattn 1584362478.090800: 「ワッフル作り方温度」みたいな</pre>
-<pre>kuu 1584362488.091000: joinされとる</pre>
-<pre>kuu 1584362544.092000: パソコン講座とか見てるとググり方、マジで金になるのではと思ったことある（多分胃に穴開くからやりたくない）</pre>
-<pre>mattn 1584362603.092800: 僕らの様に慣れてると「ワッフル　作り方　温度」の所に「電子レンジ」とか「失敗しない」とか付けれるんだけど、そういうのが付けれない人はいますね。</pre>
-<pre>mattn 1584362697.094200: 小学校がパソコン教育始めるというので近所のプログラミング教室に娘と見学に行った事があるけど、いろいろ口を出したくなってしまうのでプログラマが行くのはオススメできない。</pre>
-<pre>Nicholas 1584362726.094900: もう逆に今のgoogleくらい頑張ってるなら自然言語で検索したほうがヒット率いいとおもうんですよね</pre>
-<pre>mattn 1584362777.096000: ひとまずダブルクオートでくくれ！と言いたくなる事は多々あります。</pre>
-<pre>johejo 1584362863.097900: こないだそんなにIT詳しくなさそうな知人がangular -angularjs みたいなググり方知っててビビった</pre>
-<pre>Nicholas 1584362970.099100: とりあえず日本人、日本語苦手すぎるのでちょっとみんなで立ち止まりたい</pre>
-<pre>Nicholas 1584363013.100200: 構造化が必要なので早く自然言語もテキストプロパティに対応しないと…</pre>
-<pre>kuu 1584363038.100700: とあるハッカーの方が優れたハッカーは自然言語が得意と言っててグサッと刺さった</pre>
-<pre>mattn 1584363093.100900: 形態素解析にも限界があるからなぁ。</pre>
-<pre>Nicholas 1584363147.102600: 自然言語、本当にいい文章読む以外に学ぶ術がないんですよね…</pre>
-<pre>Nicholas 1584363187.103600: 文章自体のネストとか構造に丁寧な文章がわかるまで読み潰すしかない</pre>
-<pre>johejo 1584363211.104100: ペアググり 割とおすすめ</pre>
-<pre>tsuyoshi_cho 1584363382.105000: サジェス死 (575を埋める)</pre>
-<pre>luma 1584363407.105400: (5...?)</pre>
-<pre>tsuyoshi_cho 1584363449.106200: (字不明)</pre>
-<pre>Nicholas 1584363498.107100: 古いアタマなんで自分もサジェストにイラつくんだけど、もう任せる方にシフトできるようにアタマ慣らしたほうが...と思う</pre>
-<pre>Nicholas 1584363525.107900: 本音は&lt;C-p&gt;させて</pre>
-<pre>kuu 1584363542.108000: 曖昧な動作するものが好きになれないのでサジェストは常に切ってる</pre>
-<pre>kuu 1584363556.108400: 最近ファジーファインダーを許容できるようになったので成長はしてる(?)</pre>
-<pre>luma 1584363591.109500: fzf，あいまいといいながら厳密だなあという気持ちになる（いいこと）</pre>
-<pre>johejo 1584363682.112100: 綴りとか適当に調べるときとか助かってる気がする
+<pre>monaqa 16日 21:17:29: 似たようなエディタ（名前が）</pre>
+<pre>kuu 16日 21:18:43: JavaとJavaScriptくらい違う</pre>
+<pre>tsuyoshi_cho 16日 21:19:26: Emacs LispとECMAScriptくらい違うかもw</pre>
+<pre>monaqa 16日 21:19:37: そして今気づいたけど，タグ名「Visual Studio Code」で，「vscode」と打っても補完候補にあがってこないのか</pre>
+<pre>yutakatay 16日 21:22:32: Archでもvscodeでインストールできなくていつもあれ？？ってなるんですよね・・・</pre>
+<pre>kuu 16日 21:24:11: vscode無いのか…と最初見た時は思ったな</pre>
+<pre>mattn 16日 21:36:10: まぁでも客観的に見ても teratail で質問する人の多くがタグをちゃんと付けられない。</pre>
+<pre>kuu 16日 21:37:25: 正しくタグを付けられる人の多くが自己解決能力があるというのは皮肉っぽい</pre>
+<pre>heavenshell 16日 21:37:44: タグは人類に早すぎた。</pre>
+<pre>mattn 16日 21:38:33: たぶん何かをカテゴライズできる力があるとググる時の単語が作れるんでしょうね。</pre>
+<pre>mattn 16日 21:38:44: それが無いから質問してる。</pre>
+<pre>mattn 16日 21:40:03: だいぶ前に奥さんに、ググる時の絞り方を誉められたことがあったけど、なんか違うんでしょうな。普段ググってる人達は。</pre>
+<pre>heavenshell 16日 21:40:09: つまり求められるのは質問内容を解析して適切なタグをつけるシステム</pre>
+<pre>hrsh7th 16日 21:40:27: お金になりそう</pre>
+<pre>kuu 16日 21:40:42: 人がググるのを見ていて、適切に区切るというのをしていなくて、まずそこからかってなったことがある</pre>
+<pre>kuu 16日 21:41:04: 検索エンジンに文章を入力するのを観測した</pre>
+<pre>mattn 16日 21:41:19: 「ワッフル作り方温度」みたいな</pre>
+<pre>kuu 16日 21:41:29: joinされとる</pre>
+<pre>kuu 16日 21:42:25: パソコン講座とか見てるとググり方、マジで金になるのではと思ったことある（多分胃に穴開くからやりたくない）</pre>
+<pre>mattn 16日 21:43:24: 僕らの様に慣れてると「ワッフル　作り方　温度」の所に「電子レンジ」とか「失敗しない」とか付けれるんだけど、そういうのが付けれない人はいますね。</pre>
+<pre>mattn 16日 21:44:58: 小学校がパソコン教育始めるというので近所のプログラミング教室に娘と見学に行った事があるけど、いろいろ口を出したくなってしまうのでプログラマが行くのはオススメできない。</pre>
+<pre>Nicholas 16日 21:45:27: もう逆に今のgoogleくらい頑張ってるなら自然言語で検索したほうがヒット率いいとおもうんですよね</pre>
+<pre>mattn 16日 21:46:18: ひとまずダブルクオートでくくれ！と言いたくなる事は多々あります。</pre>
+<pre>johejo 16日 21:47:44: こないだそんなにIT詳しくなさそうな知人がangular -angularjs みたいなググり方知っててビビった</pre>
+<pre>Nicholas 16日 21:49:31: とりあえず日本人、日本語苦手すぎるのでちょっとみんなで立ち止まりたい</pre>
+<pre>Nicholas 16日 21:50:14: 構造化が必要なので早く自然言語もテキストプロパティに対応しないと…</pre>
+<pre>kuu 16日 21:50:39: とあるハッカーの方が優れたハッカーは自然言語が得意と言っててグサッと刺さった</pre>
+<pre>mattn 16日 21:51:34: 形態素解析にも限界があるからなぁ。</pre>
+<pre>Nicholas 16日 21:52:28: 自然言語、本当にいい文章読む以外に学ぶ術がないんですよね…</pre>
+<pre>Nicholas 16日 21:53:08: 文章自体のネストとか構造に丁寧な文章がわかるまで読み潰すしかない</pre>
+<pre>johejo 16日 21:53:32: ペアググり 割とおすすめ</pre>
+<pre>tsuyoshi_cho 16日 21:56:23: サジェス死 (575を埋める)</pre>
+<pre>luma 16日 21:56:48: (5...?)</pre>
+<pre>tsuyoshi_cho 16日 21:57:30: (字不明)</pre>
+<pre>Nicholas 16日 21:58:19: 古いアタマなんで自分もサジェストにイラつくんだけど、もう任せる方にシフトできるようにアタマ慣らしたほうが...と思う</pre>
+<pre>Nicholas 16日 21:58:46: 本音は&lt;C-p&gt;させて</pre>
+<pre>kuu 16日 21:59:03: 曖昧な動作するものが好きになれないのでサジェストは常に切ってる</pre>
+<pre>kuu 16日 21:59:17: 最近ファジーファインダーを許容できるようになったので成長はしてる(?)</pre>
+<pre>luma 16日 21:59:52: fzf，あいまいといいながら厳密だなあという気持ちになる（いいこと）</pre>
+<pre>johejo 16日 22:01:23: 綴りとか適当に調べるときとか助かってる気がする
 Ctrl-n, Ctrl-p ついつい押してしまう....</pre>
-<pre>tsuyoshi_cho 1584363769.113000: Vimの類語辞書とEBlookのお世話になることがけっこうある...便利</pre>
-<pre>mattn 1584364566.113600: 辞書って自分で抜き出した奴です？</pre>
-<pre>tsuyoshi_cho 1584364605.114000: はい、そうですね。
+<pre>tsuyoshi_cho 16日 22:02:50: Vimの類語辞書とEBlookのお世話になることがけっこうある...便利</pre>
+<pre>mattn 16日 22:16:07: 辞書って自分で抜き出した奴です？</pre>
+<pre>tsuyoshi_cho 16日 22:16:46: はい、そうですね。
 どっちも自前で準備しました。</pre>
-<pre>mattn 1584365494.114400: むちゃんこ久しぶりに eblook 起動した。</pre>
-<pre> 1584365503.114500: </pre>
-<pre>tsuyoshi_cho 1584365958.115400: 辞書定義はこれくらい
+<pre>mattn 16日 22:31:35: むちゃんこ久しぶりに eblook 起動した。</pre>
+<pre> 16日 22:31:44: </pre>
+<pre>tsuyoshi_cho 16日 22:39:19: 辞書定義はこれくらい
 <https://github.com/tsuyoshicho/vimrc-reading/blob/30e44b74bd658d268a31adcf9c2baad7b17628be/.vim/rc/dein_lazy.toml#L102-L235>
 あるだけ入れてある、という...まあ英辞郎とGENEでだいたいOKだとも言える...</pre>
-<pre>kuu 1584366011.115800: 惡魔の辭典が存在感ある</pre>
-<pre>tsuyoshi_cho 1584366077.116400: たまーに適当なワードで眺めることがある
+<pre>kuu 16日 22:40:12: 惡魔の辭典が存在感ある</pre>
+<pre>tsuyoshi_cho 16日 22:41:18: たまーに適当なワードで眺めることがある
 ちなみに全辞書はスマホにEBPocket Professionalとともに入ってたりする</pre>
-<pre>mattn 1584366406.116600: 通信用語の基礎知識なつい</pre>
-<pre>tsuyoshi_cho 1584366473.117300: vim help jp を EPWING に変換できたら需要あるだろうか(もう下火だよなあ...)</pre>
-<pre>johejo 1584367769.118500: wordnet 昔遊んだなあ sqlite3で結構面白いことできる</pre>
-<pre>eihigh 1584369288.119200: プログラマは実際数学力より国語力。</pre>
-<pre>heavenshell 1584369340.119500: このコードを書いた作者の気持ちを述べよ(20点)</pre>
-<pre>lambdalisue 1584369496.120100: 帰りたい</pre>
-<pre>eihigh 1584369514.120900: 「←なぜか動く」</pre>
-<pre>kuu 1584369517.121000: この流れよ</pre>
-<pre>kuu 1584369535.121500: A.なんもわからん、俺たちは雰囲気でコードを書いている</pre>
-<pre>kuu 1584369579.122100: 出題者が想定している回答は「このコードを書くことにより会社に貢献できて、ゆくゆくは社会のために(ry」だったりする</pre>
-<pre>lambdalisue 1584369602.122500: マジレスすると『お腹すいたなぁ』とか</pre>
-<pre>eihigh 1584369787.123400: 自分の場合「書いてるうちによく分からなくなってきたけどまあいいか」かな…</pre>
-<pre>koron 1584422540.126800: RISC-Vが載った、ラズパイ規模のSBC(Single Board Computer)ってないだろうか? SiFive以外で。</pre>
-<pre>kuu 1584422629.127400: 私も知りたい、いい加減RISC-Vのボード一枚くらい確保しておきたい</pre>
-<pre>koron 1584422665.127900: Arduino規模のカメラ乗ったやつは持ってる。M5StickVじゃないやつなんだけど。</pre>
-<pre>koron 1584422743.128200: Maixduino だった。
+<pre>mattn 16日 22:46:47: 通信用語の基礎知識なつい</pre>
+<pre>tsuyoshi_cho 16日 22:47:54: vim help jp を EPWING に変換できたら需要あるだろうか(もう下火だよなあ...)</pre>
+<pre>johejo 16日 23:09:30: wordnet 昔遊んだなあ sqlite3で結構面白いことできる</pre>
+<pre>eihigh 16日 23:34:49: プログラマは実際数学力より国語力。</pre>
+<pre>heavenshell 16日 23:35:41: このコードを書いた作者の気持ちを述べよ(20点)</pre>
+<pre>lambdalisue 16日 23:38:17: 帰りたい</pre>
+<pre>eihigh 16日 23:38:35: 「←なぜか動く」</pre>
+<pre>kuu 16日 23:38:38: この流れよ</pre>
+<pre>kuu 16日 23:38:56: A.なんもわからん、俺たちは雰囲気でコードを書いている</pre>
+<pre>kuu 16日 23:39:40: 出題者が想定している回答は「このコードを書くことにより会社に貢献できて、ゆくゆくは社会のために(ry」だったりする</pre>
+<pre>lambdalisue 16日 23:40:03: マジレスすると『お腹すいたなぁ』とか</pre>
+<pre>eihigh 16日 23:43:08: 自分の場合「書いてるうちによく分からなくなってきたけどまあいいか」かな…</pre>
+<pre>koron 17日 14:22:21: RISC-Vが載った、ラズパイ規模のSBC(Single Board Computer)ってないだろうか? SiFive以外で。</pre>
+<pre>kuu 17日 14:23:50: 私も知りたい、いい加減RISC-Vのボード一枚くらい確保しておきたい</pre>
+<pre>koron 17日 14:24:26: Arduino規模のカメラ乗ったやつは持ってる。M5StickVじゃないやつなんだけど。</pre>
+<pre>koron 17日 14:25:44: Maixduino だった。
 
 <https://www.shigezone.com/?product=maixduino%e3%83%9e%e3%83%83%e3%82%af%e3%82%b9%e3%83%87%e3%83%a5%e3%82%a4%e3%83%bc%e3%83%8e></pre>
-<pre>mattn 1584422805.129700: あー、僕も(マイクの不具合が見つかってサポートに問い合わせたら「あー、今直してて直ったら交換するから待ってて」って言われて待ってたのにその改変版がやめになった) M5StickV は持ってる。</pre>
-<pre>mattn 1584423035.131800: M5StickV、ファームで python 起動してるはずなんでそこでRISC-V な Go の実行モジュール起動してやったら動くんじゃないかと思ったりしてるけど、誰かやってないかな。</pre>
-<pre>koron 1584423109.132400: OSないからGoが動くにはきついんちゃうの? TinyGoか…</pre>
-<pre>tsuyoshi_cho 1584517590.134700: `質問です`
+<pre>mattn 17日 14:26:46: あー、僕も(マイクの不具合が見つかってサポートに問い合わせたら「あー、今直してて直ったら交換するから待ってて」って言われて待ってたのにその改変版がやめになった) M5StickV は持ってる。</pre>
+<pre>mattn 17日 14:30:36: M5StickV、ファームで python 起動してるはずなんでそこでRISC-V な Go の実行モジュール起動してやったら動くんじゃないかと思ったりしてるけど、誰かやってないかな。</pre>
+<pre>koron 17日 14:31:50: OSないからGoが動くにはきついんちゃうの? TinyGoか…</pre>
+<pre>tsuyoshi_cho 18日 16:46:31: `質問です`
 macのvim/macvimでlibluaを認識させるに安定の方法ってどうしたもんでしょう?
 DYLD_LIBRARY_PATHにパス設定したけどなぜか認識しない...
 (Github Actions下なのです)</pre>
-<pre>tsuyoshi_cho 1584517794.135000: <https://qiita.com/junkoda/items/78c726b06afe2a9d3930>
+<pre>tsuyoshi_cho 18日 16:49:55: <https://qiita.com/junkoda/items/78c726b06afe2a9d3930>
 ぐへ、これのせいか?</pre>
-<pre>tsuyoshi_cho 1584518785.135500: ```brew install lua
+<pre>tsuyoshi_cho 18日 17:06:26: ```brew install lua
 brew install luajit```
 で逃げることにしました...</pre>
-<pre>tsuyoshi_cho 1584565219.136300: ありがとうございます。
+<pre>tsuyoshi_cho 19日 06:00:20: ありがとうございます。
 やっぱ、そういう風になりますよね。</pre>
-<pre>kuu 1584579384.137600: `質問です`
+<pre>kuu 19日 09:56:25: `質問です`
 `setlocal buftype=nofile` 等されたバッファを`:write`等で既存のファイルに上書きすると問答無用で上書きされてしまうのですが、これは仕様でしょうか。</pre>
-<pre>egawata 1584579915.138500: &gt;          "nofile" and "nowrite" buffers are similar:
+<pre>egawata 19日 10:05:16: &gt;          "nofile" and "nowrite" buffers are similar:
 &gt;         both:           The buffer is not to be written to disk, ":w" doesn't
 &gt;                         work (":w filename" does work though).</pre>
-<pre>egawata 1584579938.139000: `:w filename` だと書き込みできてしまうようです</pre>
-<pre>thinca 1584580098.140800: `:w filename` はカレントバッファに関係なくファイルに書き込むコマンドですからね</pre>
-<pre>tsuyoshi_cho 1584580101.140900: 設定より、ユーザーオペレーション(の明示)は優越という感じですかね</pre>
-<pre>kuu 1584580200.141800: あー、聞きたいのはそちらではなかったです、ごめんなさい
+<pre>egawata 19日 10:05:39: `:w filename` だと書き込みできてしまうようです</pre>
+<pre>thinca 19日 10:08:19: `:w filename` はカレントバッファに関係なくファイルに書き込むコマンドですからね</pre>
+<pre>tsuyoshi_cho 19日 10:08:22: 設定より、ユーザーオペレーション(の明示)は優越という感じですかね</pre>
+<pre>kuu 19日 10:10:01: あー、聞きたいのはそちらではなかったです、ごめんなさい
 通常のファイルだと別のファイルに上書きしようとすると!付けろって言われると思うんですが、nofileだと出ないので仕様なのかと思いまして</pre>
-<pre>thinca 1584580557.142300: バグっぽい空気を感じますね</pre>
-<pre>kuu 1584580648.142600: バグかあ、ありがとうございます</pre>
-<pre>thinca 1584580762.142900: :contribute-chance:</pre>
-<pre>kuu 1584580780.143300: vim-jpにissue立てといて時間あったらやります…</pre>
-<pre>thinca 1584580801.143600: バグ報告だけでも立派な contribute</pre>
-<pre>koron 1584581184.144900: なんか意図した挙動かも。というのは `check_overwrite()` という関数でチェックしてるっぽいんだけど、そのなかでいかが条件に含まれてる。
+<pre>thinca 19日 10:15:58: バグっぽい空気を感じますね</pre>
+<pre>kuu 19日 10:17:29: バグかあ、ありがとうございます</pre>
+<pre>thinca 19日 10:19:23: :contribute-chance:</pre>
+<pre>kuu 19日 10:19:41: vim-jpにissue立てといて時間あったらやります…</pre>
+<pre>thinca 19日 10:20:02: バグ報告だけでも立派な contribute</pre>
+<pre>koron 19日 10:26:25: なんか意図した挙動かも。というのは `check_overwrite()` という関数でチェックしてるっぽいんだけど、そのなかでいかが条件に含まれてる。
 
 ```#ifdef FEAT_QUICKFIX
 	    &amp;&amp; !bt_nofilename(buf)
@@ -345,116 +345,116 @@ brew install luajit```
  */
     int
 bt_nofilename(buf_T *buf)```</pre>
-<pre>koron 1584581262.146100: nofileのときバッファー名はファイル名ではないのでオーバーライドチェックは必要ない=常に上書きってことかな</pre>
-<pre>koron 1584581291.146500: んーちょっと微妙ねw</pre>
-<pre>kuu 1584581292.146700: うぇ…仕様っすか、これ</pre>
-<pre>koron 1584581321.147700: しかも +quickfix の時のみ。</pre>
-<pre>kuu 1584581324.147900: スクラッチバッファ多用するのでめっちゃふべん</pre>
-<pre>koron 1584581345.148800: この分だと、ここ直すと困るスクリプト結構ありそう。</pre>
-<pre>thinca 1584581347.149000: `:w filename` した時に `filename` が存在していても上書きされちゃうってのが現象ですよね? チェック対象ミスってる?</pre>
-<pre>kuu 1584581383.149800: そう、すごくバグの香りがする</pre>
-<pre>k-takata 1584581411.150300: +quickfix の時のみというのがとても怪しい。</pre>
-<pre>koron 1584581415.150500: ね</pre>
-<pre>thinca 1584581444.151400: てか `:w a.rb` でカレントバッファの BufWriteCmd 発動したのだが?</pre>
-<pre>thinca 1584581498.151800: なんかよくわからんな…仕様上どうあるべきなんだこれ</pre>
-<pre>k-takata 1584581550.152100: 本家にさっさと投げちゃうのがよさげ</pre>
-<pre>tsuyoshi_cho 1584581642.154100: 対バッファだと名前がないから名付けすることのチェックはなし -&gt; `!` なくても (別名)保存できていい
+<pre>koron 19日 10:27:43: nofileのときバッファー名はファイル名ではないのでオーバーライドチェックは必要ない=常に上書きってことかな</pre>
+<pre>koron 19日 10:28:12: んーちょっと微妙ねw</pre>
+<pre>kuu 19日 10:28:13: うぇ…仕様っすか、これ</pre>
+<pre>koron 19日 10:28:42: しかも +quickfix の時のみ。</pre>
+<pre>kuu 19日 10:28:45: スクラッチバッファ多用するのでめっちゃふべん</pre>
+<pre>koron 19日 10:29:06: この分だと、ここ直すと困るスクリプト結構ありそう。</pre>
+<pre>thinca 19日 10:29:08: `:w filename` した時に `filename` が存在していても上書きされちゃうってのが現象ですよね? チェック対象ミスってる?</pre>
+<pre>kuu 19日 10:29:44: そう、すごくバグの香りがする</pre>
+<pre>k-takata 19日 10:30:12: +quickfix の時のみというのがとても怪しい。</pre>
+<pre>koron 19日 10:30:16: ね</pre>
+<pre>thinca 19日 10:30:45: てか `:w a.rb` でカレントバッファの BufWriteCmd 発動したのだが?</pre>
+<pre>thinca 19日 10:31:39: なんかよくわからんな…仕様上どうあるべきなんだこれ</pre>
+<pre>k-takata 19日 10:32:31: 本家にさっさと投げちゃうのがよさげ</pre>
+<pre>tsuyoshi_cho 19日 10:34:03: 対バッファだと名前がないから名付けすることのチェックはなし -&gt; `!` なくても (別名)保存できていい
 対ファイルだと上書きなのでチェックすべき -&gt; `!` なしで保存できるのはミス
 みたいな...
 `!` の強制が、バッファ側か、実ファイル側どっちにかかってるのかな...(qfはバグ臭がすごい)</pre>
-<pre>kuu 1584581646.154400: とりあえずvim-jpには投げた <https://github.com/vim-jp/issues/issues/1337></pre>
-<pre>kuu 1584581653.154800: 時間ないので後からやります、すみません</pre>
-<pre>koron 1584581879.156200: check_overwrite の中ではバッファ名をチェックしてないので、与えられたファイル名が :w 由来かどうかは微妙にわからなさそう。なので do_write とあわせて直す感じかしらねぇ。</pre>
-<pre>mattn 1584581922.156600: 今北産業だけど普通にバグぽいなぁ。</pre>
-<pre>koron 1584582032.158000: ああそうだこの1行がどういう経緯で入ったか、調べようと思ったんだった。わすれてたw</pre>
-<pre>mattn 1584582047.158300: そのファイルが `:e foo.txt | set buftype=nofile` で読まれたのか(swapfile で確認?)どうかで動作が変わりそうな気もしなくない。</pre>
-<pre>thinca 1584582173.158800: しかし nofile にした時点でそのバッファはファイルとは紐付かないのが正しい気がしますね</pre>
-<pre>koron 1584582176.159000: あったあった <https://github.com/vim/vim/commit/11717bb0a1275f1e270396aeb1df92d973d4d068></pre>
-<pre>koron 1584582271.159400: &gt; Patch 7.1.172
+<pre>kuu 19日 10:34:07: とりあえずvim-jpには投げた <https://github.com/vim-jp/issues/issues/1337></pre>
+<pre>kuu 19日 10:34:14: 時間ないので後からやります、すみません</pre>
+<pre>koron 19日 10:38:00: check_overwrite の中ではバッファ名をチェックしてないので、与えられたファイル名が :w 由来かどうかは微妙にわからなさそう。なので do_write とあわせて直す感じかしらねぇ。</pre>
+<pre>mattn 19日 10:38:43: 今北産業だけど普通にバグぽいなぁ。</pre>
+<pre>koron 19日 10:40:33: ああそうだこの1行がどういう経緯で入ったか、調べようと思ったんだった。わすれてたw</pre>
+<pre>mattn 19日 10:40:48: そのファイルが `:e foo.txt | set buftype=nofile` で読まれたのか(swapfile で確認?)どうかで動作が変わりそうな気もしなくない。</pre>
+<pre>thinca 19日 10:42:54: しかし nofile にした時点でそのバッファはファイルとは紐付かないのが正しい気がしますね</pre>
+<pre>koron 19日 10:42:57: あったあった <https://github.com/vim/vim/commit/11717bb0a1275f1e270396aeb1df92d973d4d068></pre>
+<pre>koron 19日 10:44:32: &gt; Patch 7.1.172
 &gt; Problem:    When 'buftype' is "acwrite" Vim still checks if the file or
 &gt; 	    directory exists before overwriting.
 &gt; Solution:   Don't check for overwriting when the buffer name is not a file
 &gt; 	    name.
 &gt; Files:	    src/ex_cmds.c
 </pre>
-<pre>tsuyoshi_cho 1584582317.160200: このProblemが妥当なのか、に戻る...</pre>
-<pre>koron 1584582357.160600: この時点で nofile での `:w {filename}` の `{filename}` が存在したときに強制上書きするようになった。</pre>
-<pre>thinca 1584582428.161400: 引数見れてないのが問題な予感</pre>
-<pre>koron 1584582432.161500: その後、この修正で nofile の意味が少し変わってる。
+<pre>tsuyoshi_cho 19日 10:45:18: このProblemが妥当なのか、に戻る...</pre>
+<pre>koron 19日 10:45:58: この時点で nofile での `:w {filename}` の `{filename}` が存在したときに強制上書きするようになった。</pre>
+<pre>thinca 19日 10:47:09: 引数見れてないのが問題な予感</pre>
+<pre>koron 19日 10:47:13: その後、この修正で nofile の意味が少し変わってる。
 <https://github.com/vim/vim/commit/26910de8b0da6abab87bd5a397330f9cbe483309></pre>
-<pre>koron 1584582459.161800: ところでbt=acwriteってなに?</pre>
-<pre>koron 1584582527.162400: ああ autocmd で書く、ってやつか</pre>
-<pre>kuu 1584582544.163300: acwrite以外は想定してない挙動な気がするな</pre>
-<pre>koron 1584582582.163900: ふむふむ。んじゃ 7.1.172 でバグってる。本来なら acwrite だけチェックしなきゃいけないのに、nofile 他も含めてるから上書きチェックされなくなっちゃったんだ</pre>
-<pre>koron 1584582821.164600: んーっていうか do_write の初めのほうで bt_nofilename のケースをちゃんと捌くほうが、構造としては正しい気がするねw</pre>
-<pre>mattn 1584582930.165200: 余談だけどこういう調査議論は slack のログで permalink できると良さそうね。</pre>
-<pre>tsuyoshi_cho 1584582987.165800: フルのログはともかく、範囲指定でごそっとWebページ化してくれるとかあると助かりますね...</pre>
-<pre>koron 1584583617.166400: とりあえずここに僕が書いた調査結果は、みじかくまとめてissueに転記しときました</pre>
-<pre>koron 1584583633.166700: 「みじかくまとめて」=「くっそてきとう」</pre>
-<pre>kuu 1584583877.166900: ありがとうございます！</pre>
-<pre>tyru 1584588714.168100: nofile の場合 `:w` で上書きチェックしないのは分かるけど `:w {filename}` でチェックしてないのはかなりバグっぽいですね…</pre>
-<pre>kuu 1584588811.169000: 雑に修正された結果こうなった感じある</pre>
-<pre>kuu 1584592387.169200: 投げた <https://github.com/vim/vim/issues/5807></pre>
-<pre>kyoh86 1584608156.170500: … 誰か zsh on :terminal in vim で、promptが空で待機してるときに
+<pre>koron 19日 10:47:40: ところでbt=acwriteってなに?</pre>
+<pre>koron 19日 10:48:48: ああ autocmd で書く、ってやつか</pre>
+<pre>kuu 19日 10:49:05: acwrite以外は想定してない挙動な気がするな</pre>
+<pre>koron 19日 10:49:43: ふむふむ。んじゃ 7.1.172 でバグってる。本来なら acwrite だけチェックしなきゃいけないのに、nofile 他も含めてるから上書きチェックされなくなっちゃったんだ</pre>
+<pre>koron 19日 10:53:42: んーっていうか do_write の初めのほうで bt_nofilename のケースをちゃんと捌くほうが、構造としては正しい気がするねw</pre>
+<pre>mattn 19日 10:55:31: 余談だけどこういう調査議論は slack のログで permalink できると良さそうね。</pre>
+<pre>tsuyoshi_cho 19日 10:56:28: フルのログはともかく、範囲指定でごそっとWebページ化してくれるとかあると助かりますね...</pre>
+<pre>koron 19日 11:06:58: とりあえずここに僕が書いた調査結果は、みじかくまとめてissueに転記しときました</pre>
+<pre>koron 19日 11:07:14: 「みじかくまとめて」=「くっそてきとう」</pre>
+<pre>kuu 19日 11:11:18: ありがとうございます！</pre>
+<pre>tyru 19日 12:31:55: nofile の場合 `:w` で上書きチェックしないのは分かるけど `:w {filename}` でチェックしてないのはかなりバグっぽいですね…</pre>
+<pre>kuu 19日 12:33:32: 雑に修正された結果こうなった感じある</pre>
+<pre>kuu 19日 13:33:08: 投げた <https://github.com/vim/vim/issues/5807></pre>
+<pre>kyoh86 19日 17:55:57: … 誰か zsh on :terminal in vim で、promptが空で待機してるときに
 `:` をタイプしたらコマンドモードに入る、ってやつやってませんでしたっけ…
 …vim-jp Slackのスター付け忘れが我ながらひどい</pre>
-<pre>kuu 1584608381.170700: これ？ <http://tyru.hatenablog.com/entry/2020/01/06/152929></pre>
-<pre>mattn 1584608434.171200: そのまんまなタイトルでフイたw</pre>
-<pre>tyru 1584608567.171700: 多分スターつけててももう消えてるやつだ…</pre>
-<pre>kyoh86 1584609437.171900: わっ</pre>
-<pre>yutakatay 1584609463.172400: pinは残る仕様なんですかね？？昔のまである</pre>
-<pre>kyoh86 1584609472.172600: starは消えるのか</pre>
-<pre>kyoh86 1584609475.172800: ありがとうございます</pre>
-<pre>kyoh86 1584609492.173300: ん、いや、Starは残ってるっぽいな</pre>
-<pre>kyoh86 1584609500.174000: 単にStar付け忘れだ…</pre>
-<pre>yutakatay 1584609501.174100: あ、そうなんですね</pre>
-<pre>mattn 1584609521.174500: プロンプトで判定するやつ、expect からそうだけどモニョ感がぬぐえないのつらい。</pre>
-<pre>tyru 1584609977.174900: あ、star 残るんだ</pre>
-<pre>yutakatay 1584610142.175600: そうするとここらへん全スターみたいなのしたいですよね。
+<pre>kuu 19日 17:59:42: これ？ <http://tyru.hatenablog.com/entry/2020/01/06/152929></pre>
+<pre>mattn 19日 18:00:35: そのまんまなタイトルでフイたw</pre>
+<pre>tyru 19日 18:02:48: 多分スターつけててももう消えてるやつだ…</pre>
+<pre>kyoh86 19日 18:17:18: わっ</pre>
+<pre>yutakatay 19日 18:17:44: pinは残る仕様なんですかね？？昔のまである</pre>
+<pre>kyoh86 19日 18:17:53: starは消えるのか</pre>
+<pre>kyoh86 19日 18:17:56: ありがとうございます</pre>
+<pre>kyoh86 19日 18:18:13: ん、いや、Starは残ってるっぽいな</pre>
+<pre>kyoh86 19日 18:18:21: 単にStar付け忘れだ…</pre>
+<pre>yutakatay 19日 18:18:22: あ、そうなんですね</pre>
+<pre>mattn 19日 18:18:42: プロンプトで判定するやつ、expect からそうだけどモニョ感がぬぐえないのつらい。</pre>
+<pre>tyru 19日 18:26:18: あ、star 残るんだ</pre>
+<pre>yutakatay 19日 18:29:03: そうするとここらへん全スターみたいなのしたいですよね。
 流れがないとわからないもの多いんで</pre>
-<pre>tsuyoshi_cho 1584610206.176200: ひどいと、ぽこっと謎なギャグがスターに...なりますしね</pre>
-<pre>heavenshell 1584610301.176600: pin は上限あるけど star もあるのかな :thinking-material-just-fingers:</pre>
-<pre>yutakatay 1584610365.177600: starから URL取れないんですね。ほんと自分しか見れない</pre>
-<pre>mattn 1584610382.177900: pin は channel 内共有、star はユーザ内でしたっけ。</pre>
-<pre>heavenshell 1584610403.178100: ですね</pre>
-<pre> 1584610419.178300: <https://vim-jp.slack.com/files/U03C6TEAZ/FTAL7RS21/image.png></pre>
-<pre>yutakatay 1584610425.178700: あ、ファイルはとれた</pre>
-<pre>heavenshell 1584610465.178900: これはw</pre>
-<pre>yutakatay 1584610483.179300: スターしてる画像これしかなかったんで・・・ :bow:</pre>
-<pre>heavenshell 1584610487.179500: w</pre>
-<pre>lambdalisue 1584610556.180000: お　い　お　ま　え　ら</pre>
-<pre>kuu 1584610573.180800: 完全におもちゃ</pre>
-<pre>mattn 1584610583.181400: そのスター、大事になさって下さい。</pre>
-<pre>yutakatay 1584610598.181700: (スターしてなかった人はこれスターしとけよ！)</pre>
-<pre>kuu 1584610613.182200: 付けた</pre>
-<pre>thinca 1584610703.183400: 画像、古いのもアドレスわかってれば取れますね。ログを export してそこから見れるやつ取れる</pre>
-<pre>バクダンくん 1584618568.184700: <https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d|https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d>
+<pre>tsuyoshi_cho 19日 18:30:07: ひどいと、ぽこっと謎なギャグがスターに...なりますしね</pre>
+<pre>heavenshell 19日 18:31:42: pin は上限あるけど star もあるのかな :thinking-material-just-fingers:</pre>
+<pre>yutakatay 19日 18:32:46: starから URL取れないんですね。ほんと自分しか見れない</pre>
+<pre>mattn 19日 18:33:03: pin は channel 内共有、star はユーザ内でしたっけ。</pre>
+<pre>heavenshell 19日 18:33:24: ですね</pre>
+<pre> 19日 18:33:40: <https://vim-jp.slack.com/files/U03C6TEAZ/FTAL7RS21/image.png></pre>
+<pre>yutakatay 19日 18:33:46: あ、ファイルはとれた</pre>
+<pre>heavenshell 19日 18:34:26: これはw</pre>
+<pre>yutakatay 19日 18:34:44: スターしてる画像これしかなかったんで・・・ :bow:</pre>
+<pre>heavenshell 19日 18:34:48: w</pre>
+<pre>lambdalisue 19日 18:35:57: お　い　お　ま　え　ら</pre>
+<pre>kuu 19日 18:36:14: 完全におもちゃ</pre>
+<pre>mattn 19日 18:36:24: そのスター、大事になさって下さい。</pre>
+<pre>yutakatay 19日 18:36:39: (スターしてなかった人はこれスターしとけよ！)</pre>
+<pre>kuu 19日 18:36:54: 付けた</pre>
+<pre>thinca 19日 18:38:24: 画像、古いのもアドレスわかってれば取れますね。ログを export してそこから見れるやつ取れる</pre>
+<pre>バクダンくん 19日 20:49:29: <https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d|https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d>
 あっさり</pre>
-<pre>k-takata 1584618739.185400: あれ？その3行削除だけでいいの？</pre>
-<pre>kuu 1584619055.185800: え、消したんかw</pre>
-<pre>tsuyoshi_cho 1584620695.186700: とりあえず消しとけパッチ...w</pre>
-<pre>kuu 1584620883.187000: ところでvim-jpのissue、こちらでcloseしちゃってOK?</pre>
-<pre>mattn 1584620943.187300: ドゾー</pre>
-<pre>koron 1584679266.188000: え、消したん?w</pre>
-<pre>kyoh86 1584789359.002200: 皆さんは現在のバッファで、ある正規表現に合うものだけ抽出する、ってどうやります？
+<pre>k-takata 19日 20:52:20: あれ？その3行削除だけでいいの？</pre>
+<pre>kuu 19日 20:57:36: え、消したんかw</pre>
+<pre>tsuyoshi_cho 19日 21:24:56: とりあえず消しとけパッチ...w</pre>
+<pre>kuu 19日 21:28:04: ところでvim-jpのissue、こちらでcloseしちゃってOK?</pre>
+<pre>mattn 19日 21:29:04: ドゾー</pre>
+<pre>koron 20日 13:41:07: え、消したん?w</pre>
+<pre>kyoh86 21日 20:16:00: 皆さんは現在のバッファで、ある正規表現に合うものだけ抽出する、ってどうやります？
 今は `:v/re/d` でやってますが、 他には `:Capture g/re/p` くらいしか思いつかず…
 これ、抽出対象が複数行に渡る場合は使えないんですよね…</pre>
-<pre>ycino 1584789530.002900: 抽出するっていうのは一覧を開いてジャンプがしたいとかです？</pre>
-<pre>machakann 1584789644.003800: あんまりやったことないですけど、ぱっと思いつくのは `:filter/re/%print #`</pre>
-<pre>ycino 1584789659.004200: そもそも `:v` やったことがなかった・・・</pre>
-<pre>ycino 1584789724.005000: プラグインからquickfixに抽出するのしかぱっと出ないしダメそう</pre>
-<pre>machakann 1584789735.005200: 複数行はむずかしそう</pre>
-<pre>tsuyoshi_cho 1584789816.006000: 一旦普通に検索して、 `:vim // %` とか</pre>
-<pre>kuu 1584789911.006600: こんなやり方取るとか？（これはソートだけど抽出にも使えそう） <https://qiita.com/kana1/items/68b21838013bfd65b097></pre>
-<pre>ycino 1584789946.007100: vim力高くてすごい・・・</pre>
-<pre>tsuyoshi_cho 1584790512.007900: 期待には添えてないけど....その後Qfreplaceでバッファ化でどうにかする、とかもある</pre>
-<pre>kyoh86 1584792683.008100: なるほど</pre>
-<pre>kyoh86 1584792764.009100: 抽出でジャンプとかは特にいらんので、フラットに抽出できれば良いんですよねぇ</pre>
-<pre>kyoh86 1584792791.009700: そういえば `:filter` もあったか</pre>
-<pre>kyoh86 1584792845.010400: Qiitaの記事やばいな…これを空で書ける人は多分人間じゃなくてvimなんじゃないか…</pre>
-<pre>kyoh86 1584792923.010900: `:vim // %` も新しい知見感がある</pre>
-<pre>kyoh86 1584792960.011200: :help :vim</pre>
-<pre> 1584792961.011300: ```
+<pre>ycino 21日 20:18:51: 抽出するっていうのは一覧を開いてジャンプがしたいとかです？</pre>
+<pre>machakann 21日 20:20:45: あんまりやったことないですけど、ぱっと思いつくのは `:filter/re/%print #`</pre>
+<pre>ycino 21日 20:21:00: そもそも `:v` やったことがなかった・・・</pre>
+<pre>ycino 21日 20:22:05: プラグインからquickfixに抽出するのしかぱっと出ないしダメそう</pre>
+<pre>machakann 21日 20:22:16: 複数行はむずかしそう</pre>
+<pre>tsuyoshi_cho 21日 20:23:37: 一旦普通に検索して、 `:vim // %` とか</pre>
+<pre>kuu 21日 20:25:12: こんなやり方取るとか？（これはソートだけど抽出にも使えそう） <https://qiita.com/kana1/items/68b21838013bfd65b097></pre>
+<pre>ycino 21日 20:25:47: vim力高くてすごい・・・</pre>
+<pre>tsuyoshi_cho 21日 20:35:13: 期待には添えてないけど....その後Qfreplaceでバッファ化でどうにかする、とかもある</pre>
+<pre>kyoh86 21日 21:11:24: なるほど</pre>
+<pre>kyoh86 21日 21:12:45: 抽出でジャンプとかは特にいらんので、フラットに抽出できれば良いんですよねぇ</pre>
+<pre>kyoh86 21日 21:13:12: そういえば `:filter` もあったか</pre>
+<pre>kyoh86 21日 21:14:06: Qiitaの記事やばいな…これを空で書ける人は多分人間じゃなくてvimなんじゃないか…</pre>
+<pre>kyoh86 21日 21:15:24: `:vim // %` も新しい知見感がある</pre>
+<pre>kyoh86 21日 21:16:01: :help :vim</pre>
+<pre> 21日 21:16:02: ```
                                         *:vim* *:vimgrep* *E682* *E683*
 :vim[grep][!] /{pattern}/[g][j] {file} ...
                         ファイル{file}から{pattern}を検索し、マッチ位置をエラー
@@ -500,71 +500,71 @@ bt_nofilename(buf_T *buf)```</pre>
                         例:  
                                 :vimgrep Error *.c
 ```</pre>
-<pre>kyoh86 1584792982.012100: はーーーーーーーーーーーー。なるほど
+<pre>kyoh86 21日 21:16:23: はーーーーーーーーーーーー。なるほど
 これはこれでほしかったやつだ</pre>
-<pre>kuu 1584792990.012300: やってることは分かる、思いつくかと言われると…</pre>
-<pre>kyoh86 1584793001.012600: 思いつかんですよねえ &gt;qiita</pre>
-<pre>kyoh86 1584793035.012800: 作者見て納得</pre>
-<pre>tsuyoshi_cho 1584793495.014100: kanaさんなのは前見て知ってたけど、ちょうどいいのがない.. &gt; さすkana</pre>
-<pre>kyoh86 1584796700.014700: こういうのソラじゃ到底出てこないんで</pre>
-<pre>kyoh86 1584796705.015000: マクロでこなしちゃいそうだなあ</pre>
-<pre>tyru 1584821369.015700: テキスト処理はエディタにやらせるのが一番だと思ってる（ただしデカいファイルを扱わなければ）</pre>
-<pre>dohq 1584828024.017400: でかいファイル、みんな何で処理してるか気になるマン
+<pre>kuu 21日 21:16:31: やってることは分かる、思いつくかと言われると…</pre>
+<pre>kyoh86 21日 21:16:42: 思いつかんですよねえ &gt;qiita</pre>
+<pre>kyoh86 21日 21:17:16: 作者見て納得</pre>
+<pre>tsuyoshi_cho 21日 21:24:56: kanaさんなのは前見て知ってたけど、ちょうどいいのがない.. &gt; さすkana</pre>
+<pre>kyoh86 21日 22:18:21: こういうのソラじゃ到底出てこないんで</pre>
+<pre>kyoh86 21日 22:18:26: マクロでこなしちゃいそうだなあ</pre>
+<pre>tyru 22日 05:09:30: テキスト処理はエディタにやらせるのが一番だと思ってる（ただしデカいファイルを扱わなければ）</pre>
+<pre>dohq 22日 07:00:25: でかいファイル、みんな何で処理してるか気になるマン
 でかファイル専用エディタ的なアレなのかvimなのか</pre>
-<pre>kuu 1584828168.017700: Em…</pre>
-<pre>kuu 1584828188.018400: ある程度なら気にせずVimで開いてる</pre>
-<pre>kuu 1584829087.020700: Linux環境でGB単位のデータ扱う方法知りたい</pre>
-<pre>Shougo 1584831493.021100: GB単位のデータで何をするのですか？</pre>
-<pre>Shougo 1584831508.021700: バイナリを扱う用途でしか思いつかない</pre>
-<pre>kuu 1584831560.022200: 自分が扱いたいわけじゃなくて興味本位ですね、扱ったことある人はどうやってるのだろうと</pre>
-<pre>johejo 1584832270.023400: 構造を持ったデータだとDBに突っ込むのがいいと思います。</pre>
-<pre>Shougo 1584833341.023800: なるほど。</pre>
-<pre>Shougo 1584833356.024300: たしかに巨大ファイルの編集はロマン</pre>
-<pre>toru 1584844057.027900: 単純な処理ならgrep, cut, sed, awk, perlあたり組み合わせますね</pre>
-<pre> 1584844650.028600: Mac環境のneovimでヘルプを開くと、必ずviewファイルがないと怒られるのですが、原因として考えられるものはありますでしょうか。</pre>
-<pre>takets 1584844976.029300: `:view xxx.txt`  のように、リードオンリーで開くと必ず発生します。</pre>
-<pre>heavenshell 1584845130.029600: 該当のファイルはある感じでしょうか？</pre>
-<pre> 1584845235.029700: いえ、ヘルプファイルに関してのみ生成されていないようです</pre>
-<pre>heavenshell 1584845353.030700: プラグイン未読み込みでも発生するか、発生したら Neovim 発生しなければプラグインが怪しい…ですかね。</pre>
-<pre>takets 1584845501.031200: 最小構成で発生しなかったので、プラグインが原因のようです。</pre>
-<pre>takets 1584845517.031600: しかし、viewファイルに影響するってなんだろう……</pre>
-<pre>takets 1584845774.032400: ```" Save fold settings.
+<pre>kuu 22日 07:02:49: Em…</pre>
+<pre>kuu 22日 07:03:09: ある程度なら気にせずVimで開いてる</pre>
+<pre>kuu 22日 07:18:08: Linux環境でGB単位のデータ扱う方法知りたい</pre>
+<pre>Shougo 22日 07:58:14: GB単位のデータで何をするのですか？</pre>
+<pre>Shougo 22日 07:58:29: バイナリを扱う用途でしか思いつかない</pre>
+<pre>kuu 22日 07:59:21: 自分が扱いたいわけじゃなくて興味本位ですね、扱ったことある人はどうやってるのだろうと</pre>
+<pre>johejo 22日 08:11:11: 構造を持ったデータだとDBに突っ込むのがいいと思います。</pre>
+<pre>Shougo 22日 08:29:02: なるほど。</pre>
+<pre>Shougo 22日 08:29:17: たしかに巨大ファイルの編集はロマン</pre>
+<pre>toru 22日 11:27:38: 単純な処理ならgrep, cut, sed, awk, perlあたり組み合わせますね</pre>
+<pre> 22日 11:37:31: Mac環境のneovimでヘルプを開くと、必ずviewファイルがないと怒られるのですが、原因として考えられるものはありますでしょうか。</pre>
+<pre>takets 22日 11:42:57: `:view xxx.txt`  のように、リードオンリーで開くと必ず発生します。</pre>
+<pre>heavenshell 22日 11:45:31: 該当のファイルはある感じでしょうか？</pre>
+<pre> 22日 11:47:16: いえ、ヘルプファイルに関してのみ生成されていないようです</pre>
+<pre>heavenshell 22日 11:49:14: プラグイン未読み込みでも発生するか、発生したら Neovim 発生しなければプラグインが怪しい…ですかね。</pre>
+<pre>takets 22日 11:51:42: 最小構成で発生しなかったので、プラグインが原因のようです。</pre>
+<pre>takets 22日 11:51:58: しかし、viewファイルに影響するってなんだろう……</pre>
+<pre>takets 22日 11:56:15: ```" Save fold settings.
 autocmd BufWritePost * if expand('%') != '' &amp;&amp; &amp;buftype !~ 'nofile' | mkview | endif
 autocmd BufRead * if expand('%') != '' &amp;&amp; &amp;buftype !~ 'nofile' | silent loadview | endif
 " Don't save options.
 set viewoptions-=options```
 失礼しました。特定しました。
 折りたたみの設定を読み込むためのコードが衝突していたようです。</pre>
-<pre>tsuyoshi_cho 1584855923.034500: `質問です`
+<pre>tsuyoshi_cho 22日 14:45:24: `質問です`
 themisで THEMIS_ARGSを `-e -s --cmd "set luadll=/Users/runner/runners/2.165.2/work/vital.vim/vital.vim/.lua/lib/liblua.dylib"` みたいな値で実施したいのですが、なぜかエラーしてしまいます。
 ```ERROR: Target file not found.```
 こうしないといけない、みたいな注意点が抜けてるのではないかと思うのですが...
 (themisの処理開始コードを見る限り問題ないと思うのですが...)</pre>
-<pre>tsuyoshi_cho 1584855941.035000: ご存知の方がいたらお聞きしたいです</pre>
-<pre>tsuyoshi_cho 1584856332.035800: 手元でいろいろvimの引数を試してみましたが、直指定のせいかは不明ですが、そっちは問題なくて手詰り気味...</pre>
-<pre>ichizok 1584861907.036600: `"set` と `luadll=...` に分かれてしまっていますね</pre>
-<pre>tsuyoshi_cho 1584862030.038400: 環境変数内には空白やクォート込みではいってますが、それでもアカンですか...
+<pre>tsuyoshi_cho 22日 14:45:42: ご存知の方がいたらお聞きしたいです</pre>
+<pre>tsuyoshi_cho 22日 14:52:13: 手元でいろいろvimの引数を試してみましたが、直指定のせいかは不明ですが、そっちは問題なくて手詰り気味...</pre>
+<pre>ichizok 22日 16:25:08: `"set` と `luadll=...` に分かれてしまっていますね</pre>
+<pre>tsuyoshi_cho 22日 16:27:11: 環境変数内には空白やクォート込みではいってますが、それでもアカンですか...
 そんな気はしてたんですが、やっぱり?</pre>
-<pre>ichizok 1584862061.038800: themis の方で `eval ${THEMIS_VIM} ...` にする必要があるみたいです</pre>
-<pre>tsuyoshi_cho 1584862129.039200: <https://github.com/tsuyoshicho/vital.vim/runs/524997858>
+<pre>ichizok 22日 16:27:42: themis の方で `eval ${THEMIS_VIM} ...` にする必要があるみたいです</pre>
+<pre>tsuyoshi_cho 22日 16:28:50: <https://github.com/tsuyoshicho/vital.vim/runs/524997858>
 <https://github.com/tsuyoshicho/vital.vim/runs/524997858上のはログへのリンク|なるほど、>上のはログへのリンク</pre>
-<pre>tsuyoshi_cho 1584862187.039600: そこ直してみて動くか確認かなあ...</pre>
-<pre>ichizok 1584865394.040600: すみません `eval` だと `source ${STARTUP_SCRIPT}"` が分かれてしまうのでダメですね</pre>
-<pre>tsuyoshi_cho 1584867157.041000: あー、それもありますねえ...</pre>
-<pre>thinca 1584867167.041300: .themisrc ではダメですか?</pre>
-<pre>tsuyoshi_cho 1584867195.041800: workflow側の設定なので、あまり.themisrc側に混ぜたくなくて</pre>
-<pre>thinca 1584867243.042200: 混ぜなくても workflow の最中だけファイル設置するのは?</pre>
-<pre>tsuyoshi_cho 1584867272.042700: そうですね、すでにあるファイルとは位置を変えれば読んではくれますよね
+<pre>tsuyoshi_cho 22日 16:29:48: そこ直してみて動くか確認かなあ...</pre>
+<pre>ichizok 22日 17:23:15: すみません `eval` だと `source ${STARTUP_SCRIPT}"` が分かれてしまうのでダメですね</pre>
+<pre>tsuyoshi_cho 22日 17:52:38: あー、それもありますねえ...</pre>
+<pre>thinca 22日 17:52:48: .themisrc ではダメですか?</pre>
+<pre>tsuyoshi_cho 22日 17:53:16: workflow側の設定なので、あまり.themisrc側に混ぜたくなくて</pre>
+<pre>thinca 22日 17:54:04: 混ぜなくても workflow の最中だけファイル設置するのは?</pre>
+<pre>tsuyoshi_cho 22日 17:54:33: そうですね、すでにあるファイルとは位置を変えれば読んではくれますよね
 それはよさげ</pre>
-<pre>tsuyoshi_cho 1584867306.043800: ただ、このこととは別で、THEMIS_ARGSで空白が含まれてても動くこと(エスケープすべきかもしれませんが)は必要な気はしますが...</pre>
-<pre>thinca 1584867314.044000: `~/.themisrc` とかに置いとけばいいはず (GHA の work は HOME の中だったと思う)</pre>
-<pre>tsuyoshi_cho 1584867378.045100: いえ、作業ターゲットは `${GITHUB_WORKSPACE}` だかをメインにしてて、`~` 以下だとちょっと都合がよくなかったような</pre>
-<pre>thinca 1584867411.045500: まあ対象ファイルの上層のどこかにあれば大丈夫</pre>
-<pre>tsuyoshi_cho 1584867443.046000: :hai-small:</pre>
-<pre>thinca 1584867469.046400: THEMIS_ARGS はなにかの時にどうしても必要だってので足したやつであんまり変更することを想定していないです</pre>
-<pre>tsuyoshi_cho 1584867565.047200: ...なるほど、個人的には手動でテスト動かすときにいろいろ試すに使うという想定で、わりと主要な機能な気がしてました。</pre>
-<pre>tsuyoshi_cho 1584868029.047600: 上手く行きました、ありがとうございます。</pre>
-<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1584875480.047700: <https://teratail.com/questions/248713?rss=all|【Vim】netrw(標準ファイラー)でファイルをデフォルトのソフトで開きたい>
+<pre>tsuyoshi_cho 22日 17:55:07: ただ、このこととは別で、THEMIS_ARGSで空白が含まれてても動くこと(エスケープすべきかもしれませんが)は必要な気はしますが...</pre>
+<pre>thinca 22日 17:55:15: `~/.themisrc` とかに置いとけばいいはず (GHA の work は HOME の中だったと思う)</pre>
+<pre>tsuyoshi_cho 22日 17:56:19: いえ、作業ターゲットは `${GITHUB_WORKSPACE}` だかをメインにしてて、`~` 以下だとちょっと都合がよくなかったような</pre>
+<pre>thinca 22日 17:56:52: まあ対象ファイルの上層のどこかにあれば大丈夫</pre>
+<pre>tsuyoshi_cho 22日 17:57:24: :hai-small:</pre>
+<pre>thinca 22日 17:57:50: THEMIS_ARGS はなにかの時にどうしても必要だってので足したやつであんまり変更することを想定していないです</pre>
+<pre>tsuyoshi_cho 22日 17:59:26: ...なるほど、個人的には手動でテスト動かすときにいろいろ試すに使うという想定で、わりと主要な機能な気がしてました。</pre>
+<pre>tsuyoshi_cho 22日 18:07:10: 上手く行きました、ありがとうございます。</pre>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 22日 20:11:21: <https://teratail.com/questions/248713?rss=all|【Vim】netrw(標準ファイラー)でファイルをデフォルトのソフトで開きたい>
 問題
 Vim標準のファイラー「netrw」でファイルを開くときに、vimでなくデフォルトのソフトで開く方法がわかりません（gvimrcにどう設定すればいいかわかりませ）。
 解決方法をご教示ください。  
@@ -573,11 +573,11 @@ Windows10
 Vim + netrw
 
 <https://teratail.com/questions/248713?rss=all|続きを見る></pre>
-<pre>ゴリラ 1584877328.048100: 回答Done</pre>
-<pre>kuu 1584877493.048600: netrwに詳しいマン強い</pre>
-<pre>kuu 1584877512.049100: 実装気になって見に行ったらrundll呼んでてプロの仕事やってなった</pre>
-<pre>ゴリラ 1584877602.049600: たまたま `x` を押したらなんかアプリ動いたのがきっかけで知っていた</pre>
-<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1584879083.049800: <https://teratail.com/questions/248722?rss=all|【Vim】netrw(ファイラー)でフォルダをデフォルトのソフトで開きたい>
+<pre>ゴリラ 22日 20:42:09: 回答Done</pre>
+<pre>kuu 22日 20:44:54: netrwに詳しいマン強い</pre>
+<pre>kuu 22日 20:45:13: 実装気になって見に行ったらrundll呼んでてプロの仕事やってなった</pre>
+<pre>ゴリラ 22日 20:46:43: たまたま `x` を押したらなんかアプリ動いたのがきっかけで知っていた</pre>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 22日 21:11:24: <https://teratail.com/questions/248722?rss=all|【Vim】netrw(ファイラー)でフォルダをデフォルトのソフトで開きたい>
 問題
 Vim標準のファイラー「netrw」でファイルを開くときに、xキーでデフォルトのソフトで開けることがわかりました。
 しかし、フォルダを指定したソフト（VScode）で開く方法がわかりません。
@@ -587,20 +587,20 @@ Windows10
 Vim + netrw
 
 <https://teratail.com/questions/248722?rss=all|続きを見る></pre>
-<pre>thinca 1584884843.050100: おかわりきたで</pre>
-<pre>ゴリラ 1584884941.050700: 回答だけしておいた
+<pre>thinca 22日 22:47:24: おかわりきたで</pre>
+<pre>ゴリラ 22日 22:49:02: 回答だけしておいた
 なんか、他のツリープラグインを使ったほうが良いかも説（デフォ以外はよく知らない</pre>
-<pre>heavenshell 1584885284.051900: Vim でしかも netrw を開いて他のエディターを開きたいってどういう場合なんだろうかw</pre>
-<pre>ゴリラ 1584885303.052100: たしかに</pre>
-<pre>heavenshell 1584885357.052900: OpenVsCode という Vim plugin が待たれる( <https://marketplace.visualstudio.com/items?itemName=mattn.OpenVim>)</pre>
-<pre>ゴリラ 1584885950.053300: 3,483 installs
+<pre>heavenshell 22日 22:54:45: Vim でしかも netrw を開いて他のエディターを開きたいってどういう場合なんだろうかw</pre>
+<pre>ゴリラ 22日 22:55:04: たしかに</pre>
+<pre>heavenshell 22日 22:55:58: OpenVsCode という Vim plugin が待たれる( <https://marketplace.visualstudio.com/items?itemName=mattn.OpenVim>)</pre>
+<pre>ゴリラ 22日 23:05:51: 3,483 installs
 結構ダウンロードされている</pre>
-<pre>0Δ 1584948996.055500: 質問です。
+<pre>0Δ 23日 16:36:37: 質問です。
 現在編集中の(アクティブな)ウィンドウもしくはバッファ番号orIDはどうやって取得するのでしょうか。
 用途としては、ステータスラインに表示させる用です。</pre>
-<pre>0Δ 1584949210.056700: `win_getid()` `bufnr()` `winnr()` を試しましたが、各ウィンドウ/バッファの番号orIDが取得されて、一意な値になりませんでした(アクティブなモノを指さなかった)。</pre>
-<pre>tsuyoshi_cho 1584949244.056900: :h gettabwinvar</pre>
-<pre> 1584949244.057000: ```
+<pre>0Δ 23日 16:40:11: `win_getid()` `bufnr()` `winnr()` を試しましたが、各ウィンドウ/バッファの番号orIDが取得されて、一意な値になりませんでした(アクティブなモノを指さなかった)。</pre>
+<pre>tsuyoshi_cho 23日 16:40:45: :h gettabwinvar</pre>
+<pre> 23日 16:40:45: ```
 gettabwinvar({tabnr}, {winnr}, {varname} [, {def}])             *gettabwinvar()*
                 タブページ{tabnr}内のウィンドウ{winnr}のウィンドウローカル変数
                 {varname}の値を取得する。
@@ -630,15 +630,15 @@ gettabwinvar({tabnr}, {winnr}, {varname} [, {def}])             *gettabwinvar()*
                 |method| としても使用できる:  
                         GetTabnr()-&gt;gettabwinvar(winnr, varname)
 ```</pre>
-<pre>tsuyoshi_cho 1584949252.057200: で winnrを0?</pre>
-<pre>tsuyoshi_cho 1584949309.057500: 現在タブはどうにか取れたような?</pre>
-<pre>0Δ 1584949380.058400: 欲しいのはタブじゃなくてウィンドウなんですよね……</pre>
-<pre>tsuyoshi_cho 1584949408.058900: カレントタブのwin=0=カレントウィンドウらしいので、それでは無理かな?</pre>
-<pre>tsuyoshi_cho 1584949436.059700: 良い方法がわからない...</pre>
-<pre>takets 1584949449.060200: ウインドウ情報取得できるメソッドが見つからない……あるはずなんだけど</pre>
-<pre>tsuyoshi_cho 1584949454.060400: ここらへん取得方法の整理が必要な気がする..</pre>
-<pre>tsuyoshi_cho 1584949531.060600: :help winnr</pre>
-<pre> 1584949532.060700: ```
+<pre>tsuyoshi_cho 23日 16:40:53: で winnrを0?</pre>
+<pre>tsuyoshi_cho 23日 16:41:50: 現在タブはどうにか取れたような?</pre>
+<pre>0Δ 23日 16:43:01: 欲しいのはタブじゃなくてウィンドウなんですよね……</pre>
+<pre>tsuyoshi_cho 23日 16:43:29: カレントタブのwin=0=カレントウィンドウらしいので、それでは無理かな?</pre>
+<pre>tsuyoshi_cho 23日 16:43:57: 良い方法がわからない...</pre>
+<pre>takets 23日 16:44:10: ウインドウ情報取得できるメソッドが見つからない……あるはずなんだけど</pre>
+<pre>tsuyoshi_cho 23日 16:44:15: ここらへん取得方法の整理が必要な気がする..</pre>
+<pre>tsuyoshi_cho 23日 16:45:32: :help winnr</pre>
+<pre> 23日 16:45:33: ```
                                                         *winnr()*
 winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位のウィンドウは1であ
                 る。ポップアップウィンドウは0を返す。
@@ -666,113 +666,113 @@ winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位の�
                 |method| としても使用できる:  
                         GetWinval()-&gt;winnr()
 ```</pre>
-<pre>tsuyoshi_cho 1584949551.060900: ...ちがうか?</pre>
-<pre>0Δ 1584949874.061700: 試してましたが、ダメでしたねそれ。</pre>
-<pre>koron 1584949879.061800: &gt; 	The *g:statusline_winid* variable will be set to the |window-ID| of the	window that the status line belongs to.
+<pre>tsuyoshi_cho 23日 16:45:52: ...ちがうか?</pre>
+<pre>0Δ 23日 16:51:15: 試してましたが、ダメでしたねそれ。</pre>
+<pre>koron 23日 16:51:20: &gt; 	The *g:statusline_winid* variable will be set to the |window-ID| of the	window that the status line belongs to.
 </pre>
-<pre>koron 1584949924.062300: `set statusline=%!statusline_winid` でそれっぽいものでてるけど?</pre>
-<pre> 1584949949.062400: </pre>
-<pre>tsuyoshi_cho 1584949957.062800: むう</pre>
-<pre>koron 1584950076.063400: <https://vim-jp.org/vimdoc-ja/options.html#g:statusline_winid>
+<pre>koron 23日 16:52:05: `set statusline=%!statusline_winid` でそれっぽいものでてるけど?</pre>
+<pre> 23日 16:52:30: </pre>
+<pre>tsuyoshi_cho 23日 16:52:38: むう</pre>
+<pre>koron 23日 16:54:37: <https://vim-jp.org/vimdoc-ja/options.html#g:statusline_winid>
 
 &gt;  g:statusline_winid 変数はステータス行が属するウィンドウの window-IDに設定される。</pre>
-<pre>0Δ 1584950103.063600: いや、これじゃないです</pre>
-<pre>0Δ 1584950184.065000: KoRoNさんの画像で言うと、 *全ての* ステータスラインで `1008` が返る関数が欲しいのです。</pre>
-<pre>koron 1584950368.065500: すべてのかー</pre>
-<pre>tsuyoshi_cho 1584950398.066000: activeなのを抽出する手段が必要、ということですね...</pre>
-<pre>koron 1584950456.067600: `set statusline=%!winnr()` でウィンドウ番号は取れてるね。ただし</pre>
-<pre>0Δ 1584950459.067800: です、非アクティブなステータスラインを目立たないようにしたくて。
+<pre>0Δ 23日 16:55:04: いや、これじゃないです</pre>
+<pre>0Δ 23日 16:56:25: KoRoNさんの画像で言うと、 *全ての* ステータスラインで `1008` が返る関数が欲しいのです。</pre>
+<pre>koron 23日 16:59:29: すべてのかー</pre>
+<pre>tsuyoshi_cho 23日 16:59:59: activeなのを抽出する手段が必要、ということですね...</pre>
+<pre>koron 23日 17:00:57: `set statusline=%!winnr()` でウィンドウ番号は取れてるね。ただし</pre>
+<pre>0Δ 23日 17:01:00: です、非アクティブなステータスラインを目立たないようにしたくて。
 わかりづらくて申し分ない :bow:</pre>
-<pre>koron 1584950503.068500: 更新(redraw)しないとカレントよりもあとのwindowのstatuslineが更新されない。</pre>
-<pre>koron 1584950560.069000: hl-StatusLineNCの colorscheme を設定するんじゃダメなの?</pre>
-<pre>koron 1584950718.069300: &gt; 	real current buffer and "g:actual_curwin" to the |window-ID| of the
+<pre>koron 23日 17:01:44: 更新(redraw)しないとカレントよりもあとのwindowのstatuslineが更新されない。</pre>
+<pre>koron 23日 17:02:41: hl-StatusLineNCの colorscheme を設定するんじゃダメなの?</pre>
+<pre>koron 23日 17:05:19: &gt; 	real current buffer and "g:actual_curwin" to the |window-ID| of the
 &gt; 	real current window.  These values are strings.
 </pre>
-<pre>koron 1584950722.069500: こんなこともかいてあるな</pre>
-<pre>koron 1584950859.070300: `:set stl=g{g:actual_curwin}` ででるけど、やっぱ更新のないwindowのstatuslineには影響が出ないかも。</pre>
-<pre>tsuyoshi_cho 1584951068.070800: redrawstatusを定期実行する?(自分は時計用にしてる)</pre>
-<pre>koron 1584951120.071600: ですかね。あとは hl-StatusLineNC を絡めて実現すれば、ミニマムな更新にはなりそう。</pre>
-<pre>koron 1584951149.072000: current以外が目立たないhighlightはよくありますよね?</pre>
-<pre>0Δ 1584951408.072600: `g:actual_curwin` これだー！ ありがとうございます :pray:</pre>
-<pre>koron 1584951509.073000: 'statusline' の中にかいてありましたよ～</pre>
-<pre>kuu 1584952324.073600: これなんでv:じゃなくてg:なんだろう、すごく微妙</pre>
-<pre>kuu 1584952342.074000: actual_curwinなんてグローバル変数使わないけどさ…</pre>
-<pre>rbtnn 1584952575.075600: 隠しグローバル変数結構ある気がする。 `g:vim_indent_cont` も知る人ぞ知る変数だし</pre>
-<pre>kuu 1584952612.076100: あれはプラグインなのでまだ許容範囲</pre>
-<pre>kuu 1584952632.076700: 書き換えられもしないし</pre>
-<pre>koron 1584952675.077300: たぶん作られた時期なんじゃないの? まだ `v:` なかったとかさ</pre>
-<pre>thinca 1584952784.078300: `g:vim_indent_cont` はプラグインが参照するだけで普通のグローバル変数ですね。一方 `g:actual_curwin` は特殊な条件下で暗黙的に発生する謎の多い変数…</pre>
-<pre>thinca 1584952835.079200: `b:changedtick` と言う特殊な変数もある。バッファの内容が何かしら変わる度に(undo であっても)カウントアップしていく。結構便利</pre>
-<pre> 1584954985.079600: やっとやりたい事ができた……！
+<pre>koron 23日 17:05:23: こんなこともかいてあるな</pre>
+<pre>koron 23日 17:07:40: `:set stl=g{g:actual_curwin}` ででるけど、やっぱ更新のないwindowのstatuslineには影響が出ないかも。</pre>
+<pre>tsuyoshi_cho 23日 17:11:09: redrawstatusを定期実行する?(自分は時計用にしてる)</pre>
+<pre>koron 23日 17:12:01: ですかね。あとは hl-StatusLineNC を絡めて実現すれば、ミニマムな更新にはなりそう。</pre>
+<pre>koron 23日 17:12:30: current以外が目立たないhighlightはよくありますよね?</pre>
+<pre>0Δ 23日 17:16:49: `g:actual_curwin` これだー！ ありがとうございます :pray:</pre>
+<pre>koron 23日 17:18:30: 'statusline' の中にかいてありましたよ～</pre>
+<pre>kuu 23日 17:32:05: これなんでv:じゃなくてg:なんだろう、すごく微妙</pre>
+<pre>kuu 23日 17:32:23: actual_curwinなんてグローバル変数使わないけどさ…</pre>
+<pre>rbtnn 23日 17:36:16: 隠しグローバル変数結構ある気がする。 `g:vim_indent_cont` も知る人ぞ知る変数だし</pre>
+<pre>kuu 23日 17:36:53: あれはプラグインなのでまだ許容範囲</pre>
+<pre>kuu 23日 17:37:13: 書き換えられもしないし</pre>
+<pre>koron 23日 17:37:56: たぶん作られた時期なんじゃないの? まだ `v:` なかったとかさ</pre>
+<pre>thinca 23日 17:39:45: `g:vim_indent_cont` はプラグインが参照するだけで普通のグローバル変数ですね。一方 `g:actual_curwin` は特殊な条件下で暗黙的に発生する謎の多い変数…</pre>
+<pre>thinca 23日 17:40:36: `b:changedtick` と言う特殊な変数もある。バッファの内容が何かしら変わる度に(undo であっても)カウントアップしていく。結構便利</pre>
+<pre> 23日 18:16:26: やっとやりたい事ができた……！
 ステータスラインのモード表示に `DEACTIVE` が追加されました。
 (以前はコレが全部一斉にINSERTとかになって気持ち悪かった)</pre>
-<pre>tsuyoshi_cho 1584955152.080900: 自分のを良く見たら、lightlineが切り替えてたので、どういう制御しているかソース見にいけばよかったかな...</pre>
-<pre>tsuyoshi_cho 1584955375.081400: ただ、非アクティブは別の設定にしてるから、ちょっと意図とあわないけど</pre>
-<pre>バクダンくん 1584963750.081700: INACTIVEでは？</pre>
-<pre>バクダンくん 1584966324.082600: 非アクティブといえばこれおすすめます
+<pre>tsuyoshi_cho 23日 18:19:13: 自分のを良く見たら、lightlineが切り替えてたので、どういう制御しているかソース見にいけばよかったかな...</pre>
+<pre>tsuyoshi_cho 23日 18:22:56: ただ、非アクティブは別の設定にしてるから、ちょっと意図とあわないけど</pre>
+<pre>バクダンくん 23日 20:42:31: INACTIVEでは？</pre>
+<pre>バクダンくん 23日 21:25:25: 非アクティブといえばこれおすすめます
 <https://qiita.com/Bakudankun/items/649aa6d8b9eccc1712b5>
 Neovimの人は最後の１行だけ読めば良いです</pre>
-<pre>tsuyoshi_cho 1584966628.083200: vim-diminactiveから切り替えようかな...</pre>
-<pre>0Δ 1584969953.083800: typo警察だ！ありがとうございます :panda_dogeza:
+<pre>tsuyoshi_cho 23日 21:30:29: vim-diminactiveから切り替えようかな...</pre>
+<pre>0Δ 23日 22:25:54: typo警察だ！ありがとうございます :panda_dogeza:
 ガンダムSEEDに引っ張られてこの表現しか頭になかった……</pre>
-<pre>thinca 1584970202.084000: 使われ方は特殊ですけど、中身は普通の変数ですねー</pre>
-<pre>tyru 1584973459.087400: <@U03C71D7H> themis で非同期のテストをするにはどうすればいいですか？
+<pre>thinca 23日 22:30:03: 使われ方は特殊ですけど、中身は普通の変数ですねー</pre>
+<pre>tyru 23日 23:24:20: <@U03C71D7H> themis で非同期のテストをするにはどうすればいいですか？
 具体的にはプラグインが `synstack()` して `synIDattr(id, 'name') == 'Comment'` かどうかを見てるんですが、
 テストから実行するとまだ syntax がついてないらしく空を返したりします。
 `:redraw!` しても非同期に実行されるっぽいので諦めて非同期でテストできないか調べてる所です。</pre>
-<pre>thinca 1584973849.087900: 本当に非同期の問題ですかね? ちょっと気になります</pre>
-<pre>tyru 1584974341.089400: すみません、違いました！
+<pre>thinca 23日 23:30:50: 本当に非同期の問題ですかね? ちょっと気になります</pre>
+<pre>tyru 23日 23:39:02: すみません、違いました！
 こう書いたらちゃんと帰ってきた…
 ```e {vimrc のパス}
 setf vim
 echo synstack(1, 1)```</pre>
-<pre>tyru 1584974417.090300: うーん themis の vim がバッチモードで走ってることに原因がある？（これ前も言ったな…）</pre>
-<pre>thinca 1584974466.090800: それを実行したのは? 普通に起動した Vim ですか?</pre>
-<pre>tyru 1584974673.091200: `vim --clean -N -S {↑のスクリプト}` でした</pre>
-<pre>tyru 1584974764.092600: あ、 `vim --clean -N --cmd 'source {↑の(ry}` だとダメっぽい</pre>
-<pre>thinca 1584974781.092900: themis.vim は起動時になるべく余計な処理をしないので、 `filetype on` も `syntax enable` も必要なら自前で .themisrc に書かないとダメですよ。ちゃんと書いてますか?</pre>
-<pre>thinca 1584974811.093500: --clean は defaults.vim を読むので最小限のテストをしたい場合には適していません</pre>
-<pre>tyru 1584974951.094200: あーそうだ…すみません before_each には書いたんですが .themisrc は試してなかった…</pre>
-<pre>tyru 1584974968.094600: かなり色々雑に聞いてしまった</pre>
-<pre>thinca 1584975005.095000: before each に書いてるなら行けそうな気もする</pre>
-<pre> 1584975162.095700: 最小限スクリプトに書いたらちゃんと出る</pre>
-<pre>thinca 1584975257.096300: バッチモード実行でも問題ないなら themis の問題ではなさそう?</pre>
-<pre>tyru 1584975364.097300: あー完全に ftplugin の読み込みがミスってたみたいです…（ftplugin 読み込み部分を独自に書いてたけど `setf c` にしたらちゃんと返ってきた）</pre>
-<pre>tyru 1584975367.097600: お騒がせしました…</pre>
-<pre>thinca 1584975464.098600: ちなみに本当に非同期のテストがしたい場合、今の所ちゃんとしたサポートがなく、 :sleep を噛ませて裏の処理をちょっと動かす、みたいなことをしないといけない…</pre>
-<pre>tyru 1584975553.099100: :sleep って timer とか feedkeys() とか↑とかって動くんでしたっけ？</pre>
-<pre>thinca 1584975674.099500: ↑はそもそも非同期関係ないのだよね</pre>
-<pre>thinca 1584975695.100000: timer は動きます。feedkeys() は…どうだろ。動かない気もする</pre>
-<pre>tyru 1584976076.101700: syntax が redrawtime とかあるから非同期で動くのかな…と思って非同期のやり方を聞いた感じです</pre>
-<pre>tyru 1584976090.102000: なるほど、sleep で timer 動くのか</pre>
-<pre>tyru 1584976218.103200: いまだに syntax の仕組みがよくわかってない（本当に syntax highlight が同期的に動くのか未だに確証がない）</pre>
-<pre>thinca 1584976258.103500: 非同期だったら固まったりしないんだな</pre>
-<pre>tyru 1584976586.104400: あーすみません…言葉の使い方を間違っていた</pre>
-<pre>tyru 1584976741.106100: なんて言ったらいいんかな… 結局 syntax を themis でテストする際に非同期が必要にならないのか確証が持ててない感じです</pre>
-<pre>tyru 1584976790.107100: それここで言ってもまだ未サポートなんだから言ってもしゃあないですね</pre>
-<pre>kuu 1584976817.107500: Vimの処理って本質的には全部同期的な気がする</pre>
-<pre>kuu 1584976840.108300: nodeと同じようなもん</pre>
-<pre>kuu 1584976852.108800: (Workerあるから今は事情違うか)</pre>
-<pre>tyru 1584976859.109000: なので node の nextTick 的なことをする必要があって、その方法が今はない</pre>
-<pre>tyru 1584976905.109800: ちょっと色々まとまってないのでもうちょっとまとめてからまた質問しよう…</pre>
-<pre>kuu 1584976923.110200: 期待通りの物かは不明ですが、SafeStateAgainというautocmdのイベントがありますね</pre>
-<pre>tyru 1584977131.112600: &gt; なので node の nextTick 的なことをする必要があって、その方法が今はない
+<pre>tyru 23日 23:40:18: うーん themis の vim がバッチモードで走ってることに原因がある？（これ前も言ったな…）</pre>
+<pre>thinca 23日 23:41:07: それを実行したのは? 普通に起動した Vim ですか?</pre>
+<pre>tyru 23日 23:44:34: `vim --clean -N -S {↑のスクリプト}` でした</pre>
+<pre>tyru 23日 23:46:05: あ、 `vim --clean -N --cmd 'source {↑の(ry}` だとダメっぽい</pre>
+<pre>thinca 23日 23:46:22: themis.vim は起動時になるべく余計な処理をしないので、 `filetype on` も `syntax enable` も必要なら自前で .themisrc に書かないとダメですよ。ちゃんと書いてますか?</pre>
+<pre>thinca 23日 23:46:52: --clean は defaults.vim を読むので最小限のテストをしたい場合には適していません</pre>
+<pre>tyru 23日 23:49:12: あーそうだ…すみません before_each には書いたんですが .themisrc は試してなかった…</pre>
+<pre>tyru 23日 23:49:29: かなり色々雑に聞いてしまった</pre>
+<pre>thinca 23日 23:50:06: before each に書いてるなら行けそうな気もする</pre>
+<pre> 23日 23:52:43: 最小限スクリプトに書いたらちゃんと出る</pre>
+<pre>thinca 23日 23:54:18: バッチモード実行でも問題ないなら themis の問題ではなさそう?</pre>
+<pre>tyru 23日 23:56:05: あー完全に ftplugin の読み込みがミスってたみたいです…（ftplugin 読み込み部分を独自に書いてたけど `setf c` にしたらちゃんと返ってきた）</pre>
+<pre>tyru 23日 23:56:08: お騒がせしました…</pre>
+<pre>thinca 23日 23:57:45: ちなみに本当に非同期のテストがしたい場合、今の所ちゃんとしたサポートがなく、 :sleep を噛ませて裏の処理をちょっと動かす、みたいなことをしないといけない…</pre>
+<pre>tyru 23日 23:59:14: :sleep って timer とか feedkeys() とか↑とかって動くんでしたっけ？</pre>
+<pre>thinca 24日 00:01:15: ↑はそもそも非同期関係ないのだよね</pre>
+<pre>thinca 24日 00:01:36: timer は動きます。feedkeys() は…どうだろ。動かない気もする</pre>
+<pre>tyru 24日 00:07:57: syntax が redrawtime とかあるから非同期で動くのかな…と思って非同期のやり方を聞いた感じです</pre>
+<pre>tyru 24日 00:08:11: なるほど、sleep で timer 動くのか</pre>
+<pre>tyru 24日 00:10:19: いまだに syntax の仕組みがよくわかってない（本当に syntax highlight が同期的に動くのか未だに確証がない）</pre>
+<pre>thinca 24日 00:10:59: 非同期だったら固まったりしないんだな</pre>
+<pre>tyru 24日 00:16:27: あーすみません…言葉の使い方を間違っていた</pre>
+<pre>tyru 24日 00:19:02: なんて言ったらいいんかな… 結局 syntax を themis でテストする際に非同期が必要にならないのか確証が持ててない感じです</pre>
+<pre>tyru 24日 00:19:51: それここで言ってもまだ未サポートなんだから言ってもしゃあないですね</pre>
+<pre>kuu 24日 00:20:18: Vimの処理って本質的には全部同期的な気がする</pre>
+<pre>kuu 24日 00:20:41: nodeと同じようなもん</pre>
+<pre>kuu 24日 00:20:53: (Workerあるから今は事情違うか)</pre>
+<pre>tyru 24日 00:21:00: なので node の nextTick 的なことをする必要があって、その方法が今はない</pre>
+<pre>tyru 24日 00:21:46: ちょっと色々まとまってないのでもうちょっとまとめてからまた質問しよう…</pre>
+<pre>kuu 24日 00:22:04: 期待通りの物かは不明ですが、SafeStateAgainというautocmdのイベントがありますね</pre>
+<pre>tyru 24日 00:25:32: &gt; なので node の nextTick 的なことをする必要があって、その方法が今はない
 ありがとうございます… vim にというより themis に今はないという意味でした。
 無いという回答を得たので、違う方法でテストするか、本当にそういう仕組みが必要なのか（デバッグの過程で何か勘違いしてないか…）要チェックすべきだったという意味でした。</pre>
-<pre>kuu 1584977161.113300: (話の流れ全く読めてなかった)</pre>
-<pre>thinca 1584977163.113400: 強いて言うなら :sleep が nextTick です。厳密ではないけど</pre>
-<pre>tyru 1584977202.114100: 限定的ではあるけど、timer とかはそれでポーリングできる、みたいな意味ですよね（それは知らんかった）</pre>
-<pre>tyru 1584977331.116300: そもそも `:setf c` で動くけど `:runtime! after/ftplugin/c/caw.vim` する関数を変わりに呼び出すと synstack() が空を返すという状態でよくわからん…という状態です。
+<pre>kuu 24日 00:26:02: (話の流れ全く読めてなかった)</pre>
+<pre>thinca 24日 00:26:04: 強いて言うなら :sleep が nextTick です。厳密ではないけど</pre>
+<pre>tyru 24日 00:26:43: 限定的ではあるけど、timer とかはそれでポーリングできる、みたいな意味ですよね（それは知らんかった）</pre>
+<pre>tyru 24日 00:28:52: そもそも `:setf c` で動くけど `:runtime! after/ftplugin/c/caw.vim` する関数を変わりに呼び出すと synstack() が空を返すという状態でよくわからん…という状態です。
 前者で動くなら非同期が必要ない可能性は大きくて、
 自分がやろうとしてたのは後者にぶち当たったことで無理やりポーリングさせて動作確認しようと思ってたんだけど、場当たり的すぎた感は否めない…</pre>
-<pre>tyru 1584977381.116700: 頭もあまり働いてない…</pre>
-<pre>thinca 1584977503.117800: ftplugin でなんで syntax の話になるのか全然わかっていません</pre>
-<pre>kuu 1584977508.117900: synstackの中身、条件合わなければ強制的にハイライトの計算をやってるので、疑うなら別の場所な気がしなくも</pre>
-<pre>tyru 1584977616.118100: あ、何いってんだ？</pre>
-<pre>tyru 1584977621.118300: &gt; 俺</pre>
-<pre>tyru 1584977639.118600: runtime! で動くわけないやん…</pre>
-<pre>kuu 1584977664.119100: :h :runtime</pre>
-<pre> 1584977664.119200: ```
+<pre>tyru 24日 00:29:42: 頭もあまり働いてない…</pre>
+<pre>thinca 24日 00:31:44: ftplugin でなんで syntax の話になるのか全然わかっていません</pre>
+<pre>kuu 24日 00:31:49: synstackの中身、条件合わなければ強制的にハイライトの計算をやってるので、疑うなら別の場所な気がしなくも</pre>
+<pre>tyru 24日 00:33:37: あ、何いってんだ？</pre>
+<pre>tyru 24日 00:33:42: &gt; 俺</pre>
+<pre>tyru 24日 00:34:00: runtime! で動くわけないやん…</pre>
+<pre>kuu 24日 00:34:25: :h :runtime</pre>
+<pre> 24日 00:34:25: ```
                                                         *:ru* *:runtime*
 :ru[ntime][!] [where] {file} ..
                         'runtimepath' か 'packpath' で示された各ディレクトリの
@@ -816,12 +816,12 @@ echo synstack(1, 1)```</pre>
                         'verbose' が2以上なら見つかった全てのファイルについて
                         メッセージが表示される。
 ```</pre>
-<pre>tyru 1584977693.119600: syntax 設定せずに runtime! してました。そりゃ `Comment` とかのグループも定義される訳ない……</pre>
-<pre>thinca 1584977726.120100: 原因をめっちゃ深堀りしまくった結果超初歩的な凡ミスだったやつあるある</pre>
-<pre>kuu 1584977759.120600: 数時間くらいかけて調べてたけど、諦めて他の事やってたら数分で解決するとかよくある</pre>
-<pre>tyru 1584977769.120800: マジですいませんでした………</pre>
-<pre>tyru 1584977797.121300: 愕然としている</pre>
-<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1584982294.121700: <https://teratail.com/questions/248963?rss=all|MacでVimの置き換えが出来ません>
+<pre>tyru 24日 00:34:54: syntax 設定せずに runtime! してました。そりゃ `Comment` とかのグループも定義される訳ない……</pre>
+<pre>thinca 24日 00:35:27: 原因をめっちゃ深堀りしまくった結果超初歩的な凡ミスだったやつあるある</pre>
+<pre>kuu 24日 00:36:00: 数時間くらいかけて調べてたけど、諦めて他の事やってたら数分で解決するとかよくある</pre>
+<pre>tyru 24日 00:36:10: マジですいませんでした………</pre>
+<pre>tyru 24日 00:36:38: 愕然としている</pre>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 24日 01:51:35: <https://teratail.com/questions/248963?rss=all|MacでVimの置き換えが出来ません>
 前提・実現したいこと
 macのvimを新しいものに置き換えてクリップボードを有効にしたい  
 発生している問題・エラーメッセージ
@@ -835,14 +835,14 @@ macOS Catalina バージョン10.15.3
 brew installしたvim 8.2....
 
 <https://teratail.com/questions/248963?rss=all|続きを見る></pre>
-<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1585020690.122700: <https://teratail.com/questions/249011?rss=all|vscode でファイルを編集すると背景が赤くなってしまいます。>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 24日 12:31:31: <https://teratail.com/questions/249011?rss=all|vscode でファイルを編集すると背景が赤くなってしまいます。>
 vscodeでテキストファイルを編集していたところ、突然編集をした箇所の背景が赤くなる現象が起こりました。（なにかの仕様だと思います）  
 BackSpaceやDeleteで消えませんが、ファイルを保存し終了、もう一度立ち上げ直すと解除されます。  
 選択範囲などが非常に見づらくなるため、作業ができずに困っています。  
 同じような現象になった方がおりましたら、解決策をご教授いただれると嬉しいです。
 
 <https://teratail.com/questions/249011?rss=all|続きを見る></pre>
-<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1585020691.122800: <https://teratail.com/questions/249013?rss=all|dein.vimでcolorscheme設定が反映されない>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 24日 12:31:32: <https://teratail.com/questions/249013?rss=all|dein.vimでcolorscheme設定が反映されない>
 前提・実現したいこと
 neovimのセットアップをあれやこれやと設定していたらcolorschemeの設定が反映されなくなっていました。
 tmuxの設定と競合しているのかvimのプラグインのせいなのか頭ごっちゃです・・・  
@@ -863,87 +863,87 @@ let s:dein_dir = expand('~/.config/nvim/dein')
 ...
 
 <https://teratail.com/questions/249013?rss=all|続きを見る></pre>
-<pre>kuu 1585021126.123600: その設定だとnordになりそうな気がするけど、脳内実行下手なのでよくわからん</pre>
-<pre>tsuyoshi_cho 1585021431.124100: これ、どれも動かないからのきなみコメントアウトした、なんだと思います。
+<pre>kuu 24日 12:38:47: その設定だとnordになりそうな気がするけど、脳内実行下手なのでよくわからん</pre>
+<pre>tsuyoshi_cho 24日 12:43:52: これ、どれも動かないからのきなみコメントアウトした、なんだと思います。
 で、そのあたりについてコメントした</pre>
-<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1585030284.124300: <https://teratail.com/questions/249056?rss=all|vim-lspの診断スピードを早くしたい>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 24日 15:11:25: <https://teratail.com/questions/249056?rss=all|vim-lspの診断スピードを早くしたい>
 vim-lspを入れてみました。おおむね快適に動作しています。  
 diagnosticsについて、aleやcoc.nvimに比べて診断が走るまで（終わるまで？）に時間がかかるのが気になります。1文字書くたびに診断が走ってほぼリアルタイムで見た目に反映されるくらいが理想なのですが、なにか設定をいじることで診断の周期？を早めることは可能でしょうか。また、このスピードはvimのどの設定に依存して決まっているのでしょうか。  
 vim-lspのオプションのヘルプを引いてみましたがそのようなオプションが見当たらなかったので質問させていただきまし...
 
 <https://teratail.com/questions/249056?rss=all|続きを見る></pre>
-<pre>thinca 1585030294.124600: おっ</pre>
-<pre>thinca 1585030327.124900: 独特のフォント</pre>
-<pre>thinca 1585030357.125400: サーバの情報がない…</pre>
-<pre>yutakatay 1585030366.125700: このフォントなんだろう、面白い</pre>
-<pre>kuu 1585030587.126500: この人のdotfiles漁ればいいのではと思ってみたらgvim使いではなかった</pre>
-<pre>yutakatay 1585030736.127700: どうにかしてフォント名を聞き出したい・・・
+<pre>thinca 24日 15:11:35: おっ</pre>
+<pre>thinca 24日 15:12:08: 独特のフォント</pre>
+<pre>thinca 24日 15:12:38: サーバの情報がない…</pre>
+<pre>yutakatay 24日 15:12:47: このフォントなんだろう、面白い</pre>
+<pre>kuu 24日 15:16:28: この人のdotfiles漁ればいいのではと思ってみたらgvim使いではなかった</pre>
+<pre>yutakatay 24日 15:18:57: どうにかしてフォント名を聞き出したい・・・
 
 `たぶんフォントが悪くて遅いんだと思います。これなんのフォントですか？？`  とかかな</pre>
-<pre>mattn 1585030762.128200: <https://github.com/dadchyyy/dotfiles></pre>
-<pre>kuu 1585030774.128400: 誘導尋問やんけw</pre>
-<pre>kuu 1585030779.128700: 悪い大人</pre>
-<pre>yutakatay 1585030827.128900: :cry:
+<pre>mattn 24日 15:19:23: <https://github.com/dadchyyy/dotfiles></pre>
+<pre>kuu 24日 15:19:35: 誘導尋問やんけw</pre>
+<pre>kuu 24日 15:19:40: 悪い大人</pre>
+<pre>yutakatay 24日 15:20:28: :cry:
 <https://github.com/dadchyyy/dotfiles/search?q=font&amp;unscoped_q=font></pre>
-<pre>tsuyoshi_cho 1585030877.129400: 素朴な疑問で入れておいたw</pre>
-<pre>yutakatay 1585030923.129900: 拾ってくれるかな・・・</pre>
-<pre>yutakatay 1585030945.130400: ありがとうございます。解決しました！（高評価）エンドは嫌だ</pre>
-<pre>mattn 1585031015.130700: 「自己解決しました！」</pre>
-<pre>kuu 1585031029.131300: あるある</pre>
-<pre>mattn 1585031032.131600: だれも幸せにならないやつ。</pre>
-<pre>tsuyoshi_cho 1585031038.131800: あれはpopupなのでdiagnoticsについては速度は、もうどうしようもない気が...</pre>
-<pre>kuu 1585031054.132300: 解決方法がないのでノイズになるやつ</pre>
-<pre>heavenshell 1585031063.132800: 最高スペックのマシンを買うが解決方法</pre>
-<pre>tsuyoshi_cho 1585031065.132900: 否定はしませぬ...</pre>
-<pre>mattn 1585031506.133500: ！</pre>
-<pre>kuu 1585031565.133700: 観測されている</pre>
-<pre>tsuyoshi_cho 1585031692.134000: えへ、見られたw</pre>
-<pre>mattn 1585031786.134900: <@U010MDSRJU8> さんは↑の質問の方？それともアイコンが同じだけ？</pre>
-<pre>dadchyyy 1585031824.135300: あ、私質問した人です！</pre>
-<pre>mattn 1585031841.135700: なるほど、ではまずフォント名を教えて下さい (違う)</pre>
-<pre>heavenshell 1585031864.136700: ww</pre>
-<pre>dadchyyy 1585031873.136900: フォントmonofurというやつなんですが、これのせい......？</pre>
-<pre>mattn 1585031886.137300: まったく関係ないですw</pre>
-<pre>heavenshell 1585031893.137600: 多分関係ないかとw</pre>
-<pre>kuu 1585031903.138000: 単なる知的好奇心です、質問してるのにすみません</pre>
-<pre>mattn 1585031909.138200: <https://vim-jp.slack.com/archives/CJMV3MSLR/p1585030736127700></pre>
-<pre>yutakatay 1585031959.138900: :bow:</pre>
-<pre>yutakatay 1585032017.139800: <@U010MDSRJU8> 立て続けに質問して悪いんですけど、どういう経路でここ知ったんですかね？？</pre>
-<pre>dadchyyy 1585032114.141700: <@U7B4ZD49X> 前からvim-jpのサイトは見てたのでslackあったのは知ってたんですがなぜか入ってなかったのでこの機会にと思って！</pre>
-<pre>yutakatay 1585032172.142600: なるほど、ありがとうございます。解決しました :best-answer:</pre>
-<pre>heavenshell 1585032200.143100: 肝心の速度を上げるのは難しそう</pre>
-<pre>tsuyoshi_cho 1585032268.144100: <#CQ57P4XU4|lsp> でも話題になってますが、現状vim-lspの作りもあって、速度に寄与する追加の設定はできなさそう...というところ</pre>
-<pre>heavenshell 1585032311.145000: どうやっても JSONRPC へのリクエスト走りますしねぇ…。</pre>
-<pre>dadchyyy 1585032345.145200: なるほど......だとPCのスペック上げるしかない感じですかね?</pre>
-<pre>heavenshell 1585032403.146300: vim-lsp の方のチューニングですかね。 メンテナーのお二人にご相談事案…。</pre>
-<pre>mattn 1585032424.146800: 現状解決方法はないですが、vim-lsp のコミッタがここに2人いるので仕様さえ決められれば数日内に直る可能性あります。</pre>
-<pre>mattn 1585037404.147900: <@U010MDSRJU8> 動作を動画を撮る事って可能ですか？</pre>
-<pre> 1585037431.148100: こういうの。</pre>
-<pre>dadchyyy 1585038226.149200: <@U03C6TEAZ>外出ちゃったので明日になっちゃいますが撮りますね！</pre>
-<pre>mattn 1585038242.149500: ありがとうございます。いつでもいいです。</pre>
-<pre>tsuyoshi_cho 1585207900.003600: `質問です`
+<pre>tsuyoshi_cho 24日 15:21:18: 素朴な疑問で入れておいたw</pre>
+<pre>yutakatay 24日 15:22:04: 拾ってくれるかな・・・</pre>
+<pre>yutakatay 24日 15:22:26: ありがとうございます。解決しました！（高評価）エンドは嫌だ</pre>
+<pre>mattn 24日 15:23:36: 「自己解決しました！」</pre>
+<pre>kuu 24日 15:23:50: あるある</pre>
+<pre>mattn 24日 15:23:53: だれも幸せにならないやつ。</pre>
+<pre>tsuyoshi_cho 24日 15:23:59: あれはpopupなのでdiagnoticsについては速度は、もうどうしようもない気が...</pre>
+<pre>kuu 24日 15:24:15: 解決方法がないのでノイズになるやつ</pre>
+<pre>heavenshell 24日 15:24:24: 最高スペックのマシンを買うが解決方法</pre>
+<pre>tsuyoshi_cho 24日 15:24:26: 否定はしませぬ...</pre>
+<pre>mattn 24日 15:31:47: ！</pre>
+<pre>kuu 24日 15:32:46: 観測されている</pre>
+<pre>tsuyoshi_cho 24日 15:34:53: えへ、見られたw</pre>
+<pre>mattn 24日 15:36:27: <@U010MDSRJU8> さんは↑の質問の方？それともアイコンが同じだけ？</pre>
+<pre>dadchyyy 24日 15:37:05: あ、私質問した人です！</pre>
+<pre>mattn 24日 15:37:22: なるほど、ではまずフォント名を教えて下さい (違う)</pre>
+<pre>heavenshell 24日 15:37:45: ww</pre>
+<pre>dadchyyy 24日 15:37:54: フォントmonofurというやつなんですが、これのせい......？</pre>
+<pre>mattn 24日 15:38:07: まったく関係ないですw</pre>
+<pre>heavenshell 24日 15:38:14: 多分関係ないかとw</pre>
+<pre>kuu 24日 15:38:24: 単なる知的好奇心です、質問してるのにすみません</pre>
+<pre>mattn 24日 15:38:30: <https://vim-jp.slack.com/archives/CJMV3MSLR/p1585030736127700></pre>
+<pre>yutakatay 24日 15:39:20: :bow:</pre>
+<pre>yutakatay 24日 15:40:18: <@U010MDSRJU8> 立て続けに質問して悪いんですけど、どういう経路でここ知ったんですかね？？</pre>
+<pre>dadchyyy 24日 15:41:55: <@U7B4ZD49X> 前からvim-jpのサイトは見てたのでslackあったのは知ってたんですがなぜか入ってなかったのでこの機会にと思って！</pre>
+<pre>yutakatay 24日 15:42:53: なるほど、ありがとうございます。解決しました :best-answer:</pre>
+<pre>heavenshell 24日 15:43:21: 肝心の速度を上げるのは難しそう</pre>
+<pre>tsuyoshi_cho 24日 15:44:29: <#CQ57P4XU4|lsp> でも話題になってますが、現状vim-lspの作りもあって、速度に寄与する追加の設定はできなさそう...というところ</pre>
+<pre>heavenshell 24日 15:45:12: どうやっても JSONRPC へのリクエスト走りますしねぇ…。</pre>
+<pre>dadchyyy 24日 15:45:46: なるほど......だとPCのスペック上げるしかない感じですかね?</pre>
+<pre>heavenshell 24日 15:46:44: vim-lsp の方のチューニングですかね。 メンテナーのお二人にご相談事案…。</pre>
+<pre>mattn 24日 15:47:05: 現状解決方法はないですが、vim-lsp のコミッタがここに2人いるので仕様さえ決められれば数日内に直る可能性あります。</pre>
+<pre>mattn 24日 17:10:05: <@U010MDSRJU8> 動作を動画を撮る事って可能ですか？</pre>
+<pre> 24日 17:10:32: こういうの。</pre>
+<pre>dadchyyy 24日 17:23:47: <@U03C6TEAZ>外出ちゃったので明日になっちゃいますが撮りますね！</pre>
+<pre>mattn 24日 17:24:03: ありがとうございます。いつでもいいです。</pre>
+<pre>tsuyoshi_cho 26日 16:31:41: `質問です`
 vim-lsp関係ですが... clangd での diagnotics ですが、Cヘッダ内で他ヘッダ定義だけどincludeしてない (想定はCソース上で規約を守ってインクルードみたいなやつ)のとき、unknown typeが出てしまうと思うのですが、どのように回避していますか?</pre>
-<pre>yutakatay 1585208068.004200: イマイチつかみきれてないですが、compile_commands.jsonにはそのヘッダを追加するとかですか？？</pre>
-<pre>tsuyoshi_cho 1585208164.005700: あー、それでも対応可能とは思いますが、手動で変更を都度やるのはちょっと...なので、設定かcompile_commands.json生成ツールのオプションでの作り方とか、なにかしら定型的に補正できないかなあと</pre>
-<pre>yutakatay 1585208234.007100: CMake使ってるんだとするとCMAKE_EXPORT_COMPILE_COMMANDSをonにすれば自動でエクスポートされるんでそれをちょいちょいっていじる感じになるかと思います。そして.vim/compile_commands.jsonにいれ・・・やばいthincaさんに怒られるw</pre>
-<pre>tsuyoshi_cho 1585208802.007400: いえ、bearで手動生成...</pre>
-<pre>tsuyoshi_cho 1585208896.007800: bearのincludeで指定したら全部に効かないかな...確認しよう</pre>
-<pre>tsuyoshi_cho 1585209488.008000: だめっぽい..</pre>
-<pre>presuku 1585209883.009400: clangd に `--background-index` つけてたらどうなりますか？詳細は↓
+<pre>yutakatay 26日 16:34:29: イマイチつかみきれてないですが、compile_commands.jsonにはそのヘッダを追加するとかですか？？</pre>
+<pre>tsuyoshi_cho 26日 16:36:05: あー、それでも対応可能とは思いますが、手動で変更を都度やるのはちょっと...なので、設定かcompile_commands.json生成ツールのオプションでの作り方とか、なにかしら定型的に補正できないかなあと</pre>
+<pre>yutakatay 26日 16:37:15: CMake使ってるんだとするとCMAKE_EXPORT_COMPILE_COMMANDSをonにすれば自動でエクスポートされるんでそれをちょいちょいっていじる感じになるかと思います。そして.vim/compile_commands.jsonにいれ・・・やばいthincaさんに怒られるw</pre>
+<pre>tsuyoshi_cho 26日 16:46:43: いえ、bearで手動生成...</pre>
+<pre>tsuyoshi_cho 26日 16:48:17: bearのincludeで指定したら全部に効かないかな...確認しよう</pre>
+<pre>tsuyoshi_cho 26日 16:58:09: だめっぽい..</pre>
+<pre>presuku 26日 17:04:44: clangd に `--background-index` つけてたらどうなりますか？詳細は↓
 <https://vim-jp.slack.com/archives/C83UXKU86/p1585191572030200></pre>
-<pre>presuku 1585209974.010600: そうすると`.clangd` にキャッシュできるのですが include しているヘッダファイルのキャッシュができて、うまくいってる気がする</pre>
-<pre>tsuyoshi_cho 1585210004.011300: 付けたいのですが、vim-lsp-settingsのパス解決とうまくあわなくて、一旦中断してました。
+<pre>presuku 26日 17:06:15: そうすると`.clangd` にキャッシュできるのですが include しているヘッダファイルのキャッシュができて、うまくいってる気がする</pre>
+<pre>tsuyoshi_cho 26日 17:06:45: 付けたいのですが、vim-lsp-settingsのパス解決とうまくあわなくて、一旦中断してました。
 再調整してみます。
 ありがとうございます。</pre>
-<pre>tsuyoshi_cho 1585210424.016900: う、vim-lsp-settingsが入れるサーバより、システムが持ってるやつを優先する(というか入れたサーバの優先度が最下位だ...)</pre>
-<pre>presuku 1585210532.018100: ちょっと試ただけですが `foo.h` と `bar.h` を `baz.c`  で順番に include して `foo.h` にしかない typedef したタイプを `bar.h`  で使用しても unknown type にならなかったです。
+<pre>tsuyoshi_cho 26日 17:13:45: う、vim-lsp-settingsが入れるサーバより、システムが持ってるやつを優先する(というか入れたサーバの優先度が最下位だ...)</pre>
+<pre>presuku 26日 17:15:33: ちょっと試ただけですが `foo.h` と `bar.h` を `baz.c`  で順番に include して `foo.h` にしかない typedef したタイプを `bar.h`  で使用しても unknown type にならなかったです。
 ちなみに clangd-9 でシステムにインストールしたやつを使ってます。</pre>
-<pre>presuku 1585210597.018800: あ、それから bear で compile_commands.json を作成しています</pre>
-<pre>presuku 1585213573.023800: すいません、やはりダメだったみたいです。なぜなのかわからないですが、直接`vim bar.h` すると diagnostics すぐ出る。`vim baz.c` 後、`:e bar.h` だと開いた直後は diagnostics 出ないのですが`bar.h`ファイルで`LspDeclaration` とか`LspDefinition` すると出ちゃいますね…</pre>
-<pre>tsuyoshi_cho 1585213635.024300: 似た感じになりました...
+<pre>presuku 26日 17:16:38: あ、それから bear で compile_commands.json を作成しています</pre>
+<pre>presuku 26日 18:06:14: すいません、やはりダメだったみたいです。なぜなのかわからないですが、直接`vim bar.h` すると diagnostics すぐ出る。`vim baz.c` 後、`:e bar.h` だと開いた直後は diagnostics 出ないのですが`bar.h`ファイルで`LspDeclaration` とか`LspDefinition` すると出ちゃいますね…</pre>
+<pre>tsuyoshi_cho 26日 18:07:16: 似た感じになりました...
 やっぱ依存関係が解決できないと決定打にならないのかな</pre>
-<pre>presuku 1585213753.025300: かもですねー。上の例で言う bar.h 単体だと unknow type なのは正しいので…</pre>
-<pre>vim タグが付けられた最新の質問 - スタック・オーバーフロー 1585269624.026300: <https://ja.stackoverflow.com/questions/64141/vim-%E3%81%AE-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%83%90%E3%83%BC%E3%81%AB-%E5%85%A5%E5%8A%9B%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B|vim の ステータスバーに 入力ソースを表示することはできますか？>
+<pre>presuku 26日 18:09:14: かもですねー。上の例で言う bar.h 単体だと unknow type なのは正しいので…</pre>
+<pre>vim タグが付けられた最新の質問 - スタック・オーバーフロー 27日 09:40:25: <https://ja.stackoverflow.com/questions/64141/vim-%E3%81%AE-%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%83%90%E3%83%BC%E3%81%AB-%E5%85%A5%E5%8A%9B%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%E3%81%8B|vim の ステータスバーに 入力ソースを表示することはできますか？>
 Mac の <http://Terminal.app|Terminal.app> を利用しています。
 
 vim の ステータスバーに「英語」「日本語」の入力ソースを表示したい。
@@ -957,11 +957,11 @@ I want to display "English" and "Japanese" input sources in the status bar of vi
 That's because <http://Terminal.app|Terminal.app> is displayed full screen, so you don't know the current input source.
 
 We look forward to your response.</pre>
-<pre>ゴリラ 1585272330.027200: Vimのデフォルトプラグイン一覧ってヘルプのどっかに載っていますか？
+<pre>ゴリラ 27日 10:25:31: Vimのデフォルトプラグイン一覧ってヘルプのどっかに載っていますか？
 どれを無効化しようか見てみようかなと思っています</pre>
-<pre>machakann 1585274106.028000: global plugin だけでよければ `:help standard-plugin-list` です</pre>
-<pre>ゴリラ 1585274130.028200: お、ありがとうございます</pre>
-<pre>ゴリラ 1585274159.028500: ```標準プラグイン ~
+<pre>machakann 27日 10:55:07: global plugin だけでよければ `:help standard-plugin-list` です</pre>
+<pre>ゴリラ 27日 10:55:31: お、ありがとうございます</pre>
+<pre>ゴリラ 27日 10:56:00: ```標準プラグイン ~
 |pi_getscript.txt| Vim script の最新版をダウンロードする
 |pi_gzip.txt|      圧縮ファイルの読み書き
 |pi_logipat.txt|   パターンにおける論理演算子
@@ -972,51 +972,51 @@ We look forward to your response.</pre>
 |pi_vimball.txt|   Vim script インストーラを作成する
 |pi_zip.txt|       Zip アーカイブエクスプローラー```
 こんなのがあるんだ</pre>
-<pre>luma 1585283194.030400: すみません，だいぶ前にみなさんが紹介していたgifで録画するソフト，メモし損ねてしまったのですが書いていただけませんか...!</pre>
-<pre>kuu 1585283248.030900: OSなんでしたっけ</pre>
-<pre>luma 1585283257.031500: winです...!</pre>
-<pre>0Δ 1585283277.032100: ScreenToGif</pre>
-<pre>tsuyoshi_cho 1585283293.032400: 他にもいろいろあったけど...</pre>
-<pre>luma 1585283352.033500: んー議論になったときに記事とかにしとくべきだったな...w (これ貼れば解決みたいなブログあるといいかもしれない...)</pre>
-<pre>tsuyoshi_cho 1585283408.034500: twiterのtogetterみたいにslackのSlugger、みたいなサービスがあれば? 的な</pre>
-<pre>tsuyoshi_cho 1585283426.035200: (Sluggerは語感で適当に選出)</pre>
-<pre>0Δ 1585283427.035300: 他は使った事が無くてわからないですね……
+<pre>luma 27日 13:26:35: すみません，だいぶ前にみなさんが紹介していたgifで録画するソフト，メモし損ねてしまったのですが書いていただけませんか...!</pre>
+<pre>kuu 27日 13:27:29: OSなんでしたっけ</pre>
+<pre>luma 27日 13:27:38: winです...!</pre>
+<pre>0Δ 27日 13:27:58: ScreenToGif</pre>
+<pre>tsuyoshi_cho 27日 13:28:14: 他にもいろいろあったけど...</pre>
+<pre>luma 27日 13:29:13: んー議論になったときに記事とかにしとくべきだったな...w (これ貼れば解決みたいなブログあるといいかもしれない...)</pre>
+<pre>tsuyoshi_cho 27日 13:30:09: twiterのtogetterみたいにslackのSlugger、みたいなサービスがあれば? 的な</pre>
+<pre>tsuyoshi_cho 27日 13:30:27: (Sluggerは語感で適当に選出)</pre>
+<pre>0Δ 27日 13:30:28: 他は使った事が無くてわからないですね……
 MacだとLiceCapだったか。</pre>
-<pre>luma 1585283480.035900: 欲しくなったときにはながれている...(スターすれば解決だと思うんですよね，最近はするようにしてます）</pre>
-<pre>0Δ 1585283527.036200: あとWindows10だと標準機能で録画(not gif)できたような。</pre>
-<pre>tsuyoshi_cho 1585283545.036700: ゲームバーですな</pre>
-<pre>thara 1585283596.037300: Slackまとめ、OSSですが <https://github.com/rutan/togelack> があります（アーカイブしてくれるかは知らない）</pre>
-<pre>heavenshell 1585283667.038000: Mac だと Kap を私が挙げましたw</pre>
-<pre>heavenshell 1585283678.038200: <https://getkap.co/></pre>
-<pre>mattn 1585283794.038600: licecap</pre>
-<pre> 1585283812.038800: お試し (vim-lsp で TypeScriptImport を作っている図)</pre>
-<pre>luma 1585283908.039300: :yosasou:</pre>
-<pre>luma 1585284114.039800: `:TsuImport` がどうしてもほしかった</pre>
-<pre>tsuyoshi_cho 1585284266.040300: 津からの輸入品...なんつて</pre>
-<pre>heavenshell 1585284359.040900: `:TusImport` をさらに魔改造している自分に隙はなかったw</pre>
-<pre>luma 1585285699.041900: どっちがいいんですかね... vim-lspに一本化したい，みたいな思いから Tsuquyomi なしですることをかんがえてみたんですが...</pre>
-<pre>luma 1585285741.042300: 現状は ts-lspとtsserverが両方起動している...w</pre>
-<pre>luma 1585285834.043000: vim-lsp側が受け入れてくれるかわからないけど，小さなAPIの変更PRを送ってみます...</pre>
-<pre>hrsh7th 1585285876.044300: vim-lsp のコードアクションからインポートできた気がしますが、すべての未インポートを処理する方法はないかもしれない…</pre>
-<pre>heavenshell 1585286029.045500: NeoVim の方は Tsuquyomi より <https://github.com/mhartington/nvim-typescript> こちらを使ったほうが幸せになれそうです(LSP 使わない場合は)</pre>
-<pre>luma 1585286076.045700: いいなーこれ，ありがとうございます</pre>
-<pre>hrsh7th 1585286080.045900: なるほどです。VSCode に合わせただけなので、自由度上がるならありかもしれません！</pre>
-<pre>luma 1585286094.046100: PR送ってみます！！</pre>
-<pre>heavenshell 1585286355.046300: Tsuquyomi 私が一部 job / channel 入れたんですが、見事に NeoVim スルーしまして(元々入ってた job / channel も対応してなかった)。こちらは NeoVim の方だとだいぶ快適に使えるようですよ。</pre>
-<pre>tsuyoshi_cho 1585286396.047200: GitHubのアイコン画像の眼力(めぢから)がつおい...</pre>
-<pre>takets 1585286426.047700: 画像を上下逆にしても顔に見えそう（失礼）</pre>
-<pre>yutakatay 1585286734.048400: 前deopleteと格闘していたときは
+<pre>luma 27日 13:31:21: 欲しくなったときにはながれている...(スターすれば解決だと思うんですよね，最近はするようにしてます）</pre>
+<pre>0Δ 27日 13:32:08: あとWindows10だと標準機能で録画(not gif)できたような。</pre>
+<pre>tsuyoshi_cho 27日 13:32:26: ゲームバーですな</pre>
+<pre>thara 27日 13:33:17: Slackまとめ、OSSですが <https://github.com/rutan/togelack> があります（アーカイブしてくれるかは知らない）</pre>
+<pre>heavenshell 27日 13:34:28: Mac だと Kap を私が挙げましたw</pre>
+<pre>heavenshell 27日 13:34:39: <https://getkap.co/></pre>
+<pre>mattn 27日 13:36:35: licecap</pre>
+<pre> 27日 13:36:53: お試し (vim-lsp で TypeScriptImport を作っている図)</pre>
+<pre>luma 27日 13:38:29: :yosasou:</pre>
+<pre>luma 27日 13:41:55: `:TsuImport` がどうしてもほしかった</pre>
+<pre>tsuyoshi_cho 27日 13:44:27: 津からの輸入品...なんつて</pre>
+<pre>heavenshell 27日 13:46:00: `:TusImport` をさらに魔改造している自分に隙はなかったw</pre>
+<pre>luma 27日 14:08:20: どっちがいいんですかね... vim-lspに一本化したい，みたいな思いから Tsuquyomi なしですることをかんがえてみたんですが...</pre>
+<pre>luma 27日 14:09:02: 現状は ts-lspとtsserverが両方起動している...w</pre>
+<pre>luma 27日 14:10:35: vim-lsp側が受け入れてくれるかわからないけど，小さなAPIの変更PRを送ってみます...</pre>
+<pre>hrsh7th 27日 14:11:17: vim-lsp のコードアクションからインポートできた気がしますが、すべての未インポートを処理する方法はないかもしれない…</pre>
+<pre>heavenshell 27日 14:13:50: NeoVim の方は Tsuquyomi より <https://github.com/mhartington/nvim-typescript> こちらを使ったほうが幸せになれそうです(LSP 使わない場合は)</pre>
+<pre>luma 27日 14:14:37: いいなーこれ，ありがとうございます</pre>
+<pre>hrsh7th 27日 14:14:41: なるほどです。VSCode に合わせただけなので、自由度上がるならありかもしれません！</pre>
+<pre>luma 27日 14:14:55: PR送ってみます！！</pre>
+<pre>heavenshell 27日 14:19:16: Tsuquyomi 私が一部 job / channel 入れたんですが、見事に NeoVim スルーしまして(元々入ってた job / channel も対応してなかった)。こちらは NeoVim の方だとだいぶ快適に使えるようですよ。</pre>
+<pre>tsuyoshi_cho 27日 14:19:57: GitHubのアイコン画像の眼力(めぢから)がつおい...</pre>
+<pre>takets 27日 14:20:27: 画像を上下逆にしても顔に見えそう（失礼）</pre>
+<pre>yutakatay 27日 14:25:35: 前deopleteと格闘していたときは
 <https://github.com/zchee>
 さんにずっと見られてたw</pre>
-<pre>tsuyoshi_cho 1585286767.048800: zchee(ぢぃー)</pre>
-<pre>kuu 1585286791.049200: 難読わかる</pre>
-<pre>yutakatay 1585286841.050000: 犬さんのスペル未だに覚えられなくてclever-fから飛んでるのは内緒</pre>
-<pre>kuu 1585286873.050700: 犬さんは本名知っていればすぐにわかるって誰かが言ってた（実際すぐに覚えた）</pre>
-<pre>tsuyoshi_cho 1585286894.051200: <https://github.com/rhysd/conflict-marker.vim>
+<pre>tsuyoshi_cho 27日 14:26:08: zchee(ぢぃー)</pre>
+<pre>kuu 27日 14:26:32: 難読わかる</pre>
+<pre>yutakatay 27日 14:27:22: 犬さんのスペル未だに覚えられなくてclever-fから飛んでるのは内緒</pre>
+<pre>kuu 27日 14:27:54: 犬さんは本名知っていればすぐにわかるって誰かが言ってた（実際すぐに覚えた）</pre>
+<pre>tsuyoshi_cho 27日 14:28:15: <https://github.com/rhysd/conflict-marker.vim>
 丁度これ見てた(操作がhelpにない...)</pre>
-<pre>mattn 1585287039.052200: このアカウント消して rhysd にリダイレクトして欲しい(無茶苦茶言う人) <https://github.com/inu></pre>
-<pre>yutakatay 1585287106.053200: いいですね！</pre>
-<pre>tsuyoshi_cho 1585287454.055800: ```dein.toml|179 col 1| repo = 'rhysd/accelerated-jk'
+<pre>mattn 27日 14:30:40: このアカウント消して rhysd にリダイレクトして欲しい(無茶苦茶言う人) <https://github.com/inu></pre>
+<pre>yutakatay 27日 14:31:47: いいですね！</pre>
+<pre>tsuyoshi_cho 27日 14:37:35: ```dein.toml|179 col 1| repo = 'rhysd/accelerated-jk'
 dein.toml|1814 col 1| repo = 'rhysd/devdocs.vim'
 dein.toml|2885 col 1| repo = 'rhysd/git-messenger.vim'
 dein.toml|2935 col 1| repo = 'rhysd/conflict-marker.vim'
@@ -1024,7 +1024,7 @@ dein.toml|3630 col 1| repo = 'rhysd/clever-f.vim'```
 ```dein_lazy.toml|630 col 1| repo = 'rhysd/vim-clang-format' (もう外してもいいかな)
 dein_lazy.toml|672 col 1| repo = 'rhysd/vim-gfm-syntax'```
 最近なんか高負荷でvimが死ぬことがある...</pre>
-<pre>yutakatay 1585287712.056700: 人別では一番お世話になってる気がしますね。。。（coc拡張除いて）
+<pre>yutakatay 27日 14:41:53: 人別では一番お世話になってる気がしますね。。。（coc拡張除いて）
 
 ```Plug 'rhysd/clever-f.vim'
 Plug 'rhysd/accelerated-jk'
@@ -1033,8 +1033,8 @@ Plug 'rhysd/committia.vim'
 Plug 'rhysd/git-messenger.vim'
 Plug 'rhysd/conflict-marker.vim'
 Plug 'rhysd/vim-clang-format', {```</pre>
-<pre>tsuyoshi_cho 1585287957.057400: わりと被ってますね</pre>
-<pre>たまたまご 1585443917.060700: [質問]
+<pre>tsuyoshi_cho 27日 14:45:58: わりと被ってますね</pre>
+<pre>たまたまご 29日 10:05:18: [質問]
 guifg から ctermfg を算出するにはどうすればいいのでしょうか？
 やりたいことは以下のような dict の guifg から ctermfg を算出したいです。
 `s:conv_ctermfg()` のような関数があると嬉しいです。
@@ -1056,29 +1056,29 @@ endfor```
 'c': { 'guifg': '#755838', 'ctermfg': '変換した値' }
 'd': { 'guifg': '#984C93', 'ctermfg': '変換した値' }```
 </pre>
-<pre>kuu 1585444234.062100: desert256というカラースキームが内部でこの変換をかけています、参考になればいいです</pre>
-<pre>kuu 1585444236.062300: <https://www.vim.org/scripts/script.php?script_id=1243|https://www.vim.org/scripts/script.php?script_id=1243></pre>
-<pre>たまたまご 1585444326.062600: ありがとうございます！
+<pre>kuu 29日 10:10:35: desert256というカラースキームが内部でこの変換をかけています、参考になればいいです</pre>
+<pre>kuu 29日 10:10:37: <https://www.vim.org/scripts/script.php?script_id=1243|https://www.vim.org/scripts/script.php?script_id=1243></pre>
+<pre>たまたまご 29日 10:12:07: ありがとうございます！
 試してみます！</pre>
-<pre>kuu 1585444452.064200: 後はこんなのですかね <https://tociyuki.hatenablog.jp/entry/20160620/1466434090|https://tociyuki.hatenablog.jp/entry/20160620/1466434090></pre>
-<pre>tsuyoshi_cho 1585444454.064300: そして今かなり話題の所で、そのへんに関係する値の処理を tyru さんがvitalのモジュールとして作ってたりする...</pre>
-<pre>たまたまご 1585449862.066000: <@U9S4G0LJW> desert256 の `&lt;SID&gt;rgb()` を使ってできました！ありがとうございました！</pre>
-<pre>vim タグが付けられた最新の質問 - スタック・オーバーフロー 1585547415.067600: <https://ja.stackoverflow.com/questions/65225/gvim-%E3%81%AE-terminal-%E3%81%AB%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%A7%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%81%97%E3%81%9F%E3%81%84|gvim の :terminal にマウスで貼り付けしたい>
+<pre>kuu 29日 10:14:13: 後はこんなのですかね <https://tociyuki.hatenablog.jp/entry/20160620/1466434090|https://tociyuki.hatenablog.jp/entry/20160620/1466434090></pre>
+<pre>tsuyoshi_cho 29日 10:14:15: そして今かなり話題の所で、そのへんに関係する値の処理を tyru さんがvitalのモジュールとして作ってたりする...</pre>
+<pre>たまたまご 29日 11:44:23: <@U9S4G0LJW> desert256 の `&lt;SID&gt;rgb()` を使ってできました！ありがとうございました！</pre>
+<pre>vim タグが付けられた最新の質問 - スタック・オーバーフロー 30日 14:50:16: <https://ja.stackoverflow.com/questions/65225/gvim-%E3%81%AE-terminal-%E3%81%AB%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%A7%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%81%97%E3%81%9F%E3%81%84|gvim の :terminal にマウスで貼り付けしたい>
 Windows 10 を使用しています。gvim で :terminal を起動するとデフォルトで cmd.exe が起動します。そこにマウスでテキストの貼り付け(クリップボードからの貼り付け)を行いたいのですが、テキストを別アプリでコピーした後、gvim上のターミナル上で右クリックを押しても何の反応もありませんでした。これは仕様なのでしょうか？
 
 期待した動作としては、vim で :terminal を起動した時と同じ動作。つまりは、右クリックでテキストの貼り付けが行えるか、gvim上のバッファで右クリックをした時の動作。つまりは、「貼り付け」含むコンテキストメニューの表示がされるかが期待した動作となります。
 
 今のところ、"+ で貼り付けを行っていますが、マウスでやりたいときもあり(Vimmerとしては怒られそうですが) 設定等で期待した動作に近づけられるのであればやりたいとおもっています。</pre>
-<pre>thinca 1585548064.068400: やってできないことはなさそうだけどうまくいく設定を試すのが面倒</pre>
-<pre>bamchoh 1585548686.068800: 【自己解決】`tmap &lt;RightMouse&gt; &lt;C-W&gt;"+` でいけました。。。</pre>
-<pre>ゴリラ 1585553816.069800: 自分なら、Terminal-Jobモードにしてコピーしちゃうかな</pre>
-<pre>tsuyoshi_cho 1585567013.072800: `質問です`
+<pre>thinca 30日 15:01:05: やってできないことはなさそうだけどうまくいく設定を試すのが面倒</pre>
+<pre>bamchoh 30日 15:11:27: 【自己解決】`tmap &lt;RightMouse&gt; &lt;C-W&gt;"+` でいけました。。。</pre>
+<pre>ゴリラ 30日 16:36:57: 自分なら、Terminal-Jobモードにしてコピーしちゃうかな</pre>
+<pre>tsuyoshi_cho 30日 20:16:54: `質問です`
 
 <https://vim-jp.slack.com/archives/CQ57P4XU4/p1585396700088700|https://vim-jp.slack.com/archives/CQ57P4XU4/p1585396700088700>
 で出している挙動ですが、何かしらの設定不備でしょうか？
 改めて…</pre>
-<pre>mattn 1585571281.073200: どんな感じの map でしょうか？</pre>
-<pre>tsuyoshi_cho 1585571527.074900: ```function! s:popup_cancel(rawchar, ...) abort " {{{
+<pre>mattn 30日 21:28:02: どんな感じの map でしょうか？</pre>
+<pre>tsuyoshi_cho 30日 21:32:08: ```function! s:popup_cancel(rawchar, ...) abort " {{{
   let result = ''
   if dein#is_sourced('asyncomplete.vim')
     let result = result . asyncomplete#cancel_popup()
@@ -1094,66 +1094,66 @@ endfunction " }}}
 inoremap &lt;expr&gt;&lt;silent&gt; &lt;C-e&gt;
     \ pumvisible() ? &lt;SID&gt;popup_cancel("\&lt;C-e&gt;"            ) : "\&lt;C-e&gt;"```
 こんな感じで、cancel_popupが発動することは確認できています(失敗してたときは、C-eで閉じても直ぐに再popupだったし、確認もしてます)</pre>
-<pre>tsuyoshi_cho 1585571585.075900: で、キャンセルしたら再popupはしないのですが、その後のスペースで同じ候補でpopupします。
+<pre>tsuyoshi_cho 30日 21:33:06: で、キャンセルしたら再popupはしないのですが、その後のスペースで同じ候補でpopupします。
 位置と入れた文字(スペース)を考えるとpopupするのはなんか変だなと</pre>
-<pre>mattn 1585571618.076200: refresh pattern じゃないすかね。</pre>
-<pre>tsuyoshi_cho 1585571650.076800: あー...特に設定してませんが、ちょっと調整したほうがよさそう?</pre>
-<pre>tsuyoshi_cho 1585572031.077700: ありがとうございます。ただ該当する設定にあたりそうなの triggerくらいしかないと思いますが
+<pre>mattn 30日 21:33:39: refresh pattern じゃないすかね。</pre>
+<pre>tsuyoshi_cho 30日 21:34:11: あー...特に設定してませんが、ちょっと調整したほうがよさそう?</pre>
+<pre>tsuyoshi_cho 30日 21:40:32: ありがとうございます。ただ該当する設定にあたりそうなの triggerくらいしかないと思いますが
 ```PP g:asyncomplete_triggers:
 g:asyncomplete_triggers = {'*': ['.', '&gt;', ':']}```
 特に変更はなく...?</pre>
-<pre>mattn 1585572537.078100: ```:echo b:asyncompleter_refresh_pattern```</pre>
-<pre>mattn 1585572543.078300: これで何が表示されますか？</pre>
-<pre>mattn 1585572567.078900: 空白込みなので
+<pre>mattn 30日 21:48:58: ```:echo b:asyncompleter_refresh_pattern```</pre>
+<pre>mattn 30日 21:49:04: これで何が表示されますか？</pre>
+<pre>mattn 30日 21:49:28: 空白込みなので
 ```:echo string(b:asyncompleter_refresh_pattern)```</pre>
-<pre>mattn 1585572570.079100: の方がいいかな。</pre>
-<pre>mattn 1585572622.079800: vim-lsp-settings がファイルタイプに応じて設定してるんですが、そこに空白にマッチする物が入ってしまってるのかもしれないです。</pre>
-<pre>tsuyoshi_cho 1585573704.080100: 空のファイルタイプなので、未定義でした</pre>
-<pre>tsuyoshi_cho 1585573818.081700: たとえば `text` でも同じです(未定義)
+<pre>mattn 30日 21:49:31: の方がいいかな。</pre>
+<pre>mattn 30日 21:50:23: vim-lsp-settings がファイルタイプに応じて設定してるんですが、そこに空白にマッチする物が入ってしまってるのかもしれないです。</pre>
+<pre>tsuyoshi_cho 30日 22:08:25: 空のファイルタイプなので、未定義でした</pre>
+<pre>tsuyoshi_cho 30日 22:10:19: たとえば `text` でも同じです(未定義)
 上の画像でいうと、動作してるの `asyncomplete-nextword` ですので、そっち自体の不具合(というか動作特性)
 の可能性がありそうですね....</pre>
-<pre>tsuyoshi_cho 1585574085.082400: ```b:asyncomplete_triggers = {
+<pre>tsuyoshi_cho 30日 22:14:46: ```b:asyncomplete_triggers = {
   '.': {'emoji': ['.'], 'nextword': ['.'], 'omni': ['.'], 'vsnip': ['.']},
   '/': {'file': ['/']},
   ':': {'emoji': [':'], 'nextword': [':'], 'omni': [':'], 'vsnip': [':']},
   '&gt;': {'emoji': ['&gt;'], 'nextword': ['&gt;'], 'omni': ['&gt;'], 'vsnip': ['&gt;']}
 }```
 textでbufferのトリガはこうでした(参考)</pre>
-<pre>tsuyoshi_cho 1585574719.083100: asyncompleteがcompletorを呼び出す契機が上のtriggerだと思うんですが、なぜに...</pre>
-<pre>tsuyoshi_cho 1585574737.083700: ```function! s:update_trigger_characters() ```
+<pre>tsuyoshi_cho 30日 22:25:20: asyncompleteがcompletorを呼び出す契機が上のtriggerだと思うんですが、なぜに...</pre>
+<pre>tsuyoshi_cho 30日 22:25:38: ```function! s:update_trigger_characters() ```
 でログ出してるみたいなので、そちらを取ってみます。</pre>
-<pre> 1585575093.084100: 部分を切り出しましたが、特別なことはないですね...</pre>
-<pre> 1585575128.084400: 一応ログ(操作が微妙ですが)</pre>
-<pre>mattn 1585576732.084800: エラーが起きてるのはなんだろう。</pre>
-<pre>mattn 1585576748.085300: &gt; ["core","s:trigger","error","Vim(let):E129: 関数名が要求されます"]</pre>
-<pre>tsuyoshi_cho 1585576751.085400: それも謎なんですよね...
+<pre> 30日 22:31:34: 部分を切り出しましたが、特別なことはないですね...</pre>
+<pre> 30日 22:32:09: 一応ログ(操作が微妙ですが)</pre>
+<pre>mattn 30日 22:58:53: エラーが起きてるのはなんだろう。</pre>
+<pre>mattn 30日 22:59:09: &gt; ["core","s:trigger","error","Vim(let):E129: 関数名が要求されます"]</pre>
+<pre>tsuyoshi_cho 30日 22:59:12: それも謎なんですよね...
 (別の分析のときにログ見て)</pre>
-<pre>tsuyoshi_cho 1585576759.085700: ただ不明すぎてスルーしてた...</pre>
-<pre>tsuyoshi_cho 1585578262.086600: 関数から、どれかのソースのtrigger時の失敗のようなので、1つづつoffして詰めました。
+<pre>tsuyoshi_cho 30日 22:59:20: ただ不明すぎてスルーしてた...</pre>
+<pre>tsuyoshi_cho 30日 23:24:23: 関数から、どれかのソースのtrigger時の失敗のようなので、1つづつoffして詰めました。
 <https://github.com/yami-beta/asyncomplete-omni.vimとく>
 をoffにしたら出なくなりました.</pre>
-<pre>tsuyoshi_cho 1585578369.086900: 今はほぼ使ってないので、omniはoffります...</pre>
-<pre>tsuyoshi_cho 1585578542.087200: そしてoffでもスペースでの補完は出ますね</pre>
-<pre> 1585578557.087300: ログ取りました</pre>
-<pre> 1585578812.087700: 上げなおし</pre>
-<pre>mattn 1585580190.088200: それでもまだおかしい感じですか？</pre>
-<pre>tsuyoshi_cho 1585580253.088600: はい、これでもgifの動作が発生します。</pre>
-<pre>tsuyoshi_cho 1585581039.089100: 操作に大きく支障があるわけではないので、おいおい直せれればな、と思います。</pre>
-<pre>mattn 1585581679.089400: これなんの language-server が動いてるんですか？</pre>
-<pre>mattn 1585581715.089900: language-server じゃないか、asyncomplete-source</pre>
-<pre>tsuyoshi_cho 1585597795.091600: ログにありますが、file,emoji,nextword などですね</pre>
-<pre>mattn 1585612839.092200: どの source かに空白でも refresh するようなのがいるんだと思います。</pre>
-<pre>tsuyoshi_cho 1585612962.093700: ただ、各ログを見るとrefreshを立ててませんが、自発的にできるんですっけ?
+<pre>tsuyoshi_cho 30日 23:26:10: 今はほぼ使ってないので、omniはoffります...</pre>
+<pre>tsuyoshi_cho 30日 23:29:03: そしてoffでもスペースでの補完は出ますね</pre>
+<pre> 30日 23:29:18: ログ取りました</pre>
+<pre> 30日 23:33:33: 上げなおし</pre>
+<pre>mattn 30日 23:56:31: それでもまだおかしい感じですか？</pre>
+<pre>tsuyoshi_cho 30日 23:57:34: はい、これでもgifの動作が発生します。</pre>
+<pre>tsuyoshi_cho 31日 00:10:40: 操作に大きく支障があるわけではないので、おいおい直せれればな、と思います。</pre>
+<pre>mattn 31日 00:21:20: これなんの language-server が動いてるんですか？</pre>
+<pre>mattn 31日 00:21:56: language-server じゃないか、asyncomplete-source</pre>
+<pre>tsuyoshi_cho 31日 04:49:56: ログにありますが、file,emoji,nextword などですね</pre>
+<pre>mattn 31日 09:00:40: どの source かに空白でも refresh するようなのがいるんだと思います。</pre>
+<pre>tsuyoshi_cho 31日 09:02:43: ただ、各ログを見るとrefreshを立ててませんが、自発的にできるんですっけ?
 <https://github.com/yuki-ycino/asyncomplete-dictionary/pull/2>
 で遅延させようと四苦八苦して、いろいろ調べたりやったりしたので、あるなら知りたい...w</pre>
-<pre>mattn 1585613322.094700: 能動的になってるかは分からないですが `asyncomplete#sources#dictionary#completor` がどこから呼ばれてるか調べると良さそう。</pre>
-<pre>tsuyoshi_cho 1585613423.095200: 呼び出し契機についてはもうちょっと勉強しないとですね...たしかに</pre>
-<pre>tsuyoshi_cho 1585613671.096200: on_change(文字の変更)かforce_fresh(基本手動)で
+<pre>mattn 31日 09:08:43: 能動的になってるかは分からないですが `asyncomplete#sources#dictionary#completor` がどこから呼ばれてるか調べると良さそう。</pre>
+<pre>tsuyoshi_cho 31日 09:10:24: 呼び出し契機についてはもうちょっと勉強しないとですね...たしかに</pre>
+<pre>tsuyoshi_cho 31日 09:14:32: on_change(文字の変更)かforce_fresh(基本手動)で
 ``` if l:matches['refresh'] || l:matches['status'] ==# 'idle' || l:matches['status'] ==# 'failure'```
 のどれかのとき、かな... on/offで調べるかなあ...</pre>
-<pre>tyru 1585625228.099700: 質問です。現状 popup の機能にカーソルの移動に合わせて popup が追跡する機能ってあるでしょうか？
+<pre>tyru 31日 12:27:09: 質問です。現状 popup の機能にカーソルの移動に合わせて popup が追跡する機能ってあるでしょうか？
 今だと CursorMoved で制御しないと無い認識ですが、previewpopup オプションというのを見つけて preview を使ってみたいなと思いつつ…</pre>
-<pre>kuu 1585625319.100200: 僕が知る限りはないですね、カーソル位置に出てきてカーソル動かすと閉じるのは知ってますが…</pre>
-<pre>tyru 1585625510.100700: 確かに閉じるのは popup の option で指定できた気がしますね (関数に指定するやつ)</pre>
-<pre>tsuyoshi_cho 1585723949.101100: やるなら自動closeとmove検知での再popup?</pre>
+<pre>kuu 31日 12:28:40: 僕が知る限りはないですね、カーソル位置に出てきてカーソル動かすと閉じるのは知ってますが…</pre>
+<pre>tyru 31日 12:31:51: 確かに閉じるのは popup の option で指定できた気がしますね (関数に指定するやつ)</pre>
+<pre>tsuyoshi_cho 1日 15:52:30: やるなら自動closeとmove検知での再popup?</pre>
 {% endraw %}
