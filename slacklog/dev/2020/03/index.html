@@ -179,7 +179,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1583998612.354100'>12日 16:36:53</a>
-  <span class='slacklog-text'>```picohashmap put: 2.781000 [sec]<br>picohashmap get: 1.103000 [sec]<br>C++ stl put: 5.126669 [sec]<br>C++ stl get: 1.272198 [sec]<br>klib hash put: 0.252785 [sec]<br>klib hash get: 0.036985 [sec]```</span>
+  <span class='slacklog-text'><code>picohashmap put: 2.781000 [sec]<br>picohashmap get: 1.103000 [sec]<br>C++ stl put: 5.126669 [sec]<br>C++ stl get: 1.272198 [sec]<br>klib hash put: 0.252785 [sec]<br>klib hash get: 0.036985 [sec]</code></span>
   </span>
   <span class='slacklog-message' id='1583998620.354400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -251,7 +251,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1583999010.358100'>12日 16:43:31</a>
-  <span class='slacklog-text'>`__builtin_expect` とか。</span>
+  <span class='slacklog-text'><code>__builtin_expect</code> とか。</span>
   </span>
   <span class='slacklog-message' id='1583999018.358300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -421,13 +421,13 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
   <span class='slacklog-name'>k-takata</span>
   <a class='slacklog-datetime' href='#1584090421.374700'>13日 18:07:02</a>
-  <span class='slacklog-text'>文字列をキーにすると、ちょっと差が縮まったかな。<br>```&gt;khash_test<br>klib hash put: 4.223000 [sec]<br>klib hash get: 2.414000 [sec]<br><br>&gt;st_test<br>st hash put: 5.829000 [sec]<br>st hash get: 3.870000 [sec]```<br>putの方は `strdup` でキーをコピーするようにしたから遅くなって当然だけど、getが一気に遅くなったなー。</span>
+  <span class='slacklog-text'>文字列をキーにすると、ちょっと差が縮まったかな。<br><code>&gt;khash_test<br>klib hash put: 4.223000 [sec]<br>klib hash get: 2.414000 [sec]<br><br>&gt;st_test<br>st hash put: 5.829000 [sec]<br>st hash get: 3.870000 [sec]</code><br>putの方は <code>strdup</code> でキーをコピーするようにしたから遅くなって当然だけど、getが一気に遅くなったなー。</span>
   </span>
   <span class='slacklog-message' id='1584106084.376200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1584106084.376200'>13日 22:28:05</a>
-  <span class='slacklog-text'>Vimのterminal、ひょっとしてたまにカーソル位置に行が存在しないケースがある？<br>ターミナルの存在するタブでcmdwin開いたら`E315: ml_get: 無効なlnumです: 9287` とか出てきた</span>
+  <span class='slacklog-text'>Vimのterminal、ひょっとしてたまにカーソル位置に行が存在しないケースがある？<br>ターミナルの存在するタブでcmdwin開いたら<code>E315: ml_get: 無効なlnumです: 9287</code> とか出てきた</span>
   </span>
   <span class='slacklog-message' id='1584106128.376600'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -445,7 +445,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1584106494.379000'>13日 22:34:55</a>
-  <span class='slacklog-text'>`#24`の`scroll_to_fraction`の中でカーソル位置を取ったものがlnumとして渡ってるので恐らく枠の外参照しちゃってるんだと思うんですが、別のvimで再現しようとしても上手くいかないので手詰まり</span>
+  <span class='slacklog-text'><code>#24</code>の<code>scroll_to_fraction</code>の中でカーソル位置を取ったものがlnumとして渡ってるので恐らく枠の外参照しちゃってるんだと思うんですが、別のvimで再現しようとしても上手くいかないので手詰まり</span>
   </span>
   <span class='slacklog-message' id='1584109274.379200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -629,7 +629,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
   <span class='slacklog-name'>ichizok</span>
   <a class='slacklog-datetime' href='#1584651227.392700'>20日 05:53:48</a>
-  <span class='slacklog-text'>メモリリークを直していて発見<br>```def! F0(): number<br>  return 0<br>enddef<br><br>def! F1(): number<br>  return 1<br>enddef<br><br>try<br>  def! F0(): number<br>  enddef<br>catch<br>  echo v:exception<br>endtry<br><br>def! F2(): number<br>  return 2<br>enddef<br><br>echo F1()<br>echo F2()```</span>
+  <span class='slacklog-text'>メモリリークを直していて発見<br><code>def! F0(): number<br>  return 0<br>enddef<br><br>def! F1(): number<br>  return 1<br>enddef<br><br>try<br>  def! F0(): number<br>  enddef<br>catch<br>  echo v:exception<br>endtry<br><br>def! F2(): number<br>  return 2<br>enddef<br><br>echo F1()<br>echo F2()</code></span>
   </span>
   <span class='slacklog-message' id='1584672611.393500'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -766,13 +766,13 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584707275.412900'>20日 21:27:56</a>
-  <span class='slacklog-text'>`set spell` 魔法を設置</span>
+  <span class='slacklog-text'><code>set spell</code> 魔法を設置</span>
   </span>
   <span class='slacklog-message' id='1584707466.413400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584707466.413400'>20日 21:31:07</a>
-  <span class='slacklog-text'>`\v` very magic</span>
+  <span class='slacklog-text'><code>\v</code> very magic</span>
   </span>
   <span class='slacklog-message' id='1584719893.416800'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/c6d8122d8d387de4854743595cfcd9a0.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0003-48.png'>
@@ -796,7 +796,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1584942895.419900'>23日 14:54:56</a>
-  <span class='slacklog-text'>gvim.exe でウィンドウ移動して画面下半分が隠れる様にして `:reg` とか実行すると描画がひどい事なる。</span>
+  <span class='slacklog-text'>gvim.exe でウィンドウ移動して画面下半分が隠れる様にして <code>:reg</code> とか実行すると描画がひどい事なる。</span>
   </span>
   <span class='slacklog-message' id='1584942913.420000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -862,13 +862,13 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1585062056.426500'>25日 00:00:57</a>
-  <span class='slacklog-text'>`misc2.c#mch_parse_cmd`まで行き着いた</span>
+  <span class='slacklog-text'><code>misc2.c#mch_parse_cmd</code>まで行き着いた</span>
   </span>
   <span class='slacklog-message' id='1585124434.000300'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1585124434.000300'>25日 17:20:35</a>
-  <span class='slacklog-text'>vim のソースで clangd のオプションを `compile_flags.txt` か `compile_commands.json` に書くと思いますが、vim をいじっている方はどんなオプションを指定しているでしょうか。<br>自分は手で `compile_flags.txt` を書いてたんですが自動生成してくれるツールを見つけた所です <a href='https://github.com/nickdiego/compiledb'>https://github.com/nickdiego/compiledb</a><br>ただ手で書いても自動生成しても同じエラーが起きてて、 `#include &lt;limits.h&gt;` とか `#include &lt;stdio.h&gt;` とか標準ヘッダーを見てくれない現象に悩んでいます…</span>
+  <span class='slacklog-text'>vim のソースで clangd のオプションを <code>compile_flags.txt</code> か <code>compile_commands.json</code> に書くと思いますが、vim をいじっている方はどんなオプションを指定しているでしょうか。<br>自分は手で <code>compile_flags.txt</code> を書いてたんですが自動生成してくれるツールを見つけた所です <a href='https://github.com/nickdiego/compiledb'>https://github.com/nickdiego/compiledb</a><br>ただ手で書いても自動生成しても同じエラーが起きてて、 <code>#include &lt;limits.h&gt;</code> とか <code>#include &lt;stdio.h&gt;</code> とか標準ヘッダーを見てくれない現象に悩んでいます…</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -1050,7 +1050,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
   <span class='slacklog-name'>presuku</span>
   <a class='slacklog-datetime' href='#1585126510.017300'>25日 17:55:11</a>
-  <span class='slacklog-text'>Xubuntu 18.04 ですが、以下のような compile_flags.txt で `src/main.c` の`#include &lt;limits.h&gt;` が見つからない的なエラーはないですねぇ<br>```-DHAVE_CONFIG_H<br>-I.<br>-Isrc<br>-Isrc/proto```</span>
+  <span class='slacklog-text'>Xubuntu 18.04 ですが、以下のような compile_flags.txt で <code>src/main.c</code> の<code>#include &lt;limits.h&gt;</code> が見つからない的なエラーはないですねぇ<br><code>-DHAVE_CONFIG_H<br>-I.<br>-Isrc<br>-Isrc/proto</code></span>
   </span>
   <span class='slacklog-message' id='1585126578.017900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1074,13 +1074,13 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1585129583.019500'>25日 18:46:24</a>
-  <span class='slacklog-text'>&lt;@UD73ZNZAP&gt; あ、まさに `#include &lt;limits.h&gt;` とかの話です。<br>うーん見せてもらったやつ全部列挙してあるな</span>
+  <span class='slacklog-text'>&lt;@UD73ZNZAP&gt; あ、まさに <code>#include &lt;limits.h&gt;</code> とかの話です。<br>うーん見せてもらったやつ全部列挙してあるな</span>
   </span>
   <span class='slacklog-message' id='1585132462.023800'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
   <span class='slacklog-name'>presuku</span>
   <a class='slacklog-datetime' href='#1585132462.023800'>25日 19:34:23</a>
-  <span class='slacklog-text'>`limits.h` とか`stdio.h` とかコンパイラの標準のInclude pathに依存しそうなので、そのあたりですかねぇ… (そのあたりもちゃんと指定してるっぽいのですけど）<br>自分のところは Xubuntu なので llvm clang の repogitory から clangd 入れてるのですが、この辺りでハマったことはないんですよね</span>
+  <span class='slacklog-text'><code>limits.h</code> とか<code>stdio.h</code> とかコンパイラの標準のInclude pathに依存しそうなので、そのあたりですかねぇ… (そのあたりもちゃんと指定してるっぽいのですけど）<br>自分のところは Xubuntu なので llvm clang の repogitory から clangd 入れてるのですが、この辺りでハマったことはないんですよね</span>
   </span>
   <span class='slacklog-message' id='1585136970.025700'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6b58a0397ae4e1045da22ce63cd61012.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-48.png'>
@@ -1104,7 +1104,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
   <span class='slacklog-name'>ichizok</span>
   <a class='slacklog-datetime' href='#1585144335.026300'>25日 22:52:16</a>
-  <span class='slacklog-text'>6行目は `-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include` で `usr/include` 必要では (現象とは関係なさそうですが)</span>
+  <span class='slacklog-text'>6行目は <code>-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include</code> で <code>usr/include</code> 必要では (現象とは関係なさそうですが)</span>
   </span>
   <span class='slacklog-message' id='1585171564.026500'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -1116,7 +1116,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
   <span class='slacklog-name'>presuku</span>
   <a class='slacklog-datetime' href='#1585191572.030200'>26日 11:59:33</a>
-  <span class='slacklog-text'>vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、<br>```let g:lsp_settings = {<br>      \  &#39;clangd&#39;: {&#39;cmd&#39;: [&#39;clangd-9&#39;, &#39;--background-index&#39;, &#39;-j=4&#39;]},<br>      \ }```<br>と設定したら、ちゃんと *.c に飛ぶようになった。ちなみに LspDeclaration すると *.pro に飛ぶ。</span>
+  <span class='slacklog-text'>vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、<br><code>let g:lsp_settings = {<br>      \  &#39;clangd&#39;: {&#39;cmd&#39;: [&#39;clangd-9&#39;, &#39;--background-index&#39;, &#39;-j=4&#39;]},<br>      \ }</code><br>と設定したら、ちゃんと *.c に飛ぶようになった。ちなみに LspDeclaration すると *.pro に飛ぶ。</span>
   </span>
   <span class='slacklog-message' id='1585191764.030400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1152,7 +1152,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1585197088.036200'>26日 13:31:29</a>
-  <span class='slacklog-text'>ですねー。雑に `$ ls *.c *.h | make-ccjson` みたいなコマンドが欲しくなってきた。</span>
+  <span class='slacklog-text'>ですねー。雑に <code>$ ls *.c *.h | make-ccjson</code> みたいなコマンドが欲しくなってきた。</span>
   </span>
   <span class='slacklog-message' id='1585197362.038100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
@@ -1164,7 +1164,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1585197628.038900'>26日 13:40:29</a>
-  <span class='slacklog-text'>僕も専用の作るかな。<br>```$ make-ccjson compile_flags.txt *.c *.h```<br>が出来れば機能は十分そうだし。</span>
+  <span class='slacklog-text'>僕も専用の作るかな。<br><code>$ make-ccjson compile_flags.txt *.c *.h</code><br>が出来れば機能は十分そうだし。</span>
   </span>
   <span class='slacklog-message' id='1585197743.039300'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -1206,7 +1206,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1585198006.041700'>26日 13:46:47</a>
-  <span class='slacklog-text'>compiledb は以前使った時は手直しを何度かやったので<br>```$ make 2&gt;&amp;1 | tee output<br>$ compiledb &lt; output```<br>みたいな事をやってた。</span>
+  <span class='slacklog-text'>compiledb は以前使った時は手直しを何度かやったので<br><code>$ make 2&gt;&amp;1 | tee output<br>$ compiledb &lt; output</code><br>みたいな事をやってた。</span>
   </span>
   <span class='slacklog-message' id='1585222141.042400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -1242,7 +1242,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1585223332.045200'>26日 20:48:53</a>
-  <span class='slacklog-text'>`gdb -tui`したらなんかかっこいいの出てきた</span>
+  <span class='slacklog-text'><code>gdb -tui</code>したらなんかかっこいいの出てきた</span>
   </span>
   <span class='slacklog-message' id='1585223356.045700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>

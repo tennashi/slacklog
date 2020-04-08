@@ -67,7 +67,7 @@ title: vim-jp.slack.com log - &#35vital-dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1583765288.008700'>9日 23:48:09</a>
-  <span class='slacklog-text'>不思議なエラーが...<br>むう<br>```function &lt;SNR&gt;25__get_file_by_func_name(name) abort  Line:1  (d:/a/vital.vim/vital.vim/autoload/vital/vital.vim line 188)<br><br>  1:   let body = execute(printf(&#39;verbose function %s&#39;, a:name))<br><br>Vim(function):E129: Function name required<br><br>##[error]Process completed with exit code 1.```<br><a href='https://pipelines.actions.githubusercontent.com/bTH5KKrpAnr7z4P7oCLErR00ATNx2Y67wmAVWbYGRYt3LEOCiI/_apis/pipelines/1/runs/37/signedlogcontent/11?urlExpires=2020-03-09T14%3A49%3A00.3002908Z&amp;urlSigningMethod=HMACV1&amp;urlSignature=2Rx1AB%2BYPf3ixPSM%2B2LlgFgNHpMX29vCb0CSQhZfd%2BI%3D'>https://pipelines.actions.githubusercontent.com/bTH5KKrpAnr7z4P7oCLErR00ATNx2Y67wmAVWbYGRYt3LEOCiI/_apis/pipelines/1/runs/37/signedlogcontent/11?urlExpires=2020-03-09T14%3A49%3A00.3002908Z&amp;urlSigningMethod=HMACV1&amp;urlSignature=2Rx1AB%2BYPf3ixPSM%2B2LlgFgNHpMX29vCb0CSQhZfd%2BI%3D</a></span>
+  <span class='slacklog-text'>不思議なエラーが...<br>むう<br><code>function &lt;SNR&gt;25__get_file_by_func_name(name) abort  Line:1  (d:/a/vital.vim/vital.vim/autoload/vital/vital.vim line 188)<br><br>  1:   let body = execute(printf(&#39;verbose function %s&#39;, a:name))<br><br>Vim(function):E129: Function name required<br><br>##[error]Process completed with exit code 1.</code><br><a href='https://pipelines.actions.githubusercontent.com/bTH5KKrpAnr7z4P7oCLErR00ATNx2Y67wmAVWbYGRYt3LEOCiI/_apis/pipelines/1/runs/37/signedlogcontent/11?urlExpires=2020-03-09T14%3A49%3A00.3002908Z&amp;urlSigningMethod=HMACV1&amp;urlSignature=2Rx1AB%2BYPf3ixPSM%2B2LlgFgNHpMX29vCb0CSQhZfd%2BI%3D'>https://pipelines.actions.githubusercontent.com/bTH5KKrpAnr7z4P7oCLErR00ATNx2Y67wmAVWbYGRYt3LEOCiI/_apis/pipelines/1/runs/37/signedlogcontent/11?urlExpires=2020-03-09T14%3A49%3A00.3002908Z&amp;urlSigningMethod=HMACV1&amp;urlSignature=2Rx1AB%2BYPf3ixPSM%2B2LlgFgNHpMX29vCb0CSQhZfd%2BI%3D</a></span>
   </span>
   <span class='slacklog-message' id='1583765932.008900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -147,7 +147,7 @@ title: vim-jp.slack.com log - &#35vital-dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584340931.018800'>16日 15:42:12</a>
-  <span class='slacklog-text'><a href='https://github.com/prabirshrestha/vim-lsp/pull/755/files'>https://github.com/prabirshrestha/vim-lsp/pull/755/files</a><br>```:YggdrasilPlant -plugin_dir=./ -namespace=lsp/utils```<br>ほうほう、Vitalと似た感じでインストールできるんですな<br><a href='https://github.com/m-pilia/vim-yggdrasil'>https://github.com/m-pilia/vim-yggdrasil</a></span>
+  <span class='slacklog-text'><a href='https://github.com/prabirshrestha/vim-lsp/pull/755/files'>https://github.com/prabirshrestha/vim-lsp/pull/755/files</a><br><code>:YggdrasilPlant -plugin_dir=./ -namespace=lsp/utils</code><br>ほうほう、Vitalと似た感じでインストールできるんですな<br><a href='https://github.com/m-pilia/vim-yggdrasil'>https://github.com/m-pilia/vim-yggdrasil</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -391,7 +391,7 @@ title: vim-jp.slack.com log - &#35vital-dev - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584542409.041200'>18日 23:40:10</a>
-  <span class='slacklog-text'>すみません、vitalizerを見てて、以下の疑問が発生したのですが、合ってますでしょうか?<br>1. datafileの扱いができる(dependの ドットファイルか、 filesキー)<br>2. だけど s:module2file を2度(ベースと、対象ファイル)に噛ませる関係から、パスが `autoload/vital/__vital__%s.vim`  固定になる(ユーザーライブラリは無理)<br>この理解であってるかな...<br><br>データファイルを活用するライブラリを作ることを考えていたのですが、付属データファイルが使えるのか、使えるならどうなるのか、などを調べていてこの内容にあたりました...<br>この条件だとちょっと辛いので、どうにかユーザーライブラリでもデータファイル使いたい...</span>
+  <span class='slacklog-text'>すみません、vitalizerを見てて、以下の疑問が発生したのですが、合ってますでしょうか?<br>1. datafileの扱いができる(dependの ドットファイルか、 filesキー)<br>2. だけど s:module2file を2度(ベースと、対象ファイル)に噛ませる関係から、パスが <code>autoload/vital/__vital__%s.vim</code>  固定になる(ユーザーライブラリは無理)<br>この理解であってるかな...<br><br>データファイルを活用するライブラリを作ることを考えていたのですが、付属データファイルが使えるのか、使えるならどうなるのか、などを調べていてこの内容にあたりました...<br>この条件だとちょっと辛いので、どうにかユーザーライブラリでもデータファイル使いたい...</span>
   </span>
   <span class='slacklog-message' id='1584696582.041600'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -462,7 +462,7 @@ title: vim-jp.slack.com log - &#35vital-dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
   <span class='slacklog-name'>raa0121</span>
   <a class='slacklog-datetime' href='#1585124502.002600'>25日 17:21:43</a>
-  <span class='slacklog-text'>`s:Color.diff` って、`printf(&#39;rgb(%d,%d,%d)&#39;, abs(r1 - r2), abs(g1 - g2), abs(b1 - b2))` を出したほうがわかり易くないですかね？</span>
+  <span class='slacklog-text'><code>s:Color.diff</code> って、<code>printf(&#39;rgb(%d,%d,%d)&#39;, abs(r1 - r2), abs(g1 - g2), abs(b1 - b2))</code> を出したほうがわかり易くないですかね？</span>
   </span>
   <span class='slacklog-message' id='1585124737.005200'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -528,7 +528,7 @@ title: vim-jp.slack.com log - &#35vital-dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1585126310.014300'>25日 17:51:51</a>
-  <span class='slacklog-text'>あと Color.xterm() の他にも端末ごと？の terminal code の palette を定義したいと思ってる<br>ただこの辺りの仕様がよくわかってない（Vim でも16色だけど `term_setansicolor()` でいじれたりするな）</span>
+  <span class='slacklog-text'>あと Color.xterm() の他にも端末ごと？の terminal code の palette を定義したいと思ってる<br>ただこの辺りの仕様がよくわかってない（Vim でも16色だけど <code>term_setansicolor()</code> でいじれたりするな）</span>
   </span>
   <span class='slacklog-message' id='1585126359.014900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -618,7 +618,7 @@ title: vim-jp.slack.com log - &#35vital-dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1585128052.021800'>25日 18:20:53</a>
-  <span class='slacklog-text'>追加してみた。 `s:Color.parse(&#39;snow&#39;)` とかできる<br><a href='https://github.com/vim-jp/vital.vim/pull/732/commits/8d079ca83c37a35cdaad0ac8e696febc541ecf7b'>https://github.com/vim-jp/vital.vim/pull/732/commits/8d079ca83c37a35cdaad0ac8e696febc541ecf7b</a></span>
+  <span class='slacklog-text'>追加してみた。 <code>s:Color.parse(&#39;snow&#39;)</code> とかできる<br><a href='https://github.com/vim-jp/vital.vim/pull/732/commits/8d079ca83c37a35cdaad0ac8e696febc541ecf7b'>https://github.com/vim-jp/vital.vim/pull/732/commits/8d079ca83c37a35cdaad0ac8e696febc541ecf7b</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -810,13 +810,13 @@ title: vim-jp.slack.com log - &#35vital-dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585228549.051100'>26日 22:15:50</a>
-  <span class='slacklog-text'>デカイというか、各種フォーマッター、各種パーサーと計算は欲しい場所が違うなーという所感でした。<br>例えばプラグインで「既存のハイライトの背景色だけを少し暗くする」という機能が欲しくなったときに必要なのって<br><br>• Vim のハイライト（まぁ HTML カラーに限定）を内部表現にするパーサー<br>• 少し暗くする処理<br>• Vim のハイライト表現に戻すフォーマッタ<br>の三つだと思うんですが、これのために xterm の変換だったりは、あんまりいらないかなと。<br><br><br>あと、個人的な好みですが独自オブジェクトを経由するより `rgb2hsl` みたいな関数を直接使える方が、使いやすいなと感じます。</span>
+  <span class='slacklog-text'>デカイというか、各種フォーマッター、各種パーサーと計算は欲しい場所が違うなーという所感でした。<br>例えばプラグインで「既存のハイライトの背景色だけを少し暗くする」という機能が欲しくなったときに必要なのって<br><br>• Vim のハイライト（まぁ HTML カラーに限定）を内部表現にするパーサー<br>• 少し暗くする処理<br>• Vim のハイライト表現に戻すフォーマッタ<br>の三つだと思うんですが、これのために xterm の変換だったりは、あんまりいらないかなと。<br><br><br>あと、個人的な好みですが独自オブジェクトを経由するより <code>rgb2hsl</code> みたいな関数を直接使える方が、使いやすいなと感じます。</span>
   </span>
   <span class='slacklog-message' id='1585228668.053000'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585228668.053000'>26日 22:17:49</a>
-  <span class='slacklog-text'>• `parse_html_color(str): []int`<br>• `rgb2hsl([]int): []int`<br>• `format_html_color([]int): str`</span>
+  <span class='slacklog-text'>• <code>parse_html_color(str): []int</code><br>• <code>rgb2hsl([]int): []int</code><br>• <code>format_html_color([]int): str</code></span>
   </span>
   <span class='slacklog-message' id='1585228731.054200'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -834,7 +834,7 @@ title: vim-jp.slack.com log - &#35vital-dev - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1585229208.057200'>26日 22:26:49</a>
-  <span class='slacklog-text'>```:echo format_html_color(rgb2hsl(parse_html_color(&#39;red&#39;))) == &#39;#FF0000&#39;```<br>的な</span>
+  <span class='slacklog-text'><code>:echo format_html_color(rgb2hsl(parse_html_color(&#39;red&#39;))) == &#39;#FF0000&#39;</code><br>的な</span>
   </span>
   <span class='slacklog-message' id='1585229326.057400'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -889,7 +889,7 @@ Color#distance() といいベクトル計算ライブラリめいてきたな…
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1585230595.062600'>26日 22:49:56</a>
-  <span class='slacklog-text'>`min([255, max([0, n])])` すればいいとはいえ確かに面倒ですね（忘れそうだし）</span>
+  <span class='slacklog-text'><code>min([255, max([0, n])])</code> すればいいとはいえ確かに面倒ですね（忘れそうだし）</span>
   </span>
   <span class='slacklog-message' id='1585230650.063300'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -901,7 +901,7 @@ Color#distance() といいベクトル計算ライブラリめいてきたな…
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585231803.067300'>26日 23:10:04</a>
-  <span class='slacklog-text'>超感覚なんですが `Color.distance()` は OK で `Color.to_xterm(...)` とか `Color.parse(&#34;rgb(100,100,100)&#34;)` とかは違うなぁという感想です。`distance()` は色を扱うライブラリとして違和感ないんですが、他はそれぞれ xterm 特化と HTML 特化なので xterm/HTML 関係ない人にはいらないなぁと。なので `Color.Xterm.format(...)` とか `Color.HTML.parse(...)` とかモジュールごとわけたほうがよいかと</span>
+  <span class='slacklog-text'>超感覚なんですが <code>Color.distance()</code> は OK で <code>Color.to_xterm(...)</code> とか <code>Color.parse(&#34;rgb(100,100,100)&#34;)</code> とかは違うなぁという感想です。<code>distance()</code> は色を扱うライブラリとして違和感ないんですが、他はそれぞれ xterm 特化と HTML 特化なので xterm/HTML 関係ない人にはいらないなぁと。なので <code>Color.Xterm.format(...)</code> とか <code>Color.HTML.parse(...)</code> とかモジュールごとわけたほうがよいかと</span>
   </span>
   <span class='slacklog-message' id='1585231851.067800'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>

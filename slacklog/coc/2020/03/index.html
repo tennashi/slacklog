@@ -87,19 +87,19 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
   <span class='slacklog-name'>ycino</span>
   <a class='slacklog-datetime' href='#1584084997.041800'>13日 16:36:38</a>
-  <span class='slacklog-text'>`.node-version` でプロジェクトローカルなnodeを入れる？<br>が普通かもしれないですけど、その場合ってプロジェクト上でvim開いたときglobalなnodeでcocが起動したかはちょっと記憶にないです</span>
+  <span class='slacklog-text'><code>.node-version</code> でプロジェクトローカルなnodeを入れる？<br>が普通かもしれないですけど、その場合ってプロジェクト上でvim開いたときglobalなnodeでcocが起動したかはちょっと記憶にないです</span>
   </span>
   <span class='slacklog-message' id='1584085039.042700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
   <span class='slacklog-name'>ycino</span>
   <a class='slacklog-datetime' href='#1584085039.042700'>13日 16:37:20</a>
-  <span class='slacklog-text'>自分なら `nodenv local 11.x` 試すと思うんですけど、多分出来るのかなぁ</span>
+  <span class='slacklog-text'>自分なら <code>nodenv local 11.x</code> 試すと思うんですけど、多分出来るのかなぁ</span>
   </span>
   <span class='slacklog-message' id='1584085103.043500'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/57f1ba678bdf29064f7f55c19f32cda5.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
   <span class='slacklog-name'>kashew_nuts</span>
   <a class='slacklog-datetime' href='#1584085103.043500'>13日 16:38:24</a>
-  <span class='slacklog-text'>なるほど `.node-version` はあります。</span>
+  <span class='slacklog-text'>なるほど <code>.node-version</code> はあります。</span>
   </span>
   <span class='slacklog-message' id='1584085104.043600'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -171,7 +171,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1584085400.051000'>13日 16:43:21</a>
-  <span class='slacklog-text'>`eval $(anyenv init -)` これが結構遅い</span>
+  <span class='slacklog-text'><code>eval $(anyenv init -)</code> これが結構遅い</span>
   </span>
   <span class='slacklog-message' id='1584085405.051200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -207,13 +207,13 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1584085463.053100'>13日 16:44:24</a>
-  <span class='slacklog-text'>```# anyenv<br>if type anyenv &gt;/dev/null 2&gt;&amp;1; then<br>  anyenv::cache() {<br>    mkdir -p ~/.cache/anyenv<br>    anyenv init - --no-rehash &gt; ~/.cache/anyenv/init.zsh<br>    zcompile ~/.cache/anyenv/init.zsh<br>  }<br>  if [[ ! -f ~/.cache/anyenv/init.zsh ]]; then<br>    anyenv::cache<br>  fi<br>  source ~/.cache/anyenv/init.zsh<br>fi```</span>
+  <span class='slacklog-text'><code># anyenv<br>if type anyenv &gt;/dev/null 2&gt;&amp;1; then<br>  anyenv::cache() {<br>    mkdir -p ~/.cache/anyenv<br>    anyenv init - --no-rehash &gt; ~/.cache/anyenv/init.zsh<br>    zcompile ~/.cache/anyenv/init.zsh<br>  }<br>  if [[ ! -f ~/.cache/anyenv/init.zsh ]]; then<br>    anyenv::cache<br>  fi<br>  source ~/.cache/anyenv/init.zsh<br>fi</code></span>
   </span>
   <span class='slacklog-message' id='1584085477.053600'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1584085477.053600'>13日 16:44:38</a>
-  <span class='slacklog-text'>これが超お便利。更新したら `anyenv::cache` をマニュアルで呼べば良い</span>
+  <span class='slacklog-text'>これが超お便利。更新したら <code>anyenv::cache</code> をマニュアルで呼べば良い</span>
   </span>
   <span class='slacklog-message' id='1584085531.055200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -225,7 +225,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
   <span class='slacklog-name'>ycino</span>
   <a class='slacklog-datetime' href='#1584085537.055400'>13日 16:45:38</a>
-  <span class='slacklog-text'>anyenv使わずそれぞれbrewで入れてるんですよね<br>展開して少し書き直してます<br>```path=(~/.rbenv/shims(N-/) $path)<br>export RBENV_SHELL=zsh<br>function rbenv() {<br>  local command<br>  command=&#34;$1&#34;<br>  if [[ &#34;$#&#34; -gt 0 ]]; then<br>    shift<br>  fi<br><br>  case &#34;$command&#34; in<br>    rehash|shell)<br>      eval &#34;$(rbenv &#34;sh-$command&#34; &#34;$@&#34;)&#34;;;<br>    *)<br>      command rbenv &#34;$command&#34; &#34;$@&#34;;;<br>  esac<br>}```</span>
+  <span class='slacklog-text'>anyenv使わずそれぞれbrewで入れてるんですよね<br>展開して少し書き直してます<br><code>path=(~/.rbenv/shims(N-/) $path)<br>export RBENV_SHELL=zsh<br>function rbenv() {<br>  local command<br>  command=&#34;$1&#34;<br>  if [[ &#34;$#&#34; -gt 0 ]]; then<br>    shift<br>  fi<br><br>  case &#34;$command&#34; in<br>    rehash|shell)<br>      eval &#34;$(rbenv &#34;sh-$command&#34; &#34;$@&#34;)&#34;;;<br>    *)<br>      command rbenv &#34;$command&#34; &#34;$@&#34;;;<br>  esac<br>}</code></span>
   </span>
   <span class='slacklog-message' id='1584085565.055900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -329,7 +329,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1584085945.062900'>13日 16:52:26</a>
-  <span class='slacklog-text'>あ `pyenv install |` とかの時の補完なら聴きますね</span>
+  <span class='slacklog-text'>あ <code>pyenv install |</code> とかの時の補完なら聴きますね</span>
   </span>
   <span class='slacklog-message' id='1584085956.063100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -347,7 +347,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1584086011.063700'>13日 16:53:32</a>
-  <span class='slacklog-text'>anyenv の `init` で補完出力されてますね</span>
+  <span class='slacklog-text'>anyenv の <code>init</code> で補完出力されてますね</span>
   </span>
   <span class='slacklog-message' id='1584086012.063800'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -393,7 +393,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
   <span class='slacklog-name'>ycino</span>
   <a class='slacklog-datetime' href='#1584086197.066500'>13日 16:56:38</a>
-  <span class='slacklog-text'>完全に別の話ですけど<br>この辺って自分は別PC（仕事のやつとか）のために `~/` 使って書くんですけど、場合によっては手間かかりません？</span>
+  <span class='slacklog-text'>完全に別の話ですけど<br>この辺って自分は別PC（仕事のやつとか）のために <code>~/</code> 使って書くんですけど、場合によっては手間かかりません？</span>
   </span>
   <span class='slacklog-message' id='1584086229.066900'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -405,7 +405,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1584086238.067300'>13日 16:57:19</a>
-  <span class='slacklog-text'>`$(anyenv init -)` の結果</span>
+  <span class='slacklog-text'><code>$(anyenv init -)</code> の結果</span>
   </span>
   <span class='slacklog-message' id='1584086242.067500'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -417,7 +417,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1584086261.068000'>13日 16:57:42</a>
-  <span class='slacklog-text'>手書きはもちろん `~/` 使います :+1:</span>
+  <span class='slacklog-text'>手書きはもちろん <code>~/</code> 使います :+1:</span>
   </span>
   <span class='slacklog-message' id='1584086272.068400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -495,7 +495,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
   <span class='slacklog-name'>ycino</span>
   <a class='slacklog-datetime' href='#1584086534.072600'>13日 17:02:15</a>
-  <span class='slacklog-text'>`SF Mono Square` 使わせて貰ってる</span>
+  <span class='slacklog-text'><code>SF Mono Square</code> 使わせて貰ってる</span>
   </span>
   <span class='slacklog-message' id='1584086538.072800'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -519,7 +519,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
   <span class='slacklog-name'>ycino</span>
   <a class='slacklog-datetime' href='#1584086765.074300'>13日 17:06:06</a>
-  <span class='slacklog-text'>`path=(/usr/local/opt/curl/bin(N-/) $path)` こんな設定してるけどこれなんで必要なんだっけ・・・</span>
+  <span class='slacklog-text'><code>path=(/usr/local/opt/curl/bin(N-/) $path)</code> こんな設定してるけどこれなんで必要なんだっけ・・・</span>
   </span>
   <span class='slacklog-message' id='1584087137.074800'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
@@ -549,7 +549,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1584415437.077600'>17日 12:23:58</a>
-  <span class='slacklog-text'>cocでtagfuncが実装されました。<br>`set tagfunc=CocTagFunc`<br>で使えます。（が、ちょっと重い）<br><br><a href='https://github.com/neoclide/coc.nvim/issues/1054'>https://github.com/neoclide/coc.nvim/issues/1054</a></span>
+  <span class='slacklog-text'>cocでtagfuncが実装されました。<br><code>set tagfunc=CocTagFunc</code><br>で使えます。（が、ちょっと重い）<br><br><a href='https://github.com/neoclide/coc.nvim/issues/1054'>https://github.com/neoclide/coc.nvim/issues/1054</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -633,13 +633,13 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
   <span class='slacklog-name'>takets</span>
   <a class='slacklog-datetime' href='#1584773939.084800'>21日 15:59:00</a>
-  <span class='slacklog-text'>deopleteを有効にしたとき、vimrc側から `&#34;suggest.autoTrigger&#34;:&#34;none&#34;` をセットしてcocのエラーが出ないようにしたいのだけれども、wikiのどこに書いてないのかなぁ</span>
+  <span class='slacklog-text'>deopleteを有効にしたとき、vimrc側から <code>&#34;suggest.autoTrigger&#34;:&#34;none&#34;</code> をセットしてcocのエラーが出ないようにしたいのだけれども、wikiのどこに書いてないのかなぁ</span>
   </span>
   <span class='slacklog-message' id='1584774183.085200'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
   <span class='slacklog-name'>takets</span>
   <a class='slacklog-datetime' href='#1584774183.085200'>21日 16:03:04</a>
-  <span class='slacklog-text'>`call coc#config(&#39;suggest.autoTrigger&#39;, &#39;none&#39;)` これか</span>
+  <span class='slacklog-text'><code>call coc#config(&#39;suggest.autoTrigger&#39;, &#39;none&#39;)</code> これか</span>
   </span>
   <span class='slacklog-message' id='1584774673.085300'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
@@ -675,7 +675,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1585147029.003500'>25日 23:37:10</a>
-  <span class='slacklog-text'>cocの拡張ってdocとかないんでhelp引けないじゃないですか。<br>パラメーター（coc-settings.jsonに設定するやつ）確認するときどうしてますか？？<br><br>私は今はGitHubで見るか `~/.config/coc/extensions/node_modules/xxx/package.json`<br>を見るかなんですけど、今使ってる設定情報がすべて記載されたjsonなんかを表示できれば個人的にはだいぶ楽になるんですが・・・</span>
+  <span class='slacklog-text'>cocの拡張ってdocとかないんでhelp引けないじゃないですか。<br>パラメーター（coc-settings.jsonに設定するやつ）確認するときどうしてますか？？<br><br>私は今はGitHubで見るか <code>~/.config/coc/extensions/node_modules/xxx/package.json</code><br>を見るかなんですけど、今使ってる設定情報がすべて記載されたjsonなんかを表示できれば個人的にはだいぶ楽になるんですが・・・</span>
   </span>
   <span class='slacklog-message' id='1585147443.005200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-07-28/696621453314_0edf66561724b8e38e6a_48.png'>
@@ -687,7 +687,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
   <span class='slacklog-name'>luma</span>
   <a class='slacklog-datetime' href='#1585148524.006200'>26日 00:02:05</a>
-  <span class='slacklog-text'>`:options` の coc 版の機運...ｺﾞｺﾞｺﾞ</span>
+  <span class='slacklog-text'><code>:options</code> の coc 版の機運...ｺﾞｺﾞｺﾞ</span>
   </span>
   <span class='slacklog-message' id='1585148711.007700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -711,7 +711,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
   <span class='slacklog-name'>vikke</span>
   <a class='slacklog-datetime' href='#1585287241.012200'>27日 14:34:02</a>
-  <span class='slacklog-text'>coc.vimを使ってて、<a href='https://github.com/neoclide/coc.nvim'>https://github.com/neoclide/coc.nvim</a> にあるexample vim configurationを少し弄ってつかってます。<br>具体的には、僕のvimrcで、<br>```nnoremap &lt;C-I&gt; &lt;C-O&gt;nnoremap &lt;C-O&gt; &lt;C-I&gt;```<br>やってるので、 `Introduce function text object` の所をコメントアウトしています。<br>これでも、C-I, C-Oが `[coc.nvim]Selection range provider not found for current document` と言われるんですけど、後、どこイジるべきですか?</span>
+  <span class='slacklog-text'>coc.vimを使ってて、<a href='https://github.com/neoclide/coc.nvim'>https://github.com/neoclide/coc.nvim</a> にあるexample vim configurationを少し弄ってつかってます。<br>具体的には、僕のvimrcで、<br><code>nnoremap &lt;C-I&gt; &lt;C-O&gt;nnoremap &lt;C-O&gt; &lt;C-I&gt;</code><br>やってるので、 <code>Introduce function text object</code> の所をコメントアウトしています。<br>これでも、C-I, C-Oが <code>[coc.nvim]Selection range provider not found for current document</code> と言われるんですけど、後、どこイジるべきですか?</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -725,7 +725,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
   <span class='slacklog-name'>hrsh7th</span>
   <a class='slacklog-datetime' href='#1585288037.012600'>27日 14:47:18</a>
-  <span class='slacklog-text'>```&#34; Use &lt;TAB&gt; for selections ranges.<br>&#34; NOTE: Requires &#39;textDocument/selectionRange&#39; support from the language server.<br>&#34; coc-tsserver, coc-python are the examples of servers that support it.<br>nmap &lt;silent&gt; &lt;TAB&gt; &lt;Plug&gt;(coc-range-select)<br>xmap &lt;silent&gt; &lt;TAB&gt; &lt;Plug&gt;(coc-range-select)```<br>ここだと思います。</span>
+  <span class='slacklog-text'><code>&#34; Use &lt;TAB&gt; for selections ranges.<br>&#34; NOTE: Requires &#39;textDocument/selectionRange&#39; support from the language server.<br>&#34; coc-tsserver, coc-python are the examples of servers that support it.<br>nmap &lt;silent&gt; &lt;TAB&gt; &lt;Plug&gt;(coc-range-select)<br>xmap &lt;silent&gt; &lt;TAB&gt; &lt;Plug&gt;(coc-range-select)</code><br>ここだと思います。</span>
   </span>
   <span class='slacklog-message' id='1585288367.014500'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -793,7 +793,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/a36a7ed02d64ce6f40a20ebfe0a9f59d.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-48.png'>
   <span class='slacklog-name'>yaegassy</span>
   <a class='slacklog-datetime' href='#1585555442.019500'>30日 17:04:03</a>
-  <span class='slacklog-text'>`:CocList extentions` -&gt; `任意の拡張でTABキー` で `(c)onfigurations` が追加されてて c タイプするとその拡張の package.json に飛ぶってやつ(？)みたい</span>
+  <span class='slacklog-text'><code>:CocList extentions</code> -&gt; <code>任意の拡張でTABキー</code> で <code>(c)onfigurations</code> が追加されてて c タイプするとその拡張の package.json に飛ぶってやつ(？)みたい</span>
   </span>
   <span class='slacklog-message' id='1585555509.020700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>

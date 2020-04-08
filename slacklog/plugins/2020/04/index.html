@@ -117,7 +117,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585737635.152700'>1日 19:40:36</a>
-  <span class='slacklog-text'>若干記述がアレだけど自分はこれくらい<br>```function! s:relativenumber_toggle(mode) abort &#34; {{{<br>  let enter = a:mode ==? &#39;enter&#39;<br><br>  if enter<br>    let b:relativenumber = &amp;l:relativenumber &#34; backup<br>    setlocal norelativenumber<br>  else<br>    if get(b:,&#39;relativenumber&#39;, 1)<br>      &#34; if backup value is relativenumber is active, re-active<br>      setlocal relativenumber<br>    endif<br>  endif<br>endfunction &#34; }}}<br>augroup MyAutoGroup<br>  autocmd WinLeave,InsertEnter * nested call s:relativenumber_toggle(&#39;enter&#39;)<br>  autocmd WinEnter,InsertLeave * nested call s:relativenumber_toggle(&#39;leave&#39;)<br>augroup END```</span>
+  <span class='slacklog-text'>若干記述がアレだけど自分はこれくらい<br><code>function! s:relativenumber_toggle(mode) abort &#34; {{{<br>  let enter = a:mode ==? &#39;enter&#39;<br><br>  if enter<br>    let b:relativenumber = &amp;l:relativenumber &#34; backup<br>    setlocal norelativenumber<br>  else<br>    if get(b:,&#39;relativenumber&#39;, 1)<br>      &#34; if backup value is relativenumber is active, re-active<br>      setlocal relativenumber<br>    endif<br>  endif<br>endfunction &#34; }}}<br>augroup MyAutoGroup<br>  autocmd WinLeave,InsertEnter * nested call s:relativenumber_toggle(&#39;enter&#39;)<br>  autocmd WinEnter,InsertLeave * nested call s:relativenumber_toggle(&#39;leave&#39;)<br>augroup END</code></span>
   </span>
   <span class='slacklog-message' id='1585737642.153000'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -147,7 +147,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
   <span class='slacklog-name'>hrsh7th</span>
   <a class='slacklog-datetime' href='#1585737878.154600'>1日 19:44:39</a>
-  <span class='slacklog-text'>昔のコードの `let g:insertmode = 1` の破壊力がすごい</span>
+  <span class='slacklog-text'>昔のコードの <code>let g:insertmode = 1</code> の破壊力がすごい</span>
   </span>
   <span class='slacklog-message' id='1585737885.154800'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -167,7 +167,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
   <span class='slacklog-name'>luma</span>
   <a class='slacklog-datetime' href='#1585738057.156000'>1日 19:47:38</a>
-  <span class='slacklog-text'>Tsuyoshi CHO さんのleaveで `nornu`  されてたら，それを尊重する，とかでもいいかもな</span>
+  <span class='slacklog-text'>Tsuyoshi CHO さんのleaveで <code>nornu</code>  されてたら，それを尊重する，とかでもいいかもな</span>
   </span>
   <span class='slacklog-message' id='1585738754.156100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -301,7 +301,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
   <span class='slacklog-name'>ycino</span>
   <a class='slacklog-datetime' href='#1585882329.176500'>3日 11:52:10</a>
-  <span class='slacklog-text'>&lt;@U7B4ZD49X&gt; <a href='https://github.com/yuki-ycino/fzf-preview.vim/issues/106'>https://github.com/yuki-ycino/fzf-preview.vim/issues/106</a> あたり、なんか経緯があって `-g \!&#34;* *&#34;` にしたと思ってるんですけどなんでしたっけ<br>あと `\!&#34;* *&#34;` が自分でも実際に何にマッチさせてるか忘れたというあれな・・・</span>
+  <span class='slacklog-text'>&lt;@U7B4ZD49X&gt; <a href='https://github.com/yuki-ycino/fzf-preview.vim/issues/106'>https://github.com/yuki-ycino/fzf-preview.vim/issues/106</a> あたり、なんか経緯があって <code>-g \!&#34;* *&#34;</code> にしたと思ってるんですけどなんでしたっけ<br>あと <code>\!&#34;* *&#34;</code> が自分でも実際に何にマッチさせてるか忘れたというあれな・・・</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -451,7 +451,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
   <span class='slacklog-name'>takets</span>
   <a class='slacklog-datetime' href='#1585951368.187800'>4日 07:02:49</a>
-  <span class='slacklog-text'>fzfでgrepしたら、`(`をバックスペース入れないと検索できないの、雑に検索したいときちょっと面倒</span>
+  <span class='slacklog-text'>fzfでgrepしたら、<code>(</code>をバックスペース入れないと検索できないの、雑に検索したいときちょっと面倒</span>
   </span>
   <span class='slacklog-message' id='1585956680.188300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -1045,7 +1045,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/0c3ec8434af0d4cbcbd17bd51bcf1154.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>kg8m</span>
   <a class='slacklog-datetime' href='#1586263636.234900'>7日 21:47:17</a>
-  <span class='slacklog-text'>auto-ctags、昔お世話になってた<br>プロジェクト用 `tags` と別ディレクトリにいるライブラリ群用 `tags` を同時に非同期で異なるオプション与えながら作成するというのがうまくできなかったので結局自作関数になった</span>
+  <span class='slacklog-text'>auto-ctags、昔お世話になってた<br>プロジェクト用 <code>tags</code> と別ディレクトリにいるライブラリ群用 <code>tags</code> を同時に非同期で異なるオプション与えながら作成するというのがうまくできなかったので結局自作関数になった</span>
   </span>
   <span class='slacklog-message' id='1586265156.235900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
@@ -1119,13 +1119,13 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1586269044.244100'>7日 23:17:25</a>
-  <span class='slacklog-text'>えっと、ここでやってる `set tags` がそうです。<br>実体は今こうなってます(ベース設定と複合している)<br>```tags=./.git/tags;C:\Users\tsuyoshi,./.svn/tags;C:\Users\tsuyoshi,./.hg/tags;C:\Users\tsuyoshi,./.bzr/tags;C:\Users\tsuyoshi,./CVS/tags;C:\Users\tsuyoshi,./tags;C:\Users\tsuyoshi,./TAGS;C:\Users\tsuyoshi,./**2/tags,./**2/TAGS,tags,TAGS```</span>
+  <span class='slacklog-text'>えっと、ここでやってる <code>set tags</code> がそうです。<br>実体は今こうなってます(ベース設定と複合している)<br><code>tags=./.git/tags;C:\Users\tsuyoshi,./.svn/tags;C:\Users\tsuyoshi,./.hg/tags;C:\Users\tsuyoshi,./.bzr/tags;C:\Users\tsuyoshi,./CVS/tags;C:\Users\tsuyoshi,./tags;C:\Users\tsuyoshi,./TAGS;C:\Users\tsuyoshi,./**2/tags,./**2/TAGS,tags,TAGS</code></span>
   </span>
   <span class='slacklog-message' id='1586269129.244300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1586269129.244300'>7日 23:18:50</a>
-  <span class='slacklog-text'>あ、あと <a href='https://github.com/mattn/vim-findroot'>https://github.com/mattn/vim-findroot</a><br>なんかのプロジェクトルートへの自動cd系のツールがないと、タグ検索がうまくいかないと思います( `./.git/tags` のように、カレントの下に.gitがあることを前提として調整してある)</span>
+  <span class='slacklog-text'>あ、あと <a href='https://github.com/mattn/vim-findroot'>https://github.com/mattn/vim-findroot</a><br>なんかのプロジェクトルートへの自動cd系のツールがないと、タグ検索がうまくいかないと思います( <code>./.git/tags</code> のように、カレントの下に.gitがあることを前提として調整してある)</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -1145,19 +1145,19 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
   <span class='slacklog-name'>たまたまご</span>
   <a class='slacklog-datetime' href='#1586269566.244900'>7日 23:26:07</a>
-  <span class='slacklog-text'>すみません。1つ質問なのですが、 `set tags` するときに、毎回、`;$HOME` をつけているのはどういった意味があるのでしょうか？<br>`&#39;tags&#39;` についての知識がないため、理解できていないかもしれないです...</span>
+  <span class='slacklog-text'>すみません。1つ質問なのですが、 <code>set tags</code> するときに、毎回、<code>;$HOME</code> をつけているのはどういった意味があるのでしょうか？<br><code>&#39;tags&#39;</code> についての知識がないため、理解できていないかもしれないです...</span>
   </span>
   <span class='slacklog-message' id='1586269999.245100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1586269999.245100'>7日 23:33:20</a>
-  <span class='slacklog-text'>:help file-searching して、上向き検索、で確認してもらうといいんだけど、あるターゲット(カレントとか)に `;` がついてると、上のディレクトリを順に探していくんだけど、それが `$HOME`  まで到達したら止る、という風にしてあるんです<br>なので、home下の作業であれば、findrootなくてもなんとかなる、はず<br>あとこれしないと `/` まであがっちゃうので、それは避けてる、という...</span>
+  <span class='slacklog-text'>:help file-searching して、上向き検索、で確認してもらうといいんだけど、あるターゲット(カレントとか)に <code>;</code> がついてると、上のディレクトリを順に探していくんだけど、それが <code>$HOME</code>  まで到達したら止る、という風にしてあるんです<br>なので、home下の作業であれば、findrootなくてもなんとかなる、はず<br>あとこれしないと <code>/</code> まであがっちゃうので、それは避けてる、という...</span>
   </span>
   <span class='slacklog-message' id='1586270000.245300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1586270000.245300'>7日 23:33:21</a>
-  <span class='slacklog-text'>E149: 残念ですが file-searching して、上向き検索、で確認してもらうといいんだけど、あるターゲット(カレントとか)に `;` がついてると、上のディレクトリを順に探していくんだけど、それが `$HOME`  まで到達したら止る、という風にしてあるんです にはヘルプがありません</span>
+  <span class='slacklog-text'>E149: 残念ですが file-searching して、上向き検索、で確認してもらうといいんだけど、あるターゲット(カレントとか)に <code>;</code> がついてると、上のディレクトリを順に探していくんだけど、それが <code>$HOME</code>  まで到達したら止る、という風にしてあるんです にはヘルプがありません</span>
   </span>
   <span class='slacklog-message' id='1586270016.245500'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1169,13 +1169,13 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1586270016.245700'>7日 23:33:37</a>
-  <span class='slacklog-text'>```<br>11. ファイル検索                                        *file-searching*<br> <br>{Vimが |+path_extra| 機能付きでコンパイルされたときのみ有効}<br> <br>現在の所、オプション &#39;path&#39;, &#39;cdpath&#39;, &#39;tags&#39; と|finddir()|, |findfile()| で、<br>本節で説明する「ファイル検索」にしたがってワイルドカードの展開が行われる。<br>それ以外のコマンドでは |wildcards| という少し異なるルールにしたがう。<br> <br>ファイル検索には以下の3種類がある:<br>```</span>
+  <span class='slacklog-text'><code><br>11. ファイル検索                                        *file-searching*<br> <br>{Vimが |+path_extra| 機能付きでコンパイルされたときのみ有効}<br> <br>現在の所、オプション &#39;path&#39;, &#39;cdpath&#39;, &#39;tags&#39; と|finddir()|, |findfile()| で、<br>本節で説明する「ファイル検索」にしたがってワイルドカードの展開が行われる。<br>それ以外のコマンドでは |wildcards| という少し異なるルールにしたがう。<br> <br>ファイル検索には以下の3種類がある:<br></code></span>
   </span>
   <span class='slacklog-message' id='1586270053.245900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1586270053.245900'>7日 23:34:14</a>
-  <span class='slacklog-text'>これは path_extra な vim で `path` や `tags` で有効とのこと</span>
+  <span class='slacklog-text'>これは path_extra な vim で <code>path</code> や <code>tags</code> で有効とのこと</span>
   </span>
   <span class='slacklog-message' id='1586270087.246100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
@@ -1199,7 +1199,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
   <span class='slacklog-name'>たまたまご</span>
   <a class='slacklog-datetime' href='#1586270223.246800'>7日 23:37:04</a>
-  <span class='slacklog-text'>基本的には `$HOME` 以下で作業するので、この設定を入れてみることにします。</span>
+  <span class='slacklog-text'>基本的には <code>$HOME</code> 以下で作業するので、この設定を入れてみることにします。</span>
   </span>
   <span class='slacklog-message' id='1586270486.247900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
