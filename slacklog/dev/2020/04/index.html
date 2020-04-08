@@ -7,167 +7,167 @@ title: vim-jp.slack.com log - &#35dev - 2020年04月
 <h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
 
 {% raw %}
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585735056.074200'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
 <span class='slacklog-name'>Shougo</span>
-<span class='slacklog-datetime'>1日 18:57:37</span>
+<a class='slacklog-datetime' href='#1585735056.074200'>1日 18:57:37</a>
 <span class='slacklog-text'>complete関数の引数に空リストを渡したときに、現在のポップアップを閉じてくれない問題があります</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585735068.074600'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
 <span class='slacklog-name'>Shougo</span>
-<span class='slacklog-datetime'>1日 18:57:49</span>
+<a class='slacklog-datetime' href='#1585735068.074600'>1日 18:57:49</a>
 <span class='slacklog-text'>まずは再現コードを書くべきだろうか</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585735787.074800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
 <span class='slacklog-name'>kuu</span>
-<span class='slacklog-datetime'>1日 19:09:48</span>
+<a class='slacklog-datetime' href='#1585735787.074800'>1日 19:09:48</a>
 <span class='slacklog-text'>再現コードあれば欲しいですね</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585735852.074900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
 <span class='slacklog-name'></span>
-<span class='slacklog-datetime'>1日 19:10:53</span>
+<a class='slacklog-datetime' href='#1585735852.074900'>1日 19:10:53</a>
 <span class='slacklog-text'>手元でこんなの書いてみたんですが、vim/neovim共に再現しないので（そもそもこの認識であってるのかがわかってない）</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585744664.075800'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
 <span class='slacklog-name'>Shougo</span>
-<span class='slacklog-datetime'>1日 21:37:45</span>
+<a class='slacklog-datetime' href='#1585744664.075800'>1日 21:37:45</a>
 <span class='slacklog-text'>確かに最小構成だと再現しないですね。再現するための条件を確認します</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585745090.076600'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
 <span class='slacklog-name'>Shougo</span>
-<span class='slacklog-datetime'>1日 21:44:51</span>
+<a class='slacklog-datetime' href='#1585745090.076600'>1日 21:44:51</a>
 <span class='slacklog-text'>completeに渡すposに問題があったようです</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585745102.077100'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
 <span class='slacklog-name'>Shougo</span>
-<span class='slacklog-datetime'>1日 21:45:03</span>
+<a class='slacklog-datetime' href='#1585745102.077100'>1日 21:45:03</a>
 <span class='slacklog-text'>posを1にしたら直りました。失礼しました</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585745145.078300'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
 <span class='slacklog-name'>Shougo</span>
-<span class='slacklog-datetime'>1日 21:45:46</span>
+<a class='slacklog-datetime' href='#1585745145.078300'>1日 21:45:46</a>
 <span class='slacklog-text'>posが不正だとポップアップを閉じずにreturnするのでポップアップが閉じないと勘違いしていたようです</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585745160.078800'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
 <span class='slacklog-name'>Shougo</span>
-<span class='slacklog-datetime'>1日 21:46:01</span>
+<a class='slacklog-datetime' href='#1585745160.078800'>1日 21:46:01</a>
 <span class='slacklog-text'>実装を見ると明らかに閉じるはずなのでおかしいなと</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585745202.079300'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
 <span class='slacklog-name'>kuu</span>
-<span class='slacklog-datetime'>1日 21:46:43</span>
+<a class='slacklog-datetime' href='#1585745202.079300'>1日 21:46:43</a>
 <span class='slacklog-text'>エラー出さないのふべん</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585745254.079700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
 <span class='slacklog-name'>kuu</span>
-<span class='slacklog-datetime'>1日 21:47:35</span>
+<a class='slacklog-datetime' href='#1585745254.079700'>1日 21:47:35</a>
 <span class='slacklog-text'>座標が1スタートなのたまに引っかかる</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585875428.081400'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
 <span class='slacklog-name'>k-takata</span>
-<span class='slacklog-datetime'>3日 09:57:09</span>
+<a class='slacklog-datetime' href='#1585875428.081400'>3日 09:57:09</a>
 <span class='slacklog-text'>あ、lambdaの高速化がマージされてた。8.2.0499</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585971578.085200'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>ichizok</span>
-<span class='slacklog-datetime'>4日 12:39:39</span>
+<a class='slacklog-datetime' href='#1585971578.085200'>4日 12:39:39</a>
 <span class='slacklog-text'>&lt;http://Haiku用のgui_haiku.cc|xn--haikugui_haiku-zi4mx491g.cc&gt;、コード壊れててコンパイル通らないのはひどい</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585971981.086400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
 <span class='slacklog-name'>kuu</span>
-<span class='slacklog-datetime'>4日 12:46:22</span>
+<a class='slacklog-datetime' href='#1585971981.086400'>4日 12:46:22</a>
 <span class='slacklog-text'>前試してコンパイル通らなかった時おま環だと思ってたけどそもそも壊れてるのか</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585972060.087000'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>ichizok</span>
-<span class='slacklog-datetime'>4日 12:47:41</span>
+<a class='slacklog-datetime' href='#1585972060.087000'>4日 12:47:41</a>
 <span class='slacklog-text'>3566行目でコメントが閉じられてないので</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585972130.087200'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
 <span class='slacklog-name'>kuu</span>
-<span class='slacklog-datetime'>4日 12:48:51</span>
+<a class='slacklog-datetime' href='#1585972130.087200'>4日 12:48:51</a>
 <span class='slacklog-text'>:totemoturai:</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1585972344.088000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
-<span class='slacklog-datetime'>4日 12:52:25</span>
+<a class='slacklog-datetime' href='#1585972344.088000'>4日 12:52:25</a>
 <span class='slacklog-text'>ヘルプ翻訳したけど、まるで偽典を翻訳した人みたいな気分になってしまうw...しかしひどいw</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586222508.090200'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>ichizok</span>
-<span class='slacklog-datetime'>7日 10:21:49</span>
+<a class='slacklog-datetime' href='#1586222508.090200'>7日 10:21:49</a>
 <span class='slacklog-text'>&lt;https://github.com/vim/vim/pull/5893&gt;
 「vimは動くが `getaddrinfo()` をサポートしていない」環境は現状あるんだろうか？</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586239803.090500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
-<span class='slacklog-datetime'>7日 15:10:04</span>
+<a class='slacklog-datetime' href='#1586239803.090500'>7日 15:10:04</a>
 <span class='slacklog-text'>&lt;https://github.com/vim/vim/commit/c74fbfedfa2df384cca5f6763e2c9e5c0ca6d513#diff-5fdbc618bc4707300241084dba0f63daR3171&gt;</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586239811.090900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
-<span class='slacklog-datetime'>7日 15:10:12</span>
+<a class='slacklog-datetime' href='#1586239811.090900'>7日 15:10:12</a>
 <span class='slacklog-text'>`==` 氏...</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586240006.091200'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
-<span class='slacklog-datetime'>7日 15:13:27</span>
+<a class='slacklog-datetime' href='#1586240006.091200'>7日 15:13:27</a>
 <span class='slacklog-text'>逆はなんか珍しいですね</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586242066.091400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
-<span class='slacklog-datetime'>7日 15:47:47</span>
+<a class='slacklog-datetime' href='#1586242066.091400'>7日 15:47:47</a>
 <span class='slacklog-text'>警告されてもよさそうなのに。</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586242213.091600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
 <span class='slacklog-name'>thinca</span>
-<span class='slacklog-datetime'>7日 15:50:14</span>
+<a class='slacklog-datetime' href='#1586242213.091600'>7日 15:50:14</a>
 <span class='slacklog-text'>警告どころかビルド通ってないし</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586243258.092300'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
-<span class='slacklog-datetime'>7日 16:07:39</span>
+<a class='slacklog-datetime' href='#1586243258.092300'>7日 16:07:39</a>
 <span class='slacklog-text'>マージボタン使ってくれてたら最低どれかの CI が通らないとマージできない様にできるんだけど。</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586243383.092700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
 <span class='slacklog-name'>thinca</span>
-<span class='slacklog-datetime'>7日 16:09:44</span>
+<a class='slacklog-datetime' href='#1586243383.092700'>7日 16:09:44</a>
 <span class='slacklog-text'>リリース後に CI が走るので半分くらいしか意味がない</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586243745.093500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
-<span class='slacklog-datetime'>7日 16:15:46</span>
+<a class='slacklog-datetime' href='#1586243745.093500'>7日 16:15:46</a>
 <span class='slacklog-text'>(むしろ失敗が衆目にさらされることで、ストレス元になりそうで、なんかツラい...)</span>
 </span>
-<span class='slacklog-message'>
+<span class='slacklog-message' id='1586243948.094000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
 <span class='slacklog-name'>thinca</span>
-<span class='slacklog-datetime'>7日 16:19:09</span>
+<a class='slacklog-datetime' href='#1586243948.094000'>7日 16:19:09</a>
 <span class='slacklog-text'>そこを気にする人ならとっくにやり方変えてると思うw</span>
 </span>
 {% endraw %}
