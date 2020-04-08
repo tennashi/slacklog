@@ -12,12 +12,12 @@ title: vim-jp.slack.com log - &#35docker - 2020年03月
 <span class='slacklog-name'>raa0121</span>
 <a class='slacklog-datetime' href='#1584328214.016900'>16日 12:10:15</a>
 <span class='slacklog-text'>Dockerfile 内で、
-```RUN mkdir /usr/src/app &amp;amp;&amp;amp; \
-    apk update &amp;amp;&amp;amp; \
-    apk add --virtual .build build-base openssl-dev curl &amp;amp;&amp;amp; \
-    curl -LO &lt;https://github.com/mattn/goreman/releases/download/v0.3.4/goreman_linux_amd64.zip&gt; &amp;amp;&amp;amp; \
-    unzip -d /usr/local/bin goreman_linux_amd64.zip &amp;amp;&amp;amp; \
-    rm goreman_linux_amd64.zip &amp;amp;&amp;amp; \
+```RUN mkdir /usr/src/app &amp;&amp; \
+    apk update &amp;&amp; \
+    apk add --virtual .build build-base openssl-dev curl &amp;&amp; \
+    curl -LO <https://github.com/mattn/goreman/releases/download/v0.3.4/goreman_linux_amd64.zip> &amp;&amp; \
+    unzip -d /usr/local/bin goreman_linux_amd64.zip &amp;&amp; \
+    rm goreman_linux_amd64.zip &amp;&amp; \
     chmod 755 /usr/local/bin/goreman```
 しても、 `sh: goreman: not found` って言われるんですが、なにか知見をお持ちの方いらっしゃいませんか？</span>
 </span>
@@ -28,13 +28,13 @@ title: vim-jp.slack.com log - &#35docker - 2020年03月
 <span class='slacklog-text'>あ、ローカルと docker で ldd の結果が違う…
 ```$ ldd goreman
         linux-vdso.so.1 (0x00007ffdda76f000)
-        libpthread.so.0 =&amp;gt; /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f5fedb23000)
-        libc.so.6 =&amp;gt; /lib/x86_64-linux-gnu/libc.so.6 (0x00007f5fed732000)
+        libpthread.so.0 =&gt; /lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f5fedb23000)
+        libc.so.6 =&gt; /lib/x86_64-linux-gnu/libc.so.6 (0x00007f5fed732000)
         /lib64/ld-linux-x86-64.so.2 (0x00007f5fedd42000)```
 ```# ldd /usr/local/bin/goreman
         /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)
-        libpthread.so.0 =&amp;gt; /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)
-        libc.so.6 =&amp;gt; /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)```</span>
+        libpthread.so.0 =&gt; /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)
+        libc.so.6 =&gt; /lib64/ld-linux-x86-64.so.2 (0x7fd3133af000)```</span>
 </span>
 <span class='slacklog-message' id='1584328395.018200'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -238,7 +238,7 @@ title: vim-jp.slack.com log - &#35docker - 2020年03月
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
 <span class='slacklog-name'>lambdalisue</span>
 <a class='slacklog-datetime' href='#1584329172.034900'>16日 12:26:13</a>
-<span class='slacklog-text'>&lt;https://docs.microsoft.com/ja-jp/virtualization/windowscontainers/about/faq#how-are-containers-licensed-is-there-a-limit-to-the-number-of-containers-i-can-run|ライセンス &gt;</span>
+<span class='slacklog-text'><https://docs.microsoft.com/ja-jp/virtualization/windowscontainers/about/faq#how-are-containers-licensed-is-there-a-limit-to-the-number-of-containers-i-can-run|ライセンス ></span>
 </span>
 <span class='slacklog-message' id='1584329216.035300'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
@@ -311,13 +311,13 @@ title: vim-jp.slack.com log - &#35docker - 2020年03月
 <span class='slacklog-name'>ycino</span>
 <a class='slacklog-datetime' href='#1584333025.042900'>16日 13:30:26</a>
 <span class='slacklog-text'>解決してないんじゃないかなぁこれ
-&lt;https://bugs.ruby-lang.org/issues/14387&gt;</span>
+<https://bugs.ruby-lang.org/issues/14387></span>
 </span>
 <span class='slacklog-message' id='1584333229.043500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
 <span class='slacklog-name'>tennashi</span>
 <a class='slacklog-datetime' href='#1584333229.043500'>16日 13:33:50</a>
-<span class='slacklog-text'>&lt;https://www.slideshare.net/yaegashi/golang-binary-hacks-150386886&gt;
+<span class='slacklog-text'><https://www.slideshare.net/yaegashi/golang-binary-hacks-150386886>
 これと似たような話っぽい...?</span>
 </span>
 <span class='slacklog-message' id='1584333422.043900'>
@@ -450,19 +450,19 @@ nodeSelectorとかAffinityで特定のノードにpodを寄せられますね。
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
 <span class='slacklog-name'>koron</span>
 <a class='slacklog-datetime' href='#1584754233.000600'>21日 10:30:34</a>
-<span class='slacklog-text'>&lt;https://nomadproject.io/&gt;</span>
+<span class='slacklog-text'><https://nomadproject.io/></span>
 </span>
 <span class='slacklog-message' id='1584770122.001000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
 <span class='slacklog-name'>ycino</span>
 <a class='slacklog-datetime' href='#1584770122.001000'>21日 14:55:23</a>
-<span class='slacklog-text'>これちょうどよさそう？ &lt;https://k8slens.dev/&gt;</span>
+<span class='slacklog-text'>これちょうどよさそう？ <https://k8slens.dev/></span>
 </span>
 <span class='slacklog-message' id='1584773473.001700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
 <span class='slacklog-name'>johejo</span>
 <a class='slacklog-datetime' href='#1584773473.001700'>21日 15:51:14</a>
-<span class='slacklog-text'>gui版k9sか &lt;https://github.com/derailed/k9s|https://github.com/derailed/k9s&gt;</span>
+<span class='slacklog-text'>gui版k9sか <https://github.com/derailed/k9s|https://github.com/derailed/k9s></span>
 </span>
 <span class='slacklog-message' id='1584774423.002700'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -491,23 +491,23 @@ nodeSelectorとかAffinityで特定のノードにpodを寄せられますね。
 
 RUN apk --update add --no-cache build-base autoconf freetype-dev libpng-dev libjpeg-turbo-dev
 RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
-    &amp;amp;&amp;amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql```
+    &amp;&amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql```
 こんなDockerfileを、macでbuildすると成功して、ArchLinuxでbuildすると、
-```rm: can&#39;t remove &#39;/usr/src/php/sapi/phpdbg/tests&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/standard/tests/network&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/standard/tests/url&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/mysqlnd&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/phar/tests/tar/files&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/phar/tests/cache_list/files&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/mbstring/oniguruma/src&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/hash/tests&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/gmp/tests&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/xsl/tests&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/gd/libgd&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/soap/tests/soap12&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/soap/tests/interop/Round3/GroupD&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/Zend/tests/return_types&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/tests/output&#39;: Directory not empty```
+```rm: can't remove '/usr/src/php/sapi/phpdbg/tests': Directory not empty
+rm: can't remove '/usr/src/php/ext/standard/tests/network': Directory not empty
+rm: can't remove '/usr/src/php/ext/standard/tests/url': Directory not empty
+rm: can't remove '/usr/src/php/ext/mysqlnd': Directory not empty
+rm: can't remove '/usr/src/php/ext/phar/tests/tar/files': Directory not empty
+rm: can't remove '/usr/src/php/ext/phar/tests/cache_list/files': Directory not empty
+rm: can't remove '/usr/src/php/ext/mbstring/oniguruma/src': Directory not empty
+rm: can't remove '/usr/src/php/ext/hash/tests': Directory not empty
+rm: can't remove '/usr/src/php/ext/gmp/tests': Directory not empty
+rm: can't remove '/usr/src/php/ext/xsl/tests': Directory not empty
+rm: can't remove '/usr/src/php/ext/gd/libgd': Directory not empty
+rm: can't remove '/usr/src/php/ext/soap/tests/soap12': Directory not empty
+rm: can't remove '/usr/src/php/ext/soap/tests/interop/Round3/GroupD': Directory not empty
+rm: can't remove '/usr/src/php/Zend/tests/return_types': Directory not empty
+rm: can't remove '/usr/src/php/tests/output': Directory not empty```
 と怒られます。
 実際、macでは、/usr/src/php.tar.xzと、php.tar.xz.ascしか無いですが、Archの方は、php.tar.xzが展開さて、php directoryが存在している状態になってます。
 これってどういう現象でしょうか。というか、`docker-php-ext-configure`でphp.tar.xzが展開されているのはわかったのですが、どう対処したら良いのかわかりません。
@@ -684,7 +684,7 @@ find . -name \*.lo -o -name \*.o | xargs rm -f
 find . -name \*.la -o -name \*.a | xargs rm -f
 find . -name \*.so | xargs rm -f
 find . -name .libs -a -type d|xargs rm -rf
-rm -f &lt;http://libphp.la|libphp.la&gt;       modules/* libs/*
+rm -f <http://libphp.la|libphp.la>       modules/* libs/*
 WARNING: Ignoring APKINDEX.70f61090.tar.gz: No such file or directory
 WARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory
 (1/4) Purging .phpize-deps-configure (20200323.012316)
@@ -694,7 +694,7 @@ WARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory
 Executing busybox-1.31.1-r9.trigger
 OK: 226 MiB in 60 packages
 Removing intermediate container c1f923c5bf9c
- ---&amp;gt; 4df79b02e0ff
+ ---&gt; 4df79b02e0ff
 Successfully built 4df79b02e0ff
 Successfully tagged lastest:latest```
 こっちmacのログ.</span>
@@ -709,7 +709,7 @@ find . -name \*.lo -o -name \*.o | xargs rm -f
 find . -name \*.la -o -name \*.a | xargs rm -f
 find . -name \*.so | xargs rm -f
 find . -name .libs -a -type d|xargs rm -rf
-rm -f &lt;http://libphp.la|libphp.la&gt;       modules/* libs/*
+rm -f <http://libphp.la|libphp.la>       modules/* libs/*
 WARNING: Ignoring APKINDEX.70f61090.tar.gz: No such file or directory
 WARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory
 (1/4) Purging .phpize-deps-configure (20200323.012116)
@@ -718,22 +718,22 @@ WARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory
 (4/4) Purging re2c (1.3-r0)
 Executing busybox-1.31.1-r9.trigger
 OK: 226 MiB in 60 packages
-rm: can&#39;t remove &#39;/usr/src/php/sapi/phpdbg/tests&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/standard/tests/network&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/standard/tests/url&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/mysqlnd&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/phar/tests/tar/files&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/phar/tests/cache_list/files&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/mbstring/oniguruma/src&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/hash/tests&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/gmp/tests&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/xsl/tests&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/gd/libgd&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/soap/tests/soap12&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/ext/soap/tests/interop/Round3/GroupD&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/Zend/tests/return_types&#39;: Directory not empty
-rm: can&#39;t remove &#39;/usr/src/php/tests/output&#39;: Directory not empty
-The command &#39;/bin/sh -c docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/     &amp;amp;&amp;amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql&#39; returned a non-zero code: 1```
+rm: can't remove '/usr/src/php/sapi/phpdbg/tests': Directory not empty
+rm: can't remove '/usr/src/php/ext/standard/tests/network': Directory not empty
+rm: can't remove '/usr/src/php/ext/standard/tests/url': Directory not empty
+rm: can't remove '/usr/src/php/ext/mysqlnd': Directory not empty
+rm: can't remove '/usr/src/php/ext/phar/tests/tar/files': Directory not empty
+rm: can't remove '/usr/src/php/ext/phar/tests/cache_list/files': Directory not empty
+rm: can't remove '/usr/src/php/ext/mbstring/oniguruma/src': Directory not empty
+rm: can't remove '/usr/src/php/ext/hash/tests': Directory not empty
+rm: can't remove '/usr/src/php/ext/gmp/tests': Directory not empty
+rm: can't remove '/usr/src/php/ext/xsl/tests': Directory not empty
+rm: can't remove '/usr/src/php/ext/gd/libgd': Directory not empty
+rm: can't remove '/usr/src/php/ext/soap/tests/soap12': Directory not empty
+rm: can't remove '/usr/src/php/ext/soap/tests/interop/Round3/GroupD': Directory not empty
+rm: can't remove '/usr/src/php/Zend/tests/return_types': Directory not empty
+rm: can't remove '/usr/src/php/tests/output': Directory not empty
+The command '/bin/sh -c docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/     &amp;&amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql' returned a non-zero code: 1```
 こっちArchLinuxのログ。</span>
 </span>
 <span class='slacklog-message' id='1584926873.023300'>
@@ -836,7 +836,7 @@ The command &#39;/bin/sh -c docker-php-ext-configure gd --with-freetype-dir=/usr
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1584927172.031300'>23日 10:32:53</a>
-<span class='slacklog-text'>&lt;https://qiita.com/amatsus/items/aa2a58b0d5800312b6fa&gt;</span>
+<span class='slacklog-text'><https://qiita.com/amatsus/items/aa2a58b0d5800312b6fa></span>
 </span>
 <span class='slacklog-message' id='1584927180.032200'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
@@ -1105,7 +1105,7 @@ Server:
  ID: HA5E:XUXL:SLDZ:XKQJ:5AQD:3GEG:XUBS:L35M:63BI:UQM5:7L6L:RU6B
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
- Registry: &lt;https://index.docker.io/v1/&gt;
+ Registry: <https://index.docker.io/v1/>
  Labels:
  Experimental: false
  Insecure Registries:
@@ -1128,7 +1128,7 @@ Server:
  Images: 27
  Server Version: 19.03.8-ce
  Storage Driver: overlay2
-  Backing Filesystem: &amp;lt;unknown&amp;gt;
+  Backing Filesystem: &lt;unknown&gt;
   Supports d_type: true
   Native Overlay Diff: false
  Logging Driver: json-file
@@ -1158,7 +1158,7 @@ Server:
  Docker Root Dir: /var/lib/docker
  Debug Mode: false
  Username: vikke
- Registry: &lt;https://index.docker.io/v1/&gt;
+ Registry: <https://index.docker.io/v1/>
  Labels:
  Experimental: false
  Insecure Registries:
@@ -1169,7 +1169,7 @@ Server:
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
 <span class='slacklog-name'>raa0121</span>
 <a class='slacklog-datetime' href='#1584929024.051900'>23日 11:03:45</a>
-<span class='slacklog-text'>`Backing Filesystem: &amp;lt;unknown&amp;gt;`</span>
+<span class='slacklog-text'>`Backing Filesystem: &lt;unknown&gt;`</span>
 </span>
 <span class='slacklog-message' id='1584929029.052100'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
@@ -1190,8 +1190,8 @@ Server:
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1584929245.053500'>23日 11:07:26</a>
-<span class='slacklog-text'>```ストレージ・ドライバを設定するには dockerd コマンドで --storage-driver=&amp;lt;名前&amp;gt; オプションを使うか、あるいは、 /etc/default/docker ファイル中の DOCKER_OPTS 行を編集します。```
-&lt;http://docs.docker.jp/engine/userguide/storagedriver/selectadriver.html#a-pluggable-storage-driver-architecture&gt;</span>
+<span class='slacklog-text'>```ストレージ・ドライバを設定するには dockerd コマンドで --storage-driver=&lt;名前&gt; オプションを使うか、あるいは、 /etc/default/docker ファイル中の DOCKER_OPTS 行を編集します。```
+<http://docs.docker.jp/engine/userguide/storagedriver/selectadriver.html#a-pluggable-storage-driver-architecture></span>
 </span>
 <span class='slacklog-message' id='1584929256.053800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1269,7 +1269,7 @@ Server:
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1584940078.061600'>23日 14:07:59</a>
-<span class='slacklog-text'>&lt;https://serverfault.com/questions/81262/how-can-you-shrink-an-xfs-filesystem&gt;
+<span class='slacklog-text'><https://serverfault.com/questions/81262/how-can-you-shrink-an-xfs-filesystem>
 xfs cannot be shrunk.これか。</span>
 </span>
 Polly 23日 15:20:43: <@U06ECBRTJ> has a poll for you!
@@ -1284,8 +1284,8 @@ Polly 23日 15:20:43: <@U06ECBRTJ> has a poll for you!
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1584944822.063700'>23日 15:27:03</a>
 <span class='slacklog-text'>これ見て、見付けた記事
-&lt;https://qiita.com/suecharo/items/a5e0cd3fe6d31443c536&gt;
-&lt;https://qiita.com/homines22/items/6d28461d97906e42f57c&gt;</span>
+<https://qiita.com/suecharo/items/a5e0cd3fe6d31443c536>
+<https://qiita.com/homines22/items/6d28461d97906e42f57c></span>
 </span>
 <span class='slacklog-message' id='1584945598.064400'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -1297,7 +1297,7 @@ Polly 23日 15:20:43: <@U06ECBRTJ> has a poll for you!
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
 <span class='slacklog-name'>koron</span>
 <a class='slacklog-datetime' href='#1584945670.064700'>23日 15:41:11</a>
-<span class='slacklog-text'>&lt;https://goharbor.io/&gt;</span>
+<span class='slacklog-text'><https://goharbor.io/></span>
 </span>
 <span class='slacklog-message' id='1584945981.065100'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>

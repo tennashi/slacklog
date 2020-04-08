@@ -17,8 +17,8 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年04月
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
 <span class='slacklog-name'>ycino</span>
 <a class='slacklog-datetime' href='#1585728411.090400'>1日 17:06:52</a>
-<span class='slacklog-text'>```-zinit ice lucid wait&#34;0&#34; from&#34;gh-r&#34; as&#34;program&#34; bpick&#34;*darwin_amd64*&#34; mv&#34;efm-langserver -&amp;gt; ${ZPFX}/bin/efm-langserver&#34;
-+zinit ice lucid wait&#34;0&#34; from&#34;gh-r&#34; as&#34;program&#34; bpick&#34;*darwin_amd64*&#34; mv&#34;*/efm-langserver -&amp;gt; ${ZPFX}/bin/efm-langserver&#34;```
+<span class='slacklog-text'>```-zinit ice lucid wait"0" from"gh-r" as"program" bpick"*darwin_amd64*" mv"efm-langserver -&gt; ${ZPFX}/bin/efm-langserver"
++zinit ice lucid wait"0" from"gh-r" as"program" bpick"*darwin_amd64*" mv"*/efm-langserver -&gt; ${ZPFX}/bin/efm-langserver"```
 したんだけど、こんな場当たり的な対応でいいのかなぁ</span>
 </span>
 <span class='slacklog-message' id='1585730272.091700'>
@@ -45,7 +45,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年04月
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585739528.094600'>1日 20:12:09</a>
 <span class='slacklog-text'>自力だけど単純なのでオススメ
-```  nyagos.prompt = nyagos.eval(&#39;starship prompt 2&amp;gt; nul&#39;) .. &#39; &#39;```
+```  nyagos.prompt = nyagos.eval('starship prompt 2&gt; nul') .. ' '```
 </span>
 </span>
 <span class='slacklog-message' id='1585739627.095600'>
@@ -78,7 +78,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年04月
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585740016.099900'>1日 20:20:17</a>
 <span class='slacklog-text'>あ、そうだ、合せてfisherな人に聞きたいのですが
-&lt;https://starship.rs/ja-JP/config/#%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA&gt;
+<https://starship.rs/ja-JP/config/#%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA>
 の「高度なオプション」でのfishのパスロジックなんですが
 fishってなんか特殊なんでしたっけ?
 (知らべたら c/d/e/hoge/fugaみたいにするっぽいけど、よくわからなかった...)</span>
@@ -100,14 +100,14 @@ fishってなんか特殊なんでしたっけ?
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585742804.102300'>1日 21:06:45</a>
-<span class='slacklog-text'>&lt;https://i.gyazo.com/06d9ca8b55660f24cb234f462e70910d.png&gt;
+<span class='slacklog-text'><https://i.gyazo.com/06d9ca8b55660f24cb234f462e70910d.png>
 現状</span>
 </span>
 <span class='slacklog-message' id='1585743921.103000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
 <span class='slacklog-name'>yutakatay</span>
 <a class='slacklog-datetime' href='#1585743921.103000'>1日 21:25:22</a>
-<span class='slacklog-text'>&lt;https://fromatom.hatenablog.com/entry/2020/03/31/135410&gt;
+<span class='slacklog-text'><https://fromatom.hatenablog.com/entry/2020/03/31/135410>
 こういうのやりたいけど、お手手でもってきちゃうw</span>
 </span>
 <span class='slacklog-message' id='1585744502.103800'>
@@ -126,7 +126,7 @@ fishってなんか特殊なんでしたっけ?
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
 <span class='slacklog-name'>luma</span>
 <a class='slacklog-datetime' href='#1585744907.104500'>1日 21:41:48</a>
-<span class='slacklog-text'>&amp;gt; 不完全ならfzf
+<span class='slacklog-text'>&gt; 不完全ならfzf
 いいなこれ</span>
 </span>
 <span class='slacklog-message' id='1585744915.104700'>
@@ -292,12 +292,12 @@ set runtimepath^=~/.vim/plugged/fzf-preview.vim```
 で
 
 ```Error detected while processing function fzf_preview#initializer#initialize[28]..fzf_preview#pa
-rameter#build_parameter[1]..&amp;lt;SNR&amp;gt;35_locationlist:
+rameter#build_parameter[1]..&lt;SNR&gt;35_locationlist:
 line    2:
 E684: list index out of range: 0
 E116: Invalid arguments for function split
 E116: Invalid arguments for function len
-E15: Invalid expression: len(split(resource[0], &#39;:&#39;)) == 1
+E15: Invalid expression: len(split(resource[0], ':')) == 1
 Error detected while processing function fzf_preview#runner#fzf_run:
 line    2:
 E715: Dictionary required
@@ -371,7 +371,7 @@ E715: Dictionary required```</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
 <span class='slacklog-name'>johejo</span>
 <a class='slacklog-datetime' href='#1585888447.130500'>3日 13:34:08</a>
-<span class='slacklog-text'>ripgrep インデックスを持つことを検討してるのか... すごいな &lt;https://github.com/BurntSushi/ripgrep/issues/1497&gt;</span>
+<span class='slacklog-text'>ripgrep インデックスを持つことを検討してるのか... すごいな <https://github.com/BurntSushi/ripgrep/issues/1497></span>
 </span>
 <span class='slacklog-message' id='1585888544.131300'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -396,8 +396,8 @@ E715: Dictionary required```</span>
 <span class='slacklog-name'>johejo</span>
 <a class='slacklog-datetime' href='#1585888895.134900'>3日 13:41:36</a>
 <span class='slacklog-text'>rustで検索エンジン作ってるプロジェクト結構あるみたいだからこういうのを埋め込んだりするのかな... それとも完全オリジナル実装なのか
-&lt;https://github.com/tantivy-search/tantivy&gt;
-&lt;https://github.com/meilisearch/MeiliSearch&gt;</span>
+<https://github.com/tantivy-search/tantivy>
+<https://github.com/meilisearch/MeiliSearch></span>
 </span>
 <span class='slacklog-message' id='1585889153.135600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -411,7 +411,7 @@ E715: Dictionary required```</span>
 <a class='slacklog-datetime' href='#1585889377.136700'>3日 13:49:38</a>
 <span class='slacklog-text'>最近だとsonicなんてのも出ましたね
 これもRustだ
-&lt;https://github.com/valeriansaliou/sonic&gt;</span>
+<https://github.com/valeriansaliou/sonic></span>
 </span>
 <span class='slacklog-message' id='1585889428.137800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
@@ -423,7 +423,7 @@ E715: Dictionary required```</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
 <span class='slacklog-name'>johejo</span>
 <a class='slacklog-datetime' href='#1585889652.138900'>3日 13:54:13</a>
-<span class='slacklog-text'>russ coxのcodesearchのpocを参考にするって感じか &lt;https://github.com/google/codesearch&gt;</span>
+<span class='slacklog-text'>russ coxのcodesearchのpocを参考にするって感じか <https://github.com/google/codesearch></span>
 </span>
 <span class='slacklog-message' id='1585889936.141600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
@@ -467,7 +467,7 @@ GoとかJavaは読むだけならなんちゃってでも割といけますがRu
 <span class='slacklog-name'>yutakatay</span>
 <a class='slacklog-datetime' href='#1585892342.147500'>3日 14:39:03</a>
 <span class='slacklog-text'>私はテーマ自作ですが、ここで紹介してもらった
-&lt;https://github.com/romkatv/powerlevel10k&gt;
+<https://github.com/romkatv/powerlevel10k>
 が一番よかった気がしてます</span>
 </span>
 <span class='slacklog-message' id='1585892381.148000'>
@@ -500,7 +500,7 @@ GoとかJavaは読むだけならなんちゃってでも割といけますがRu
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585892902.150800'>3日 14:48:23</a>
-<span class='slacklog-text'>&lt;https://github.com/romkatv/gitstatus&gt;
+<span class='slacklog-text'><https://github.com/romkatv/gitstatus>
 もある</span>
 </span>
 <span class='slacklog-message' id='1585892999.152200'>
@@ -521,7 +521,7 @@ GoとかJavaは読むだけならなんちゃってでも割といけますがRu
 <span class='slacklog-name'>takets</span>
 <a class='slacklog-datetime' href='#1585893173.153000'>3日 14:52:54</a>
 <span class='slacklog-text'>pureがシンプルですき
-&lt;https://github.com/sindresorhus/pure&gt;</span>
+<https://github.com/sindresorhus/pure></span>
 </span>
 <span class='slacklog-message' id='1585893477.153400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-23/367829135376_7c7dc2cc9adecdef7fd3_48.png'>
@@ -534,14 +534,14 @@ GoとかJavaは読むだけならなんちゃってでも割といけますがRu
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585893608.153800'>3日 15:00:09</a>
-<span class='slacklog-text'>&lt;https://github.com/starship/starship&gt;
+<span class='slacklog-text'><https://github.com/starship/starship>
 シェルがなんであれ、ラクはラクだな</span>
 </span>
 <span class='slacklog-message' id='1585893725.155200'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
 <span class='slacklog-name'>yutakatay</span>
 <a class='slacklog-datetime' href='#1585893725.155200'>3日 15:02:06</a>
-<span class='slacklog-text'>個人的には  powerlevel10k &amp;gt; starshipな感じですね
+<span class='slacklog-text'>個人的には  powerlevel10k &gt; starshipな感じですね
 pureはシンプルでちょっと比較できない感じ</span>
 </span>
 <span class='slacklog-message' id='1585893757.155700'>
@@ -701,7 +701,7 @@ pureはシンプルでちょっと比較できない感じ</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
 <span class='slacklog-name'>yutakatay</span>
 <a class='slacklog-datetime' href='#1585921076.181300'>3日 22:37:57</a>
-<span class='slacklog-text'>&lt;https://github.com/high-moctane/nextword/releases/tag/v0.0.5&gt;
+<span class='slacklog-text'><https://github.com/high-moctane/nextword/releases/tag/v0.0.5>
 Nextwordバイナリーリリースしてくれるようになった :tada:</span>
 </span>
 <span class='slacklog-message' id='1585921256.181600'>
@@ -740,7 +740,7 @@ Nextwordバイナリーリリースしてくれるようになった :tada:</spa
 <a class='slacklog-datetime' href='#1586084702.184500'>5日 20:05:03</a>
 <span class='slacklog-text'>うーん？
 ```$ nextword
-2020/04/05 20:03:39 &#34;NEXTWORD_DATA_PATH&#34; environment variable is not set
+2020/04/05 20:03:39 "NEXTWORD_DATA_PATH" environment variable is not set
 
 $ echo $NEXTWORD_DATA_PATH
 /Users/yuki_yano/.config/nextword/nextword-data
@@ -804,7 +804,7 @@ $ \ls $NEXTWORD_DATA_PATH
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
 <span class='slacklog-name'>luma</span>
 <a class='slacklog-datetime' href='#1586085116.190000'>5日 20:11:57</a>
-<span class='slacklog-text'>exportされてるか調べるなら `bash -c &#34;echo \$NEXTWORD_DATA_PATH&#34;` とかですか</span>
+<span class='slacklog-text'>exportされてるか調べるなら `bash -c "echo \$NEXTWORD_DATA_PATH"` とかですか</span>
 </span>
 <span class='slacklog-message' id='1586085130.190400'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -816,7 +816,7 @@ $ \ls $NEXTWORD_DATA_PATH
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
 <span class='slacklog-name'>ycino</span>
 <a class='slacklog-datetime' href='#1586085188.191100'>5日 20:13:09</a>
-<span class='slacklog-text'>```zinit ice lucid wait&#34;0&#34; from&#34;gh-r&#34; as&#34;program&#34; bpick&#34;*darwin_amd64*&#34; mv&#34;*/nextword -&amp;gt; ${ZPFX}/bin/nextword&#34; atinit&#34;export NEXTWORD_DATA_PATH=\&#34;$HOME/.config/nextword/nextword-data\&#34;&#34;
+<span class='slacklog-text'>```zinit ice lucid wait"0" from"gh-r" as"program" bpick"*darwin_amd64*" mv"*/nextword -&gt; ${ZPFX}/bin/nextword" atinit"export NEXTWORD_DATA_PATH=\"$HOME/.config/nextword/nextword-data\""
 zinit light high-moctane/nextword```
 とりあえずこれで無事いけたけど、coc-nextwordが候補に出ない感じがする</span>
 </span>
@@ -824,7 +824,7 @@ zinit light high-moctane/nextword```
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1586085214.191600'>5日 20:13:35</a>
-<span class='slacklog-text'>&lt;https://www.atmarkit.co.jp/ait/articles/1801/12/news015.html&gt;</span>
+<span class='slacklog-text'><https://www.atmarkit.co.jp/ait/articles/1801/12/news015.html></span>
 </span>
 <span class='slacklog-message' id='1586085246.192200'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -885,7 +885,7 @@ zinit light high-moctane/nextword```
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
 <span class='slacklog-name'>kuu</span>
 <a class='slacklog-datetime' href='#1586141325.199000'>6日 11:48:46</a>
-<span class='slacklog-text'>&lt;https://github.com/dohq/dotfiles/blob/master/scripts/i3-get-window-criteria.sh&gt;
+<span class='slacklog-text'><https://github.com/dohq/dotfiles/blob/master/scripts/i3-get-window-criteria.sh>
 これ借りてみてたけど早速役に立った</span>
 </span>
 <span class='slacklog-message' id='1586141350.199700'>
@@ -899,13 +899,13 @@ zinit light high-moctane/nextword```
 <span class='slacklog-name'>yutakatay</span>
 <a class='slacklog-datetime' href='#1586144922.200600'>6日 12:48:43</a>
 <span class='slacklog-text'>いろいろ問題があったtmuxのappimageバージョンがまともに動くようになった :blob_tada:
-&lt;https://github.com/tmux/tmux/releases&gt;</span>
+<https://github.com/tmux/tmux/releases></span>
 </span>
 <span class='slacklog-message' id='1586170264.202500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
 <span class='slacklog-name'>yutakatay</span>
 <a class='slacklog-datetime' href='#1586170264.202500'>6日 19:51:05</a>
-<span class='slacklog-text'>&lt;https://github.com/nivekuil/rip&gt;
+<span class='slacklog-text'><https://github.com/nivekuil/rip>
 安全rmコマンド（ゴミ箱コマンド）を自作からこいつに切り替えた。
 別に不便はしてなかったけど、なんとなく</span>
 </span>

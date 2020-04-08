@@ -12,14 +12,14 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
 <span class='slacklog-name'>nao</span>
 <a class='slacklog-datetime' href='#1585730502.124400'>1日 17:41:43</a>
 <span class='slacklog-text'>（今更）
-&amp;gt; [...document.querySelectorAll(“div”)].map(x =&amp;gt; x.nodeName) 
-脳死で `[].slice.apply(document.querySelectorAll(&#34;div&#34;)).map(function(x) { return x.nodeName;})` してました。困ったときの `[].slice.apply` による配列化はよくやります。</span>
+&gt; [...document.querySelectorAll(“div”)].map(x =&gt; x.nodeName) 
+脳死で `[].slice.apply(document.querySelectorAll("div")).map(function(x) { return x.nodeName;})` してました。困ったときの `[].slice.apply` による配列化はよくやります。</span>
 </span>
 <span class='slacklog-message' id='1585730644.124900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-27/810669518512_bceade75b16214a6102c_48.jpg'>
 <span class='slacklog-name'>nao</span>
 <a class='slacklog-datetime' href='#1585730644.124900'>1日 17:44:05</a>
-<span class='slacklog-text'>丁寧にやると `Array.prototype.slice.apply(document.querySelectorAll(&#34;div&#34;))`</span>
+<span class='slacklog-text'>丁寧にやると `Array.prototype.slice.apply(document.querySelectorAll("div"))`</span>
 </span>
 <span class='slacklog-message' id='1585732826.126100'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -33,7 +33,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1586145272.127700'>6日 12:54:33</a>
 <span class='slacklog-text'>jsって `;`があるなしで挙動が変わる…？
-&lt;https://qiita.com/otthi/items/ceec62d5a117678649e9&gt;</span>
+<https://qiita.com/otthi/items/ceec62d5a117678649e9></span>
 </span>
 <span class='slacklog-message' id='1586145299.128000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -117,7 +117,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
 <span class='slacklog-name'>heavenshell</span>
 <a class='slacklog-datetime' href='#1586145515.134600'>6日 12:58:36</a>
-<span class='slacklog-text'>&lt;https://prettier.io/docs/en/options.html#semicolons&gt;</span>
+<span class='slacklog-text'><https://prettier.io/docs/en/options.html#semicolons></span>
 </span>
 <span class='slacklog-message' id='1586145520.135100'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
@@ -147,8 +147,8 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
 <span class='slacklog-name'>thinca</span>
 <a class='slacklog-datetime' href='#1586145627.137400'>6日 13:00:28</a>
-<span class='slacklog-text'>`&#34;use strict&#34;` した時に省略したらエラーになるようにしていれば派閥分かれなかったと思う
-と思ったけど `&#34;use strict&#34;` 読んだ時点でパースは終わってるから無理か…</span>
+<span class='slacklog-text'>`"use strict"` した時に省略したらエラーになるようにしていれば派閥分かれなかったと思う
+と思ったけど `"use strict"` 読んだ時点でパースは終わってるから無理か…</span>
 </span>
 <span class='slacklog-message' id='1586145726.138300'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
@@ -306,7 +306,7 @@ Rubyの方が疲れる・・・</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
 <span class='slacklog-name'>ycino</span>
 <a class='slacklog-datetime' href='#1586146407.151200'>6日 13:13:28</a>
-<span class='slacklog-text'>&lt;https://github.com/ruby-formatter/rufo&gt; がデファクトになってほしいってずっと言ってる</span>
+<span class='slacklog-text'><https://github.com/ruby-formatter/rufo> がデファクトになってほしいってずっと言ってる</span>
 </span>
 <span class='slacklog-message' id='1586146446.152000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -388,7 +388,7 @@ Rubyの方が疲れる・・・</span>
 以下のコードでActionがswitchケースを網羅してるか型でチェックするみたいなのをやってるんですけど
 ```type Action = A | B
 
-const reducer = (action: Action) =&amp;gt; {
+const reducer = (action: Action) =&gt; {
   switch (action) {
     case A: {
       return
@@ -409,7 +409,7 @@ const reducer = (action: Action) =&amp;gt; {
 <span class='slacklog-text'>Union型じゃないと `action` の型が `never` に確定されないの、どうしようもないですよねぇ
 ```type Action = A
 
-const reducer = (action: Action) =&amp;gt; {
+const reducer = (action: Action) =&gt; {
   switch (action) {
     case A: {
       return
@@ -442,12 +442,12 @@ const reducer = (action: Action) =&amp;gt; {
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
 <span class='slacklog-name'>lambdalisue</span>
 <a class='slacklog-datetime' href='#1586149197.160700'>6日 13:59:58</a>
-<span class='slacklog-text'>```type Action = &#34;A&#34;;
+<span class='slacklog-text'>```type Action = "A";
 
-const r = (action: Action) =&amp;gt; {
+const r = (action: Action) =&gt; {
   switch (action) {
-    case &#34;A&#34;: {
-      return &#34;Hello&#34;;
+    case "A": {
+      return "Hello";
     }
     default: {
       const _: never = action;
@@ -465,12 +465,12 @@ const r = (action: Action) =&amp;gt; {
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
 <span class='slacklog-name'>lambdalisue</span>
 <a class='slacklog-datetime' href='#1586149238.161700'>6日 14:00:39</a>
-<span class='slacklog-text'>```type Action = &#34;A&#34; | &#34;B&#34;;
+<span class='slacklog-text'>```type Action = "A" | "B";
 
-const r = (action: Action) =&amp;gt; {
+const r = (action: Action) =&gt; {
   switch (action) {
-    case &#34;A&#34;: {
-      return &#34;Hello&#34;;
+    case "A": {
+      return "Hello";
     }
     default: {
       const _: never = action;
@@ -494,15 +494,15 @@ const r = (action: Action) =&amp;gt; {
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
 <span class='slacklog-name'>lambdalisue</span>
 <a class='slacklog-datetime' href='#1586149258.162700'>6日 14:00:59</a>
-<span class='slacklog-text'>```type Action = &#34;A&#34; | &#34;B&#34;;
+<span class='slacklog-text'>```type Action = "A" | "B";
 
-const r = (action: Action) =&amp;gt; {
+const r = (action: Action) =&gt; {
   switch (action) {
-    case &#34;A&#34;: {
-      return &#34;Hello&#34;;
+    case "A": {
+      return "Hello";
     }
-    case &#34;B&#34;: {
-      return &#34;Hello&#34;;
+    case "B": {
+      return "Hello";
     }
     default: {
       const _: never = action;

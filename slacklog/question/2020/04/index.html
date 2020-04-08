@@ -13,7 +13,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
 <a class='slacklog-datetime' href='#1585731172.102200'>1日 17:52:53</a>
 <span class='slacklog-text'>`質問`
 シェルでエスケープコード混りの文字で表示文字だけを取得する定番の方法ってなにがあるでしょう?
-rel &lt;#CNX3F8RFC|dotfiles&gt;</span>
+rel <#CNX3F8RFC|dotfiles></span>
 </span>
 <span class='slacklog-message' id='1585731310.103700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -25,7 +25,7 @@ rel &lt;#CNX3F8RFC|dotfiles&gt;</span>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>itchyny</span>
 <a class='slacklog-datetime' href='#1585731635.103900'>1日 18:00:36</a>
-<span class='slacklog-text'>`sed $&#39;s|\x1B\\[[0-9;]*[a-zA-Z]||g&#39;` こういうやつですか</span>
+<span class='slacklog-text'>`sed $'s|\x1B\\[[0-9;]*[a-zA-Z]||g'` こういうやつですか</span>
 </span>
 <span class='slacklog-message' id='1585732619.104600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -52,16 +52,16 @@ scriptコマンドとかでとったログのエスケープ文字とかも結�
 <span class='slacklog-name'>fumi</span>
 <a class='slacklog-datetime' href='#1585766908.109300'>2日 03:48:29</a>
 <span class='slacklog-text'>すでにご存知かもしれませんが ↓ の「カーソルの位置」のあたりとか参考になるでしょうか？
-&lt;https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA&gt;
+<https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA>
 
 ```rightprompt()
 {
-    printf &#34;%*s&#34; $COLUMNS &#34;right prompt&#34;
+    printf "%*s" $COLUMNS "right prompt"
 }
 
-export PS1=&#39;\[$(tput sc; rightprompt; tput rc)\]left prompt &amp;gt; &#39;```
+export PS1='\[$(tput sc; rightprompt; tput rc)\]left prompt &gt; '```
 PS1 では `\[` `\]` で囲まれている部分は non-printing characters となります文字数にカウントされません
-&lt;https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html&gt;</span>
+<https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html></span>
 </span>
 <span class='slacklog-message' id='1585774484.112000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -111,15 +111,15 @@ strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
                 {col} が省略されたときはゼロが使われる。{col} には計算を開始す
                 るスクリーン上の列の位置を指定する。これはタブ文字の幅の計算に
                 影響する。
-                計算にはカレントウィンドウのオプションが使用される。&#39;tabstop&#39;
-                や &#39;display&#39; のような表示を変更するようなオプションが影響す
+                計算にはカレントウィンドウのオプションが使用される。'tabstop'
+                や 'display' のような表示を変更するようなオプションが影響す
                 る。
                 {expr} に幅が曖昧 (Ambiguous) な東アジアの文字が含まれていると
-                きは、文字幅は &#39;ambiwidth&#39; の設定に依存する。
+                きは、文字幅は 'ambiwidth' の設定に依存する。
                 |strlen()|, |strwidth()|, |strchars()| も参照。
  
                 |method| としても使用できる:  
-                        GetText()-&amp;gt;strdisplaywidth()
+                        GetText()-&gt;strdisplaywidth()
 ```</span>
 </span>
 <span class='slacklog-message' id='1585825040.121200'>
@@ -133,7 +133,7 @@ strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
 <span class='slacklog-name'>tyru</span>
 <a class='slacklog-datetime' href='#1585825109.122500'>2日 19:58:30</a>
 <span class='slacklog-text'>まーでも用途的にしゃーない感はある…
-それこそ &lt;#CGABGC8LA|golang&gt; で言ってた DI の話じゃないけど、&amp;amp;tabstop, &amp;amp;ambiwidth とかを引数で受け付けるようにするとか</span>
+それこそ <#CGABGC8LA|golang> で言ってた DI の話じゃないけど、&amp;tabstop, &amp;ambiwidth とかを引数で受け付けるようにするとか</span>
 </span>
 <span class='slacklog-message' id='1585825114.122600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -175,8 +175,8 @@ strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
 <span class='slacklog-name'>thinca</span>
 <a class='slacklog-datetime' href='#1585825583.129900'>2日 20:06:24</a>
-<span class='slacklog-text'>1. 文字列を１文字単位で区切ります `split(str, &#39;\zs&#39;)`
-2. 各文字の幅を取ります `map(chars, &#39;[v:val, strdisplaywidth(v:val)]&#39;)`
+<span class='slacklog-text'>1. 文字列を１文字単位で区切ります `split(str, '\zs')`
+2. 各文字の幅を取ります `map(chars, '[v:val, strdisplaywidth(v:val)]')`
 3. 目的の長さ未満になるところを探してそこまでをくっつけていきます</span>
 </span>
 <span class='slacklog-message' id='1585825694.130400'>
@@ -184,7 +184,7 @@ strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
 <span class='slacklog-name'>thinca</span>
 <a class='slacklog-datetime' href='#1585825694.130400'>2日 20:08:15</a>
 <span class='slacklog-text'>そのようにしてあれやこれやとがんばったのがこちらになります
-&lt;https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415&gt;</span>
+<https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415></span>
 </span>
 <span class='slacklog-message' id='1585825704.130800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -208,7 +208,7 @@ strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
 <span class='slacklog-name'>thinca</span>
 <a class='slacklog-datetime' href='#1585825786.133300'>2日 20:09:47</a>
-<span class='slacklog-text'>ドキュメントはこちら &lt;https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268&gt;</span>
+<span class='slacklog-text'>ドキュメントはこちら <https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268></span>
 </span>
 <span class='slacklog-message' id='1585825788.133500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-17/331536821795_2102b9fe65a8287cf20b_48.jpg'>

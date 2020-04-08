@@ -23,7 +23,7 @@ title: vim-jp.slack.com log - &#35lsp - 2020年04月
 2. 補完が行なわれるバッファでキー入力開始
 3. 補完の途中の状態でC-eなどで補完キャンセル
 4. そのままinsert modeの状態でスペースを入力
-```inoremap &amp;lt;expr&amp;gt; &amp;lt;C-e&amp;gt; pumvisible() ? asyncomplete#cancel_popup() : &#34;\&amp;lt;C-e&amp;gt;&#34;```
+```inoremap &lt;expr&gt; &lt;C-e&gt; pumvisible() ? asyncomplete#cancel_popup() : "\&lt;C-e&gt;"```
 確認したいこと: キャンセルした補完がポップアップされるか?
 (ポップアップが出ない、あるいは違う内容の補完が始まるなら、期待動作のはず、同じ補完が出ちゃうのはたぶん期待外動作)</span>
 </span>
@@ -37,7 +37,7 @@ title: vim-jp.slack.com log - &#35lsp - 2020年04月
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
 <span class='slacklog-name'>kuu</span>
 <a class='slacklog-datetime' href='#1585751531.108900'>1日 23:32:12</a>
-<span class='slacklog-text'>&lt;https://mattn.kaoriya.net/software/vim/20191231213507.htm&gt;
+<span class='slacklog-text'><https://mattn.kaoriya.net/software/vim/20191231213507.htm>
 この環境ほぼそのままなんですが、再現しないですねー</span>
 </span>
 <span class='slacklog-message' id='1585751543.109200'>
@@ -81,7 +81,7 @@ title: vim-jp.slack.com log - &#35lsp - 2020年04月
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/0c3ec8434af0d4cbcbd17bd51bcf1154.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
 <span class='slacklog-name'>kg8m</span>
 <a class='slacklog-datetime' href='#1585795104.114000'>2日 11:38:25</a>
-<span class='slacklog-text'>&lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585751019107900&gt;
+<span class='slacklog-text'><https://vim-jp.slack.com/archives/CQ57P4XU4/p1585751019107900>
 自分も再現しないですね……。 `g:asyncomplete_preprocessor` を自前でやってるのが理由かと思ってデフォルトでやってみましたが無事にポップアップは出ませんでした。</span>
 </span>
 <span class='slacklog-message' id='1585796114.115000'>
@@ -120,7 +120,7 @@ title: vim-jp.slack.com log - &#35lsp - 2020年04月
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585800489.118500'>2日 13:08:10</a>
-<span class='slacklog-text'>`81 C:\Users\&amp;lt;username&amp;gt;\.local\share\vim-lsp-settings\gopls\pkg\mod\&lt;http://golang.org|golang.org&gt;\x\tools@v0.0.0-20200316194252-fafb6e2e8a4a: Access is denied`</span>
+<span class='slacklog-text'>`81 C:\Users\&lt;username&gt;\.local\share\vim-lsp-settings\gopls\pkg\mod\<http://golang.org|golang.org>\x\tools@v0.0.0-20200316194252-fafb6e2e8a4a: Access is denied`</span>
 </span>
 <span class='slacklog-message' id='1585800908.118900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -213,7 +213,7 @@ title: vim-jp.slack.com log - &#35lsp - 2020年04月
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585802517.125700'>2日 13:41:58</a>
-<span class='slacklog-text'>&lt;https://gist.github.com/tsuyoshicho/0bab16b946cf4fbbb7c540ac03c18664&gt;
+<span class='slacklog-text'><https://gist.github.com/tsuyoshicho/0bab16b946cf4fbbb7c540ac03c18664>
 秘密(でもなんでもない) ログのfull</span>
 </span>
 <span class='slacklog-message' id='1585802601.126000'>
@@ -257,12 +257,12 @@ title: vim-jp.slack.com log - &#35lsp - 2020年04月
 <span class='slacklog-name'>yaegassy</span>
 <a class='slacklog-datetime' href='#1585803533.131000'>2日 13:58:54</a>
 <span class='slacklog-text'>こんなのでUbuntuのfocalで試しましたがvim-language-serverもpylsも普通にC-eのあとにスペースでポップアップはでませんでしたね。改めてlsp単体のasyncompleteの連携は問題なさそう
-```call plug#begin(&#39;~/.vim/plugged&#39;)
-Plug &#39;prabirshrestha/async.vim&#39;
-Plug &#39;prabirshrestha/vim-lsp&#39;
-Plug &#39;prabirshrestha/asyncomplete.vim&#39;
-Plug &#39;prabirshrestha/asyncomplete-lsp.vim&#39;
-Plug &#39;mattn/vim-lsp-settings&#39;
+```call plug#begin('~/.vim/plugged')
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'mattn/vim-lsp-settings'
 call plug#end()
 
 augroup LspMappings
@@ -272,14 +272,14 @@ augroup END
 
 function! s:lsp_common_mappings() abort
   setlocal omnifunc=lsp#complete
-  nmap &amp;lt;buffer&amp;gt; K &amp;lt;Plug&amp;gt;(lsp-hover)
-  nmap &amp;lt;buffer&amp;gt; &amp;lt;silent&amp;gt; [g &amp;lt;Plug&amp;gt;(lsp-previous-diagnostic)
-  nmap &amp;lt;buffer&amp;gt; &amp;lt;silent&amp;gt; ]g &amp;lt;Plug&amp;gt;(lsp-next-diagnostic)
-  nmap &amp;lt;buffer&amp;gt; gd &amp;lt;Plug&amp;gt;(lsp-definition)
+  nmap &lt;buffer&gt; K &lt;Plug&gt;(lsp-hover)
+  nmap &lt;buffer&gt; &lt;silent&gt; [g &lt;Plug&gt;(lsp-previous-diagnostic)
+  nmap &lt;buffer&gt; &lt;silent&gt; ]g &lt;Plug&gt;(lsp-next-diagnostic)
+  nmap &lt;buffer&gt; gd &lt;Plug&gt;(lsp-definition)
 endfunction
 
-inoremap &amp;lt;expr&amp;gt; &amp;lt;C-y&amp;gt; pumvisible() ? asyncomplete#close_popup() : &#34;\&amp;lt;C-y&amp;gt;&#34;
-inoremap &amp;lt;expr&amp;gt; &amp;lt;C-e&amp;gt; pumvisible() ? asyncomplete#cancel_popup() : &#34;\&amp;lt;C-e&amp;gt;&#34;```</span>
+inoremap &lt;expr&gt; &lt;C-y&gt; pumvisible() ? asyncomplete#close_popup() : "\&lt;C-y&gt;"
+inoremap &lt;expr&gt; &lt;C-e&gt; pumvisible() ? asyncomplete#cancel_popup() : "\&lt;C-e&gt;"```</span>
 </span>
 <span class='slacklog-message' id='1585803570.131500'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/a36a7ed02d64ce6f40a20ebfe0a9f59d.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-48.png'>
@@ -316,17 +316,17 @@ inoremap &amp;lt;expr&amp;gt; &amp;lt;C-e&amp;gt; pumvisible() ? asyncomplete#ca
 <span class='slacklog-name'>yaegassy</span>
 <a class='slacklog-datetime' href='#1585805243.133900'>2日 14:27:24</a>
 <span class='slacklog-text'>ちなみに雑にこれだけで試しました(asyncomplete-emojiのはREADMEにあるそのままのそれで)
-```call plug#begin(&#39;~/.vim/plugged&#39;)
-Plug &#39;prabirshrestha/asyncomplete.vim&#39;
-Plug &#39;prabirshrestha/asyncomplete-emoji.vim&#39;
+```call plug#begin('~/.vim/plugged')
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-emoji.vim'
 call plug#end()
 
-inoremap &amp;lt;expr&amp;gt; &amp;lt;C-e&amp;gt; pumvisible() ? asyncomplete#cancel_popup() : &#34;\&amp;lt;C-e&amp;gt;&#34;
+inoremap &lt;expr&gt; &lt;C-e&gt; pumvisible() ? asyncomplete#cancel_popup() : "\&lt;C-e&gt;"
 
 au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#emoji#get_source_options({
-    \ &#39;name&#39;: &#39;emoji&#39;,
-    \ &#39;whitelist&#39;: [&#39;*&#39;],
-    \ &#39;completor&#39;: function(&#39;asyncomplete#sources#emoji#completor&#39;),
+    \ 'name': 'emoji',
+    \ 'whitelist': ['*'],
+    \ 'completor': function('asyncomplete#sources#emoji#completor'),
     \ }))```</span>
 </span>
 <span class='slacklog-message' id='1585805330.134600'>
@@ -334,7 +334,7 @@ au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#source
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585805330.134600'>2日 14:28:51</a>
 <span class='slacklog-text'>こっちはこんな風でpythonで試し中ですがomni補完でも補完がスタートしない(server は running...)
-&lt;https://gist.github.com/tsuyoshicho/e8bc392f0c602432b9b43fa6380198d6&gt;</span>
+<https://gist.github.com/tsuyoshicho/e8bc392f0c602432b9b43fa6380198d6></span>
 </span>
 <span class='slacklog-message' id='1585805339.134800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -371,7 +371,7 @@ au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#source
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585805604.137600'>2日 14:33:25</a>
-<span class='slacklog-text'>&lt;https://gist.github.com/tsuyoshicho/7882722ea4a1cc6c706b9d82c3997be4&gt;
+<span class='slacklog-text'><https://gist.github.com/tsuyoshicho/7882722ea4a1cc6c706b9d82c3997be4>
 emoji入り</span>
 </span>
 <span class='slacklog-message' id='1585805799.139700'>
@@ -439,9 +439,9 @@ iskeywordは同じなんだけどなあ(未変更)</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585807552.146200'>2日 15:05:53</a>
-<span class='slacklog-text'>&lt;@U7TMPGWJ0&gt; さん、&lt;@U03C6TEAZ&gt; さん
+<span class='slacklog-text'><@U7TMPGWJ0> さん、<@U03C6TEAZ> さん
 issueとして出してはいるのですが、
-&lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585798671115100&gt;
+<https://vim-jp.slack.com/archives/CQ57P4XU4/p1585798671115100>
 は、やっぱりなにかしらの環境問題ですよね...</span>
 </span>
 <span class='slacklog-message' id='1585808656.146600'>
@@ -486,7 +486,7 @@ nestedが必要とかじゃないはずだと思うのですが...</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585811295.151800'>2日 16:08:16</a>
-<span class='slacklog-text'>&lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585802517125700&gt;</span>
+<span class='slacklog-text'><https://vim-jp.slack.com/archives/CQ57P4XU4/p1585802517125700></span>
 </span>
 <span class='slacklog-message' id='1585812886.153500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -505,8 +505,8 @@ nestedが必要とかじゃないはずだと思うのですが...</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585814384.155400'>2日 16:59:45</a>
-<span class='slacklog-text'>```2020/04/02 12:25:53:[&#34;s:on_stdout client option on_notification() error&#34;,&#34;Vim(call):E20: マークは設定されていません&#34;]
-2020/04/02 12:25:53:[&#34;&amp;lt;---(stderr)&#34;,3,&#34;clangd&#34;,[&#34;I[12:25:53.899] clangd version 10.0.0 \r&#34;,&#34;I[12:25:53.901] Working directory: C:\\Users\\&amp;lt;username&amp;gt;\r&#34;,&#34;I[12:25:53.901] argv[0]: C:\\Program Files\\LLVM\\bin\\clangd.exe\r&#34;,&#34;I[12:25:53.901] argv[1]: --background-index\r&#34;,&#34;I[12:25:53.901] argv[2]: -j=4\r&#34;,&#34;I[12:25:53.901] Starting LSP over stdin/stdout\r&#34;,&#34;I[12:25:53.901] &amp;lt;-- initialize(1)\r&#34;,&#34;I[12:25:53.910] --&amp;gt; reply:initialize(1) 8 ms\r&#34;,&#34;&#34;]]```
+<span class='slacklog-text'>```2020/04/02 12:25:53:["s:on_stdout client option on_notification() error","Vim(call):E20: マークは設定されていません"]
+2020/04/02 12:25:53:["&lt;---(stderr)",3,"clangd",["I[12:25:53.899] clangd version 10.0.0 \r","I[12:25:53.901] Working directory: C:\\Users\\&lt;username&gt;\r","I[12:25:53.901] argv[0]: C:\\Program Files\\LLVM\\bin\\clangd.exe\r","I[12:25:53.901] argv[1]: --background-index\r","I[12:25:53.901] argv[2]: -j=4\r","I[12:25:53.901] Starting LSP over stdin/stdout\r","I[12:25:53.901] &lt;-- initialize(1)\r","I[12:25:53.910] --&gt; reply:initialize(1) 8 ms\r",""]]```
 ここら変があやしい?</span>
 </span>
 <span class='slacklog-message' id='1585814428.155900'>
@@ -525,8 +525,8 @@ nestedが必要とかじゃないはずだと思うのですが...</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585814838.156900'>2日 17:07:19</a>
-<span class='slacklog-text'>```2020/04/02 17:03:51:[&#34;s:on_stdout client option on_notification() error&#34;,&#34;Vim(call):E20: マークは設定されていません&#34;]
-2020/04/02 17:03:51:[&#34;&amp;lt;---(stderr)&#34;,3,&#34;clangd&#34;,[&#34;I[17:03:51.380] clangd version 10.0.0 \r&#34;,&#34;I[17:03:51.382] Working directory: C:\\Users\\&amp;lt;username&amp;gt;\r&#34;,&#34;I[17:03:51.382] argv[0]: C:\\Program Files\\LLVM\\bin\\clangd.exe\r&#34;,&#34;I[17:03:51.382] Starting LSP over stdin/stdout\r&#34;,&#34;I[17:03:51.384] &amp;lt;-- initialize(1)\r&#34;,&#34;I[17:03:51.393] --&amp;gt; reply:initialize(1) 8 ms\r&#34;,&#34;&#34;]]```
+<span class='slacklog-text'>```2020/04/02 17:03:51:["s:on_stdout client option on_notification() error","Vim(call):E20: マークは設定されていません"]
+2020/04/02 17:03:51:["&lt;---(stderr)",3,"clangd",["I[17:03:51.380] clangd version 10.0.0 \r","I[17:03:51.382] Working directory: C:\\Users\\&lt;username&gt;\r","I[17:03:51.382] argv[0]: C:\\Program Files\\LLVM\\bin\\clangd.exe\r","I[17:03:51.382] Starting LSP over stdin/stdout\r","I[17:03:51.384] &lt;-- initialize(1)\r","I[17:03:51.393] --&gt; reply:initialize(1) 8 ms\r",""]]```
 オプションの設定を外してもかわらない...</span>
 </span>
 <span class='slacklog-message' id='1585814929.157400'>
@@ -540,20 +540,20 @@ nestedが必要とかじゃないはずだと思うのですが...</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585815129.157600'>2日 17:12:10</a>
-<span class='slacklog-text'>&lt;https://github.com/prabirshrestha/vim-lsp/blob/52539a54ae338993460205b4528d34caf175582e/autoload/lsp/client.vim#L102-L107&gt;
+<span class='slacklog-text'><https://github.com/prabirshrestha/vim-lsp/blob/52539a54ae338993460205b4528d34caf175582e/autoload/lsp/client.vim#L102-L107>
 でE20?</span>
 </span>
 <span class='slacklog-message' id='1585815922.158500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585815922.158500'>2日 17:25:23</a>
-<span class='slacklog-text'>どっかの行に素の `&#39;` とか ` があるか探したけど、当然ないよなあ...関数呼び出し?</span>
+<span class='slacklog-text'>どっかの行に素の `'` とか ` があるか探したけど、当然ないよなあ...関数呼び出し?</span>
 </span>
 <span class='slacklog-message' id='1585817189.158800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585817189.158800'>2日 17:46:30</a>
-<span class='slacklog-text'>&lt;https://github.com/prabirshrestha/vim-lsp/blob/46308234a2691824f2f3ad1fa8bc0086d4a3d4cf/autoload/lsp/ui/vim/references.vim#L226&gt;
+<span class='slacklog-text'><https://github.com/prabirshrestha/vim-lsp/blob/46308234a2691824f2f3ad1fa8bc0086d4a3d4cf/autoload/lsp/ui/vim/references.vim#L226>
 はあるが、呼ぶのはどこだ?</span>
 </span>
 <span class='slacklog-message' id='1585817616.159300'>
@@ -586,12 +586,12 @@ nestedが必要とかじゃないはずだと思うのですが...</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585818034.161000'>2日 18:00:35</a>
-<span class='slacklog-text'>```[{&#34;response&#34;:{&#34;data&#34;:{&#34;__data__&#34;:&#34;vim-lsp&#34;,&#34;server_name&#34;:&#34;clangd&#34;},&#34;message&#34;:&#34;configuration sent&#34;}}]
-[&#34;s:update_file_content()&#34;,2]
-[&#34;---&amp;gt;&#34;,3,&#34;clangd&#34;,{&#34;method&#34;:&#34;textDocument/didOpen&#34;,&#34;params&#34;:{&#34;textDocument&#34;:{&#34;uri&#34;:&#34;file:///C:/Users/&amp;lt;username&amp;gt;/tmp/test.c&#34;,&#34;version&#34;:1,&#34;languageId&#34;:&#34;c&#34;,&#34;text&#34;:&#34;#include &amp;lt;stdio.h&amp;gt;\n\nint\nmain(int argc, char* argv[]) {\n  // int a;\n  printf();\n  printf();\n  printf();\n  return 0;\n}\n&#34;}}}]
-[{&#34;response&#34;:{&#34;data&#34;:{&#34;path&#34;:&#34;file:///C:/Users/&amp;lt;username&amp;gt;/tmp/test.c&#34;,&#34;__data__&#34;:&#34;vim-lsp&#34;,&#34;filetype&#34;:&#34;c&#34;,&#34;server_name&#34;:&#34;clangd&#34;},&#34;message&#34;:&#34;textDocument/open sent&#34;}}]
-[{&#34;response&#34;:{&#34;data&#34;:{&#34;path&#34;:&#34;file:///C:/Users/&amp;lt;username&amp;gt;/tmp/test.c&#34;,&#34;__data__&#34;:&#34;vim-lsp&#34;,&#34;server_name&#34;:&#34;clangd&#34;},&#34;message&#34;:&#34;not dirty&#34;}}]
-[&#34;s:on_stdout client option on_notification() error&#34;,&#34;Vim(call):E20: マークは設定されていません&#34;]```
+<span class='slacklog-text'>```[{"response":{"data":{"__data__":"vim-lsp","server_name":"clangd"},"message":"configuration sent"}}]
+["s:update_file_content()",2]
+["---&gt;",3,"clangd",{"method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/&lt;username&gt;/tmp/test.c","version":1,"languageId":"c","text":"#include &lt;stdio.h&gt;\n\nint\nmain(int argc, char* argv[]) {\n  // int a;\n  printf();\n  printf();\n  printf();\n  return 0;\n}\n"}}}]
+[{"response":{"data":{"path":"file:///C:/Users/&lt;username&gt;/tmp/test.c","__data__":"vim-lsp","filetype":"c","server_name":"clangd"},"message":"textDocument/open sent"}}]
+[{"response":{"data":{"path":"file:///C:/Users/&lt;username&gt;/tmp/test.c","__data__":"vim-lsp","server_name":"clangd"},"message":"not dirty"}}]
+["s:on_stdout client option on_notification() error","Vim(call):E20: マークは設定されていません"]```
 こんな風ですね</span>
 </span>
 <span class='slacklog-message' id='1585818209.161300'>
@@ -604,7 +604,7 @@ nestedが必要とかじゃないはずだと思うのですが...</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585818210.161500'>2日 18:03:31</a>
-<span class='slacklog-text'>&lt;https://github.com/prabirshrestha/vim-lsp/blob/52539a54ae338993460205b4528d34caf175582e/autoload/lsp/client.vim#L102-L107&gt;</span>
+<span class='slacklog-text'><https://github.com/prabirshrestha/vim-lsp/blob/52539a54ae338993460205b4528d34caf175582e/autoload/lsp/client.vim#L102-L107></span>
 </span>
 <span class='slacklog-message' id='1585818221.161900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -622,10 +622,10 @@ nestedが必要とかじゃないはずだと思うのですが...</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585818454.163600'>2日 18:07:35</a>
-<span class='slacklog-text'>```User Autocommands for &#34;lsp_server_init&#34; の処理中にエラーが検出されました:
+<span class='slacklog-text'>```User Autocommands for "lsp_server_init" の処理中にエラーが検出されました:
 E20: マークは設定されていません
 E20: マークは設定されていません
-C:\Users\&amp;lt;username&amp;gt;\.cache\dein\.cache\.vimrc\.dein\autoload\yoink.vim の処理中にエラーが検出されました:
+C:\Users\&lt;username&gt;\.cache\dein\.cache\.vimrc\.dein\autoload\yoink.vim の処理中にエラーが検出されました:
 行   32:
 E117: 未知の関数です: cutlass#getVersion```
 おおう... yoinkとcutlass関係か</span>
@@ -670,7 +670,7 @@ E117: 未知の関数です: cutlass#getVersion```
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585818606.166000'>2日 18:10:07</a>
-<span class='slacklog-text'>&lt;https://github.com/svermeulen/vim-yoink/blob/20daf7d4cdc6a36eba1b87b0f8849859d6e3b23c/autoload/yoink.vim#L30-L35&gt;
+<span class='slacklog-text'><https://github.com/svermeulen/vim-yoink/blob/20daf7d4cdc6a36eba1b87b0f8849859d6e3b23c/autoload/yoink.vim#L30-L35>
 このキャッチがよくないんかな</span>
 </span>
 <span class='slacklog-message' id='1585818644.166500'>
@@ -685,15 +685,15 @@ E117: 未知の関数です: cutlass#getVersion```
 <a class='slacklog-datetime' href='#1585836587.168000'>2日 23:09:48</a>
 <span class='slacklog-text'>yoinkを切って(前のyankroundに戻して)、再度ログを取りましたら...
 
-```s:on_stdout client option on_notification() error Vim(call):E20: マークは設定されていません User Autocommands for &#34;lsp_server_init&#34;```
+```s:on_stdout client option on_notification() error Vim(call):E20: マークは設定されていません User Autocommands for "lsp_server_init"```
 今度は出所がわからないorz
 
-```                    &#34; call client&#39;s on_notification first
+```                    " call client's on_notification first
                     try
-                      call l:ctx[&#39;opts&#39;][&#39;on_notification&#39;](a:id, l:on_notification_data, &#39;on_notification&#39;)
+                      call l:ctx['opts']['on_notification'](a:id, l:on_notification_data, 'on_notification')
                     catch
-                      echomsg &#39;s:on_stdout client option on_notification() error&#39; v:exception v:throwpoint
-                      call lsp#log(&#39;s:on_stdout client option on_notification() error&#39;, v:exception ,v:throwpoint)
+                      echomsg 's:on_stdout client option on_notification() error' v:exception v:throwpoint
+                      call lsp#log('s:on_stdout client option on_notification() error', v:exception ,v:throwpoint)
                     endtry```</span>
 </span>
 <span class='slacklog-message' id='1585836676.168300'>
@@ -773,7 +773,7 @@ E117: 未知の関数です: cutlass#getVersion```
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585837533.173400'>2日 23:25:34</a>
 <span class='slacklog-text'>はいそうです
-&lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585836587168000&gt;</span>
+<https://vim-jp.slack.com/archives/CQ57P4XU4/p1585836587168000></span>
 </span>
 <span class='slacklog-message' id='1585837562.174000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -964,13 +964,13 @@ diagnosticsが報告されるくらいのタイミングで fzf を開くと再�
 vim-lspがpopupでdiagnosticsのメッセージを表示している状態
 ```let g:lsp_diagnostics_float_cursor = 1```
 かつ、同時にfzfがpopup windowを表示しようとしたとき
-```let g:fzf_layout = { &#39;window&#39;: {
-      \ &#39;width&#39;: 0.6,
-      \ &#39;height&#39;: 0.6,
-      \ &#39;border&#39;: &#39;ascii&#39;
+```let g:fzf_layout = { 'window': {
+      \ 'width': 0.6,
+      \ 'height': 0.6,
+      \ 'border': 'ascii'
       \ } }```
 に必ずエラー
-```Error detected while processing BufWipeout Autocommands for &#34;*&#34;:
+```Error detected while processing BufWipeout Autocommands for "*":
 E994: Not allowed in a popup window```
 となってしまうんだ…</span>
 </span>
@@ -978,7 +978,7 @@ E994: Not allowed in a popup window```
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
 <span class='slacklog-name'>kyoh86</span>
 <a class='slacklog-datetime' href='#1585960026.196100'>4日 09:27:07</a>
-<span class='slacklog-text'>`diagnostics_float_cursor` 、`&amp;lt;plug&amp;gt;(lsp-hover)` とカブってしまって邪魔になりがちだし、
+<span class='slacklog-text'>`diagnostics_float_cursor` 、`&lt;plug&gt;(lsp-hover)` とカブってしまって邪魔になりがちだし、
 オフにしておいたほうが良いんだろうな…ちょっと使いづらすぎる</span>
 </span>
 <span class='slacklog-message' id='1585960353.197000'>
@@ -1111,11 +1111,11 @@ E994: Not allowed in a popup window```
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1585999877.218600'>4日 20:31:18</a>
-<span class='slacklog-text'>```    call dein#add(&#39;prabirshrestha/async.vim&#39;)
-    call dein#add(&#39;prabirshrestha/vim-lsp&#39;)
-    call dein#add(&#39;mattn/vim-lsp-settings&#39;, {&#39;merged&#39;: 0})
-    call dein#add(&#39;Shougo/deoplete.nvim&#39;)
-    call dein#add(&#39;lighttiger2505/deoplete-vim-lsp&#39;)```
+<span class='slacklog-text'>```    call dein#add('prabirshrestha/async.vim')
+    call dein#add('prabirshrestha/vim-lsp')
+    call dein#add('mattn/vim-lsp-settings', {'merged': 0})
+    call dein#add('Shougo/deoplete.nvim')
+    call dein#add('lighttiger2505/deoplete-vim-lsp')```
 インストールしています。</span>
 </span>
 <span class='slacklog-message' id='1586000006.219300'>
@@ -1171,14 +1171,14 @@ E994: Not allowed in a popup window```
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586001139.225700'>4日 20:52:20</a>
 <span class='slacklog-text'>僕が lsp 関連で入れてるのは
-```Plug &#39;prabirshrestha/async.vim&#39;
-Plug &#39;prabirshrestha/asyncomplete.vim&#39;
-Plug &#39;prabirshrestha/asyncomplete-lsp.vim&#39;
-Plug &#39;prabirshrestha/vim-lsp&#39;
-Plug &#39;mattn/vim-lsp-settings&#39;
-Plug &#39;mattn/vim-lsp-icons&#39;
-Plug &#39;hrsh7th/vim-vsnip&#39;
-Plug &#39;hrsh7th/vim-vsnip-integ&#39;
+```Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-lsp-icons'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
 ````</span>
 </span>
 <span class='slacklog-message' id='1586001181.225900'>
@@ -1192,10 +1192,10 @@ Plug &#39;hrsh7th/vim-vsnip-integ&#39;
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1586001560.227100'>4日 20:59:21</a>
 <span class='slacklog-text'>マニュアルに書いてある通り
-```    call dein#add(&#39;prabirshrestha/asyncomplete.vim&#39;)
-    call dein#add(&#39;prabirshrestha/asyncomplete-lsp.vim&#39;)
-&#34;    call dein#add(&#39;Shougo/deoplete.nvim&#39;)
-&#34;    call dein#add(&#39;lighttiger2505/deoplete-vim-lsp&#39;)```
+```    call dein#add('prabirshrestha/asyncomplete.vim')
+    call dein#add('prabirshrestha/asyncomplete-lsp.vim')
+"    call dein#add('Shougo/deoplete.nvim')
+"    call dein#add('lighttiger2505/deoplete-vim-lsp')```
 したら動きました。deoplete.nvimの記述もありましたが、asyncomplete.vimの記述を取ってみました。</span>
 </span>
 <span class='slacklog-message' id='1586001899.227600'>
@@ -1214,7 +1214,7 @@ Plug &#39;hrsh7th/vim-vsnip-integ&#39;
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
 <span class='slacklog-name'>heavenshell</span>
 <a class='slacklog-datetime' href='#1586001921.228300'>4日 21:05:22</a>
-<span class='slacklog-text'>&lt;https://github.com/Shougo/deoplete.nvim#install&gt;</span>
+<span class='slacklog-text'><https://github.com/Shougo/deoplete.nvim#install></span>
 </span>
 <span class='slacklog-message' id='1586008497.229100'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1232,7 +1232,7 @@ Plug &#39;hrsh7th/vim-vsnip-integ&#39;
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/a12373843afc54857a845404bdd5f5cb.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-48.png'>
 <span class='slacklog-name'>lighttiger2505</span>
 <a class='slacklog-datetime' href='#1586072379.231900'>5日 16:39:40</a>
-<span class='slacklog-text'>&lt;@UEA8SS1RN&gt; ↑今更ですが。</span>
+<span class='slacklog-text'><@UEA8SS1RN> ↑今更ですが。</span>
 </span>
 <span class='slacklog-message' id='1586072443.233000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1263,7 +1263,7 @@ Plug &#39;hrsh7th/vim-vsnip-integ&#39;
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1586083377.234000'>5日 19:42:58</a>
-<span class='slacklog-text'>&lt;https://qiita.com/yaegassy/items/8b3429196ea16cf754c0&gt;
+<span class='slacklog-text'><https://qiita.com/yaegassy/items/8b3429196ea16cf754c0>
 ネ申様ありがとう</span>
 </span>
 <span class='slacklog-message' id='1586097100.246000'>
@@ -1298,7 +1298,7 @@ vim-lspの補完という点に限定すれば、おそらくasyncomplete のが
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586266429.252100'>7日 22:33:50</a>
-<span class='slacklog-text'>&lt;https://github.com/golang/tools/pull/220&gt;</span>
+<span class='slacklog-text'><https://github.com/golang/tools/pull/220></span>
 </span>
 <span class='slacklog-message' id='1586266434.252400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1454,7 +1454,7 @@ vim-lspの補完という点に限定すれば、おそらくasyncomplete のが
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/f3dd644c8cfb83c94d46cf3c44604cda.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0022-48.png'>
 <span class='slacklog-name'>daisuzu</span>
 <a class='slacklog-datetime' href='#1586271383.264700'>7日 23:56:24</a>
-<span class='slacklog-text'>&lt;https://github.com/hrsh7th/vim-vsnip&gt; が必要でした</span>
+<span class='slacklog-text'><https://github.com/hrsh7th/vim-vsnip> が必要でした</span>
 </span>
 <span class='slacklog-message' id='1586271405.265000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1473,14 +1473,14 @@ vim-lspの補完という点に限定すれば、おそらくasyncomplete のが
 <span class='slacklog-name'>daisuzu</span>
 <a class='slacklog-datetime' href='#1586271553.267200'>7日 23:59:14</a>
 <span class='slacklog-text'>あとは
-```imap &amp;lt;expr&amp;gt; &amp;lt;C-j&amp;gt;   vsnip#available(1)  ? &#39;&amp;lt;Plug&amp;gt;(vsnip-expand)&#39;         : &#39;&amp;lt;C-j&amp;gt;&#39;
-imap &amp;lt;expr&amp;gt; &amp;lt;C-l&amp;gt;   vsnip#available(1)  ? &#39;&amp;lt;Plug&amp;gt;(vsnip-expand-or-jump)&#39; : &#39;&amp;lt;C-l&amp;gt;&#39;
-smap &amp;lt;expr&amp;gt; &amp;lt;C-l&amp;gt;   vsnip#available(1)  ? &#39;&amp;lt;Plug&amp;gt;(vsnip-expand-or-jump)&#39; : &#39;&amp;lt;C-l&amp;gt;&#39;
-imap &amp;lt;expr&amp;gt; &amp;lt;Tab&amp;gt;   vsnip#available(1)  ? &#39;&amp;lt;Plug&amp;gt;(vsnip-jump-next)&#39;      : &#39;&amp;lt;Tab&amp;gt;&#39;
-smap &amp;lt;expr&amp;gt; &amp;lt;Tab&amp;gt;   vsnip#available(1)  ? &#39;&amp;lt;Plug&amp;gt;(vsnip-jump-next)&#39;      : &#39;&amp;lt;Tab&amp;gt;&#39;
-imap &amp;lt;expr&amp;gt; &amp;lt;S-Tab&amp;gt; vsnip#available(-1) ? &#39;&amp;lt;Plug&amp;gt;(vsnip-jump-prev)&#39;      : &#39;&amp;lt;S-Tab&amp;gt;&#39;
-smap &amp;lt;expr&amp;gt; &amp;lt;S-Tab&amp;gt; vsnip#available(-1) ? &#39;&amp;lt;Plug&amp;gt;(vsnip-jump-prev)&#39;      : &#39;&amp;lt;S-Tab&amp;gt;&#39;```
-を設定すれば `&amp;lt;Tab&amp;gt;` で展開できました</span>
+```imap &lt;expr&gt; &lt;C-j&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-expand)'         : '&lt;C-j&gt;'
+imap &lt;expr&gt; &lt;C-l&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-expand-or-jump)' : '&lt;C-l&gt;'
+smap &lt;expr&gt; &lt;C-l&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-expand-or-jump)' : '&lt;C-l&gt;'
+imap &lt;expr&gt; &lt;Tab&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-jump-next)'      : '&lt;Tab&gt;'
+smap &lt;expr&gt; &lt;Tab&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-jump-next)'      : '&lt;Tab&gt;'
+imap &lt;expr&gt; &lt;S-Tab&gt; vsnip#available(-1) ? '&lt;Plug&gt;(vsnip-jump-prev)'      : '&lt;S-Tab&gt;'
+smap &lt;expr&gt; &lt;S-Tab&gt; vsnip#available(-1) ? '&lt;Plug&gt;(vsnip-jump-prev)'      : '&lt;S-Tab&gt;'```
+を設定すれば `&lt;Tab&gt;` で展開できました</span>
 </span>
 <span class='slacklog-message' id='1586271583.267900'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/f3dd644c8cfb83c94d46cf3c44604cda.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0022-48.png'>

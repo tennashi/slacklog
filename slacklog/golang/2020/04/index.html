@@ -11,13 +11,13 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1585753354.097200'>2日 00:02:35</a>
-<span class='slacklog-text'>`receiver.MethodByName(&#34;Method1&#34;).Call([reflect.ValueOf(1), reflect.ValueOf(&#34;aa&#34;)])` でも無さげ。syntax error。文法違うのか?</span>
+<span class='slacklog-text'>`receiver.MethodByName("Method1").Call([reflect.ValueOf(1), reflect.ValueOf("aa")])` でも無さげ。syntax error。文法違うのか?</span>
 </span>
 <span class='slacklog-message' id='1585754047.097700'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1585754047.097700'>2日 00:14:08</a>
-<span class='slacklog-text'>`receiver.MethodByName(&#34;Method1&#34;).Call({reflect.ValueOf(1), reflect.ValueOf(&#34;aa&#34;)})`も違う。</span>
+<span class='slacklog-text'>`receiver.MethodByName("Method1").Call({reflect.ValueOf(1), reflect.ValueOf("aa")})`も違う。</span>
 </span>
 <span class='slacklog-message' id='1585754078.098300'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -31,7 +31,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
 <a class='slacklog-datetime' href='#1585754201.098700'>2日 00:16:42</a>
 <span class='slacklog-text'>すいません
 こちら、ご存知の方いますか？
-&lt;https://twitter.com/gorilla0513/status/1245369097489010692?s=20&gt;</span>
+<https://twitter.com/gorilla0513/status/1245369097489010692?s=20></span>
 </span>
 <span class='slacklog-message' id='1585754241.099200'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -49,7 +49,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585754745.099700'>2日 00:25:46</a>
-<span class='slacklog-text'>```[]reflect.Value{reflect.ValueOf(1), reflect.ValueOf(&#34;aa&#34;)}```</span>
+<span class='slacklog-text'>```[]reflect.Value{reflect.ValueOf(1), reflect.ValueOf("aa")}```</span>
 </span>
 <span class='slacklog-message' id='1585755597.100000'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -58,22 +58,22 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
 <span class='slacklog-text'>```package main
 
 import (
-	&#34;log&#34;
-	&#34;reflect&#34;
+	"log"
+	"reflect"
 )
 
 type MyStruct struct {
 }
 
 func (ms *MyStruct) method1(i int, s string) {
-	log.Printf(&#34;foobar&#34;)
+	log.Printf("foobar")
 }
 func main() {
-	ms := &amp;amp;MyStruct{}
+	ms := &amp;MyStruct{}
 	receiver := reflect.ValueOf(ms)
-	log.Println(&#34;before&#34;)
-	ret := receiver.MethodByName(&#34;Method1&#34;).Call([]reflect.Value{reflect.ValueOf(1), reflect.ValueOf(&#34;aa&#34;)})
-	log.Println(&#34;after %V&#34;, ret)
+	log.Println("before")
+	ret := receiver.MethodByName("Method1").Call([]reflect.Value{reflect.ValueOf(1), reflect.ValueOf("aa")})
+	log.Println("after %V", ret)
 }```
 で、
 ```[master]$ ./main
@@ -129,13 +129,13 @@ main.main()
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585756247.102200'>2日 00:50:48</a>
-<span class='slacklog-text'>YATTA &amp;gt; 通りました</span>
+<span class='slacklog-text'>YATTA &gt; 通りました</span>
 </span>
 <span class='slacklog-message' id='1585770667.103800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
 <span class='slacklog-name'>johejo</span>
 <a class='slacklog-datetime' href='#1585770667.103800'>2日 04:51:08</a>
-<span class='slacklog-text'>&lt;https://golang.org/pkg/net/http/#Server.Shutdown&gt;
+<span class='slacklog-text'><https://golang.org/pkg/net/http/#Server.Shutdown>
 ちょっと気になるんですが、このexampleのShutdownってListendAndServeよりも先に呼ばれることがあり得るような気がするんですが、特に気にしなくて良いのでしょうか。</span>
 </span>
 <span class='slacklog-message' id='1585781556.106800'>
@@ -148,7 +148,7 @@ main.main()
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585786261.107600'>2日 09:11:02</a>
-<span class='slacklog-text'>&lt;http://go.shibu.jp/effective_go.html|http://go.shibu.jp/effective_go.html&gt;</span>
+<span class='slacklog-text'><http://go.shibu.jp/effective_go.html|http://go.shibu.jp/effective_go.html></span>
 </span>
 <span class='slacklog-message' id='1585786267.107900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -172,7 +172,7 @@ main.main()
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585786333.109700'>2日 09:12:14</a>
-<span class='slacklog-text'>&amp;amp;gorilla{}
+<span class='slacklog-text'>&amp;gorilla{}
 ってやることが多い</span>
 </span>
 <span class='slacklog-message' id='1585786406.110100'>
@@ -234,8 +234,8 @@ main.main()
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-08-09/721207338820_626bbc95c10c7b6c7738_48.png'>
 <span class='slacklog-name'>eihigh</span>
 <a class='slacklog-datetime' href='#1585787336.115400'>2日 09:28:57</a>
-<span class='slacklog-text'>&lt;https://github.com/google/wire/blob/65ae46b7eaa146e99673e290251ea26f28139362/internal/wire/testdata/FieldsOfImportedStruct/main/wire.go#L31-L35&gt;
-&#34;ポインタ型を&#34; newするっていう珍しいケース。自分が知る限りだとこれくらいかな</span>
+<span class='slacklog-text'><https://github.com/google/wire/blob/65ae46b7eaa146e99673e290251ea26f28139362/internal/wire/testdata/FieldsOfImportedStruct/main/wire.go#L31-L35>
+"ポインタ型を" newするっていう珍しいケース。自分が知る限りだとこれくらいかな</span>
 </span>
 <span class='slacklog-message' id='1585787397.116400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -265,7 +265,7 @@ main.main()
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>itchyny</span>
 <a class='slacklog-datetime' href='#1585787798.118300'>2日 09:36:39</a>
-<span class='slacklog-text'>&lt;https://pkg.go.dev/github.com/google/go-github/v30/github?tab=doc#Repository&gt;</span>
+<span class='slacklog-text'><https://pkg.go.dev/github.com/google/go-github/v30/github?tab=doc#Repository></span>
 </span>
 <span class='slacklog-message' id='1585787822.118600'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
@@ -283,7 +283,7 @@ main.main()
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585787904.119300'>2日 09:38:25</a>
-<span class='slacklog-text'>```Permissions         *map[string]bool `json:&#34;permissions,omitempty&#34;````
+<span class='slacklog-text'>```Permissions         *map[string]bool `json:"permissions,omitempty"````
 これは意味あるのw</span>
 </span>
 <span class='slacklog-message' id='1585787917.119600'>
@@ -534,7 +534,7 @@ main.main()
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585806166.156300'>2日 14:42:47</a>
-<span class='slacklog-text'>&lt;https://play.golang.org/p/LXAxSdzP6s-&gt;</span>
+<span class='slacklog-text'><https://play.golang.org/p/LXAxSdzP6s-></span>
 </span>
 <span class='slacklog-message' id='1585806178.156500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -638,7 +638,7 @@ main.main()
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585806582.164200'>2日 14:49:43</a>
-<span class='slacklog-text'>&lt;https://text.baldanders.info/golang/nil-is-nil/&gt;</span>
+<span class='slacklog-text'><https://text.baldanders.info/golang/nil-is-nil/></span>
 </span>
 <span class='slacklog-message' id='1585806636.164700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -725,7 +725,7 @@ untyped だとこういう事ができる。</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585813089.171200'>2日 16:38:10</a>
-<span class='slacklog-text'>&lt;https://i101330.hatenablog.com/entry/2018/08/26/004005&gt;</span>
+<span class='slacklog-text'><https://i101330.hatenablog.com/entry/2018/08/26/004005></span>
 </span>
 <span class='slacklog-message' id='1585813111.172000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -757,7 +757,7 @@ try 〜 catch だとどこでキャッチするか考えないといけないし
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585813460.175400'>2日 16:44:21</a>
-<span class='slacklog-text'>&lt;https://twitter.com/mattn_jp/status/1031464214282432512&gt;</span>
+<span class='slacklog-text'><https://twitter.com/mattn_jp/status/1031464214282432512></span>
 </span>
 <span class='slacklog-message' id='1585813617.176600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -841,7 +841,7 @@ if err := db.Get(user); err := nil {```</span>
 <a class='slacklog-datetime' href='#1585815997.185900'>2日 17:26:38</a>
 <span class='slacklog-text'>```package main
 
-import &#34;log&#34;
+import "log"
 
 type I interface {
 	Do(s string)
@@ -856,8 +856,8 @@ func (sp *S) Do(s string) string {
 }
 
 func main() {
-	s := S{S: &#34;abc&#34;}
-	tmp := s.Do(&#34;foobar&#34;)
+	s := S{S: "abc"}
+	tmp := s.Do("foobar")
 	log.Println(tmp)
 }```
 これって、`(sp *S) Do(s string) string`ってinterfaceを実装したmethodと言えますか?</span>
@@ -960,9 +960,9 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
 <span class='slacklog-name'>tennashi</span>
 <a class='slacklog-datetime' href='#1585817207.198700'>2日 17:46:48</a>
-<span class='slacklog-text'>&lt;https://play.golang.org/p/7QMKI6Q3JKL&gt;
+<span class='slacklog-text'><https://play.golang.org/p/7QMKI6Q3JKL>
 これより
-&lt;https://play.golang.org/p/pzk7LuyCBn4&gt;
+<https://play.golang.org/p/pzk7LuyCBn4>
 こっちのほうが好まれる感じですね</span>
 </span>
 <span class='slacklog-message' id='1585817240.199300'>
@@ -975,7 +975,7 @@ func main() {
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
 <span class='slacklog-name'>koron</span>
 <a class='slacklog-datetime' href='#1585817320.199700'>2日 17:48:41</a>
-<span class='slacklog-text'>これ入れるとわかりやすくなる。 &lt;https://chrome.google.com/webstore/detail/go-playground-addons/kjhcofplemokahbgknjgabnkidaabnde&gt;</span>
+<span class='slacklog-text'>これ入れるとわかりやすくなる。 <https://chrome.google.com/webstore/detail/go-playground-addons/kjhcofplemokahbgknjgabnkidaabnde></span>
 </span>
 <span class='slacklog-message' id='1585817638.200700'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -1047,7 +1047,7 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585818736.211300'>2日 18:12:17</a>
-<span class='slacklog-text'>しかしサルでも分かる。 &lt;https://qiita.com/hshimo/items/1136087e1c6e5c5b0d9f&gt;</span>
+<span class='slacklog-text'>しかしサルでも分かる。 <https://qiita.com/hshimo/items/1136087e1c6e5c5b0d9f></span>
 </span>
 <span class='slacklog-message' id='1585818753.211700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -1105,7 +1105,7 @@ func main() {
 <a class='slacklog-datetime' href='#1585819935.219000'>2日 18:32:16</a>
 <span class='slacklog-text'>正直自分も Scala のこのパターンに触れるまで DI って Spring の動的なやつしか触れた事なかったから実行時にエラー起きるし悪い印象しか持ってなかったけど、
 ちゃんと静的に DI の役目を果たせてるじゃん、ってなった覚えがあるなー
-&lt;https://qiita.com/pab_tech/items/1c0bdbc8a61949891f1f&gt;</span>
+<https://qiita.com/pab_tech/items/1c0bdbc8a61949891f1f></span>
 </span>
 <span class='slacklog-message' id='1585819979.219700'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -1136,7 +1136,7 @@ func main() {
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585820176.222000'>2日 18:36:17</a>
 <span class='slacklog-text'>Cake パターンって名前知ってたけどこういう意味だったの。
-&amp;gt; 「僕のケーキに対する敬意という以外の理由としては、ケーキが（ジャムで分けられた）レイヤーから成り、またそのケーキを切り分けることができるということが挙げられる。レイヤーは内部クラスの入れ子構造を表す。上から順にたどっていく事で底辺のレイヤーに行き着くのが似ていると言えなくもない。また、ケーキの一切れは、プロジェクト内のコンポーネントを表し、いくつかのレイヤーを横断して切ることになる。」</span>
+&gt; 「僕のケーキに対する敬意という以外の理由としては、ケーキが（ジャムで分けられた）レイヤーから成り、またそのケーキを切り分けることができるということが挙げられる。レイヤーは内部クラスの入れ子構造を表す。上から順にたどっていく事で底辺のレイヤーに行き着くのが似ていると言えなくもない。また、ケーキの一切れは、プロジェクト内のコンポーネントを表し、いくつかのレイヤーを横断して切ることになる。」</span>
 </span>
 <span class='slacklog-message' id='1585820213.222400'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -1160,7 +1160,7 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
 <span class='slacklog-name'>hrsh7th</span>
 <a class='slacklog-datetime' href='#1585820415.225100'>2日 18:40:16</a>
-<span class='slacklog-text'>new する箇所を設定ファイル的に切り出す + すべて interface への依存にする =&amp;gt; テストしやすいし、インスタンスも設定で切り替えられる =&amp;gt; 副産物的にコンストラクタでの依存解決も同時に可能になった（すべてのインスタンス生成方法を知ったため）
+<span class='slacklog-text'>new する箇所を設定ファイル的に切り出す + すべて interface への依存にする =&gt; テストしやすいし、インスタンスも設定で切り替えられる =&gt; 副産物的にコンストラクタでの依存解決も同時に可能になった（すべてのインスタンス生成方法を知ったため）
 こういう認識です。</span>
 </span>
 <span class='slacklog-message' id='1585820511.226500'>
@@ -1240,13 +1240,13 @@ func main() {
 <span class='slacklog-name'>koron</span>
 <a class='slacklog-datetime' href='#1585820761.231500'>2日 18:46:02</a>
 <span class='slacklog-text'>僕が仕事で書いて使ってる go用のDIっぽいの。DIとは謳ってないけどw
-&lt;https://github.com/koron-go/materialize&gt;</span>
+<https://github.com/koron-go/materialize></span>
 </span>
 <span class='slacklog-message' id='1585820776.231900'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
 <span class='slacklog-name'>koron</span>
 <a class='slacklog-datetime' href='#1585820776.231900'>2日 18:46:17</a>
-<span class='slacklog-text'>*component&#39;s dependency separator*</span>
+<span class='slacklog-text'>*component's dependency separator*</span>
 </span>
 <span class='slacklog-message' id='1585820837.233400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1335,7 +1335,7 @@ func main() {
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
 <span class='slacklog-name'>tyru</span>
 <a class='slacklog-datetime' href='#1585821412.243500'>2日 18:56:53</a>
-<span class='slacklog-text'>最初の &lt;@U03C71D7H&gt; さんの疑問に乱暴だけど一番簡単な形で答えると、DI はコンストラクタに中で使うインスタンスを全て渡すのと同じってことです。
+<span class='slacklog-text'>最初の <@U03C71D7H> さんの疑問に乱暴だけど一番簡単な形で答えると、DI はコンストラクタに中で使うインスタンスを全て渡すのと同じってことです。
 これはコンストラクタ注入 (constructor injection) といって立派な DI 手法の一つです</span>
 </span>
 <span class='slacklog-message' id='1585821473.245800'>
@@ -1349,7 +1349,7 @@ func main() {
 <span class='slacklog-name'>tyru</span>
 <a class='slacklog-datetime' href='#1585821474.245900'>2日 18:57:55</a>
 <span class='slacklog-text'>DI・テストに一家言ある Kuniwak さんの記事とか見るとわかるかも…
-&lt;https://twitter.com/orga_chem/status/1037991810868555776&gt;</span>
+<https://twitter.com/orga_chem/status/1037991810868555776></span>
 </span>
 <span class='slacklog-message' id='1585821527.247800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1392,7 +1392,7 @@ func main() {
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585821700.252900'>2日 19:01:41</a>
 <span class='slacklog-text'>わかり良い例だとロガーかな
-&amp;gt; ファイルに出力なのか標準出力に出すのか良く分からないけど、とりあえずロガーを貰ってログを吐きたいコードはある、でもファイル名を引数で貰う様な事はしたくない、俺はロガーを欲しいし、ファイルか標準出力かなんて気にしたくない。</span>
+&gt; ファイルに出力なのか標準出力に出すのか良く分からないけど、とりあえずロガーを貰ってログを吐きたいコードはある、でもファイル名を引数で貰う様な事はしたくない、俺はロガーを欲しいし、ファイルか標準出力かなんて気にしたくない。</span>
 </span>
 <span class='slacklog-message' id='1585821704.253000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -1492,8 +1492,8 @@ func main() {
 <span class='slacklog-name'>tyru</span>
 <a class='slacklog-datetime' href='#1585822143.267000'>2日 19:09:04</a>
 <span class='slacklog-text'>つまりこのどちらでもないってことです？
-&amp;gt; * コンストラクタ経由で貰う方法
-&amp;gt; * フィールドで貰う方法(アノテーション付けたりする)</span>
+&gt; * コンストラクタ経由で貰う方法
+&gt; * フィールドで貰う方法(アノテーション付けたりする)</span>
 </span>
 <span class='slacklog-message' id='1585822212.267700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-08-06/711433366657_4168974e9eb8448007aa_48.png'>
@@ -1600,7 +1600,7 @@ func main() {
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
 <span class='slacklog-name'>koron</span>
 <a class='slacklog-datetime' href='#1585822536.277500'>2日 19:15:37</a>
-<span class='slacklog-text'>&lt;https://github.com/koron-go/materialize/#gettings-started&gt;</span>
+<span class='slacklog-text'><https://github.com/koron-go/materialize/#gettings-started></span>
 </span>
 <span class='slacklog-message' id='1585822544.277900'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -1618,7 +1618,7 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585822607.280200'>2日 19:16:48</a>
-<span class='slacklog-text'>&amp;gt; 俺はロガーが欲しい。ロガーを作る処理を本体に書きたくないし、ロガーをどこかで生成して俺のコードに渡すようなコードも書きたくない。俺のコードのインスタンスが死んだらロガーは一緒に消えて欲しいが、もっかい俺のコードのインスタンスが生成された時にさっきのが欲しいか、もう一度作りなおしたのが欲しいかは、のちのち決める。
+<span class='slacklog-text'>&gt; 俺はロガーが欲しい。ロガーを作る処理を本体に書きたくないし、ロガーをどこかで生成して俺のコードに渡すようなコードも書きたくない。俺のコードのインスタンスが死んだらロガーは一緒に消えて欲しいが、もっかい俺のコードのインスタンスが生成された時にさっきのが欲しいか、もう一度作りなおしたのが欲しいかは、のちのち決める。
 わがまま言いたい放題やな。</span>
 </span>
 <span class='slacklog-message' id='1585822668.280400'>
@@ -1712,7 +1712,7 @@ func main() {
 <a class='slacklog-datetime' href='#1585823468.294500'>2日 19:31:09</a>
 <span class='slacklog-text'>一応 Java (というか Spring) の擁護もしておくとｗ
 `@Autowired Foo foo;` なフィールドに対して、↑のライブラリと同じように `Foo` を生成するメソッドを指定することはできます。なので「コードで書く」ってのは一応できます。
-ヒント情報で渡したり、あと `@Scope(&#34;prototype&#34;)` で注入した親インスタンスの生存期間に合わせて破棄されるとかも指定できます。</span>
+ヒント情報で渡したり、あと `@Scope("prototype")` で注入した親インスタンスの生存期間に合わせて破棄されるとかも指定できます。</span>
 </span>
 <span class='slacklog-message' id='1585823473.294700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
@@ -1744,7 +1744,7 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-08-06/711433366657_4168974e9eb8448007aa_48.png'>
 <span class='slacklog-name'>thara</span>
 <a class='slacklog-datetime' href='#1585823683.296900'>2日 19:34:44</a>
-<span class='slacklog-text'>&amp;gt; テスト用途だけならオーバーキル
+<span class='slacklog-text'>&gt; テスト用途だけならオーバーキル
 DIコンテナが出てきた時代はAOPとセットだった気がするので、AOPしなければ利点はだいぶ減ってしまう気がしますね</span>
 </span>
 <span class='slacklog-message' id='1585823939.297000'>
@@ -1784,7 +1784,7 @@ DIコンテナが出てきた時代はAOPとセットだった気がするので
 <span class='slacklog-name'>tyru</span>
 <a class='slacklog-datetime' href='#1585824616.304800'>2日 19:50:17</a>
 <span class='slacklog-text'>なるほど。トランザクション境界 (`@Transactional` ?) も AOP で実現してたのか。
-本当そうなんですよねー &amp;gt;今なら〜</span>
+本当そうなんですよねー &gt;今なら〜</span>
 </span>
 <span class='slacklog-message' id='1585824814.307500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1808,21 +1808,21 @@ DIコンテナが出てきた時代はAOPとセットだった気がするので
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
 <span class='slacklog-name'>tyru</span>
 <a class='slacklog-datetime' href='#1585824967.309200'>2日 19:56:08</a>
-<span class='slacklog-text'>(無限に脱線する性格なのでちゃんと Go の話しないと… せっかく &lt;#CGABGC8LA|golang&gt; を求めてきた人がいっぱい join してきてくれたばっかりなのにｗ)</span>
+<span class='slacklog-text'>(無限に脱線する性格なのでちゃんと Go の話しないと… せっかく <#CGABGC8LA|golang> を求めてきた人がいっぱい join してきてくれたばっかりなのにｗ)</span>
 </span>
 <span class='slacklog-message' id='1585825835.311200'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1585825835.311200'>2日 20:10:36</a>
 <span class='slacklog-text'>話ぶった切ってすいません。質問です。
-&lt;https://github.com/vikke/go_reflection/blob/master/main.go#L10&gt;
+<https://github.com/vikke/go_reflection/blob/master/main.go#L10>
 のhogeを文字列でもらった場合に、動的にhogeを作るにはどうしたらよいですか? reflectionにnamespaceやpackageに関するマニュアルを見つけられませんでした。</span>
 </span>
 <span class='slacklog-message' id='1585826346.311500'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4a0f2c658a062df722417c9e05dc925a.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0023-48.png'>
 <span class='slacklog-name'>hokorobi</span>
 <a class='slacklog-datetime' href='#1585826346.311500'>2日 20:19:07</a>
-<span class='slacklog-text'>&#34;golang.toyko #30 - YouTube&#34; &lt;https://www.youtube.com/watch?v=7YGw-UIkcWw&gt;</span>
+<span class='slacklog-text'>"golang.toyko #30 - YouTube" <https://www.youtube.com/watch?v=7YGw-UIkcWw></span>
 </span>
 <span class='slacklog-message' id='1585826424.311800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -1834,7 +1834,7 @@ DIコンテナが出てきた時代はAOPとセットだった気がするので
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585826497.312700'>2日 20:21:38</a>
-<span class='slacklog-text'>&amp;gt; のhogeを文字列でもらった場合に、動的にhogeを作るにはどうしたらよいですか? reflectionにnamespaceやpackageに関するマニュアルを見つけられませんでした。
+<span class='slacklog-text'>&gt; のhogeを文字列でもらった場合に、動的にhogeを作るにはどうしたらよいですか? reflectionにnamespaceやpackageに関するマニュアルを見つけられませんでした。
 パッケージのDIって感じですか？</span>
 </span>
 <span class='slacklog-message' id='1585826512.313200'>
@@ -1854,7 +1854,7 @@ DIコンテナが出てきた時代はAOPとセットだった気がするので
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1585826917.315000'>2日 20:28:38</a>
 <span class='slacklog-text'>名前空間と構造体名とメソッド名を外から与えて、メソッドを起動出来ないかなと。
-&lt;https://golang.org/pkg/reflect/&gt;
+<https://golang.org/pkg/reflect/>
 みてるんだけど、それっぽいのにゃい。</span>
 </span>
 <span class='slacklog-message' id='1585827304.315800'>
@@ -1873,7 +1873,7 @@ DIコンテナが出てきた時代はAOPとセットだった気がするので
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585829912.317400'>2日 21:18:33</a>
-<span class='slacklog-text'>唯一やれる方法があるとすれば、&#34;hoge&#34; を貰った瞬間にパッケージ名 `hoge` のソースを生成して `-buildmode=plugin` でコンパイルして `plugin.Open` で読み込むくらいです。</span>
+<span class='slacklog-text'>唯一やれる方法があるとすれば、"hoge" を貰った瞬間にパッケージ名 `hoge` のソースを生成して `-buildmode=plugin` でコンパイルして `plugin.Open` で読み込むくらいです。</span>
 </span>
 <span class='slacklog-message' id='1585829958.318100'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -1957,7 +1957,7 @@ DIコンテナが出てきた時代はAOPとセットだった気がするので
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585843101.323700'>3日 00:58:22</a>
-<span class='slacklog-text'>&lt;https://github.com/skanehira/monkey/blob/master/ast/ast.go#L147-L151&gt;</span>
+<span class='slacklog-text'><https://github.com/skanehira/monkey/blob/master/ast/ast.go#L147-L151></span>
 </span>
 <span class='slacklog-message' id='1585843319.324200'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -1987,7 +1987,7 @@ DIコンテナが出てきた時代はAOPとセットだった気がするので
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585844482.325500'>3日 01:21:23</a>
-<span class='slacklog-text'>&lt;https://ja.m.wikipedia.org/wiki/%E6%9C%A8%E6%A7%8B%E9%80%A0_(%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0)|https://ja.m.wikipedia.org/wiki/%E6%9C%A8%E6%A7%8B%E9%80%A0_(%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0)&gt;</span>
+<span class='slacklog-text'><https://ja.m.wikipedia.org/wiki/%E6%9C%A8%E6%A7%8B%E9%80%A0_(%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0)|https://ja.m.wikipedia.org/wiki/%E6%9C%A8%E6%A7%8B%E9%80%A0_(%E3%83%87%E3%83%BC%E3%82%BF%E6%A7%8B%E9%80%A0)></span>
 </span>
 <span class='slacklog-message' id='1585844539.326200'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -2053,7 +2053,7 @@ prefixはオペレーターとleftしかないすね</span>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585873636.334600'>3日 09:27:17</a>
 <span class='slacklog-text'>ただ、設計理念の共有のための「パターン」でもあるから
-&amp;gt;  いい感じにやればそれに近くなるから特に意識する必要がない
+&gt;  いい感じにやればそれに近くなるから特に意識する必要がない
 は、若干脳筋的で、それもどうかな、という気がしないでもないw</span>
 </span>
 <span class='slacklog-message' id='1585873641.334700'>
@@ -2138,7 +2138,7 @@ prefixはオペレーターとleftしかないすね</span>
 type Base struct { }
 
 func (b *Base) DoSomething() {
-	println(&#34;Yes, We Can!&#34;)
+	println("Yes, We Can!")
 }
 
 type Derived struct {
@@ -2146,7 +2146,7 @@ type Derived struct {
 }
 
 func (rd *Derived) Say() {
-	println(&#34;セイ&#34;)
+	println("セイ")
 }
 
 
@@ -2186,7 +2186,7 @@ Go の interface の使い方、どう使うと辛くなるのか、みたいな
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
 <span class='slacklog-name'>tennashi</span>
 <a class='slacklog-datetime' href='#1585875050.350300'>3日 09:50:51</a>
-<span class='slacklog-text'>&lt;https://github.com/mattn/gof&gt;</span>
+<span class='slacklog-text'><https://github.com/mattn/gof></span>
 </span>
 <span class='slacklog-message' id='1585875064.350800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2240,7 +2240,7 @@ Go の interface の使い方、どう使うと辛くなるのか、みたいな
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585876066.356600'>3日 10:07:47</a>
-<span class='slacklog-text'>&lt;https://jp.quora.com/%E4%B8%80%E6%99%82%E6%9C%9F%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%A8%E3%81%84%E3%81%86%E3%82%82&gt;</span>
+<span class='slacklog-text'><https://jp.quora.com/%E4%B8%80%E6%99%82%E6%9C%9F%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%81%A8%E3%81%84%E3%81%86%E3%82%82></span>
 </span>
 <span class='slacklog-message' id='1585876119.357000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-08-09/721207338820_626bbc95c10c7b6c7738_48.png'>
@@ -2264,7 +2264,7 @@ Go の interface の使い方、どう使うと辛くなるのか、みたいな
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>itchyny</span>
 <a class='slacklog-datetime' href='#1585876600.358100'>3日 10:16:41</a>
-<span class='slacklog-text'>&lt;https://go-review.googlesource.com/c/go/+/226877/&gt; これ便利なやつでは</span>
+<span class='slacklog-text'><https://go-review.googlesource.com/c/go/+/226877/> これ便利なやつでは</span>
 </span>
 <span class='slacklog-message' id='1585877097.358500'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2291,7 +2291,7 @@ Go の interface の使い方、どう使うと辛くなるのか、みたいな
 <span class='slacklog-text'>```package main
 
 import (
-	&#34;log&#34;
+	"log"
 )
 
 type Receiver interface {
@@ -2302,12 +2302,12 @@ type MyReceiver struct {
 }
 
 func (w Receiver) Do() {
-	log.Println(&#34;Do&#34;)
+	log.Println("Do")
 }
 
 func main() {
 	mr := MyReceiver{}
-	&lt;http://mr.Do|mr.Do&gt;()
+	<http://mr.Do|mr.Do>()
 }```
 これって `func (w Receiver) Do() {`で  エラーになるんですけど、Interfaceで受けるって事は出来ないんでしょうか?(まー出来ないからエラーになるんだけど)。どうやるのがGoっぽいですか?</span>
 </span>
@@ -2328,7 +2328,7 @@ func main() {
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585878928.367100'>3日 10:55:29</a>
 <span class='slacklog-text'>上でmattnさんがやってるこれ
-&lt;https://vim-jp.slack.com/archives/CGABGC8LA/p1585874193345600&gt;
+<https://vim-jp.slack.com/archives/CGABGC8LA/p1585874193345600>
 みたいにやるのがいいのかな</span>
 </span>
 <span class='slacklog-message' id='1585878949.367400'>
@@ -2416,7 +2416,7 @@ func main() {
 <span class='slacklog-name'>koron</span>
 <a class='slacklog-datetime' href='#1585880222.371800'>3日 11:17:03</a>
 <span class='slacklog-text'>ちょっとサンプル書いたんでこれ実行したり書き換えたりして遊んでみてください。RunでWeb上で実行できるんで。
-&lt;https://play.golang.org/p/RTq46_kWqW4&gt;</span>
+<https://play.golang.org/p/RTq46_kWqW4></span>
 </span>
 <span class='slacklog-message' id='1585880256.372400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
@@ -2502,13 +2502,13 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
 <span class='slacklog-name'>tennashi</span>
 <a class='slacklog-datetime' href='#1585885892.382400'>3日 12:51:33</a>
-<span class='slacklog-text'>hoge := &#34;hoge&#34; を関数の外で書いたとか</span>
+<span class='slacklog-text'>hoge := "hoge" を関数の外で書いたとか</span>
 </span>
 <span class='slacklog-message' id='1585886186.382600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
 <span class='slacklog-name'>tennashi</span>
 <a class='slacklog-datetime' href='#1585886186.382600'>3日 12:56:27</a>
-<span class='slacklog-text'>// 俺は正しい!! これは vim のバグに違いない!! -&amp;gt; 私が悪うございました...とか無限回やってる...</span>
+<span class='slacklog-text'>// 俺は正しい!! これは vim のバグに違いない!! -&gt; 私が悪うございました...とか無限回やってる...</span>
 </span>
 <span class='slacklog-message' id='1585886279.383900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -2544,13 +2544,13 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585886901.388900'>3日 13:08:22</a>
-<span class='slacklog-text'>目立っちゃうから、というのもあるかも &amp;gt; コンパイラ</span>
+<span class='slacklog-text'>目立っちゃうから、というのもあるかも &gt; コンパイラ</span>
 </span>
 <span class='slacklog-message' id='1585886939.389300'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
 <span class='slacklog-name'>tsuyoshi_cho</span>
 <a class='slacklog-datetime' href='#1585886939.389300'>3日 13:09:00</a>
-<span class='slacklog-text'>&lt;https://linux.srad.jp/story/14/07/28/0945215/&gt;</span>
+<span class='slacklog-text'><https://linux.srad.jp/story/14/07/28/0945215/></span>
 </span>
 <span class='slacklog-message' id='1585886984.390000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -2568,7 +2568,7 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585888540.390500'>3日 13:35:41</a>
-<span class='slacklog-text'>&lt;https://github.com/golang/go/commit/dcf0929de6a12103a8fd7097abd6e797188c366d&gt;</span>
+<span class='slacklog-text'><https://github.com/golang/go/commit/dcf0929de6a12103a8fd7097abd6e797188c366d></span>
 </span>
 <span class='slacklog-message' id='1585888550.390900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2592,13 +2592,13 @@ func main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585895535.392400'>3日 15:32:16</a>
-<span class='slacklog-text'>はやくこれ進展して欲しい。 &lt;https://github.com/golang/go/issues/35950&gt;</span>
+<span class='slacklog-text'>はやくこれ進展して欲しい。 <https://github.com/golang/go/issues/35950></span>
 </span>
 <span class='slacklog-message' id='1585895674.392700'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>itchyny</span>
 <a class='slacklog-datetime' href='#1585895674.392700'>3日 15:34:35</a>
-<span class='slacklog-text'>&lt;https://github.com/golang/go/issues/36982&gt; が欲しい</span>
+<span class='slacklog-text'><https://github.com/golang/go/issues/36982> が欲しい</span>
 </span>
 <span class='slacklog-message' id='1585896091.394600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-03-05/566476208928_88371f1c18cebcd59515_48.jpg'>
@@ -2635,7 +2635,7 @@ Goのリフレクションの良い使用例というか、リフレクション
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
 <span class='slacklog-name'>tennashi</span>
 <a class='slacklog-datetime' href='#1585896254.397200'>3日 15:44:15</a>
-<span class='slacklog-text'>&lt;https://golang.org/src/encoding/json/decode.go&gt;</span>
+<span class='slacklog-text'><https://golang.org/src/encoding/json/decode.go></span>
 </span>
 <span class='slacklog-message' id='1585896260.397700'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -2653,7 +2653,7 @@ Goのリフレクションの良い使用例というか、リフレクション
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585896296.398400'>3日 15:44:57</a>
-<span class='slacklog-text'>&lt;https://github.com/mattn/anko/&gt;</span>
+<span class='slacklog-text'><https://github.com/mattn/anko/></span>
 </span>
 <span class='slacklog-message' id='1585896300.398900'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -2673,7 +2673,7 @@ ORM系も確かにありそうです。
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
 <span class='slacklog-name'>koron</span>
 <a class='slacklog-datetime' href='#1585896406.399900'>3日 15:46:47</a>
-<span class='slacklog-text'>&lt;https://github.com/koron-go/materialize/blob/cf17f2b04e60328eb42f3ba0691fbce5d812c050/materialize.go#L55&gt;</span>
+<span class='slacklog-text'><https://github.com/koron-go/materialize/blob/cf17f2b04e60328eb42f3ba0691fbce5d812c050/materialize.go#L55></span>
 </span>
 <span class='slacklog-message' id='1585896452.401900'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -2789,11 +2789,11 @@ ORM系も確かにありそうです。
 <a class='slacklog-datetime' href='#1585897401.411400'>3日 16:03:22</a>
 <span class='slacklog-text'>```#!anko
 
-var http, ioutil = import(&#34;net/http&#34;), import(&#34;io/ioutil&#34;)
+var http, ioutil = import("net/http"), import("io/ioutil")
 
-r = http.DefaultClient.Get(&#34;&lt;http://golang.org/&gt;&#34;)
+r = http.DefaultClient.Get("<http://golang.org/>")
 b, _ = ioutil.ReadAll(r[0].Body)
-printf(&#34;%s&#34;, toString(b))
+printf("%s", toString(b))
 r[0].Body.Close()```</span>
 </span>
 <span class='slacklog-message' id='1585897405.411800'>
@@ -2822,12 +2822,12 @@ r[0].Body.Close()```</span>
 <span class='slacklog-text'>そんでもって意外と
 ```#!anko
 
-var http = import(&#34;net/http&#34;)
+var http = import("net/http")
 
-http.HandleFunc(&#34;/&#34;, func(w, r) {
-  w.Write(toByteSlice(&#34;hello world&#34;))
+http.HandleFunc("/", func(w, r) {
+  w.Write(toByteSlice("hello world"))
 })
-http.ListenAndServe(&#34;:8080&#34;, nil)```
+http.ListenAndServe(":8080", nil)```
 このウェブサーバが実用できるくらい速い。</span>
 </span>
 <span class='slacklog-message' id='1585897548.413600'>
@@ -2876,7 +2876,7 @@ http.ListenAndServe(&#34;:8080&#34;, nil)```
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585897727.417500'>3日 16:08:48</a>
-<span class='slacklog-text'>&lt;https://github.com/mattn/kinako&gt;</span>
+<span class='slacklog-text'><https://github.com/mattn/kinako></span>
 </span>
 <span class='slacklog-message' id='1585897753.418600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2919,7 +2919,7 @@ kinakoはGoコード内で呼び出して引数で式を渡すみたいな感じ
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585898171.422400'>3日 16:16:12</a>
-<span class='slacklog-text'>&lt;https://github.com/itchyny/gojq/blob/f42ed4671c084d0526f03103e0ce6f13f5915e5f/execute.go&gt;</span>
+<span class='slacklog-text'><https://github.com/itchyny/gojq/blob/f42ed4671c084d0526f03103e0ce6f13f5915e5f/execute.go></span>
 </span>
 <span class='slacklog-message' id='1585898175.422800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2943,13 +2943,13 @@ kinakoはGoコード内で呼び出して引数で式を渡すみたいな感じ
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585898278.424000'>3日 16:17:59</a>
-<span class='slacklog-text'>slim の go 実装も良く似た感じの量。 &lt;https://github.com/mattn/go-slim/&gt;</span>
+<span class='slacklog-text'>slim の go 実装も良く似た感じの量。 <https://github.com/mattn/go-slim/></span>
 </span>
 <span class='slacklog-message' id='1585898395.424400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585898395.424400'>3日 16:19:56</a>
-<span class='slacklog-text'>&lt;http://github.com/alecthomas/participle|github.com/alecthomas/participle&gt;</span>
+<span class='slacklog-text'><http://github.com/alecthomas/participle|github.com/alecthomas/participle></span>
 </span>
 <span class='slacklog-message' id='1585898405.424700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -3028,7 +3028,7 @@ off だと 問題なし
 <span class='slacklog-name'>dictav</span>
 <a class='slacklog-datetime' href='#1585902259.432400'>3日 17:24:20</a>
 <span class='slacklog-text'>retag ちょっと使ってます
-&lt;https://github.com/sevlyar/retag&gt;</span>
+<https://github.com/sevlyar/retag></span>
 </span>
 <span class='slacklog-message' id='1585903102.432800'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -3052,16 +3052,16 @@ off だと 問題なし
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585906991.435100'>3日 18:43:12</a>
-<span class='slacklog-text'>&amp;gt; ちなみに特殊な事してないですよね？
-&amp;gt; * go へのパスがシンボリックリンク
-&amp;gt; * GOPATH もしくは GOPATH/src/xxx などがシンボリックリンク
+<span class='slacklog-text'>&gt; ちなみに特殊な事してないですよね？
+&gt; * go へのパスがシンボリックリンク
+&gt; * GOPATH もしくは GOPATH/src/xxx などがシンボリックリンク
 何もしていないですね</span>
 </span>
 <span class='slacklog-message' id='1585907013.435600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585907013.435600'>3日 18:43:34</a>
-<span class='slacklog-text'>&amp;gt; ゴリラさん、ずっと gopls 動いてないのでたぶんゴリラさんの環境側に何かあるんだと思ってます。
+<span class='slacklog-text'>&gt; ゴリラさん、ずっと gopls 動いてないのでたぶんゴリラさんの環境側に何かあるんだと思ってます。
 Mac2台ともに同じ現象にあっています…</span>
 </span>
 <span class='slacklog-message' id='1585907032.436200'>
@@ -3074,14 +3074,14 @@ Mac2台ともに同じ現象にあっています…</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585907055.436900'>3日 18:44:16</a>
-<span class='slacklog-text'>&amp;gt; 余計なのが混じってるなら tidy するなども。
+<span class='slacklog-text'>&gt; 余計なのが混じってるなら tidy するなども。
 tidy もしました</span>
 </span>
 <span class='slacklog-message' id='1585907107.438600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
 <span class='slacklog-name'>hrsh7th</span>
 <a class='slacklog-datetime' href='#1585907107.438600'>3日 18:45:08</a>
-<span class='slacklog-text'>&lt;@UDDCM376D&gt;
+<span class='slacklog-text'><@UDDCM376D>
 A プロジェクトのファイルを開き、A プロジェクト内で定義ジャンプや補完をする… ①
 A プロジェクトのファイルを一度開き、次に B プロジェクトのファイルを別バッファで開いて、B の中で定義ジャンプや補完をする… ②
 
@@ -3104,7 +3104,7 @@ A プロジェクトのファイルを一度開き、次に B プロジェクト
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585907143.439300'>3日 18:45:44</a>
-<span class='slacklog-text'>&amp;gt; ① がちゃんと動かないとしたらよくわからないですが。
+<span class='slacklog-text'>&gt; ① がちゃんと動かないとしたらよくわからないですが。
 ①が動かないですね…</span>
 </span>
 <span class='slacklog-message' id='1585907951.440100'>
@@ -3151,23 +3151,23 @@ GO111MODULEで動きが変わるということはvim-lspよりはgoplsの方が
 <span class='slacklog-text'>型アサーションでデータが欠落する事ってあります?
 ```    18: func SendMail(script module.Script, opt interface{}) {
     19:         v, _ := opt.(pb.OrderCancelAtShopParam)
-=&amp;gt;  20:         log.Printf(&#34;SendMail: %s&#34;, v.GetScriptName())
+=&gt;  20:         log.Printf("SendMail: %s", v.GetScriptName())
     21:
     22:         impl := module.InOutLoggerImpl{}
-    23:         &lt;http://impl.In|impl.In&gt;()
+    23:         <http://impl.In|impl.In>()
     24:         script.Exec(opt)
     25:         impl.Out()
 (dlv) p opt
-interface {}(*&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam&gt;) *{
+interface {}(*<http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam>) *{
         Id: 1,
-        ScriptName: &#34;OrderCancelAtShop&#34;,
+        ScriptName: "OrderCancelAtShop",
         XXX_NoUnkeyedLiteral: struct {} {},
         XXX_unrecognized: []uint8 len: 0, cap: 0, nil,
         XXX_sizecache: 0,}
 (dlv) p v
-&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam&gt; {
+<http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam> {
         Id: 0,
-        ScriptName: &#34;&#34;,
+        ScriptName: "",
         XXX_NoUnkeyedLiteral: struct {} {},
         XXX_unrecognized: []uint8 len: 0, cap: 0, nil,
         XXX_sizecache: 0,}```
@@ -3189,18 +3189,18 @@ interface {}(*&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.Orde
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1585914676.446600'>3日 20:51:17</a>
-<span class='slacklog-text'>```=&amp;gt;  20:         log.Printf(&#34;ok: %s&#34;, ok)
-    21:         log.Printf(&#34;SendMail: %s&#34;, v.GetScriptName())
+<span class='slacklog-text'>```=&gt;  20:         log.Printf("ok: %s", ok)
+    21:         log.Printf("SendMail: %s", v.GetScriptName())
     22:
     23:         impl := module.InOutLoggerImpl{}
-    24:         &lt;http://impl.In|impl.In&gt;()
+    24:         <http://impl.In|impl.In>()
     25:         script.Exec(opt)
 (dlv) p ok
 false
 (dlv) p v
-&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam&gt; {
+<http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam> {
         Id: 0,
-        ScriptName: &#34;&#34;,
+        ScriptName: "",
         XXX_NoUnkeyedLiteral: struct {} {},
         XXX_unrecognized: []uint8 len: 0, cap: 0, nil,
         XXX_sizecache: 0,}
@@ -3254,7 +3254,7 @@ falseでした。型を思い込んでました。ありがとうございます
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585967681.451900'>4日 11:34:42</a>
 <span class='slacklog-text'>sliceのinsert、頭の良さを感じた
-&lt;https://github.com/golang/go/wiki/SliceTricks#insert&gt;
+<https://github.com/golang/go/wiki/SliceTricks#insert>
 
 ``` a = append(a[:i], append([]T{x}, a[i:]...)...)```</span>
 </span>
@@ -3274,7 +3274,7 @@ falseでした。型を思い込んでました。ありがとうございます
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1585983457.455300'>4日 15:57:38</a>
-<span class='slacklog-text'>&lt;https://twitter.com/mattn_jp/status/1246331001476804609&gt;</span>
+<span class='slacklog-text'><https://twitter.com/mattn_jp/status/1246331001476804609></span>
 </span>
 <span class='slacklog-message' id='1585984408.456000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -3470,7 +3470,7 @@ BenchmarkCopy-8           100820             14641 ns/op```</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-08-09/721207338820_626bbc95c10c7b6c7738_48.png'>
 <span class='slacklog-name'>eihigh</span>
 <a class='slacklog-datetime' href='#1585991186.469400'>4日 18:06:27</a>
-<span class='slacklog-text'>&amp;gt; メモリブロックだって意識が少し薄いかも
+<span class='slacklog-text'>&gt; メモリブロックだって意識が少し薄いかも
 
 すごく健康的だ……[][]を見ただけでメモリ配列が気になって夜も眠れなくなるので……</span>
 </span>
@@ -3490,14 +3490,14 @@ BenchmarkCopy-8           100820             14641 ns/op```</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1585993347.472000'>4日 18:42:28</a>
-<span class='slacklog-text'>&amp;gt; 動的型付け言語触る人達は Go の配列やスライスがメモリブロックだって意識が少し薄いかもしれない。
+<span class='slacklog-text'>&gt; 動的型付け言語触る人達は Go の配列やスライスがメモリブロックだって意識が少し薄いかもしれない。
 メモリブロック…？</span>
 </span>
 <span class='slacklog-message' id='1586004383.476600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586004383.476600'>4日 21:46:24</a>
-<span class='slacklog-text'>例えば Ruby だと `a = [1, 2, 3]` ってやったら数値が3つで 8 バイト x 3 = 24 バイト取ってそうに見えるけど、実際は型の情報も持ってるし `a[1] = &#34;foo&#34;` ってやったらオブジェクトもリンクされる。つまりメモリが直列じゃないんですよね。Go だと `[500]byte` は 500 バイトなんですよね。1要素に 1 バイト以上の物は突っ込めない。</span>
+<span class='slacklog-text'>例えば Ruby だと `a = [1, 2, 3]` ってやったら数値が3つで 8 バイト x 3 = 24 バイト取ってそうに見えるけど、実際は型の情報も持ってるし `a[1] = "foo"` ってやったらオブジェクトもリンクされる。つまりメモリが直列じゃないんですよね。Go だと `[500]byte` は 500 バイトなんですよね。1要素に 1 バイト以上の物は突っ込めない。</span>
 </span>
 <span class='slacklog-message' id='1586073712.477500'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -3510,8 +3510,8 @@ BenchmarkCopy-8           100820             14641 ns/op```</span>
 <span class='slacklog-name'>tennashi</span>
 <a class='slacklog-datetime' href='#1586074345.478100'>5日 17:12:26</a>
 <span class='slacklog-text'>そんなことはないですよ
-&lt;https://golang.org/pkg/io/#Reader&gt;
-&lt;https://golang.org/pkg/bytes/#Buffer.Read&gt;</span>
+<https://golang.org/pkg/io/#Reader>
+<https://golang.org/pkg/bytes/#Buffer.Read></span>
 </span>
 <span class='slacklog-message' id='1586074751.478800'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -3529,7 +3529,7 @@ BenchmarkCopy-8           100820             14641 ns/op```</span>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
 <span class='slacklog-name'>vikke</span>
 <a class='slacklog-datetime' href='#1586075125.479500'>5日 17:25:26</a>
-<span class='slacklog-text'>&lt;https://qiita.com/Yarimizu14/items/e93097c4f4cfd5468259&gt; な話?</span>
+<span class='slacklog-text'><https://qiita.com/Yarimizu14/items/e93097c4f4cfd5468259> な話?</span>
 </span>
 <span class='slacklog-message' id='1586088961.481500'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
@@ -3541,7 +3541,7 @@ BenchmarkCopy-8           100820             14641 ns/op```</span>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
 <span class='slacklog-name'>kyoh86</span>
 <a class='slacklog-datetime' href='#1586088962.481700'>5日 21:16:03</a>
-<span class='slacklog-text'>&lt;https://qiita.com/kyoh86/items/f5e007bc004c34b2d314&gt;</span>
+<span class='slacklog-text'><https://qiita.com/kyoh86/items/f5e007bc004c34b2d314></span>
 </span>
 <span class='slacklog-message' id='1586089034.482100'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -3655,14 +3655,14 @@ BenchmarkCopy-8           100820             14641 ns/op```</span>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-08-09/721207338820_626bbc95c10c7b6c7738_48.png'>
 <span class='slacklog-name'>eihigh</span>
 <a class='slacklog-datetime' href='#1586094572.492400'>5日 22:49:33</a>
-<span class='slacklog-text'>&amp;gt; 今はbashインストーラ
+<span class='slacklog-text'>&gt; 今はbashインストーラ
 いったい何nyさんの偉業なんだ…</span>
 </span>
 <span class='slacklog-message' id='1586098104.493200'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586098104.493200'>5日 23:48:25</a>
-<span class='slacklog-text'>&lt;https://twitter.com/mattn_jp/status/1246801704634306563&gt;</span>
+<span class='slacklog-text'><https://twitter.com/mattn_jp/status/1246801704634306563></span>
 </span>
 <span class='slacklog-message' id='1586098128.493600'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -3674,7 +3674,7 @@ BenchmarkCopy-8           100820             14641 ns/op```</span>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
 <span class='slacklog-name'>raa0121</span>
 <a class='slacklog-datetime' href='#1586100820.495100'>6日 00:33:41</a>
-<span class='slacklog-text'>&lt;https://gobinaries.com/&gt;</span>
+<span class='slacklog-text'><https://gobinaries.com/></span>
 </span>
 <span class='slacklog-message' id='1586100852.495800'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
@@ -3718,12 +3718,12 @@ CI上でもteeとかでstderrなんかにも流すようにしたりset -xとか
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>itchyny</span>
 <a class='slacklog-datetime' href='#1586146288.010400'>6日 13:11:29</a>
-<span class='slacklog-text'>&lt;#CGZTGR6E6|javascript&gt; でASI (automatic semicolon insertion) が話題になっているけれど、Go言語も実はASIは行われている (JavaScriptと違ってむしろセミコロン省略が推奨される)。&lt;https://golang.org/ref/spec#Blocks&gt; を見ると `StatementList = { Statement &#34;;&#34; } .` となっており、ここに改行がセパレーターとして使えるという記述はない。セミコロン挿入のルールは &lt;https://golang.org/ref/spec#Semicolons&gt; 。このルールが頭に入っていると以下のようなコードがなぜコンパイルできないのかが理解できる (そしてJavaScriptのASIルールとの違いも感じられる)。
-```x := &#34;x&#34;
-	+ &#34;y&#34;
+<span class='slacklog-text'><#CGZTGR6E6|javascript> でASI (automatic semicolon insertion) が話題になっているけれど、Go言語も実はASIは行われている (JavaScriptと違ってむしろセミコロン省略が推奨される)。<https://golang.org/ref/spec#Blocks> を見ると `StatementList = { Statement ";" } .` となっており、ここに改行がセパレーターとして使えるという記述はない。セミコロン挿入のルールは <https://golang.org/ref/spec#Semicolons> 。このルールが頭に入っていると以下のようなコードがなぜコンパイルできないのかが理解できる (そしてJavaScriptのASIルールとの違いも感じられる)。
+```x := "x"
+	+ "y"
 switch strings.ToUpper(x)
 {
-	case &#34;XY&#34;:
+	case "XY":
 		println(x)
 }```</span>
 </span>
@@ -3732,10 +3732,10 @@ switch strings.ToUpper(x)
 <span class='slacklog-name'>tyru</span>
 <a class='slacklog-datetime' href='#1586148736.011500'>6日 13:52:17</a>
 <span class='slacklog-text'>gofmt するとこうなった。なるほど
-```	x := &#34;x&#34;
-	+&#34;y&#34;
+```	x := "x"
+	+"y"
 	switch strings.ToUpper(x); {
-	case &#34;XY&#34;:
+	case "XY":
 		println(x)
 	}```</span>
 </span>
@@ -3759,20 +3759,20 @@ switch strings.ToUpper(x)
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2017-12-09/284380828226_585d265f54113004e478_48.jpg'>
 <span class='slacklog-name'>dohq</span>
 <a class='slacklog-datetime' href='#1586163236.016400'>6日 17:53:57</a>
-<span class='slacklog-text'>&lt;https://github.com/cenkalti/backoff&gt;
+<span class='slacklog-text'><https://github.com/cenkalti/backoff>
 もなんかで見た記憶ありますね</span>
 </span>
 <span class='slacklog-message' id='1586163744.016700'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586163744.016700'>6日 18:02:25</a>
-<span class='slacklog-text'>&lt;https://github.com/shogo82148/go-retry&gt;</span>
+<span class='slacklog-text'><https://github.com/shogo82148/go-retry></span>
 </span>
 <span class='slacklog-message' id='1586163773.017000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586163773.017000'>6日 18:02:54</a>
-<span class='slacklog-text'>&lt;https://github.com/Songmu/retry&gt;</span>
+<span class='slacklog-text'><https://github.com/Songmu/retry></span>
 </span>
 <span class='slacklog-message' id='1586163778.017300'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -3785,7 +3785,7 @@ switch strings.ToUpper(x)
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586164510.017500'>6日 18:15:11</a>
 <span class='slacklog-text'>もひとつ
-&lt;https://github.com/lestrrat-go/backoff&gt;</span>
+<https://github.com/lestrrat-go/backoff></span>
 </span>
 <span class='slacklog-message' id='1586164549.017900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -3803,7 +3803,7 @@ switch strings.ToUpper(x)
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586164714.018600'>6日 18:18:35</a>
-<span class='slacklog-text'>&lt;https://twitter.com/xatierlikeLee/status/1247069907813937160&gt;</span>
+<span class='slacklog-text'><https://twitter.com/xatierlikeLee/status/1247069907813937160></span>
 </span>
 <span class='slacklog-message' id='1586164729.018900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -3893,7 +3893,7 @@ switch strings.ToUpper(x)
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
 <span class='slacklog-name'>thinca</span>
 <a class='slacklog-datetime' href='#1586166339.024500'>6日 18:45:40</a>
-<span class='slacklog-text'>中国語分かる ~人~ ゴリラに翻訳してもらうとよさそう &lt;@UDDCM376D&gt;</span>
+<span class='slacklog-text'>中国語分かる ~人~ ゴリラに翻訳してもらうとよさそう <@UDDCM376D></span>
 </span>
 <span class='slacklog-message' id='1586166386.025200'>
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
@@ -3935,7 +3935,7 @@ switch strings.ToUpper(x)
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586173975.033900'>6日 20:52:56</a>
-<span class='slacklog-text'>&lt;https://twitter.com/xatierlikeLee/status/1247125215802322944?s=20|https://twitter.com/xatierlikeLee/status/1247125215802322944?s=20&gt;</span>
+<span class='slacklog-text'><https://twitter.com/xatierlikeLee/status/1247125215802322944?s=20|https://twitter.com/xatierlikeLee/status/1247125215802322944?s=20></span>
 </span>
 <span class='slacklog-message' id='1586173985.034400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4007,7 +4007,7 @@ switch strings.ToUpper(x)
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1586217961.041100'>7日 09:06:02</a>
-<span class='slacklog-text'>&lt;http://logic.cs.tsukuba.ac.jp/ppl2016/slides/visual_parsing.pdf|http://logic.cs.tsukuba.ac.jp/ppl2016/slides/visual_parsing.pdf&gt;</span>
+<span class='slacklog-text'><http://logic.cs.tsukuba.ac.jp/ppl2016/slides/visual_parsing.pdf|http://logic.cs.tsukuba.ac.jp/ppl2016/slides/visual_parsing.pdf></span>
 </span>
 <span class='slacklog-message' id='1586218210.041400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -4073,7 +4073,7 @@ switch strings.ToUpper(x)
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
 <span class='slacklog-name'>ゴリラ</span>
 <a class='slacklog-datetime' href='#1586222644.048000'>7日 10:24:05</a>
-<span class='slacklog-text'>&amp;gt; いっそ BNF 学んで感触つかむってのもいいかも。(ここは意見が割れるかも)
+<span class='slacklog-text'>&gt; いっそ BNF 学んで感触つかむってのもいいかも。(ここは意見が割れるかも)
 BNFはなんとなく読めるくらいですね
 それをコードに落とし込むってところが全然まだまだですね…</span>
 </span>
@@ -4087,7 +4087,7 @@ BNFはなんとなく読めるくらいですね
 <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
 <span class='slacklog-name'>itchyny</span>
 <a class='slacklog-datetime' href='#1586245534.050200'>7日 16:45:35</a>
-<span class='slacklog-text'>&lt;https://github.com/golang/go/issues/38287&gt; なんだろう？</span>
+<span class='slacklog-text'><https://github.com/golang/go/issues/38287> なんだろう？</span>
 </span>
 <span class='slacklog-message' id='1586247083.050800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4150,24 +4150,24 @@ BNFはなんとなく読めるくらいですね
 <span class='slacklog-text'>```package main_test
 
 import (
-        &#34;io/ioutil&#34;
-        &#34;os&#34;
-        &#34;testing&#34;
+        "io/ioutil"
+        "os"
+        "testing"
 )
 
 func TestRenameRO(t *testing.T) {
-        os.Remove(&#34;a&#34;)
-        os.Remove(&#34;b&#34;)
-        defer os.Remove(&#34;a&#34;)
-        defer os.Remove(&#34;b&#34;)
+        os.Remove("a")
+        os.Remove("b")
+        defer os.Remove("a")
+        defer os.Remove("b")
 
-        if err := ioutil.WriteFile(&#34;a&#34;, []byte(&#34;some data&#34;), 0644); err != nil { // rw
+        if err := ioutil.WriteFile("a", []byte("some data"), 0644); err != nil { // rw
                 t.Fatal(err)
         }
-        if err := ioutil.WriteFile(&#34;b&#34;, []byte(&#34;some data&#34;), 0444); err != nil { // ro
+        if err := ioutil.WriteFile("b", []byte("some data"), 0444); err != nil { // ro
                 t.Fatal(err)
         }
-        if err := os.Rename(&#34;a&#34;, &#34;b&#34;); err != nil {
+        if err := os.Rename("a", "b"); err != nil {
                 t.Error(err)
         }
 }```</span>
@@ -4229,13 +4229,13 @@ func TestRenameRO(t *testing.T) {
 chmod -w b```
 (これは msys2 で)
 して
-```#include &amp;lt;windows.h&amp;gt;
-#include &amp;lt;stdio.h&amp;gt;
+```#include &lt;windows.h&gt;
+#include &lt;stdio.h&gt;
 
 int
 main() {
-  printf(&#34;%d\n&#34;, MoveFileExW(L&#34;a&#34;, L&#34;b&#34;, MOVEFILE_REPLACE_EXISTING));
-  printf(&#34;%d\n&#34;, GetLastError());
+  printf("%d\n", MoveFileExW(L"a", L"b", MOVEFILE_REPLACE_EXISTING));
+  printf("%d\n", GetLastError());
   return 0;
 }```
 実行したら 0 2 なんす。</span>
@@ -4268,7 +4268,7 @@ main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586248874.060400'>7日 17:41:15</a>
-<span class='slacklog-text'>つまりそういう事ですかね &amp;gt; 濃厚</span>
+<span class='slacklog-text'>つまりそういう事ですかね &gt; 濃厚</span>
 </span>
 <span class='slacklog-message' id='1586248891.060800'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4346,7 +4346,7 @@ main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586249431.064700'>7日 17:50:32</a>
-<span class='slacklog-text'>&lt;https://github.com/golang/go/commit/16f0f9c8e1e767d10d483939981e3b2242554c33&gt;</span>
+<span class='slacklog-text'><https://github.com/golang/go/commit/16f0f9c8e1e767d10d483939981e3b2242554c33></span>
 </span>
 <span class='slacklog-message' id='1586249435.065100'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4394,7 +4394,7 @@ main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586249795.067800'>7日 17:56:36</a>
-<span class='slacklog-text'>&lt;https://github.com/golang/go/issues/26295&gt;</span>
+<span class='slacklog-text'><https://github.com/golang/go/issues/26295></span>
 </span>
 <span class='slacklog-message' id='1586249820.068400'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4406,8 +4406,8 @@ main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586249855.068700'>7日 17:57:36</a>
-<span class='slacklog-text'>&lt;https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-deletefilea&gt;
-&amp;gt; To delete a read-only file, first you must remove the read-only attribute.</span>
+<span class='slacklog-text'><https://docs.microsoft.com/en-us/windows/win32/api/fileapi/nf-fileapi-deletefilea>
+&gt; To delete a read-only file, first you must remove the read-only attribute.</span>
 </span>
 <span class='slacklog-message' id='1586249866.069000'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4467,7 +4467,7 @@ main() {
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
 <span class='slacklog-name'>mattn</span>
 <a class='slacklog-datetime' href='#1586250640.076400'>7日 18:10:41</a>
-<span class='slacklog-text'>&lt;https://github.com/mattn/go/blob/2fbca94db7e14fc1d18162cd203d7afc19b520e8/src/os/file_windows.go#L302&gt;</span>
+<span class='slacklog-text'><https://github.com/mattn/go/blob/2fbca94db7e14fc1d18162cd203d7afc19b520e8/src/os/file_windows.go#L302></span>
 </span>
 <span class='slacklog-message' id='1586250658.076900'>
 <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
