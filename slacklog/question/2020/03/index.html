@@ -23,9 +23,7 @@ title: vim-jp.slack.com log - &#35question - 2020年03月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1583736395.494000'>9日 15:46:36</a>
-  <span class='slacklog-text'>`質問です`
-lessで `-F / --quit-if-one-screen`  付きのとき、プロンプトが&gt;1のために流れてしまう分ができます。
-なにか解決策ってありますか? (lessにカットオフ=1画面というサイズ情報をそれより少なくできれば..、とは思ったのですが)</span>
+  <span class='slacklog-text'>`質問です`<br>lessで `-F / --quit-if-one-screen`  付きのとき、プロンプトが&gt;1のために流れてしまう分ができます。<br>なにか解決策ってありますか? (lessにカットオフ=1画面というサイズ情報をそれより少なくできれば..、とは思ったのですが)</span>
   </span>
   <span class='slacklog-message' id='1583736604.494700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -55,12 +53,7 @@ lessで `-F / --quit-if-one-screen`  付きのとき、プロンプトが&gt;1�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b98194c6b57a96fbaa5589393798efb0.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1583889063.001000'>11日 10:11:04</a>
-  <span class='slacklog-text'>【質問です】Deniteについての質問です。普段`:Denite file/rec file_mru buffer`などをよく使うのですが、file/recの候補に.editorconfigなどドットから始まるファイルが出てこないので調べたところ、以下のuniteのissueを見つけました。
-&lt;https://github.com/Shougo/unite.vim/issues/894&gt;
-この内容とdeniteのhelpを見比べて、deniteでもデフォルトでmatcher/hide_hidden_filesが有効になっているため自分でsourceのmatcherを上書きしないと出てこないのだと理解しました。
-&lt;https://github.com/Shougo/denite.nvim/blob/51fb80b66faaff5117e661ebcffc773577763ecd/doc/denite.txt#L1432-L1434&gt;
-これをもとにこのように設定したのですが、`:Denite file/rec`の結果には画像の通りドットから始まるファイルが出てこないです。`.git/`については`matcher/ignore_globs`の対象に設定しているので出てこなくてもいいのですが、.editorconfigは出したいです。直すべきところわかる方いたら教えて下さい。よろしくお願いします。
-```call denite#custom#source(&#39;file/rec&#39;, &#39;matchers&#39;, [&#39;matcher/fuzzy&#39;])```</span>
+  <span class='slacklog-text'>【質問です】Deniteについての質問です。普段`:Denite file/rec file_mru buffer`などをよく使うのですが、file/recの候補に.editorconfigなどドットから始まるファイルが出てこないので調べたところ、以下のuniteのissueを見つけました。<br><a href='https://github.com/Shougo/unite.vim/issues/894'>https://github.com/Shougo/unite.vim/issues/894</a><br>この内容とdeniteのhelpを見比べて、deniteでもデフォルトでmatcher/hide_hidden_filesが有効になっているため自分でsourceのmatcherを上書きしないと出てこないのだと理解しました。<br><a href='https://github.com/Shougo/denite.nvim/blob/51fb80b66faaff5117e661ebcffc773577763ecd/doc/denite.txt#L1432-L1434'>https://github.com/Shougo/denite.nvim/blob/51fb80b66faaff5117e661ebcffc773577763ecd/doc/denite.txt#L1432-L1434</a><br>これをもとにこのように設定したのですが、`:Denite file/rec`の結果には画像の通りドットから始まるファイルが出てこないです。`.git/`については`matcher/ignore_globs`の対象に設定しているので出てこなくてもいいのですが、.editorconfigは出したいです。直すべきところわかる方いたら教えて下さい。よろしくお願いします。<br>```call denite#custom#source(&#39;file/rec&#39;, &#39;matchers&#39;, [&#39;matcher/fuzzy&#39;])```</span>
   </span>
   <span class='slacklog-message' id='1583892183.001700'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
@@ -90,10 +83,7 @@ lessで `-F / --quit-if-one-screen`  付きのとき、プロンプトが&gt;1�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1583912051.008200'>11日 16:34:12</a>
-  <span class='slacklog-text'>普段fold使わない人なんですが、ちょっととあるファイルで折りたたみの必要に迫られています。
-普段使わないので `z` も他にマッピングしてしまってるで、新しく `Z` を割り当てようとしているんですが、ライトに使う場合って、 `zo` , `zO` , `zc` くらいをremapしとけばいいですかね？？
-
-foldユーザーのみなさん教えてください :bow:</span>
+  <span class='slacklog-text'>普段fold使わない人なんですが、ちょっととあるファイルで折りたたみの必要に迫られています。<br>普段使わないので `z` も他にマッピングしてしまってるで、新しく `Z` を割り当てようとしているんですが、ライトに使う場合って、 `zo` , `zO` , `zc` くらいをremapしとけばいいですかね？？<br><br>foldユーザーのみなさん教えてください :bow:</span>
   </span>
   <span class='slacklog-message' id='1583912203.009200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -129,9 +119,7 @@ foldユーザーのみなさん教えてください :bow:</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1583912350.012400'>11日 16:39:11</a>
-  <span class='slacklog-text'>ただ、開け閉めを
-&lt;https://github.com/arecarn/vim-fold-cycle&gt;
-にまかせて&lt;CR&gt;ですませてるから参考になるかなあ?</span>
+  <span class='slacklog-text'>ただ、開け閉めを<br><a href='https://github.com/arecarn/vim-fold-cycle'>https://github.com/arecarn/vim-fold-cycle</a><br>にまかせて&lt;CR&gt;ですませてるから参考になるかなあ?</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -151,17 +139,13 @@ foldユーザーのみなさん教えてください :bow:</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1583912392.013900'>11日 16:39:53</a>
-  <span class='slacklog-text'>1. enable-&gt;disable
-2. fold -&gt; all open
-3. 1 level close
-4. 1level open/close &lt;plugin&gt;</span>
+  <span class='slacklog-text'>1. enable-&gt;disable<br>2. fold -&gt; all open<br>3. 1 level close<br>4. 1level open/close &lt;plugin&gt;</span>
   </span>
   <span class='slacklog-message' id='1583912484.014600'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1583912484.014600'>11日 16:41:25</a>
-  <span class='slacklog-text'>normalのCRなんで、これについては、なんとかなってる
-insertのCRが死ぬ...</span>
+  <span class='slacklog-text'>normalのCRなんで、これについては、なんとかなってる<br>insertのCRが死ぬ...</span>
   </span>
   <span class='slacklog-message' id='1583912500.014800'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -173,8 +157,7 @@ insertのCRが死ぬ...</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1583912565.015500'>11日 16:42:46</a>
-  <span class='slacklog-text'>insert CRは仮想化してほしい
-inoremap &lt;CR1&gt;　みたいな</span>
+  <span class='slacklog-text'>insert CRは仮想化してほしい<br>inoremap &lt;CR1&gt;　みたいな</span>
   </span>
   <span class='slacklog-message' id='1583912619.016000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -258,8 +241,7 @@ inoremap &lt;CR1&gt;　みたいな</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b98194c6b57a96fbaa5589393798efb0.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
   <span class='slacklog-name'>tk</span>
   <a class='slacklog-datetime' href='#1583945400.025700'>12日 01:50:01</a>
-  <span class='slacklog-text'>Shougoさんおっしゃるとおりでデフォルトだと出ました。内容理解せずにこちらをコピペしていたのが原因でした。お手数おかけしました。
-&lt;https://github.com/Shougo/denite.nvim/blob/b6e2c7df9402f293bad1dc45f5d41b3dc5d8a9b1/doc/denite.txt#L152-L153&gt;</span>
+  <span class='slacklog-text'>Shougoさんおっしゃるとおりでデフォルトだと出ました。内容理解せずにこちらをコピペしていたのが原因でした。お手数おかけしました。<br><a href='https://github.com/Shougo/denite.nvim/blob/b6e2c7df9402f293bad1dc45f5d41b3dc5d8a9b1/doc/denite.txt#L152-L153'>https://github.com/Shougo/denite.nvim/blob/b6e2c7df9402f293bad1dc45f5d41b3dc5d8a9b1/doc/denite.txt#L152-L153</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -273,15 +255,13 @@ inoremap &lt;CR1&gt;　みたいな</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b98194c6b57a96fbaa5589393798efb0.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
   <span class='slacklog-name'>tk</span>
   <a class='slacklog-datetime' href='#1583945475.026000'>12日 01:51:16</a>
-  <span class='slacklog-text'>file/recのcommandをこちらをコピペしてカスタマイズしていました。これがカスタマイズという認識もなかったのですがhelpをよく読んだらわかりました。お手数おかけしました。
-&lt;https://github.com/Shougo/denite.nvim/blob/b6e2c7df9402f293bad1dc45f5d41b3dc5d8a9b1/doc/denite.txt#L152-L153&gt;</span>
+  <span class='slacklog-text'>file/recのcommandをこちらをコピペしてカスタマイズしていました。これがカスタマイズという認識もなかったのですがhelpをよく読んだらわかりました。お手数おかけしました。<br><a href='https://github.com/Shougo/denite.nvim/blob/b6e2c7df9402f293bad1dc45f5d41b3dc5d8a9b1/doc/denite.txt#L152-L153'>https://github.com/Shougo/denite.nvim/blob/b6e2c7df9402f293bad1dc45f5d41b3dc5d8a9b1/doc/denite.txt#L152-L153</a></span>
   </span>
   <span class='slacklog-message' id='1583946996.027000'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1583946996.027000'>12日 02:16:37</a>
-  <span class='slacklog-text'>最低限これだけは使うだろ的 fold マッピング、自分はこれですね `nnoremap z&lt;Space&gt; zMzvzz`
-これの他にはたまに `zM`, `zR` を使うくらい</span>
+  <span class='slacklog-text'>最低限これだけは使うだろ的 fold マッピング、自分はこれですね `nnoremap z&lt;Space&gt; zMzvzz`<br>これの他にはたまに `zM`, `zR` を使うくらい</span>
   </span>
   <span class='slacklog-message' id='1583960612.027100'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
@@ -299,15 +279,13 @@ inoremap &lt;CR1&gt;　みたいな</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6b58a0397ae4e1045da22ce63cd61012.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-48.png'>
   <span class='slacklog-name'>バクダンくん</span>
   <a class='slacklog-datetime' href='#1583964860.030700'>12日 07:14:21</a>
-  <span class='slacklog-text'>折畳めっちゃ使うさん
-`zj` `zk` は折畳の開閉に関わらずジャンプ対象にしてしまうので、閉じられた折畳のみを対象としてジャンプする関数作って `zj` `zk` にマッピングしてます :benri:</span>
+  <span class='slacklog-text'>折畳めっちゃ使うさん<br>`zj` `zk` は折畳の開閉に関わらずジャンプ対象にしてしまうので、閉じられた折畳のみを対象としてジャンプする関数作って `zj` `zk` にマッピングしてます :benri:</span>
   </span>
   <span class='slacklog-message' id='1583965913.033800'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6b58a0397ae4e1045da22ce63cd61012.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-48.png'>
   <span class='slacklog-name'>バクダンくん</span>
   <a class='slacklog-datetime' href='#1583965913.033800'>12日 07:31:54</a>
-  <span class='slacklog-text'>今見たらその関数、一度Stack Overflowからコピペしたものが気に入らなくて自分で作り直した形跡があるけど、何が気に入らなかったのかわからない
-&lt;expr&gt;マッピングになってるし、CmdlineEnterが走らないようにしたかったのかな</span>
+  <span class='slacklog-text'>今見たらその関数、一度Stack Overflowからコピペしたものが気に入らなくて自分で作り直した形跡があるけど、何が気に入らなかったのかわからない<br>&lt;expr&gt;マッピングになってるし、CmdlineEnterが走らないようにしたかったのかな</span>
   </span>
   <span class='slacklog-message' id='1583966340.034800'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
@@ -448,14 +426,13 @@ vim scriptで特定の行、位置(例: 10行目45文字目から60文字目)�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1584024407.051800'>12日 23:46:48</a>
-  <span class='slacklog-text'>RRethy/vim-illuminate
-じゃだめなんですかね？？</span>
+  <span class='slacklog-text'>RRethy/vim-illuminate<br>じゃだめなんですかね？？</span>
   </span>
   <span class='slacklog-message' id='1584024442.052000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1584024442.052000'>12日 23:47:23</a>
-  <span class='slacklog-text'>&lt;https://github.com/machakann/vim-highlightedyank/blob/931cc6bd53e4a1fdbe592751f0e13c0e401f0a49/autoload/highlightedyank.vim#L135-L159&gt;</span>
+  <span class='slacklog-text'><a href='https://github.com/machakann/vim-highlightedyank/blob/931cc6bd53e4a1fdbe592751f0e13c0e401f0a49/autoload/highlightedyank.vim#L135-L159'>https://github.com/machakann/vim-highlightedyank/blob/931cc6bd53e4a1fdbe592751f0e13c0e401f0a49/autoload/highlightedyank.vim#L135-L159</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -481,8 +458,7 @@ vim scriptで特定の行、位置(例: 10行目45文字目から60文字目)�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1584024548.052800'>12日 23:49:09</a>
-  <span class='slacklog-text'>&lt;https://github.com/haya14busa/vim-operator-flashy&gt;
-こっちでした</span>
+  <span class='slacklog-text'><a href='https://github.com/haya14busa/vim-operator-flashy'>https://github.com/haya14busa/vim-operator-flashy</a><br>こっちでした</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -544,70 +520,13 @@ vim scriptで特定の行、位置(例: 10行目45文字目から60文字目)�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2580e8519eb67ab0e29a6556a5f37031.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-48.png'>
   <span class='slacklog-name'>ansanloms</span>
   <a class='slacklog-datetime' href='#1584328843.061900'>16日 12:20:44</a>
-  <span class='slacklog-text'>`質問です`
-
-はじめて質問させていただきます。何卒宜しくお願い致します。
-
-lightline.vim を導入、且つファイル書き込み、読み込み時に mkview および loadview を実施するようにしています。
-そのうえで、開いているファイルが別の箇所で更新された際に vim 上で再読み込みを行うと、ステータスラインが消えてしまいます。
-こちら、ステータスラインが消えないようにするにはどうすればいいか、ご教示いただきたいです。
-
-環境は
-
-+ Windows 10
-+ vim 8.2.390
-
-になります。
-
-**手順**
-
-1. lightline.vim を導入する
- - `mkdir %UserProfile%\.vim-test\pack\test\start`
- - `git clone &lt;https://github.com/itchyny/lightline.vim.git&gt; %UserProfile%\.vim-test\pack\test\start\lightline.vim`
-
-2. 以下の通り `.vimrc.test` を用意する
-
-```set packpath^=~/.vim-test
-set laststatus=2
-
-&#34; &lt;https://vim-jp.org/vim-users-jp/2009/10/08/Hack-84.html&gt;
-autocmd BufWritePost * if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | mkview | endif
-autocmd BufRead * if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | silent loadview | endif
-set viewoptions-=options```
-3. あらかじめ test.txt を用意する
- - `copy nul test.txt`
-
-4. vim を起動し test.txt を開く
- - `vim -u .vimrc.test -N`
- - `:e test.txt`
-
-5. vim 以外の所で test.txt を更新する
- - `echo hoge &gt;&gt; test.txt`
-
-6. vim 上で test.txt を読み込む
-
-```W11: 警告: ファイル &#34;test.txt&#34; は編集開始後に変更されました
-詳細は &#34;:help W11&#34; を参照してください
-[O]K, ファイル読込((L)):```
- --&gt; L を押下
-
-**実行結果**
-
-ステータスラインが消えている。
-
-**実現したいこと**
-
-ステータスラインが消えないようにしたい。
-
-
-何卒宜しくお願い致します。</span>
+  <span class='slacklog-text'>`質問です`<br><br>はじめて質問させていただきます。何卒宜しくお願い致します。<br><br>lightline.vim を導入、且つファイル書き込み、読み込み時に mkview および loadview を実施するようにしています。<br>そのうえで、開いているファイルが別の箇所で更新された際に vim 上で再読み込みを行うと、ステータスラインが消えてしまいます。<br>こちら、ステータスラインが消えないようにするにはどうすればいいか、ご教示いただきたいです。<br><br>環境は<br><br>+ Windows 10<br>+ vim 8.2.390<br><br>になります。<br><br>**手順**<br><br>1. lightline.vim を導入する<br> - `mkdir %UserProfile%\.vim-test\pack\test\start`<br> - `git clone <a href='https://github.com/itchyny/lightline.vim.git'>https://github.com/itchyny/lightline.vim.git</a> %UserProfile%\.vim-test\pack\test\start\lightline.vim`<br><br>2. 以下の通り `.vimrc.test` を用意する<br><br>```set packpath^=~/.vim-test<br>set laststatus=2<br><br>&#34; <a href='https://vim-jp.org/vim-users-jp/2009/10/08/Hack-84.html'>https://vim-jp.org/vim-users-jp/2009/10/08/Hack-84.html</a><br>autocmd BufWritePost * if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | mkview | endif<br>autocmd BufRead * if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | silent loadview | endif<br>set viewoptions-=options```<br>3. あらかじめ test.txt を用意する<br> - `copy nul test.txt`<br><br>4. vim を起動し test.txt を開く<br> - `vim -u .vimrc.test -N`<br> - `:e test.txt`<br><br>5. vim 以外の所で test.txt を更新する<br> - `echo hoge &gt;&gt; test.txt`<br><br>6. vim 上で test.txt を読み込む<br><br>```W11: 警告: ファイル &#34;test.txt&#34; は編集開始後に変更されました<br>詳細は &#34;:help W11&#34; を参照してください<br>[O]K, ファイル読込((L)):```<br> --&gt; L を押下<br><br>**実行結果**<br><br>ステータスラインが消えている。<br><br>**実現したいこと**<br><br>ステータスラインが消えないようにしたい。<br><br><br>何卒宜しくお願い致します。</span>
   </span>
   <span class='slacklog-message' id='1584329840.062400'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
   <span class='slacklog-name'>itchyny</span>
   <a class='slacklog-datetime' href='#1584329840.062400'>16日 12:37:21</a>
-  <span class='slacklog-text'>`++nested` をつけるとどうなりますか
-`autocmd BufRead * ++nested if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | silent loadview | endif`</span>
+  <span class='slacklog-text'>`++nested` をつけるとどうなりますか<br>`autocmd BufRead * ++nested if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | silent loadview | endif`</span>
   </span>
   <span class='slacklog-message' id='1584330510.063100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -637,10 +556,7 @@ set viewoptions-=options```
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2580e8519eb67ab0e29a6556a5f37031.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-48.png'>
   <span class='slacklog-name'>ansanloms</span>
   <a class='slacklog-datetime' href='#1584330705.066300'>16日 12:51:46</a>
-  <span class='slacklog-text'>&lt;@UAZ33BKV2&gt;
-ありがとうございます。
-`:redraw` および `:redrawstatus` を実施しましたが変化はありませんでした。
-※ `:e` で再読み込みすればステータスラインが表示されます。</span>
+  <span class='slacklog-text'>&lt;@UAZ33BKV2&gt;<br>ありがとうございます。<br>`:redraw` および `:redrawstatus` を実施しましたが変化はありませんでした。<br>※ `:e` で再読み込みすればステータスラインが表示されます。</span>
   </span>
   <span class='slacklog-message' id='1584330738.066600'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
@@ -763,12 +679,7 @@ iPad Proで、vscodeをインストールしたいのですが、可能でし�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2580e8519eb67ab0e29a6556a5f37031.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-48.png'>
   <span class='slacklog-name'>ansanloms</span>
   <a class='slacklog-datetime' href='#1584341759.078000'>16日 15:56:00</a>
-  <span class='slacklog-text'>&lt;@U7H4TJEG0&gt;
-お手数をおかけします。
-当該、下記に作成いたしました。
-&lt;https://github.com/itchyny/lightline.vim/issues/430&gt;
-
-何卒よろしくお願いします。</span>
+  <span class='slacklog-text'>&lt;@U7H4TJEG0&gt;<br>お手数をおかけします。<br>当該、下記に作成いたしました。<br><a href='https://github.com/itchyny/lightline.vim/issues/430'>https://github.com/itchyny/lightline.vim/issues/430</a><br><br>何卒よろしくお願いします。</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -788,11 +699,7 @@ iPad Proで、vscodeをインストールしたいのですが、可能でし�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1584354241.078600'>16日 19:24:02</a>
-  <span class='slacklog-text'>```
-                                                        *FileChangedShellPost*
-FileChangedShellPost            Vimの外部でファイルが変更されたのを検出・対処
-                                した後。ステータスラインを更新するのに使える。
-```</span>
+  <span class='slacklog-text'>```<br>                                                        *FileChangedShellPost*<br>FileChangedShellPost            Vimの外部でファイルが変更されたのを検出・対処<br>                                した後。ステータスラインを更新するのに使える。<br>```</span>
   </span>
   <span class='slacklog-message' id='1584354250.078800'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
@@ -810,9 +717,7 @@ FileChangedShellPost            Vimの外部でファイルが変更されたの
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-07-28/696621453314_0edf66561724b8e38e6a_48.png'>
   <span class='slacklog-name'>monaqa</span>
   <a class='slacklog-datetime' href='#1584361043.082300'>16日 21:17:24</a>
-  <span class='slacklog-text'>teratail の件，VSCode に関するタグが出てこないのが原因っぽいですね．
-しかも今，質問画面を試しに開いてみたら，入力されたタグが存在しない場合はエラーになるみたいです（タグ追加には問い合わせが必要）．
-たしかにこの仕様なら「VSCode の質問したいのに VSCode のタグがない．代わりに似たようなエディタの Vim をつけとくか」なんて心理がはたらく人がいてもおかしくないかも...</span>
+  <span class='slacklog-text'>teratail の件，VSCode に関するタグが出てこないのが原因っぽいですね．<br>しかも今，質問画面を試しに開いてみたら，入力されたタグが存在しない場合はエラーになるみたいです（タグ追加には問い合わせが必要）．<br>たしかにこの仕様なら「VSCode の質問したいのに VSCode のタグがない．代わりに似たようなエディタの Vim をつけとくか」なんて心理がはたらく人がいてもおかしくないかも...</span>
   </span>
   <span class='slacklog-message' id='1584361048.082600'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-07-28/696621453314_0edf66561724b8e38e6a_48.png'>
@@ -1052,8 +957,7 @@ FileChangedShellPost            Vimの外部でファイルが変更されたの
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
   <span class='slacklog-name'>johejo</span>
   <a class='slacklog-datetime' href='#1584363682.112100'>16日 22:01:23</a>
-  <span class='slacklog-text'>綴りとか適当に調べるときとか助かってる気がする
-Ctrl-n, Ctrl-p ついつい押してしまう....</span>
+  <span class='slacklog-text'>綴りとか適当に調べるときとか助かってる気がする<br>Ctrl-n, Ctrl-p ついつい押してしまう....</span>
   </span>
   <span class='slacklog-message' id='1584363769.113000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1071,8 +975,7 @@ Ctrl-n, Ctrl-p ついつい押してしまう....</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584364605.114000'>16日 22:16:46</a>
-  <span class='slacklog-text'>はい、そうですね。
-どっちも自前で準備しました。</span>
+  <span class='slacklog-text'>はい、そうですね。<br>どっちも自前で準備しました。</span>
   </span>
   <span class='slacklog-message' id='1584365494.114400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1090,9 +993,7 @@ Ctrl-n, Ctrl-p ついつい押してしまう....</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584365958.115400'>16日 22:39:19</a>
-  <span class='slacklog-text'>辞書定義はこれくらい
-&lt;https://github.com/tsuyoshicho/vimrc-reading/blob/30e44b74bd658d268a31adcf9c2baad7b17628be/.vim/rc/dein_lazy.toml#L102-L235&gt;
-あるだけ入れてある、という...まあ英辞郎とGENEでだいたいOKだとも言える...</span>
+  <span class='slacklog-text'>辞書定義はこれくらい<br><a href='https://github.com/tsuyoshicho/vimrc-reading/blob/30e44b74bd658d268a31adcf9c2baad7b17628be/.vim/rc/dein_lazy.toml#L102-L235'>https://github.com/tsuyoshicho/vimrc-reading/blob/30e44b74bd658d268a31adcf9c2baad7b17628be/.vim/rc/dein_lazy.toml#L102-L235</a><br>あるだけ入れてある、という...まあ英辞郎とGENEでだいたいOKだとも言える...</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -1112,8 +1013,7 @@ Ctrl-n, Ctrl-p ついつい押してしまう....</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584366077.116400'>16日 22:41:18</a>
-  <span class='slacklog-text'>たまーに適当なワードで眺めることがある
-ちなみに全辞書はスマホにEBPocket Professionalとともに入ってたりする</span>
+  <span class='slacklog-text'>たまーに適当なワードで眺めることがある<br>ちなみに全辞書はスマホにEBPocket Professionalとともに入ってたりする</span>
   </span>
   <span class='slacklog-message' id='1584366406.116600'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1209,9 +1109,7 @@ Ctrl-n, Ctrl-p ついつい押してしまう....</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>koron</span>
   <a class='slacklog-datetime' href='#1584422743.128200'>17日 14:25:44</a>
-  <span class='slacklog-text'>Maixduino だった。
-
-&lt;https://www.shigezone.com/?product=maixduino%e3%83%9e%e3%83%83%e3%82%af%e3%82%b9%e3%83%87%e3%83%a5%e3%82%a4%e3%83%bc%e3%83%8e&gt;</span>
+  <span class='slacklog-text'>Maixduino だった。<br><br><a href='https://www.shigezone.com/?product=maixduino%e3%83%9e%e3%83%83%e3%82%af%e3%82%b9%e3%83%87%e3%83%a5%e3%82%a4%e3%83%bc%e3%83%8e'>https://www.shigezone.com/?product=maixduino%e3%83%9e%e3%83%83%e3%82%af%e3%82%b9%e3%83%87%e3%83%a5%e3%82%a4%e3%83%bc%e3%83%8e</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
@@ -1245,17 +1143,13 @@ Ctrl-n, Ctrl-p ついつい押してしまう....</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584517590.134700'>18日 16:46:31</a>
-  <span class='slacklog-text'>`質問です`
-macのvim/macvimでlibluaを認識させるに安定の方法ってどうしたもんでしょう?
-DYLD_LIBRARY_PATHにパス設定したけどなぜか認識しない...
-(Github Actions下なのです)</span>
+  <span class='slacklog-text'>`質問です`<br>macのvim/macvimでlibluaを認識させるに安定の方法ってどうしたもんでしょう?<br>DYLD_LIBRARY_PATHにパス設定したけどなぜか認識しない...<br>(Github Actions下なのです)</span>
   </span>
   <span class='slacklog-message' id='1584517794.135000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584517794.135000'>18日 16:49:55</a>
-  <span class='slacklog-text'>&lt;https://qiita.com/junkoda/items/78c726b06afe2a9d3930&gt;
-ぐへ、これのせいか?</span>
+  <span class='slacklog-text'><a href='https://qiita.com/junkoda/items/78c726b06afe2a9d3930'>https://qiita.com/junkoda/items/78c726b06afe2a9d3930</a><br>ぐへ、これのせいか?</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
@@ -1271,31 +1165,25 @@ DYLD_LIBRARY_PATHにパス設定したけどなぜか認識しない...
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584518785.135500'>18日 17:06:26</a>
-  <span class='slacklog-text'>```brew install lua
-brew install luajit```
-で逃げることにしました...</span>
+  <span class='slacklog-text'>```brew install lua<br>brew install luajit```<br>で逃げることにしました...</span>
   </span>
   <span class='slacklog-message' id='1584565219.136300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584565219.136300'>19日 06:00:20</a>
-  <span class='slacklog-text'>ありがとうございます。
-やっぱ、そういう風になりますよね。</span>
+  <span class='slacklog-text'>ありがとうございます。<br>やっぱ、そういう風になりますよね。</span>
   </span>
   <span class='slacklog-message' id='1584579384.137600'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1584579384.137600'>19日 09:56:25</a>
-  <span class='slacklog-text'>`質問です`
-`setlocal buftype=nofile` 等されたバッファを`:write`等で既存のファイルに上書きすると問答無用で上書きされてしまうのですが、これは仕様でしょうか。</span>
+  <span class='slacklog-text'>`質問です`<br>`setlocal buftype=nofile` 等されたバッファを`:write`等で既存のファイルに上書きすると問答無用で上書きされてしまうのですが、これは仕様でしょうか。</span>
   </span>
   <span class='slacklog-message' id='1584579915.138500'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/fb28d356038ba3e6b1ada9a760dc9f2e.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0005-48.png'>
   <span class='slacklog-name'>egawata</span>
   <a class='slacklog-datetime' href='#1584579915.138500'>19日 10:05:16</a>
-  <span class='slacklog-text'>&gt;          &#34;nofile&#34; and &#34;nowrite&#34; buffers are similar:
-&gt;         both:           The buffer is not to be written to disk, &#34;:w&#34; doesn&#39;t
-&gt;                         work (&#34;:w filename&#34; does work though).</span>
+  <span class='slacklog-text'>&gt;          &#34;nofile&#34; and &#34;nowrite&#34; buffers are similar:<br>&gt;         both:           The buffer is not to be written to disk, &#34;:w&#34; doesn&#39;t<br>&gt;                         work (&#34;:w filename&#34; does work though).</span>
   </span>
   <span class='slacklog-message' id='1584579938.139000'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/fb28d356038ba3e6b1ada9a760dc9f2e.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0005-48.png'>
@@ -1319,8 +1207,7 @@ brew install luajit```
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1584580200.141800'>19日 10:10:01</a>
-  <span class='slacklog-text'>あー、聞きたいのはそちらではなかったです、ごめんなさい
-通常のファイルだと別のファイルに上書きしようとすると!付けろって言われると思うんですが、nofileだと出ないので仕様なのかと思いまして</span>
+  <span class='slacklog-text'>あー、聞きたいのはそちらではなかったです、ごめんなさい<br>通常のファイルだと別のファイルに上書きしようとすると!付けろって言われると思うんですが、nofileだと出ないので仕様なのかと思いまして</span>
   </span>
   <span class='slacklog-message' id='1584580557.142300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -1356,19 +1243,7 @@ brew install luajit```
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>koron</span>
   <a class='slacklog-datetime' href='#1584581184.144900'>19日 10:26:25</a>
-  <span class='slacklog-text'>なんか意図した挙動かも。というのは `check_overwrite()` という関数でチェックしてるっぽいんだけど、そのなかでいかが条件に含まれてる。
-
-```#ifdef FEAT_QUICKFIX
-	    &amp;&amp; !bt_nofilename(buf)
-#endif```
-で肝心の `bt_nofilename()` はこんな関数。
-
-```/*
- * Return TRUE if &#34;buf&#34; is a &#34;nofile&#34;, &#34;acwrite&#34;, &#34;terminal&#34; or &#34;prompt&#34;
- * buffer.  This means the buffer name is not a file name.
- */
-    int
-bt_nofilename(buf_T *buf)```</span>
+  <span class='slacklog-text'>なんか意図した挙動かも。というのは `check_overwrite()` という関数でチェックしてるっぽいんだけど、そのなかでいかが条件に含まれてる。<br><br>```#ifdef FEAT_QUICKFIX<br>	    &amp;&amp; !bt_nofilename(buf)<br>#endif```<br>で肝心の `bt_nofilename()` はこんな関数。<br><br>```/*<br> * Return TRUE if &#34;buf&#34; is a &#34;nofile&#34;, &#34;acwrite&#34;, &#34;terminal&#34; or &#34;prompt&#34;<br> * buffer.  This means the buffer name is not a file name.<br> */<br>    int<br>bt_nofilename(buf_T *buf)```</span>
   </span>
   <span class='slacklog-message' id='1584581262.146100'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -1452,16 +1327,13 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584581642.154100'>19日 10:34:03</a>
-  <span class='slacklog-text'>対バッファだと名前がないから名付けすることのチェックはなし -&gt; `!` なくても (別名)保存できていい
-対ファイルだと上書きなのでチェックすべき -&gt; `!` なしで保存できるのはミス
-みたいな...
-`!` の強制が、バッファ側か、実ファイル側どっちにかかってるのかな...(qfはバグ臭がすごい)</span>
+  <span class='slacklog-text'>対バッファだと名前がないから名付けすることのチェックはなし -&gt; `!` なくても (別名)保存できていい<br>対ファイルだと上書きなのでチェックすべき -&gt; `!` なしで保存できるのはミス<br>みたいな...<br>`!` の強制が、バッファ側か、実ファイル側どっちにかかってるのかな...(qfはバグ臭がすごい)</span>
   </span>
   <span class='slacklog-message' id='1584581646.154400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1584581646.154400'>19日 10:34:07</a>
-  <span class='slacklog-text'>とりあえずvim-jpには投げた &lt;https://github.com/vim-jp/issues/issues/1337&gt;</span>
+  <span class='slacklog-text'>とりあえずvim-jpには投げた <a href='https://github.com/vim-jp/issues/issues/1337'>https://github.com/vim-jp/issues/issues/1337</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -1511,7 +1383,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>koron</span>
   <a class='slacklog-datetime' href='#1584582176.159000'>19日 10:42:57</a>
-  <span class='slacklog-text'>あったあった &lt;https://github.com/vim/vim/commit/11717bb0a1275f1e270396aeb1df92d973d4d068&gt;</span>
+  <span class='slacklog-text'>あったあった <a href='https://github.com/vim/vim/commit/11717bb0a1275f1e270396aeb1df92d973d4d068'>https://github.com/vim/vim/commit/11717bb0a1275f1e270396aeb1df92d973d4d068</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -1525,13 +1397,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>koron</span>
   <a class='slacklog-datetime' href='#1584582271.159400'>19日 10:44:32</a>
-  <span class='slacklog-text'>&gt; Patch 7.1.172
-&gt; Problem:    When &#39;buftype&#39; is &#34;acwrite&#34; Vim still checks if the file or
-&gt; 	    directory exists before overwriting.
-&gt; Solution:   Don&#39;t check for overwriting when the buffer name is not a file
-&gt; 	    name.
-&gt; Files:	    src/ex_cmds.c
-</span>
+  <span class='slacklog-text'>&gt; Patch 7.1.172<br>&gt; Problem:    When &#39;buftype&#39; is &#34;acwrite&#34; Vim still checks if the file or<br>&gt; 	    directory exists before overwriting.<br>&gt; Solution:   Don&#39;t check for overwriting when the buffer name is not a file<br>&gt; 	    name.<br>&gt; Files:	    src/ex_cmds.c<br></span>
   </span>
   <span class='slacklog-message' id='1584582317.160200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1555,8 +1421,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>koron</span>
   <a class='slacklog-datetime' href='#1584582432.161500'>19日 10:47:13</a>
-  <span class='slacklog-text'>その後、この修正で nofile の意味が少し変わってる。
-&lt;https://github.com/vim/vim/commit/26910de8b0da6abab87bd5a397330f9cbe483309&gt;</span>
+  <span class='slacklog-text'>その後、この修正で nofile の意味が少し変わってる。<br><a href='https://github.com/vim/vim/commit/26910de8b0da6abab87bd5a397330f9cbe483309'>https://github.com/vim/vim/commit/26910de8b0da6abab87bd5a397330f9cbe483309</a></span>
   </span>
   <span class='slacklog-message' id='1584582459.161800'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -1634,7 +1499,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1584592387.169200'>19日 13:33:08</a>
-  <span class='slacklog-text'>投げた &lt;https://github.com/vim/vim/issues/5807&gt;</span>
+  <span class='slacklog-text'>投げた <a href='https://github.com/vim/vim/issues/5807'>https://github.com/vim/vim/issues/5807</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -1648,15 +1513,13 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
   <span class='slacklog-name'>kyoh86</span>
   <a class='slacklog-datetime' href='#1584608156.170500'>19日 17:55:57</a>
-  <span class='slacklog-text'>… 誰か zsh on :terminal in vim で、promptが空で待機してるときに
-`:` をタイプしたらコマンドモードに入る、ってやつやってませんでしたっけ…
-…vim-jp Slackのスター付け忘れが我ながらひどい</span>
+  <span class='slacklog-text'>… 誰か zsh on :terminal in vim で、promptが空で待機してるときに<br>`:` をタイプしたらコマンドモードに入る、ってやつやってませんでしたっけ…<br>…vim-jp Slackのスター付け忘れが我ながらひどい</span>
   </span>
   <span class='slacklog-message' id='1584608381.170700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1584608381.170700'>19日 17:59:42</a>
-  <span class='slacklog-text'>これ？ &lt;http://tyru.hatenablog.com/entry/2020/01/06/152929&gt;</span>
+  <span class='slacklog-text'>これ？ <a href='http://tyru.hatenablog.com/entry/2020/01/06/152929'>http://tyru.hatenablog.com/entry/2020/01/06/152929</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
@@ -1737,8 +1600,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1584610142.175600'>19日 18:29:03</a>
-  <span class='slacklog-text'>そうするとここらへん全スターみたいなのしたいですよね。
-流れがないとわからないもの多いんで</span>
+  <span class='slacklog-text'>そうするとここらへん全スターみたいなのしたいですよね。<br>流れがないとわからないもの多いんで</span>
   </span>
   <span class='slacklog-message' id='1584610206.176200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1774,7 +1636,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1584610419.178300'>19日 18:33:40</a>
-  <span class='slacklog-text'>&lt;https://vim-jp.slack.com/files/U03C6TEAZ/FTAL7RS21/image.png&gt;</span>
+  <span class='slacklog-text'><a href='https://vim-jp.slack.com/files/U03C6TEAZ/FTAL7RS21/image.png'>https://vim-jp.slack.com/files/U03C6TEAZ/FTAL7RS21/image.png</a></span>
   </span>
   <span class='slacklog-message' id='1584610425.178700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -1840,8 +1702,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6b58a0397ae4e1045da22ce63cd61012.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-48.png'>
   <span class='slacklog-name'>バクダンくん</span>
   <a class='slacklog-datetime' href='#1584618568.184700'>19日 20:49:29</a>
-  <span class='slacklog-text'>&lt;https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d|https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d&gt;
-あっさり</span>
+  <span class='slacklog-text'><a href='https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d|https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d'>https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d|https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d</a><br>あっさり</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -1891,9 +1752,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
   <span class='slacklog-name'>kyoh86</span>
   <a class='slacklog-datetime' href='#1584789359.002200'>21日 20:16:00</a>
-  <span class='slacklog-text'>皆さんは現在のバッファで、ある正規表現に合うものだけ抽出する、ってどうやります？
-今は `:v/re/d` でやってますが、 他には `:Capture g/re/p` くらいしか思いつかず…
-これ、抽出対象が複数行に渡る場合は使えないんですよね…</span>
+  <span class='slacklog-text'>皆さんは現在のバッファで、ある正規表現に合うものだけ抽出する、ってどうやります？<br>今は `:v/re/d` でやってますが、 他には `:Capture g/re/p` くらいしか思いつかず…<br>これ、抽出対象が複数行に渡る場合は使えないんですよね…</span>
   </span>
   <span class='slacklog-message' id='1584789530.002900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -1935,7 +1794,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1584789911.006600'>21日 20:25:12</a>
-  <span class='slacklog-text'>こんなやり方取るとか？（これはソートだけど抽出にも使えそう） &lt;https://qiita.com/kana1/items/68b21838013bfd65b097&gt;</span>
+  <span class='slacklog-text'>こんなやり方取るとか？（これはソートだけど抽出にも使えそう） <a href='https://qiita.com/kana1/items/68b21838013bfd65b097'>https://qiita.com/kana1/items/68b21838013bfd65b097</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
@@ -1999,59 +1858,13 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1584792961.011300'>21日 21:16:02</a>
-  <span class='slacklog-text'>```
-                                        *:vim* *:vimgrep* *E682* *E683*
-:vim[grep][!] /{pattern}/[g][j] {file} ...
-                        ファイル{file}から{pattern}を検索し、マッチ位置をエラー
-                        リストに追加する。&#39;wildignore&#39; にマッチしたファイルは
-                        無視される。&#39;suffixes&#39; にマッチしたファイルは最後に検
-                        索される。
-                        フラグ &#39;g&#39; がない場合、各行は1度だけ追加される。
-                        &#39;g&#39; がある場合、マッチ位置が毎回追加される。
- 
-                        {pattern}はVimの検索パターンである。/ で囲まない場合、
-                        それが{pattern}中に現れない限り、どんな非ID文字
-                        (|&#39;isident&#39;| を参照) でも使える。
-                        &#39;ignorecase&#39; が適用される。パターン中に|/\c|を含めると
-                        大文字小文字を区別しなくなり、|/\C|を含めると区別する
-                        ようになる。これは &#39;ignorecase&#39; より優先される。
-                        &#39;smartcase&#39; は適用されない。
-                        {pattern} が空のときは(つまり // が指定されたときは)、
-                        最後に使われた検索パターンが使用される。|last-pattern|
-:{count}vim[grep] ...
-                        このコマンドの前に数字が置かれると、その数が検索する
-                        マッチの最大数となる。&#34;:1vimgrep pattern file&#34; とする
-                        と最初のマッチだけを検索する。マッチが存在するかどうか
-                        だけをチェックしたく、それが見つかったらすぐに終了して
-                        ほしい場合に便利である。
- 
-                        フラグ &#39;j&#39; がない場合、最初のマッチへジャンプする。
-                        &#39;j&#39; がある場合はquickfixリストが更新されるだけである。
-                        [!]がついた場合、カレントバッファに対する変更は全て失
-                        われる。
- 
-                        進行状況を示すため、1秒程度ごとに検索されたファイル名
-                        が表示される。
-                        例:  
-                                :vimgrep /an error/ *.c
-                                :vimgrep /\&lt;FileName\&gt;/ *.h include/*
-                                :vimgrep /myfunc/ **/*.c
-                        &#34;**&#34; の使い方については|starstar-wildcard|を参照。
- 
-:vim[grep][!] {pattern} {file} ...
-                        上と同様だが、パターンを非ID文字で囲むのでなく、空白で
-                        パターンを区切る。パターンはID文字で始まらねばならな
-                        い。
-                        例:  
-                                :vimgrep Error *.c
-```</span>
+  <span class='slacklog-text'>```<br>                                        *:vim* *:vimgrep* *E682* *E683*<br>:vim[grep][!] /{pattern}/[g][j] {file} ...<br>                        ファイル{file}から{pattern}を検索し、マッチ位置をエラー<br>                        リストに追加する。&#39;wildignore&#39; にマッチしたファイルは<br>                        無視される。&#39;suffixes&#39; にマッチしたファイルは最後に検<br>                        索される。<br>                        フラグ &#39;g&#39; がない場合、各行は1度だけ追加される。<br>                        &#39;g&#39; がある場合、マッチ位置が毎回追加される。<br> <br>                        {pattern}はVimの検索パターンである。/ で囲まない場合、<br>                        それが{pattern}中に現れない限り、どんな非ID文字<br>                        (|&#39;isident&#39;| を参照) でも使える。<br>                        &#39;ignorecase&#39; が適用される。パターン中に|/\c|を含めると<br>                        大文字小文字を区別しなくなり、|/\C|を含めると区別する<br>                        ようになる。これは &#39;ignorecase&#39; より優先される。<br>                        &#39;smartcase&#39; は適用されない。<br>                        {pattern} が空のときは(つまり // が指定されたときは)、<br>                        最後に使われた検索パターンが使用される。|last-pattern|<br>:{count}vim[grep] ...<br>                        このコマンドの前に数字が置かれると、その数が検索する<br>                        マッチの最大数となる。&#34;:1vimgrep pattern file&#34; とする<br>                        と最初のマッチだけを検索する。マッチが存在するかどうか<br>                        だけをチェックしたく、それが見つかったらすぐに終了して<br>                        ほしい場合に便利である。<br> <br>                        フラグ &#39;j&#39; がない場合、最初のマッチへジャンプする。<br>                        &#39;j&#39; がある場合はquickfixリストが更新されるだけである。<br>                        [!]がついた場合、カレントバッファに対する変更は全て失<br>                        われる。<br> <br>                        進行状況を示すため、1秒程度ごとに検索されたファイル名<br>                        が表示される。<br>                        例:  <br>                                :vimgrep /an error/ *.c<br>                                :vimgrep /\&lt;FileName\&gt;/ *.h include/*<br>                                :vimgrep /myfunc/ **/*.c<br>                        &#34;**&#34; の使い方については|starstar-wildcard|を参照。<br> <br>:vim[grep][!] {pattern} {file} ...<br>                        上と同様だが、パターンを非ID文字で囲むのでなく、空白で<br>                        パターンを区切る。パターンはID文字で始まらねばならな<br>                        い。<br>                        例:  <br>                                :vimgrep Error *.c<br>```</span>
   </span>
   <span class='slacklog-message' id='1584792982.012100'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
   <span class='slacklog-name'>kyoh86</span>
   <a class='slacklog-datetime' href='#1584792982.012100'>21日 21:16:23</a>
-  <span class='slacklog-text'>はーーーーーーーーーーーー。なるほど
-これはこれでほしかったやつだ</span>
+  <span class='slacklog-text'>はーーーーーーーーーーーー。なるほど<br>これはこれでほしかったやつだ</span>
   </span>
   <span class='slacklog-message' id='1584792990.012300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -2099,8 +1912,7 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2017-12-09/284380828226_585d265f54113004e478_48.jpg'>
   <span class='slacklog-name'>dohq</span>
   <a class='slacklog-datetime' href='#1584828024.017400'>22日 07:00:25</a>
-  <span class='slacklog-text'>でかいファイル、みんな何で処理してるか気になるマン
-でかファイル専用エディタ的なアレなのかvimなのか</span>
+  <span class='slacklog-text'>でかいファイル、みんな何で処理してるか気になるマン<br>でかファイル専用エディタ的なアレなのかvimなのか</span>
   </span>
   <span class='slacklog-message' id='1584828168.017700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -2208,23 +2020,13 @@ bt_nofilename(buf_T *buf)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
   <span class='slacklog-name'>takets</span>
   <a class='slacklog-datetime' href='#1584845774.032400'>22日 11:56:15</a>
-  <span class='slacklog-text'>```&#34; Save fold settings.
-autocmd BufWritePost * if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | mkview | endif
-autocmd BufRead * if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | silent loadview | endif
-&#34; Don&#39;t save options.
-set viewoptions-=options```
-失礼しました。特定しました。
-折りたたみの設定を読み込むためのコードが衝突していたようです。</span>
+  <span class='slacklog-text'>```&#34; Save fold settings.<br>autocmd BufWritePost * if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | mkview | endif<br>autocmd BufRead * if expand(&#39;%&#39;) != &#39;&#39; &amp;&amp; &amp;buftype !~ &#39;nofile&#39; | silent loadview | endif<br>&#34; Don&#39;t save options.<br>set viewoptions-=options```<br>失礼しました。特定しました。<br>折りたたみの設定を読み込むためのコードが衝突していたようです。</span>
   </span>
   <span class='slacklog-message' id='1584855923.034500'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584855923.034500'>22日 14:45:24</a>
-  <span class='slacklog-text'>`質問です`
-themisで THEMIS_ARGSを `-e -s --cmd &#34;set luadll=/Users/runner/runners/2.165.2/work/vital.vim/vital.vim/.lua/lib/liblua.dylib&#34;` みたいな値で実施したいのですが、なぜかエラーしてしまいます。
-```ERROR: Target file not found.```
-こうしないといけない、みたいな注意点が抜けてるのではないかと思うのですが...
-(themisの処理開始コードを見る限り問題ないと思うのですが...)</span>
+  <span class='slacklog-text'>`質問です`<br>themisで THEMIS_ARGSを `-e -s --cmd &#34;set luadll=/Users/runner/runners/2.165.2/work/vital.vim/vital.vim/.lua/lib/liblua.dylib&#34;` みたいな値で実施したいのですが、なぜかエラーしてしまいます。<br>```ERROR: Target file not found.```<br>こうしないといけない、みたいな注意点が抜けてるのではないかと思うのですが...<br>(themisの処理開始コードを見る限り問題ないと思うのですが...)</span>
   </span>
   <span class='slacklog-message' id='1584855941.035000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2248,8 +2050,7 @@ themisで THEMIS_ARGSを `-e -s --cmd &#34;set luadll=/Users/runner/runners/2.16
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584862030.038400'>22日 16:27:11</a>
-  <span class='slacklog-text'>環境変数内には空白やクォート込みではいってますが、それでもアカンですか...
-そんな気はしてたんですが、やっぱり?</span>
+  <span class='slacklog-text'>環境変数内には空白やクォート込みではいってますが、それでもアカンですか...<br>そんな気はしてたんですが、やっぱり?</span>
   </span>
   <span class='slacklog-message' id='1584862061.038800'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
@@ -2261,8 +2062,7 @@ themisで THEMIS_ARGSを `-e -s --cmd &#34;set luadll=/Users/runner/runners/2.16
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584862129.039200'>22日 16:28:50</a>
-  <span class='slacklog-text'>&lt;https://github.com/tsuyoshicho/vital.vim/runs/524997858&gt;
-&lt;https://github.com/tsuyoshicho/vital.vim/runs/524997858上のはログへのリンク|なるほど、&gt;上のはログへのリンク</span>
+  <span class='slacklog-text'><a href='https://github.com/tsuyoshicho/vital.vim/runs/524997858'>https://github.com/tsuyoshicho/vital.vim/runs/524997858</a><br><a href='https://github.com/tsuyoshicho/vital.vim/runs/524997858上のはログへのリンク|なるほど、'>https://github.com/tsuyoshicho/vital.vim/runs/524997858上のはログへのリンク|なるほど、</a>上のはログへのリンク</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -2312,8 +2112,7 @@ themisで THEMIS_ARGSを `-e -s --cmd &#34;set luadll=/Users/runner/runners/2.16
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1584867272.042700'>22日 17:54:33</a>
-  <span class='slacklog-text'>そうですね、すでにあるファイルとは位置を変えれば読んではくれますよね
-それはよさげ</span>
+  <span class='slacklog-text'>そうですね、すでにあるファイルとは位置を変えれば読んではくれますよね<br>それはよさげ</span>
   </span>
   <span class='slacklog-message' id='1584867306.043800'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2416,8 +2215,7 @@ Vim + netrw
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
   <span class='slacklog-name'>ゴリラ</span>
   <a class='slacklog-datetime' href='#1584884941.050700'>22日 22:49:02</a>
-  <span class='slacklog-text'>回答だけしておいた
-なんか、他のツリープラグインを使ったほうが良いかも説（デフォ以外はよく知らない</span>
+  <span class='slacklog-text'>回答だけしておいた<br>なんか、他のツリープラグインを使ったほうが良いかも説（デフォ以外はよく知らない</span>
   </span>
   <span class='slacklog-message' id='1584885284.051900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
@@ -2435,22 +2233,19 @@ Vim + netrw
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
   <span class='slacklog-name'>heavenshell</span>
   <a class='slacklog-datetime' href='#1584885357.052900'>22日 22:55:58</a>
-  <span class='slacklog-text'>OpenVsCode という Vim plugin が待たれる( &lt;https://marketplace.visualstudio.com/items?itemName=mattn.OpenVim&gt;)</span>
+  <span class='slacklog-text'>OpenVsCode という Vim plugin が待たれる( <a href='https://marketplace.visualstudio.com/items?itemName=mattn.OpenVim'>https://marketplace.visualstudio.com/items?itemName=mattn.OpenVim</a>)</span>
   </span>
   <span class='slacklog-message' id='1584885950.053300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
   <span class='slacklog-name'>ゴリラ</span>
   <a class='slacklog-datetime' href='#1584885950.053300'>22日 23:05:51</a>
-  <span class='slacklog-text'>3,483 installs
-結構ダウンロードされている</span>
+  <span class='slacklog-text'>3,483 installs<br>結構ダウンロードされている</span>
   </span>
   <span class='slacklog-message' id='1584948996.055500'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
   <span class='slacklog-name'>0Δ</span>
   <a class='slacklog-datetime' href='#1584948996.055500'>23日 16:36:37</a>
-  <span class='slacklog-text'>質問です。
-現在編集中の(アクティブな)ウィンドウもしくはバッファ番号orIDはどうやって取得するのでしょうか。
-用途としては、ステータスラインに表示させる用です。</span>
+  <span class='slacklog-text'>質問です。<br>現在編集中の(アクティブな)ウィンドウもしくはバッファ番号orIDはどうやって取得するのでしょうか。<br>用途としては、ステータスラインに表示させる用です。</span>
   </span>
   <span class='slacklog-message' id='1584949210.056700'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
@@ -2468,36 +2263,7 @@ Vim + netrw
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1584949244.057000'>23日 16:40:45</a>
-  <span class='slacklog-text'>```
-gettabwinvar({tabnr}, {winnr}, {varname} [, {def}])             *gettabwinvar()*
-                タブページ{tabnr}内のウィンドウ{winnr}のウィンドウローカル変数
-                {varname}の値を取得する。
-                {varname}が空のときは全ウィンドウローカル変数からなる辞書を返
-                す。
-                {varname}が &#34;&amp;&#34; と等しい場合はすべてのウィンドウローカルオプ
-                ションの値を辞書に入れて返す。
-                {varname}が文字 &#34;&amp;&#34; で始まるときはウィンドウローカルオプション
-                の値を取得する。
-                Note {varname}は &#34;w:&#34; をつけずに指定しなければならない。
-                タブページ番号は1から始まる。カレントタブページを指定するには
-                |getwinvar()|を指定する。
-                {winnr} にはウィンドウ番号または|window-ID|が使える。
-                {winnr}が0のときはカレントウィンドウとなる。
-                グローバルオプション、バッファローカルオプション、ウィンドウ
-                ローカルオプションに対しても動作するが、グローバル変数やバッ
-                ファローカル変数に対しては動作しない。
-                ウィンドウやタブや変数が存在しないときは{def}または空文字列を
-                返し、エラーメッセージは表示されない。
-                例:  
-                        :let list_is_on = gettabwinvar(1, 2, &#39;&amp;list&#39;)
-                        :echo &#34;myvar = &#34; . gettabwinvar(3, 1, &#39;myvar&#39;)
- 
-                すべてのウィンドウローカル変数を取得するには:  
-                        gettabwinvar({tabnr}, {winnr}, &#39;&amp;&#39;)
- 
-                |method| としても使用できる:  
-                        GetTabnr()-&gt;gettabwinvar(winnr, varname)
-```</span>
+  <span class='slacklog-text'>```<br>gettabwinvar({tabnr}, {winnr}, {varname} [, {def}])             *gettabwinvar()*<br>                タブページ{tabnr}内のウィンドウ{winnr}のウィンドウローカル変数<br>                {varname}の値を取得する。<br>                {varname}が空のときは全ウィンドウローカル変数からなる辞書を返<br>                す。<br>                {varname}が &#34;&amp;&#34; と等しい場合はすべてのウィンドウローカルオプ<br>                ションの値を辞書に入れて返す。<br>                {varname}が文字 &#34;&amp;&#34; で始まるときはウィンドウローカルオプション<br>                の値を取得する。<br>                Note {varname}は &#34;w:&#34; をつけずに指定しなければならない。<br>                タブページ番号は1から始まる。カレントタブページを指定するには<br>                |getwinvar()|を指定する。<br>                {winnr} にはウィンドウ番号または|window-ID|が使える。<br>                {winnr}が0のときはカレントウィンドウとなる。<br>                グローバルオプション、バッファローカルオプション、ウィンドウ<br>                ローカルオプションに対しても動作するが、グローバル変数やバッ<br>                ファローカル変数に対しては動作しない。<br>                ウィンドウやタブや変数が存在しないときは{def}または空文字列を<br>                返し、エラーメッセージは表示されない。<br>                例:  <br>                        :let list_is_on = gettabwinvar(1, 2, &#39;&amp;list&#39;)<br>                        :echo &#34;myvar = &#34; . gettabwinvar(3, 1, &#39;myvar&#39;)<br> <br>                すべてのウィンドウローカル変数を取得するには:  <br>                        gettabwinvar({tabnr}, {winnr}, &#39;&amp;&#39;)<br> <br>                |method| としても使用できる:  <br>                        GetTabnr()-&gt;gettabwinvar(winnr, varname)<br>```</span>
   </span>
   <span class='slacklog-message' id='1584949252.057200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2551,34 +2317,7 @@ gettabwinvar({tabnr}, {winnr}, {varname} [, {def}])             *gettabwinvar()*
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1584949532.060700'>23日 16:45:33</a>
-  <span class='slacklog-text'>```
-                                                        *winnr()*
-winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位のウィンドウは1であ
-                る。ポップアップウィンドウは0を返す。
- 
-                省略可能な引数{arg}は以下の値をサポートする:
-                        $       最後のウィンドウの番号(ウィンドウ数)
-                        #       最後にアクセスしたウィンドウの番号(|CTRL-W_p|
-                                の行き先)。前のウィンドウがないか、別のタブペー
-                                ジにある場合は、0が返される。
-                        {N}j    現在のウィンドウの下N番目のウィンドウの番号
-                                (|CTRL-W_j| の行き先)。
-                        {N}k    現在のウィンドウの上N番目のウィンドウの番号
-                                (|CTRL-W_k| の行き先)。
-                        {N}h    現在のウィンドウの左N番目のウィンドウの番号
-                                (|CTRL-W_h| の行き先)。
-                        {N}l    現在のウィンドウの右N番目のウィンドウの番号
-                                (|CTRL-W_l| の行き先)。
-                この番号は|CTRL-W_w|と &#34;:wincmd w&#34; で使える。|:wincmd|
-                |tabpagewinnr()|と|win_getid()|も参照。
-                例:  
-                        let window_count = winnr(&#39;$&#39;)
-                        let prev_window = winnr(&#39;#&#39;)
-                        let wnum = winnr(&#39;3k&#39;)
- 
-                |method| としても使用できる:  
-                        GetWinval()-&gt;winnr()
-```</span>
+  <span class='slacklog-text'>```<br>                                                        *winnr()*<br>winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位のウィンドウは1であ<br>                る。ポップアップウィンドウは0を返す。<br> <br>                省略可能な引数{arg}は以下の値をサポートする:<br>                        $       最後のウィンドウの番号(ウィンドウ数)<br>                        #       最後にアクセスしたウィンドウの番号(|CTRL-W_p|<br>                                の行き先)。前のウィンドウがないか、別のタブペー<br>                                ジにある場合は、0が返される。<br>                        {N}j    現在のウィンドウの下N番目のウィンドウの番号<br>                                (|CTRL-W_j| の行き先)。<br>                        {N}k    現在のウィンドウの上N番目のウィンドウの番号<br>                                (|CTRL-W_k| の行き先)。<br>                        {N}h    現在のウィンドウの左N番目のウィンドウの番号<br>                                (|CTRL-W_h| の行き先)。<br>                        {N}l    現在のウィンドウの右N番目のウィンドウの番号<br>                                (|CTRL-W_l| の行き先)。<br>                この番号は|CTRL-W_w|と &#34;:wincmd w&#34; で使える。|:wincmd|<br>                |tabpagewinnr()|と|win_getid()|も参照。<br>                例:  <br>                        let window_count = winnr(&#39;$&#39;)<br>                        let prev_window = winnr(&#39;#&#39;)<br>                        let wnum = winnr(&#39;3k&#39;)<br> <br>                |method| としても使用できる:  <br>                        GetWinval()-&gt;winnr()<br>```</span>
   </span>
   <span class='slacklog-message' id='1584949551.060900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2596,8 +2335,7 @@ winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位の�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>koron</span>
   <a class='slacklog-datetime' href='#1584949879.061800'>23日 16:51:20</a>
-  <span class='slacklog-text'>&gt; 	The *g:statusline_winid* variable will be set to the |window-ID| of the	window that the status line belongs to.
-</span>
+  <span class='slacklog-text'>&gt; 	The *g:statusline_winid* variable will be set to the |window-ID| of the	window that the status line belongs to.<br></span>
   </span>
   <span class='slacklog-message' id='1584949924.062300'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -2621,9 +2359,7 @@ winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位の�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>koron</span>
   <a class='slacklog-datetime' href='#1584950076.063400'>23日 16:54:37</a>
-  <span class='slacklog-text'>&lt;https://vim-jp.org/vimdoc-ja/options.html#g:statusline_winid&gt;
-
-&gt;  g:statusline_winid 変数はステータス行が属するウィンドウの window-IDに設定される。</span>
+  <span class='slacklog-text'><a href='https://vim-jp.org/vimdoc-ja/options.html#g:statusline_winid'>https://vim-jp.org/vimdoc-ja/options.html#g:statusline_winid</a><br><br>&gt;  g:statusline_winid 変数はステータス行が属するウィンドウの window-IDに設定される。</span>
   </span>
   <span class='slacklog-message' id='1584950103.063600'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
@@ -2659,8 +2395,7 @@ winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位の�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
   <span class='slacklog-name'>0Δ</span>
   <a class='slacklog-datetime' href='#1584950459.067800'>23日 17:01:00</a>
-  <span class='slacklog-text'>です、非アクティブなステータスラインを目立たないようにしたくて。
-わかりづらくて申し分ない :bow:</span>
+  <span class='slacklog-text'>です、非アクティブなステータスラインを目立たないようにしたくて。<br>わかりづらくて申し分ない :bow:</span>
   </span>
   <span class='slacklog-message' id='1584950503.068500'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -2678,9 +2413,7 @@ winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位の�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
   <span class='slacklog-name'>koron</span>
   <a class='slacklog-datetime' href='#1584950718.069300'>23日 17:05:19</a>
-  <span class='slacklog-text'>&gt; 	real current buffer and &#34;g:actual_curwin&#34; to the |window-ID| of the
-&gt; 	real current window.  These values are strings.
-</span>
+  <span class='slacklog-text'>&gt; 	real current buffer and &#34;g:actual_curwin&#34; to the |window-ID| of the<br>&gt; 	real current window.  These values are strings.<br></span>
   </span>
   <span class='slacklog-message' id='1584950722.069500'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -2776,9 +2509,7 @@ winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位の�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1584954985.079600'>23日 18:16:26</a>
-  <span class='slacklog-text'>やっとやりたい事ができた……！
-ステータスラインのモード表示に `DEACTIVE` が追加されました。
-(以前はコレが全部一斉にINSERTとかになって気持ち悪かった)</span>
+  <span class='slacklog-text'>やっとやりたい事ができた……！<br>ステータスラインのモード表示に `DEACTIVE` が追加されました。<br>(以前はコレが全部一斉にINSERTとかになって気持ち悪かった)</span>
   </span>
   <span class='slacklog-message' id='1584955152.080900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2802,9 +2533,7 @@ winnr([{arg}])  結果は現在のウィンドウを示す数値。最上位の�
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6b58a0397ae4e1045da22ce63cd61012.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-48.png'>
   <span class='slacklog-name'>バクダンくん</span>
   <a class='slacklog-datetime' href='#1584966324.082600'>23日 21:25:25</a>
-  <span class='slacklog-text'>非アクティブといえばこれおすすめます
-&lt;https://qiita.com/Bakudankun/items/649aa6d8b9eccc1712b5&gt;
-Neovimの人は最後の１行だけ読めば良いです</span>
+  <span class='slacklog-text'>非アクティブといえばこれおすすめます<br><a href='https://qiita.com/Bakudankun/items/649aa6d8b9eccc1712b5'>https://qiita.com/Bakudankun/items/649aa6d8b9eccc1712b5</a><br>Neovimの人は最後の１行だけ読めば良いです</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
@@ -2826,8 +2555,7 @@ Neovimの人は最後の１行だけ読めば良いです</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
   <span class='slacklog-name'>0Δ</span>
   <a class='slacklog-datetime' href='#1584969953.083800'>23日 22:25:54</a>
-  <span class='slacklog-text'>typo警察だ！ありがとうございます :panda_dogeza:
-ガンダムSEEDに引っ張られてこの表現しか頭になかった……</span>
+  <span class='slacklog-text'>typo警察だ！ありがとうございます :panda_dogeza:<br>ガンダムSEEDに引っ張られてこの表現しか頭になかった……</span>
   </span>
   <span class='slacklog-message' id='1584970202.084000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -2839,10 +2567,7 @@ Neovimの人は最後の１行だけ読めば良いです</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1584973459.087400'>23日 23:24:20</a>
-  <span class='slacklog-text'>&lt;@U03C71D7H&gt; themis で非同期のテストをするにはどうすればいいですか？
-具体的にはプラグインが `synstack()` して `synIDattr(id, &#39;name&#39;) == &#39;Comment&#39;` かどうかを見てるんですが、
-テストから実行するとまだ syntax がついてないらしく空を返したりします。
-`:redraw!` しても非同期に実行されるっぽいので諦めて非同期でテストできないか調べてる所です。</span>
+  <span class='slacklog-text'>&lt;@U03C71D7H&gt; themis で非同期のテストをするにはどうすればいいですか？<br>具体的にはプラグインが `synstack()` して `synIDattr(id, &#39;name&#39;) == &#39;Comment&#39;` かどうかを見てるんですが、<br>テストから実行するとまだ syntax がついてないらしく空を返したりします。<br>`:redraw!` しても非同期に実行されるっぽいので諦めて非同期でテストできないか調べてる所です。</span>
   </span>
   <span class='slacklog-message' id='1584973849.087900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -2854,11 +2579,7 @@ Neovimの人は最後の１行だけ読めば良いです</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1584974341.089400'>23日 23:39:02</a>
-  <span class='slacklog-text'>すみません、違いました！
-こう書いたらちゃんと帰ってきた…
-```e {vimrc のパス}
-setf vim
-echo synstack(1, 1)```</span>
+  <span class='slacklog-text'>すみません、違いました！<br>こう書いたらちゃんと帰ってきた…<br>```e {vimrc のパス}<br>setf vim<br>echo synstack(1, 1)```</span>
   </span>
   <span class='slacklog-message' id='1584974417.090300'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -3044,9 +2765,7 @@ echo synstack(1, 1)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1584977131.112600'>24日 00:25:32</a>
-  <span class='slacklog-text'>&gt; なので node の nextTick 的なことをする必要があって、その方法が今はない
-ありがとうございます… vim にというより themis に今はないという意味でした。
-無いという回答を得たので、違う方法でテストするか、本当にそういう仕組みが必要なのか（デバッグの過程で何か勘違いしてないか…）要チェックすべきだったという意味でした。</span>
+  <span class='slacklog-text'>&gt; なので node の nextTick 的なことをする必要があって、その方法が今はない<br>ありがとうございます… vim にというより themis に今はないという意味でした。<br>無いという回答を得たので、違う方法でテストするか、本当にそういう仕組みが必要なのか（デバッグの過程で何か勘違いしてないか…）要チェックすべきだったという意味でした。</span>
   </span>
   <span class='slacklog-message' id='1584977161.113300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -3070,9 +2789,7 @@ echo synstack(1, 1)```</span>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1584977331.116300'>24日 00:28:52</a>
-  <span class='slacklog-text'>そもそも `:setf c` で動くけど `:runtime! after/ftplugin/c/caw.vim` する関数を変わりに呼び出すと synstack() が空を返すという状態でよくわからん…という状態です。
-前者で動くなら非同期が必要ない可能性は大きくて、
-自分がやろうとしてたのは後者にぶち当たったことで無理やりポーリングさせて動作確認しようと思ってたんだけど、場当たり的すぎた感は否めない…</span>
+  <span class='slacklog-text'>そもそも `:setf c` で動くけど `:runtime! after/ftplugin/c/caw.vim` する関数を変わりに呼び出すと synstack() が空を返すという状態でよくわからん…という状態です。<br>前者で動くなら非同期が必要ない可能性は大きくて、<br>自分がやろうとしてたのは後者にぶち当たったことで無理やりポーリングさせて動作確認しようと思ってたんだけど、場当たり的すぎた感は否めない…</span>
   </span>
   <span class='slacklog-message' id='1584977381.116700'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -3120,50 +2837,7 @@ echo synstack(1, 1)```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1584977664.119200'>24日 00:34:25</a>
-  <span class='slacklog-text'>```
-                                                        *:ru* *:runtime*
-:ru[ntime][!] [where] {file} ..
-                        &#39;runtimepath&#39; か &#39;packpath&#39; で示された各ディレクトリの
-                        {file}からExコマンドを読み込む。ファイルがなくてもエラ
-                        ーにはならない。
- 
-                        例:  
-                                :runtime syntax/c.vim
- 
-                        {file}には空白で区切って複数のファイルを指定できる。指
-                        定された{file}は &#39;runtimepath&#39; の最初のディレクトリ、
-                        次に二番目のディレクトリ、と検索される。{file}に空白を
-                        含めるにはバックスラッシュを使う(しかしファイル名に空
-                        白を含めるのは望ましくない。トラブルのもとである)。
- 
-                        [!] を付けると見つかった全てのファイルを読み込む。付け
-                        なければ最初に見つかったファイルだけを読み込む。
- 
-                        [where] が省略された場合は &#39;runtimepath&#39; が使われる。
-                        他の値は以下の通り:
-                                START   &#39;packpath&#39; の &#34;start&#34; ディレクトリ以下
-                                        を検索する
-                                OPT     &#39;packpath&#39; の &#34;opt&#34; ディレクトリ以下を
-                                        検索する
-                                PACK    &#39;packpath&#39; の &#34;start&#34; と &#34;opt&#34; ディレ
-                                        クトリ以下を検索する
-                                ALL     まず &#39;runtimepath&#39; が使われ、次に
-                                        &#39;packpath&#39; の &#34;start&#34; と &#34;opt&#34; ディレ
-                                        クトリ以下を検索する
- 
-                        {file}がワイルドカードを含んでいるとそれは展開される。
-                        例:  
-                                :runtime! plugin/**/*.vim
-                        これはVimが起動時にプラグインファイルを読み込むのに使っ
-                        ているものである。次のは似ているが:  
-                                :runtime plugin/**/*.vim
-                        これは最初に見つかったファイルだけを読み込む。
- 
-                        &#39;verbose&#39; が1以上ならファイルが見つからないときにメッ
-                        セージが表示される。
-                        &#39;verbose&#39; が2以上なら見つかった全てのファイルについて
-                        メッセージが表示される。
-```</span>
+  <span class='slacklog-text'>```<br>                                                        *:ru* *:runtime*<br>:ru[ntime][!] [where] {file} ..<br>                        &#39;runtimepath&#39; か &#39;packpath&#39; で示された各ディレクトリの<br>                        {file}からExコマンドを読み込む。ファイルがなくてもエラ<br>                        ーにはならない。<br> <br>                        例:  <br>                                :runtime syntax/c.vim<br> <br>                        {file}には空白で区切って複数のファイルを指定できる。指<br>                        定された{file}は &#39;runtimepath&#39; の最初のディレクトリ、<br>                        次に二番目のディレクトリ、と検索される。{file}に空白を<br>                        含めるにはバックスラッシュを使う(しかしファイル名に空<br>                        白を含めるのは望ましくない。トラブルのもとである)。<br> <br>                        [!] を付けると見つかった全てのファイルを読み込む。付け<br>                        なければ最初に見つかったファイルだけを読み込む。<br> <br>                        [where] が省略された場合は &#39;runtimepath&#39; が使われる。<br>                        他の値は以下の通り:<br>                                START   &#39;packpath&#39; の &#34;start&#34; ディレクトリ以下<br>                                        を検索する<br>                                OPT     &#39;packpath&#39; の &#34;opt&#34; ディレクトリ以下を<br>                                        検索する<br>                                PACK    &#39;packpath&#39; の &#34;start&#34; と &#34;opt&#34; ディレ<br>                                        クトリ以下を検索する<br>                                ALL     まず &#39;runtimepath&#39; が使われ、次に<br>                                        &#39;packpath&#39; の &#34;start&#34; と &#34;opt&#34; ディレ<br>                                        クトリ以下を検索する<br> <br>                        {file}がワイルドカードを含んでいるとそれは展開される。<br>                        例:  <br>                                :runtime! plugin/**/*.vim<br>                        これはVimが起動時にプラグインファイルを読み込むのに使っ<br>                        ているものである。次のは似ているが:  <br>                                :runtime plugin/**/*.vim<br>                        これは最初に見つかったファイルだけを読み込む。<br> <br>                        &#39;verbose&#39; が1以上ならファイルが見つからないときにメッ<br>                        セージが表示される。<br>                        &#39;verbose&#39; が2以上なら見つかった全てのファイルについて<br>                        メッセージが表示される。<br>```</span>
   </span>
   <span class='slacklog-message' id='1584977693.119600'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -3247,8 +2921,7 @@ let s:dein_dir = expand(&#39;~/.config/nvim/dein&#39;)
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585021431.124100'>24日 12:43:52</a>
-  <span class='slacklog-text'>これ、どれも動かないからのきなみコメントアウトした、なんだと思います。
-で、そのあたりについてコメントした</span>
+  <span class='slacklog-text'>これ、どれも動かないからのきなみコメントアウトした、なんだと思います。<br>で、そのあたりについてコメントした</span>
   </span>
 [Vim]の新着質問一覧｜teratail（テラテイル） 24日 15:11:25: &lt;https://teratail.com/questions/249056?rss=all|vim-lspの診断スピードを早くしたい&gt;
 vim-lspを入れてみました。おおむね快適に動作しています。  
@@ -3290,15 +2963,13 @@ vim-lspのオプションのヘルプを引いてみましたがそのような�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1585030736.127700'>24日 15:18:57</a>
-  <span class='slacklog-text'>どうにかしてフォント名を聞き出したい・・・
-
-`たぶんフォントが悪くて遅いんだと思います。これなんのフォントですか？？`  とかかな</span>
+  <span class='slacklog-text'>どうにかしてフォント名を聞き出したい・・・<br><br>`たぶんフォントが悪くて遅いんだと思います。これなんのフォントですか？？`  とかかな</span>
   </span>
   <span class='slacklog-message' id='1585030762.128200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1585030762.128200'>24日 15:19:23</a>
-  <span class='slacklog-text'>&lt;https://github.com/dadchyyy/dotfiles&gt;</span>
+  <span class='slacklog-text'><a href='https://github.com/dadchyyy/dotfiles'>https://github.com/dadchyyy/dotfiles</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -3324,8 +2995,7 @@ vim-lspのオプションのヘルプを引いてみましたがそのような�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1585030827.128900'>24日 15:20:28</a>
-  <span class='slacklog-text'>:cry:
-&lt;https://github.com/dadchyyy/dotfiles/search?q=font&amp;unscoped_q=font&gt;</span>
+  <span class='slacklog-text'>:cry:<br><a href='https://github.com/dadchyyy/dotfiles/search?q=font&amp;unscoped_q=font'>https://github.com/dadchyyy/dotfiles/search?q=font&amp;unscoped_q=font</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -3465,7 +3135,7 @@ vim-lspのオプションのヘルプを引いてみましたがそのような�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1585031909.138200'>24日 15:38:30</a>
-  <span class='slacklog-text'>&lt;https://vim-jp.slack.com/archives/CJMV3MSLR/p1585030736127700&gt;</span>
+  <span class='slacklog-text'><a href='https://vim-jp.slack.com/archives/CJMV3MSLR/p1585030736127700'>https://vim-jp.slack.com/archives/CJMV3MSLR/p1585030736127700</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div class='slacklog-attachment-other-text'>どうにかしてフォント名を聞き出したい・・・
@@ -3562,8 +3232,7 @@ vim-lspのオプションのヘルプを引いてみましたがそのような�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585207900.003600'>26日 16:31:41</a>
-  <span class='slacklog-text'>`質問です`
-vim-lsp関係ですが... clangd での diagnotics ですが、Cヘッダ内で他ヘッダ定義だけどincludeしてない (想定はCソース上で規約を守ってインクルードみたいなやつ)のとき、unknown typeが出てしまうと思うのですが、どのように回避していますか?</span>
+  <span class='slacklog-text'>`質問です`<br>vim-lsp関係ですが... clangd での diagnotics ですが、Cヘッダ内で他ヘッダ定義だけどincludeしてない (想定はCソース上で規約を守ってインクルードみたいなやつ)のとき、unknown typeが出てしまうと思うのですが、どのように回避していますか?</span>
   </span>
   <span class='slacklog-message' id='1585208068.004200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -3605,8 +3274,7 @@ vim-lsp関係ですが... clangd での diagnotics ですが、Cヘッダ内で�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
   <span class='slacklog-name'>presuku</span>
   <a class='slacklog-datetime' href='#1585209883.009400'>26日 17:04:44</a>
-  <span class='slacklog-text'>clangd に `--background-index` つけてたらどうなりますか？詳細は↓
-&lt;https://vim-jp.slack.com/archives/C83UXKU86/p1585191572030200&gt;</span>
+  <span class='slacklog-text'>clangd に `--background-index` つけてたらどうなりますか？詳細は↓<br><a href='https://vim-jp.slack.com/archives/C83UXKU86/p1585191572030200'>https://vim-jp.slack.com/archives/C83UXKU86/p1585191572030200</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div class='slacklog-attachment-other-text'>vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、
@@ -3627,9 +3295,7 @@ vim-lsp関係ですが... clangd での diagnotics ですが、Cヘッダ内で�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585210004.011300'>26日 17:06:45</a>
-  <span class='slacklog-text'>付けたいのですが、vim-lsp-settingsのパス解決とうまくあわなくて、一旦中断してました。
-再調整してみます。
-ありがとうございます。</span>
+  <span class='slacklog-text'>付けたいのですが、vim-lsp-settingsのパス解決とうまくあわなくて、一旦中断してました。<br>再調整してみます。<br>ありがとうございます。</span>
   </span>
   <span class='slacklog-message' id='1585210424.016900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -3641,8 +3307,7 @@ vim-lsp関係ですが... clangd での diagnotics ですが、Cヘッダ内で�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
   <span class='slacklog-name'>presuku</span>
   <a class='slacklog-datetime' href='#1585210532.018100'>26日 17:15:33</a>
-  <span class='slacklog-text'>ちょっと試ただけですが `foo.h` と `bar.h` を `baz.c`  で順番に include して `foo.h` にしかない typedef したタイプを `bar.h`  で使用しても unknown type にならなかったです。
-ちなみに clangd-9 でシステムにインストールしたやつを使ってます。</span>
+  <span class='slacklog-text'>ちょっと試ただけですが `foo.h` と `bar.h` を `baz.c`  で順番に include して `foo.h` にしかない typedef したタイプを `bar.h`  で使用しても unknown type にならなかったです。<br>ちなみに clangd-9 でシステムにインストールしたやつを使ってます。</span>
   </span>
   <span class='slacklog-message' id='1585210597.018800'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
@@ -3660,8 +3325,7 @@ vim-lsp関係ですが... clangd での diagnotics ですが、Cヘッダ内で�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585213635.024300'>26日 18:07:16</a>
-  <span class='slacklog-text'>似た感じになりました...
-やっぱ依存関係が解決できないと決定打にならないのかな</span>
+  <span class='slacklog-text'>似た感じになりました...<br>やっぱ依存関係が解決できないと決定打にならないのかな</span>
   </span>
   <span class='slacklog-message' id='1585213753.025300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
@@ -3687,8 +3351,7 @@ We look forward to your response.
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
   <span class='slacklog-name'>ゴリラ</span>
   <a class='slacklog-datetime' href='#1585272330.027200'>27日 10:25:31</a>
-  <span class='slacklog-text'>Vimのデフォルトプラグイン一覧ってヘルプのどっかに載っていますか？
-どれを無効化しようか見てみようかなと思っています</span>
+  <span class='slacklog-text'>Vimのデフォルトプラグイン一覧ってヘルプのどっかに載っていますか？<br>どれを無効化しようか見てみようかなと思っています</span>
   </span>
   <span class='slacklog-message' id='1585274106.028000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-17/331536821795_2102b9fe65a8287cf20b_48.jpg'>
@@ -3706,17 +3369,7 @@ We look forward to your response.
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
   <span class='slacklog-name'>ゴリラ</span>
   <a class='slacklog-datetime' href='#1585274159.028500'>27日 10:56:00</a>
-  <span class='slacklog-text'>```標準プラグイン ~
-|pi_getscript.txt| Vim script の最新版をダウンロードする
-|pi_gzip.txt|      圧縮ファイルの読み書き
-|pi_logipat.txt|   パターンにおける論理演算子
-|pi_netrw.txt|     ネットワークファイルの読み書き
-|pi_paren.txt|     対括弧の強調表示
-|pi_spec.txt|      RPM spec ファイル用ファイルタイププラグイン
-|pi_tar.txt|       Tar ファイルエクスプローラー
-|pi_vimball.txt|   Vim script インストーラを作成する
-|pi_zip.txt|       Zip アーカイブエクスプローラー```
-こんなのがあるんだ</span>
+  <span class='slacklog-text'>```標準プラグイン ~<br>|pi_getscript.txt| Vim script の最新版をダウンロードする<br>|pi_gzip.txt|      圧縮ファイルの読み書き<br>|pi_logipat.txt|   パターンにおける論理演算子<br>|pi_netrw.txt|     ネットワークファイルの読み書き<br>|pi_paren.txt|     対括弧の強調表示<br>|pi_spec.txt|      RPM spec ファイル用ファイルタイププラグイン<br>|pi_tar.txt|       Tar ファイルエクスプローラー<br>|pi_vimball.txt|   Vim script インストーラを作成する<br>|pi_zip.txt|       Zip アーカイブエクスプローラー```<br>こんなのがあるんだ</span>
   </span>
   <span class='slacklog-message' id='1585283194.030400'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -3770,8 +3423,7 @@ We look forward to your response.
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-48.png'>
   <span class='slacklog-name'>0Δ</span>
   <a class='slacklog-datetime' href='#1585283427.035300'>27日 13:30:28</a>
-  <span class='slacklog-text'>他は使った事が無くてわからないですね……
-MacだとLiceCapだったか。</span>
+  <span class='slacklog-text'>他は使った事が無くてわからないですね……<br>MacだとLiceCapだったか。</span>
   </span>
   <span class='slacklog-message' id='1585283480.035900'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -3795,7 +3447,7 @@ MacだとLiceCapだったか。</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-08-06/711433366657_4168974e9eb8448007aa_48.png'>
   <span class='slacklog-name'>thara</span>
   <a class='slacklog-datetime' href='#1585283596.037300'>27日 13:33:17</a>
-  <span class='slacklog-text'>Slackまとめ、OSSですが &lt;https://github.com/rutan/togelack&gt; があります（アーカイブしてくれるかは知らない）</span>
+  <span class='slacklog-text'>Slackまとめ、OSSですが <a href='https://github.com/rutan/togelack'>https://github.com/rutan/togelack</a> があります（アーカイブしてくれるかは知らない）</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -3815,7 +3467,7 @@ MacだとLiceCapだったか。</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
   <span class='slacklog-name'>heavenshell</span>
   <a class='slacklog-datetime' href='#1585283678.038200'>27日 13:34:39</a>
-  <span class='slacklog-text'>&lt;https://getkap.co/&gt;</span>
+  <span class='slacklog-text'><a href='https://getkap.co/'>https://getkap.co/</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
@@ -3891,7 +3543,7 @@ MacだとLiceCapだったか。</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
   <span class='slacklog-name'>heavenshell</span>
   <a class='slacklog-datetime' href='#1585286029.045500'>27日 14:13:50</a>
-  <span class='slacklog-text'>NeoVim の方は Tsuquyomi より &lt;https://github.com/mhartington/nvim-typescript&gt; こちらを使ったほうが幸せになれそうです(LSP 使わない場合は)</span>
+  <span class='slacklog-text'>NeoVim の方は Tsuquyomi より <a href='https://github.com/mhartington/nvim-typescript'>https://github.com/mhartington/nvim-typescript</a> こちらを使ったほうが幸せになれそうです(LSP 使わない場合は)</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -3941,9 +3593,7 @@ MacだとLiceCapだったか。</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1585286734.048400'>27日 14:25:35</a>
-  <span class='slacklog-text'>前deopleteと格闘していたときは
-&lt;https://github.com/zchee&gt;
-さんにずっと見られてたw</span>
+  <span class='slacklog-text'>前deopleteと格闘していたときは<br><a href='https://github.com/zchee'>https://github.com/zchee</a><br>さんにずっと見られてたw</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -3981,8 +3631,7 @@ MacだとLiceCapだったか。</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585286894.051200'>27日 14:28:15</a>
-  <span class='slacklog-text'>&lt;https://github.com/rhysd/conflict-marker.vim&gt;
-丁度これ見てた(操作がhelpにない...)</span>
+  <span class='slacklog-text'><a href='https://github.com/rhysd/conflict-marker.vim'>https://github.com/rhysd/conflict-marker.vim</a><br>丁度これ見てた(操作がhelpにない...)</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -3996,7 +3645,7 @@ MacだとLiceCapだったか。</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1585287039.052200'>27日 14:30:40</a>
-  <span class='slacklog-text'>このアカウント消して rhysd にリダイレクトして欲しい(無茶苦茶言う人) &lt;https://github.com/inu&gt;</span>
+  <span class='slacklog-text'>このアカウント消して rhysd にリダイレクトして欲しい(無茶苦茶言う人) <a href='https://github.com/inu'>https://github.com/inu</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -4016,28 +3665,13 @@ MacだとLiceCapだったか。</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585287454.055800'>27日 14:37:35</a>
-  <span class='slacklog-text'>```dein.toml|179 col 1| repo = &#39;rhysd/accelerated-jk&#39;
-dein.toml|1814 col 1| repo = &#39;rhysd/devdocs.vim&#39;
-dein.toml|2885 col 1| repo = &#39;rhysd/git-messenger.vim&#39;
-dein.toml|2935 col 1| repo = &#39;rhysd/conflict-marker.vim&#39;
-dein.toml|3630 col 1| repo = &#39;rhysd/clever-f.vim&#39;```
-```dein_lazy.toml|630 col 1| repo = &#39;rhysd/vim-clang-format&#39; (もう外してもいいかな)
-dein_lazy.toml|672 col 1| repo = &#39;rhysd/vim-gfm-syntax&#39;```
-最近なんか高負荷でvimが死ぬことがある...</span>
+  <span class='slacklog-text'>```dein.toml|179 col 1| repo = &#39;rhysd/accelerated-jk&#39;<br>dein.toml|1814 col 1| repo = &#39;rhysd/devdocs.vim&#39;<br>dein.toml|2885 col 1| repo = &#39;rhysd/git-messenger.vim&#39;<br>dein.toml|2935 col 1| repo = &#39;rhysd/conflict-marker.vim&#39;<br>dein.toml|3630 col 1| repo = &#39;rhysd/clever-f.vim&#39;```<br>```dein_lazy.toml|630 col 1| repo = &#39;rhysd/vim-clang-format&#39; (もう外してもいいかな)<br>dein_lazy.toml|672 col 1| repo = &#39;rhysd/vim-gfm-syntax&#39;```<br>最近なんか高負荷でvimが死ぬことがある...</span>
   </span>
   <span class='slacklog-message' id='1585287712.056700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1585287712.056700'>27日 14:41:53</a>
-  <span class='slacklog-text'>人別では一番お世話になってる気がしますね。。。（coc拡張除いて）
-
-```Plug &#39;rhysd/clever-f.vim&#39;
-Plug &#39;rhysd/accelerated-jk&#39;
-Plug &#39;rhysd/reply.vim&#39;
-Plug &#39;rhysd/committia.vim&#39;
-Plug &#39;rhysd/git-messenger.vim&#39;
-Plug &#39;rhysd/conflict-marker.vim&#39;
-Plug &#39;rhysd/vim-clang-format&#39;, {```</span>
+  <span class='slacklog-text'>人別では一番お世話になってる気がしますね。。。（coc拡張除いて）<br><br>```Plug &#39;rhysd/clever-f.vim&#39;<br>Plug &#39;rhysd/accelerated-jk&#39;<br>Plug &#39;rhysd/reply.vim&#39;<br>Plug &#39;rhysd/committia.vim&#39;<br>Plug &#39;rhysd/git-messenger.vim&#39;<br>Plug &#39;rhysd/conflict-marker.vim&#39;<br>Plug &#39;rhysd/vim-clang-format&#39;, {```</span>
   </span>
   <span class='slacklog-message' id='1585287957.057400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -4049,28 +3683,7 @@ Plug &#39;rhysd/vim-clang-format&#39;, {```</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
   <span class='slacklog-name'>たまたまご</span>
   <a class='slacklog-datetime' href='#1585443917.060700'>29日 10:05:18</a>
-  <span class='slacklog-text'>[質問]
-guifg から ctermfg を算出するにはどうすればいいのでしょうか？
-やりたいことは以下のような dict の guifg から ctermfg を算出したいです。
-`s:conv_ctermfg()` のような関数があると嬉しいです。
-
-```let s:dict = {
-\ &#39;a&#39;: { &#39;guifg&#39;: &#39;#1572B6&#39; },
-\ &#39;b&#39;: { &#39;guifg&#39;: &#39;#C4C7CE&#39; },
-\ &#39;c&#39;: { &#39;guifg&#39;: &#39;#755838&#39; },
-\ &#39;d&#39;: { &#39;guifg&#39;: &#39;#984C93&#39; },
-\}
-
-for [key, dct] in items(s:dict)
-    echo printf(&#34;&#39;%s&#39;: { &#39;guifg&#39;: &#39;%s&#39;, &#39;ctermfg&#39;: &#39;%s&#39; }&#34;, key, dct.guifg, s:conv_ctermfg(dct.guifg))
-endfor```
-結果
-
-```&#39;a&#39;: { &#39;guifg&#39;: &#39;#1572B6&#39;, &#39;ctermfg&#39;: &#39;変換した値&#39; }
-&#39;b&#39;: { &#39;guifg&#39;: &#39;#C4C7CE&#39;, &#39;ctermfg&#39;: &#39;変換した値&#39; }
-&#39;c&#39;: { &#39;guifg&#39;: &#39;#755838&#39;, &#39;ctermfg&#39;: &#39;変換した値&#39; }
-&#39;d&#39;: { &#39;guifg&#39;: &#39;#984C93&#39;, &#39;ctermfg&#39;: &#39;変換した値&#39; }```
-</span>
+  <span class='slacklog-text'>[質問]<br>guifg から ctermfg を算出するにはどうすればいいのでしょうか？<br>やりたいことは以下のような dict の guifg から ctermfg を算出したいです。<br>`s:conv_ctermfg()` のような関数があると嬉しいです。<br><br>```let s:dict = {<br>\ &#39;a&#39;: { &#39;guifg&#39;: &#39;#1572B6&#39; },<br>\ &#39;b&#39;: { &#39;guifg&#39;: &#39;#C4C7CE&#39; },<br>\ &#39;c&#39;: { &#39;guifg&#39;: &#39;#755838&#39; },<br>\ &#39;d&#39;: { &#39;guifg&#39;: &#39;#984C93&#39; },<br>\}<br><br>for [key, dct] in items(s:dict)<br>    echo printf(&#34;&#39;%s&#39;: { &#39;guifg&#39;: &#39;%s&#39;, &#39;ctermfg&#39;: &#39;%s&#39; }&#34;, key, dct.guifg, s:conv_ctermfg(dct.guifg))<br>endfor```<br>結果<br><br>```&#39;a&#39;: { &#39;guifg&#39;: &#39;#1572B6&#39;, &#39;ctermfg&#39;: &#39;変換した値&#39; }<br>&#39;b&#39;: { &#39;guifg&#39;: &#39;#C4C7CE&#39;, &#39;ctermfg&#39;: &#39;変換した値&#39; }<br>&#39;c&#39;: { &#39;guifg&#39;: &#39;#755838&#39;, &#39;ctermfg&#39;: &#39;変換した値&#39; }<br>&#39;d&#39;: { &#39;guifg&#39;: &#39;#984C93&#39;, &#39;ctermfg&#39;: &#39;変換した値&#39; }```<br></span>
   </span>
   <span class='slacklog-message' id='1585444234.062100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -4082,20 +3695,19 @@ endfor```
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1585444236.062300'>29日 10:10:37</a>
-  <span class='slacklog-text'>&lt;https://www.vim.org/scripts/script.php?script_id=1243|https://www.vim.org/scripts/script.php?script_id=1243&gt;</span>
+  <span class='slacklog-text'><a href='https://www.vim.org/scripts/script.php?script_id=1243|https://www.vim.org/scripts/script.php?script_id=1243'>https://www.vim.org/scripts/script.php?script_id=1243|https://www.vim.org/scripts/script.php?script_id=1243</a></span>
   </span>
   <span class='slacklog-message' id='1585444326.062600'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
   <span class='slacklog-name'>たまたまご</span>
   <a class='slacklog-datetime' href='#1585444326.062600'>29日 10:12:07</a>
-  <span class='slacklog-text'>ありがとうございます！
-試してみます！</span>
+  <span class='slacklog-text'>ありがとうございます！<br>試してみます！</span>
   </span>
   <span class='slacklog-message' id='1585444452.064200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
   <span class='slacklog-name'>kuu</span>
   <a class='slacklog-datetime' href='#1585444452.064200'>29日 10:14:13</a>
-  <span class='slacklog-text'>後はこんなのですかね &lt;https://tociyuki.hatenablog.jp/entry/20160620/1466434090|https://tociyuki.hatenablog.jp/entry/20160620/1466434090&gt;</span>
+  <span class='slacklog-text'>後はこんなのですかね <a href='https://tociyuki.hatenablog.jp/entry/20160620/1466434090|https://tociyuki.hatenablog.jp/entry/20160620/1466434090'>https://tociyuki.hatenablog.jp/entry/20160620/1466434090|https://tociyuki.hatenablog.jp/entry/20160620/1466434090</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
@@ -4146,11 +3758,7 @@ Windows 10 を使用しています。gvim で :terminal を起動するとデ�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585567013.072800'>30日 20:16:54</a>
-  <span class='slacklog-text'>`質問です`
-
-&lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585396700088700|https://vim-jp.slack.com/archives/CQ57P4XU4/p1585396700088700&gt;
-で出している挙動ですが、何かしらの設定不備でしょうか？
-改めて…</span>
+  <span class='slacklog-text'>`質問です`<br><br><a href='https://vim-jp.slack.com/archives/CQ57P4XU4/p1585396700088700|https://vim-jp.slack.com/archives/CQ57P4XU4/p1585396700088700'>https://vim-jp.slack.com/archives/CQ57P4XU4/p1585396700088700|https://vim-jp.slack.com/archives/CQ57P4XU4/p1585396700088700</a><br>で出している挙動ですが、何かしらの設定不備でしょうか？<br>改めて…</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div class='slacklog-attachment-other-text'>すみません、asyncompleteの挙動なのですが、C-eにasyncomplete#cancel_popup() がマップされてる状態での録画です。
@@ -4169,29 +3777,13 @@ Windows 10 を使用しています。gvim で :terminal を起動するとデ�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585571527.074900'>30日 21:32:08</a>
-  <span class='slacklog-text'>```function! s:popup_cancel(rawchar, ...) abort &#34; {{{
-  let result = &#39;&#39;
-  if dein#is_sourced(&#39;asyncomplete.vim&#39;)
-    let result = result . asyncomplete#cancel_popup()
-    if a:0
-      let result = result . a:1
-    endif
-  else
-    let result = result . a:rawchar
-  endif
-  return result
-endfunction &#34; }}}
-
-inoremap &lt;expr&gt;&lt;silent&gt; &lt;C-e&gt;
-    \ pumvisible() ? &lt;SID&gt;popup_cancel(&#34;\&lt;C-e&gt;&#34;            ) : &#34;\&lt;C-e&gt;&#34;```
-こんな感じで、cancel_popupが発動することは確認できています(失敗してたときは、C-eで閉じても直ぐに再popupだったし、確認もしてます)</span>
+  <span class='slacklog-text'>```function! s:popup_cancel(rawchar, ...) abort &#34; {{{<br>  let result = &#39;&#39;<br>  if dein#is_sourced(&#39;asyncomplete.vim&#39;)<br>    let result = result . asyncomplete#cancel_popup()<br>    if a:0<br>      let result = result . a:1<br>    endif<br>  else<br>    let result = result . a:rawchar<br>  endif<br>  return result<br>endfunction &#34; }}}<br><br>inoremap &lt;expr&gt;&lt;silent&gt; &lt;C-e&gt;<br>    \ pumvisible() ? &lt;SID&gt;popup_cancel(&#34;\&lt;C-e&gt;&#34;            ) : &#34;\&lt;C-e&gt;&#34;```<br>こんな感じで、cancel_popupが発動することは確認できています(失敗してたときは、C-eで閉じても直ぐに再popupだったし、確認もしてます)</span>
   </span>
   <span class='slacklog-message' id='1585571585.075900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585571585.075900'>30日 21:33:06</a>
-  <span class='slacklog-text'>で、キャンセルしたら再popupはしないのですが、その後のスペースで同じ候補でpopupします。
-位置と入れた文字(スペース)を考えるとpopupするのはなんか変だなと</span>
+  <span class='slacklog-text'>で、キャンセルしたら再popupはしないのですが、その後のスペースで同じ候補でpopupします。<br>位置と入れた文字(スペース)を考えるとpopupするのはなんか変だなと</span>
   </span>
   <span class='slacklog-message' id='1585571618.076200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4209,10 +3801,7 @@ inoremap &lt;expr&gt;&lt;silent&gt; &lt;C-e&gt;
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585572031.077700'>30日 21:40:32</a>
-  <span class='slacklog-text'>ありがとうございます。ただ該当する設定にあたりそうなの triggerくらいしかないと思いますが
-```PP g:asyncomplete_triggers:
-g:asyncomplete_triggers = {&#39;*&#39;: [&#39;.&#39;, &#39;&gt;&#39;, &#39;:&#39;]}```
-特に変更はなく...?</span>
+  <span class='slacklog-text'>ありがとうございます。ただ該当する設定にあたりそうなの triggerくらいしかないと思いますが<br>```PP g:asyncomplete_triggers:<br>g:asyncomplete_triggers = {&#39;*&#39;: [&#39;.&#39;, &#39;&gt;&#39;, &#39;:&#39;]}```<br>特に変更はなく...?</span>
   </span>
   <span class='slacklog-message' id='1585572537.078100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4230,8 +3819,7 @@ g:asyncomplete_triggers = {&#39;*&#39;: [&#39;.&#39;, &#39;&gt;&#39;, &#39;:&#39
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
   <span class='slacklog-name'>mattn</span>
   <a class='slacklog-datetime' href='#1585572567.078900'>30日 21:49:28</a>
-  <span class='slacklog-text'>空白込みなので
-```:echo string(b:asyncompleter_refresh_pattern)```</span>
+  <span class='slacklog-text'>空白込みなので<br>```:echo string(b:asyncompleter_refresh_pattern)```</span>
   </span>
   <span class='slacklog-message' id='1585572570.079100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4255,21 +3843,13 @@ g:asyncomplete_triggers = {&#39;*&#39;: [&#39;.&#39;, &#39;&gt;&#39;, &#39;:&#39
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585573818.081700'>30日 22:10:19</a>
-  <span class='slacklog-text'>たとえば `text` でも同じです(未定義)
-上の画像でいうと、動作してるの `asyncomplete-nextword` ですので、そっち自体の不具合(というか動作特性)
-の可能性がありそうですね....</span>
+  <span class='slacklog-text'>たとえば `text` でも同じです(未定義)<br>上の画像でいうと、動作してるの `asyncomplete-nextword` ですので、そっち自体の不具合(というか動作特性)<br>の可能性がありそうですね....</span>
   </span>
   <span class='slacklog-message' id='1585574085.082400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585574085.082400'>30日 22:14:46</a>
-  <span class='slacklog-text'>```b:asyncomplete_triggers = {
-  &#39;.&#39;: {&#39;emoji&#39;: [&#39;.&#39;], &#39;nextword&#39;: [&#39;.&#39;], &#39;omni&#39;: [&#39;.&#39;], &#39;vsnip&#39;: [&#39;.&#39;]},
-  &#39;/&#39;: {&#39;file&#39;: [&#39;/&#39;]},
-  &#39;:&#39;: {&#39;emoji&#39;: [&#39;:&#39;], &#39;nextword&#39;: [&#39;:&#39;], &#39;omni&#39;: [&#39;:&#39;], &#39;vsnip&#39;: [&#39;:&#39;]},
-  &#39;&gt;&#39;: {&#39;emoji&#39;: [&#39;&gt;&#39;], &#39;nextword&#39;: [&#39;&gt;&#39;], &#39;omni&#39;: [&#39;&gt;&#39;], &#39;vsnip&#39;: [&#39;&gt;&#39;]}
-}```
-textでbufferのトリガはこうでした(参考)</span>
+  <span class='slacklog-text'>```b:asyncomplete_triggers = {<br>  &#39;.&#39;: {&#39;emoji&#39;: [&#39;.&#39;], &#39;nextword&#39;: [&#39;.&#39;], &#39;omni&#39;: [&#39;.&#39;], &#39;vsnip&#39;: [&#39;.&#39;]},<br>  &#39;/&#39;: {&#39;file&#39;: [&#39;/&#39;]},<br>  &#39;:&#39;: {&#39;emoji&#39;: [&#39;:&#39;], &#39;nextword&#39;: [&#39;:&#39;], &#39;omni&#39;: [&#39;:&#39;], &#39;vsnip&#39;: [&#39;:&#39;]},<br>  &#39;&gt;&#39;: {&#39;emoji&#39;: [&#39;&gt;&#39;], &#39;nextword&#39;: [&#39;&gt;&#39;], &#39;omni&#39;: [&#39;&gt;&#39;], &#39;vsnip&#39;: [&#39;&gt;&#39;]}<br>}```<br>textでbufferのトリガはこうでした(参考)</span>
   </span>
   <span class='slacklog-message' id='1585574719.083100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -4281,8 +3861,7 @@ textでbufferのトリガはこうでした(参考)</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585574737.083700'>30日 22:25:38</a>
-  <span class='slacklog-text'>```function! s:update_trigger_characters() ```
-でログ出してるみたいなので、そちらを取ってみます。</span>
+  <span class='slacklog-text'>```function! s:update_trigger_characters() ```<br>でログ出してるみたいなので、そちらを取ってみます。</span>
   </span>
   <span class='slacklog-message' id='1585575093.084100'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -4312,8 +3891,7 @@ textでbufferのトリガはこうでした(参考)</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585576751.085400'>30日 22:59:12</a>
-  <span class='slacklog-text'>それも謎なんですよね...
-(別の分析のときにログ見て)</span>
+  <span class='slacklog-text'>それも謎なんですよね...<br>(別の分析のときにログ見て)</span>
   </span>
   <span class='slacklog-message' id='1585576759.085700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -4325,9 +3903,7 @@ textでbufferのトリガはこうでした(参考)</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585578262.086600'>30日 23:24:23</a>
-  <span class='slacklog-text'>関数から、どれかのソースのtrigger時の失敗のようなので、1つづつoffして詰めました。
-&lt;https://github.com/yami-beta/asyncomplete-omni.vimとく&gt;
-をoffにしたら出なくなりました.</span>
+  <span class='slacklog-text'>関数から、どれかのソースのtrigger時の失敗のようなので、1つづつoffして詰めました。<br><a href='https://github.com/yami-beta/asyncomplete-omni.vimとく'>https://github.com/yami-beta/asyncomplete-omni.vimとく</a><br>をoffにしたら出なくなりました.</span>
   </span>
   <span class='slacklog-message' id='1585578369.086900'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -4399,9 +3975,7 @@ textでbufferのトリガはこうでした(参考)</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585612962.093700'>31日 09:02:43</a>
-  <span class='slacklog-text'>ただ、各ログを見るとrefreshを立ててませんが、自発的にできるんですっけ?
-&lt;https://github.com/yuki-ycino/asyncomplete-dictionary/pull/2&gt;
-で遅延させようと四苦八苦して、いろいろ調べたりやったりしたので、あるなら知りたい...w</span>
+  <span class='slacklog-text'>ただ、各ログを見るとrefreshを立ててませんが、自発的にできるんですっけ?<br><a href='https://github.com/yuki-ycino/asyncomplete-dictionary/pull/2'>https://github.com/yuki-ycino/asyncomplete-dictionary/pull/2</a><br>で遅延させようと四苦八苦して、いろいろ調べたりやったりしたので、あるなら知りたい...w</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -4427,16 +4001,13 @@ textでbufferのトリガはこうでした(参考)</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585613671.096200'>31日 09:14:32</a>
-  <span class='slacklog-text'>on_change(文字の変更)かforce_fresh(基本手動)で
-``` if l:matches[&#39;refresh&#39;] || l:matches[&#39;status&#39;] ==# &#39;idle&#39; || l:matches[&#39;status&#39;] ==# &#39;failure&#39;```
-のどれかのとき、かな... on/offで調べるかなあ...</span>
+  <span class='slacklog-text'>on_change(文字の変更)かforce_fresh(基本手動)で<br>``` if l:matches[&#39;refresh&#39;] || l:matches[&#39;status&#39;] ==# &#39;idle&#39; || l:matches[&#39;status&#39;] ==# &#39;failure&#39;```<br>のどれかのとき、かな... on/offで調べるかなあ...</span>
   </span>
   <span class='slacklog-message' id='1585625228.099700'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1585625228.099700'>31日 12:27:09</a>
-  <span class='slacklog-text'>質問です。現状 popup の機能にカーソルの移動に合わせて popup が追跡する機能ってあるでしょうか？
-今だと CursorMoved で制御しないと無い認識ですが、previewpopup オプションというのを見つけて preview を使ってみたいなと思いつつ…</span>
+  <span class='slacklog-text'>質問です。現状 popup の機能にカーソルの移動に合わせて popup が追跡する機能ってあるでしょうか？<br>今だと CursorMoved で制御しないと無い認識ですが、previewpopup オプションというのを見つけて preview を使ってみたいなと思いつつ…</span>
   </span>
   <span class='slacklog-message' id='1585625319.100200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>

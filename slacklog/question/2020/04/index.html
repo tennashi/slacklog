@@ -11,9 +11,7 @@ title: vim-jp.slack.com log - &#35question - 2020年04月
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585731172.102200'>1日 17:52:53</a>
-  <span class='slacklog-text'>`質問`
-シェルでエスケープコード混りの文字で表示文字だけを取得する定番の方法ってなにがあるでしょう?
-rel &lt;#CNX3F8RFC|dotfiles&gt;</span>
+  <span class='slacklog-text'>`質問`<br>シェルでエスケープコード混りの文字で表示文字だけを取得する定番の方法ってなにがあるでしょう?<br>rel &lt;#CNX3F8RFC|dotfiles&gt;</span>
   </span>
   <span class='slacklog-message' id='1585731310.103700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -37,38 +35,25 @@ rel &lt;#CNX3F8RFC|dotfiles&gt;</span>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
   <span class='slacklog-name'>yutakatay</span>
   <a class='slacklog-datetime' href='#1585732842.106300'>1日 18:20:43</a>
-  <span class='slacklog-text'>たぶん難しいですね（特にbashrcに記述するレベルのコマンドだと）。。。
-scriptコマンドとかでとったログのエスケープ文字とかも結局sedかperlで削除すること多いんで・・・</span>
+  <span class='slacklog-text'>たぶん難しいですね（特にbashrcに記述するレベルのコマンドだと）。。。<br>scriptコマンドとかでとったログのエスケープ文字とかも結局sedかperlで削除すること多いんで・・・</span>
   </span>
   <span class='slacklog-message' id='1585732901.106700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585732901.106700'>1日 18:21:42</a>
-  <span class='slacklog-text'>そうですよね...
-ありがとうございます。</span>
+  <span class='slacklog-text'>そうですよね...<br>ありがとうございます。</span>
   </span>
   <span class='slacklog-message' id='1585766908.109300'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-03-22/585354086471_dd542d5201f2874092dd_48.jpg'>
   <span class='slacklog-name'>fumi</span>
   <a class='slacklog-datetime' href='#1585766908.109300'>2日 03:48:29</a>
-  <span class='slacklog-text'>すでにご存知かもしれませんが ↓ の「カーソルの位置」のあたりとか参考になるでしょうか？
-&lt;https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA&gt;
-
-```rightprompt()
-{
-    printf &#34;%*s&#34; $COLUMNS &#34;right prompt&#34;
-}
-
-export PS1=&#39;\[$(tput sc; rightprompt; tput rc)\]left prompt &gt; &#39;```
-PS1 では `\[` `\]` で囲まれている部分は non-printing characters となります文字数にカウントされません
-&lt;https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html&gt;</span>
+  <span class='slacklog-text'>すでにご存知かもしれませんが ↓ の「カーソルの位置」のあたりとか参考になるでしょうか？<br><a href='https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA'>https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA</a><br><br>```rightprompt()<br>{<br>    printf &#34;%*s&#34; $COLUMNS &#34;right prompt&#34;<br>}<br><br>export PS1=&#39;\[$(tput sc; rightprompt; tput rc)\]left prompt &gt; &#39;```<br>PS1 では `\[` `\]` で囲まれている部分は non-printing characters となります文字数にカウントされません<br><a href='https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html'>https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html</a></span>
   </span>
   <span class='slacklog-message' id='1585774484.112000'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
   <span class='slacklog-name'>tsuyoshi_cho</span>
   <a class='slacklog-datetime' href='#1585774484.112000'>2日 05:54:45</a>
-  <span class='slacklog-text'>ありがとうございます。
-一応知ってはいましたが、今抱えてる条件だとちょっと期待した結果にならない(出来ないというか)でした</span>
+  <span class='slacklog-text'>ありがとうございます。<br>一応知ってはいましたが、今抱えてる条件だとちょっと期待した結果にならない(出来ないというか)でした</span>
   </span>
   <span class='slacklog-message' id='1585774573.113700'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -104,23 +89,7 @@ PS1 では `\[` `\]` で囲まれている部分は non-printing characters と�
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
   <span class='slacklog-name'></span>
   <a class='slacklog-datetime' href='#1585824982.120500'>2日 19:56:23</a>
-  <span class='slacklog-text'>```
-strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
-                結果は数値で、文字列 {expr} が {col} (最初の桁はゼロ)で始まる
-                時のスクリーン上での表示セル幅を返す。
-                {col} が省略されたときはゼロが使われる。{col} には計算を開始す
-                るスクリーン上の列の位置を指定する。これはタブ文字の幅の計算に
-                影響する。
-                計算にはカレントウィンドウのオプションが使用される。&#39;tabstop&#39;
-                や &#39;display&#39; のような表示を変更するようなオプションが影響す
-                る。
-                {expr} に幅が曖昧 (Ambiguous) な東アジアの文字が含まれていると
-                きは、文字幅は &#39;ambiwidth&#39; の設定に依存する。
-                |strlen()|, |strwidth()|, |strchars()| も参照。
- 
-                |method| としても使用できる:  
-                        GetText()-&gt;strdisplaywidth()
-```</span>
+  <span class='slacklog-text'>```<br>strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*<br>                結果は数値で、文字列 {expr} が {col} (最初の桁はゼロ)で始まる<br>                時のスクリーン上での表示セル幅を返す。<br>                {col} が省略されたときはゼロが使われる。{col} には計算を開始す<br>                るスクリーン上の列の位置を指定する。これはタブ文字の幅の計算に<br>                影響する。<br>                計算にはカレントウィンドウのオプションが使用される。&#39;tabstop&#39;<br>                や &#39;display&#39; のような表示を変更するようなオプションが影響す<br>                る。<br>                {expr} に幅が曖昧 (Ambiguous) な東アジアの文字が含まれていると<br>                きは、文字幅は &#39;ambiwidth&#39; の設定に依存する。<br>                |strlen()|, |strwidth()|, |strchars()| も参照。<br> <br>                |method| としても使用できる:  <br>                        GetText()-&gt;strdisplaywidth()<br>```</span>
   </span>
   <span class='slacklog-message' id='1585825040.121200'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -132,8 +101,7 @@ strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
   <span class='slacklog-name'>tyru</span>
   <a class='slacklog-datetime' href='#1585825109.122500'>2日 19:58:30</a>
-  <span class='slacklog-text'>まーでも用途的にしゃーない感はある…
-それこそ &lt;#CGABGC8LA|golang&gt; で言ってた DI の話じゃないけど、&amp;tabstop, &amp;ambiwidth とかを引数で受け付けるようにするとか</span>
+  <span class='slacklog-text'>まーでも用途的にしゃーない感はある…<br>それこそ &lt;#CGABGC8LA|golang&gt; で言ってた DI の話じゃないけど、&amp;tabstop, &amp;ambiwidth とかを引数で受け付けるようにするとか</span>
   </span>
   <span class='slacklog-message' id='1585825114.122600'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -175,16 +143,13 @@ strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
   <span class='slacklog-name'>thinca</span>
   <a class='slacklog-datetime' href='#1585825583.129900'>2日 20:06:24</a>
-  <span class='slacklog-text'>1. 文字列を１文字単位で区切ります `split(str, &#39;\zs&#39;)`
-2. 各文字の幅を取ります `map(chars, &#39;[v:val, strdisplaywidth(v:val)]&#39;)`
-3. 目的の長さ未満になるところを探してそこまでをくっつけていきます</span>
+  <span class='slacklog-text'>1. 文字列を１文字単位で区切ります `split(str, &#39;\zs&#39;)`<br>2. 各文字の幅を取ります `map(chars, &#39;[v:val, strdisplaywidth(v:val)]&#39;)`<br>3. 目的の長さ未満になるところを探してそこまでをくっつけていきます</span>
   </span>
   <span class='slacklog-message' id='1585825694.130400'>
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
   <span class='slacklog-name'>thinca</span>
   <a class='slacklog-datetime' href='#1585825694.130400'>2日 20:08:15</a>
-  <span class='slacklog-text'>そのようにしてあれやこれやとがんばったのがこちらになります
-&lt;https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415&gt;</span>
+  <span class='slacklog-text'>そのようにしてあれやこれやとがんばったのがこちらになります<br><a href='https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415'>https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -216,7 +181,7 @@ strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
   <span class='slacklog-name'>thinca</span>
   <a class='slacklog-datetime' href='#1585825786.133300'>2日 20:09:47</a>
-  <span class='slacklog-text'>ドキュメントはこちら &lt;https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268&gt;</span>
+  <span class='slacklog-text'>ドキュメントはこちら <a href='https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268'>https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -369,8 +334,7 @@ pathを記入する
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
   <span class='slacklog-name'>Nicholas</span>
   <a class='slacklog-datetime' href='#1586069667.152200'>5日 15:54:28</a>
-  <span class='slacklog-text'>ファイルを編集するだけでvimを使えることの満足が得られる
-→vimの学習はそんなに難しくない</span>
+  <span class='slacklog-text'>ファイルを編集するだけでvimを使えることの満足が得られる<br>→vimの学習はそんなに難しくない</span>
   </span>
 [Vim]の新着質問一覧｜teratail（テラテイル） 5日 17:31:18: &lt;https://teratail.com/questions/251545?rss=all|vimでコードの自動補完と同時に不思議な空間が挿入される&gt;
 前提
@@ -461,8 +425,7 @@ iTermからmac vimを使用しています。
   <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-17/765044446022_f43f87e54f5be751759f_48.png'>
   <span class='slacklog-name'>nabezokodaikon</span>
   <a class='slacklog-datetime' href='#1586103619.160300'>6日 01:20:20</a>
-  <span class='slacklog-text'>質問です。
-deopleteなどで表示したポップアップの選択をループすることってできるんでしょうか？一番下までスクロールしたら、一番上まで戻るというような挙動です。</span>
+  <span class='slacklog-text'>質問です。<br>deopleteなどで表示したポップアップの選択をループすることってできるんでしょうか？一番下までスクロールしたら、一番上まで戻るというような挙動です。</span>
   </span>
   <span class='slacklog-message' id='1586118526.162000'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>

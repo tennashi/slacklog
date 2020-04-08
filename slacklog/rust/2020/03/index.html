@@ -11,12 +11,7 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585012930.069800'>24日 10:22:11</a>
-  <span class='slacklog-text'>前提: rust で書いた CLI アプリケーションのバージョンを git タグから取得したい
-質問: どうすればよいでしょう？
-
-1. `git_version` みたいなの使ってビルド時に解決し CLI ではそれを使う（`Cargo.toml` の `version` は `0.1.0` とかで固定）
-2. 何かしらのすごい方法で `Cargo.toml` の `version` と Git のタグを同期して `CARGO_PKG_VERSION` とかを CLI で返す
-3. もっと良い方法</span>
+  <span class='slacklog-text'>前提: rust で書いた CLI アプリケーションのバージョンを git タグから取得したい<br>質問: どうすればよいでしょう？<br><br>1. `git_version` みたいなの使ってビルド時に解決し CLI ではそれを使う（`Cargo.toml` の `version` は `0.1.0` とかで固定）<br>2. 何かしらのすごい方法で `Cargo.toml` の `version` と Git のタグを同期して `CARGO_PKG_VERSION` とかを CLI で返す<br>3. もっと良い方法</span>
   </span>
   <span class='slacklog-message' id='1585013114.070900'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -28,7 +23,7 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585013242.071100'>24日 10:27:23</a>
-  <span class='slacklog-text'>&lt;https://www.reddit.com/r/rust/comments/aa95c5/cargo_package_version_from_git_tag/&gt;</span>
+  <span class='slacklog-text'><a href='https://www.reddit.com/r/rust/comments/aa95c5/cargo_package_version_from_git_tag/'>https://www.reddit.com/r/rust/comments/aa95c5/cargo_package_version_from_git_tag/</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
@@ -44,8 +39,7 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/c83c988365a0fabc4c83cdb600268d59.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-48.png'>
   <span class='slacklog-name'>h-michael</span>
   <a class='slacklog-datetime' href='#1585013301.071800'>24日 10:28:22</a>
-  <span class='slacklog-text'>alacrittyはこうやってました
-&lt;https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29|https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29&gt;</span>
+  <span class='slacklog-text'>alacrittyはこうやってました<br><a href='https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29|https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29'>https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29|https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/build.rs#L29</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -59,7 +53,7 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585013403.072100'>24日 10:30:04</a>
-  <span class='slacklog-text'>&lt;https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/src/cli.rs#L76&gt;</span>
+  <span class='slacklog-text'><a href='https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/src/cli.rs#L76'>https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/src/cli.rs#L76</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -79,7 +73,7 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585013424.072600'>24日 10:30:25</a>
-  <span class='slacklog-text'>&lt;https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/Cargo.toml#L3&gt;</span>
+  <span class='slacklog-text'><a href='https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/Cargo.toml#L3'>https://github.com/alacritty/alacritty/blob/4000ec04d89b9bd77995960d2a9da8fcad55e003/alacritty/Cargo.toml#L3</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -99,9 +93,7 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585013527.073700'>24日 10:32:08</a>
-  <span class='slacklog-text'>&lt;https://github.com/alacritty/alacritty/commit/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e&gt;
-
-できれば &#34;Bump version&#34; 的なコミットをしたくないw</span>
+  <span class='slacklog-text'><a href='https://github.com/alacritty/alacritty/commit/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e'>https://github.com/alacritty/alacritty/commit/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e</a><br><br>できれば &#34;Bump version&#34; 的なコミットをしたくないw</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -133,13 +125,13 @@ title: vim-jp.slack.com log - &#35rust - 2020年03月
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585013724.076100'>24日 10:35:25</a>
-  <span class='slacklog-text'>&lt;http://crates.io|crates.io&gt; に登録するわけではないし..</span>
+  <span class='slacklog-text'><a href='http://crates.io|crates.io'>http://crates.io|crates.io</a> に登録するわけではないし..</span>
   </span>
   <span class='slacklog-message' id='1585014117.077400'>
   <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
   <span class='slacklog-name'>lambdalisue</span>
   <a class='slacklog-datetime' href='#1585014117.077400'>24日 10:41:58</a>
-  <span class='slacklog-text'>ひとまず `Cargo.toml` の `version` は `0.1.0` とかに固定して、別枠で &lt;https://docs.rs/git-version/0.3.4/git_version/&gt; とか使ってアプリケーションバージョンを定義することにしました :bow:</span>
+  <span class='slacklog-text'>ひとまず `Cargo.toml` の `version` は `0.1.0` とかに固定して、別枠で <a href='https://docs.rs/git-version/0.3.4/git_version/'>https://docs.rs/git-version/0.3.4/git_version/</a> とか使ってアプリケーションバージョンを定義することにしました :bow:</span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-other'>
             <div>
