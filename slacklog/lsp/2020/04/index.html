@@ -1,0 +1,399 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #lsp - 2020年04月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>tsuyoshi_cho 1585750542.103400: あらゆる asyncomplete sourceをoffってみたりしたけど根本が不明...</pre>
+<pre>tsuyoshi_cho 1585751019.107900: お暇なasyncomplete利用者のかたへ
+もしよければ、以下の操作での結果がどうなったか、教えていただけますか?
+1. 環境的にはpopupで補完が出る状況 + C-eなどにキャンセルがマップされてること
+2. 補完が行なわれるバッファでキー入力開始
+3. 補完の途中の状態でC-eなどで補完キャンセル
+4. そのままinsert modeの状態でスペースを入力
+```inoremap &lt;expr&gt; &lt;C-e&gt; pumvisible() ? asyncomplete#cancel_popup() : "\&lt;C-e&gt;"```
+確認したいこと: キャンセルした補完がポップアップされるか?
+(ポップアップが出ない、あるいは違う内容の補完が始まるなら、期待動作のはず、同じ補完が出ちゃうのはたぶん期待外動作)</pre>
+<pre>tsuyoshi_cho 1585751030.108300: 環境によるかもしれないから、あくまで参考までなのですが...</pre>
+<pre>kuu 1585751531.108900: <https://mattn.kaoriya.net/software/vim/20191231213507.htm>
+この環境ほぼそのままなんですが、再現しないですねー</pre>
+<pre>kuu 1585751543.109200: lspのソース以外は入れてないです</pre>
+<pre>tsuyoshi_cho 1585751623.110800: あー...lspだけだとさすがにないのか...
+自分はasyncomplete-emojiだけにして空filetypeバッファでやって出るので(そしてemoji以外でも出たので、切り分け的には最初に除外できたもの)なので、なんか設定自体ではどこでも出ちゃうのかも、というのを気にしたという...</pre>
+<pre>tsuyoshi_cho 1585751675.111200: lspだけにして再確認してみます...</pre>
+<pre> 1585752008.111300: 一応キャプチャ撮ってみましたが、参考になります？</pre>
+<pre>tsuyoshi_cho 1585752067.111900: ありがとうございます。こっちでも撮ってみます</pre>
+<pre>tsuyoshi_cho 1585752976.112200: あれえ、vim-lspからの補完がうまくいかない...</pre>
+<pre>kg8m 1585795104.114000: <https://vim-jp.slack.com/archives/CQ57P4XU4/p1585751019107900>
+自分も再現しないですね……。 `g:asyncomplete_preprocessor` を自前でやってるのが理由かと思ってデフォルトでやってみましたが無事にポップアップは出ませんでした。</pre>
+<pre>tsuyoshi_cho 1585796114.115000: ありがとうございます。
+なにかしら自分環境由来なんでしょうね...(現在lspが変なのでそちらから調査中...)</pre>
+<pre> 1585798671.115100: lsp_server_initが飛んでない...</pre>
+<pre> 1585798845.115400: sensoredしたログ、普通に動いてる、よな?
+ちなみにgoplsでも同じ症状だったので(ログはまだ)、たぶんlspサーバの個体差じゃないとは思うが...(ただstderrの出力あるのは気になる)</pre>
+<pre>tsuyoshi_cho 1585800246.117600: 上の状況のvimでomnifuncにlsp#completeをセットすれば普通に補完したので、vim-lsp側とlsp連携がまったくできてない、とかではない様子</pre>
+<pre>tsuyoshi_cho 1585800441.118300: gopls、Windowsで Access Deniedでインストール失敗にあう...うぅ</pre>
+<pre>tsuyoshi_cho 1585800489.118500: `81 C:\Users\&lt;username&gt;\.local\share\vim-lsp-settings\gopls\pkg\mod\<http://golang.org|golang.org>\x\tools@v0.0.0-20200316194252-fafb6e2e8a4a: Access is denied`</pre>
+<pre>tsuyoshi_cho 1585800908.118900: なおLinux環境でもvim-lspの挙動は同じだった</pre>
+<pre>yaegassy 1585802178.120000: asyncompleteのC-eでマッピングして補完キャンセルしてスペース入力のですが、僕の手元でもポップアップは出ませんでした</pre>
+<pre>tsuyoshi_cho 1585802295.120300: ありがとうございます...なんだろうなあ</pre>
+<pre>tsuyoshi_cho 1585802333.121100: vim-lspが lsp_server_init出してないというのがあったので、これはvim-lspにほぼ完結してるはず、とissue出しました</pre>
+<pre>tsuyoshi_cho 1585802337.121300: むー</pre>
+<pre>tsuyoshi_cho 1585802352.121800: asyncompleteはかなり謎...</pre>
+<pre>yaegassy 1585802362.122000: 最小構成ってどんなのでしたっけ？</pre>
+<pre>tsuyoshi_cho 1585802426.123300: 自分が
+• asyncompleteのソースがいろいろ
+• 調べたらasyncomplete-lsp/vim-lspが連動してなかった(のでlspだけにできなかった)
+• 最小と言えるか不明だが、asyncomplete-emoji単体でも出た(これoffかつ他のでも出るので、emojiが悪いとも思えない)</pre>
+<pre>tsuyoshi_cho 1585802429.123500: ですかね</pre>
+<pre>yaegassy 1585802456.124300: 僕はasyncomplete-lspしか入れてない環境ですね</pre>
+<pre>tsuyoshi_cho 1585802459.124400: 最小化にするにはちょっと環境がいじりにくくなってて、詰めれてません...すみませぬ</pre>
+<pre>tsuyoshi_cho 1585802473.124900: (なのでlspだけにしたかったんですが)</pre>
+<pre>yaegassy 1585802484.125200: なるほどー。dockerかなにかでちょろっと流してみます</pre>
+<pre>tsuyoshi_cho 1585802494.125400: ありがとうございます。</pre>
+<pre>tsuyoshi_cho 1585802517.125700: <https://gist.github.com/tsuyoshicho/0bab16b946cf4fbbb7c540ac03c18664>
+秘密(でもなんでもない) ログのfull</pre>
+<pre>yaegassy 1585802601.126000: 結構長くハマってますよね。。つらそう。。</pre>
+<pre>tsuyoshi_cho 1585802654.126800: 他のこといろいろやってるので、ボチボチやってる、というのはあります
+前は補完動いたし、そっから特に設定はしてない(できる要素がない)んですけどねえ...</pre>
+<pre>yaegassy 1585803166.128400: 問題点はasyncompleteのソースを色々入れたら補完キャンセルでスペースで再ポップアップされちゃうことでしたでしょうか？</pre>
+<pre>tsuyoshi_cho 1585803334.129900: 見える症状はそうですね
+• asyncomplete補完開始
+• asyncompleteのcancel実施
+• insertのままスペース入力
+• キャンセルした内容の補完popupが出る
+これ単体は実は害がほとんどないんですが、挙動が変なので調査しだしたら、いろいろ(自分の環境の?)問題が見えてきまして...</pre>
+<pre>tsuyoshi_cho 1585803369.130600: lspだけにして確認しようとしたら、lspがasyncompleteと連携してなかったorz、というのもあり確認が難航しています(他の人でOKの状態にしてから進めたかった)</pre>
+<pre>yaegassy 1585803533.131000: こんなのでUbuntuのfocalで試しましたがvim-language-serverもpylsも普通にC-eのあとにスペースでポップアップはでませんでしたね。改めてlsp単体のasyncompleteの連携は問題なさそう
+```call plug#begin('~/.vim/plugged')
+Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'mattn/vim-lsp-settings'
+call plug#end()
+
+augroup LspMappings
+  au!
+  au FileType vim,python call s:lsp_common_mappings()
+augroup END
+
+function! s:lsp_common_mappings() abort
+  setlocal omnifunc=lsp#complete
+  nmap &lt;buffer&gt; K &lt;Plug&gt;(lsp-hover)
+  nmap &lt;buffer&gt; &lt;silent&gt; [g &lt;Plug&gt;(lsp-previous-diagnostic)
+  nmap &lt;buffer&gt; &lt;silent&gt; ]g &lt;Plug&gt;(lsp-next-diagnostic)
+  nmap &lt;buffer&gt; gd &lt;Plug&gt;(lsp-definition)
+endfunction
+
+inoremap &lt;expr&gt; &lt;C-y&gt; pumvisible() ? asyncomplete#close_popup() : "\&lt;C-y&gt;"
+inoremap &lt;expr&gt; &lt;C-e&gt; pumvisible() ? asyncomplete#cancel_popup() : "\&lt;C-e&gt;"```</pre>
+<pre>yaegassy 1585803570.131500: asyncompeteのソース、色々をためしてみます。</pre>
+<pre>tsuyoshi_cho 1585803700.131900: ありがとうございます。やっぱりlsp側連携は問題ないか...</pre>
+<pre>yaegassy 1585804939.132100: asyncompleteとasyncomplete-emojiでやってみましたが絵文字補完(:smile: とか)中に asyncomplete 用の C-e のキャンセルをしてスペース入力で。ポップアップは出ませんでしたね。</pre>
+<pre>yaegassy 1585804981.132600: おー、絵文字展開されちゃうか。まーそうか。</pre>
+<pre>tsuyoshi_cho 1585805101.133100: ありがとうございます。こちらも上の最小構成を試し中です...</pre>
+<pre>yaegassy 1585805243.133900: ちなみに雑にこれだけで試しました(asyncomplete-emojiのはREADMEにあるそのままのそれで)
+```call plug#begin('~/.vim/plugged')
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-emoji.vim'
+call plug#end()
+
+inoremap &lt;expr&gt; &lt;C-e&gt; pumvisible() ? asyncomplete#cancel_popup() : "\&lt;C-e&gt;"
+
+au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#emoji#get_source_options({
+    \ 'name': 'emoji',
+    \ 'whitelist': ['*'],
+    \ 'completor': function('asyncomplete#sources#emoji#completor'),
+    \ }))```</pre>
+<pre>tsuyoshi_cho 1585805330.134600: こっちはこんな風でpythonで試し中ですがomni補完でも補完がスタートしない(server は running...)
+<https://gist.github.com/tsuyoshicho/e8bc392f0c602432b9b43fa6380198d6></pre>
+<pre>tsuyoshi_cho 1585805339.134800: なぜだw</pre>
+<pre>tsuyoshi_cho 1585805492.135900: emoji追加して確認したら、補完がキャンセルできるのは見えました。
+ただ一文字目の `:` の時点でC-eすると補完がキャンセルできずに再ポップアップするな...これはemojiがバグってる臭いけど</pre>
+<pre>yaegassy 1585805562.136600: あー、それは再現しました。候補？文字数？によっては再ポップアップしますね</pre>
+<pre>yaegassy 1585805574.137000: スペースの件とはまた別ですね。</pre>
+<pre>tsuyoshi_cho 1585805594.137400: やっぱりrefresh設定がダメなソースがどっかにいたんだろう、というのはほぼ確実かなあ</pre>
+<pre>tsuyoshi_cho 1585805604.137600: <https://gist.github.com/tsuyoshicho/7882722ea4a1cc6c706b9d82c3997be4>
+emoji入り</pre>
+<pre>yaegassy 1585805799.139700: 絵文字のは `:+1:`  を入力しようとして `:+` あたりや  `:-` あたりで C-e すると無限ポップアップはしますね。それくらいかなー</pre>
+<pre>tsuyoshi_cho 1585805855.140100: そうですね、`:smi` あたりで止めるぶんには問題ないので...</pre>
+<pre>tsuyoshi_cho 1585805864.140400: emoji以外のソースで試すしかないか</pre>
+<pre>yaegassy 1585805928.141400: : や + や - はなんか許せそう。リフレッシュするパターンからは漏れてそうな気がするし</pre>
+<pre>yaegassy 1585806106.142300: iskeywordに:と+と-をぶちこんだら、再ポップアプしなくなりました</pre>
+<pre>mattn 1585806122.142700: あ、やはり refresh pattern だったのか。</pre>
+<pre>tsuyoshi_cho 1585806208.144200: tagでやったら、c-eで出なくなったので、そこは問題なかったです(報告)</pre>
+<pre>yaegassy 1585806211.144400: vimのファイルタイプで雑に試したらだいじょぶでした
+```augroup AddKeyword
+  au!
+  au Filetype vim setlocal iskeyword+=:
+  au Filetype vim setlocal iskeyword+=+
+  au Filetype vim setlocal iskeyword+=-
+augroup END```</pre>
+<pre>tsuyoshi_cho 1585806301.145100: でも現環境にすると、tagでのキャンセルも再popする...w
+iskeywordは同じなんだけどなあ(未変更)</pre>
+<pre>tsuyoshi_cho 1585807552.146200: <@U7TMPGWJ0> さん、<@U03C6TEAZ> さん
+issueとして出してはいるのですが、
+<https://vim-jp.slack.com/archives/CQ57P4XU4/p1585798671115100>
+は、やっぱりなにかしらの環境問題ですよね...</pre>
+<pre>yaegassy 1585808656.146600: 他の方も動いてるようですので、たしかになにかしら環境問題(vimrc等)なのかもしれませんね...</pre>
+<pre>tsuyoshi_cho 1585808726.147200: むう、一旦環境分解するところから始めないとかなあ...</pre>
+<pre>yaegassy 1585808848.148400: ちょっと整理して、↑の問題はvim-lsp自体は動いてるけどasyncomplete連携(asyncomplete-lsp)がうまくできてないってことですか？</pre>
+<pre>tsuyoshi_cho 1585809057.150200: はい、omniだと補完動いていますが、lsp_server_initが発火しなかったため asyncomplete-lspのsource登録が処理されず、asyncompleteでは動かないことをログから確認しました。
+(次々問題が見えたのはありますが、その中で見付けました。)</pre>
+<pre>hrsh7th 1585809192.150700: lsp_server_init は発火しているが、エラーがでて途中で止まっている。という説はなさそうでしょうか。。。？</pre>
+<pre>tsuyoshi_cho 1585809245.151500: ログに出てませんが、そういう状態になるとログ(自分がセットしたautocmd)出ない状態になりますっけ?
+nestedが必要とかじゃないはずだと思うのですが...</pre>
+<pre>tsuyoshi_cho 1585811295.151800: <https://vim-jp.slack.com/archives/CQ57P4XU4/p1585802517125700></pre>
+<pre>mattn 1585812886.153500: 関数の途中で例外起きると発火しないですね。init より前だと register?</pre>
+<pre>tsuyoshi_cho 1585813270.154900: なるほど
+ただ、lsp#utils#errorのメッセージはのこってないので、なにが発生したのか不明ですね...(それ以外の例外だとしたら、それはそれでmessagesに残りそうな気もするんですが、ない)</pre>
+<pre>tsuyoshi_cho 1585814384.155400: ```2020/04/02 12:25:53:["s:on_stdout client option on_notification() error","Vim(call):E20: マークは設定されていません"]
+2020/04/02 12:25:53:["&lt;---(stderr)",3,"clangd",["I[12:25:53.899] clangd version 10.0.0 \r","I[12:25:53.901] Working directory: C:\\Users\\&lt;username&gt;\r","I[12:25:53.901] argv[0]: C:\\Program Files\\LLVM\\bin\\clangd.exe\r","I[12:25:53.901] argv[1]: --background-index\r","I[12:25:53.901] argv[2]: -j=4\r","I[12:25:53.901] Starting LSP over stdin/stdout\r","I[12:25:53.901] &lt;-- initialize(1)\r","I[12:25:53.910] --&gt; reply:initialize(1) 8 ms\r",""]]```
+ここら変があやしい?</pre>
+<pre>tsuyoshi_cho 1585814428.155900: ただ、これはclangdで、というだけで、他も同じ挙動だったような</pre>
+<pre>tsuyoshi_cho 1585814435.156100: 外して確認してみよう...</pre>
+<pre>tsuyoshi_cho 1585814838.156900: ```2020/04/02 17:03:51:["s:on_stdout client option on_notification() error","Vim(call):E20: マークは設定されていません"]
+2020/04/02 17:03:51:["&lt;---(stderr)",3,"clangd",["I[17:03:51.380] clangd version 10.0.0 \r","I[17:03:51.382] Working directory: C:\\Users\\&lt;username&gt;\r","I[17:03:51.382] argv[0]: C:\\Program Files\\LLVM\\bin\\clangd.exe\r","I[17:03:51.382] Starting LSP over stdin/stdout\r","I[17:03:51.384] &lt;-- initialize(1)\r","I[17:03:51.393] --&gt; reply:initialize(1) 8 ms\r",""]]```
+オプションの設定を外してもかわらない...</pre>
+<pre>tsuyoshi_cho 1585814929.157400: Linuxもそうだし、影響はないか...
+ただE20は気になる</pre>
+<pre>tsuyoshi_cho 1585815129.157600: <https://github.com/prabirshrestha/vim-lsp/blob/52539a54ae338993460205b4528d34caf175582e/autoload/lsp/client.vim#L102-L107>
+でE20?</pre>
+<pre>tsuyoshi_cho 1585815922.158500: どっかの行に素の `'` とか ` があるか探したけど、当然ないよなあ...関数呼び出し?</pre>
+<pre>tsuyoshi_cho 1585817189.158800: <https://github.com/prabirshrestha/vim-lsp/blob/46308234a2691824f2f3ad1fa8bc0086d4a3d4cf/autoload/lsp/ui/vim/references.vim#L226>
+はあるが、呼ぶのはどこだ?</pre>
+<pre>mattn 1585817616.159300: `l:on_notification_data` を見せて貰えればどこに飛ぶのかわかるかもです。</pre>
+<pre>mattn 1585817737.159700: もしくはその例外部分で v:throwpoint を出力してみるとか。</pre>
+<pre>tsuyoshi_cho 1585817910.160300: ありがとうござます。
+前に上ってるログにありますが、切り出しますのでちょっとまってください</pre>
+<pre> 1585817983.160400: ちょっと多めに切り出しました。
+直前はこの後にpostします。</pre>
+<pre>tsuyoshi_cho 1585818034.161000: ```[{"response":{"data":{"__data__":"vim-lsp","server_name":"clangd"},"message":"configuration sent"}}]
+["s:update_file_content()",2]
+["---&gt;",3,"clangd",{"method":"textDocument/didOpen","params":{"textDocument":{"uri":"file:///C:/Users/&lt;username&gt;/tmp/test.c","version":1,"languageId":"c","text":"#include &lt;stdio.h&gt;\n\nint\nmain(int argc, char* argv[]) {\n  // int a;\n  printf();\n  printf();\n  printf();\n  return 0;\n}\n"}}}]
+[{"response":{"data":{"path":"file:///C:/Users/&lt;username&gt;/tmp/test.c","__data__":"vim-lsp","filetype":"c","server_name":"clangd"},"message":"textDocument/open sent"}}]
+[{"response":{"data":{"path":"file:///C:/Users/&lt;username&gt;/tmp/test.c","__data__":"vim-lsp","server_name":"clangd"},"message":"not dirty"}}]
+["s:on_stdout client option on_notification() error","Vim(call):E20: マークは設定されていません"]```
+こんな風ですね</pre>
+<pre>mattn 1585818209.161300: いっそ</pre>
+<pre>mattn 1585818210.161500: <https://github.com/prabirshrestha/vim-lsp/blob/52539a54ae338993460205b4528d34caf175582e/autoload/lsp/client.vim#L102-L107></pre>
+<pre>mattn 1585818221.161900: この try/catch はずせばどこで出てるか分かるかも。</pre>
+<pre>tsuyoshi_cho 1585818248.162100: あー、やってみます</pre>
+<pre>tsuyoshi_cho 1585818454.163600: ```User Autocommands for "lsp_server_init" の処理中にエラーが検出されました:
+E20: マークは設定されていません
+E20: マークは設定されていません
+C:\Users\&lt;username&gt;\.cache\dein\.cache\.vimrc\.dein\autoload\yoink.vim の処理中にエラーが検出されました:
+行   32:
+E117: 未知の関数です: cutlass#getVersion```
+おおう... yoinkとcutlass関係か</pre>
+<pre>tsuyoshi_cho 1585818480.163900: はずしてみます</pre>
+<pre>mattn 1585818481.164000: そうなんすよ。その on_notification の try/catch、結構根深いところから飛んでくることが多くて、実は自分のコードだった、みたいなのをよく見たりします。</pre>
+<pre>tsuyoshi_cho 1585818541.164600: これ、うまく呼び元をlogできないと辛いですね...</pre>
+<pre>mattn 1585818552.164900: v:throwpoint 入れた方が良さそう。</pre>
+<pre>hrsh7th 1585818556.165000: yoink でなぜエラーがｗ</pre>
+<pre>mattn 1585818601.165800: イベントがバブリングして全く関係ない所のエラーがさも vim-lsp のバグの様に出てしまう現象。</pre>
+<pre>tsuyoshi_cho 1585818606.166000: <https://github.com/svermeulen/vim-yoink/blob/20daf7d4cdc6a36eba1b87b0f8849859d6e3b23c/autoload/yoink.vim#L30-L35>
+このキャッチがよくないんかな</pre>
+<pre>tsuyoshi_cho 1585818644.166500: ありがとうございます、前進しました。</pre>
+<pre>tsuyoshi_cho 1585836587.168000: yoinkを切って(前のyankroundに戻して)、再度ログを取りましたら...
+
+```s:on_stdout client option on_notification() error Vim(call):E20: マークは設定されていません User Autocommands for "lsp_server_init"```
+今度は出所がわからないorz
+
+```                    " call client's on_notification first
+                    try
+                      call l:ctx['opts']['on_notification'](a:id, l:on_notification_data, 'on_notification')
+                    catch
+                      echomsg 's:on_stdout client option on_notification() error' v:exception v:throwpoint
+                      call lsp#log('s:on_stdout client option on_notification() error', v:exception ,v:throwpoint)
+                    endtry```</pre>
+<pre>tsuyoshi_cho 1585836676.168300: ctxのログ取り中</pre>
+<pre> 1585836830.168400: ええぇ...? on_notification時にE20になる処理なんてないんじゃ?</pre>
+<pre>tsuyoshi_cho 1585837002.169200: (efmは自前で登録とはいえ、いままで問題なかったけど(補完は動かないが))</pre>
+<pre> 1585837341.169400: うーんE20になる要素がなあ、on_notificationはlsp内の関数だよね...</pre>
+<pre>tsuyoshi_cho 1585837386.170100: funcitonでのダンプをログとして保存しにくいため、どうしたものか</pre>
+<pre>mattn 1585837427.170600: on_notification とは限らないです。</pre>
+<pre>tsuyoshi_cho 1585837456.171300: あー、違うところで出してるかもなんですよね...</pre>
+<pre>tsuyoshi_cho 1585837458.171500: たしかに</pre>
+<pre>tsuyoshi_cho 1585837471.171900: 痕跡がなくてどうしたらいいか</pre>
+<pre>mattn 1585837490.172400: try/catch 外してみても駄目ですか？</pre>
+<pre>tsuyoshi_cho 1585837504.172900: 上のログは外したやつです(でyoinkも外した)</pre>
+<pre>mattn 1585837524.173100: `:mes` ですか？</pre>
+<pre>tsuyoshi_cho 1585837533.173400: はいそうです
+<https://vim-jp.slack.com/archives/CQ57P4XU4/p1585836587168000></pre>
+<pre>tsuyoshi_cho 1585837562.174000: 一旦yankroundとefm-langserver-settingsも外そう</pre>
+<pre>mattn 1585837603.174700: この on_notification というのは、vim-lsp がサーバに対してリクエストを投げて、その応答を受け取る際のコールバックなんです。</pre>
+<pre>mattn 1585837655.176000: omni.vim なんかが `lsp#send_request` してる箇所に `on_notification` を設定していて、そこに `s:handle_xxxx` みたいな関数があり、それをコールバックにしてます。</pre>
+<pre>tsuyoshi_cho 1585837676.176300: はい</pre>
+<pre>tsuyoshi_cho 1585837715.177300: (引数ダンプもログしました)</pre>
+<pre>mattn 1585837719.177500: そこでは色んなコードが入っていて、例えば fold のイベントが発生する様な物も含まれるので、例えば fold を契機に何かするプラグインがあればそこでエラーが起きる可能性もあります。</pre>
+<pre>tsuyoshi_cho 1585837745.178000: うええ...そういえばfoldセットするようにしたりしたな
+そこも外したほうがいいかも</pre>
+<pre>tsuyoshi_cho 1585837839.179000: 非同期イベントと大域脱出のコンフリクトががが..</pre>
+<pre>mattn 1585837858.179400: こういうエラーか起きたときのデバッグは難しいすね。</pre>
+<pre>mattn 1585837912.180600: 思いきって verbosefile を吐くのも手です。</pre>
+<pre>tsuyoshi_cho 1585837936.181200: やろうかな...ただ起動した直後になるので、vimrcで先にセットしないとですね</pre>
+<pre>tsuyoshi_cho 1585838024.181600: アドバイスありがとうございます</pre>
+<pre>tsuyoshi_cho 1585839120.182200: clangd側でも出たのでefm-langserver自体は除外できそう(yankroundもか)</pre>
+<pre>tsuyoshi_cho 1585839132.182600: verbose出さないとですね</pre>
+<pre>tsuyoshi_cho 1585840123.183200: (コールバックをsandbox実行とかできたら助かるのかなあ?)</pre>
+<pre>tsuyoshi_cho 1585884158.183800: わかったー!!!
+```autocmd User lsp_server_init * call vista#RunForNearestMethodOrFunction()```
+自分でしこんじゃってたこれだったorz</pre>
+<pre>kuu 1585884188.184100: あるある</pre>
+<pre>tsuyoshi_cho 1585884243.185300: vista#hoge
+なんであの微妙なエラーなのかは不明だが、verboseしたら、これだけやって処理がおわってた臭いので、外したら直った...oh</pre>
+<pre>mattn 1585884335.186100: こういうのちゃんとエラーで出せる様にならないかなぁ。</pre>
+<pre>tsuyoshi_cho 1585884359.186500: InsertEnterとかでも発動させてるので、そっちも危険
+あとyoinkのあれ、throwpointが中身更新されないパターンあるんですかね?</pre>
+<pre>kuu 1585884371.186900: 大体Vim scriptの例外処理機構が貧弱なのが</pre>
+<pre>tsuyoshi_cho 1585884575.187600: とりあえずvim-lspへthrowpointしこむPR作ります(罪滅ぼしw)</pre>
+<pre>tsuyoshi_cho 1585884835.188100: いやそうじゃない、au User で `*` 入れてどうするんだorz、これだ</pre>
+<pre>tsuyoshi_cho 1585921020.189000: clangdでvsnipのexpandが効く...文明開花の音がするw</pre>
+<pre>tsuyoshi_cho 1585921143.189700: 各位ほんとうにありがとうございます。
+ひきづつき謎なrefreshしてるプラグインを追い詰めないとなw</pre>
+<pre>kyoh86 1585928495.190600: うーん、相変わらずvim-lspとfzf.vimの組み合わせでpopup windowが空のまま死ぬな…</pre>
+<pre>kyoh86 1585930574.192200: 何かしらのソース上のエラーがある状態でファイルを保存して、
+diagnosticsが報告されるくらいのタイミングで fzf を開くと再現する…</pre>
+<pre>kyoh86 1585930575.192400: つらい</pre>
+<pre>kyoh86 1585930582.192600: 今日は寝よう…</pre>
+<pre>kyoh86 1585955241.194500: 再現条件がわかった。
+vim-lspがpopupでdiagnosticsのメッセージを表示している状態
+```let g:lsp_diagnostics_float_cursor = 1```
+かつ、同時にfzfがpopup windowを表示しようとしたとき
+```let g:fzf_layout = { 'window': {
+      \ 'width': 0.6,
+      \ 'height': 0.6,
+      \ 'border': 'ascii'
+      \ } }```
+に必ずエラー
+```Error detected while processing BufWipeout Autocommands for "*":
+E994: Not allowed in a popup window```
+となってしまうんだ…</pre>
+<pre>kyoh86 1585960026.196100: `diagnostics_float_cursor` 、`&lt;plug&gt;(lsp-hover)` とカブってしまって邪魔になりがちだし、
+オフにしておいたほうが良いんだろうな…ちょっと使いづらすぎる</pre>
+<pre>tsuyoshi_cho 1585960353.197000: fzfかなにかが `BufWipeout` のautocmdを無制御で実行しているのかなあ?</pre>
+<pre>kuu 1585960682.198700: vim-lspのポップアップ消すやつがpopup-terminal対応してなくて（最近増えましたからね、あれ）fzf出してると干渉して死ぬのかなと推測してみる</pre>
+<pre>kuu 1585960697.199100: Bram氏floatwin入れてくれ～</pre>
+<pre>tsuyoshi_cho 1585961425.199800: 自前のテーブルからバッファ名を検索してるから、こっちは大丈夫なんじゃないか感あるけど...どうなんだろ</pre>
+<pre>kuu 1585961876.200600: popup-terminal出してる間は制限かなりかかるのでそれかなと、何も試してないのであれですが</pre>
+<pre>kuu 1585961889.200900: バッファ名云々は大丈夫そう</pre>
+<pre>tsuyoshi_cho 1585961923.201200: あー、なるほど</pre>
+<pre>vikke 1585999182.202700: vim-lsp-settingsってインストール後に設定必要なのかしら。 `hoge.`と打っても補完されない。`:LspHogeHoge` という関数は生えてるのでインストールは成功してると思うんだけど。</pre>
+<pre>mattn 1585999381.203100: どの言語ですか？</pre>
+<pre>vikke 1585999425.203400: Goです。</pre>
+<pre>vikke 1585999448.203800: neovim on linuxです。</pre>
+<pre>kuu 1585999503.205700: goplsですよね、パッケージマネージャ経由で入れてます？</pre>
+<pre>mattn 1585999506.205800: Go のファイル開いたら `:LspInstallServer するといいよ` 的なメッセージ出てくると思うんですが、実行されました？</pre>
+<pre>vikke 1585999526.206700: それはやりました。</pre>
+<pre>tennashi 1585999533.207000: 補完プラグインは何を使われてるのでしょう?</pre>
+<pre>vikke 1585999562.207600: LspInstallServerしかしていないので、default で goplsだと思います。</pre>
+<pre>kuu 1585999676.211000: だったら疑うのは補完かな、という気がします</pre>
+<pre>vikke 1585999709.212400: coc使ってたのを、vim-lsp-settingsに乗り換えてるところです。</pre>
+<pre>vikke 1585999754.214300: :LspRename とかは動いています。</pre>
+<pre>tennashi 1585999780.215900: LSP による自動補完をするためには自動補完プラグインとそのソースとしてvim-lsp を取るためのプラグインが必要ですね</pre>
+<pre>kuu 1585999801.216600: 普通のオムニ補完って動きます？</pre>
+<pre>vikke 1585999877.218600: ```    call dein#add('prabirshrestha/async.vim')
+    call dein#add('prabirshrestha/vim-lsp')
+    call dein#add('mattn/vim-lsp-settings', {'merged': 0})
+    call dein#add('Shougo/deoplete.nvim')
+    call dein#add('lighttiger2505/deoplete-vim-lsp')```
+インストールしています。</pre>
+<pre>vikke 1586000006.219300: オムニ補完は動いてそうです。</pre>
+<pre>vikke 1586000529.221300: 補完の時、どのLsp関数が呼ばれてるんだろう。</pre>
+<pre>mattn 1586000559.221700: `:LspStatus` 見てもらえますか？</pre>
+<pre>vikke 1586000587.222200: `gopls: running` ですね。</pre>
+<pre>vikke 1586000678.223200: エラーチェック? は動いているいたいですね。適当な文字列入れるとエラーで教えてくれる。</pre>
+<pre>mattn 1586000692.223600: だとするとあとは補完エンジンの話になるんでしょうけど、僕は deoplete まったく詳しくない。</pre>
+<pre>vikke 1586000736.224100: どういうplugin入れて使われてます?</pre>
+<pre>h-michael 1586001071.224800: deopleteだとdeoplete-vim-lspが必要なはず</pre>
+<pre>mattn 1586001139.225700: 僕が lsp 関連で入れてるのは
+```Plug 'prabirshrestha/async.vim'
+Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+Plug 'mattn/vim-lsp-icons'
+Plug 'hrsh7th/vim-vsnip'
+Plug 'hrsh7th/vim-vsnip-integ'
+````</pre>
+<pre>vikke 1586001181.225900: 参考にします。</pre>
+<pre>vikke 1586001560.227100: マニュアルに書いてある通り
+```    call dein#add('prabirshrestha/asyncomplete.vim')
+    call dein#add('prabirshrestha/asyncomplete-lsp.vim')
+"    call dein#add('Shougo/deoplete.nvim')
+"    call dein#add('lighttiger2505/deoplete-vim-lsp')```
+したら動きました。deoplete.nvimの記述もありましたが、asyncomplete.vimの記述を取ってみました。</pre>
+<pre>heavenshell 1586001899.227600: deoplate が動いてないのって msgpack のバージョン問題とかありませんでしたっけ。</pre>
+<pre>heavenshell 1586001911.228100: deoplate 使ってないからよくわかってないですけど。</pre>
+<pre>heavenshell 1586001921.228300: <https://github.com/Shougo/deoplete.nvim#install></pre>
+<pre>tsuyoshi_cho 1586008497.229100: 最新では解決してたとおもうのと、lspだけだったらなんかの設定不足の可能性?</pre>
+<pre>lighttiger2505 1586072349.231300: そもそもdeoplete.nvimのインストールがうまくいっていなかったように思えます。多分Pythonのライブラリ周りな気がする。</pre>
+<pre>lighttiger2505 1586072379.231900: <@UEA8SS1RN> ↑今更ですが。</pre>
+<pre>tsuyoshi_cho 1586072443.233000: まあ、外して問題ないなら、asyncompleteならまあ必要十分かもしれませんし、ね</pre>
+<pre>vikke 1586073803.233100: おっと。後で試してみます。けど。Pythonのライブラリ、なんかいるんでしたっけ? pip3 neovimくらいしかしてないです。</pre>
+<pre>vikke 1586074076.233300: Note: deoplete requires msgpack package 1.0.0+. Please install/upgrade msgpack package by pip.
+か。</pre>
+<pre>vikke 1586074345.233600: 入ってた。</pre>
+<pre>vikke 1586083377.234000: <https://qiita.com/yaegassy/items/8b3429196ea16cf754c0>
+ネ申様ありがとう</pre>
+<pre>lighttiger2505 1586097100.246000: まずはそもdeoplete.nvimが動作しているかどうかですね。Around補完などが動いているなら動作していると思います。(ただしasyncomplete.vimなどほかの自動補完プラグインが動いているならどっちが補完ウィンドウを出しているのか分かりづらいのでOFFにするのが
+望ましい)
+その状態で自動補完が動かないならdeoplete.nvim自体のインストールに失敗しています。
+基本asyncomplete.vimでlspの補完が動くならdeoplete-vim-lspも動くはずなので。
+
+deoplete.nvimでつまづきやすいのは3点で
+1. Neovimが参照しているPythonは想定どおりか
+1. 1にNeovimクライアントがインストール済みか
+2. :updateRemotePluginでリモートプラグインをNeovimが認識しているか
+あたりがです</pre>
+<pre>lighttiger2505 1586097302.250900: まあdeoplete.nvimの拡張性の高さに、今のところ魅力を感じていないとすれば無理にasyncompleteから移る必要性はないと思いますよ。
+vim-lspの補完という点に限定すれば、おそらくasyncomplete のが品質が高い。まあ原因はdeoplete-vim-lspがアダプタしてるからなんですけども。</pre>
+<pre>lighttiger2505 1586097409.251500: へんじ遅くて申し訳ありません。</pre>
+<pre>mattn 1586266429.252100: <https://github.com/golang/tools/pull/220></pre>
+<pre>mattn 1586266434.252400: 便利そう。</pre>
+<pre>mattn 1586266472.252800: struct literal のフィールドをドバっと出してくれるやつ。</pre>
+<pre>tsuyoshi_cho 1586266539.253200: おー、まさにlspだからできる、ってカンジですね</pre>
+<pre>ゴリラ 1586266876.253500: お</pre>
+<pre>ゴリラ 1586266879.253800: lspでできるのか</pre>
+<pre>ゴリラ 1586266900.254600: vim-goの `:GoFillStruct` と同じか</pre>
+<pre>mattn 1586266905.254700: code action すね。 `:LspCodeAction xxx` みたいになります。</pre>
+<pre>ゴリラ 1586266929.255000: :rikai:</pre>
+<pre>ゴリラ 1586266937.255400: code action便利だな</pre>
+<pre>kuu 1586267090.255900: この手の仕組みをエディタ非依存で持てるの便利</pre>
+<pre>mattn 1586267183.256400: しかも vim-lsp 無改造ですからね。</pre>
+<pre>mattn 1586267245.256900: しかも gopls はコマンドラインも提供してるので、なんならシェルから。</pre>
+<pre>kuu 1586267317.257300: helpしたら便利そうなのが見えた</pre>
+<pre>mattn 1586267349.257600: そそ。</pre>
+<pre>daisuzu 1586267792.258200: goplsどんどん機能が追加されていきますね</pre>
+<pre>daisuzu 1586267823.259000: この前入ったreturnを生成するのはまだあんまり使えておらず</pre>
+<pre>daisuzu 1586267897.260800: if err != nilを補完してくれる機能もあるっぽいんですが、これは使い方がよくわかってないです…</pre>
+<pre>daisuzu 1586267935.261800: vim-lspで使ってる人っていますか？</pre>
+<pre>mattn 1586268227.262400: まだです。</pre>
+<pre>kuu 1586269180.263100: iferr補完、出し方が全くわからない</pre>
+<pre>daisuzu 1586270107.263400: ちょっと調べてみます</pre>
+<pre>ゴリラ 1586271057.263700: 知りたい</pre>
+<pre>mattn 1586271355.263900: 調べてみました！</pre>
+<pre>mattn 1586271358.264200: いかがでしたか？</pre>
+<pre>mattn 1586271367.264500: (調べてません)</pre>
+<pre>daisuzu 1586271383.264700: <https://github.com/hrsh7th/vim-vsnip> が必要でした</pre>
+<pre>mattn 1586271405.265000: さす7th</pre>
+<pre>daisuzu 1586271484.266200: `usePlaceholders=true` にして、snippetにも対応しているオプションを有効にしないといけないんですが、後者は調べきれずとりあえずプラグイン入れることにしました</pre>
+<pre>daisuzu 1586271553.267200: あとは
+```imap &lt;expr&gt; &lt;C-j&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-expand)'         : '&lt;C-j&gt;'
+imap &lt;expr&gt; &lt;C-l&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-expand-or-jump)' : '&lt;C-l&gt;'
+smap &lt;expr&gt; &lt;C-l&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-expand-or-jump)' : '&lt;C-l&gt;'
+imap &lt;expr&gt; &lt;Tab&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-jump-next)'      : '&lt;Tab&gt;'
+smap &lt;expr&gt; &lt;Tab&gt;   vsnip#available(1)  ? '&lt;Plug&gt;(vsnip-jump-next)'      : '&lt;Tab&gt;'
+imap &lt;expr&gt; &lt;S-Tab&gt; vsnip#available(-1) ? '&lt;Plug&gt;(vsnip-jump-prev)'      : '&lt;S-Tab&gt;'
+smap &lt;expr&gt; &lt;S-Tab&gt; vsnip#available(-1) ? '&lt;Plug&gt;(vsnip-jump-prev)'      : '&lt;S-Tab&gt;'```
+を設定すれば `&lt;Tab&gt;` で展開できました</pre>
+<pre>daisuzu 1586271583.267900: ただCtrl系はまだ動かせてないです</pre>
+{% endraw %}

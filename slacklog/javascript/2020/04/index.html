@@ -1,0 +1,176 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #javascript - 2020年04月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>nao 1585730502.124400: （今更）
+&gt; [...document.querySelectorAll(“div”)].map(x =&gt; x.nodeName) 
+脳死で `[].slice.apply(document.querySelectorAll("div")).map(function(x) { return x.nodeName;})` してました。困ったときの `[].slice.apply` による配列化はよくやります。</pre>
+<pre>nao 1585730644.124900: 丁寧にやると `Array.prototype.slice.apply(document.querySelectorAll("div"))`</pre>
+<pre>tyru 1585732826.126100: 見慣れた `Array.prototype.slice.call(arguments)`
+使えない環境考えるなら Array.from の polyfill 書くのが一番いい気がする</pre>
+<pre>ゴリラ 1586145272.127700: jsって `;`があるなしで挙動が変わる…？
+<https://qiita.com/otthi/items/ceec62d5a117678649e9></pre>
+<pre>thinca 1586145299.128000: 変わる</pre>
+<pre>ゴリラ 1586145310.128300: しらんかった</pre>
+<pre>ゴリラ 1586145315.128600: 基本 ; を付けたほうが良いのか</pre>
+<pre>ycino 1586145343.129600: 変わります、最近不要になっている風潮なのはprettierとかの整形プラグインが挙動が変わるのを検知して必要なセミコロンを追加してくれるように十分成熟しているから</pre>
+<pre>heavenshell 1586145345.129700: トランスパイラーが勝手に付ける</pre>
+<pre>thinca 1586145348.129800: この辺りは派閥がどちらもあります</pre>
+<pre>thinca 1586145375.130600: 私は付ける派。なんとなくだけど古くから書いてる人は付けるイメージがある。実際どうかはわからんけど</pre>
+<pre>ycino 1586145389.131200: なくてもプラグインが矯正してくれて支障なくなってるんですよね</pre>
+<pre>ゴリラ 1586145392.131300: `;` をつけると安心感はあるな（自分のなか</pre>
+<pre>ゴリラ 1586145412.131800: prettier にそのルールを付けよ</pre>
+<pre>thinca 1586145419.132000: 言語製作者の意図を尊重して付けている</pre>
+<pre>ycino 1586145440.133000: 今のprettierのデフォルトルールって付けるのと付けないのどっちでしたっけ</pre>
+<pre>heavenshell 1586145452.133700: 自分はつけないけど、prettier を尊重してる</pre>
+<pre>heavenshell 1586145515.134600: <https://prettier.io/docs/en/options.html#semicolons></pre>
+<pre>heavenshell 1586145520.135100: default True かな。</pre>
+<pre>thinca 1586145526.135300: JavaScript における `;` の省略は、うっかり書き忘れた時でもなんとなく動くようにするため (ブラウザで動くのあってか、全体的に適当に書いても動く方向に倒されていた) であって、省略して書く方法はこの機能を悪用していると言える</pre>
+<pre>ycino 1586145556.135700: デフォルト有効か</pre>
+<pre>ycino 1586145610.137000: 元は悪用でも、一般的なルールになってきてる内容だったら自分はそこまで原理主義的に考えなくてもいい派</pre>
+<pre>thinca 1586145627.137400: `"use strict"` した時に省略したらエラーになるようにしていれば派閥分かれなかったと思う
+と思ったけど `"use strict"` 読んだ時点でパースは終わってるから無理か…</pre>
+<pre>heavenshell 1586145726.138300: standard 教徒だったので。多分いろんな人は発狂すると思うw</pre>
+<pre>ycino 1586145733.138600: Googleのstandardが無効とかでしたっけ、なんか割と大きいとこが無効にしたから流行りましたよね</pre>
+<pre>heavenshell 1586145742.138900: `function foo () { }` とかね。</pre>
+<pre>ycino 1586145746.139100: airbnbは有効だった印象</pre>
+<pre>thinca 1586145786.139500: 割とどうでもいいところで疲弊したくないよなぁ</pre>
+<pre>kuu 1586145823.140800: 悪用する人が多いと迂闊に消せなくてクソみたいな仕様が残るのでクソつらい:shit:</pre>
+<pre>ycino 1586145828.140900: JSに関してはprettierさえ入れちゃえば脳死して書けるから疲弊しなくないです？
+Rubyの方が疲れる・・・</pre>
+<pre>thinca 1586145855.141700: prettier 挙動が好きじゃないので使ってない</pre>
+<pre>thinca 1586145888.142400: これは単に私は JS に関しては個人開発しかしてないからと言う事情がある。チームだったらさすがに使う気がする</pre>
+<pre>heavenshell 1586145906.142900: 個人ならお好きに。チームなら使えや！って言うかな。</pre>
+<pre>ゴリラ 1586145920.143700: チームは、使ったほうが良いと思っていますね</pre>
+<pre>heavenshell 1586145931.144200: と言うか lint-staged と husky 入れて終わる。</pre>
+<pre>ゴリラ 1586145932.144400: 使ってくれないなら、 ウホウホって言います</pre>
+<pre>thinca 1586146131.145300: Ruby は緩くやってるチームが多そう。そうせざるを得ない感じもあるけど</pre>
+<pre>heavenshell 1586146192.146500: Robocop でしたっけ？アレ入れてガチガチにやってるイメージなんですけど、そうでもないんですね。</pre>
+<pre>thinca 1586146250.147500: RuboCop は Linter であって Formatter ではないので</pre>
+<pre>ycino 1586146256.147700: prettierの方がフォーマッタとしてはサポートしてる範囲が相当広いですね</pre>
+<pre>ycino 1586146279.148200: format機能も付いてますけど、完全に信頼出来るものではないというか</pre>
+<pre>thinca 1586146300.148500: Auto Correct 機能は付いてますが Format 機能はないです</pre>
+<pre>ycino 1586146317.148900: あー、確かに
+あれはformatではないのか</pre>
+<pre>thinca 1586146324.149100: ではないですね</pre>
+<pre>ycino 1586146337.149500: メトリクスあたりはすごい丁寧に測ってくれるんですけどね</pre>
+<pre>heavenshell 1586146346.150000: なるほど</pre>
+<pre>ycino 1586146346.150100: prettierとは軸が全然違う感じ</pre>
+<pre>thinca 1586146388.150800: ある Cop (Lint ルール) が Auto Correct した結果が別の Cop にとっては間違ったコードになっている、みたいなことはザラに起きる</pre>
+<pre>ycino 1586146407.151200: <https://github.com/ruby-formatter/rufo> がデファクトになってほしいってずっと言ってる</pre>
+<pre>ycino 1586146446.152000: StyleのCopについてはFormatterと言ってもいいような感じはある</pre>
+<pre>mattn 1586146450.152200: efm には入れてる。</pre>
+<pre>thinca 1586146485.152800: たまに人の手による温かみのある桁揃えがされたコードとかがあって、この辺り勝手に直すの申し訳ないなって気持ちになってつらい (なお個人的には桁揃えはしない派)</pre>
+<pre>thinca 1586146505.153300: prettier はやっぱり桁揃えは全部消されちゃうんですかね</pre>
+<pre>ycino 1586146512.153500: 消されますね</pre>
+<pre>thinca 1586146519.153900: まーそうですよねー</pre>
+<pre>ycino 1586146529.154100: 誰が書いても絶対全く同じ書き方になるから便利ってやつなので</pre>
+<pre>kuu 1586146549.154600: gofmtと同じ思想か</pre>
+<pre>ycino 1586146567.155100: eslint-plugin-prettierでlinterで弾くのが結構使われてて、沿ってないとCIで落ちる</pre>
+<pre>thinca 1586146581.155400: たまにめっちゃ読みづらいコードにフォーマットしてきて憤慨するので使わなくなった</pre>
+<pre>ycino 1586146623.156200: それはわかる、自分はそれを差し引いても有用だと判断して使ってますが</pre>
+<pre>thinca 1586146700.156800: チームで JS 書くことになったら使う…今はその予定はない…困るとしたら PR 飛んできた時かなぁ</pre>
+<pre>ycino 1586147021.157800: 人が多そうなんで全く別件で聞きたいんですけど
+以下のコードでActionがswitchケースを網羅してるか型でチェックするみたいなのをやってるんですけど
+```type Action = A | B
+
+const reducer = (action: Action) =&gt; {
+  switch (action) {
+    case A: {
+      return
+    }
+    case B: {
+      return
+    }
+    default: {
+      const _: never = action
+    }
+  }
+}```</pre>
+<pre>ycino 1586147081.158600: Union型じゃないと `action` の型が `never` に確定されないの、どうしようもないですよねぇ
+```type Action = A
+
+const reducer = (action: Action) =&gt; {
+  switch (action) {
+    case A: {
+      return
+    }
+    default: {
+      const _: never = action
+    }
+  }
+}```</pre>
+<pre>ycino 1586147521.159600: `A | never` 多分ダメそう・・・</pre>
+<pre>johejo 1586148640.160200: reduxだ...</pre>
+<pre>lambdalisue 1586149185.160400: 疑問点がよくわかっていない</pre>
+<pre>lambdalisue 1586149197.160700: ```type Action = "A";
+
+const r = (action: Action) =&gt; {
+  switch (action) {
+    case "A": {
+      return "Hello";
+    }
+    default: {
+      const _: never = action;
+    }
+  }
+};```</pre>
+<pre>lambdalisue 1586149224.161200: 怒られない = 正しい</pre>
+<pre>lambdalisue 1586149238.161700: ```type Action = "A" | "B";
+
+const r = (action: Action) =&gt; {
+  switch (action) {
+    case "A": {
+      return "Hello";
+    }
+    default: {
+      const _: never = action;
+    }
+  }
+};```</pre>
+<pre>ycino 1586149239.162100: 前者だとdefault区でactionの型がneverに推論されてて、後者だとAに推論されませんか？</pre>
+<pre>lambdalisue 1586149244.162200: 怒られる = 正しく無い</pre>
+<pre>lambdalisue 1586149258.162700: ```type Action = "A" | "B";
+
+const r = (action: Action) =&gt; {
+  switch (action) {
+    case "A": {
+      return "Hello";
+    }
+    case "B": {
+      return "Hello";
+    }
+    default: {
+      const _: never = action;
+    }
+  }
+};```</pre>
+<pre>lambdalisue 1586149262.163000: 怒られない = 正しい</pre>
+<pre>ycino 1586149264.163100: 期待としてはどっちもdefault区でactionの型がneverに推論されて欲しい</pre>
+<pre>lambdalisue 1586149362.164000: never になる...</pre>
+<pre>ycino 1586149376.164200: えっ</pre>
+<pre> 1586149377.164300: </pre>
+<pre>ycino 1586149392.164900: マジか、挙動変わった・・・？</pre>
+<pre>ycino 1586149394.165200: それなら嬉しい</pre>
+<pre>ycino 1586149426.165600: 最近試してダメだったんだけど、プロジェクトのTSが古かったかも</pre>
+<pre> 1586149457.165900: </pre>
+<pre> 1586149480.166200: </pre>
+<pre>lambdalisue 1586149487.166700: なので網羅性チャックもちゃんと出来てると思います</pre>
+<pre>lambdalisue 1586149492.166900: チャック</pre>
+<pre>lambdalisue 1586149499.167100: :zipper_mouth_face:</pre>
+<pre>ycino 1586149514.167400: でもこれで少し書きやすくなるなー</pre>
+<pre>luma 1586150751.170000: セミコロンなし，行頭で括弧を使うと前の行の関数実行になってしまい，そこだけつけるのも統一感ないので，けっこうすきだったけどやめた...行単位での交換とかもできなくなるし，などで
+
+```a.b()
+(c.d).f
+(c as X).f```</pre>
+<pre>ゴリラ 1586153176.170400: VimでJavaScriptをする部屋</pre>
+{% endraw %}

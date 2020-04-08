@@ -1,0 +1,979 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #linux - 2020年03月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>thinca 1583680818.199200: curl で 4xx 系だった時はコマンドを失敗にしたいのだけど、レスポンスの表示もしたい場合ってどうすればいいでしょう? `--fail` だとレスポンスが表示されず…</pre>
+<pre>ゴリラ 1583681164.199900: -o とか指定してもダメな感じすか？</pre>
+<pre>kuu 1583681291.200500: ググったらシェルで頑張るという答えとwgetを使うという答えが出てきました:totemoturai:</pre>
+<pre>kuu 1583681296.200700: <https://stackoverflow.com/questions/22506024/get-page-output-with-curl-fail></pre>
+<pre>kuu 1583681373.201700: curl単品だと無理っぽい、manにも-f付けないと終了コード22は使われないよって書いてあるし</pre>
+<pre>kuu 1583681399.202000: -o指定しても-f付いてたら保存されない</pre>
+<pre>mattn 1583681492.202700: 15年前からドキュメントに書いてある、と close される issue です。ご確認下さい。 <https://github.com/curl/curl/issues/1978></pre>
+<pre>thinca 1583681746.203100: とてもつらい</pre>
+<pre>thinca 1583681891.203700: GitHub API を curl で叩くのに、失敗したらそこで止まってほしいけど失敗の理由は出力されてほしい…</pre>
+<pre>mattn 1583682153.204100: メッセージは stderr にでますけどそれでは不十分？</pre>
+<pre>thinca 1583682261.204300: あれ、レスポンスの body でます?</pre>
+<pre>mattn 1583682283.204700: メッセージだけ出ます。</pre>
+<pre>mattn 1583682292.205000: header の。</pre>
+<pre>thinca 1583682309.205400: API は失敗するとレスポンスの body に失敗の理由を返してくれるので、できればそれを残したい感じです</pre>
+<pre>mattn 1583682346.206100: stackoverflow とか見ると wget 使えと書いてますね。</pre>
+<pre>thinca 1583682382.206500: wget かー POST が割とダルいイメージ…</pre>
+<pre>thinca 1583682469.207500: がんばるしかないか</pre>
+<pre>mattn 1583682488.207900: HTTP のレスポンスが HTML 返すか `{"error": "xxx"}` 返すかは特にルール無いので(ドキュメント化されてなければ)、もし取れても汎用的に作れるかどうかは分からないすねー。</pre>
+<pre>thinca 1583682536.208700: あー単に人が見る用なので形式はなんでもよいのです。GHA が失敗した時に理由がないとしんどいと言うアレ</pre>
+<pre>thinca 1583682628.209200: <https://github.com/actions/virtual-environments/blob/master/images/linux/Ubuntu1804-README.md>
+wget はさすがに入ってそうなのでやるか</pre>
+<pre>thinca 1583682671.209700: wget で検索しているのに curl を含む結果を返してくる Google さん…</pre>
+<pre>thinca 1583682721.210100: curl のコマンドラインを wget に変換するツールほしい</pre>
+<pre>thinca 1583683232.210400: たぶん書き直せた。 `--content-on-error` 最高</pre>
+<pre>raa0121 1583684763.211800: あとは、 `-v` つけて、 `&lt; HTTP/2 404` とか `&lt; HTTP/1.1 404` を `grep` するとか？</pre>
+<pre>thinca 1583684865.212000: 絶対にやりたくない</pre>
+<pre>mattn 1583684919.212500: もしそれやるなら `-i` がいい。</pre>
+<pre>raa0121 1583684948.213200: 確かにそうですね</pre>
+<pre>thinca 1583684955.213400: Ruby とかならともかく Bash ではやりたくないですねw</pre>
+<pre>raa0121 1583684969.213700: もしくは、 `--head` か…</pre>
+<pre>u 1583688113.214000: 今日のarchlinux活の様子です <https://aur.archlinux.org/packages/acroread/#comment-732753></pre>
+<pre>raa0121 1583713144.214900: <https://ja.wikipedia.org/wiki/Adwaita_(%E3%83%86%E3%83%BC%E3%83%9E)>
+adwaita ってこれだろうけど、 warn として出ても、無視して大丈夫って割と思ってた</pre>
+<pre>u 1583717038.215500: うむ、おそらくこれは無関係&gt;adwaita</pre>
+<pre>yutakatay 1583847345.217900: Archで今日アップデートした人、再起動しないほうがよいかもです。立ち上がらなくなるかも。（Arch slackでの情報）</pre>
+<pre>kuu 1583852447.218600: Arch Linuxの件、systemdのバグっぽい</pre>
+<pre>kuu 1583852460.219000: 更新かけるならsystemd除外するか、そもそも更新しないほうがいいかもしれない</pre>
+<pre>Shougo 1583871379.219600: え、怖い</pre>
+<pre>kyoh86 1583893674.219800: えっ怖い</pre>
+<pre>yutakatay 1583893798.219900: <https://github.com/systemd/systemd/issues/15062|https://github.com/systemd/systemd/issues/15062></pre>
+<pre>mattn 1583902992.222500: <https://twitter.com/shela_/status/1237602033680576512></pre>
+<pre>mattn 1583903008.223100: 被害者友の会、発足が必要では。</pre>
+<pre>yutakatay 1583903219.223600: それがArch slackなはずなんですけどね・・・</pre>
+<pre>mattn 1583903252.223900: 被害者なのか...</pre>
+<pre>yy_yank 1583903305.225200: 最新を踏んでいく人々の会</pre>
+<pre>yutakatay 1583903316.225600: 結構事前にアップデートするならここ気をつけろ情報とか回るんで</pre>
+<pre>kuu 1583903363.226300: 同じ環境を複製してデュアルブートにしておくと気軽に最新を踏めるので便利ですよ</pre>
+<pre>yutakatay 1583903449.227400: インフルエンサー的なポジションの人がいないんで、まあ犠牲者はでますね・・・</pre>
+<pre>tsuyoshi_cho 1583903477.227800: 人柱のロシアンルーレット(踏んだら報告)</pre>
+<pre>tyru 1583903522.228200: arch や debian sid の民は最新版を攻める事に意義を見出す人達なのでこういうトラブルの度にウキウキしだすイメージがある（偏見）</pre>
+<pre>mattn 1583903629.230700: トラブルの際に落ち着いていられる症状であればいいけど、アカン奴来たらつらい。</pre>
+<pre>thinca 1583903786.232400: 問題があるのって 245 ですか?</pre>
+<pre>kuu 1583903799.232900: です</pre>
+<pre>thinca 1583903840.233500: Gentoo は keyword 外してなければセーフっぽい。私は外してないので 244.3 だった</pre>
+<pre>h-michael 1583903848.233700: 実際昨日はウキウキしましたね</pre>
+<pre>yutakatay 1583903865.234200: たぶんPlymouth使ってなかったら大丈夫です。私とかも平気でしたし</pre>
+<pre>yutakatay 1583903878.234700: Plymouth：ブートのときかっこよくするやつ</pre>
+<pre>thinca 1583903882.234900: なるほど、何か併用するとまずいんですね</pre>
+<pre>mattn 1583903885.235100: plymouth 問題ですぎでしょ。</pre>
+<pre>thinca 1583903896.235800: たぶん使ってないはず。名前を聞いたことがない</pre>
+<pre>thinca 1583903902.236200: X ない Linux だし…</pre>
+<pre>kuu 1583903903.236300: plymouthじゃなくてもconsoleでログインしてる方々は危ないですね</pre>
+<pre>mattn 1583903916.236800: そうなのかw</pre>
+<pre>yutakatay 1583903920.237000: 彼らによって支えられているw</pre>
+<pre>kuu 1583903920.237200: getty@tty1が立ち上がらん</pre>
+<pre>thinca 1583903924.237400: sshd さえ立ち上がってくれれば…</pre>
+<pre>kuu 1583903940.237900: sshは大丈夫じゃないですかね、たぶん</pre>
+<pre>thinca 1583903955.238500: セーフ…まあめったに再起動しないんですがw</pre>
+<pre>kuu 1583903956.238600: ログイン自体ができないわけじゃないので</pre>
+<pre>thinca 1583904020.239000: `14:19:18 up 59 days` そろそろカーネル更新のために再起動しないとなぁ</pre>
+<pre>yy_yank 1583904108.240300: LightDMは大丈夫そう…ですね？</pre>
+<pre>mattn 1583904137.241300: CTRL-ALT-F12 とかで仮想コンソール切り替えればなんとかなる感じ？</pre>
+<pre>yutakatay 1583904140.241400: まいけるさんと私は大丈夫でした。</pre>
+<pre>yutakatay 1583904148.241600: ちなみに再起動しなくても動かなくなるという説もありますね</pre>
+<pre>kuu 1583904157.241900: 仮想コンソールは効きます</pre>
+<pre>mattn 1583904165.242200: であればなんとかなりますね。</pre>
+<pre>yutakatay 1583904171.242300: tty1もでしたっけ？</pre>
+<pre>kuu 1583904208.243000: GUIはplymouth使ってなければ恐らく大丈夫</pre>
+<pre>mattn 1583904271.243400: <https://twitter.com/myon___/status/1237553754137710593></pre>
+<pre>mattn 1583904284.243800: その後、彼のツイートは途絶えた。</pre>
+<pre>johejo 1583905585.246300: 彼らの屍の上にその他安定志向Linuxディストリビューションは成り立っている</pre>
+<pre>johejo 1583905856.247300: 毎日感謝のpacman -Syu</pre>
+<pre>yutakatay 1583906162.248400: 毎日アップデートしてるなら、人柱側かと</pre>
+<pre>mattn 1583907748.249900: arch linux ユーザ、峠を攻めてるぽくてかっこいい。(気がするだけ)</pre>
+<pre>mattn 1583907812.250400: 「システムD」って漫画出そう。</pre>
+<pre>tsuyoshi_cho 1583907853.251000: クラッシュしないようにブートプロセスを完了させるんだ</pre>
+<pre>itchyny 1583908160.251800: <https://www.systemd.co.jp/> 京都にこの会社あります</pre>
+<pre>kuu 1583908210.252200: Linux使ってなさそう</pre>
+<pre>mattn 1583908229.252400: 豆腐店じゃなかった。</pre>
+<pre>yy_yank 1583908446.253500: すごいドメイン取ってますね `<http://systemd.co.jp|systemd.co.jp>`</pre>
+<pre>tsuyoshi_cho 1583908481.253800: <http://www.gnome.co.jp/>
+とかもあるな(ゆったり)</pre>
+<pre>kyoh86 1583908994.254700: <https://linux.co.jp/></pre>
+<pre>johejo 1583909071.255100: <http://www.arch.co.jp/|http://www.arch.co.jp/></pre>
+<pre>mattn 1583909159.255300: <http://localhost.co.jp/></pre>
+<pre>eihigh 1583909392.255700: localhostはだいぶやばいやつの匂い…
+<https://www.gizmodo.jp/2020/02/for-1-7million-you-could-own-one-of-the-most-dangerous-domains.html></pre>
+<pre>thinca 1583911450.256100: 全て Microsoft が悪い</pre>
+<pre>kuu 1583915597.256400: systemdのやつ治ったっぽい <https://github.com/systemd/systemd/issues/15062#issuecomment-597482327></pre>
+<pre>mopp 1583917555.257000: Arch LinuxのSlackなんてあるんですね</pre>
+<pre>kuu 1583917589.257200: <https://slack.archlinux.jp/></pre>
+<pre>yy_yank 1583917735.257800: 今日arch slack jpに入ってみました</pre>
+<pre>yy_yank 1583917859.258500: 僕もsystemdチャレンジやってみようかな…</pre>
+<pre>yutakatay 1583917991.259000: いままた新事象が起きてるんでチャレンジャーは多いほうがいい</pre>
+<pre>yutakatay 1583918096.260400: パソコンの品名
+systemdのバージョン
+plymouthの使用有無
+ログインマネージャー
+デスクトップマネージャー
+ディスク暗号化の有無
+くらいが必要情報ですね。</pre>
+<pre>mopp 1583918565.260800: あれ、うちのsystemdは平気ですよ</pre>
+<pre>mopp 1583918575.261000: 245-2 です</pre>
+<pre>mopp 1583918598.261200: bootctl update してないからかもしれない</pre>
+<pre>thinca 1583918627.261500: 必要情報を全部リストアップするとよさそう</pre>
+<pre>mopp 1583918680.262300: パソコンの品名: 自作, i7-6700K, GeForce 1070, NVMe SSD
+systemdのバージョン: 245-2
+plymouthの使用有無: 無 (と言うか知らない)
+ログインマネージャー: 無 (startx派)
+デスクトップマネージャー: (i3-wm)
+ディスク暗号化の有無: 無</pre>
+<pre>mopp 1583918690.262500: CPUなんだっけこれ</pre>
+<pre>yutakatay 1583918738.263800: あ、あと再起動いります</pre>
+<pre>mopp 1583918750.264200: 再起動済です</pre>
+<pre>yutakatay 1583918790.264800: まじですか。じゃあ無症状感染ですね。</pre>
+<pre>mopp 1583918839.265900: 感染？
+不具合としては、マシンが起動しなくなるだけです？</pre>
+<pre>yutakatay 1583918857.266500: あ、いえコロナにかけただけです。</pre>
+<pre>yutakatay 1583918884.267500: そうですね。いまのところ患者数は７人くらいで６人は起動後フリーズ、Ctrl-Alt-F2で脱出できる感じです</pre>
+<pre>mopp 1583918886.267700: なるほど…</pre>
+<pre>kuu 1583918891.268200: コンピュータウイルスじゃあるまいしw</pre>
+<pre>eihigh 1583918911.269500: まあでも流行ってるのでね、用心に越したことはないですね</pre>
+<pre>yutakatay 1583918915.269600: 残りの１人が新型で、起動後固まらないけど前よりもだいぶ遅くなる（２分ー＞５分）って症状です</pre>
+<pre>raa0121 1583918968.270600: バグの混入したアプリケーションはウィルスと見分けがつかない。
+(十分に発達した科学技術は、魔法と見分けがつかない。：クラークの第三法則)</pre>
+<pre>raa0121 1583919236.271400: twitter に放流しておこう</pre>
+<pre>mattn 1583919377.271900: plymouth が影響してると思う。</pre>
+<pre>mattn 1583919398.272500: systemd から起動してる plymouth が終了後も立ち上がってこようとするバグの様に見える。</pre>
+<pre>mopp 1583919519.273200: <https://wiki.archlinux.jp/index.php/Plymouth></pre>
+<pre>mopp 1583919524.273500: 知らなかった</pre>
+<pre>mattn 1583919554.274300: vimconf の時にちら見した mopp さんのが arch なら使ってなかったと思う。</pre>
+<pre>yutakatay 1583919593.275500: 恐ろしい子・・・</pre>
+<pre>mopp 1583919594.275600: 毎回手動でstartx してるのでそのはずです</pre>
+<pre>mopp 1583919624.276300: 起動時のあの黒い画面はttyでいいんでしたっけ</pre>
+<pre>mopp 1583919651.276800: そこからユーザ名パスワード入力とそんなに変わらないなーと思って特に何も入れてないですね</pre>
+<pre>yy_yank 1583919685.277200: plymouth側にissue立ってるかと思ったんですけど、issueとかないんですかね？
+GitHub上だとissue取り扱っていなさそうですね
+<https://github.com/freedesktop/plymouth></pre>
+<pre>mattn 1583919700.277600: plymouth が原因ではないでしょうからね。</pre>
+<pre>yutakatay 1583919717.278000: 変更あったのsystemd側ですからね</pre>
+<pre>mattn 1583919747.278700: systemd が plymouth を oneshot service に変更してその際に「死んだらそのままにしておけオプション」をつけ忘れた。</pre>
+<pre>yy_yank 1583919846.279800: あ、はい。原因はsystemd側とは思うんですけど
+plymouth側で何か言ってる人いるのかなぁと思ったら
+そもそもissueトラッキングどこでやってるか分からなかったという感じです。</pre>
+<pre>raa0121 1583919900.280000: <https://gitlab.freedesktop.org/plymouth/plymouth/issues></pre>
+<pre>raa0121 1583919902.280300: ほい</pre>
+<pre>dohq 1583919987.281100: や(っぱり)s(tartxが)N(o1!!)</pre>
+<pre>kuu 1583919998.281400: やすな</pre>
+<pre>raa0121 1583920015.281700: 折部やすな氏</pre>
+<pre>yy_yank 1583920035.282200: ありがとうございます！</pre>
+<pre>raa0121 1583920114.282500: 探し方としては、
+1. freedesktop のプロジェクトかー <http://freedesktop.org|freedesktop.org> になんかあったなー
+2. あー wiki になってる Softwares ってあるな
+3. あ、Plymouth があんじゃん
+4. Bag Tracking is って書いてある ここじゃん
+5. そのページにたどり着く</pre>
+<pre>raa0121 1583920118.282700: でした</pre>
+<pre>mattn 1583920652.283900: startx サイコー、一番好きな start です。</pre>
+<pre>dohq 1583920773.285000: （´-`）.｡oO (openがosxでstartがwindowsでしたっけ…)</pre>
+<pre>yy_yank 1583920804.285500: startxってコマンド名がカッコよくて結構好きです
+開始してやるぞ〜！的な</pre>
+<pre>dohq 1583920858.286400: 基本yaft内で生活しててGUI必要なときがのみstartxしてる</pre>
+<pre>yy_yank 1583920940.286800: これですか、知らなかった…！
+<https://github.com/uobikiemukot/yaft></pre>
+<pre>kuu 1583920975.287500: yaft、truecolor対応しないらしいのでそれだけが残念</pre>
+<pre>yutakatay 1583920989.288100: それはつらい</pre>
+<pre>yutakatay 1583921010.288700: ブラウザはlynxとかw3mとかになるんですかね？？</pre>
+<pre>dohq 1583921074.289800: 今のとこｗ3ｍでなんとかなってますねー
+ドキュメント系漁るのがほとんどなので</pre>
+<pre>mattn 1583921087.290400: fbterm もダメなんでしたっけ</pre>
+<pre>dohq 1583921088.290600: 意外と画像も出せるしそこまで困ってナイン</pre>
+<pre>yy_yank 1583921605.291400: あれ、systemctl --versionで245になりましたが普通に動きました！</pre>
+<pre>mattn 1583921609.291500: fbterm はあかんぽい。</pre>
+<pre>mattn 1583921624.291900: plymouth 使ってない？</pre>
+<pre>yy_yank 1583921656.292500: そうですね、使ってないです。やはりそこが大きいのかも</pre>
+<pre>yy_yank 1583921686.293400: パソコンの品名 LG gram
+systemdのバージョン 245
+plymouthの使用有無 無し
+ログインマネージャー LightDM
+デスクトップマネージャー xfce
+ディスク暗号化の有無 無
+再起動済</pre>
+<pre>mattn 1583921698.293700: はい。systemd が plymouth を繰り返し起動してしまうバグなので plymouth 有効にしないと再現はしないすね。</pre>
+<pre>thinca 1583922066.294200: gram だ。軽いやつ</pre>
+<pre>yy_yank 1583922731.295800: 軽さに惹かれました(確か965g)
+macbook 15インチも家にありますけど重くて…</pre>
+<pre>kuu 1583922823.296800: こうして見てるとこれArch動くんだみたいな目線で見てしまう</pre>
+<pre>raa0121 1583923157.297700: 私も、VAIO Pro 11(2013) に Ubuntu Mate 入れてますが、ほぼほぼストレスなく作業できてますね</pre>
+<pre>kuu 1583923584.298300: Ubuntu MATEの壁紙が気に入ったからとダウンロードしてるやつ</pre>
+<pre>kuu 1583923595.298600: 見た目って結構大事だと思う</pre>
+<pre>mattn 1583923780.299200: 大事</pre>
+<pre>yy_yank 1583923813.299900: 壁紙をArchのロゴにして気持ちをアゲたりしてます</pre>
+<pre>mattn 1583923858.300900: Arch なのに Arch の壁紙じゃない人いるんですか</pre>
+<pre>mattn 1583923871.301500: そりゃ Arch まへんな</pre>
+<pre>kuu 1583923889.301900: archlinux-tribute.png使ってる（訓練されたArchユーザーになら伝わるはず）</pre>
+<pre>yutakatay 1583930524.303200: 正直Archのロゴはあんまり好きじゃないですね・・・ロゴはUbuntuがやっぱりおしゃれ</pre>
+<pre>kuu 1583931443.303700: Fedoraのロゴがバランスよくてすき</pre>
+<pre>yutakatay 1583932052.305300: 例のsystemdのIssue追っかけてるけどsystemdの人たちも意外と優しい。
+勝手にもっと殺伐としててなに言ってるか全然わからない・・・になるかと思ってたけど。</pre>
+<pre>tsuyoshi_cho 1583932107.305900: Linusというか虫のblogの人経由のイメージがあるせいかもしれないなあ...</pre>
+<pre>raa0121 1583934924.307100: ArchLinux ロゴ、Apex Legends のロゴと似てる</pre>
+<pre>mattn 1583941197.308000: Raspberry Pi 3 が起動しなくなったので新しい SD で OS 入れ直そうとしてるけど起動しない。</pre>
+<pre>mattn 1583941208.308300: boot 途中でリブート始まる。</pre>
+<pre>mattn 1583941237.308900: Ubuntu 18.04 を試したけど一度 raspbian に戻してみるか。これでダメなら故障の可能性。。。</pre>
+<pre>mattn 1583941478.309600: なんか嫌な予感もするなー。boot ログの usb というのが見えた瞬間に reboot してるし...</pre>
+<pre>mattn 1583942469.309800: boot したー。ぜいぜい。</pre>
+<pre>raa0121 1583942485.310000: お疲れ様です</pre>
+<pre>mattn 1583942507.310400: usb ケーブル変えたら boot したw</pre>
+<pre>tyru 1583947645.312700: Plymouth, 今回ので知ったけど普通に便利そうだ
+最近はこれ使わなくても X 起動時にフリッカーが出なかったりするんだろうか
+家にデスクトップ Linux がないのでなにも分からない</pre>
+<pre>tsuyoshi_cho 1583972073.313300: brew、バイナリインストールできない状況で、日々rustの更新があると更新負荷ががが...</pre>
+<pre>tsuyoshi_cho 1583972084.313500: (夜間にやらせるけど)</pre>
+<pre>yutakatay 1583985963.315200: 興味ある人はこれが例のフリーズの原因コードらしいです。（行数少ないけどまったくわからん :exploding_head:）
+<https://github.com/systemd/systemd/pull/14086/files></pre>
+<pre>mattn 1583991566.316000: 仕事で CentOS 8 をインストールしてるけど vim 8.0.1763 なのね。</pre>
+<pre>mattn 1583991572.316200: まぁ、少しだけ進歩。</pre>
+<pre>mattn 1583991592.316600: モダンなプラグインが動くか動かないかキワキワくらいのバージョン。</pre>
+<pre>yutakatay 1583992380.317400: 私もこの間からCent8への移行作業やってますがPowerToolsリポジトリがないとつらい。。。
+やっぱりつらいよCentOS</pre>
+<pre>tsuyoshi_cho 1583992498.317900: 遷都OSゆえ、なのかな</pre>
+<pre>kuu 1583992536.318100: <http://www.pref.nara.jp/secure/125341/piisu_thumb.png></pre>
+<pre>yutakatay 1583992634.318900: ちなみにVimは、Neovimのappimageを"zinit"でいれてるので最新を使えてます。</pre>
+<pre>kuu 1583992672.319200: CentOS上だとbrewが活躍しそう</pre>
+<pre>yutakatay 1583992746.319800: Linuxで（というかMacでも）使ったことないですね。今度試してみよう</pre>
+<pre>ycino 1583992777.320300: Macでbrewなし・・・？</pre>
+<pre>thinca 1583992777.320400: zinit のカバー範囲全然わからん</pre>
+<pre>yutakatay 1583992853.320500: 今までMacを拒絶してきた人生なんで、Macになにかをインストールしたことがないんですよ。</pre>
+<pre>ycino 1583992875.321200: なるほど、それはありそう</pre>
+<pre>mattn 1583992942.322600: トラbrew</pre>
+<pre>yutakatay 1583992943.322800: zinit-1は今のところ
+zshのプラグインのインストール、ロード
+スニペット（どっかのプラグインのここの設定だけロードみたいな）のインストール、ロード
+GitHubとかでバイナリーリリースされてるプログラムのダウンロード、パス設定
+とかができます</pre>
+<pre>thinca 1583993081.323000: Mac を拒絶したい人生だった (おしごとで仕方なく使ってる)</pre>
+<pre>thinca 1583993104.323300: 3つ目便利そう</pre>
+<pre>yy_yank 1583993198.325000: "zinit" (意味深)</pre>
+<pre>yutakatay 1583993213.325200: rgとかexaとかfzfとかをzshさえ入っていればどんな環境にでもぶち込めるので便利です</pre>
+<pre>thinca 1583993782.325500: WSL でも使えそう</pre>
+<pre>thinca 1583993789.325700: WSL 普段使ってないけど…</pre>
+<pre>tsuyoshi_cho 1583993990.327200: 問題はWindowsバイナリをちゃんととってこれるか、ですねえ
+じゃないなら、サポートを明言しているLinuxBrew on WSLのほうが安全?</pre>
+<pre>yutakatay 1583994049.328100: zinitさえちゃんと動けばいいので、zshのバージョンだけを気にしておけばいい感じなのでだいぶ楽です。
+あとのツールは全部最新だ！っていう感じがArchと似てて私は好みです。</pre>
+<pre>yutakatay 1583994086.329000: Windowsのexeも配布されていればいけるはずです（やったことはない）</pre>
+<pre>kuu 1583994120.329900: WSLってLinuxバイナリがそのまま動くわけじゃないのか</pre>
+<pre>thinca 1583994126.330100: WSL だしそもそも Linux 向けバイナリが動くはず? あれ、WSL ってそういうのじゃないのだっけ?</pre>
+<pre>kuu 1583994141.330800: Wineみたいなものだと思ってたんだけど</pre>
+<pre>yutakatay 1583994165.331400: WSLじゃなくてWindowsのバイナリとってくる話しかと思ってましたが？？</pre>
+<pre>yutakatay 1583994185.332200: WSLはLinuxのバイナリとってくればよいかと</pre>
+<pre>thinca 1583994192.332600: ですよね</pre>
+<pre>kuu 1583994214.333500: あ、Windowsバイナリも実行できるという話か</pre>
+<pre>thinca 1583994221.333700: Windows native で zsh.exe を使おうと思ったことがない</pre>
+<pre>yutakatay 1583994235.334300: です。汎用インストーラー的に使う感じ。（chocolateyの代用w）</pre>
+<pre>tsuyoshi_cho 1583994252.334900: あ、ネイティブなLinuxバイナリでいけるか...orzすみません</pre>
+<pre>thinca 1583994253.335000: Git に入ってるのは bash.exe だし別に贅沢せんでもいいかなってなるw</pre>
+<pre>tsuyoshi_cho 1583994266.335400: ボケすぎ</pre>
+<pre>mattn 1583994851.335900: Windows の fzf.exe はなんか変な動きする事がある。</pre>
+<pre>mattn 1583994891.336600: Windows の zsh は msys2 か cygwin しかないですね。むかーしむかしは本当に native な zsh あったけどもう開発止まってしまった。</pre>
+<pre>lighttiger2505 1583995587.337700: zinitのツールダウンロード機能でbin落とすやつやろうとしたんですけど、記述が難しくて結局お手々でバイナリダウンロードしてしまってる勢</pre>
+<pre>yutakatay 1583996001.338900: ほんと複雑すぎるんですよね・・・もういっそこのツールはこういう設定やでって感じで書いてくれたほうが楽。</pre>
+<pre>raa0121 1583996057.339900: <https://github.com/Songmu/ghg>
+ghg でいいんじゃないですかね</pre>
+<pre>yutakatay 1583996072.340300: プログラムのダウンロードはどうやら as"null" sbin指定のforで回すのがナウいっぽいんですけどうまく動かなかった</pre>
+<pre>raa0121 1583996085.340900: なお、ghg っぽいのを車輪の再発明したことがある模様…</pre>
+<pre>yutakatay 1583996138.341800: 私はghqもzinitでインストールしてますね。
+
+ghqってリリースされてるバイナリもインストールできるんですっけ？？</pre>
+<pre>kuu 1583996166.342300: ただgithubからクローンして所定の位置に置くだけのツールじゃなかったっけ</pre>
+<pre>yutakatay 1583996190.342900: ですよね。それだとちょっと違うんですよね</pre>
+<pre>itchyny 1583996222.343900: ghg != ghq</pre>
+<pre>yutakatay 1583996233.344500: ghgだ！</pre>
+<pre>yutakatay 1583996235.344700: w</pre>
+<pre>itchyny 1583996237.345100: w</pre>
+<pre>yutakatay 1583996241.345300: 知らないw</pre>
+<pre>raa0121 1583996242.345400: gh *q* : clone して、指定の場所に置く
+gh *g* : バイナリ落として、回答して、指定の場所に置く</pre>
+<pre>yutakatay 1583996252.345800: おお</pre>
+<pre>yy_yank 1583996265.346100: ghg知らなかった</pre>
+<pre>raa0121 1583996290.346900: 確か少し前に <#CGABGC8LA|golang> かどっかで、話題にしました</pre>
+<pre>yutakatay 1583996381.348200: いけそうですね。全アップデートのときは舐め回す必要ありそうですけど。</pre>
+<pre>yy_yank 1583996909.349200: 全然話題違いますが、deepin結構良いですね。
+Archの公式サポートって書いてあるのを色々試してみてます
+<https://wiki.archlinux.jp/index.php/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97%E7%92%B0%E5%A2%83></pre>
+<pre>mattn 1583997347.349500: go のツールの gh なんとかみたいなのが多すぎる。</pre>
+<pre>itchyny 1583997426.350000: GitHubになにかするのは /^gh.$/ になりがち</pre>
+<pre>itchyny 1583997548.350400: 最近 gh ができたのを失念していた</pre>
+<pre>tsuyoshi_cho 1583997871.351000: 縁がなかったのでよくわからない...</pre>
+<pre>mopp 1584023064.352200: i3-wmの一番の欠点？って
+「ブラウザでタブの順序を入れ替えるときに稀に誤操作で別Windowになってしまい戻すのが面倒くさい」
+だと思っている</pre>
+<pre>yutakatay 1584023108.352700: すごくわかるw</pre>
+<pre>yutakatay 1584023159.353600: だからタブ順もCtrl+Shift+PageUp/Downを極力使ってますね</pre>
+<pre>kuu 1584023212.354400: タイルWMは不意にウィンドウが発生するとつらい</pre>
+<pre>yutakatay 1584023605.359700: 個人的な欠点は、
+外部ディスプレイをつないでノートの方はこんな
+```|------|----|------------|
+|      A       |                 |
+|-----------|      C        |
+|       B      |                 |
+|-----------|------------|```
+レイアウトにしてて、
+
+Aがタブになっててカレンダー（ブラウザ）とターミナル（メモるときとか用）
+BがメールとかWeblioとか（ブラウザ）
+Cがチャット（ブラウザ）
+になってるんですが、
+
+Bのウィンドウどっちかがどっかのワークスペースにいってしまうと、同じレイアウトに戻すのに時間がかかるところですね。</pre>
+<pre>yutakatay 1584023631.360200: あとは、単純にレイアウト状態を保存するのがむずかしいところとかですかね？？</pre>
+<pre>mopp 1584025090.360700: このショートカットを知らなかった…
+<https://vim-jp.slack.com/archives/CL6NCDCQG/p1584023159353600></pre>
+<pre>mopp 1584025142.361300: Vimのように、vspしてから片方だけspする、というのがやりづらいですよね</pre>
+<pre>yutakatay 1584025383.363400: 他の人であまり見たことなくて個人的重宝しているのはこれですね。今のウィンドウのところでタブでターミナルを開く。
+`bindsym $mod+Shift+Return exec "~/.i3/scripts/open_split_tab.sh alacritty"`
+
+<https://github.com/yutakatay/dotfiles/blob/master/.i3/scripts/open_split_tab.sh></pre>
+<pre>yutakatay 1584025419.364000: レイアウト崩さずにテンポラリにターミナルが開けます</pre>
+<pre>yutakatay 1584025649.365300: あ〜i3まだ不満点あった。
+プラグインマネージャー的な仕組みがないから集合知的にならないんですよね。みんなお気にのスクリプトとかがdotfiles内で眠ってる・・・</pre>
+<pre>kuu 1584025750.366900: i3ユーザーあんまり情報共有に積極的ではない気がしますね(自分に刺さるやつ)</pre>
+<pre>mopp 1584025822.368100: わかりて</pre>
+<pre>yutakatay 1584025822.368200: 基盤がないですからね・・・
+i3blocksのスクリプトとかもdotfiles内包しちゃってるし。</pre>
+<pre>mopp 1584025856.369200: それ以前に、特にカスタムしてない…</pre>
+<pre>yutakatay 1584025882.370100: 誰か作ってくれないかなー。i3ユーザーでそういう仕組み作るのうまい暗黒的な力を持ってる人とか</pre>
+<pre>mopp 1584025902.370600: 平々凡々なi3-wmだった
+<https://github.com/mopp/dotfiles/blob/master/i3config></pre>
+<pre>yutakatay 1584025977.371900: 私は一時期凝ってていろいろやってたけど、もうどこをカスタマイズしたのかすら覚えてないw</pre>
+<pre>mopp 1584026123.372300: .vimrc と同じですね…
+そろそろ掃除しないとな</pre>
+<pre>yutakatay 1584026205.373300: vimよりもさらに人のやつ見る機会少ないんで、気付きの機会が少ないんですよね・・・
+絶対こんな便利なんあったんかい！ってなる</pre>
+<pre>h-michael 1584028739.374600: 結構デフォで満足してしまっているのであっと驚く便利tipsは知りたいかも</pre>
+<pre>lighttiger2505 1584029017.376500: 何がデフォルトか、もう忘れてしまってますね
+…外部ディスプレイ制御をショートカットからできるようにするとかは割と便利だと思ってます。
+
+<https://github.com/lighttiger2505/.dotfiles/blob/master/.config/i3/config#L323></pre>
+<pre>yutakatay 1584029616.377200: なるほど！これはよいかも</pre>
+<pre>h-michael 1584029839.377500: こんな書き方できるんだー！</pre>
+<pre>lighttiger2505 1584030684.378200: 以前は頑張って自動認識しようとしてたんですけど、結局マニュアルが一番いいんですよね。</pre>
+<pre>lighttiger2505 1584030786.379600: 画面のリサイズとか専用のモードみたいなやつを自分で定義できるんですよ。そんなに使わないけど一日2,3回は使うコマンドとかまとめるのに便利です。</pre>
+<pre>lighttiger2505 1584030882.380600: あとはWindowsのAlt+Tabと同様にワークスペース切り替えできるやつとかですかね
+<https://github.com/lighttiger2505/.dotfiles/blob/master/.config/i3/config#L245></pre>
+<pre>yutakatay 1584031395.381900: WindowのAlt-Tab普通に標準機能として実装してほしいんですけど、作者はいらないって言ってるからi3ipcでごにょごにょするしかないんですよね。。。</pre>
+<pre>yutakatay 1584031463.382700: &gt; 頑張って自動認識しようとしてたんですけど、結局マニュアルが一番いいんですよね。
+私はがんばって自動認識してますね・・・
+Windowsみたいにミラーするかとか選べるようにしてみよう</pre>
+<pre>lighttiger2505 1584031940.384900: 前職は仕事にもArch使ってたからミラーしながら話すタイミング割と多かったので、マニュアル選択式にしたんですよ。まあ他のディス取りだったら標準で同等機能ありますけどね...</pre>
+<pre>kyoh86 1584052736.386400: Updating GNOME, I cannot type Japanese.
+Maybe iBus is dead...</pre>
+<pre>kyoh86 1584053202.387700: 回復…iBusの起動処理書いてた何かが更新されてしまったようだ…
+/etc/profile.d/ibus.sh に書くことにして復帰！</pre>
+<pre>kuu 1584056701.389600: IM変えるにしてもibusだけは絶対に嫌だと思ってたけど前すぎて綺麗さっぱり理由忘れてて嫌という意識だけが残ってた</pre>
+<pre>kuu 1584056757.391400: あれ、IME変えるとキーマップ一緒に変わるのでUS配列で日本語打ってる人にはとても不便で、設定変える方法も無さそうだったから投げたんだった</pre>
+<pre>kuu 1584056876.392600: 安定はしてたので変なことしなければいいやつだったんだろうな</pre>
+<pre>kyoh86 1584057497.393000: 今どきiBusあんまり見ないなあと思いつつ</pre>
+<pre>kuu 1584057524.393800: fcitxに結構流れてるイメージ</pre>
+<pre>kyoh86 1584057528.393900: fcitxがうまくセットアップできずにiBusにしてそのままになってますね</pre>
+<pre>shitamo 1584166485.394400: <https://wiki.debian.org/JapaneseEnvironment/IbusSupportforBuster>
+&gt; システム全体でIMを切り替える方式。アプリケーション毎に切り替えることができない。この仕様を快く思わないユーザーが一定数いる。
+私はこの一定数の中に入っててibusがこの方針になってからuimにもどってます。fcitxを試さなかった理由は覚えてない。</pre>
+<pre>kuu 1584166635.394700: これもありますね、融通効かなさすぎって思った記憶がある。
+ちなみに私もuim使ってます、SKKがそのまま動いて楽なので。</pre>
+<pre>shitamo 1584226470.395200: <https://www.kaoriya.net/blog/2013/10/18/>
+&gt; 私の場合 <https://github.com/koron/imcsc-vim/tree/master/ibus-python|Vim でIMEを制御> できないことで問題が根深いことを知りました。
+ここに合う話的にはこっちだったか</pre>
+<pre>yutakatay 1584364959.396800: やっぱりi3の設定ファイルにもif文ほしいな。。。アプリあるなしで分岐したい
+シェルスクリプトでやるのは見通しがわるい・・・</pre>
+<pre>tennashi 1584366804.397200: ~そこで xmonad ですよ~</pre>
+<pre>yy_yank 1584427280.398900: パスワードマネージャ皆さん何使ってますか？
+macだと1Password使ってましたが、EnpassかBitwardenあたりを使ってみようかと考え中です。</pre>
+<pre>tsuyoshi_cho 1584427394.399500: (Windowsですが)KeePass(実際はXC)/Bitwarden/password-store(実際はgopas)の併用...</pre>
+<pre>kuu 1584427420.400200: 前ここでKeePassXC勧められたのでそれ使ってる</pre>
+<pre>yutakatay 1584427461.401100: KeePass</pre>
+<pre>kuu 1584427494.402000: EnpassもBitwardenもオフラインのやつか、後で調べよう</pre>
+<pre>tyru 1584427506.402300: ここ <#CL6NCDCQG|linux> なので皆さんの想定とは違うでしょうが、ID Manager という Windows ソフトをずっと使ってます（Linux でも wine で使っていた）</pre>
+<pre>tsuyoshi_cho 1584427516.402700: あれ、Bitwardenはオンラインが主眼な気が?</pre>
+<pre>yy_yank 1584427533.403100: あー、最近wineでkindleなら読めるようにしました。</pre>
+<pre>yutakatay 1584427607.403400: 今KeepassXCになった</pre>
+<pre>kuu 1584427613.403700: オンラインはない</pre>
+<pre>thinca 1584427623.403800: Bitwarden はオープンソース</pre>
+<pre>tsuyoshi_cho 1584427733.404900: まあ、避けるのは安全... &gt; オンライン
+自分でホストできればなあ、というところなのだが... 自分の運用的に</pre>
+<pre>yy_yank 1584427801.406000: 色々ためしてみたいところですが、複数のサービスにパスワード預けるのも怖いですね…
+KeePassも見てみます！ありがとうございます！</pre>
+<pre>thinca 1584427809.406200: オフラインのを使ってる人、複数マシンで使うのはどうしているのだろ。オンプレ環境を用意している?</pre>
+<pre>tyru 1584427858.407100: WebDAV/NFS 等でマウント</pre>
+<pre>tsuyoshi_cho 1584427859.407200: KeePassは暗号(というかハッシュ)の強度強めにしてDropboxでsyncしてたりする...</pre>
+<pre>thinca 1584427886.408100: バランスが難しい</pre>
+<pre>kuu 1584427890.408400: private gitにぽいとかスマホで共有とか</pre>
+<pre>tsuyoshi_cho 1584427891.408500: rcloneの暗号レイヤで同期すれば安全とは思うけど、面倒なので...</pre>
+<pre>thinca 1584427912.409200: private git のリポジトリも自前?</pre>
+<pre>tsuyoshi_cho 1584427916.409500: 変なとこ手抜き</pre>
+<pre>kuu 1584427931.410900: githubのprivateですね</pre>
+<pre>tyru 1584427941.412100: プライベートであっても外に置くのは怖い</pre>
+<pre>kuu 1584427943.412200: 安全性に関してはよくわかってない</pre>
+<pre>tsuyoshi_cho 1584427946.412600: bitbucket/gitlab/githubのprivateを使い分けてたりするけど、意味がなくなりつつある...</pre>
+<pre>thinca 1584427948.412700: github は信用しているのか</pre>
+<pre>yy_yank 1584427979.414000: 複数台確かに面倒ですねー
+1Passwordでの話だと1台で管理してexportして他端末で使ったりはします。
+完全同期はしてないですが…</pre>
+<pre>tsuyoshi_cho 1584427990.414600: 安全なリポジトリのホスティングって難しい...暗号化gitみたいなのが必要だなあ...</pre>
+<pre>thinca 1584427994.414700: どこも信用しないって前提だと全部自分で持たないといけない。安全だけどやっぱり大変…</pre>
+<pre>kuu 1584428005.415200: パスワード管理サービスを信用してないわけじゃないです、ローカルにも置いておきたいというだけで</pre>
+<pre>tsuyoshi_cho 1584428008.415300: まー、鍵がどうしようもない</pre>
+<pre>yutakatay 1584428018.415500: マスターパスワードもっと長くしたいけど、忘れそう。。。</pre>
+<pre>yutakatay 1584428040.417100: マスターパスワード変えるタイミングの自分が一番セキュリティリスク</pre>
+<pre>yy_yank 1584428044.417500: パスワード知るためのパスワードを忘れる問題</pre>
+<pre>tsuyoshi_cho 1584428048.417900: KeePassがマスターで、bitwardenはweb用に必要なのだけ、password-storeはCLIで必要なのだけ</pre>
+<pre>thinca 1584428053.418500: パスワード、今はもう文章にしてしまうのがよい</pre>
+<pre>yutakatay 1584428057.418800: もう開けなくなる可能性がある・・・</pre>
+<pre>yy_yank 1584428062.419100: 指紋認証あると楽ですね、なんだかんだ</pre>
+<pre>tyru 1584428063.419200: 自分も chrome のパスワード管理使っちゃったりしてるので徹底するのは難しい…</pre>
+<pre>tsuyoshi_cho 1584428079.419700: マスターのマスター(KeePassのコールドストレージ)は鍵の形したUSBメモリw</pre>
+<pre>thinca 1584428088.420000: Google にかなりのパスワード預けてる気がする。把握すらできていない</pre>
+<pre>yutakatay 1584428112.421100: パスワードマネージャとかでぐぐると結構でてきますよ。びびるほどに</pre>
+<pre>thinca 1584428114.421200: KeePass とか運用できてる人すごいなーって思ってる</pre>
+<pre>yy_yank 1584428123.421400: Googleにユーザーとして色んなもの預けてるので、時々ヒェッて思います</pre>
+<pre>yutakatay 1584428137.421800: <https://passwords.google.com/?hl=ja></pre>
+<pre>tsuyoshi_cho 1584428140.422200: スマホはkeepass2android offlineでDropboxからファイルをsync</pre>
+<pre>tsuyoshi_cho 1584428152.422700: Google(Chrome)にはいっさい入れてない</pre>
+<pre>tyru 1584428158.422900: chrome のパスワード定期的に消すのがいいんでしょうね。
+たまに環境変わった時とか思い立ってやったりするけど</pre>
+<pre>yutakatay 1584428171.424000: いつのまにか入ってるw</pre>
+<pre>thinca 1584428189.425500: ブラウザ組み込み機能だから…</pre>
+<pre>kuu 1584428191.425800: ブラウザの設定、ブクマ以外終了したら全部飛ぶようにしてるので預けようがない</pre>
+<pre>tsuyoshi_cho 1584428201.426400: Amazonだけはクッキーのもらしもあったので、ブラウザ閉じるまでのクッキー生存期限としてたりして、ちょっと面倒</pre>
+<pre>thinca 1584428201.426600: つよい</pre>
+<pre>yutakatay 1584428216.426900: みんなセキュリティ意識高い</pre>
+<pre>yy_yank 1584428224.427300: Google パスワード マネージャーに集めるようにしても良いような気もしてきました
+OS問わずブラウザ使うし…</pre>
+<pre>yutakatay 1584428233.427700: わかる</pre>
+<pre>tsuyoshi_cho 1584428237.427900: ただしキツすぎて、手順ミスると復旧できない恐怖もある(のでコールドストレージ)</pre>
+<pre>thinca 1584428286.429600: Windows(OS) のログインが Microsoft アカウントだから覚えられないのにすると詰む</pre>
+<pre>kyoh86 1584428315.430100: パスワードマネージャーのパスワードは、
+32文字を手癖で記憶しているから
+言え！って言われても言えない</pre>
+<pre>thinca 1584428334.430600: ある意味すごいw</pre>
+<pre>kuu 1584428340.431000: 昔持ってたゲーム機のシリアルだから忘れたら詰む</pre>
+<pre>tyru 1584428358.432100: 手癖で覚えてるパスワードは2つぐらいありますね。絶対に言えない</pre>
+<pre>yy_yank 1584428389.433400: 僕も手癖のやつ（意味のない文字列）を丸暗記してるのである意味安全かもです</pre>
+<pre>tyru 1584428404.434200: あ、言えないって入力できないって意味かｗ
+確かに自分もキーボードを頭に思い浮かべるな</pre>
+<pre>thinca 1584428408.434400: 可視化されたパスワードを見るとﾋｭﾝってなる</pre>
+<pre>tsuyoshi_cho 1584428423.435400: Windowsはログインパスワードわからない
+KeePassの中にあって、一度ログインしたらPIN付けるので...w</pre>
+<pre>kuu 1584428424.435500: 平文保存してるバカが結構いて</pre>
+<pre>kuu 1584428432.435800: 視覚化されないので怖い</pre>
+<pre>kuu 1584428464.437500: バカというかクソサービスな</pre>
+<pre>thinca 1584428464.437700: PIN 面倒で設定してないのだけどやっぱりした方がいい気がしている (面倒でやってない)</pre>
+<pre>tyru 1584428486.438300: 杜撰な Web サービスあるある
+パスワードを salt とかなしにハッシュ化したやつを置いてるのも怖い</pre>
+<pre>kyoh86 1584428504.439700: あと4文字しか設定できないとか、文字種やたら絞ってくる奴ら</pre>
+<pre>thinca 1584428512.440600: ちなみに自宅の Windows はそもそもログインスキップして自動で入るので、パスワード…とは…</pre>
+<pre>kuu 1584428513.440700: 漏洩して初めて発覚するので地獄</pre>
+<pre>tyru 1584428515.440900: 視覚化はもっとされにくい（平文保存はパスワード問合せで返ってきたりするのでわかることもある）</pre>
+<pre>tsuyoshi_cho 1584428520.441100: なので、常にKeePassで別パスワード生成(同一にはしない)</pre>
+<pre>thinca 1584428567.444300: ちなみにものすごく今更ですが <#CTHMGMNNS|security> と言うチャンネルもあります</pre>
+<pre>johejo 1584428580.445000: 再発行申請したら生パスワード送ってくるパターン....
+あなたなんで生パスワード持ってるんですか....</pre>
+<pre>yutakatay 1584428593.445700: 過疎ってたw</pre>
+<pre>thinca 1584428615.446600: 今から盛り上げればいいんですよ</pre>
+<pre>thinca 1584428634.447200: ぶっちゃけ今ログが1ヶ月持たないので…</pre>
+<pre>kyoh86 1584428636.447300: ゴリラさんいったい何チャンネル作ってるんだ</pre>
+<pre>tsuyoshi_cho 1584428676.448000: ゴリラさん手が広いので...腕が長いというべきか?</pre>
+<pre>yutakatay 1584428793.449400: ログもう250kなんですね。。。他のコミュニティのSlackよりも流量すごい・・・</pre>
+<pre>presuku 1584428881.450600: Enpass 使ってます。6系に上がってから Linux クライアントで日本語入力できなくなって検索がちょっと不便… (AndroidならOK)</pre>
+<pre>thinca 1584428901.450800: やっぱり古いログ見えるようにしたいなー</pre>
+<pre>kuu 1584428930.451200: vim-jpのサイトに置いたりできないもの？</pre>
+<pre>kuu 1584428952.451800: 人の鯖なのに好き勝手言ってる</pre>
+<pre>thinca 1584428966.452100: たぶん専用のツールを用意する必要がある。既製品なり自作なり</pre>
+<pre>thinca 1584428998.452600: やってみたい気持ちはありつつフロントエンド疎すぎて死ぬ</pre>
+<pre>kuu 1584429239.453500: フロントはともかくとしてログだけでも取っておけばそのうち使えないかしら</pre>
+<pre>kuu 1584429246.453900: どれだけのサイズになるんだろうか</pre>
+<pre>thinca 1584429298.454500: ログはいつでも取れます。過去の分も export ができる</pre>
+<pre>thinca 1584429312.454800: リアルタイムでは取れない</pre>
+<pre>koron 1584429341.455700: リアルタイムはボットで収集、くらいしか思いつかない。</pre>
+<pre>mattn 1584429354.455900: 任意の人が削除できる仕組みがないログを万人向けに公開するのは賛同しない。</pre>
+<pre>koron 1584429357.456000: 利用規約で封じられてないかは心配</pre>
+<pre>koron 1584429392.457100: まぁそれはログが取れてからでは</pre>
+<pre>thinca 1584429400.457300: それがあるので過去試しに立てたやつはそのまま消したのですよね</pre>
+<pre>thinca 1584429408.457700: 試したツールが削除に対応してなかったので</pre>
+<pre>koron 1584429456.458600: たとえばログをgitに入れてgithub-pagesで出すとして、削除しても残るからout?</pre>
+<pre>mattn 1584429475.459000: 僕はその認識ですね～。</pre>
+<pre>koron 1584429502.459800: すると毎回push -f必須なイメージか</pre>
+<pre>koron 1584429516.460100: 1コミットだけで運用される。</pre>
+<pre>tyru 1584429534.461000: push -f してもしばらくは残りますね。いつまでかは分からないですが</pre>
+<pre>thinca 1584429535.461200: 個人的には検索がほしいので静的ページだとつらそうだなと思っている</pre>
+<pre>tyru 1584429546.461800: github pages なら private repo にした方がよさそう</pre>
+<pre>thinca 1584429548.462100: まあそれこそ後からって言われればそうだけど</pre>
+<pre>mattn 1584429557.462500: 僕の意見で決める話じゃないので強く言ってるつもりないです。</pre>
+<pre>koron 1584429568.463200: 静的ならgoogle先生に検索は任せられるから。</pre>
+<pre>mattn 1584429568.463300: ただ過去に IRC のログを公開して揉めた人達を見てきたので。</pre>
+<pre>koron 1584429590.463500: 僕は裏でこっそり手をまわしてそういうログをよく消してたw</pre>
+<pre>Shougo 1584429611.464200: パスワードは早くなくなってほしい</pre>
+<pre>thinca 1584429617.464500: 時期とかチャンネルとか発言者で検索を…したい…</pre>
+<pre>Shougo 1584429622.465000: 生体認証で置き換えたい</pre>
+<pre>mattn 1584429635.465800: ログは nofollow にすべきだと思う。</pre>
+<pre>thinca 1584429637.465900: 話題は <#CTHMGMNNS|security> に移りました</pre>
+<pre>thinca 1584429651.466600: そしてログの話もちゃんとやるなら <#CRNLJDTU1|vim-jp> かな…</pre>
+<pre>koron 1584429655.466800: そういうやLinuxに話を戻すけど、XPS13(9300)に指紋センサーついてるんだけど、あれってLinuxから使えるかな?</pre>
+<pre>mattn 1584429657.466900: あと可能なら閲覧はログインしての閲覧がいいなぁと。</pre>
+<pre>mattn 1584429678.468000: 最悪「誰が見た」は残ってて欲しい。</pre>
+<pre>tsuyoshi_cho 1584429685.468400: pagesはprivateは有料だったような</pre>
+<pre>kuu 1584429700.468900: slackの連携でログインできるようにして、自分の発言削除できるようにすればよろしい？</pre>
+<pre>mattn 1584429712.469200: 僕はそれがいいと思います。</pre>
+<pre>koron 1584429723.469400: <https://www.dell.com/community/XPS/XPS-13-9300-Does-fingerprint-reader-work-on-linux/m-p/7514958></pre>
+<pre>koron 1584429741.470100: &gt; According to Dell's website, support for the fingerprint reader, even for the Linux pre-installed version will come on mid 2020.
+ちょっと遠いか</pre>
+<pre>thinca 1584429770.470800: ログの話の続きをしたい人は <#CRNLJDTU1|vim-jp> で！</pre>
+<pre>tsuyoshi_cho 1584429789.471100: 指紋センサ類とかlinuxで使ってるひといます?</pre>
+<pre>tsuyoshi_cho 1584429819.471800: ちなみにメインPC(BTO Win)/サブノート(Win)どっちも指紋でログインにはしている...</pre>
+<pre>koron 1584429852.472300: ぼくはやったことない。Type-Uにもついてたけど、あれはWinのまま使ってた。</pre>
+<pre>yy_yank 1584429891.473100: 僕じゃないですけど、多分自社の人がyubikey使ってた気がします
+<https://gigazine.net/news/20191108-first-biometric-yubikey/></pre>
+<pre>tsuyoshi_cho 1584429909.473700: 使えると、ちょっとやってみたくなる...</pre>
+<pre>koron 1584429954.474200: XPS13(9370) は指紋センサLinux未対応だったんか。
+<https://www.reddit.com/r/Dell/comments/9qzqoe/xps_13_fingerprint_sensor_help_linux/e8cxu6t/></pre>
+<pre>tsuyoshi_cho 1584430009.474600: あー、まあ個別にok/ngですよね、やっぱ</pre>
+<pre>tomoya 1584433868.476500: <https://cloud.google.com/titan-security-key?hl=ja|https://cloud.google.com/titan-security-key?hl=ja>
+最近、これ買ってGoogle アカウントでセットアップしました。
+まぁ、有効なのは初回ログイン端末のみで、あとはパスワードになるんですけどね。</pre>
+<pre>yutakatay 1584439452.477800: フリーズ問題でたsystemd 245ですがhomedが入ったみたいです。
+xxxd何個あるんだろう・・・
+<https://qiita.com/onokatio/items/dbae4afe7fabd2602545></pre>
+<pre>thinca 1584439565.478100: vimd</pre>
+<pre>thinca 1584439932.478500: `/etc/gropus/` ってなんだろ</pre>
+<pre>raa0121 1584439969.479000: homed は面白そうだけど… 枯れるまで使わないかなぁ</pre>
+<pre>kuu 1584440009.480200: 使わないだろうけどちょっとは遊ぶ</pre>
+<pre>raa0121 1584510309.481200: <http://cdimage.ubuntu.com/daily-live/current/>
+Ubuntu 20.04 の Daily Build が提供され始めてました</pre>
+<pre>yutakatay 1584510380.481800: 結局Waylandですか？？</pre>
+<pre>kuu 1584510381.482000: フォッサマグナ</pre>
+<pre>kuu 1584510386.482300: いやマングースのほうなんだろうけど</pre>
+<pre>raa0121 1584510587.482900: Wayland っぽいですね 変えるって記述はなさそうです</pre>
+<pre>yutakatay 1584510609.483400: :majika:</pre>
+<pre>yutakatay 1584510631.483900: つか、ぐぐっても全然出てこないですね・・・</pre>
+<pre>raa0121 1584510653.484200: <https://www.omgubuntu.co.uk/2019/10/ubuntu-20-04-release-features>
+ここが一番マトモっぽい…？</pre>
+<pre>raa0121 1584510679.484500: ```    GNOME 3.36, including new lock-screen
+    Linux Kernel 5.4
+    Improved ZFS install support
+    New wallpaper
+    Smaller .iso image
+    Lightning extension added to Thunderbird
+    Multi-monitor support in GDM
+    Gaming-related improvements
+    Better GNOME Shell performance```</pre>
+<pre>raa0121 1584510842.485200: 自宅PCでダウンロード開始…
+帰宅したら、VMに入れてみます</pre>
+<pre>raa0121 1584511217.485800: <https://gihyo.jp/admin/serial/01/ubuntu-recipe/0141>
+ダウンロードファイル一覧に、 `.zsync` ってあったから、調べてみたけど、面白い…</pre>
+<pre>mattn 1584512444.486300: wayland、最近は落ち着いてますけどね。</pre>
+<pre>mattn 1584512451.486500: 特殊な事しない限りは大丈夫。</pre>
+<pre>yutakatay 1584512671.486800: 私は乗り換え結構大変だろうな・・・x11依存のツール結構使ってますからね</pre>
+<pre>mattn 1584512904.487400: 僕の体感では XRandR 使った画面の切り替えが Wayland はめっちゃサクサクになった。</pre>
+<pre>yutakatay 1584512949.488000: それはうれしいですね。なんか遅いし、接続直後ちらつくし</pre>
+<pre>yutakatay 1584513003.488500: 試しでsway乗り換え一回してみようかな。</pre>
+<pre>kuu 1584513176.489000: sway tukatte mitakedo nihongo ga utenai</pre>
+<pre>kuu 1584513215.489400: 結局Xに戻ってきた</pre>
+<pre>kuu 1584513254.490200: i3の設定読み込んでくれるし思いの他普通に使えるな、AlacrittyもSlack Desktopもそのまま動いたし</pre>
+<pre>kuu 1584513297.490700: 日本語打てない問題もVimがあればなんとかなる</pre>
+<pre>yutakatay 1584513309.491200: fcitxがだめな感じですか？？</pre>
+<pre>kuu 1584513315.491600: ぼくuim…</pre>
+<pre>yutakatay 1584513324.492000: なるほど</pre>
+<pre>yutakatay 1584513347.492300: あとはrofi代替があればな。。。</pre>
+<pre>kuu 1584513388.492800: rofi普通に動きますね</pre>
+<pre>yutakatay 1584513431.493800: あれ？動かない的なことをどこかで見た記憶がありましたが。なるほど。じゃあfcitxが動けばいいのかな。</pre>
+<pre>raa0121 1584513454.494300: <https://wiki.archlinux.jp/index.php/Wayland>
+&gt; Wayland は Linux の新しいウィンドウプロトコルです。GNOME や KDE などの主要な Linux デスクトップは Wayland に対応しており、"Weston" という名前のコンポジタのリファレンス実装も存在します。Wayland で昔の X11 アプリケーションを動作させるための互換レイヤーとして XWayland があります。 
+XWayland なんてのもあるのか…</pre>
+<pre>raa0121 1584513688.495200: <https://www.clear-code.com/blog/2018/8/31.html>
+Watson で uim 動かしてる人居ますね</pre>
+<pre>yutakatay 1584513823.496900: `【宣言】` この３連休にi3-&gt;swayやってみます！</pre>
+<pre>yutakatay 1584513896.498400: 観測範囲内でi3ユーザーいっぱいいるんで、そろそろドヤりたい</pre>
+<pre>lighttiger2505 1584513917.499200: x系は全く動かないわけではなくて、xwayland入れれば、主要なソフトは割と動いたと記憶してます。</pre>
+<pre>kuu 1584513951.000300: ブラウザとターミナルが動けば戦える</pre>
+<pre>lighttiger2505 1584513963.000800: 私はディスプレイとかキーコンフィグの制御置き換えがめんどくさくなって、やめた口。</pre>
+<pre>kuu 1584513999.001600: i3→swayくらいならわざわざ移る理由が現状ない</pre>
+<pre>kuu 1584514011.002200: いつでも移れるようにはしておいたほうがいい気がするが</pre>
+<pre>kuu 1584514109.004400: プログラム書いてる方々は大体そうだと思っていますが、怠惰なもので:sweat_smile:</pre>
+<pre>kyoh86 1584517896.005900: Waylandはやだなぁと思いつつうっかりGNOMEインストールする時に
+Waylandを選んでしまって以来、思いの外快適だからコレでいいやと言う感じ…</pre>
+<pre>lighttiger2505 1584519410.007700: たしかに、現状Xでサクサク動いてるから確かに変える理由ないんですよね。Waylandのが後発だけあって、設定周りが綺麗にできた気はしますが。</pre>
+<pre>yutakatay 1584519853.008400: けど情勢的にはいずれ乗り換えなくちゃいけなくなるわけなんで、それならはやめに派ですね</pre>
+<pre>yutakatay 1584519940.009000: （人柱はいやですけど、結構なディストリビューションやってるんでもう行こうかなと）</pre>
+<pre>kuu 1584519991.009600: 共存可能なので段階踏んで移行していくと便利そう</pre>
+<pre>yutakatay 1584521779.010300: <https://github.com/swaywm/sway/wiki/i3-Migration-Guide>
+xsel, xclipが使えないのはハードな戦いになりそう・・・</pre>
+<pre>yutakatay 1584521802.011000: あいつら地味にいろんなところに食い込んでるからな・・・</pre>
+<pre>kuu 1584521807.011100: そりゃXがないからなぁ</pre>
+<pre>kuu 1584521820.011500: そういやVimのクリップボードもX依存じゃん</pre>
+<pre>thinca 1584521849.011700: :sorena:</pre>
+<pre>kuu 1584521867.012200: Waylandのクリップボード調べておくか</pre>
+<pre>thinca 1584521871.012400: 依存と言うかそもそも X がないとクリップボード自体存在しないというか</pre>
+<pre>mattn 1584521914.013000: GUIフレームワーク側で提供されるんじゃないすかね。</pre>
+<pre>kuu 1584521931.013400: あーそこ削ったのか</pre>
+<pre>mattn 1584521934.013600: GTK には clipboard manager みたいなのあった気がする。</pre>
+<pre>mattn 1584521957.014000: X のはクリップボードというか、セレクションなんですよね。</pre>
+<pre>kuu 1584522033.015300: 選択した物をコピーするというの、どうしてあんな仕様にしたのか理解に苦しむが…便利なんですかね</pre>
+<pre>kuu 1584522037.015600: 誤爆したことしかない</pre>
+<pre>tyru 1584522049.015800: デスクトップ Linux 使ってた時 X が不安定でしょっちゅう死んでた時があって、よく Vim も巻き込まれて死んでた
+X に接続しないオプション設定してたな</pre>
+<pre>thinca 1584522096.016000: -X</pre>
+<pre>tyru 1584522119.016300: 最近だとそれで十分ですね</pre>
+<pre>tyru 1584522140.016500: 前はこんなんやってた <http://tyru.hatenablog.com/entry/20130503/x11_sudden_death></pre>
+<pre>tyru 1584522167.016900: &gt; set clipboard+=exclude:.*</pre>
+<pre>h-michael 1584524893.017000: Nvimだとそこ疎結合になってるので色々使えますよ
+<https://neovim.io/doc/user/provider.html#provider-clipboard|https://neovim.io/doc/user/provider.html#provider-clipboard></pre>
+<pre>tsuyoshi_cho 1584533925.017900: <https://qiita.com/onokatio/items/dbae4afe7fabd2602545>
+なるほどな...</pre>
+<pre>raa0121 1584533934.018200: <https://i.gyazo.com/df58de624e9e1601129c7abc0fc83ca5.png></pre>
+<pre>raa0121 1584533941.018500: あれ…！ x11 だ！</pre>
+<pre>yutakatay 1584533986.019000: お、ということはUbuntuはX居残り組なんですね</pre>
+<pre>yutakatay 1584534013.019800: Debian, RedHatとかはWaylandデフォでしたよね？？</pre>
+<pre>raa0121 1584534054.020300: <https://kledgeb.blogspot.com/2019/03/ubuntu-1904-11-waylandubuntu-2010.html></pre>
+<pre>raa0121 1584534070.020600: &gt; しかし「Wayland」を取り巻く環境はまだ十分に成熟していないとの判断があり、現状「Ubuntu 19.10」で「Wayland」をデフォルトにする計画はなく、「Ubuntu 19.10」で「Wayland」をデフォルトにしないならば、「Ubuntu 20.04 LTS」でも「Wayland」がデフォルトになることはないでしょう。</pre>
+<pre>raa0121 1584534078.021100: 言及されてた</pre>
+<pre>yutakatay 1584534108.021600: それさっき読んだんですが結局？で終わってたんで</pre>
+<pre>raa0121 1584534278.021800: <https://i.gyazo.com/17f1820818ab82ed6e6b6c443b035de3.png></pre>
+<pre>kuu 1584534290.022500: 安定志向</pre>
+<pre>raa0121 1584534294.022600: ログイン時に選べるけど、デフォはX11っぽい</pre>
+<pre>kuu 1584534313.023000: 選択肢があるのはいいこと</pre>
+<pre>raa0121 1584534486.024300: Ubuntu 20.04 で色々試すスレ</pre>
+<pre>raa0121 1584534519.024600: php7.3 が入るのはなかなか良い</pre>
+<pre>raa0121 1584534535.024800: python コマンドが無くて、pyhon3 コマンドしか無いのは、なかなかかも</pre>
+<pre>kuu 1584534549.025500: 2はサポート切れましたしまあ</pre>
+<pre>kuu 1584534566.025800: Archも2は入らないし</pre>
+<pre>yutakatay 1584534593.026000: pythonコマンドはほしい</pre>
+<pre>kuu 1584534607.026400: Archはpythonコマンドはあるか</pre>
+<pre>raa0121 1584534642.026700: 晩ごはんなので、離脱しますが、なんか試してほしいことあったら、スレッドに書いといてください</pre>
+<pre>raa0121 1584534646.027000: ですね</pre>
+<pre>mattn 1584535183.027300: 20.10 かららしいですよ。</pre>
+<pre>johejo 1584537220.028200: DebianはbusterでWaylandになったのか</pre>
+<pre>yutakatay 1584537472.029600: 正直Debian, Ubuntu, Fedoraなら全然いいんですが、CentOS(8)に遅れをとるのはいかがなものか・・・
+という気分なのでチャレンジしてみます</pre>
+<pre>raa0121 1584542755.029800: ubuntu-mate-desktop 入れたら、gcc が入ってきた…？</pre>
+<pre>raa0121 1584543457.030000: mate にしたら、いい感じ</pre>
+<pre>raa0121 1584544524.030200: golang は 1.13 だ</pre>
+<pre>yutakatay 1584685238.032500: i3からswayへ移行中・・・
+なんかいろいろ普通に動いてビビるw i3blocksとかまんま表示されるし</pre>
+<pre>mattn 1584685860.032900: この部屋いると native な linux ちょっと欲しくなるので不思議。</pre>
+<pre>h-michael 1584702613.034000: sway使ってみたいけど踏み切れない</pre>
+<pre>Shougo 1584707310.034700: sway手元でちゃんと動いてくれなかったんだ世なー</pre>
+<pre>kuu 1584868797.036200: (ここでする話題かは分からないけど)Arch Linuxにあるgo-pieでスタティックバイナリ吐こうとすると死んだ実行ファイルが生成されるっぽいな</pre>
+<pre>kuu 1584868812.036700: こうなるとdocker上でビルドするしかなくなってくるのでつらい</pre>
+<pre>kuu 1584869068.037300: そもそも位置独立コードとスタティックバイナリは競合するものなのか</pre>
+<pre>tsuyoshi_cho 1584869204.038100: スタティックリンクするすべてのライブラリがPIEじゃないと死に体にはなりそう(本来は競合じゃないですよね...)</pre>
+<pre>kuu 1584869234.038400: あーそういうやつ…</pre>
+<pre>tsuyoshi_cho 1584869377.039400: いっそPIEではあろうダイナミックリンクライブラリをまるごと抱えるほうがPIEにはしやすいのかも
+Pythonの実行ファイル生成系(PyInstaller)を見てて思った</pre>
+<pre>kuu 1584888357.041900: alacritty関係の話聞くの、いつも日本語周りだなw</pre>
+<pre>kuu 1584888396.042900: あの手の、XIM使えない(のか？)から独自にwaylandのプロトコル喋らないといけないわけで、つらいだろうなあ</pre>
+<pre>lighttiger2505 1584888508.045000: そういえば自分もSwayでAlacrittyがむりでTermiteにした記憶があります。urxvtでも良かった気がしますが。</pre>
+<pre>kuu 1584888549.046100: でもあの描画のぬるぬるさ知ってると捨てがたい…</pre>
+<pre>yutakatay 1584888555.046300: urxvtってWaylandで動くんですかね？？</pre>
+<pre>yutakatay 1584888560.046600: XWayland?</pre>
+<pre>kuu 1584888575.047200: Xにべったりだしまあ</pre>
+<pre>yutakatay 1584888585.047500: 表示はできたんですが、Xresources読んでくれてないから悲惨な画面にw</pre>
+<pre>yutakatay 1584888702.049000: fcitx5, fcitx5-gitも試したんですが一緒でしたね。今ibusやってみようとしているところです。
+issueにはibusもだめだったって書いてあったんでできないとは思いますが・・・</pre>
+<pre>kuu 1584888747.050200: GTKやQT以外は壊滅ってことか</pre>
+<pre>kuu 1584888755.050500: :fuben:</pre>
+<pre>yutakatay 1584888768.050900: alacrittyをX11(xWayland)で動かすとfcitxでもうまく動くんですが、今度はwl-clipboardがうまく動かないというw</pre>
+<pre>yutakatay 1584888830.052000: waylandなのにターミナル上はXのツール使うっていうキメラ構成ならうまく動きます！（ただし、これってなんのメリットがあるのか・・・）</pre>
+<pre>tsuyoshi_cho 1584889016.052500: ないってこともないんだろうけど、羊頭~苦肉~狗肉というかなんというか</pre>
+<pre>raa0121 1584931271.053300: ```$ whoami
+vagrant
+$ stat .env.development
+  File: `.env.development'
+  Size: 802             Blocks: 8          IO Block: 4096   regular file
+Device: fd00h/64768d    Inode: 269257      Links: 1
+Access: (0644/-rw-r--r--)  Uid: (  500/ vagrant)   Gid: (  500/ vagrant)
+Access: 2020-03-17 20:32:47.937672545 +0900
+Modify: 2020-03-11 15:52:22.387309138 +0900
+Change: 2020-03-17 20:32:23.359904489 +0900
+$ rm .env.development
+rm: cannot remove `.env.development': Permission denied```
+権限はあるのに、ファイルが消せない場合の知見をどなたかお持ちではないですか？</pre>
+<pre>kuu 1584931335.054200: chattrで書き換えられるフラグの中にファイルを消せなくするものがあったり</pre>
+<pre>raa0121 1584931484.054800: <https://linuxjm.osdn.jp/html/e2fsprogs/man1/chattr.1.html>
+確かにありますね
+今ついてる属性の一覧って見れないんですかね…</pre>
+<pre>raa0121 1584931496.055000: lsatter か</pre>
+<pre>raa0121 1584931579.055400: ```$ lsattr -v .env.development
+648191900 -------------e- .env.development```
+問題なさそう…</pre>
+<pre>kuu 1584931650.055800: 違うか…すんません</pre>
+<pre>raa0121 1584931677.056300: いえ、ありがとうございます
+少しずつ可能性を潰していきたいです</pre>
+<pre>ゴリラ 1584931772.056700: さくじょってrwがあれば良いでしたっけ？</pre>
+<pre>tsuyoshi_cho 1584931839.057000: ユーザーにwがないように見える...けど</pre>
+<pre>raa0121 1584931867.057400: `0644/-rw-r--r--` ありますよ</pre>
+<pre>tsuyoshi_cho 1584931882.057700: あ、ユーザーが前だ、じゃあ大丈夫か...</pre>
+<pre>tsuyoshi_cho 1584931923.058100: なんかのプロセスが握ってる...のが問題になるのはWindowsくらいか</pre>
+<pre>kuu 1584931962.059000: ファイルは握ってても消せちゃうはず</pre>
+<pre>raa0121 1584931962.059100: 実はこいつ、再起動したあとも消えないんですよ…</pre>
+<pre>tsuyoshi_cho 1584932006.060100: まあ握るはないし、regular fileとあるしなあ...デーモン系がなんかしてるのはありそうだけど</pre>
+<pre>kuu 1584932014.060400: 上のディレクトリに権限ないとかじゃないですよね</pre>
+<pre>raa0121 1584932113.060900: それでした…</pre>
+<pre>kuu 1584932138.061300: やったぜ。</pre>
+<pre>raa0121 1584932184.062400: ありがとうございます これで `git pull --rebase` ができる…</pre>
+<pre>ゴリラ 1584932815.063200: エスパ力</pre>
+<pre>ゴリラ 1584932818.063400: すげ</pre>
+<pre>kuu 1584933049.064400: ちなみにこれ外してたら打つ手なかった</pre>
+<pre>ゴリラ 1584933102.065000: 逆境に強い</pre>
+<pre>yutakatay 1584933671.066600: あるあるだけどハマるやつですよね</pre>
+<pre>tsuyoshi_cho 1584933785.066800: 海底摸月（ハイテイツモ）感</pre>
+<pre>tyru 1584935056.067100: 削除はディレクトリの権限なんですよね</pre>
+<pre>tyru 1584935126.067600: ファイルの権限によって rm が警告出したりはするけど</pre>
+<pre>tsuyoshi_cho 1584935316.068700: ファイル自体が消えるんじゃなくて、ディレクトリのinodeエントリを削除する、的な。ただしファイルのパーミッションもチェックする(oh...)。</pre>
+<pre>tyru 1584935415.069100: ですです</pre>
+<pre>tsuyoshi_cho 1584935456.069500: 参照がなくなった(=0)ら削除ですしね...</pre>
+<pre>kuu 1584935649.070700: プログラミング言語で言う参照カウントGCと考えると分かりやすい気がする</pre>
+<pre>tsuyoshi_cho 1584935696.071300: とはいえ、普段あまり意識しないですから、やっぱ嵌る時は嵌る</pre>
+<pre>yutakatay 1584935938.072300: やっぱこれはrmのメッセージがわるいですよね・・・</pre>
+<pre>tsuyoshi_cho 1584935967.072900: せめてどっちのせいかを言ってほしいし、今ならもうちょっと詳細を出せになりそう</pre>
+<pre>thinca 1584937322.073700: この前私も go get がディレクトリに対して -w していたのでハマったな。LSP が uninstall できなかったやつ (もう直してもらった)</pre>
+<pre>thinca 1584961646.075000: 【お題】シェル芸で複数行のテキストの前後の空白(改行含む)を削除する方法
+Ruby でやると `ruby -e 'print ARGF.read.gsub(/\A\s+|\s+\z/,"")'` こう。最悪 Ruby を使えばいいけど可能ならもうちょいポータブルにしたい</pre>
+<pre>kuu 1584961790.075500: これって所謂段落的な何かごとに処理をしたいってこと？</pre>
+<pre>thinca 1584961923.075900: そんな感じです</pre>
+<pre>mattn 1584961927.076100: grep でできそう。</pre>
+<pre>thinca 1584961974.077100: grep だと行単位の処理になっちゃいません?</pre>
+<pre>thinca 1584962008.078000: 内側の空行は消したくない</pre>
+<pre>mattn 1584962012.078100: 複数行ってそういうことか。</pre>
+<pre>kuu 1584962085.078600: sed芸で行けそうな気がしなくもないけどわからない（やりたくない）</pre>
+<pre>tyru 1584962136.079100: ポータブルってどこまでです？</pre>
+<pre>koron 1584962144.079400: trでnewlineをスペースに置き換えて、でsedでspace消せばええんちゃう?</pre>
+<pre>koron 1584962158.080000: すごい雑だけど。</pre>
+<pre>thinca 1584962161.080100: あまり厳密ではない</pre>
+<pre>thinca 1584962176.080600: リポジトリ内に置くスクリプト</pre>
+<pre>lambdalisue 1584962183.081300: sed -z とか？</pre>
+<pre>thinca 1584962193.081900: なのでまあ最悪 Ruby …</pre>
+<pre>thinca 1584962203.082400: z知らない子だ</pre>
+<pre>raa0121 1584962217.083000: ```       -z, --null-data
+
+              separate lines by NUL characters```</pre>
+<pre>hrsh7th 1584962222.083500: grep でどうにかならないかなと考えてみたけど、シェル苦手なのでなんともいえず。。。</pre>
+<pre>kuu 1584962231.084100: findやxargsにあるのは知ってたけどsedにもあるのか</pre>
+<pre>koron 1584962233.084200: bsd sedにはなさそうなオプションだけど</pre>
+<pre>k-takata 1584962247.084400: 汎用性ならvimでって声が聞こえた気がした（幻聴</pre>
+<pre>koron 1584962271.085300: やっぱbsd sedにないからmacの素のsedに適用できない</pre>
+<pre>kuu 1584962291.085800: Vimmerに汎用性説くとそこに行きつく</pre>
+<pre>tyru 1584962320.085900: sed/awk は BSD/GNU の違いがあるからって言おうとしたら言われてた
+やっぱスクリプト言語使うのが楽</pre>
+<pre>lambdalisue 1584962336.086700: わかる</pre>
+<pre>thinca 1584962341.087100: やはり Ruby か…</pre>
+<pre>hrsh7th 1584962343.087200: ちょっと調べてみたら grep -o がいけそうかな。</pre>
+<pre>koron 1584962359.087800: `cat file.txt | tr '\n' ' ' | sed -e 's/.../.../'` みたいな感じで</pre>
+<pre>tyru 1584962360.087900: それも bsd あったかな… &gt;-o</pre>
+<pre>kuu 1584962391.088700: クソむずいシェル芸をした所で数年後にそれをメンテしたいかという話</pre>
+<pre>koron 1584962393.088900: &gt;      -o, --only-matching
+&gt;             Prints only the matching part of the lines.
+</pre>
+<pre>koron 1584962397.089300: FreeBSDにもあった。</pre>
+<pre>kuu 1584962405.089600: この観点で行くならRubyを許容するほうがいい気がする</pre>
+<pre>thinca 1584962415.090000: 可能なら末尾改行も消したい</pre>
+<pre>thinca 1584962437.090200: node のプロジェクトだけどな！</pre>
+<pre>tyru 1584962456.090600: なら node でいいのでは…</pre>
+<pre>hrsh7th 1584962465.091000: _node が一番ラクそう_</pre>
+<pre>kuu 1584962475.091500: nodeでできるならそれが一番いいな</pre>
+<pre>thinca 1584962479.091800: node でワンライナーわからん</pre>
+<pre>tyru 1584962504.092400: スクリプト書いて npm run で呼び出しちゃえばいいんですよ</pre>
+<pre>hrsh7th 1584962507.092500: うわ。ワンライナーは向かないかもですね。</pre>
+<pre>kuu 1584962509.092700: シェルスクリプトの一部に書いておきたい感じ？</pre>
+<pre>thinca 1584962561.094000: シェルスクリプトなら数行で済む処理を node で書くと数十行になってめっちゃめんどい</pre>
+<pre>thinca 1584962593.094700: 別の場所で git とかバンバン呼ぶので…</pre>
+<pre>kuu 1584962945.095900: テキストにしか使わないならtrで改行をNUL文字に置換した上でsedしてtrでまた戻すのが一番楽な気がする</pre>
+<pre>kuu 1584962950.096100: KoRoNさんが出してるやつ</pre>
+<pre>ycino 1584963015.096800: ここでVim script…</pre>
+<pre>raa0121 1584963031.097100: node というか、javascript の正規表現だと、 `\A` が無い…</pre>
+<pre>itchyny 1584963035.097200: ```/bin/bash -c 'shopt -s extglob; v=$(&lt;/dev/stdin); v="${v##+([[:space:]])}"; v="${v%%+([[:space:]])}"; printf "%s" "$v"'```</pre>
+<pre>thinca 1584963077.097600: なんかすごいの出てきた</pre>
+<pre>raa0121 1584963084.097800: あ、`\A` なくてもいけるか…</pre>
+<pre>itchyny 1584963237.098800: ```node -e "process.stdout.write(require('fs').readFileSync(0, 'utf8').trim())"```</pre>
+<pre>johejo 1584963259.098900: perl......</pre>
+<pre>hrsh7th 1584963290.099300: _意外とワンライナー耐えてる。。。_</pre>
+<pre>hrsh7th 1584963307.100200: process とか require がくるから辛いかなと想像してましたが</pre>
+<pre>kuu 1584963322.100400: この手のスッと出てくるの強い</pre>
+<pre>thinca 1584963382.100700: めっちゃ勉強になる…ありがとうございます！！</pre>
+<pre>thinca 1584963406.101500: 実際のところ面倒でも全部 node で書いた方がいい説があるのでその辺り含めて再検討しよう…</pre>
+<pre>johejo 1584963500.104300: 私はnode(react)のプロジェクトでちょっと複雑なスクリプトになったらtsで書いてます。ts-nodeかnccがあればさらっとかける</pre>
+<pre>raa0121 1584963577.107300: console.log だと、末尾改行残っちゃうのか… `process.stdout.write` 強い</pre>
+<pre>thinca 1584963584.107700: 実際には ts-node を使おうと思うんですけど単発スクリプトで .ts 書くと language server がエラーを出すのをどうやって鎮めればいいのかまだよくわかっていない…</pre>
+<pre>hrsh7th 1584963596.108100: readFileSync(0) を知らなかった</pre>
+<pre>kuu 1584963613.108800: 何かしらの言語使うとき、大体改行出さないprint探す</pre>
+<pre>raa0121 1584963631.109700: 0 だと、stdin を開きますね</pre>
+<pre>johejo 1584963636.109800: nodeのchild_process結構使いやすいので外部コマンドをガンガン呼んでもなんとかなりますね。
+外部コマンドがjson吐いても扱いやすい。</pre>
+<pre>kuu 1584963723.111400: jsonをネイティブで扱えるのはjsonの大本なだけある</pre>
+<pre>itchyny 1584963733.111900: ```jq -sRj 'sub("^[[:space:]]+|[[:space:]]+$"; ""; "g")'```</pre>
+<pre>thinca 1584963782.113000: まだバリエーションが出てくるw</pre>
+<pre>johejo 1584963785.113100: 12さんならそろそろjq版が来るとは思っていた</pre>
+<pre>raa0121 1584963946.113600: `.git/pre-commit` とかに仕込むのかな？</pre>
+<pre>itchyny 1584964350.115900: jq芸キメると気持ちいいけど同僚からは不評です (まぁわかる)</pre>
+<pre>itchyny 1584964439.116800: CIのデフォルトのコンテナとかでも入ってるから結構使いやすいんだけどな</pre>
+<pre>kuu 1584964519.117500: プロ「使いやすい」
+ぼく「:thinking_face: 」
+多分みんなこう思ってる</pre>
+<pre>tyru 1584964734.118300: jq 普及していきましょう
+手始めにここの人たち向けに jq in Vim script 実装を作る所から…</pre>
+<pre>itchyny 1584964856.119200: sedがportableじゃないのが諸悪の根源</pre>
+<pre>tyru 1584964927.120100: sed や awk 等の"言語"がなぜ portable でないのか
+Larry はそういう事情も鑑みて perl 作ったのかな</pre>
+<pre>johejo 1584965182.122400: 最近yamlよく使われますが、標準でyamlが読めるインタプリタがほとんどないですね。</pre>
+<pre>johejo 1584965259.123500: （gojqならyamlも読めるのか！）</pre>
+<pre>kuu 1584965269.123600: ライブラリ使えばいいでしょって思ってそう</pre>
+<pre>kuu 1584965326.124400: jsonはIPCやRPCで使われてるからなー</pre>
+<pre>raa0121 1584965402.125300: go で書いて、バイナリを突っ込んちゃうのもありかな…？</pre>
+<pre>thinca 1584965423.125700: jq はチューリング完全なので、jq で YAML を JSON に変換すればいいのでは?</pre>
+<pre>johejo 1584965573.127100: YAMLは仕様がアレだし標準ライブラリに取り込まれる日はこなさそう</pre>
+<pre>tsuyoshi_cho 1584965652.127600: yaml2json食わせてから本番、になりそうですよね</pre>
+<pre>raa0121 1585034739.129400: <https://twitter.com/yasei_no_otoko/status/1242341860313464833?s=19|https://twitter.com/yasei_no_otoko/status/1242341860313464833></pre>
+<pre>yutakatay 1585035752.130500: ClearLinuxパッケージ管理独自らしいけどどうなんだろう・・・</pre>
+<pre>yutakatay 1585035814.131300: サーバー用途なんかな？それともデスクトップ用？
+なんかすぐ消えそうだからまったく情報入れてないw</pre>
+<pre>raa0121 1585035882.131700: <https://japan.zdnet.com/article/35137133/>
+Intel製なのか</pre>
+<pre>yutakatay 1585036050.131900: ですよ。だから最適化されれて速いのかと</pre>
+<pre>kuu 1585039968.132700: Xでウィンドウの情報を拾ってくるやつ稀に使うけど、いつも名前を忘れて調べてる(xpropです)</pre>
+<pre>mattn 1585040134.133400: 誰か試して。(他力本願寺)</pre>
+<pre>tyru 1585040289.134100: xev もよく聞くような（使った事はない） &gt;xprop</pre>
+<pre>kuu 1585040318.134600: xevはxmodmapの定義を書いた時にお世話になったなあ、それっきりだ</pre>
+<pre>mattn 1585040353.134900: 昔 X 触ってた人だとだいたい触ってるはず。</pre>
+<pre>mattn 1585040357.135100: editres とかも。</pre>
+<pre>mattn 1585040389.135700: 画面がなつかしすぎるぞ <https://frippery.org/gtk_editres/gcalctool.jpg></pre>
+<pre>mattn 1585040419.136300: 今はもう Xt 使った物殆どないんだろうなぁ。</pre>
+<pre>kuu 1585040421.136400: この妙に太いビットマップフォントよ</pre>
+<pre>mattn 1585040442.136700: Motif (lesstif) とかも。</pre>
+<pre>kuu 1585040475.137400: 古いディストロに遺産がくっついてたので古いXアプリを試したことが少しだけ</pre>
+<pre>dohq 1585040578.138400: archwikiから拾ってきた(筈)のスクリプト使ってます
+(ファイル名のとおりi3でfloating windowのアレ取ってくる為に使ってます)
+<https://github.com/dohq/dotfiles/blob/master/scripts/i3-get-window-criteria.sh></pre>
+<pre>kuu 1585040607.139200: ピンポイントだ(i3用にgvimのclass拾った)</pre>
+<pre>mattn 1585040612.139400: `WM_` から値取れるすべが xprop くらいしか無いですからね。</pre>
+<pre>dohq 1585040667.140000: (出本はi3 faqからだったらしい…)</pre>
+<pre>mattn 1585040692.140300: ```#!/bin/sh
+
+OUT=~/screenshot.jpg
+WID=root
+rm -f $OUT
+
+if [ "x$1" != "x-root" ]; then
+    WID=`xprop -root | grep ^_NET_ACTIVE_WINDOW | awk '{ print $5 }'`
+    [ "x$WID" == "x0x0" ] &amp;&amp; WID=root
+fi
+import -frame -window $WID $OUT```
+昔こんなの使ってた。</pre>
+<pre>yutakatay 1585041919.140900: 最近はsystemd-hwdbとお友達（waylandなんで）</pre>
+<pre>mattn 1585042069.142600: どんどん systemd に置き換えられてくの怖いなぁ。</pre>
+<pre>yutakatay 1585042090.143100: ですね。すべてをのみ込みつつある</pre>
+<pre>yutakatay 1585042142.143700: そしてsystemd関係のツールとかは使うのがいっつもむずい。。。</pre>
+<pre>mattn 1585042253.145100: 息子に Linux なノートPCを1台あげてるんだけど、先日 WiFi つながらなくなって見たら qualcomm のチップの古いのは既にドライバ同梱されてなくて一瞬焦った。</pre>
+<pre>raa0121 1585042266.145300: systemd-vimd</pre>
+<pre>yutakatay 1585042311.145600: 既出ですね
+<https://vim-jp.slack.com/archives/CL6NCDCQG/p1584439565478100></pre>
+<pre>raa0121 1585042333.146000: せやった</pre>
+<pre>yutakatay 1585042394.147200: もういっそkernel, systemd, systemd-i3d, systemd-vimd, systemd-browserdでいい</pre>
+<pre>mattn 1585042410.147700: 藤原豆腐vim</pre>
+<pre>kuu 1585042414.147900: systemdしかないやんけ</pre>
+<pre>mattn 1585042451.149000: コップに入った水をこぼさない様にタイピングする漫画ですよね。</pre>
+<pre>mattn 1585042509.150100: CTRL キーに小指付けながらタイピングする「小指落とし」みたいな技があるんですよね。</pre>
+<pre>kuu 1585042533.150900: コイツ…音もないのになんて速度ッ…</pre>
+<pre>yutakatay 1585042553.151400: HHKBユーザーはAltを指の付け根で押したりしますね。</pre>
+<pre>yutakatay 1585042561.151800: 技名ほしい</pre>
+<pre>mattn 1585042584.152400: <https://cdn-ak.f.st-hatena.com/images/fotolife/f/fuzzhead/20081104/20081104230324.jpg></pre>
+<pre>yutakatay 1585042588.152700: シックスフィンガー（仮）にしよう</pre>
+<pre>mattn 1585042630.153200: 僕はこの位置まで小指が曲げてます。</pre>
+<pre>yutakatay 1585042656.153600: Vimmerなのに小指負傷しちゃいますよw</pre>
+<pre> 1585042915.154000: </pre>
+<pre>mattn 1585042928.154400: やばい</pre>
+<pre>mattn 1585043017.154700: &gt; また、どんなに切っても箸や鉛筆が持てるように利き手の三本指だけは残すとも言われる。</pre>
+<pre>mattn 1585043036.155200: 最高、残り3本までやるの...</pre>
+<pre>johejo 1585044506.155900: 小指なくなった時点でプログラマーは廃業に近いな</pre>
+<pre>thinca 1585044564.156200: 世の中には声だけでプログラミングする人もいるらしい</pre>
+<pre>johejo 1585044699.157500: 脳みそ直結プログラミング時代がくればもう指なんていらないけど...</pre>
+<pre>tyru 1585045473.158000: 足もある</pre>
+<pre>kuu 1585045631.158600: フットペダルでモールス信号を刻んで…</pre>
+<pre>kuu 1585045635.158800: だるい</pre>
+<pre>kuu 1585045697.160200: オルガン奏者は両手両足を同時にコントロールするらしいですが、頭の中が気になる</pre>
+<pre>tyru 1585045840.160600: 同時押しもある。まだまだいける (?) <https://github.com/kana/vim-arpeggio></pre>
+<pre>yutakatay 1585045993.161100: 知らなかったです。便利そう</pre>
+<pre>Nicholas 1585048040.162300: 足鍵、遊びでやったことあるけど感覚的には左手と足は同じ鍵盤数動くんでバラバラに動いてねーです（ﾎﾞｿ</pre>
+<pre>johejo 1585048309.163200: ドラマーならフットペダル活用できそう。</pre>
+<pre>yutakatay 1585049062.164400: フットペダルつけるなら、まず修飾キーがもっとほしい</pre>
+<pre>thinca 1585101333.006400: そう言えば先日相談したスクリプト、node でやるかってやってみたのだけど、途中で実行するコマンドが TUI を起動するせいで、node から実行する方法がわからなくて結局 bash でやったw
+ありすえさんの言ってた `sed -z` で改行を含むテキスト全体を1つの文字列として扱えたのでこれで行頭と行末を消せば期待する動作になった。あと行末に関しては `$(cmd)` でも消せることを知った。 ( `echo $(cmd)` とすると cmd が末尾に複数の空行出していても全部消えて echo の出す改行だけになる)
+最初は itchyny さんが教えてくれた extglob のシェル芸を使おうと思って例のワンライナーを関数にしてみたけど、shellcheck が対応していないのか該当部分でパースエラーを吐いてしまってつらかった…
+色々教えてくれた皆さんありがとうございました！</pre>
+<pre>mattn 1585102174.007200: `$(cmd)` はシェル依存な香りがするw</pre>
+<pre>mattn 1585102206.007900: bash 固定でやるのはぜんぜんいいんだけど、アイデアを他のシェルに持っていくと死ぬ、みたいな。</pre>
+<pre>kuu 1585102225.008300: dashで効いたのでPOSIX互換だと思ってたけど、違うんでしたっけ</pre>
+<pre>mattn 1585102273.008700: POSIX 互換という言葉もあいまいですしねぇ。</pre>
+<pre>kuu 1585102283.009000: :totemoturai:</pre>
+<pre>kuu 1585102316.009800: 個人的にalmquist shellで使えるなら大体どこでもいけるだろうと思ってる</pre>
+<pre>tsuyoshi_cho 1585102324.010100: shで実行してもでも独自機能つかえるシェルはちょっと行儀がよくない...</pre>
+<pre>kuu 1585102337.010500: bashお前な</pre>
+<pre>tsuyoshi_cho 1585102353.010700: ashかあ</pre>
+<pre>tsuyoshi_cho 1585102364.011100: <https://ja.wikipedia.org/wiki/Almquist_Shell></pre>
+<pre>kuu 1585102391.012300: busyboxの組み込みがashなので、これで動けばLinuxであれば大概問題ない</pre>
+<pre>itchyny 1585102419.012500: Bash芸はネタ枠のつもりだった (<https://stackoverflow.com/a/3352015/1363488> だったらshellcheck通りそう)</pre>
+<pre>raa0121 1585102445.013300: cygwin の dll の rebase するのに使った記憶がある… ＞ ash</pre>
+<pre>thinca 1585102464.013600: ちなみにスクリプトの別の箇所で `sed -i` を使ってしまったので BSD 系だと死ぬ</pre>
+<pre>itchyny 1585102484.014000: 最後の空白取るの逆に困ることがあるんだよな…</pre>
+<pre>dohq 1585102534.014700: `No newline at end of file`</pre>
+<pre>dohq 1585102546.015200: 良く見た差分だ…</pre>
+<pre>mattn 1585102554.015600: めっちゃ簡単な方法思いついた。</pre>
+<pre>thinca 1585102557.015800: コマンド置換は `foo $(bar)` みたいに別のコマンドの引数に使うので、末尾の改行は消えていた方が都合が良い場合が多いのだろう</pre>
+<pre>mattn 1585102569.016000: ```$ cat file | grep -A 999999 . | grep -B 999999 .```</pre>
+<pre>mattn 1585102647.017100: 1000000 行、空行がある場合は 9999999 を指定して下さい。 (こういうの thinca さんモヤモヤするの分かって言ってる)</pre>
+<pre>thinca 1585102653.017200: 末尾改行は消えなさそう</pre>
+<pre>thinca 1585102668.017500: $() と組み合わせる必要がある</pre>
+<pre>mattn 1585102678.017700: trim が必要という事ですかね。</pre>
+<pre>thinca 1585102711.018300: 元々の要件が改行も含めて末尾空白を消すことだったので</pre>
+<pre>raa0121 1585102723.018500: ````cmd````
+だと、どこでも動く…？</pre>
+<pre>kuu 1585102802.018800: shellcheckに怒られるやつだ</pre>
+<pre>kuu 1585102854.019500: 昔$()打つのだるくてそのスタイルで書いてたけどshellcheckがうるさいので書き直した</pre>
+<pre>itchyny 1585102908.020100: nestできない</pre>
+<pre>raa0121 1585102919.020400: 私も普段遣いは $()  ですけど、ash では動かないんじゃないですかね</pre>
+<pre>raa0121 1585102971.021400: あ、動いた</pre>
+<pre>kuu 1585103013.022600: bashでしか効かないのはリダイレクト置換</pre>
+<pre>raa0121 1585103054.023500: `diff -u hoge &lt;(ssh huga cat hoge)` が便利で割とよく使います…</pre>
+<pre>kuu 1585103065.023700: プロセス置換か</pre>
+<pre>mattn 1585103100.024500: `$(cmd)` ってたぶん引数展開してるんだと思うんですが、そうすると空白2個が空白1個に置き換えられたりしません？</pre>
+<pre>mattn 1585103120.024900: ```$ echo $(echo '  foo  bar  ')
+foo bar```</pre>
+<pre>mattn 1585103233.025900: たぶん sed でちゃんとやらんとあかんかも。</pre>
+<pre>mattn 1585103391.026100: ```cat foo | grep -A 999999 . | grep -B 999999 . | sed '1s/^\s*//' | sed '$s/\s*$//'```</pre>
+<pre>itchyny 1585103482.026400: (だから結局sedになったということでは)</pre>
+<pre>mattn 1585103595.026600: &gt; ( echo $(cmd) とすると cmd が末尾に複数の空行出していても全部消えて echo の出す改行だけになる)</pre>
+<pre>mattn 1585103601.026800: あ、ここがそういう意味だったのか。</pre>
+<pre>mattn 1585103902.027100: こんなコマンドあってもよさそうなのにね。</pre>
+<pre>mattn 1585104063.027500: 言っても多分僕だと perl 使ってしまう。</pre>
+<pre>mattn 1585104406.027700: ```$ cat foo | perl -0777 -e 'my $x = &lt;&gt;; $x =~ s!^\s*(.*?)\s*$!$1!s; print $x'```</pre>
+<pre>mattn 1585104454.028000: chain できる分 ruby は気持ちよさがある。</pre>
+<pre>mattn 1585104469.028200: ちょっと麻薬ぽいけどね。</pre>
+<pre>yutakatay 1585104502.028900: あいつrubyキメてやがる</pre>
+<pre>mattn 1585104523.029300: 一度 ruby 触ると変数使ったら死ぬ病気になる。</pre>
+<pre>itchyny 1585104690.029600: `perl -0777 -pe 's/^\s+|\s+$//g'`</pre>
+<pre>mattn 1585104718.029800: あー、たしかに</pre>
+<pre>mattn 1585104745.030000: 最短ぽい</pre>
+<pre>tsuyoshi_cho 1585104768.030500: ンモー、すぐにゴルフしようとするんだからw</pre>
+<pre>tyru 1585105184.030900: vim だけで末尾改行取る場合ってどうするんでしたっけ</pre>
+<pre>tyru 1585105206.031400: fixendofline, endofline, binary の組み合わせが全くわからん…</pre>
+<pre>thinca 1585106654.032200: `"$(cmd)"` すれば空白維持されます</pre>
+<pre>mattn 1585106919.032600: そうすると期待してる前後の空白が取れなくなってしまいませんか？</pre>
+<pre>tyru 1585108206.033200: perl -e 'seek ARGV,-1,2; truncate $ARGV[0],(-s $ARGV[0])-1 if read(ARGV,$c,1)=="\n"' /path/to/file  # 末尾改行のみ消すやつ</pre>
+<pre>thinca 1585113157.034000: cmd が前の空白を消してくれればよいので…
+`"$(cmd | sed -ze 's/^\s\+//')"`</pre>
+<pre>u 1585116949.034300: これのことですね &gt; 声
+<https://ngg223.tumblr.com/post/23417466887/ujihisa-emacs%E4%BD%BF%E3%81%84%E3%81%AE%E3%81%86%E3%81%A1%E4%B8%80%E4%BA%BA%E3%81%8C-ujihisa-%E6%9C%AC%E5%BD%93%E3%81%AB%E3%81%99%E3%81%94%E3%81%8B%E3%81%A3%E3%81%9F/amp></pre>
+<pre>tyru 1585121266.034800: （はい、完全にお題を無視しました）</pre>
+{% endraw %}

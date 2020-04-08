@@ -1,0 +1,677 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #update - 2020年03月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>Recent Commits to vim:master 1583690303.015200: <https://github.com/vim/vim/commit/693e80e93897aff3b07a1ef12b68a6527702f3d7|patch 8.2.0364: printf test failing on Haiku>
+patch 8.2.0364: printf test failing on Haiku
+
+Problem:    Printf test failing on Haiku.
+Solution:   Make a difference between int and short. (Dominique Pelle,
+            closes #5749)</pre>
+<pre>Recent Commits to vim:master 1583738303.015700: <https://github.com/vim/vim/commit/283e5f4e69b204e0eafd408548e69b7ca9b4871b|patch 8.2.0365: tag kind can't be a multi-byte character>
+patch 8.2.0365: tag kind can't be a multi-byte character
+
+Problem:    Tag kind can't be a multi-byte character. (Marcin Szamotulski)
+Solution:   Recognize multi-byte character. (closes #5724)</pre>
+<pre>Recent Commits to vim:master 1583752701.015900: <https://github.com/vim/vim/commit/2e09634a7880f55a61cb6b959dd89c51972866af|patch 8.2.0366: hardcopy command not tested enough>
+patch 8.2.0366: hardcopy command not tested enough
+
+Problem:    Hardcopy command not tested enough.
+Solution:   Add tests for printing. (Dominique Pelle, closes #5748)</pre>
+<pre>Recent Commits to vim:master 1583769512.016100: <https://github.com/vim/vim/commit/3a2505cc183b3c5f4852ae8a945172582fbc650f|patch 8.2.0367: can use :pedit in a popup window>
+patch 8.2.0367: can use :pedit in a popup window
+
+Problem:    Can use :pedit in a popup window.
+Solution:   Disallow it.</pre>
+<pre>Recent Commits to vim:master 1583779111.016300: <https://github.com/vim/vim/commit/5269bd2a724fdb8c16c9635ef744a670f1bc8bd5|patch 8.2.0368: Vim9: import that redefines local variable does not fail>
+patch 8.2.0368: Vim9: import that redefines local variable does not fail
+
+Problem:    Vim9: import that redefines local variable does not fail.
+Solution:   Check for already defined symbols.</pre>
+<pre>Recent Commits to vim:master 1583823498.016500: <https://github.com/vim/vim/commit/1671f4488105ee12a6a8558ae351436c26ab55fc|patch 8.2.0369: various Normal mode commands not fully tested>
+patch 8.2.0369: various Normal mode commands not fully tested
+
+Problem:    Various Normal mode commands not fully tested.
+Solution:   Add more tests. (Yegappan Lakshmanan, closes #5751)</pre>
+<pre>Recent Commits to vim:master 1583929101.016700: <https://github.com/vim/vim/commit/e49b4bb89505fad28cf89f0891aef3e2d397919e|patch 8.2.0370: the typebuf_was_filled flag is sometimes not reset>
+patch 8.2.0370: the typebuf_was_filled flag is sometimes not reset
+
+Problem:    The typebuf_was_filled flag is sometimes not reset, which may
+            cause a hang.
+Solution:   Make sure typebuf_was_filled is reset when the typeahead buffer is
+            empty.</pre>
+<pre>Recent Commits to vim:master 1583933907.016900: <https://github.com/vim/vim/commit/cee52204ca030ce7814844e4dab8b4ed897ba3cc|patch 8.2.0371: crash with combination of terminal popup and autocmd>
+patch 8.2.0371: crash with combination of terminal popup and autocmd
+
+Problem:    Crash with combination of terminal popup and autocmd.
+Solution:   Disallow closing a popup that is the current window.  Add a check
+            that the current buffer is valid. (closes #5754)</pre>
+<pre>Recent Commits to vim:master 1583950709.017100: <https://github.com/vim/vim/commit/66b98854d86f641db036fd1e6cf20f7b8905344e|patch 8.2.0372: prop_find() may not find text property at start of th…>
+patch 8.2.0372: prop_find() may not find text property at start of the line
+
+Problem:    Prop_find() may not find text property at start of the line.
+Solution:   Adjust the loop to find properties. (Axel Forsman, closes #5761,
+            closes #5663)</pre>
+<pre>Recent Commits to vim:master 1583951911.017300: <https://github.com/vim/vim/commit/3a05ce63feae040cd817be289e84c2a7e653d59d|patch 8.2.0373: type of term_sendkeys() is unknown>
+patch 8.2.0373: type of term_sendkeys() is unknown
+
+Problem:    Type of term_sendkeys() is unknown.
+Solution:   Just return zero. (closes #5762)</pre>
+<pre>Recent Commits to vim:master 1584037107.017500: <https://github.com/vim/vim/commit/8a677a37d03692db274c8b00cb20dbba9604505e|patch 8.2.0374: using wrong printf directive for jump location>
+patch 8.2.0374: using wrong printf directive for jump location
+
+Problem:    Using wrong printf directive for jump location.
+Solution:   Change "%lld" to "%d". (James McCoy, closes #5773)</pre>
+<pre>Recent Commits to vim:master 1584106705.017700: <https://github.com/vim/vim/commit/8210693795d6d0d51bf5b70674d4539cdde0330b|patch 8.2.0375: Coverity warning for not using return value>
+patch 8.2.0375: Coverity warning for not using return value
+
+Problem:    Coverity warning for not using return value.
+Solution:   Move error message to separate function.</pre>
+<pre>Recent Commits to vim:master 1584107907.017900: <https://github.com/vim/vim/commit/fa5d8a191d0f2deacffebf62dced5c2198cc0880|patch 8.2.0376: nasty callback test fails on some systems>
+patch 8.2.0376: nasty callback test fails on some systems
+
+Problem:    Nasty callback test fails on some systems.
+Solution:   Increase the sleep time.</pre>
+<pre>Recent Commits to vim:master 1584111510.018100: <https://github.com/vim/vim/commit/d47e6f0b4cc82e3ccdc4605bb1811861a5b2d115|patch 8.2.0377: no CI test for a big-endian system>
+patch 8.2.0377: no CI test for a big-endian system
+
+Problem:    No CI test for a big-endian system.
+Solution:   Test with s390x. (James McCoy, closes #5772)</pre>
+<pre>Recent Commits to vim:master 1584131915.018300: <https://github.com/vim/vim/commit/346f18e5fe12e6aaba5a6a18f6d0deb55eb7a9e8|patch 8.2.0378: prop_find() does not find all props>
+patch 8.2.0378: prop_find() does not find all props
+
+Problem:    prop_find() does not find all props.
+Solution:   Check being in the start line. (Axel Forsman, closes #5776)</pre>
+<pre>Recent Commits to vim:master 1584169099.018500: <https://github.com/vim/vim/commit/965fd8d4dc5e84f612d8fc1efeaa78bd17842c9b|patch 8.2.0379: gcc warns for ambiguous else>
+patch 8.2.0379: gcc warns for ambiguous else
+
+Problem:    Gcc warns for ambiguous else.
+Solution:   Add braces. (Dominique Pelle, closes #5778)</pre>
+<pre>Recent Commits to vim:master 1584171501.018700: <https://github.com/vim/vim/commit/b17893aa940dc7d45421f875f5d90855880aad27|Update runtime files>
+Update runtime files</pre>
+<pre>Recent Commits to vim:master 1584196702.018900: <https://github.com/vim/vim/commit/193982650960f8411df51f3b3b0d44a75e1ac034|patch 8.2.0380: tiny popup when creating a terminal popup without min…>
+patch 8.2.0380: tiny popup when creating a terminal popup without minwidth
+
+Problem:    Tiny popup when creating a terminal popup without minwidth.
+Solution:   Use a default mininum size of 5 lines of 20 characters.</pre>
+<pre>Recent Commits to vim:master 1584203908.019100: <https://github.com/vim/vim/commit/2573af3519ad062ddad647b97e32090f106f2ac1|patch 8.2.0381: using freed memory with :lvimgrep and autocommand>
+patch 8.2.0381: using freed memory with :lvimgrep and autocommand
+
+Problem:    Using freed memory with :lvimgrep and autocommand. (extracted from
+            POC by Dominique Pelle)
+Solution:   Avoid deleting a dummy buffer used in a window. (closes #5777)</pre>
+<pre>Recent Commits to vim:master 1584279502.019300: <https://github.com/vim/vim/commit/353c351bd22e4dac4c3ae9cd7731032348f248c4|patch 8.2.0382: some tests fail when run under valgrind>
+patch 8.2.0382: some tests fail when run under valgrind
+
+Problem:    Some tests fail when run under valgrind.
+Solution:   Increase timeouts.</pre>
+<pre>Recent Commits to vim:master 1584280701.019500: <https://github.com/vim/vim/commit/4f32f9c90e5710627467d74b415b3dc46fcc593a|patch 8.2.0383: wrong feature check causes test not to be run>
+patch 8.2.0383: wrong feature check causes test not to be run
+
+Problem:    Wrong feature check causes test not to be run.
+Solution:   Use CheckFunction instead of CheckFeature. (Ozaki Kiichi,
+            closes #5781)</pre>
+<pre>Recent Commits to vim:master 1584281903.019700: <https://github.com/vim/vim/commit/5e4d1eba9579ea6b876ad699d77742e657505d35|patch 8.2.0384: Travis CI has warnings>
+patch 8.2.0384: Travis CI has warnings
+
+Problem:    Travis CI has warnings.
+Solution:   Avoid warnings, clean up the config. (Ozaki Kiichi, closes #5779)</pre>
+<pre>Recent Commits to vim:master 1584285503.019900: <https://github.com/vim/vim/commit/0eabd4dc8ff50658f0ea0e92c7918a42242f6b80|patch 8.2.0385: menu functionality insufficiently tested>
+patch 8.2.0385: menu functionality insufficiently tested
+
+Problem:    Menu functionality insufficiently tested.
+Solution:   Add tests.  Add menu_info(). (Yegappan Lakshmanan, closes #5760)</pre>
+<pre>Recent Commits to vim:master 1584287904.020100: <https://github.com/vim/vim/commit/0bdbc10e8a74e7dd447cd975fb1445bbdcbb4f37|patch 8.2.0386: part from unfinished patch got included>
+patch 8.2.0386: part from unfinished patch got included
+
+Problem:    Part from unfinished patch got included.
+Solution:   Undo that part.</pre>
+<pre>Recent Commits to vim:master 1584292708.020300: <https://github.com/vim/vim/commit/bb65a5690c24ccfce37e210316bf1d0964c91359|patch 8.2.0387: error for possible NULL argument to qsort()>
+patch 8.2.0387: error for possible NULL argument to qsort()
+
+Problem:    Error for possible NULL argument to qsort().
+Solution:   Don't call qsort() when there is nothing to sort. (Dominique
+            Pelle, closes #5780)</pre>
+<pre>Recent Commits to vim:master 1584293904.020500: <https://github.com/vim/vim/commit/833805a4867cf5f93b3ef91227d1f1a98f553dff|patch 8.2.0388: printmbcharset option not tested>
+patch 8.2.0388: printmbcharset option not tested
+
+Problem:    Printmbcharset option not tested.
+Solution:   Add a test.  Enable PostScript for AppVeyor build. (Dominique
+            Pelle, closes #5783)</pre>
+<pre>Recent Commits to vim:master 1584296305.020700: <https://github.com/vim/vim/commit/e4fc746d13f5b6a0b5c3a8efdff7de1454c3297d|patch 8.2.0389: delayed redraw when shifting text from Insert mode>
+patch 8.2.0389: delayed redraw when shifting text from Insert mode
+
+Problem:    Delayed redraw when shifting text from Insert mode.
+Solution:   Use msg_attr_keep() instead of msg(). (closes #5782)</pre>
+<pre>Recent Commits to vim:master 1584301105.020900: <https://github.com/vim/vim/commit/ddbfe238a50dc846f2f722e9d870fc0dff5a2764|patch 8.2.0390: terminal postponed scrollback test is flaky>
+patch 8.2.0390: terminal postponed scrollback test is flaky
+
+Problem:    Terminal postponed scrollback test is flaky.
+Solution:   Add delay in between sending keys.  Rename dump files.</pre>
+<pre>Recent Commits to vim:master 1584357505.021100: <https://github.com/vim/vim/commit/b2e1f8a28fab71c7ef38d39226967be8c3559590|patch 8.2.0391: CI test coverage dropped>
+patch 8.2.0391: CI test coverage dropped
+
+Problem:    CI test coverage dropped.
+Solution:   Set $DISPLAY also for non-GUI builds. (James McCoy, closes #5788)</pre>
+<pre>Recent Commits to vim:master 1584386313.021300: <https://github.com/vim/vim/commit/56cb3378727783da2d246b9c5091784821666cfa|patch 8.2.0392: Coverity warns for using array index out of range>
+patch 8.2.0392: Coverity warns for using array index out of range
+
+Problem:    Coverity warns for using array index out of range.
+Solution:   Add extra "if" to avoid warning.</pre>
+<pre>Recent Commits to vim:master 1584386313.021400: <https://github.com/vim/vim/commit/c0300633292ee648c7154a7828eb1c76637bd9af|patch 8.2.0393: Coverity warns for not using return value>
+patch 8.2.0393: Coverity warns for not using return value
+
+Problem:    Coverity warns for not using return value.
+Solution:   Add (void).</pre>
+<pre>Recent Commits to vim:master 1584387511.021700: <https://github.com/vim/vim/commit/7f009dfa064240d9024b76212535a35231912511|patch 8.2.0394: Coverity complains about using NULL pointer>
+patch 8.2.0394: Coverity complains about using NULL pointer
+
+Problem:    Coverity complains about using NULL pointer.
+Solution:   Use empty string when option value is NULL.</pre>
+<pre>Recent Commits to vim:master 1584389910.021900: <https://github.com/vim/vim/commit/a2cbdea9685f9592ee22bda7b58953d2bbaa4c47|patch 8.2.0395: build fails with FEAT_EVAL but without FEAT_MENU>
+patch 8.2.0395: build fails with FEAT_EVAL but without FEAT_MENU
+
+Problem:    Build fails with FEAT_EVAL but without FEAT_MENU.
+Solution:   Add #ifdef. (John Marriott)</pre>
+<pre>Recent Commits to vim:master 1584391115.022100: <https://github.com/vim/vim/commit/24ebd83e030e1c6f9a6be1f06232756ba4d00a8c|patch 8.2.0396: cmdexpand.c insufficiently tested>
+patch 8.2.0396: cmdexpand.c insufficiently tested
+
+Problem:    Cmdexpand.c insufficiently tested.
+Solution:   Add more tests. (Yegappan Lakshmanan, closes #5789)</pre>
+<pre>Recent Commits to vim:master 1584393511.022300: <https://github.com/vim/vim/commit/5715b3147bfc8ddfe905339f6fd224fd3a5a3ba1|patch 8.2.0397: delayed screen update when using undo from Insert mode>
+patch 8.2.0397: delayed screen update when using undo from Insert mode
+
+Problem:    Delayed screen update when using undo from Insert mode.
+Solution:   Update w_topline and cursor shape before sleeping. (closes #5790)</pre>
+<pre>Recent Commits to vim:master 1584475114.022500: <https://github.com/vim/vim/commit/a21df1db3ca619afdcb47931af042508a6bbc8e5|patch 8.2.0398: profile test fails when two functions take same time>
+patch 8.2.0398: profile test fails when two functions take same time
+
+Problem:    Profile test fails when two functions take same time.
+Solution:   Add a short sleep in once function. (closes #5797)</pre>
+<pre>Recent Commits to vim:master 1584542313.022700: <https://github.com/vim/vim/commit/292b90d4fa11022661f449dd3efb73d5ac737313|patch 8.2.0399: various memory leaks>
+patch 8.2.0399: various memory leaks
+
+Problem:    Various memory leaks.
+Solution:   Avoid the leaks. (Ozaki Kiichi, closes #5803)</pre>
+<pre>Recent Commits to vim:master 1584555515.023000: <https://github.com/vim/vim/commit/3cdcb090a664e182078f7cc0ca3e4e5a94bbb784|patch 8.2.0400: not all tests using a terminal are in the list of fla…>
+patch 8.2.0400: not all tests using a terminal are in the list of flaky tests
+
+Problem:    Not all tests using a terminal are in the list of flaky tests.
+Solution:   Introduce the test_is_flaky flag.</pre>
+<pre>Recent Commits to vim:master 1584556712.023200: <https://github.com/vim/vim/commit/8dfcce3a78ccb520cc9d09081f998091494c50bf|patch 8.2.0401: not enough test coverage for evalvars.c>
+patch 8.2.0401: not enough test coverage for evalvars.c
+
+Problem:    Not enough test coverage for evalvars.c.
+Solution:   Add more tests. (Yegappan Lakshmanan, closes #5804)</pre>
+<pre>Recent Commits to vim:master 1584562713.023400: <https://github.com/vim/vim/commit/30d53e2c11e670845830bdfc29bf8c1615df61a8|patch 8.2.0402: setting local instead of global flag>
+patch 8.2.0402: setting local instead of global flag
+
+Problem:    Setting local instead of global flag.
+Solution:   Prepend "g:" to "test_is_flaky".</pre>
+<pre>Recent Commits to vim:master 1584619108.023600: <https://github.com/vim/vim/commit/a3a9c8ef697bbf6f640cde99710b6f534f29f77d|patch 8.2.0403: when 'buftype' is "nofile" there is no overwrite check>
+patch 8.2.0403: when 'buftype' is "nofile" there is no overwrite check
+
+Problem:    When 'buftype' is "nofile" there is no overwrite check.
+Solution:   Also check for existing file when 'buftype' is set.
+            (closes #5807)</pre>
+<pre>Recent Commits to vim:master 1584620905.023800: <https://github.com/vim/vim/commit/18a2b87ca27c378a555b20f14a284d2ce3511427|patch 8.2.0404: writefile() error does not give a hint>
+patch 8.2.0404: writefile() error does not give a hint
+
+Problem:    Writefile() error does not give a hint.
+Solution:   Add remark about first argument.</pre>
+<pre>Recent Commits to vim:master 1584621509.024100: <https://github.com/vim/vim/commit/3fa5e1326290e181215f805db17793f42cf73079|patch 8.2.0405: MSVC: build fails with some combination of features>
+patch 8.2.0405: MSVC: build fails with some combination of features
+
+Problem:    MSVC: build fails with some combination of features.
+Solution:   Enable CHANNEL if TERMINAL is enabled. (Mike Williams)</pre>
+<pre>Recent Commits to vim:master 1584622711.024300: <https://github.com/vim/vim/commit/e32848780cc07c368ba2e088cdefdbb8c3b827c2|patch 8.2.0406: FileReadCmd event not well tested>
+patch 8.2.0406: FileReadCmd event not well tested
+
+Problem:    FileReadCmd event not well tested.
+Solution:   Add a test.</pre>
+<pre>Recent Commits to vim:master 1584625112.024500: <https://github.com/vim/vim/commit/2d10cd478047df8ba144d4b0fcc46480993af57f|patch 8.2.0407: no early check if :find and :sfind have an argument>
+patch 8.2.0407: no early check if :find and :sfind have an argument
+
+Problem:    No early check if :find and :sfind have an argument.
+Solution:   Add EX_NEEDARG.</pre>
+<pre>Recent Commits to vim:master 1584626309.024700: <https://github.com/vim/vim/commit/22da5596d00222c889b548daa2df5a289583a5fb|patch 8.2.0408: delete() commented out for testing>
+patch 8.2.0408: delete() commented out for testing
+
+Problem:    Delete() commented out for testing.
+Solution:   Undo commenting-out.</pre>
+<pre>Recent Commits to vim:master 1584627515.024900: <https://github.com/vim/vim/commit/b68df220c5278365792b8f94d8d6f34d329b7746|patch 8.2.0409: search test leaves file behind>
+patch 8.2.0409: search test leaves file behind
+
+Problem:    Search test leaves file behind.
+Solution:   Delete the file.  Also use Check commands.</pre>
+<pre>Recent Commits to vim:master 1584632316.025100: <https://github.com/vim/vim/commit/3696839ef1165804159e28f50cb6113acc3d519d|patch 8.2.0410: channel test fails too often on slow Mac>
+patch 8.2.0410: channel test fails too often on slow Mac
+
+Problem:    Channel test fails too often on slow Mac.
+Solution:   Increase waiting time to 10 seconds.</pre>
+<pre>Recent Commits to vim:master 1584632316.025200: <https://github.com/vim/vim/commit/24e9b6fe4b5d09bcced1318c6c1b92d807e96ac7|patch 8.2.0411: Mac: breakcheck is using a value from the stone ages>
+patch 8.2.0411: Mac: breakcheck is using a value from the stone ages
+
+Problem:    Mac: breakcheck is using a value from the stone ages.
+Solution:   Delete BREAKCHECK_SKIP from the Mac header file. (Ben Jackson)</pre>
+<pre>Recent Commits to vim:master 1584634712.025500: <https://github.com/vim/vim/commit/37f471df6ee422beb4d08ee4ccda35f8279e3bb7|patch 8.2.0412: MS-Windows: cannot use vimtutor from the start menu>
+patch 8.2.0412: MS-Windows: cannot use vimtutor from the start menu
+
+Problem:    MS-Windows: cannot use vimtutor from the start menu.
+Solution:   Better check for writable directory. Use the right path for the
+            executable. (Wu Yongwei, closes #5774, closes #5756)</pre>
+<pre>Recent Commits to vim:master 1584640718.025700: <https://github.com/vim/vim/commit/5e94a29ebbde10dd973d58f1adba9a2fc83877d1|patch 8.2.0413: buffer menu does not handle special buffers properly>
+patch 8.2.0413: buffer menu does not handle special buffers properly
+
+Problem:    Buffer menu does not handle special buffers properly.
+Solution:   Keep a dictionary with buffer names to reliably keep track of
+            entries.
+            Also trigger BufFilePre and BufFilePost for command-line and
+            terminal buffers when the name changes.</pre>
+<pre>Recent Commits to vim:master 1584644314.025900: <https://github.com/vim/vim/commit/373a876d0cac5f8aff352e8ca42fdac88a1a7c3b|patch 8.2.0414: channel connect_waittime() test is flaky>
+patch 8.2.0414: channel connect_waittime() test is flaky
+
+Problem:    Channel connect_waittime() test is flaky.
+Solution:   Set the test_is_flaky flag.  Use test_is_flaky for more tests.</pre>
+<pre>Recent Commits to vim:master 1584646713.026100: <https://github.com/vim/vim/commit/40d235e7305ce6ff696e8301c62a41f1f07f8aca|patch 8.2.0415: bsdl filetype is not detected>
+patch 8.2.0415: bsdl filetype is not detected
+
+Problem:    Bsdl filetype is not detected.
+Solution:   Add an entry in the filetype list. (Daniel Kho, closes #5810)</pre>
+<pre>Recent Commits to vim:master 1584646713.026200: <https://github.com/vim/vim/commit/95e59a355bea9d6234fead07d855880e822a8eaf|patch 8.2.0416: test leaves file behind>
+patch 8.2.0416: test leaves file behind
+
+Problem:    Test leaves file behind.
+Solution:   Delete the file.</pre>
+<pre>Recent Commits to vim:master 1584646713.026300: <https://github.com/vim/vim/commit/ff78155aa1755aced96a3b343e81939c94aac721|Update runtime files>
+Update runtime files</pre>
+<pre>Recent Commits to vim:master 1584724711.026700: <https://github.com/vim/vim/commit/98be7fecac80b30c5a323b67903eb1d0094007ea|patch 8.2.0417: Travis CI config can be improved>
+patch 8.2.0417: Travis CI config can be improved
+
+Problem:    Travis CI config can be improved.
+Solution:   Remove COVERAGE variable. Add load-snd-dummy script. add "-i NONE"
+            to avoid messages about viminfo. (Ozaki Kiichi, closes #5813)</pre>
+<pre>Recent Commits to vim:master 1584725918.026900: <https://github.com/vim/vim/commit/8b633135106dda8605463b780573c45b00c22afe|patch 8.2.0418: code in eval.c not sufficiently covered by tests>
+patch 8.2.0418: code in eval.c not sufficiently covered by tests
+
+Problem:    Code in eval.c not sufficiently covered by tests.
+Solution:   Add more tests. (Yegappan Lakshmanan, closes #5815)</pre>
+<pre>Recent Commits to vim:master 1584727116.027100: <https://github.com/vim/vim/commit/20431c9dbb592ebe0666bf042af7d2b373107372|patch 8.2.0419: various memory leaks in Vim9 script code>
+patch 8.2.0419: various memory leaks in Vim9 script code
+
+Problem:    Various memory leaks in Vim9 script code.
+Solution:   Fix the leaks. (Ozaki Kiichi, closes #5814)</pre>
+<pre>Recent Commits to vim:master 1584729516.027300: <https://github.com/vim/vim/commit/f1ec378b014efb9897422c40369a6462163a512a|patch 8.2.0420: Vim9: cannot interrupt a loop with CTRL-C>
+patch 8.2.0420: Vim9: cannot interrupt a loop with CTRL-C
+
+Problem:    Vim9: cannot interrupt a loop with CTRL-C.
+Solution:   Check for CTRL-C once in a while.  Doesn't fully work yet.</pre>
+<pre>Recent Commits to vim:master 1584734312.027500: <https://github.com/vim/vim/commit/9645e2d9fc8a591f1db30383caccf71d40e0810c|patch 8.2.0421: interrupting with CTRL-C does not always work>
+patch 8.2.0421: interrupting with CTRL-C does not always work
+
+Problem:    Interrupting with CTRL-C does not always work.
+Solution:   Recognize CTRL-C while modifyOtherKeys is set.</pre>
+<pre>Recent Commits to vim:master 1584735522.027700: <https://github.com/vim/vim/commit/0f1563ffee4397f5b379517c41b7c9a977fd2e22|patch 8.2.0422: crash when passing popup window to win_splitmove()>
+patch 8.2.0422: crash when passing popup window to win_splitmove()
+
+Problem:    Crash when passing popup window to win_splitmove(). (john Devin)
+Solution:   Disallow moving a popup window. (closes #5816)</pre>
+<pre>Recent Commits to vim:master 1584800312.027900: <https://github.com/vim/vim/commit/ce436de5a9b94886baf023b3d22193cc68d0e9d1|patch 8.2.0423: in some environments a few tests are expected to fail>
+patch 8.2.0423: in some environments a few tests are expected to fail
+
+Problem:    In some environments a few tests are expected to fail.
+Solution:   Add $TEST_MAY_FAIL to list tests that should not cause make to
+            fail.</pre>
+<pre>Recent Commits to vim:master 1584882504.028100: <https://github.com/vim/vim/commit/97acfc781bdb7fa2838dc6e0e7f9952ea61bb2fd|patch 8.2.0424: checking for wrong return value>
+patch 8.2.0424: checking for wrong return value
+
+Problem:    Checking for wrong return value. (Tom)
+Solution:   Invert the check and fix the test.</pre>
+<pre>Recent Commits to vim:master 1584883105.028300: <https://github.com/vim/vim/commit/515545e11f523d14343b1e588dc0b9bd3d362bc2|patch 8.2.0425: code for modeless selection not sufficiently tested>
+patch 8.2.0425: code for modeless selection not sufficiently tested
+
+Problem:    Code for modeless selection not sufficiently tested.
+Solution:   Add tests.  Move mouse code functionality to a common script file.
+            (Yegappan Lakshmanan, closes #5821)</pre>
+<pre>Recent Commits to vim:master 1584885505.028500: <https://github.com/vim/vim/commit/9b9be007e7d674f49fc2b650f840d08532b180ad|patch 8.2.0426: some errors were not tested for>
+patch 8.2.0426: some errors were not tested for
+
+Problem:    Some errors were not tested for.
+Solution:   Add tests. (Dominique Pelle, closes #5824)</pre>
+<pre>Recent Commits to vim:master 1584890305.028700: <https://github.com/vim/vim/commit/7929651e05b081fe55e0e745725a7ad78c51be16|patch 8.2.0427: it is not possible to check for a typo in a feature name>
+patch 8.2.0427: it is not possible to check for a typo in a feature name
+
+Problem:    It is not possible to check for a typo in a feature name.
+Solution:   Add an extra argument to has().</pre>
+<pre>Recent Commits to vim:master 1584902311.028900: <https://github.com/vim/vim/commit/d5bc32df207eae408263ae6ab737771365d0bca1|patch 8.2.0428: buffer name may leak>
+patch 8.2.0428: buffer name may leak
+
+Problem:    Buffer name may leak.
+Solution:   Free the buffer name before overwriting it.</pre>
+<pre>Recent Commits to vim:master 1584904711.029100: <https://github.com/vim/vim/commit/c5a8fdc42dbd304598b2d73db754c7b97665b182|patch 8.2.0429: no warning when test checks for option that never exists>
+patch 8.2.0429: no warning when test checks for option that never exists
+
+Problem:    No warning when test checks for option that never exists.
+Solution:   In tests check that the option can exist.</pre>
+<pre>Recent Commits to vim:master 1584909512.029300: <https://github.com/vim/vim/commit/5080b0a0470511bae6176a704d4591d1caba0d07|patch 8.2.0430: window creation failure not properly tested>
+patch 8.2.0430: window creation failure not properly tested
+
+Problem:    Window creation failure not properly tested.
+Solution:   Improve the test. (Yegappan Lakshmanan, closes #5826)</pre>
+<pre>Recent Commits to vim:master 1584987512.029500: <https://github.com/vim/vim/commit/56ba21a156c723d92a1929e2c500be7295efb0a8|patch 8.2.0431: some compilers don't support using \e for Esc>
+patch 8.2.0431: some compilers don't support using \e for Esc
+
+Problem:    Some compilers don't support using \e for Esc. (Yegappan
+            Lakshmanan)
+Solution:   use \033 instead.</pre>
+<pre>Recent Commits to vim:master 1584988712.029700: <https://github.com/vim/vim/commit/ab505b1a4868b3e21356f95a275537551700c955|patch 8.2.0432: a few tests fail in a huge terminal>
+patch 8.2.0432: a few tests fail in a huge terminal
+
+Problem:    A few tests fail in a huge terminal.
+Solution:   Make the tests pass. (Dominique Pelle, closes #5829)</pre>
+<pre>Recent Commits to vim:master 1584993513.029900: <https://github.com/vim/vim/commit/bad8804cdd739a5a7321b8411ad7fd4f45741b54|patch 8.2.0433: INT signal not properly tested>
+patch 8.2.0433: INT signal not properly tested
+
+Problem:    INT signal not properly tested.
+Solution:   Add a test.  Also clean up some unnecessary lines. (Dominique
+            Pelle, closes #5828)</pre>
+<pre>Recent Commits to vim:master 1584997109.030100: <https://github.com/vim/vim/commit/a8bd3496380ceb32e544dfe39cb4d52e4943068c|patch 8.2.0434: MS-Windows with VTP: Normal color not working>
+patch 8.2.0434: MS-Windows with VTP: Normal color not working
+
+Problem:    MS-Windows with VTP: Normal color not working.
+Solution:   After changing the Normal color update the VTP console color.
+            (Nobuhiro Takasaki, closes #5836)</pre>
+<pre>Recent Commits to vim:master 1584998914.030300: <https://github.com/vim/vim/commit/dbbb0ef729e392e313ccc63c247bff1b828a214d|patch 8.2.0435: channel contents might be freed twice>
+patch 8.2.0435: channel contents might be freed twice
+
+Problem:    Channel contents might be freed twice.
+Solution:   Call either channel_free_channel() or channel_free(), not both.
+            (Nobuhiro Takasaki, closes #5835)</pre>
+<pre>Recent Commits to vim:master 1584998914.030400: <https://github.com/vim/vim/commit/db99f9f29a248b84742b6779c3343123f72065e7|patch 8.2.0436: no warnings for incorrect printf arguments>
+patch 8.2.0436: no warnings for incorrect printf arguments
+
+Problem:    No warnings for incorrect printf arguments.
+Solution:   Fix attribute in declaration.  Fix uncovered mistakes. (Dominique
+            Pelle, closes #5834)</pre>
+<pre>Recent Commits to vim:master 1584998914.030500: <https://github.com/vim/vim/commit/0df541963d406edd69d3ebe8de3912eb87b05414|patch 8.2.0437: MS-Windows installer contains old stuff>
+patch 8.2.0437: MS-Windows installer contains old stuff
+
+Problem:    MS-Windows installer contains old stuff.
+Solution:   Rely on Windows NT. (Ken Takata, closes #5832)</pre>
+<pre>Recent Commits to vim:master 1585001306.030900: <https://github.com/vim/vim/commit/d7b7770f11c16cfac707b5048c61e722dcc903a6|patch 8.2.0438: terminal noblock test is very flaky on BSD>
+patch 8.2.0438: terminal noblock test is very flaky on BSD
+
+Problem:    Terminal noblock test is very flaky on BSD.
+Solution:   Change WaitFor() to WaitForAssert() to be able to see why it
+            failed.  Add a short wait in between sending keys.</pre>
+<pre>Recent Commits to vim:master 1585001306.031000: <https://github.com/vim/vim/commit/1082772f4c29bceebf5eb06f7e1f01bd143a2131|patch 8.2.0439: :disassemble has minor flaws>
+patch 8.2.0439: :disassemble has minor flaws
+
+Problem:    :disassemble has minor flaws.
+Solution:   Format the code.  Use (int) instead of (char) for %c.
+            (also by James McCoy, closes #5831)</pre>
+<pre>Recent Commits to vim:master 1585042708.031300: <https://github.com/vim/vim/commit/d06dbf3f42c8a8a3967905dd2f2a31077af15438|patch 8.2.0440: terminal noblock test is still very flaky on BSD>
+patch 8.2.0440: terminal noblock test is still very flaky on BSD
+
+Problem:    Terminal noblock test is still very flaky on BSD.
+Solution:   Increase the waiting time.</pre>
+<pre>Recent Commits to vim:master 1585049303.031500: <https://github.com/vim/vim/commit/f3710ee22d0039cea2f970452b5faf56e89a6ab0|patch 8.2.0441: terminal noblock test is still failing on BSD>
+patch 8.2.0441: terminal noblock test is still failing on BSD
+
+Problem:    Terminal noblock test is still failing on BSD.
+Solution:   Reduce the amount of text.</pre>
+<pre>Recent Commits to vim:master 1585078717.031800: <https://github.com/vim/vim/commit/71658f74ae64c366b2d35b82c0a2eadb1317f028|patch 8.2.0442: channel contents might be used after being freed>
+patch 8.2.0442: channel contents might be used after being freed
+
+Problem:    Channel contents might be used after being freed.
+Solution:   Reset the job channel before freeing the channel.</pre>
+<pre>Recent Commits to vim:master 1585083509.031900: <https://github.com/vim/vim/commit/45fffdf10b7cb6e59794e76e9b8a2930fcb4b192|patch 8.2.0443: clipboard code is spread out>
+patch 8.2.0443: clipboard code is spread out
+
+Problem:    Clipboard code is spread out.
+Solution:   Move clipboard code to its own file. (Yegappan Lakshmanan,
+            closes #5827)</pre>
+<pre>Recent Commits to vim:master 1585083509.032000: <https://github.com/vim/vim/commit/d36ef573b2fad620824495f5423cb649cde55e03|patch 8.2.0444: swap file test fails on some systems>
+patch 8.2.0444: swap file test fails on some systems
+
+Problem:    Swap file test fails on some systems.
+Solution:   Preserve the swap file. Send NL terminated keys.</pre>
+<pre>Recent Commits to vim:master 1585163914.000200: <https://github.com/vim/vim/commit/f66ca9f1df535c8042292ce20f4260cafc877670|patch 8.2.0445: png and xpm files not in MS-Windows zip file>
+patch 8.2.0445: png and xpm files not in MS-Windows zip file
+
+Problem:    Png and xpm files not in MS-Windows zip file.
+Solution:   Move files to shared between Unix and Windows target.</pre>
+<pre>Recent Commits to vim:master 1585167528.000400: <https://github.com/vim/vim/commit/a07e31af545b91925362854a48c42fee16dd8c28|patch 8.2.0446: listener with undo of deleting all lines not tested>
+patch 8.2.0446: listener with undo of deleting all lines not tested
+
+Problem:    Listener with undo of deleting all lines not tested.
+Solution:   Add a test.</pre>
+<pre>Recent Commits to vim:master 1585168716.000600: <https://github.com/vim/vim/commit/bfcfd5784a2fe950d8e58d1d534bbbb4824524eb|patch 8.2.0447: terminal scroll tests fails on some systems>
+patch 8.2.0447: terminal scroll tests fails on some systems
+
+Problem:    Terminal scroll tests fails on some systems.
+Solution:   Remove the fixed 100msec wait for Win32.  Add a loop to wait until
+            scrolling has finished. (James McCoy, closes #5842)</pre>
+<pre>Recent Commits to vim:master 1585172315.000800: <https://github.com/vim/vim/commit/0e05de46226eb4e5ea580beefa71831f92d613d3|patch 8.2.0448: various functions not properly tested>
+patch 8.2.0448: various functions not properly tested
+
+Problem:    Various functions not properly tested.
+Solution:   Add more tests, especially for failures. (Yegappan Lakshmanan,
+            closes #5843)</pre>
+<pre>Recent Commits to vim:master 1585225100.001000: <https://github.com/vim/vim/commit/cf3f8bf4ddfbc0f5ce53f0c9270dc15567f4feea|patch 8.2.0449: Vim9: crash if return type is invalid>
+patch 8.2.0449: Vim9: crash if return type is invalid
+
+Problem:    Vim9: crash if return type is invalid. (Yegappan Lakshmanan)
+Solution:   Always return some type, not NULL.</pre>
+<pre>Recent Commits to vim:master 1585228703.001200: <https://github.com/vim/vim/commit/7d941ee032c02a4b682201881eb5c1f1958f17ee|patch 8.2.0450: not enough testing for restricted mode and function c…>
+patch 8.2.0450: not enough testing for restricted mode and function calls
+
+Problem:    Not enough testing for restricted mode and function calls.
+Solution:   Add more tests. (Yegappan Lakshmanan, closes #5847)</pre>
+<pre>Recent Commits to vim:master 1585234705.001400: <https://github.com/vim/vim/commit/82e743c5b343847d88b958594ad3433213ef9405|patch 8.2.0451: Win32: double-width character displayed incorrectly>
+patch 8.2.0451: Win32: double-width character displayed incorrectly
+
+Problem:    Win32: double-width character displayed incorrectly.
+Solution:   First move the cursor to the first column. (Nobuhiro Takasaki,
+            closes #5848)</pre>
+<pre>Recent Commits to vim:master 1585235907.001600: <https://github.com/vim/vim/commit/a9c3a30891edd7347d94298c48ea68bb5c165fd7|patch 8.2.0452: channel_parse_messages() fails when called recursively>
+patch 8.2.0452: channel_parse_messages() fails when called recursively
+
+Problem:    channel_parse_messages() fails when called recursively.
+Solution:   Return for a recursive call. (closes #5835)</pre>
+<pre>Recent Commits to vim:master 1585237106.001800: <https://github.com/vim/vim/commit/7851b1ca992222880df1314684a790f293e11896|patch 8.2.0453: trailing space in job_start() command causes empty ar…>
+patch 8.2.0453: trailing space in job_start() command causes empty argument
+
+Problem:    Trailing space in job_start() command causes empty argument.
+Solution:   Ignore trailing space. (closes #5851)</pre>
+<pre>Recent Commits to vim:master 1585238309.002000: <https://github.com/vim/vim/commit/3ed9efc2b15b624268bcce4e4d312fb35840a12b|patch 8.2.0454: some tests fail when the system is slow>
+patch 8.2.0454: some tests fail when the system is slow
+
+Problem:    Some tests fail when the system is slow.
+Solution:   Make the run number global, use in the test to increase the
+            waiting time. (closes #5841)</pre>
+<pre>Recent Commits to vim:master 1585251505.002200: <https://github.com/vim/vim/commit/83d4790a04780328c9c7ad22d18f404a27c11601|patch 8.2.0455: cannot set the highlight group for a specific terminal>
+patch 8.2.0455: cannot set the highlight group for a specific terminal
+
+Problem:    Cannot set the highlight group for a specific terminal.
+Solution:   Add the "highlight" option to term_start(). (closes #5818)</pre>
+<pre>Recent Commits to vim:master 1585252704.002400: <https://github.com/vim/vim/commit/72749f062f15c7147f512bc581695c25ad78fb4e|patch 8.2.0456: Test_confirm_cmd is flaky>
+patch 8.2.0456: Test_confirm_cmd is flaky
+
+Problem:    Test_confirm_cmd is flaky.
+Solution:   Add a term_wait() call. (closes #5854)</pre>
+<pre>Recent Commits to vim:master 1585253908.002600: <https://github.com/vim/vim/commit/26bde6e2eb307898ab7ed42bf8e7e2ccde979e02|patch 8.2.0457: Test_quotestar() often fails when run under valgrind>
+patch 8.2.0457: Test_quotestar() often fails when run under valgrind
+
+Problem:    Test_quotestar() often fails when run under valgrind.
+Solution:   Wait longer for the GUI to start.</pre>
+<pre>Recent Commits to vim:master 1585257505.002800: <https://github.com/vim/vim/commit/bea9023d4260349c130faf447aa8d4cbadeffab2|patch 8.2.0458: missing feature check in test function>
+patch 8.2.0458: missing feature check in test function
+
+Problem:    Missing feature check in test function.
+Solution:   Add check commands.</pre>
+<pre>Recent Commits to vim:master 1585257505.002900: <https://github.com/vim/vim/commit/15c476023f3c5fb32eb1936c5eb5f0f5f413f3c7|patch 8.2.0459: cannot check if a function name is correct>
+patch 8.2.0459: cannot check if a function name is correct
+
+Problem:    Cannot check if a function name is correct.
+Solution:   Add "?funcname" to exists().</pre>
+<pre>Recent Commits to vim:master 1585261701.003200: <https://github.com/vim/vim/commit/bd5e622bfa12bd80a5ce9406704205400e3faa6a|patch 8.2.0460: build failure because of wrong feature name>
+patch 8.2.0460: build failure because of wrong feature name
+
+Problem:    Build failure because of wrong feature name.
+Solution:   Correct feature name.</pre>
+<pre>Recent Commits to vim:master 1585334905.003400: <https://github.com/vim/vim/commit/9207d1f523c2e2fb1c8749ec6f84ab5ecc2c62f4|patch 8.2.0461: confirm test fails on amd64 system>
+patch 8.2.0461: confirm test fails on amd64 system
+
+Problem:    Confirm test fails on amd64 system. (Alimar Riesebieter)
+Solution:   Add an extra WaitForAssert(). (Dominique Pelle)</pre>
+<pre>Recent Commits to vim:master 1585337308.003600: <https://github.com/vim/vim/commit/37bb030cd9088ee66dc2d41c2d3602d1e5f4a7ef|patch 8.2.0462: previewwindow test fails on some systems>
+patch 8.2.0462: previewwindow test fails on some systems
+
+Problem:    Previewwindow test fails on some systems. (James McCoy)
+Solution:   Wait a bit after sending the "o". (closes #5849)</pre>
+<pre>Recent Commits to vim:master 1585339706.003800: <https://github.com/vim/vim/commit/191acfdecabfbd2a74867e77004196fb3b4a8c14|Update runtime files>
+Update runtime files</pre>
+<pre>Recent Commits to vim:master 1585339706.003900: <https://github.com/vim/vim/commit/2d9d409ad4fab1ae7ceaecc0ef0e9b511d868374|patch 8.2.0464: typos and other small problems>
+patch 8.2.0464: typos and other small problems
+
+Problem:    Typos and other small problems.
+Solution:   Fix the typos.  Add missing file to distribution.</pre>
+<pre>Recent Commits to vim:master 1585339706.004000: <https://github.com/vim/vim/commit/14285cb801c5ba965fdb89c44e8c27d912edfe4b|patch 8.2.0464: typos and other small problems>
+patch 8.2.0464: typos and other small problems
+
+Problem:    Typos and other small problems.
+Solution:   Fix the typos.  Add missing files to the distribution.</pre>
+<pre>Recent Commits to vim:master 1585339706.004100: <https://github.com/vim/vim/commit/495282b6e7e418d072a8ab53c9056b269dc308b7|Correct list of patch numbers>
+Correct list of patch numbers</pre>
+<pre>Recent Commits to vim:master 1585404501.004600: <https://github.com/vim/vim/commit/599c89c82fe3c85378e8077b4e589f0ee4218da2|patch 8.2.0465: Vim9: dead code and wrong return type>
+patch 8.2.0465: Vim9: dead code and wrong return type
+
+Problem:    Vim9: dead code and wrong return type.
+Solution:   Remove dead code.  Fix return type.  Add more tests.</pre>
+<pre>Recent Commits to vim:master 1585415304.004800: <https://github.com/vim/vim/commit/09c569038c42dcbdaa5c9b35fc9d1afbe5072cb4|patch 8.2.0466: not parsing messages recursively breaks the govim plugin>
+patch 8.2.0466: not parsing messages recursively breaks the govim plugin
+
+Problem:    Not parsing messages recursively breaks the govim plugin.
+Solution:   When called recursively do handle messages but do not close
+            channels.</pre>
+<pre>Recent Commits to vim:master 1585421302.005000: <https://github.com/vim/vim/commit/33fa29cf74ea314f89cfa58ec9ffc2d6781a59d4|patch 8.2.0467: Vim9: some errors are not tested>
+patch 8.2.0467: Vim9: some errors are not tested
+
+Problem:    Vim9: some errors are not tested
+Solution:   Add more tests.  Fix that Vim9 script flag is not reset.</pre>
+<pre>Recent Commits to vim:master 1585424897.005200: <https://github.com/vim/vim/commit/7c003aa314337ce732e18c541fa93d71cafedf03|patch 8.2.0468: GUI: pixel dust with some fonts and characters>
+patch 8.2.0468: GUI: pixel dust with some fonts and characters
+
+Problem:    GUI: pixel dust with some fonts and characters.
+Solution:   Always redraw the character before the cursor. (Nir Lichtman,
+            closes #5549, closes #5856)</pre>
+<pre>Recent Commits to vim:master 1585428502.005400: <https://github.com/vim/vim/commit/ee619e5bc0992e818f2d9540b093b769b9c27651|patch 8.2.0469: Vim9: no error for missing ] after list>
+patch 8.2.0469: Vim9: no error for missing ] after list
+
+Problem:    Vim9: no error for missing ] after list.
+Solution:   Add error message. Add more tests.</pre>
+<pre>Recent Commits to vim:master 1585429702.005600: <https://github.com/vim/vim/commit/7b1b36b1cb744e87adfbef88b7ce26c863b0594a|patch 8.2.0470: Test_confirm_cmd_cancel() can fail on a slow system>
+patch 8.2.0470: Test_confirm_cmd_cancel() can fail on a slow system
+
+Problem:    Test_confirm_cmd_cancel() can fail on a slow system.
+Solution:   Use WaitForAssert(). (Ozaki Kiichi, closes #5861)</pre>
+<pre>Recent Commits to vim:master 1585429702.005700: <https://github.com/vim/vim/commit/a30590d3e78aed3f6039edc642fb7532c40ea54e|patch 8.2.0471: missing change to compile_list()>
+patch 8.2.0471: missing change to compile_list()
+
+Problem:    Missing change to compile_list().
+Solution:   Add error message.</pre>
+<pre>Recent Commits to vim:master 1585432097.006000: <https://github.com/vim/vim/commit/360bdbda817920657a2ec8bf329c96a749dd7224|patch 8.2.0472: terminal highlight name is set twice, leaking memory>
+patch 8.2.0472: terminal highlight name is set twice, leaking memory
+
+Problem:    Terminal highlight name is set twice, leaking memory.
+Solution:   Delete one.</pre>
+<pre>Recent Commits to vim:master 1585488500.006200: <https://github.com/vim/vim/commit/8601545338581c01e328cdc3a72c0b12d92c54cf|patch 8.2.0473: variables declared in an outer scope>
+patch 8.2.0473: variables declared in an outer scope
+
+Problem:    Variables declared in an outer scope.
+Solution:   Decleare variables only in the scope where they are used.</pre>
+<pre>Recent Commits to vim:master 1585491503.006400: <https://github.com/vim/vim/commit/0fff44152d06e6b662ad4bef172af07a041d2f3f|patch 8.2.0474: cannot use :write when using a plugin with BufWriteCmd>
+patch 8.2.0474: cannot use :write when using a plugin with BufWriteCmd
+
+Problem:    Cannot use :write when using a plugin with BufWriteCmd.
+Solution:   Reset BF_NOTEDITED after BufWriteCmd. (closes #5807)</pre>
+<pre>Recent Commits to vim:master 1585492096.006600: <https://github.com/vim/vim/commit/bf54dbeb5ccd2cfb9cc0687fd71ac3b3eddce0da|patch 8.2.0475: channel out_cb test still fails sometimes on Mac>
+patch 8.2.0475: channel out_cb test still fails sometimes on Mac
+
+Problem:    Channel out_cb test still fails sometimes on Mac.
+Solution:   Use an ever longer timeout.</pre>
+<pre>Recent Commits to vim:master 1585498103.006800: <https://github.com/vim/vim/commit/52ea92b19d2bc992dd4570add64c12d98eab9db2|patch 8.2.0476: terminal nasty callback test fails sometimes>
+patch 8.2.0476: terminal nasty callback test fails sometimes
+
+Problem:    Terminal nasty callback test fails sometimes.
+Solution:   use term_wait() instead of a sleep. (Yee Cheng Chin,closes #5865)</pre>
+<pre>Recent Commits to vim:master 1585500502.007000: <https://github.com/vim/vim/commit/c58164c5cff9845f3bf7cfcd75ace43208829388|patch 8.2.0477: Vim9: error messages not tested>
+patch 8.2.0477: Vim9: error messages not tested
+
+Problem:    Vim9: error messages not tested.
+Solution:   Add more tests.</pre>
+<pre>Recent Commits to vim:master 1585506503.007200: <https://github.com/vim/vim/commit/5908fdf72fa1995735e38c46f254ddde81a87c1f|patch 8.2.0478: new buffers are not added to the Buffers menu>
+patch 8.2.0478: new buffers are not added to the Buffers menu
+
+Problem:    New buffers are not added to the Buffers menu.
+Solution:   Turn number into string. (Yee Cheng Chin, closes #5864)</pre>
+<pre>Recent Commits to vim:master 1585508901.007400: <https://github.com/vim/vim/commit/2027973b5be693577bea0731b50ea4904d19ea8b|patch 8.2.0479: unloading shared libraries on exit has no purpose>
+patch 8.2.0479: unloading shared libraries on exit has no purpose
+
+Problem:    Unloading shared libraries on exit has no purpose.
+Solution:   Do not unload shared libraries on exit.</pre>
+<pre>Recent Commits to vim:master 1585511299.007600: <https://github.com/vim/vim/commit/0b37a2f379f36d097e7fa90a3e86da6a29ed2aaa|patch 8.2.0480: Vim9: some code is not tested>
+patch 8.2.0480: Vim9: some code is not tested
+
+Problem:    Vim9: some code is not tested.
+Solution:   Add more tests.</pre>
+<pre>Recent Commits to vim:master 1585589302.007800: <https://github.com/vim/vim/commit/7d333a900d260b8e8caa0fb159c85023fc8795bd|patch 8.2.0481: Travis is still using trusty>
+patch 8.2.0481: Travis is still using trusty
+
+Problem:    Travis is still using trusty.
+Solution:   Adjust config to use bionic. (Ozaki Kiichi, closes #5868)</pre>
+<pre>Recent Commits to vim:master 1585590501.008000: <https://github.com/vim/vim/commit/ca68ae13114619df3e4c195b41ad0575516f5ff6|patch 8.2.0482: channel and sandbox code not sufficiently tested>
+patch 8.2.0482: channel and sandbox code not sufficiently tested
+
+Problem:    Channel and sandbox code not sufficiently tested.
+Solution:   Add more tests. (Yegappan Lakshmanan, closes #5855)</pre>
+<pre>Recent Commits to vim:master 1585595304.008200: <https://github.com/vim/vim/commit/d25ec2cfa0c25c3b00b7f8963b8aea799df1f20a|patch 8.2.0483: Vim9: "let x = x + 1" does not give an error>
+patch 8.2.0483: Vim9: "let x = x + 1" does not give an error
+
+Problem:    Vim9: "let x = x + 1" does not give an error.
+Solution:   Hide the variable when compiling the expression.</pre>
+<pre>Recent Commits to vim:master 1585596509.008400: <https://github.com/vim/vim/commit/92dba36fc8742fdb51b16d9bb967ef184b4babc1|patch 8.2.0484: Vim9: some error messages not tested>
+patch 8.2.0484: Vim9: some error messages not tested
+
+Problem:    Vim9: some error messages not tested.
+Solution:   Add more tests.</pre>
+<pre>Recent Commits to vim:master 1585597702.008600: <https://github.com/vim/vim/commit/01b3862956260fdb5fb81b81a28f4749a92699c0|patch 8.2.0485: Vim9 script test fails>
+patch 8.2.0485: Vim9 script test fails
+
+Problem:    Vim9 script test fails.
+Solution:   Stricter condition for adding new local variable.</pre>
+<pre>Recent Commits to vim:master 1585602504.008800: <https://github.com/vim/vim/commit/9be61bbb170ed3df0e408c8ac12516e772dc0b75|patch 8.2.0486: Vim9: some code and error messages not tested>
+patch 8.2.0486: Vim9: some code and error messages not tested
+
+Problem:    Vim9: some code and error messages not tested.
+Solution:   Add more tests.</pre>
+<pre>Recent Commits to vim:master 1585690103.009000: <https://github.com/vim/vim/commit/bd5da371aafe5a2207065643502f4d1ff6b286c7|patch 8.2.0487: Vim9: compiling not sufficiently tested>
+patch 8.2.0487: Vim9: compiling not sufficiently tested
+
+Problem:    Vim9: compiling not sufficiently tested.
+Solution:   Add more tests.  Fix bug with PCALL.</pre>
+<pre>Recent Commits to vim:master 1585691302.009200: <https://github.com/vim/vim/commit/05afceeddc4afbbca60e4e6a729a50d33d4b19f7|patch 8.2.0488: Vim9: compiling can break when using a lambda inside …>
+patch 8.2.0488: Vim9: compiling can break when using a lambda inside :def
+
+Problem:    Vim9: Compiling can break when using a lambda inside :def.
+Solution:   Do not keep a pointer to the dfunc_T for longer time.</pre>
+{% endraw %}

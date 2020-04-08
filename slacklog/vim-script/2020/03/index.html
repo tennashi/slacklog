@@ -1,0 +1,80 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #vim-script - 2020年03月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>tyru 1584255047.044600: <https://vim-jp.slack.com/archives/C03C4RC9F/p1584197115237900>
+これ知らんかった。多分 vimlparser でもサポートされてないな</pre>
+<pre>tyru 1584611474.044900: <https://twitter.com/_tyru_/status/1240576358196973569></pre>
+<pre>tyru 1584611593.045100: <@UBQ2H65JQ> これってどのスクリプトで見たか覚えてるでしょうか？</pre>
+<pre>tyru 1584611617.045700: vimlparser の test は pass してる</pre>
+<pre>tyru 1584611665.046200: いや正確には↑を vimlparser の test に書いても pass する…</pre>
+<pre>mattn 1584611707.046400: うひ</pre>
+<pre>thinca 1584611872.046700: エラーが発生している桁も知りたい</pre>
+<pre>mattn 1584612037.048200: スマホで解像度低いんですが Trailing Character なんですか？</pre>
+<pre>mattn 1584612422.049600: vimlparser のテストで成功して vint でエラーになるとしたら正規表現が間違ってるパターンかも。</pre>
+<pre>tyru 1584613063.050100: です `E488: Trailing characters: -`</pre>
+<pre>tyru 1584613098.050700: でも vimlparser のエラーに見えるんですよね。
+vint が E488 出してるのかな</pre>
+<pre>tyru 1584613182.051200: んん？ `vint {vimrc}` すると出ないな…</pre>
+<pre>tyru 1584613580.051500: あー vim-language-server でした。。。</pre>
+<pre>tyru 1584613619.052000: 一旦 `:LspUninstallServer vim-language-server` したらなくなった。</pre>
+<pre>tyru 1584613642.052500: ちなみに vint は efm-langserver 経由で走らせてる</pre>
+<pre>rbtnn 1584613771.053300: スクリプトじゃなくてヘルプを読んでいたら見つけました。
+<https://github.com/vim/vim/blob/master/runtime/doc/eval.txt#L1513|https://github.com/vim/vim/blob/master/runtime/doc/eval.txt#L1513></pre>
+<pre>tyru 1584613816.053600: おおなるほど。ありがとうございます。</pre>
+<pre>tyru 1584614028.054500: <@UAZ33BKV2> さんも言ってたと思うんですが、ここと <#CBNFS2BR6|vint> マージしちゃいませんかね？
+話題的にかぶる事も多いので。
+#vim-script-syntax とか？</pre>
+<pre>tyru 1584614077.054800: 冗長だし #vim-script でいいか</pre>
+<pre>thinca 1584614085.055000: よさそう</pre>
+<pre>tyru 1584614111.055400: じゃあここを #vim-script としてあちらはアーカイブする感じでいいですかね</pre>
+<pre>tyru 1584614127.055600: もうちょっと待つけど</pre>
+<pre>k-takata 1584621691.058200: `:function {'&lt;lambda&gt;42'}` な表記、完全に忘れてたけどドキュメントに書いたの僕だよなー。7.4.2119 でクロージャ対応したときから載ってるし。</pre>
+<pre>tyru 1585133333.000400: #vim-script へのリネーム忘れてた。今やります</pre>
+<pre>tyru 1585133369.000700: あ、権限なかった（終）</pre>
+<pre>tyru 1585133410.001400: ↑どなたかお願いします :bow:</pre>
+<pre>tyru 1585133439.001900: ところで vim-language-server の vimlparser が最新版になりました <https://github.com/iamcco/vim-language-server/pull/35></pre>
+<pre>mattn 1585139265.002400: どね</pre>
+<pre>tyru 1585171306.003100: あざ！</pre>
+<pre>tyru 1585171387.003300: <#CBNFS2BR6|vint> のアーカイブはしなくてもいいか</pre>
+<pre>tyru 1585231087.004900: リストは負のインデックスでアクセスできるのに文字列には負のインデックスでアクセスできないのなんでなんだよ
+```
+" 3
+:echo [1,2,3][-1]
+" 空文字
+:echo 'foo'[-1]</pre>
+<pre>kuu 1585231195.005200: &gt; 文字列の長さよりも大きなインデックスが指定された場合、結果は空文字列になる。負
+&gt; 数のインデックスを指定すると、結果は常に空文字列になる(後方互換性のため)。
+&gt; 最後のバイトを得るには[-1:]を使うこと。</pre>
+<pre>kuu 1585231206.005500: Vim scriptですからねー:totemoturai:</pre>
+<pre>tyru 1585231267.006100: お、たしかにスライス使えばいけたのか。毎回諦めてた…</pre>
+<pre>tyru 1585231277.006400: :tiken:</pre>
+<pre>tsuyoshi_cho 1585231285.006800: サモハンキンポー(さもありなん)</pre>
+<pre>kuu 1585231293.007100: これ、今ならscriptversionで挙動変えてもいいのかもしれないな</pre>
+<pre>tyru 1585231304.007300: たしかに</pre>
+<pre>tyru 1585242657.008000: 【悲報】is, isnot が変数名に使えない
+```let [ih, is, il] = ihsl
+unexpected token: is```
+これダメだった</pre>
+<pre>tyru 1585242685.008700: while は OK だった。演算子だけだろうか（とはいえテストケース追加した方が良さそう）</pre>
+<pre>tyru 1585242943.008900: <https://github.com/vim-jp/vim-vimlparser/issues/169></pre>
+<pre>thinca 1585272447.009600: これは vimlparser がパースできないと言う話? Vim 本体?</pre>
+<pre>mattn 1585272981.009900: Vim は出来るぽいすね。</pre>
+<pre>mattn 1585273029.010200: ```let [is, great] = ['マンボウ', 'すごい']
+echo is great```</pre>
+<pre>thinca 1585273058.010400: てことは vimlparser の話か</pre>
+<pre>thinca 1585273130.011100: while はコマンドだけど is は式だからかな。処理のされ方が違いそう (※コードは全く読んでない)</pre>
+<pre>tyru 1585298044.011900: そもそも式でなく identifier のはずなんですよねぇ</pre>
+<pre>koron 1585300420.012600: tokenizer が先に token として認識しちゃってそう。
+<https://github.com/vim-jp/vim-vimlparser/blob/4139d51700ed72702bd9f7352e5359ac0cf54c6c/autoload/vimlparser.vim#L3301-L3310></pre>
+<pre>koron 1585300476.012800: issueに転載しといた</pre>
+<pre>mattn 1585302371.013600: Vim script は逐次で処理するので事前に tokenizer で種別決定できない辛さがあるなぁ。</pre>
+{% endraw %}

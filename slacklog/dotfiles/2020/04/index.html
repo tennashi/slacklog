@@ -1,0 +1,256 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #dotfiles - 2020年04月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>ycino 1585728368.089800: いつの間にかefm-langserverのreleaseしたディレクトリを解凍するとネストするようになってzinitでのインストールが死んでた</pre>
+<pre>ycino 1585728411.090400: ```-zinit ice lucid wait"0" from"gh-r" as"program" bpick"*darwin_amd64*" mv"efm-langserver -&gt; ${ZPFX}/bin/efm-langserver"
++zinit ice lucid wait"0" from"gh-r" as"program" bpick"*darwin_amd64*" mv"*/efm-langserver -&gt; ${ZPFX}/bin/efm-langserver"```
+したんだけど、こんな場当たり的な対応でいいのかなぁ</pre>
+<pre>yutakatay 1585730272.091700: zinit的にはそれでよい気がしますが。。。
+個人的にはlangserverはシステム側に入れたいんでOSのパッケージマネージャー使う派ですね。</pre>
+<pre>yutakatay 1585730379.092900: 私も今まさにzinitいじってます。。。。ripgrepの補完がバージョンアップのたびにリンク切れになるんですよね・・・どうしたもんか</pre>
+<pre>tsuyoshi_cho 1585739489.094200: nyagosのpromptをstarshipにした、:benri:</pre>
+<pre>tsuyoshi_cho 1585739528.094600: 自力だけど単純なのでオススメ
+```  nyagos.prompt = nyagos.eval('starship prompt 2&gt; nul') .. ' '```
+</pre>
+<pre>tsuyoshi_cho 1585739627.095600: 難点はlinuxはputtyだとnerd fontがNG、emoji OKなのでemojiにしてたけど、逆にnyagosはnerd font表示はできてて、emoji NGなのでちょっと悩むw</pre>
+<pre>yutakatay 1585739824.097000: Windowsはつらい。。。２年くらい前までは私もシンプルな感じでDevIconとか使ってなかったけど、今は（Linuxデスクトップメインなので）使うようにしてしまいましたね。</pre>
+<pre>tsuyoshi_cho 1585739901.098100: どっちかというとWindowsがというよりはputtyがまだ描画系ががが、という話でもあるんですがw
+まあ...とはいえ、Windowsのemojiを描画系でカラーをbindするの、各種フォントでもちゃんとemoji出るという意味でえらい</pre>
+<pre>kuu 1585740000.099500: Windowsはコントリビュータに恵まれているなといつも思う</pre>
+<pre>tsuyoshi_cho 1585740016.099900: あ、そうだ、合せてfisherな人に聞きたいのですが
+<https://starship.rs/ja-JP/config/#%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA>
+の「高度なオプション」でのfishのパスロジックなんですが
+fishってなんか特殊なんでしたっけ?
+(知らべたら c/d/e/hoge/fugaみたいにするっぽいけど、よくわからなかった...)</pre>
+<pre>yutakatay 1585740075.100200: :fish:</pre>
+<pre> 1585742034.101900: 直した
+不明な関数もあるだろうけど、ニュアンスで</pre>
+<pre>tsuyoshi_cho 1585742804.102300: <https://i.gyazo.com/06d9ca8b55660f24cb234f462e70910d.png>
+現状</pre>
+<pre>yutakatay 1585743921.103000: <https://fromatom.hatenablog.com/entry/2020/03/31/135410>
+こういうのやりたいけど、お手手でもってきちゃうw</pre>
+<pre>tsuyoshi_cho 1585744502.103800: prはしてないけど git sw で切り替え、不完全ならfzfでブランチ選択とか、git rco で同じく不完全でfzfで選択して、リモートをローカルにチェックアウトとか</pre>
+<pre>tsuyoshi_cho 1585744507.104000: はしてる</pre>
+<pre>luma 1585744907.104500: &gt; 不完全ならfzf
+いいなこれ</pre>
+<pre>luma 1585744915.104700: cdとかでもできそう</pre>
+<pre> 1585745042.104900: かなり長いけど、こんな感じ(もうpecoはいいかな、とも思うけど)</pre>
+<pre>tsuyoshi_cho 1585745056.105400: なおgitのaliasを使ってるので注意</pre>
+<pre>tsuyoshi_cho 1585745126.105900: fzfは環境変数の状態にいろいろ依存しているのでチューニングしたほうがいいとは思う</pre>
+<pre>tsuyoshi_cho 1585745200.106200: といっても表示のしかたくらい?</pre>
+<pre>yutakatay 1585745326.106500: ながいw</pre>
+<pre>ycino 1585745952.107100: この辺fzfのワンライナーでやれそうだから便利</pre>
+<pre>ycino 1585746077.108000: あー、でも `gh pr list` のformatが扱いにくそう</pre>
+<pre>tsuyoshi_cho 1585746159.109200: 以下のようなかんじw
+1. git の switchは cdライクに - で1つ前に戻る
+2. ブランチに完全一致ならfzfにいかずにやる
+3. ブランチに複数あるなら、クエリにセットしてfzf(/peco)、そこでfuzzy matchで1つなら即座に
+4. それ以外のオプションは直に渡す(ただし動作未確認)</pre>
+<pre>ycino 1585746242.110600: historyに実際に実行されたコマンドが残って欲しい印象はありますね</pre>
+<pre>yutakatay 1585746268.110900: こういうfzf tipsをまとめて提供してくれるプラグインほしい　← 他力本願</pre>
+<pre>ycino 1585746357.111700: この手の、自分用に徐々にチューニングされていくから汎用性を持たせるの難しそう</pre>
+<pre>ycino 1585746369.112100: 特にgit関連だとリポジトリの運用にかなり依存しそう</pre>
+<pre>tsuyoshi_cho 1585746618.113900: 一応汎用だけど、まあわかる</pre>
+<pre>yutakatay 1585746630.114400: そうですかね？？私はカスタマイズがそこそこ簡単だから、みんなめんどくさくて汎用性をもたせてないだけな気がしてますね。</pre>
+<pre>ycino 1585746630.114500: `gh pr` 関連の便利な何かだけちょっとだけ書いてみようかな？</pre>
+<pre>yutakatay 1585746690.115900: たぶん動いて叩くモノさえできてしまえばみんな集まってくる気がしてます</pre>
+<pre>tsuyoshi_cho 1585747070.117200: git の aliasはまあgitと一体化する代りにhistoryには無理ですねえ、もうそのコマンドがあるという見た目で行くしかないという...</pre>
+<pre> 1585747611.117600: </pre>
+<pre>ycino 1585747625.118100: 多分それっぽく動く</pre>
+<pre>ycino 1585747870.119100: C-o: ブラウザで開く
+C-c: checkoutをBUFFERに入れる
+Enter: （previewでやってるけど）viewコマンドを実行</pre>
+<pre>ycino 1585749568.120100: すごい暇だったらプラグイン化してQiitaあたりに記事書きそうなんだけど、時間あんまりなさそう</pre>
+<pre>yutakatay 1585842973.124000: Issueがぽこぽこ立ってるときに申し訳無いですがFzfPreviewLocationList壊れてるくさいです</pre>
+<pre>ycino 1585876047.124800: マジですか、ありがとうございます
+雑にでいいんでどんな感じか聞いてもいいです？</pre>
+<pre>yutakatay 1585879811.125400: あれ？普通に使うとエラーでませんかね？？
+```syntax on
+filetype plugin indent on
+
+set runtimepath^=~/.vim/plugged/fzf-preview.vim```
+で
+
+```Error detected while processing function fzf_preview#initializer#initialize[28]..fzf_preview#pa
+rameter#build_parameter[1]..&lt;SNR&gt;35_locationlist:
+line    2:
+E684: list index out of range: 0
+E116: Invalid arguments for function split
+E116: Invalid arguments for function len
+E15: Invalid expression: len(split(resource[0], ':')) == 1
+Error detected while processing function fzf_preview#runner#fzf_run:
+line    2:
+E715: Dictionary required
+line    3:
+E715: Dictionary required```</pre>
+<pre>ycino 1585879889.127500: 今PCない状態で外にいるんで試せなかったんですが了解です
+露骨に落ちるなら後で試してみますー</pre>
+<pre>ycino 1585880903.127800: 手元で試すと通る、なんだろう</pre>
+<pre>yutakatay 1585880961.128000: お、そうなんですね。</pre>
+<pre>ycino 1585880982.128200: あ、エラー起きた</pre>
+<pre>ycino 1585880985.128400: ちょっと確認します</pre>
+<pre>ycino 1585881077.128700: locationlistが空だと起こる感じ・・・？
+何か入ってておきます？</pre>
+<pre>ycino 1585881258.128900: なんにしても不親切なんでハンドリングはしたいですけど、要素が存在するときにも発生するエラーかどうかひとまず確定させたい</pre>
+<pre>yutakatay 1585881285.129100: ですね。空のときっぽいですね。</pre>
+<pre>ycino 1585881305.129300: お、ってことは空の時は空配列返せば終わりですかね？</pre>
+<pre>ycino 1585881355.129600: 今日明日、遅くとも日曜には直したいな
+ありがとうございます</pre>
+<pre>johejo 1585888447.130500: ripgrep インデックスを持つことを検討してるのか... すごいな <https://github.com/BurntSushi/ripgrep/issues/1497></pre>
+<pre>yutakatay 1585888544.131300: これはうれしい</pre>
+<pre>yutakatay 1585888749.132900: 最近自分矯正がようやく進んできて、パイプのあともgrepじゃなくてrgできるようになってきたw</pre>
+<pre>johejo 1585888792.133500: elasticsearchとかと連携するインターフェイスを持つみたいな実装でもいい気もする</pre>
+<pre>johejo 1585888895.134900: rustで検索エンジン作ってるプロジェクト結構あるみたいだからこういうのを埋め込んだりするのかな... それとも完全オリジナル実装なのか
+<https://github.com/tantivy-search/tantivy>
+<https://github.com/meilisearch/MeiliSearch></pre>
+<pre>yutakatay 1585889153.135600: Rust製のものが世の中に増えていって嬉しい限りだ</pre>
+<pre>dohq 1585889377.136700: 最近だとsonicなんてのも出ましたね
+これもRustだ
+<https://github.com/valeriansaliou/sonic></pre>
+<pre>johejo 1585889428.137800: ちょっとちゃんとissue読んでみましたがdaemonizeするつもりないらしいし、キャッシュ的な自前実装になりそうな予感。indexは永続的でないという前提で設計するっぽい。</pre>
+<pre>johejo 1585889652.138900: russ coxのcodesearchのpocを参考にするって感じか <https://github.com/google/codesearch></pre>
+<pre>johejo 1585889936.141600: rustで書かれたプロダクトが増えていくことはとても歓迎ですが、利用者としては気軽にソースを追っかけられるように勉強しないとなあと急かされる気持ちですね。
+GoとかJavaは読むだけならなんちゃってでも割といけますがRustは結構難しい。</pre>
+<pre>tsuyoshi_cho 1585889991.143000: 素直な単純コードは読めてもガチガチに作りこんでるのは読めないだろうな...</pre>
+<pre>yutakatay 1585890030.143600: 私学習が結構プロダクトのバグ起因だったりするので増えていったら読めるようになる感じですね。</pre>
+<pre>yutakatay 1585890178.145700: 正直プログラムって作文するときと逆で、書くときが楽で、読むときが大変的な感じありますが、Rustは書くときのほうが大変・・・</pre>
+<pre>tsuyoshi_cho 1585890864.146400: 結果読むのはもっと大変にw? まあ読む時の問題を先取りで潰すというのはあるのかもしれん</pre>
+<pre>ひがし 1585892005.146900: fishからzshに乗り換えようと思っているのですが、おすすめのテーマやプラグインなどありますか？</pre>
+<pre>yutakatay 1585892342.147500: 私はテーマ自作ですが、ここで紹介してもらった
+<https://github.com/romkatv/powerlevel10k>
+が一番よかった気がしてます</pre>
+<pre>dohq 1585892381.148000: zinit(小声)</pre>
+<pre>ひがし 1585892437.148700: テーマはpowerlevel10k、プラグインマネージャーはzinitにしてみます！</pre>
+<pre>yutakatay 1585892748.149700: どうでもいい小話
+(powerlevel10kの作者とzinitの作者はこの間喧嘩したので相性よくないかもですw)</pre>
+<pre>ひがし 1585892838.150100: マジですか...
+とりあえず入れてしばらく使ってみます</pre>
+<pre>tsuyoshi_cho 1585892902.150800: <https://github.com/romkatv/gitstatus>
+もある</pre>
+<pre>dohq 1585892999.152200: gitstatusはzshのvcs_infoより早くて好き。</pre>
+<pre>tsuyoshi_cho 1585893115.152700: 今はstarship(at bash)だけど、お世話になった。
+軽い</pre>
+<pre>takets 1585893173.153000: pureがシンプルですき
+<https://github.com/sindresorhus/pure></pre>
+<pre>ひがし 1585893477.153400: なるほど
+入れてみます！</pre>
+<pre>tsuyoshi_cho 1585893608.153800: <https://github.com/starship/starship>
+シェルがなんであれ、ラクはラクだな</pre>
+<pre>yutakatay 1585893725.155200: 個人的には  powerlevel10k &gt; starshipな感じですね
+pureはシンプルでちょっと比較できない感じ</pre>
+<pre>johejo 1585893757.155700: zsh-usersのプラギンは大体入れとくと捗ります</pre>
+<pre>yutakatay 1585893900.157100: これを機になんかテーマ入れようかな</pre>
+<pre>ycino 1585893903.157300: どっちも使ったことないから使ってみようかなぁ
+完全自前で非同期PROMPTやってるの乗り換えれるんだろうか・・・</pre>
+<pre>yutakatay 1585893935.157800: powerlevel10kのほうはカスタマイズ性高そうなんでいける気はしてます</pre>
+<pre>ycino 1585893983.158600: 週末プラグインのissue潰して時間更に余ってればとかになりそう</pre>
+<pre>ycino 1585894217.160900: pureがなんかいい感じにgit叩いてくれてるっぽいんだけどコードが読めなさすぎてスクラッチで書き直したんですよねー</pre>
+<pre>tsuyoshi_cho 1585894218.161000: Windowsのnyagos(go/lua)シェルのpromptをがんばってstarshipで使ってる自分はかなり変</pre>
+<pre>ひがし 1585894662.161600: pureはpowerlevel10kとかなり変わりますね</pre>
+<pre>yutakatay 1585894833.162100: powerlevel10kはpureライクなモードもあったはず</pre>
+<pre>yutakatay 1585894861.162900: 私はあんまりごついのが好きじゃないんでpureっぽいのが好みですね</pre>
+<pre>mattn 1585894978.163200: powerlevel10k  は zsh 専用なのね。</pre>
+<pre>ひがし 1585895178.164500: fish使ってたときはpowerlevel10kみたいなごつめのテーマ使ってたのでzshへの乗り換えを気にpureみたいなシンプルなテーマに乗り換えるのもありかも...</pre>
+<pre>yutakatay 1585895265.166000: ごついの色的にも主張強すぎるんですよね・・・
+私はpureスタイルでも、もっと色減らしてほしいって思って、あとでやるか、で放置したのが前回だったことを思い出した</pre>
+<pre>ひがし 1585895632.166900: 確かにごついテーマってカラフルなのが多いですからね</pre>
+<pre>tsuyoshi_cho 1585895663.167400: シェルのテーマ、カラーテーマなのか機能テーマ(デザイン込み)なのか、がある気がする</pre>
+<pre>ycino 1585895705.168100: シンプルなのを作って出すもの増やしていったらカラフルになっていったパターン</pre>
+<pre>yutakatay 1585895852.169300: 私はシェルのエラーとGitの未コミット以外は基本色なしが好みなんですよね・・・
+ちょっとどんどん消していこう・・・</pre>
+<pre>tsuyoshi_cho 1585896176.170600: あとdircolorsとgit のcolorとpromptそろえたいけど、やばいくらい手間
+本質的に色がそろわないw
+せめてユーザー/ホスト/ディレクトリ/ブランチの色の意味を統一したいけど無理w</pre>
+<pre>yutakatay 1585896365.173600: 色はまじで統一感出そうと思ったらやばいですよね。デスクトップ環境側、エディタ、etc...
+私は一つ一つが主張強すぎるファッションみたいにならないようにシンプル目にしてますね。シンプルだとそこそこあってればダサさがなくなるから。。。</pre>
+<pre>yutakatay 1585896475.174400: とりあえず週末はpowerlevel10kの色といらないGitStatusを削る作業をやって移行してみよう・・・</pre>
+<pre>yutakatay 1585897129.175100: とりあえずpowerlevel10kからプロンプトもとに戻した。
+実家のような安心感w</pre>
+<pre>0Δ 1585905690.176600: cd後にlsするハックを導入したが、すっかり手動でls撃つクセが付いててls後にlsするという事を毎回やっている()</pre>
+<pre>yutakatay 1585907880.178600: powerlevel10kを好みになるように調整しました。
+なかなかいい感じだ</pre>
+<pre>yutakatay 1585910205.180600: powerlevel10k使えば使うほどよい感じ。
+やっぱ自作よりもいろいろ考えられて作られているから気の利いたこといっぱいしてくれますね。ディレクトリの権限の可視化だったり、今のウィンドウサイズに合わせたパスの最適表示だったり</pre>
+<pre>yutakatay 1585921076.181300: <https://github.com/high-moctane/nextword/releases/tag/v0.0.5>
+Nextwordバイナリーリリースしてくれるようになった :tada:</pre>
+<pre>tsuyoshi_cho 1585921256.181600: おー</pre>
+<pre>yutakatay 1585921441.182200: これでzinitからインストールができるようになった。すばら</pre>
+<pre>ycino 1586083438.183200: 直したんで適当なタイミングで見ておいて貰えるとー</pre>
+<pre>ycino 1586083931.183700: nextwordってクソでかい辞書入れとかないといけないんですね、どこ置くかなこれ</pre>
+<pre>ycino 1586084040.184200: `~/.config/nextword` を作るかなぁ</pre>
+<pre>ycino 1586084702.184500: うーん？
+```$ nextword
+2020/04/05 20:03:39 "NEXTWORD_DATA_PATH" environment variable is not set
+
+$ echo $NEXTWORD_DATA_PATH
+/Users/yuki_yano/.config/nextword/nextword-data
+
+$ \ls $NEXTWORD_DATA_PATH
+1gram.txt       2gram-j.txt     2gram-t.txt     3gram-d.txt     3gram-n.txt     3gram-x.txt     4gram-h.txt     4gram-r.txt     5gram-b.txt     5gram-l.txt     5gram-v.txt
+2gram-a.txt     2gram-k.txt     2gram-u.txt     3gram-e.txt     3gram-o.txt     3gram-y.txt     4gram-i.txt     4gram-s.txt     5gram-c.txt     5gram-m.txt     5gram-w.txt
+2gram-b.txt     2gram-l.txt     2gram-v.txt     3gram-f.txt     3gram-p.txt     3gram-z.txt     4gram-j.txt     4gram-t.txt     5gram-d.txt     5gram-n.txt     5gram-x.txt
+2gram-c.txt     2gram-m.txt     2gram-w.txt     3gram-g.txt     3gram-q.txt     4gram-a.txt     4gram-k.txt     4gram-u.txt     5gram-e.txt     5gram-o.txt     5gram-y.txt
+2gram-d.txt     2gram-n.txt     2gram-x.txt     3gram-h.txt     3gram-r.txt     4gram-b.txt     4gram-l.txt     4gram-v.txt     5gram-f.txt     5gram-p.txt     5gram-z.txt
+2gram-e.txt     2gram-o.txt     2gram-y.txt     3gram-i.txt     3gram-s.txt     4gram-c.txt     4gram-m.txt     4gram-w.txt     5gram-g.txt     5gram-q.txt     LICENSE.txt
+2gram-f.txt     2gram-p.txt     2gram-z.txt     3gram-j.txt     3gram-t.txt     4gram-d.txt     4gram-n.txt     4gram-x.txt     5gram-h.txt     5gram-r.txt     NOTICE.txt
+2gram-g.txt     2gram-q.txt     3gram-a.txt     3gram-k.txt     3gram-u.txt     4gram-e.txt     4gram-o.txt     4gram-y.txt     5gram-i.txt     5gram-s.txt     README.md
+2gram-h.txt     2gram-r.txt     3gram-b.txt     3gram-l.txt     3gram-v.txt     4gram-f.txt     4gram-p.txt     4gram-z.txt     5gram-j.txt     5gram-t.txt
+2gram-i.txt     2gram-s.txt     3gram-c.txt     3gram-m.txt     3gram-w.txt     4gram-g.txt     4gram-q.txt     5gram-a.txt     5gram-k.txt     5gram-u.txt```</pre>
+<pre>kuu 1586084773.185000: exportされてないとか？</pre>
+<pre>tsuyoshi_cho 1586084788.185600: ん、そんなに難しい?</pre>
+<pre>ycino 1586084967.187000: あれ、ものすごい今更だけど `export` の有無での動作の違いが分かってない</pre>
+<pre>ycino 1586084989.187900: `echo $FOO` で参照できるのはexportされてると思っていた</pre>
+<pre>kuu 1586084996.188200: $HOGEみたいな展開はシェル内で走ってるのでexport無しでもいける</pre>
+<pre>tsuyoshi_cho 1586085026.188800: $HOGE自体はシェルスクリプトな変数の1つ、exportすると環境変数 export -n すると内部の変数に戻せるらしい
+最近しった</pre>
+<pre>kuu 1586085072.189300: `export -n`知らなかった</pre>
+<pre>luma 1586085116.190000: exportされてるか調べるなら `bash -c "echo \$NEXTWORD_DATA_PATH"` とかですか</pre>
+<pre>luma 1586085130.190400: なんか専用のコマンドとかあるのかな</pre>
+<pre>ycino 1586085188.191100: ```zinit ice lucid wait"0" from"gh-r" as"program" bpick"*darwin_amd64*" mv"*/nextword -&gt; ${ZPFX}/bin/nextword" atinit"export NEXTWORD_DATA_PATH=\"$HOME/.config/nextword/nextword-data\""
+zinit light high-moctane/nextword```
+とりあえずこれで無事いけたけど、coc-nextwordが候補に出ない感じがする</pre>
+<pre>tsuyoshi_cho 1586085214.191600: <https://www.atmarkit.co.jp/ait/articles/1801/12/news015.html></pre>
+<pre>luma 1586085246.192200: `-p` がつかえそうか</pre>
+<pre>ycino 1586085278.192500: export細かい挙動全然知らなかった</pre>
+<pre>ycino 1586085468.193000: 今気付いたけどcoc-nextwordにwasmのbuildがbundleされててすごい</pre>
+<pre>kuu 1586085599.193400: そうかnodeが動くということはwasmも動くのか</pre>
+<pre>kuu 1586085611.193700: ポータブルにソフトウェアを配布する手段の一つになってる</pre>
+<pre>monaqa 1586087237.194300: 5gram ...？データ量がたいへんなことになりそう</pre>
+<pre>tsuyoshi_cho 1586087783.194900: なあに、たかが5グラムだ(そうじゃない)
+重さはともかくサイズはなかなか</pre>
+<pre>monaqa 1586090520.198200: 4gram，5gram あたりはストレージとの兼ね合いで削ったりしてもいいのかも（データの中身見てない＆nextword の実装もよく知らないのでなんとも言えませんが）．</pre>
+<pre>kg8m 1586091142.198300: large版と通常版があって、large版は確か数GB？ 通常版なら数百MBで済んだ気がする:innocent:</pre>
+<pre>kuu 1586141325.199000: <https://github.com/dohq/dotfiles/blob/master/scripts/i3-get-window-criteria.sh>
+これ借りてみてたけど早速役に立った</pre>
+<pre>kuu 1586141350.199700: alacrittyの`--class`でいじれるクラス名はi3ではinstanceらしい</pre>
+<pre>yutakatay 1586144922.200600: いろいろ問題があったtmuxのappimageバージョンがまともに動くようになった :blob_tada:
+<https://github.com/tmux/tmux/releases></pre>
+<pre>yutakatay 1586170264.202500: <https://github.com/nivekuil/rip>
+安全rmコマンド（ゴミ箱コマンド）を自作からこいつに切り替えた。
+別に不便はしてなかったけど、なんとなく</pre>
+<pre>kuu 1586170571.203400: インターフェースよさげなのでtrash-cliから乗り換えようかと思ったけど実装があんまりよくなさそうに見える</pre>
+<pre>yutakatay 1586170605.204000: trash-cli更新止まってますよね。。。たぶん最大手だったはずなのに</pre>
+<pre>kuu 1586170609.204300: つらい</pre>
+<pre>raa0121 1586170619.204600: PRチャンス！＞実装があんまりよくなさそう</pre>
+<pre>kuu 1586170710.205400: ファイルを全コピーからの削除してるのでほぼ全域書き直す必要ありそうだしこうなると自作したほうがいいのでは感出てくる</pre>
+<pre>kuu 1586170713.205600: (しないやつ)</pre>
+<pre>yutakatay 1586170906.207000: trash-cliとかgomiとかマウントポイントが違うとうまくコピーしてくれないんですよね(mvをcpにフォールバックしない感じ)。。。
+私にとっては致命的。</pre>
+<pre>yutakatay 1586171045.207800: とくにtrash-cliは勝手に永久削除しやがるからタチが悪い・・・</pre>
+<pre>lighttiger2505 1586181433.209200: rip (Rm ImProved) というネーミング好き。</pre>
+<pre>k-takata 1586181558.209600: vip (Vi ImProved)</pre>
+<pre>tsuyoshi_cho 1586182009.210200: R.I.P(安らかに眠れ)と掛けてるのいいですね</pre>
+<pre>monaqa 1586182140.210500: しゃれてる...</pre>
+<pre>yutakatay 1586183024.211400: 日本語だとダジャレすぐに思いつくけど、英語だとしゃれのレベルまで語彙力なくてつらい</pre>
+<pre>u 1586235208.211800: 昔つくったfewコマンドはかなり好き</pre>
+<pre>u 1586235214.212000: lessの次</pre>
+{% endraw %}

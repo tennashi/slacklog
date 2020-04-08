@@ -1,0 +1,2161 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #golang - 2020年03月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>dohq 1583721167.240900: <https://jovi0608.hatenablog.com/entry/2020/03/09/094737></pre>
+<pre>dohq 1583721191.241500: let's encryptのアレ</pre>
+<pre>dohq 1583721214.241900: とっても詳しい…</pre>
+<pre>johejo 1583722323.242500: i := i のあれか</pre>
+<pre>lambdalisue 1583722928.243200: <https://golang.org/doc/faq#closures_and_goroutines>
+
+&gt;  This behavior of the language, not defining a new variable for each iteration, may have been a mistake in retrospect. It may be addressed in a later version but, for compatibility, cannot change in Go version 1.
+公式が「ミスってたゴメン」って言ってる挙動ですね。</pre>
+<pre>mattn 1583723998.243900: 某大手クラウドのフレームワークもそうだけどポインタで速くなる神話みたいなのがある。</pre>
+<pre>mattn 1583724119.245700: ただこれそんなに難しくなく静的解析できそうな気もするしそのうち誰かがツール作りそうな気はする。</pre>
+<pre>tsuyoshi_cho 1583724146.245900: まあ気持ちはなあ...</pre>
+<pre>itchyny 1583724166.246100: <https://github.com/kyoh86/scopelint></pre>
+<pre>dohq 1583724192.246700: はてぶでも↑上げてる人おったな</pre>
+<pre>mattn 1583724617.247000: scopelint で引っ掛かるんかな。</pre>
+<pre>mattn 1583724662.248000: <https://play.golang.org/p/PUmje6lSEKU></pre>
+<pre>mattn 1583724666.248400: これが引っ掛かるなら ok</pre>
+<pre>johejo 1583724685.249000: golangci-lintにscopelint入ってる。いつの間にか使ってたのか。</pre>
+<pre>mattn 1583724738.250400: ただこれ、こういう意図で書くコードはほぼ無いにしても、逆にこれを期待して書く(キーがポインタとか？)人もいるからなぁ。</pre>
+<pre>johejo 1583724739.250500: お、<https://github.com/kyoh86/scopelint/blob/master/scopelint/lint_test.go|https://github.com/kyoh86/scopelint/blob/master/scopelint/lint_test.go></pre>
+<pre>itchyny 1583724778.250900: <https://vim-jp.slack.com/archives/CGABGC8LA/p1583724662248000>
+`main.go:13:8: Using a reference for the variable on range scope "v"`</pre>
+<pre>mattn 1583724793.251300: お、いいすね。</pre>
+<pre>mattn 1583724887.251700: Go はこういうツールで回避できるだけ(まだ)マシというのもあるなぁ。</pre>
+<pre>mattn 1583724949.252700: これ go vet or golint がやるべきすな。</pre>
+<pre>johejo 1583725002.253500: golangci-lintだとデフォルトではオフか
+false positiveの関係上しかたないか</pre>
+<pre>mattn 1583725965.254100: てかこの boulder、for の値をポインタで渡す文化なの？</pre>
+<pre>mattn 1583725969.254300: まだ結構あるみたいだけど。</pre>
+<pre>mattn 1583726001.254500: <https://github.com/letsencrypt/boulder/blob/9232f0e9a46f21a94c4a176125d7b8336d138308/cmd/boulder-va/main.go#L145></pre>
+<pre>mattn 1583726043.255000: ケースによるから分からないな。</pre>
+<pre>mattn 1583731219.256000: このコード、何度か見返すたびにだんだん「テスト不足なんじゃないの」という気になってくる。</pre>
+<pre>kyoh86 1583746040.256300: うなっ</pre>
+<pre>kyoh86 1583746051.256600: scopelint、徐々に古くなってるのでメンテせねば…</pre>
+<pre>kyoh86 1583746269.257200: あと、False positiveをゼロにできる案が無いので、
+
+&gt; go vet or golint
+に仕込むには、頭脳が要る…</pre>
+<pre>raa0121 1583746614.257300: <https://otomachiuna.jp/>
+ウナと聞いて(ぇ</pre>
+<pre>kyoh86 1583746698.257600: 残念、深淵の慣れ果て派なのです</pre>
+<pre>kyoh86 1583746731.257800: （アレはんなぁですが）</pre>
+<pre>raa0121 1583746752.258000: ナナチ！ ナナチじゃないか！</pre>
+<pre>raa0121 1583746763.258200: (映画は未視聴</pre>
+<pre>kyoh86 1583746795.258400: （映画もとても良いですよ。愛ですよ）</pre>
+<pre>mattn 1583806077.258900: cli の cobra、ドキュメント生成機能あったのね。</pre>
+<pre> 1583806134.259000: </pre>
+<pre>mattn 1583806145.259500: コマンド分、markdown 吐いてくれる。</pre>
+<pre>raa0121 1583806193.259700: ヒューッ!</pre>
+<pre>ゴリラ 1583816012.259900: めっちゃ便利そう</pre>
+<pre>johejo 1583818253.260200: おっ <https://github.com/nametake/golangci-lint-langserver|https://github.com/nametake/golangci-lint-langserver></pre>
+<pre>ゴリラ 1583818352.260500: お</pre>
+<pre>ゴリラ 1583818353.260700: これは</pre>
+<pre>ゴリラ 1583818359.260900: 生まれたて</pre>
+<pre>mattn 1583818830.262300: <https://github.com/mattn/vim-lsp-settings/pull/194></pre>
+<pre>ゴリラ 1583818894.262600: 早すぎｗ</pre>
+<pre>ゴリラ 1583818897.262800: ほしいとは思ったけどｗ</pre>
+<pre>ゴリラ 1583818917.263200: golangci-lint-langserver、ちらっとソース見たけど、まだ実装途中っぽい？</pre>
+<pre>ゴリラ 1583818962.263400: そんなことなかったっぽい</pre>
+<pre>ゴリラ 1583818965.263600: LSP何もわからない</pre>
+<pre>ゴリラ 1583818971.263800: <https://github.com/nametake/golangci-lint-langserver/blob/e5457fa925444ec35f388a90145656de50258f31/handler.go#L98></pre>
+<pre> 1583819571.264200: </pre>
+<pre>mattn 1583819572.264700: 動いた。</pre>
+<pre>johejo 1583819903.265900: 音速でmergeされたw 自分の環境にも入れよう。ちょっと手直ししてPRもあとで出します。</pre>
+<pre>mattn 1583820149.266300: <https://github.com/nametake/golangci-lint-langserver/pull/1></pre>
+<pre>mattn 1583820323.266700: コードがすごい efm 色あるw</pre>
+<pre>koron 1583824585.267100: 簡単な計測だと VSZ で 300MB 増えてるw RSSだと1MBくらい減ってるw</pre>
+<pre>koron 1583826850.268400: やばい…同じソースコードで1.13.8でコンパイルするとVSZが235MBで起動するんだけど、1.14でコンパイルすると起動にVSZが1045MB必要だよ…</pre>
+<pre>koron 1583826886.268600: なんでこんなに…</pre>
+<pre>mattn 1583827192.268800: だいぶ差がありますね。。。</pre>
+<pre>koron 1583827225.269300: 4倍強ですからね…ちょっとヒドイなって思いますね…</pre>
+<pre>koron 1583828376.269500: さすがに4倍はキツイなぁ</pre>
+<pre>mattn 1583828474.269700: <https://github.com/golang/go/issues/37122></pre>
+<pre>mattn 1583828481.270200: HEAD 試してくれって言ってますね。</pre>
+<pre>koron 1583828865.271100: んー実際にメモリ使うわけじゃなくてVSZだけなんですよね。RSSは60MBちょっとで起動する。しかも1.14のほうが若干少ないくらい。</pre>
+<pre> 1583828912.271200: psでみるとこんなかんじ</pre>
+<pre>mattn 1583829195.271800: キビシイ</pre>
+<pre>mattn 1583829275.272300: 最初にページ分ガバッと取ってると思うんだけどなんか変わったのかな。</pre>
+<pre>daisuzu 1583836238.273200: お、なめたけさん！</pre>
+<pre>kyoh86 1583854270.275200: Goでコード生成するの良くやるけど、生成元の複雑すぎる定義をYAMLとかでやんのどうなの？って思ってて、
+なら生成元の定義Goで書かせたら良いんじゃ？と錯乱して習作を作り始めてみた。
+もうちっとサンプルとかちゃんと整備したら、NotesかQiitaでも書いてみたい…
+
+なお滅茶苦茶な英語にツッコミを入れたり、cue使えば？なんて言うと僕が死ぬ。
+
+<https://github.com/kyoh86/appenv/|https://github.com/kyoh86/appenv/></pre>
+<pre>kamichidu 1583883444.276300: 生成元のコードをGoで定義するの、確かどっかでサンプル紹介されてた気がしますね</pre>
+<pre>kamichidu 1583883663.276800: 今ぱっと探して見つからなかった...</pre>
+<pre>kamichidu 1583883692.277700: 私が見たのは、interface定義して、interfaceを置換する系のやつです</pre>
+<pre>mattn 1583888305.277900: <https://github.com/itchyny/tie></pre>
+<pre>mattn 1583888309.278200: 何に使うんだろう。</pre>
+<pre>tsuyoshi_cho 1583888326.278600: 魔法使いtie...古い</pre>
+<pre>mattn 1583888344.278900: じゃりン子 tie... 古い</pre>
+<pre>tyru 1583902825.279500: DI?</pre>
+<pre>koron 1583902890.280000: 僕は既存のGoのコードをtext/templateに食わせるために過去にこんなの作った。
+<https://github.com/koron-go/srcdom></pre>
+<pre>koron 1583903038.280700: ↑ CI止まってたから、午前中動くようにした。</pre>
+<pre>kyoh86 1583905802.281400: ふむふむ</pre>
+<pre>koron 1583906019.281700: あああ、こっちだしたほうがよかったかも。
+<https://github.com/koron/tmpl></pre>
+<pre>koron 1583906105.282200: 手元にあるテンプレートのサンプルが、お仕事用でみせられないwww</pre>
+<pre> 1583906178.282300: すっごい雑だけどこんな感じ。</pre>
+<pre>koron 1583906225.283200: go-swaggerが生成するgoのコードをデータにして、このテンプレートで各ハンドラのスケルトンを生成してる。</pre>
+<pre>kyoh86 1583907242.283500: なるほどなるほどなるほど</pre>
+<pre>kyoh86 1583907277.284500: 一定価値ありますねこのやり方。先人の営みを見れると心強いですわ</pre>
+<pre>koron 1583907376.285400: 問題があるとすれば生成パスが複雑になるんで最初にちゃんと整理しないと容易に秘伝のタレ化するくらいです。</pre>
+<pre>koron 1583907406.286000: ちなみに僕のは秘伝のタレ化してます。整理する時間がとれなかったんよ…</pre>
+<pre>kyoh86 1583908202.286500: 確かに。めちゃくちゃ複雑でした。
+整理する時間にほぼ全部使ったくらい</pre>
+<pre>itchyny 1583913643.286700: <https://github.com/golang/go/issues/37790> 最高記録では</pre>
+<pre>mattn 1583913936.287100: めっちゃメモリ積んどるな</pre>
+<pre>mattn 1583913990.287700: 画像の中の qemu-system (ただし 2%) が可愛く見える。</pre>
+<pre>tsuyoshi_cho 1583916954.287900: <https://future-architect.github.io/articles/20200311/>
+読もう</pre>
+<pre>itchyny 1583917320.288500: <https://github.com/golang/go/issues/37436#issuecomment-597360484></pre>
+<pre>mattn 1583917325.288800: 質が良いなと思って読み進めていたら翻訳だった。</pre>
+<pre>itchyny 1583917333.289000: ianから方針でましたね</pre>
+<pre>mattn 1583917402.289300: uname 見て動作変えるって事すかこれ</pre>
+<pre>tsuyoshi_cho 1583918327.291900: ```Javaの用語を使うとすると、 *MyType の Set および Get を定義すると、 *MyType が自動的に MyInterface を implement します。
+型は複数のインターフェースを満たすことができます。これはダックタイピングの一種です。```
+コンパイル時に解決してしまうなら、ややこしい問題はなくて済むか
+動的な言語だと
+後付けでメソッドを足すことで、入る予定のないオブジェクトを受け入れるとかやれなくないので...まあ、めったに(セキュリティ)リスクにはならんけど
+逆に関数定義を外すことで、動的エラーがなくはなし、とか</pre>
+<pre>koron 1583939034.292800: 明日(っていうか明けて今日)、1.14でコンパイルしたプログラムがVSZを馬鹿みたいに要求する件をもうちょっと深堀する予定。</pre>
+<pre>koron 1583939171.294400: golangがmmapの失敗=VSZの確保失敗でしか正しくメモリ枯渇を検出できない以上は、いっぺんに1GBも確保しようとするのはあまりに取り回しがしにくいとなった。</pre>
+<pre>kyoh86 1583970367.295300: <https://github.com/golang/go/issues/26460>
+
+... oh... 変なバグを踏み抜いた…</pre>
+<pre>mattn 1583988746.295800: <https://github.com/golang/go/wiki/LinuxKernelSignalVectorBug></pre>
+<pre>mattn 1583990067.296300: <https://go-review.googlesource.com/c/go/+/223121/></pre>
+<pre>itchyny 1583991270.296700: そろそろまとめがあがってくるころ</pre>
+<pre>mattn 1583991502.296900: ざわっ</pre>
+<pre>koron 1583992769.298000: goの1.14でビルドしたバイナリ、ulimit -v で最低VSZを探索してたらある値でSegmentation faultしたwww</pre>
+<pre>koron 1583992819.298200: これどうしよ…</pre>
+<pre>tsuyoshi_cho 1583992937.298400: うわぁ...</pre>
+<pre>thinca 1583993045.299900: コントリビュート(バグ報告)チャンス</pre>
+<pre>koron 1583993072.300500: `go build -v` して `ulimit -v` で制限してから `./memerr` で起動する。メモリを128MBずつ確保していくからいずれ落ちるんだけど、一定以上VSZがないと起動すらしない。その起動する最小限のVSZを探るために作った。
+
+<https://gist.github.com/koron/baaca48e007102aed46d18a82cb1b363></pre>
+<pre>koron 1583993205.302400: go1.14でコンパイルした場合
+
+686MB以下だと起動できない(初期化でpanic)
+686MB でセグフォ
+687MBだと起動できない(初期化でpanic)
+688MB以上で起動できる
+
+go1.13.8でコンパイルした場合は
+110MBあたりで動くようになる。
+
+Xubuntu 19.10, Kernel は5.3.0-40-generic</pre>
+<pre>kuu 1583993235.302700: 富豪的プログラミングだ</pre>
+<pre>mattn 1583993290.303000: 伝えた方が良さそうな気がする。</pre>
+<pre>mattn 1583993301.303300: VSZ がそんだけ必要になったの気付いてない可能性ある。</pre>
+<pre>koron 1583993335.303900: 僕はもうちょい調べるので、先に報告してもらってもOK</pre>
+<pre>mattn 1583993343.304100: ちなみに</pre>
+<pre>mattn 1583993348.304300: ```GODEBUG=asyncpreemptoff=1 ./app```</pre>
+<pre>mattn 1583993354.304500: でも結果同じですか？</pre>
+<pre>koron 1583993366.304900: やってみます～</pre>
+<pre>mattn 1583993371.305100: 僕報告しても質問返されたらよー返さんw</pre>
+<pre>koron 1583993422.305300: んとりあえずおなじっぽ。</pre>
+<pre>mattn 1583993457.305500: なるほど。</pre>
+<pre>mattn 1583993560.306500: 実行したのって `docker -m 600mb` みたいな奴ですか？</pre>
+<pre> 1583993705.306800: この `686` のところをいじりつつ、という感じ。</pre>
+<pre>koron 1583993858.307700: `func main() { println("Hello World") }` だけでも VSZが 686MB 要るわwww</pre>
+<pre>koron 1583993888.308300: あと src/runtime/mem_linux.go がどう呼ばれてるかだけ見てから、どう報告するか考えるか…</pre>
+<pre>mattn 1583993954.308700: ちなみにリリースバイナリですか？それとも tip？</pre>
+<pre>koron 1583993962.308900: リリースバイナリです。</pre>
+<pre>mattn 1583993975.309300: あざます。僕も試してみます。</pre>
+<pre>mattn 1583994262.309600: ```#!/bin/sh
+
+set -e
+
+for i in $(seq 700 -1 600); do
+  echo $i
+  ulimit -v `expr $i \* 1024`
+  ./helloworld
+done```</pre>
+<pre>mattn 1583994269.309800: これ実行して 685 で落ちた。</pre>
+<pre>mattn 1583994281.310000: ```./foo.sh: 5 行: 22162 Segmentation fault      (コアダンプ) ./helloworld```</pre>
+<pre>mattn 1583994480.310600: OS 違うけど go1.13 だと 99MB で落ちた。</pre>
+<pre> 1583994536.310700: mem_linux.goのmmapとmunmapを呼び出しているところにログをいれた。これは1.13.8の結果。</pre>
+<pre> 1583994554.311000: こっちは1.14</pre>
+<pre>tsuyoshi_cho 1583994606.311700: 増えてますねえ</pre>
+<pre>koron 1583994607.311800: `sysReserve:  536870912` が特に怪しいね。</pre>
+<pre>koron 1583994628.312100: `sysReserve:  67108864` が2度走ってるのもへん</pre>
+<pre>mattn 1583994668.312400: ```    mp.fastrand[0] = 1597334677 * uint32(mp.id)
+      mp.fastrand[1] = uint32(cputicks())
+      if mp.fastrand[0]|mp.fastrand[1] == 0 {
+          mp.fastrand[1] = 1
+      }
+
+      mpreinit(mp)
+      if mp.gsignal != nil {
+          mp.gsignal.stackguard1 = mp.gsignal.stack.lo + _StackGuard
+      }```
+proc.go のここだな。</pre>
+<pre>mattn 1583994673.312600: mpreinit</pre>
+<pre>mattn 1583994705.313000: で渡してる fastrand の値、go1.14 だとこんな計算してる</pre>
+<pre>mattn 1583994707.313200: ```        mp.fastrand[0] = uint32(int64Hash(uint64(mp.id), fastrandseed))
+        mp.fastrand[1] = uint32(int64Hash(uint64(cputicks()), ^fastrandseed))
+        if mp.fastrand[0]|mp.fastrand[1] == 0 {
+                mp.fastrand[1] = 1
+        }
+
+        mpreinit(mp)
+        if mp.gsignal != nil {
+                mp.gsignal.stackguard1 = mp.gsignal.stack.lo + _StackGuard
+        }```</pre>
+<pre>mattn 1583994731.313500: fastrandseed の初期値は
+```s := (*[unsafe.Sizeof(fastrandseed)]byte)(unsafe.Pointer(&amp;fastrandseed))[:]
+getRandomData(s)```</pre>
+<pre>koron 1583994930.314200: うむ。ほぼ sysReserve の呼び出しの増加分がVSZ要求の増加分になってる感じ。</pre>
+<pre>mattn 1583994959.314400: あ、僕の見てるの違うわ。</pre>
+<pre>mattn 1583994962.314600: sysReserve で取られた後の次の alloc で落ちてるところだ。</pre>
+<pre>mattn 1583995081.315100: sysReserveAligned の windows のとこひどくないかw
+```func sysReserveAligned(v unsafe.Pointer, size, align uintptr) (unsafe.Pointer, uintptr) {
+    // Since the alignment is rather large in uses of this
+    // function, we're not likely to get it by chance, so we ask
+    // for a larger region and remove the parts we don't need.
+    retries := 0
+retry:
+    p := uintptr(sysReserve(v, size+align))
+    switch {
+    case p == 0:
+        return nil, 0
+    case p&amp;(align-1) == 0:
+        // We got lucky and got an aligned region, so we can
+        // use the whole thing.
+        return unsafe.Pointer(p), size + align
+    case GOOS == "windows":
+        // On Windows we can't release pieces of a
+        // reservation, so we release the whole thing and
+        // re-reserve the aligned sub-region. This may race,
+        // so we may have to try again.
+        sysFree(unsafe.Pointer(p), size+align, nil)
+        p = round(p, align)
+        p2 := sysReserve(unsafe.Pointer(p), size)```</pre>
+<pre>0Δ 1583995173.315400: できないなら仕方ない()</pre>
+<pre>mattn 1583995204.315700: なら最初の strReserve もやめればいいのに...</pre>
+<pre>koron 1583995227.316100: sysReserveのコンベンションがよくわかんないんですよね。</pre>
+<pre>koron 1583995251.316700: むかし(1.13)はsysReserveしてからsysMapなのかなって感じだったんだけど、いまはようわからない</pre>
+<pre>koron 1583995826.317100: pageAlloc.sysInitがめっちゃreserveしてるってことだけはわかった。</pre>
+<pre>mattn 1583995829.317300: <https://github.com/golang/go/issues/28081#issue-367959439></pre>
+<pre>mattn 1583995840.317800: ここで 100mb って言ってるからだいたい同じね。</pre>
+<pre>koron 1583995875.318100: GOTRACEBACK=crashってなに?</pre>
+<pre>mattn 1583995936.318300: core 作るやつ</pre>
+<pre>koron 1583996080.319400: アリーナが最小で64MB+35MBで持っていくからまぁそれはアローケーション速度考えたらしかたないといえなくもない</pre>
+<pre>mattn 1583997011.319900: 1.14 たしかページアロケータ書き換えたみたいなコミットは見た事ある。</pre>
+<pre>mattn 1583997069.320100: <https://github.com/golang/go/commit/14849f0fa57c67996bb00bd42bb14cef9f4e9a1e#diff-859dbbff1e58a5ae26b39484219d4791></pre>
+<pre>koron 1583997408.321000: mpagealloc_64bits.go の pageAlloc.sysInit で複数のサイズをアロケートしてる…</pre>
+<pre>koron 1583997415.321200: いやせいかくにはsysReserveか</pre>
+<pre>koron 1583998127.322200: さてさて…page allocatorが600MB確保する必要性について、考えなきゃな…</pre>
+<pre>mattn 1584000327.322600: tip で試す為にビルド中</pre>
+<pre>mattn 1584000369.323200: ちなみに 600 が困るのは cloud ?</pre>
+<pre>koron 1584000505.325100: まずはdockerです。利用するメモリを厳密に制限したい。そのうえで制限を超えるときはダンプを吐いて止まってほしい。
+<https://www.kaoriya.net/blog/2020/01/18/golang-on-docker-oom/>
+
+go製のプログラムはVSZでメモリ枯渇を見てるんで ulimit -v で制限せざるを得ない。にもかかわらず初期状態でめちゃくちゃ大きなVSZを確保しちゃうんで、制限の意味が希薄になってしまう。</pre>
+<pre>koron 1584000613.326900: ちょっと大きなプログラムだと起動に1GB以上のメモリが必要になって(実際に使う物理メモリは200MBくらい)、オーケストレーションツールとかでいろいろ合わせるとメモリ見積もりがまったく機能しない状態になっちゃうんですね。</pre>
+<pre>mattn 1584000690.327200: tip
+```685
+Segmentation fault (core dumped)```</pre>
+<pre>mattn 1584000752.328000: そうすね。go だとツール文化なので3個も4個も同時に起動するとそれだけで数GB必要になりますね。</pre>
+<pre>mattn 1584000807.328600: G社の様にメモリが蛇口から流れ出す水の様に見えるなら別だけど。</pre>
+<pre>mattn 1584000930.329000: ```GODEBUG=allocfreetrace=1```</pre>
+<pre>mattn 1584000940.329400: これ付けて起動すれば場所とサイズは分かるはず。</pre>
+<pre>mattn 1584000946.329700: <https://qiita.com/mattn/items/e613c1f8575580f98194></pre>
+<pre>0Δ 1584000974.330500: こう見ると、Javaの引数でメモリの確保量をコントロールできる仕組みはわりと合理的なんだな…… (アレはVMだから色々違うけど)</pre>
+<pre>mattn 1584001026.331000: 「落ちたのはお前が引数を指定しなかったからだ」という言い訳にできて便利。</pre>
+<pre>koron 1584001065.331100: たぶんこれ機能しないんじゃないかな。あたらしいページアロケーターが対応していない&amp;起動しただけで512+64+8+1MBもっていくので</pre>
+<pre>koron 1584001132.331400: そもそもページアロケーターが確保するこのメモリ、Goのmemstatに記録されなさそう。</pre>
+<pre>koron 1584001178.331600: やっぱでてなさげw</pre>
+<pre>koron 1584001263.332500: つーかね、新しいpageallocatorがページ管理のために使うメモリに関しては振る舞いを制御したりモニタする機構が何一つないのよ。</pre>
+<pre>mattn 1584001510.333600: 古いページアロケータ ←→ 新しいページアロケータ
+<https://twitter.com/NicoRiveros22/status/1237922586274729984></pre>
+<pre>koron 1584001550.334300: こんなん新しいアロケータ一発退場じゃんwww</pre>
+<pre>koron 1584001604.335400: 逆に言うとアレか、javaのXmx相当のオプションが増えてても良いのか。Goに</pre>
+<pre>mattn 1584001720.336000: ただ現状まだバガッと取ってそうな個所が特定できてないんですよねー。</pre>
+<pre>mattn 1584001750.336800: どっちかっていうと new allocator の仕組み上、そうなっちゃってる(複数回呼ばれて)みたいな動き。</pre>
+<pre>mattn 1584001787.337300: ガバッと取る量を変えてるならどこかにコメント残っててもおかしくないけどそれもない。</pre>
+<pre>tsuyoshi_cho 1584001827.337900: おもってたより、ガバッととっちゃった(想定しきれてなかった)のかな...ちょっと怖いが</pre>
+<pre>koron 1584002090.338500: ここで (512 + 64 + 8 + 1 + α)MB ごっつりとってます。</pre>
+<pre>koron 1584002119.339000: これはradix tree 構成するために仕方なくという感じになっちゃってる。</pre>
+<pre>koron 1584002152.339800: まぁ対応するページを確保しないとpage in しない使い方なので物理メモリ的にはダイジョブなんですけど…</pre>
+<pre>tsuyoshi_cho 1584002241.340700: あれ、じゃあなぜあのテストコードで...ああ、プロセスに取れる根本を制限したからこけるか見えたと...</pre>
+<pre>koron 1584002265.341400: VSZで制限するテストだからですね。</pre>
+<pre>koron 1584002323.342600: 仮想メモリは書き込まない限り0フィルされた共用ページにマップされて、物理メモリを消費しないんですよ。</pre>
+<pre>tsuyoshi_cho 1584002402.343100: あ、そこらはわりと知ってるので...とはいえありがとうございます。</pre>
+<pre>tsuyoshi_cho 1584002437.343900: しかしすごい量だな...、いや昨今のプロセス、わりと1GBとか取ることはあるけど</pre>
+<pre>koron 1584002459.344300: VSZだから基本的には痛くないんですが</pre>
+<pre>koron 1584002487.345100: たぶんOpenBSDでテストがこける(から無効化しちゃった)件とか、このあたりが関係してる気がしてなりません。</pre>
+<pre>methane 1584002501.345400: 省メモリにしたければ 386 を使えということだったり？</pre>
+<pre>mattn 1584002530.345800: には見えますねw (コード読む限り)</pre>
+<pre>koron 1584002562.346100: <https://github.com/golang/go/commit/cd1b9c1d5a7bb8ea6ebec223ce11e91897584ef4></pre>
+<pre>koron 1584002646.346900: ありゃ32bitだと、レベル数が1つすくないだけでなく、実装も違うのねw</pre>
+<pre>methane 1584002654.347000: // See mpagealloc_32bit.go for why darwin/arm64 is excluded here.</pre>
+<pre>mattn 1584002673.347300: ```// The number of radix bits for each level.
+//
+// The value of 3 is chosen such that the block of summaries we need to scan at
+// each level fits in 64 bytes (2^3 summaries * 8 bytes per summary), which is
+// close to the L1 cache line width on many systems. Also, a value of 3 fits 4 tree
+// levels perfectly into the 21-bit pallocBits summary field at the root level.
+//
+// The following equation explains how each of the constants relate:
+// summaryL0Bits + (summaryLevels-1)*summaryLevelBits + logPallocChunkBytes = heapAddrBits
+//
+// summaryLevels is an architecture-dependent value defined in mpagealloc_*.go.
+summaryLevelBits = 3```</pre>
+<pre>mattn 1584002710.348100: そそ。なんか実装も違うし計算も違うし。</pre>
+<pre>koron 1584002713.348300: まとめてreserveしてる。</pre>
+<pre>koron 1584002732.348900: で4段分のツリーを切り出してる。</pre>
+<pre>tsuyoshi_cho 1584002747.349300: メモリ管理の効率はアーキテクチャやサイズで変わるとはいえ、剛毅な... &gt; 違う実装</pre>
+<pre>koron 1584002790.350000: まぁ使えるメモリ2GB超えないなら、32bitで十分やんってのはわからないではないw</pre>
+<pre>koron 1584002810.350300: ただいろいろ遅くはなるんだよな。</pre>
+<pre>koron 1584002827.350800: あとintをint64で扱っちゃってるところ、全部見直さんと。</pre>
+<pre>tsuyoshi_cho 1584002997.351500: あれ、goのintって実装依存のサイズなんですっけ...、昨今の言語として、そこはちょっと微妙に悩む仕様ですね</pre>
+<pre>koron 1584003050.352000: 32bit だと 6MB で helloworld 起動できたwww</pre>
+<pre>tsuyoshi_cho 1584003058.352200: ぶw</pre>
+<pre>mattn 1584003062.352400: つよい子だ</pre>
+<pre>kuu 1584003078.352800: 差が激しすぎるw</pre>
+<pre>mattn 1584003114.353600: 家の Raspberry Pi (64bit) で Go 動かす時は絶対に GOARCH=386 するぞと決めた日だった。</pre>
+<pre>mattn 1584003153.354300: てかツール類もそうしたいわ。</pre>
+<pre>mattn 1584003159.354600: gopls もそうしようかなー。</pre>
+<pre>kuu 1584003181.355300: ラズパイなのにx86?</pre>
+<pre>tsuyoshi_cho 1584003182.355400: あれか2^32(10*3+2)はMBクラスに対して2^64(10*6+4)だからGBクラスでいけ、というお告げなのかw</pre>
+<pre>tsuyoshi_cho 1584003203.355900: arm64で普段は作ってる?</pre>
+<pre>koron 1584003240.356700: そうそう。「4GBメモリを用意できない貧乏人は32bitでも使ってろ」って強いメッセージを感じ取った。</pre>
+<pre>mattn 1584003327.357300: 僕とこだと</pre>
+<pre>mattn 1584003330.357500: ```263
+runtime: out of memory: cannot allocate 8192-byte block (0 in use)
+fatal error: out of memory```</pre>
+<pre>koron 1584003368.357800: 263?</pre>
+<pre>koron 1584003383.358200: ああ、32ビットバイナリが263で止まったってことか?</pre>
+<pre>mattn 1584003394.358400: ですです。</pre>
+<pre>koron 1584003711.359000: なんでだろ。OSとかカーネルのアレかなぁ。</pre>
+<pre>koron 1584003728.359400: 仕事のプログラムを32bitにしたら256MBでも起動した。</pre>
+<pre>koron 1584003788.359900: なんかulimit -vで指定した値の1/2～2/3くらいのVSZで起動するわw</pre>
+<pre>koron 1584003789.360200: なんだこれ</pre>
+<pre>koron 1584004064.360800: とりあえず仕事のプログラム、59MBあれば起動できることを確認したw 本当に起動するだけだけどw</pre>
+<pre>mattn 1584004207.361200: なんだろう。</pre>
+<pre>mattn 1584004219.361600: AT_PAGESZ が違うとかそんなんあるのかな。</pre>
+<pre>koron 1584004250.361800: OSなにつかってるです?</pre>
+<pre>mattn 1584004276.362000: ubuntu 18.04 です。</pre>
+<pre>mattn 1584004287.362300: ```LD_SHOW_AUXV=1 sleep 1000```
+これで AT_PAGESZ 何が出ますか？</pre>
+<pre>koron 1584004333.362800: 4096</pre>
+<pre>koron 1584004338.363100: さすがにコレはいっしょでしょ</pre>
+<pre>mattn 1584004341.363300: desuyone-</pre>
+<pre>koron 1584004356.363600: 19.10なんでKernelもかなり違うかも。</pre>
+<pre>mattn 1584004366.363800: なるほど。</pre>
+<pre>koron 1584004381.364000: 5.3.0-40</pre>
+<pre>koron 1584004522.364600: いやーまぁ32bitのほうが思想的には正しいよな…</pre>
+<pre>mattn 1584004642.367200: アロケートのサイズがアーキテクチャで固定になるので OS 側が取れないと判断する量が違うって事になるのか。</pre>
+<pre>raa0121 1584004667.367900: 18.04 だと 4.15.0-88 とかかな &gt; kernel</pre>
+<pre>mattn 1584004685.368300: そんな違うんかー</pre>
+<pre>mattn 1584006584.370200: あ、違う違う。指定は同じなんだから新しめの OS で 32bit のアプリがページ取らないって話だ。</pre>
+<pre>addokoda 1584006604.370300: 18.04.4 から  5.3.0-40 ですね。</pre>
+<pre>mattn 1584006656.371000: 帰ったらカーネルのバージョン上げて確認してみるかー。</pre>
+<pre>raa0121 1584007313.372500: <https://packages.ubuntu.com/bionic/linux-generic>
+んー 18.04.4 のパッケージはどこなんだろう…</pre>
+<pre>tsuyoshi_cho 1584007433.372900: <https://blog.bokuweb.me/entry/wasm>
+RustでGo</pre>
+<pre>addokoda 1584007802.373100: <https://packages.ubuntu.com/bionic/linux-generic-hwe-18.04> が default になった、ということですね。</pre>
+<pre>kyoh86 1584008074.373700: 相変わらずbokuwebさんはこの道を突き進んでいるなぁ笑</pre>
+<pre>mattn 1584008100.374000: 凄いですよねこれ。</pre>
+<pre>mattn 1584008124.374700: Go はまぁビルドするだけなんかも知れんけど。</pre>
+<pre>kyoh86 1584008162.375600: 何かとインタプリタとかエミュレーターへの情熱が凄いですわ…</pre>
+<pre>koron 1584078519.378300: 今日も今日とてメモリの扱いを調べてる。
+
+Linuxに関しては sysReserveでアドレス空間を予約して sysMap で物理ページを割り当てる、という意図っぽいことがわかった。</pre>
+<pre>koron 1584081119.379300: sysUsedの立ち位置がわかんないな…WindowsだとほぼsysMapと同じ感じなんだが。
+
+っていうかWinって仮想メモリのRESERVEとCOMMIT別々にできるのねw</pre>
+<pre>mattn 1584092235.379500: <https://github.com/golang/go/issues/37739></pre>
+<pre>ゴリラ 1584105648.379800: <https://github.com/eliukblau/pixterm></pre>
+<pre>ゴリラ 1584105664.380400: これでドラ○エを作れそう</pre>
+<pre>mattn 1584109193.380700: longcat で使ってます。</pre>
+<pre>ゴリラ 1584109519.380900: 完全理解</pre>
+<pre>johejo 1584109988.383900: sixel未対応のtmuxとかでも猫が出るのはpixtermのおかげですね</pre>
+<pre>ゴリラ 1584113097.384100: <https://twitter.com/gorilla0513/status/1238484658557292545?s=21|https://twitter.com/gorilla0513/status/1238484658557292545?s=21></pre>
+<pre>ゴリラ 1584113105.384500: 雑に作ってみた</pre>
+<pre>ゴリラ 1584113118.384900: ちゃんと作る</pre>
+<pre>mattn 1584124680.386000: ↑の Go 1.14 が VSZ を多めに取る件をコミッタの人達に聞いてみたんですが、やはりページアロケータの変更により多めになったそうです。 <https://golang.org/doc/go1.14#runtime></pre>
+<pre>mattn 1584124751.387600: で、言っても物理メモリじゃないのでいいっちゃぁいいんですが、kaoriya さんの本来の目的の docker で動かすプロセスの over commit 時に stack-trace を得たいという要件については VSZ で確認すべきではないという回答を貰いました。やるなら RSS だ、との事です。</pre>
+<pre>mattn 1584124774.388200: ただもちろん RSS だと OOM で SIGKILL が発生して stack-trace が得られないので</pre>
+<pre>mattn 1584124802.388600: /proc/sys/vm/overcommit_memory を監視しておきなさい、との事でした。</pre>
+<pre>mattn 1584124910.389700: 言い換えるなら ulimit -m は使えない(SIGKILL なので)、ulimit -v は VSZ なので目的に沿わない、他の方法で検出してね、との事。</pre>
+<pre>mattn 1584154135.390200: <https://drive.google.com/file/d/1nPdvhB0PutEJzdCq5ms6UI58dp50fcAN/view></pre>
+<pre>mattn 1584154150.390700: このスライド良いから Go やってる人読んで。</pre>
+<pre>mattn 1584154231.391500: このスライドの中だと固定数の worker はそれほど良くない物だと書いてある。固定数 worker とはこれの一番最後の奴ね。 <https://mattn.kaoriya.net/software/lang/go/20160706165757.htm></pre>
+<pre>mattn 1584154265.391900: で、何が変わりにいいかというと</pre>
+<pre>mattn 1584154265.392100: <https://mattn.kaoriya.net/software/lang/go/20171221111857.htm></pre>
+<pre>mattn 1584154272.392400: これが良いと書いてある。</pre>
+<pre>mattn 1584154287.392900: goroutine pool として働くからだと。</pre>
+<pre>mattn 1584154306.393600: ちなみに↑のスライドの人は Go core team の人です。</pre>
+<pre>mattn 1584154365.394700: とは言っても channel のバッファ数で同時実行が制限されるだけで実際に goroutine は起動してしまう。 N x 2kb のメモリは食う。</pre>
+<pre>mattn 1584154401.395400: ここについては今本人に「無視していい範疇だからですよね？」を確認してます。</pre>
+<pre>mattn 1584154531.396300: fixed workers がそんなにいい物じゃないという説明をこのスライドの 1/3 を割いて説明してる。</pre>
+<pre>mattn 1584154620.397600: 僕からは N x 2kb 消費するのと pause 状態ではあるけど goroutine 起動してるのでそのスタックや heap (あれば) が必要ですよね？あと stop the world の対象になりえますよね？を確認したい。</pre>
+<pre>mattn 1584154656.398200: 要は fixed worker は「良くはないかも知れないけど悪くはないよね」を聞きたい。</pre>
+<pre>tsuyoshi_cho 1584154781.398800: 自動制御がいいところ、とはいえ制御したくはあるときもあるし、むずかしいですねえ...</pre>
+<pre>mattn 1584155035.399500: fixed worker 生きっぱなしなのが良くないというのが主張ぽい気がするな。</pre>
+<pre>tsuyoshi_cho 1584155195.400200: workerのmax limitができると双方のいいとこどりでハッピー?</pre>
+<pre>mattn 1584155996.400500: ちなみに fixed worker の話は p75 以降。</pre>
+<pre>mattn 1584156058.400800: lifetime が長いのが良くないといってる様に見える。</pre>
+<pre>mattn 1584156105.401700: * lifetime が長いのがなぜいけないのか
+* channel によるストットリングは本当に goroutine pool になり得るのか
+ここがポイントすな。</pre>
+<pre>koron 1584156278.401900: あざます～</pre>
+<pre>mattn 1584156398.402400: 僕も気になってたので。</pre>
+<pre>koron 1584156416.402900: fixed worker、結局そのworkerを管理するアレコレつくらんといかんですよね。</pre>
+<pre>koron 1584156431.403600: どのくらいタスク処理したら作り直すとかそういうめんどいのもいずれ要る。</pre>
+<pre>mattn 1584156431.403700: ですね。後片付けが難しいと書かれてますね。</pre>
+<pre>koron 1584156498.404900: 僕のこれまでの経験では、全部goroutine起動するけど同時起動できる個数を制限する(パフォーマンス的にはコア数が上限)、っていう感じ。</pre>
+<pre>koron 1584156676.405000: よくわかってないんですが overcommit_memory は監視する意味ないですよね? オーバーコミットのポリシーを設定するやつだから。</pre>
+<pre>koron 1584156703.405200: /proc/meminfoもしくは/proc/{PID}/ のどこかかしら?</pre>
+<pre>tsuyoshi_cho 1584157723.406800: いまのままだと「引かぬ(リソース返却とか間にあわない)、媚びぬ(スワップとかじゃ無理)、省みぬ(潔く死ぬ)」みたいになってしまう...か?</pre>
+<pre>koron 1584157868.407400: この話はスワップかどうかは関係ないかなぁ。</pre>
+<pre>tsuyoshi_cho 1584157892.408300: (そこはちょっと無理があったか...)まあそうですね...初期値とかだし</pre>
+<pre>koron 1584157949.409500: メモリ逼迫の検出はできるけど、止まるにしてもグレースフルに止まらなきゃとかダンプはどうやって出すかなぁとか</pre>
+<pre>tsuyoshi_cho 1584158002.410500: 死ぬときって自殺はいいけど他殺(メモリ不足とかでOS側から殺される/ライブラリが初期化失敗)とかはすごい難しいですねえ...</pre>
+<pre>koron 1584158254.411800: 今回の場合は「OOM-Killされる前にアポトーシス」ですね。でそのアポトーシスの手段と内容が問われる。</pre>
+<pre>tsuyoshi_cho 1584158285.412200: それをいかに上手く検知してうまく死ぬか...か</pre>
+<pre>koron 1584158417.413800: 検知はほぼprocfsの監視しか手がない。なぜならruntime.MemStatには計上されないRSSがあるから。さらにRSSとVSSの区別もつかないから、RSSを見てるOOM-Killerと合わない。</pre>
+<pre>koron 1584158497.414300: んPSS見るほうが良いのかな? OOM Killerはどこみてるんだ?</pre>
+<pre>koron 1584246573.417100: macOSでRSS取るにはどうしたら良いのかな? golangで</pre>
+<pre>koron 1584247221.417400: cgo で取らんとあかんそうだ…</pre>
+<pre>koron 1584248412.417900: うん。実機が無いと時間の無駄だなコレ</pre>
+<pre>koron 1584249392.418400: <https://github.com/koron-go/phymem> とりあえずWinとLinuxでだけ動く、現在の物理メモリの使用量を取得するやつ</pre>
+<pre>itchyny 1584337253.423700: Go 1.14の主なregression
+
+- runtime: mlock of signal stack failed: 12 #37436 <https://github.com/golang/go/issues/37436>
+  - 現象: mlockに失敗した時にメッセージ (increase the mlock limit (ulimit -l) or update your kernel to 5.3.15+, 5.4.2+, or 5.5+) を表示してpanicする
+  - 根本原因: Linuxカーネルのバグ (<https://bugzilla.kernel.org/show_bug.cgi?id=205663>)
+  - 影響範囲: Linux 5.2.x, 5.3.0-5.3.14, 5.4.0-5.4.1
+  - Go側の原因: <https://github.com/golang/go/issues/35777> <https://go-review.googlesource.com/c/go/+/209899/> <https://go-review.googlesource.com/c/go/+/210098>
+  - 修正: mlockで失敗したらwiki page (<https://golang.org/wiki/LinuxKernelSignalVectorBug>) へのリンクを表示して継続する、予期しないSIGSEGV, SIGBUGを受けてmlockに失敗していたらstack traceにwiki pageへのリンクを表示する <https://go-review.googlesource.com/c/go/+/223417>
+
+- SIGILL: illegal instruction on any go tool under macOS #37459 <https://github.com/golang/go/issues/37459>
+  - 現象: `runtime.asyncPreempt()` で `SIGILL: illegal instruction` が起きてpanicする
+  - 原因: `darwin/amd64` にて `VZEROUPPER` を呼ぶようになった <https://go-review.googlesource.com/c/go/+/219131>
+  - 影響範囲: Sandy Bridgeよりも古いCPU (Advanced Vector Extensions (AVX) をサポートしていないCPU) のmacOS (Darwin/amd64)
+  - 修正: AVXをサポートしていないCPUでは `VZEROUPPER` を呼ばない <https://go-review.googlesource.com/c/go/+/221058>
+
+- runtime: crash on 1.14 with unexpected return pc, fatal error: unknown caller pc #37664 <https://github.com/golang/go/issues/37664>
+  - 現象: 再帰的な関数呼び出しで、`defer` 内の `recover` 後に `panic` があるときに `fatal error: unknown caller pc` エラーとなりpanicする
+  - 原因: `defer` の実装の改善 <https://go-review.googlesource.com/c/go/+/190098>
+  - 修正: `panic` の実装の修正 <https://go-review.googlesource.com/c/go/+/222420>
+
+- math/big: panic in big.ParseFloat (off by one access) #37499 <https://github.com/golang/go/issues/37499>
+  - 現象: `big.ParseFloat` でpanicする
+  - 原因: 割り算のアルゴリズムの変更 <https://github.com/golang/go/issues/21960> <https://go-review.googlesource.com/c/go/+/172018>
+  - 修正: `nat#divBasic` の実装の修正 <https://go-review.googlesource.com/c/go/+/221980>
+
+- cmd/cgo: fails to generate certain types with Go 1.14 #37621 <https://github.com/golang/go/issues/37621>
+  - 現象: `cgo -godefs` で意図したコードが生成されない
+  - 原因: <https://github.com/golang/go/issues/31891> <https://go-review.googlesource.com/c/go/+/181857></pre>
+<pre>mattn 1584338503.424700: まとめすばら</pre>
+<pre>koron 1584338683.425500: 結構(使うのに)めんどいのが多いなぁw</pre>
+<pre>tsuyoshi_cho 1584338986.426300: 1.15にfixするまで見送ってもいいんではないかという気持ちになりそうな、クリティカルというかデカいのが多い気が...</pre>
+<pre>koron 1584339074.426500: 1.14.1 ﾏﾀﾞｰ</pre>
+<pre>itchyny 1584339091.426900: defer改善など恩恵も大きいはずなので1.14.1でたら上げていきたい所存</pre>
+<pre>koron 1584339110.427400: <https://github.com/golang/go/milestone/137></pre>
+<pre>tsuyoshi_cho 1584339125.428100: (patch verでfixが来れば大丈夫か...)</pre>
+<pre>tyru 1584341099.429800: <@U7H4TJEG0> さんのまとめ  slack に書いとくのもったいない（すぐ消えるし）
+引用もしたいのでブログかなんかに書いてもらえたら嬉しいんですがどうでしょう…？</pre>
+<pre>mattn 1584341118.430100: あと slack のインデント、きびしい。</pre>
+<pre>itchyny 1584341575.430700: gistにはりつけました <https://gist.github.com/itchyny/e74dd400e3e2b7f0ada1cc0f729a9b4b></pre>
+<pre>tyru 1584341845.431300: ありがとうございます！</pre>
+<pre>johejo 1584342409.432900: そのうち自然にrenovateが1.14.1のPRを作ってくれると思うのでそれを待ちます。</pre>
+<pre>mattn 1584343466.433400: 1.14 は色々とダイナミックな変更が多かったのかな。</pre>
+<pre>mattn 1584343510.433900: preemption はマイナーバージョンでやるような内容じゃないのかもねw</pre>
+<pre>koron 1584343590.434600: 環境変数でON/OFFできるようにしてマイナーで数世代かけてできたら良かったかもですね。</pre>
+<pre>itchyny 1584350646.435200: <https://github.com/golang/go/issues/37741> これも結構怖いな</pre>
+<pre>mattn 1584350793.435800: 何がやりたいかあんま分かってないけど少し可哀そうになってくる <https://github.com/golang/go/issues/37836></pre>
+<pre>johejo 1584351258.436500: 本番環境に1.14を投入してしまったので少しビクビクしている。</pre>
+<pre>itchyny 1584351327.437000: 動いてるなら大丈夫 (ほんまか</pre>
+<pre>itchyny 1584351342.437300: 半分くらいはdarwin only</pre>
+<pre>mattn 1584351495.438200: いつも tip を投入する僕ですが、今回はしていません。</pre>
+<pre>koron 1584351498.438400: ぼくもついさっき1.14本番投入した。</pre>
+<pre>mattn 1584351514.439000: 裏切者！</pre>
+<pre>koron 1584351541.439800: koron-go/phymem で物理メモリモニタして、制限値の95%超えたらgraceful shutdownするようにしてな!</pre>
+<pre>mattn 1584351638.442000: `autopanic.Start(500)` とかしといたら 500MB 超えたら自動で panic する奴あると便利かも(知らんけど)</pre>
+<pre>koron 1584351775.442700: panicしてええの?w</pre>
+<pre>koron 1584351819.443200: とりあえず関数が呼び出される奴は作ったよ…でそんなかでcontextをcancelした</pre>
+<pre>mattn 1584405403.443900: <https://github.com/golang/go/commit/2fbca94db7e14fc1d18162cd203d7afc19b520e8></pre>
+<pre>mattn 1584405418.444400: 何も issue number がひもづけられてないけど、パフォーマンスに影響しそうな気がする。</pre>
+<pre>mattn 1584405448.445100: busy 状態で network poller が他の goroutine にスイッチする時に楽な goroutine の方にスイッチする変更。</pre>
+<pre>mattn 1584409464.445300: ﾋｰ <https://github.com/golang/go/issues/37881></pre>
+<pre>mattn 1584409485.445800: まぁ master で入ってる変更に起因してだろうけど。</pre>
+<pre>tsuyoshi_cho 1584409766.446500: 省メモリで32bitにしようとするとこっち踏むのか...</pre>
+<pre>koron 1584409814.447000: 省メモリっていってもVSZだけの話ですよ?</pre>
+<pre>koron 1584409828.447400: 物理メモリはさほど変わらない。ちょっと64ビットのほうが大きいくらい</pre>
+<pre>koron 1584409866.448100: いや昨日Windowsで見てた時は、32ビットのほうが物理メモリ大きかったかも…</pre>
+<pre>tsuyoshi_cho 1584410105.449400: や、まあ動作時メモリはそう変らないだろうとは思っていましたので、了解であります...</pre>
+<pre>koron 1584410220.450000: とりあえずいまはかったら32bitのほうが小さかったよかった。
+
+64bit
+
+```2020-03-17T01:55:20.128Z [DEBUG] memory monitor: current size=50642944 (pages=12364)```
+32bit
+
+```2020-03-17T01:56:15.273Z [DEBUG] memory monitor: current size=39993344 (pages=9764)```</pre>
+<pre>koron 1584410236.450300: 3/4 ってところかしらね</pre>
+<pre>koron 1584410395.450500: 4/5か?</pre>
+<pre>itchyny 1584412793.450700: <https://github.com/go-git/go-git/wiki/go-git-has-a-new-home!-v5-and-some-explanations></pre>
+<pre>johejo 1584413688.451400: src-d破産してたんか</pre>
+<pre>itchyny 1584413771.451600: はい…</pre>
+<pre>itchyny 1584413805.451900: <https://github.com/src-d/go-git/issues/1295#issuecomment-592965250> co-founderのコメント見つけた</pre>
+<pre>thinca 1584414972.452500: <https://tech.mercari.com/entry/2020/03/17/120137></pre>
+<pre>ゴリラ 1584415202.452900: いいね済み</pre>
+<pre>tyru 1584415835.453000: src-d 企業だったのか</pre>
+<pre>tsuyoshi_cho 1584416205.453700: ディレクトリぽさ
+rm-rf とかの企業があっても驚かなくてすみそう</pre>
+<pre>thinca 1584416253.454000: 企業名打とうとして事故りそう</pre>
+<pre>kuu 1584416437.456200: ？？？「よくわからないけどとある企業にアクセスしようとしてたらPCが物故割れた」</pre>
+<pre>johejo 1584416441.456400: curl <http://rm-rf.co.jp/|http://rm-rf.co.jp/> | sh やめましょう</pre>
+<pre>johejo 1584416460.457000: あれこのサイト本当に存在する</pre>
+<pre>tsuyoshi_cho 1584416498.457600: crontab-r(やめて)</pre>
+<pre>kuu 1584416516.458000: curlからアクセスするとあかんシェルスクリプトが返ってくるウェブサイト（やめてくれ）</pre>
+<pre>thinca 1584417024.458700: UA が curl だったら `rm -fr --no-preserve-root /` を返すようにしよう</pre>
+<pre>kuu 1584419038.460100: golang/goのコミットに結構RISC-V関係あるけど、このへん自前で持ってるのはすごいよなって改めて思う</pre>
+<pre>mattn 1584419080.460500: ようやくという感じがします。あまり進んでなかった。</pre>
+<pre>mattn 1584419136.461000: 4a6f656c という方が昨年末？だったかに入ってからグググと進みだした。</pre>
+<pre>kuu 1584419218.461300: 一瞬ハッシュかと思ったけどそうか名前か</pre>
+<pre>tsuyoshi_cho 1584419252.461800: 匿名掲示板 コミットhashがID hash</pre>
+<pre>tsuyoshi_cho 1584419261.462000: どんなだろw</pre>
+<pre>kuu 1584419421.462600: Joel Singという方か、名前をhex dumpしたものだこれ</pre>
+<pre>tyru 1584419701.463600: 同じくつい decode してしまったｗ
+```echo '4a6f656c'-&gt;split('..\zs')-&gt;map({-&gt; nr2char(eval('0x' . v:val)) })
+['J', 'o', 'e', 'l']```</pre>
+<pre>tyru 1584419724.464000: （xxd でできるかと思ったけどやり方がわからんかった）</pre>
+<pre>mattn 1584419980.464800: ```$ echo 4a6f656c | xxd -r -ps```</pre>
+<pre>johejo 1584420980.466900: まずvimscriptで解決するところがvim-jpだw</pre>
+<pre>kuu 1584421150.468300: Vim scriptがスッ…と出てくるあたり流石</pre>
+<pre>koron 1584421915.469700: `i^Vx4a^Vx6f^Vx65^Vx6c` (where `^V` means `ctrl+v`)</pre>
+<pre>koron 1584422003.470600: RISC-V、いい感じに動くボードがムズイ。実質しかないのがなんともしがたい</pre>
+<pre>tyru 1584422318.471400: なるほど、-ps そういうことか…</pre>
+<pre>tyru 1584422370.471600: i_CTRL-V で hex とか入力できるの初めて知った。便利</pre>
+<pre>koron 1584422426.471800: Vim、奥深い。</pre>
+<pre>mattn 1584422906.473700: 今日は CSV のカラムに入ってる JSON からある値のみ抜き出すスクリプトを Vim script で書きました。</pre>
+<pre>mattn 1584422938.474300: こういうので何使うかでホーム言語分かれる。
+小規模: Vim script
+中規模: Ruby or Go</pre>
+<pre>thinca 1584423054.474800: JSON、 `"` も `,` も含んでるので CSV に入れるのめっちゃつらそう</pre>
+<pre>mattn 1584423117.475600: CSV 化はツールがやってるのでそれほど問題ではないす。</pre>
+<pre>thinca 1584423152.476100: ツール「 `columns.join(',')`」</pre>
+<pre>thinca 1584423217.477000: CSV を扱うライブラリは要件次第なのもあってどこまでやってくれるかもそれぞれだったりするから、こいつは目的通りのことをしてくれるかなって毎回気を使わないといけない</pre>
+<pre>thinca 1584423281.477300: vital.vim は結構がんばってる <https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Text/CSV.vim></pre>
+<pre>thinca 1584423348.477900: と思ったけどよく見たらこれ改行入りのデータとか扱えてない気がしてきた</pre>
+<pre>mattn 1584423539.478500: ``` "foo", "bar"
+"bar", "baz"```
+ってどうなるんだろう。</pre>
+<pre>thinca 1584423772.478800: スペースが入るのかどうか…?</pre>
+<pre>tyru 1584423808.479700: ハイ、vital がんばってないです</pre>
+<pre>thinca 1584423815.480100: `,` の直後にない `"` も処理系によってはそのまま出しそうだし、わからんな</pre>
+<pre>tyru 1584423817.480200: issue もあるはず… &gt;改行</pre>
+<pre>thinca 1584423850.480500: そもそも従うべき仕様がないからな</pre>
+<pre>tyru 1584423866.480700: <https://github.com/vim-jp/vital.vim/issues/552></pre>
+<pre>eihigh 1584423926.481100: <http://www.kasai.fm/wiki/rfc4180jp></pre>
+<pre>eihigh 1584423934.481500: Goのencoding/csvはこれですね。</pre>
+<pre>eihigh 1584423950.481700: でも標準ではないのか…</pre>
+<pre>tsuyoshi_cho 1584424449.482400: 行指向に良い様なフォーマットに改行とかが相性悪いというのはありそう?</pre>
+<pre>mattn 1584424775.482900: 何か参考にするなら Go の見ると便利ですよ。Go のはだいたい RFC をベースに作られてる。</pre>
+<pre>johejo 1584427592.484300: csvの中にjson... うっ頭が....</pre>
+<pre>kyoh86 1584428051.485200: 頑なにCSVファイルです！って.xlsを.csvにリネームだけしたファイルを送ってくる人の話かと思ったら違った</pre>
+<pre>mattn 1584428899.486300: csv の中に JSON があるのではなく、実際はテーブルのカラムの中に JSON が入っていて、今回検証用に CSV (というか TSV) としてエクスポートしただけです。</pre>
+<pre>koron 1584431938.487200: gotags に exclude ってないのね…再帰的にたどってるときにアクセス権のないディレクトリがあるとそこで読み込みが止まっちゃってエラーになる…</pre>
+<pre>mattn 1584431994.487500: 引数が file(s) なのであらかじめ絞るしかなさそう。</pre>
+<pre>koron 1584432151.487900: ですね。いまはfind…</pre>
+<pre>raa0121 1584441045.488200: <https://twitter.com/_marony/status/1239798825339895808></pre>
+<pre>raa0121 1584441053.488700: ふふっ ってなりました</pre>
+<pre>kuu 1584441063.489000: えーかわいいじゃんあれ</pre>
+<pre>k-takata 1584441154.489700: キモカワイイ…かな</pre>
+<pre>raa0121 1584441164.489900: D言語くんもなかなかですよね</pre>
+<pre>ひがし 1584441293.490500: Lispエイリアン…</pre>
+<pre>mattn 1584441296.490700: <https://raw.githubusercontent.com/egonelbre/gophers/master/.thumb/animation/gopher-dance-long-3x.gif></pre>
+<pre>mattn 1584441311.491100: かわいい</pre>
+<pre>mattn 1584441333.491400: 僕の Windows Terminal の背景、これです。</pre>
+<pre>mattn 1584441353.491900: <https://twitter.com/mattn_jp/status/1228358194340093952></pre>
+<pre> 1584441358.492100: </pre>
+<pre>mattn 1584441436.493400: Zimbu モンキーは tyru さんのブログに行けばいつでも会える。</pre>
+<pre>thinca 1584441479.493700: こいつもはや Bram 自身のアバターという</pre>
+<pre>kuu 1584441520.494100: 入荷 :gopher-dance:</pre>
+<pre>kuu 1584441523.494400: CC0は最高</pre>
+<pre>thinca 1584441533.494900: Vim には公式マスコットいないなぁ</pre>
+<pre>mattn 1584441556.495600: <https://ih0.redbubble.net/image.673424615.3130/st,small,507x507-pad,600x600,f8f8f8.u5.jpg></pre>
+<pre>mattn 1584441584.495900: もしくは</pre>
+<pre>mattn 1584441586.496100: <https://i.imgur.com/cf7qZsG.jpg></pre>
+<pre>tsuyoshi_cho 1584448954.496800: Vim力というか魔力が高そう</pre>
+<pre>yy_yank 1584449877.498100: ゴーファーくんマスコットほしかったんですけどグーグルのショップで仕入れられなくて泣く泣く諦めました</pre>
+<pre>mattn 1584450032.498700: gopher のぬいぐるみ貰ったの、9年も前か。</pre>
+<pre>tsuyoshi_cho 1584450295.499300: gopherくんがライナスの毛布になってる子供がいそうだ...</pre>
+<pre>mattn 1584460221.000100: これ kaoriya さんの欲しそうな奴？ <https://github.com/golang/go/commit/fb1cd942225f66a6a8506d28bf317063efe50979></pre>
+<pre>koron 1584506569.000800: おおちょっとおもしろげ</pre>
+<pre>koron 1584506596.001400: Actions上でgoxzがこんなエラー吐いてとまって???ってなってる。
+
+```[goxz] [!!ERROR!!] mkdir /home/runner/work/nvgd/src/github.com/koron/nvgd/goxz/.goxz-089982683/nvgd_refs/tags/v1.5.0-beta.1_darwin_amd64: no such file or directory```</pre>
+<pre>itchyny 1584506813.001700: -pvにスラッシュあるとダメかも</pre>
+<pre>koron 1584506852.002000: あーそういうこと…これはめんどい</pre>
+<pre>itchyny 1584506905.002200: `${GITHUB_REF##*/}` ？</pre>
+<pre>koron 1584507165.002800: 使う場所が多いからいったん環境変数TAGを宣言してみたけど…</pre>
+<pre>koron 1584508617.003500: itchynyさんのmmvのrelease.yamlを参考に、makefileなしでリリースできるworkflow作った。<https://github.com/koron/nvgd/blob/master/.github/workflows/release.yml></pre>
+<pre>koron 1584509041.004200: <https://github.com/koron/nvgd/actions?query=workflow%3ARelease> この激闘の履歴w</pre>
+<pre>koron 1584509327.005000: 問題点は各ステップのテストがGitHub Actionsでしかできないことw</pre>
+<pre>itchyny 1584509519.006100: 完全に好みですが `run: echo "::add-path::$(go env GOPATH)/bin"` でPATH通してしまえば `${{ env.GOPATH }}/bin/` 書かなくても良くなりそう。</pre>
+<pre>koron 1584509544.006700: それ、最初あったんですが</pre>
+<pre>koron 1584509579.007600: binを自分で掘らないとgo get でbinに書いてもらえない、みたいな現象に遭遇した際に切り分けて消しちゃったんですよ。</pre>
+<pre>koron 1584509597.007900: で、いずれ復活させるかも。</pre>
+<pre>koron 1584509692.008200: いまはしばらくActionsいじりたくない気持ちw</pre>
+<pre>koron 1584509716.008300: itchynyさんのを参考にして始めたので、当然最初はあったw</pre>
+<pre>itchyny 1584509766.008800: あらら、bin作らないといけないのなんでだろう…</pre>
+<pre>koron 1584509901.009600: workspace &amp;&amp; GOPATH をずらしてるのとか、関係があるかもなぁとか考えてます。</pre>
+<pre>koron 1584510053.010400: テストのためあまりにリトライしたんでbashにこんなヒストリができてるwww
+
+```git tag -d v1.5.0-beta.1 &amp;&amp; git commit -a --amend -m 'build and release with github actions' &amp;&amp; git tag -a v1.5.0-beta.1 -m 'beta tes
+t to release with Github Actions' &amp;&amp; git push origin :v1.5.0-beta.1 &amp;&amp; git push --tags```</pre>
+<pre>tsuyoshi_cho 1584578110.011600: <https://github.com/nektos/act>
+これでActionの確認が捗るかな?</pre>
+<pre>mattn 1584578171.011900: これ直ったらしい。 <https://github.com/golang/go/issues/37741></pre>
+<pre>ゴリラ 1584622335.012500: <https://twitter.com/gorilla0513/status/1240595645490008065?s=21|https://twitter.com/gorilla0513/status/1240595645490008065?s=21></pre>
+<pre>ゴリラ 1584622346.013000: あとで試そうと思っているやつ</pre>
+<pre>ゴリラ 1584622357.013400: 使ったことがある人の感想知りたいマン</pre>
+<pre>johejo 1584622719.017000: GoLandで使ったことあります。
+無理やり取りテーブルテストに押し込んでしまうくせがつくかも...
+あと値やポインタとerrorを返す関数シグネチャのときにちょっと変な感じのコードが出るので好みが分かれるかも。</pre>
+<pre>johejo 1584623007.019900: あとレシーバを使う関数だと初期化のコードがちょっと癖があるかもですね。
+アドホックな純関数のテーブルテストにはとても向いていると思います。</pre>
+<pre>ゴリラ 1584623123.021000: アドホックな純関数ってのはそういった感じのですか？</pre>
+<pre>johejo 1584623379.025000: レシーバとかが無くて状態を持たない関数ですね。
+例えが良くないかもしれませんが、strconvパッケージの関数とかです。</pre>
+<pre>daisuzu 1584626611.026600: 普通のテスト書く時はとりあえずgotestsでコード生成してから気に入らないところをどうするか考えますね</pre>
+<pre>daisuzu 1584626638.027200: 普通じゃないのは <https://pkg.go.dev/golang.org/x/tools/go/packages/packagestest?tab=doc#TestAll|https://pkg.go.dev/golang.org/x/tools/go/packages/packagestest?tab=doc#TestAll> みたいなのを使う時</pre>
+<pre>ゴリラ 1584628029.027400: なるほど</pre>
+<pre>ゴリラ 1584628038.027800: 自分でやってみて、だな</pre>
+<pre>lighttiger2505 1584630749.028600: ちなみにフォーカスしている関数を対象にgotestsを実行するプラグインもあります。
+<https://github.com/buoto/gotests-vim></pre>
+<pre>itchyny 1584632439.028900: <https://github.com/golang/go/issues/37934></pre>
+<pre>tyru 1584632999.029500: よく分からないけど出たってことなんですかねこれ</pre>
+<pre>tyru 1584633010.029700: タグ撃たれてるな</pre>
+<pre>mattn 1584633050.030100: まだ正式ではないですね。</pre>
+<pre>mattn 1584633576.030300: <https://groups.google.com/forum/#!forum/golang-announce></pre>
+<pre>mattn 1584633582.030600: ここに出たら正式。</pre>
+<pre>tyru 1584635619.031000: gopls v0.3.4 もリリースされましたね
+<https://github.com/golang/go/issues/33030#issuecomment-601280048></pre>
+<pre>mattn 1584636182.031600: 1.14.1 マイルストーンの release blocker 無いので週末か週明けには出そうですね。</pre>
+<pre>eihigh 1584652381.031900: リリースされた！？
+<https://twitter.com/golang/status/1240744527087972368?s=19|https://twitter.com/golang/status/1240744527087972368?s=19></pre>
+<pre>eihigh 1584652391.032200: :sokudo:</pre>
+<pre>daisuzu 1584679342.032500: gopls v0.3.4はbugfixのみなんですね</pre>
+<pre>daisuzu 1584679385.033100: masterの方は補完がすごくなってますが...中途半端だからv0.4.0でまとめて出すのかな?
+たしか今月中にリリース予定だったはず</pre>
+<pre>koron 1584689893.034600: graphql-go/graphql の最大のダメな点に行き当たった。Extension でエラー返すのに `panic()` で返さなきゃいけない…</pre>
+<pre>mattn 1584689938.034800: (´・ω・｀)</pre>
+<pre>koron 1584689955.035200: なんか中でかなり気軽にpanic &amp; recover してるくさい</pre>
+<pre>mattn 1584689985.035700: java のコードを参考にしてる感</pre>
+<pre>koron 1584690001.035900: facebookが出してるリファレンスのjs実装の移植版ってことなので…</pre>
+<pre> 1584690121.036200: こういうのが至る所にある。</pre>
+<pre>koron 1584690144.036900: try catch の表現だってのは分かるけど、だったら do something のところで err 返してよっていう…</pre>
+<pre>koron 1584690273.037100: <https://github.com/graphql-go/graphql/issues/402></pre>
+<pre>koron 1584691021.037400: んーコレどうするか迷うな</pre>
+<pre>koron 1584692462.041300: 背景として GraphQL の初段の実装は終わったので次にcost baseのQuery complexityをやろうとしたんだよね。取れる手段としては
+
+1. panic()を受け入れて query complexity やる
+2. graphql-go/graphql をフォークして手を入れ、より良い形で query complexity やる
+3. 99design/gqlgen を評価(=同じところまで実装)してみる
+
+くらいか。妥当な手としては 1 もしくは 3 かなぁ。2は趣味としてはアリくらい。</pre>
+<pre>koron 1584694098.043400: panic/recoverの何があかんって契約がないことなんだな。plugin的なロジックをrecover前提で書いちゃうと、将来呼び出し側がrecoverしなくなっちゃったときにそのロジックがすべてを壊しちゃう</pre>
+<pre>koron 1584694293.043800: …99designs/gqlgen もかなり panic あるなぁ…</pre>
+<pre>koron 1584694408.044800: うーんほぼいっしょだな。try～catchを表現するときは panic &amp; recover でやるべしみたいなマニュアルがありそうな感じだなw</pre>
+<pre>koron 1584694426.045200: JS文化、そのままもってきちゃうのかぁ</pre>
+<pre>johejo 1584694463.045800: errorのバケツリレーがお気に召さない人結構いそうだ</pre>
+<pre>mattn 1584694509.046600: 大域ジャンプするには便利。</pre>
+<pre>koron 1584694514.047000: なんか雑な並行処理のニオイする。</pre>
+<pre>mattn 1584694524.047300: encoding/json がやってる。 &gt; panicで大域ジャンプ</pre>
+<pre>koron 1584694583.048300: GraphQL界隈だと大域ジャンプじゃなくて、並行処理からのエラー回収の雑な手段になっちゃってるかも。</pre>
+<pre>koron 1584694792.050600: あーこの並行の雑さは気持ち悪い。goも雑に並行処理できるけど、それはできるというだけでやって良い(正しい効果が得られる)という意味ではない。とはいえ大枠は分かった。</pre>
+<pre>ゴリラ 1584696747.051100: 大域ジャンプか
+なるほど
+そういう使い方があるのか</pre>
+<pre>kyoh86 1584717504.052300: Golangでローカルのロケール取る方法ってなにかありましたっけ…</pre>
+<pre>kyoh86 1584717559.053300: <http://golang.org/x/text/language|golang.org/x/text/language> はそれっぽかったけど、
+文字列（en_USとか）をParseすることしかできなかった。</pre>
+<pre>kyoh86 1584717601.054000: ✗ロケール
+○言語</pre>
+<pre>johejo 1584718621.055100: go-runewidthでは環境変数を見てますね <https://github.com/mattn/go-runewidth/blob/master/runewidth_posix.go></pre>
+<pre>kyoh86 1584718723.055600: やはりそこか…</pre>
+<pre>kyoh86 1584718743.056000: WindowsのLANGってどんなんだったかなというのが思い出せないんですが</pre>
+<pre>kyoh86 1584718747.056300: まぁ多分たいさなかろう</pre>
+<pre>mattn 1584718808.056600: Windows の場合はコードページで判定しています。 <https://github.com/mattn/go-runewidth/blob/14e809f6d78fcf9f48ff9b70981472b64c05f754/runewidth_windows.go#L23></pre>
+<pre>kyoh86 1584719300.057000: あー</pre>
+<pre>kyoh86 1584719315.057300: 言語なんで、コードページあんま関係ないんですよね</pre>
+<pre>kyoh86 1584719335.057700: まぁSJISだったらjaとかは判定できるか…</pre>
+<pre>mattn 1584719522.058000: Windows は LANG 設定しないんですよね。</pre>
+<pre>kyoh86 1584719617.058800: なるほどやはりそうか</pre>
+<pre>kyoh86 1584719631.059300: Windowsの環境変数って治安悪かった記憶が</pre>
+<pre>kyoh86 1584719682.060500: やはり厳しそうですね。適当なAPI叩くとかやることになりそうだ</pre>
+<pre>mattn 1584719797.060900: systeminfo というコマンドで取れなくはないですが、まぁ面倒ですね。</pre>
+<pre>kyoh86 1584719843.061800: ふむ。それ用のパッケージ書くくらいのボリュームですね</pre>
+<pre>kyoh86 1584719891.062800: <http://golang.org/x/text/language|golang.org/x/text/language> も死ぬほど使いにくいし、一旦l10nは諦めますわ</pre>
+<pre>johejo 1584787762.071200: os.Getpidして自分自身に向かってsyscall.KillでSIGTERM送って実装済みのgraceful shutdownをキックするのアリなんだろうか
+それでそのままk8sに再起動してもらう</pre>
+<pre>ゴリラ 1584847962.072600: bytes.Buffer.Read ソースコード読んでいるけど、ナニモワカラナイ</pre>
+<pre>koron 1584848526.073700: なにわからないです?
+
+Readは大きく2段階に分かれてて、copy以降の後半はめっちゃ簡単ですけれど…</pre>
+<pre>ゴリラ 1584848617.074000: まさにcopyの部分の挙動がわからないです
+デバッグで確認したのですが、
+Buffer.Readの↓の部分copyしてもpに何も入っていないし、nも0のままでした
+```n = copy(p, b.buf[b.off:])```
+</pre>
+<pre>koron 1584848670.074200: len(p) と len(b.buf[b.off:]) をprintf してみました?</pre>
+<pre>koron 1584848699.074400: どっちかが 0 になってるとか。まぁ後者が0ってことはb.empty() を抜けてるからないとは思いますが。</pre>
+<pre> 1584848737.074600: こんな感じになっています</pre>
+<pre>ゴリラ 1584848806.075000: コードは↓です
+
+```	buf := make([]byte, 0, 5)
+	b := bytes.NewBufferString("hello")
+	_, err := b.Read(buf)
+	if  err != nil {
+		log.Fatal(err)
+	}
+	println(string(buf))```</pre>
+<pre>koron 1584848912.075200: えっとbufがおかしくて、capacityは5だけど長さ0なんで読めないんですよ。</pre>
+<pre>ゴリラ 1584848929.075400: あれ</pre>
+<pre>ゴリラ 1584848937.075600: あー</pre>
+<pre>koron 1584848943.075800: `make([]byte, 5)` で長さもキャパシティも5にしないとね</pre>
+<pre>ゴリラ 1584848999.076000: :rikai:</pre>
+<pre>ゴリラ 1584849018.076300: ありがとうございます
+自分の中で、長さと容量の理解が曖昧だったのがわかりました</pre>
+<pre>ゴリラ 1584849084.076500: 長さ ＝ 一度に読み取れるデータ量
+容量 ＝ スライスが保持できるデータ量</pre>
+<pre>ゴリラ 1584849092.076700: って解釈で合っていますか？</pre>
+<pre>koron 1584849094.076900: いやー微妙w</pre>
+<pre>ゴリラ 1584849107.077100: 微妙だった…ｗ</pre>
+<pre>koron 1584849189.077300: 容量ってのは裏にある配列のサイズなんです。長さってのは手前にあるスライスのサイズなんですね。
+
+でスライスにappendするときに容量までは配列の再確保無しにスライスが長さを拡張できるんです。容量を超えると配列の再確保が必要になる。</pre>
+<pre>koron 1584849213.077500: ↑ちょっと雑な説明ですけど、おおよそってことで勘弁してください。</pre>
+<pre>ゴリラ 1584850295.077800: ```	array := [...]int{1, 2, 3, 4}
+	fmt.Printf("array len: %d, cap: %d\n", len(array), cap(array))
+	slice := array[1:3]
+	fmt.Printf("slice len: %d, cap: %d", len(slice), cap(slice))```
+これが
+```array len: 4, cap: 4
+slice len: 2, cap: 3```
+なったので、tenntennさんの資料も合わせて以下の理解になりました
+
+• スライスは配列の一部を切り出したもの
+• スライスのlenは切り出した要素数、capは切り出した位置から配列の最後まで要素数</pre>
+<pre>ゴリラ 1584850329.078000: &gt; でスライスにappendするときに容量までは配列の再確保無しにスライスが長さを拡張できるんです。容量を超えると配列の再確保が必要になる
+:rikai:</pre>
+<pre>ゴリラ 1584850476.078200: あー、でも
+lenは今持っている要素数
+って解釈まら、lenが0のとき読み取れないってのはピンとこないな
+だから、スライスのサイズっていったほうが矛盾がないのか</pre>
+<pre>ゴリラ 1584850484.078400: なるほど</pre>
+<pre>ゴリラ 1584850512.078600: スライスのサイズが0ならそりゃ読み取れないなって話になるか</pre>
+<pre>koron 1584855165.078800: io.Reader.Readに限って言えば、「最大何バイト読み込むか」っていう引数をスライスの長さで代用してるんですよ。ほかの言語の同等の関数だと、だいたい別途用意されてますからね。</pre>
+<pre>koron 1584855280.079000: C言語の fread <http://www9.plala.or.jp/sgwr-t/lib/fread.html>
+
+Javaのreadの引数が多いほう <https://docs.oracle.com/javase/jp/8/docs/api/java/io/InputStream.html#read-byte:A-int-int->
+
+Javaに関してはgoみたいに配列の長さで指定するのもあるけど、スライスに対応する概念がないから別に用意されてる感じですね。</pre>
+<pre>ゴリラ 1584862942.079300: なるほど</pre>
+<pre>kyoh86 1584872878.080300: :thought_balloon: v2運用はbranchでやるよりsubdirectoryでやったほうがよさそうだなぁ</pre>
+<pre>kuu 1584875375.081500: ArchLinux上で本体とgo-toolsのバージョンが噛み合ってなくてgoplsがまともに補完候補を返してくれないという現象に遭遇して思ったんですが、ここにいるLinuxユーザーの方々ってディストロのパッケージ使ってます？</pre>
+<pre>kuu 1584875400.082000: go関係全部ディストロ介さず入れたほうがいいのではという気がしてきた</pre>
+<pre>tsuyoshi_cho 1584875522.083900: パッケージマネージャを経由する理由はどれか、によりそう
+• パッケージの署名(バイナリ) -&gt; しょうがない
+• 一括更新 -&gt; LinuxBrewする手はある(go でビルド/bottleだけどディストリ依存ではないはず)
+• ない -&gt; 個別に入れるでもよさそう
+ただ、更新が面倒なんですよね、go...</pre>
+<pre>kuu 1584875583.084400: 強いて言うなら更新が面倒という理由なので</pre>
+<pre>kuu 1584875588.084600: 何気にでかい理由</pre>
+<pre>kuu 1584875756.085600: LinuxBrew考えてみるかな</pre>
+<pre>tsuyoshi_cho 1584875839.086300: ただ、全部あるわけじゃない(当然)なので、漏れはどうしても手動/ディストリまかせになるという &gt; Linuxbrew</pre>
+<pre>tsuyoshi_cho 1584875866.086800: まあ、簡単なのならfomulaを寄贈、更新する手もtap作ってもいいだろうけど</pre>
+<pre>raa0121 1584875927.087200: go なら、 go get で入れちゃうのも…</pre>
+<pre>raa0121 1584875952.087900: <https://twitter.com/golang/status/1240744527087972368>
+これに乗ってるコマンド</pre>
+<pre>kuu 1584875964.088200: go getして直った所:v:</pre>
+<pre>tsuyoshi_cho 1584875974.088500: 本体ならgo get1つなので、そっちでいいか...</pre>
+<pre>kuu 1584875986.088800: ではなく本体もgo getできるのか</pre>
+<pre>ゴリラ 1584876923.089300: Go系のツールは基本 go get しちゃう
+その方が楽</pre>
+<pre>tsuyoshi_cho 1584877494.089700: 数が多くなったので、更新がめんどう...</pre>
+<pre>kuu 1584877557.090300: gomod入れた上で何も考えずにgo getしまくるシェルスクリプト書いて使ってる（遅い）</pre>
+<pre>itchyny 1584891437.091000: <https://github.com/Homebrew/homebrew-core/pull/51909> なかなか入らない (まあ休日だしな</pre>
+<pre>koron 1584927056.091700: CIで弾かれてる?</pre>
+<pre>johejo 1584957462.093700: golang/go のissue漁ってみたけどまだバクレポートは上がってないな。
+<https://status.discordapp.com/incidents/62gt9cgjwdgf|https://status.discordapp.com/incidents/62gt9cgjwdgf></pre>
+<pre>mattn 1585031130.094300: <https://twitter.com/oinarides/status/1242330207551283201></pre>
+<pre>mattn 1585031134.094600: ゴリラ動画</pre>
+<pre>koron 1585033032.094800: ゴリラシリーズ
+<https://www.youtube.com/playlist?list=PLGhgEz-NA9W1zqygsQ8Gpp7bWwXH-Qegw></pre>
+<pre>koron 1585044234.096300: graphql-go/graphqlのコスト評価ルール、JS版から移植した。移植したがコスト設定・計算の正解がわからずまだ動いてない…</pre>
+<pre>k-takata 1585045739.096900: ゴリラテープ、何か欲しくなってきた。</pre>
+<pre>ゴリラ 1585049616.098100: ゴリラといえばGoってくらいには認知されるようにがんばろ</pre>
+<pre>ゴリラ 1585049622.098300: 逆か？</pre>
+<pre>mattn 1585051710.098500: Go といえばリラ</pre>
+<pre>eihigh 1585051971.098700: ヴィといえばム</pre>
+<pre>dohq 1585052605.099000: マジカルバナナかな？</pre>
+<pre>ゴリラ 1585059651.099200: ウホ</pre>
+<pre>kamichidu 1585096311.099900: ウホといえば禹歩</pre>
+<pre>0Δ 1585097274.000300: 烏兎？ (そうじゃない</pre>
+<pre>mattn 1585097400.000700: 二兎を追う者はウッホも得ず</pre>
+<pre>mattn 1585097420.000900: 言いますね。</pre>
+<pre>ゴリラ 1585103645.001700: 深い</pre>
+<pre>u 1585116907.002100: <https://github.com/samuelyuan/OpenBiohazard2> すごい・・・</pre>
+<pre>tsuyoshi_cho 1585117000.003200: プロジェクト名が Resident Evil じゃなくBiohazard なのも、なかなか拘りがありそうな方だ</pre>
+<pre>mattn 1585119797.003500: OpenGL でちゃんとやってるなぁ。頑張ってる。 <https://github.com/samuelyuan/OpenBiohazard2/blob/09edfb50d8e849a8a502062f81d2991ef458e401/render/sceneentity.go></pre>
+<pre>mattn 1585119858.004100: glfw は以前、みんな1回は見た事あるであろう glxgears を go に移植した時に使った。</pre>
+<pre>mattn 1585119860.004300: <https://github.com/mattn/go-glxgears></pre>
+<pre>vikke 1585120163.005100: golangで質問あるんですけど、適切なコミュニティってどこですかね?</pre>
+<pre>kuu 1585120183.005400: とりあえずここでいいのでは、Golangのプロいるし</pre>
+<pre>vikke 1585120198.005800: なんかvimとまったく関係無いのが心苦しい。</pre>
+<pre>kuu 1585120245.006400: ここの話の半分くらいはVimと全く関係ないのでw</pre>
+<pre>vikke 1585120318.007400: なるほど。質問纏めてきます。</pre>
+<pre>0Δ 1585120392.008300: GophersSlackという手もありますが、ぶっちゃけVim-jpの方が回答早い時が殆どですね……(←</pre>
+<pre>raa0121 1585120550.009100: 各言語窓とかは殆どVimに関係ない、言語の話してるし…</pre>
+<pre>raa0121 1585120563.009400: 私もガンガン質問してるし…</pre>
+<pre>mattn 1585120658.010000: ここ割と精通してる人いるし、ROM ってるプロが何人かいます。</pre>
+<pre>mattn 1585120707.010500: ちなみに子育てにお困りなら <#CMQ6ER2DC|kosodate> なんてのもありますよ。</pre>
+<pre>tsuyoshi_cho 1585120753.011000: 腹がへったら <#CCLJFJ58F|gourmet>  とか(もっと減る)</pre>
+<pre>vikke 1585120769.011400: fishingとか見た覚えが。。。。</pre>
+<pre>dohq 1585121009.012600: gophers slackにもjapaneseチャンネルありましたね</pre>
+<pre>mattn 1585121026.013000: そっちにもいますけどねw</pre>
+<pre>mattn 1585121072.013900: たぶん日本の Go だとここが一番アクティブ。</pre>
+<pre>vikke 1585123223.018800: gRPCというか、importの質問です。
+<https://github.com/vikke/go_study> にコード置きました。
+これを
+```[feature/grpc_init]$ env | grep GO
+GOROOT=/usr/lib/go
+GOPATH=/home/vikke/go```
+の環境で、
+```make build_idl
+make build```
+すると、
+```[master]$ make
+go build -o hermes_server src/main.go
+src/main.go:9:2: package hermes-pub/idl is not in GOROOT (/usr/lib/go/src/hermes-pub/idl)
+make: *** [Makefile:2: build] エラー 1```
+とエラーが出て進みません。GOROOTを見てしまっているみたいなんですけど、GOROOTを `~/go`にするとエライ量のパッケージ見付からないエラーが出ます。
+ディレクトの配置を変えたりとか色々したのですが、解決出来ないでいます。
+だれかヘルプミー。</pre>
+<pre>vikke 1585123277.019100: 環境はArchLinuxです。</pre>
+<pre>eihigh 1585123456.020800: ```import "net/http" &lt;= GOROOT見に行く
+import "<http://github.com/mattn/go-isatty|github.com/mattn/go-isatty>" &lt;= GOPATH見に行く```
+って仕様なので、ドメイン始まりでimportすべきところをパッケージ名だけでimportしてる、のが原因ですね。</pre>
+<pre>vikke 1585123515.021600: ドメインかどうかって、最初の部分に.が含まれているかどうかですか?</pre>
+<pre>eihigh 1585123554.022300: のはず…
+というか、標準ライブラリ以外下の形式でimportする、のが正しい表現かな…</pre>
+<pre>eihigh 1585123575.022800: （表現に自信なくなってきた</pre>
+<pre>mattn 1585123588.023200: ソースを修正せずに治したいのであれば idl の下に go.mod というファイル名の以下のファイル
+```module hermes-pub/idl```
+を置いて、ルートにある `go.mod` に以下を追加したら直ります。
+```replace hermes-pub/idl =&gt; ./idl/```</pre>
+<pre>eihigh 1585123604.023400: _その手があった…_</pre>
+<pre>vikke 1585123640.024100: go.modは置いてあるので、それをやってみます。</pre>
+<pre>mattn 1585123698.025200: 意味を説明すると</pre>
+<pre>mattn 1585123715.025600: ■ module hermes-pub/idl (idl/go.mod)
+「俺は ディレクトリは idl だがパッケージ名は hermes-pub/idl だ」</pre>
+<pre>mattn 1585123725.025900: ■ replace hermes-pub/idl =&gt; ./idl/ (go.mod)
+「そうだ、ディレクトリは idl だが、お前は hermes-pub/idl だ」</pre>
+<pre>vikke 1585123840.026600: あざます。動きそうです。そして原理もありがとうございます!!</pre>
+<pre>tennashi 1585123987.028200: ドメイン始まりかどうかで見る先変わるのか...
+go.mod に `module test` って書くと `test/hoge` ってpackage 名になりますが、このとき GOROOT 設定した環境でどういう挙動をするんだろう...</pre>
+<pre>mattn 1585124161.029900: 標準パッケージは上書きできないので test/hoge として扱えます。</pre>
+<pre>mattn 1585124209.030600: go.mod あるならドメイン名でなくてもいいです。</pre>
+<pre>mattn 1585124241.031900: 厳密にはドメイン名かどうかでなく標準パッケージかどうかで見てた気がする。</pre>
+<pre>eihigh 1585124325.032500: 説明難しくてやけどした :innocent:</pre>
+<pre>mattn 1585124619.032900: あ、すいません。 `.` ありなしで見てました。</pre>
+<pre>mattn 1585124661.033100: <https://github.com/mattn/go/blob/2fbca94db7e14fc1d18162cd203d7afc19b520e8/src/cmd/go/internal/search/search.go#L546></pre>
+<pre>tennashi 1585125218.035800: <https://play.golang.org/p/bfpjIgS456H>
+手元となんか挙動が変わった
+これを手元で動かすと、
+```# command-line-arguments
+./main.go:6:2: undefined: http.Run```
+となります
+playground だと変な挙動ですね</pre>
+<pre>mattn 1585125516.036400: あ、言った意味は標準パッケージを上書きして、標準パッケージ自身の動きを変える事はできない、という意味でした。</pre>
+<pre>mattn 1585125564.037100: 例えば fmt が内部で使ってる strings を上書きして動きを変える、みたいな事ができないという話です。</pre>
+<pre>itchyny 1585125701.038000: (((よほどのことがない限りgo.modのreplace directiveで頑張らずにimportドメイン書いたほうが良いかと思います)))</pre>
+<pre>mattn 1585129671.040800: <https://arma-search.jp/article/go-speed></pre>
+<pre>mattn 1585129684.041300: この記事の素数だすコードの無駄感がすごい。</pre>
+<pre>mattn 1585129694.041500: ``` 　　　for pri := 2; pri &lt;= MAX; pri++ {
+ 　　　 　　　for no := 2; no &lt;= pri; no++ {
+ 　　　 　　　 　　　if (pri == no) {
+ 　　　 　　　 　　　 　　　fmt.Println(pri)
+ 　　　 　　　 　　　 　　　count++
+ 　　　 　　　 　　　} else if (pri % no == 0) {
+ 　　　 　　　 　　　break;
+ 　　　 　　　 　　　}
+ 　　　 　　　}
+ 　　　}```</pre>
+<pre>mattn 1585129729.042100: 処理の大半が無駄な空ループにならない？w</pre>
+<pre>mattn 1585129955.042900: no の回数を平方根にしてどれくらい速くなるだろ。</pre>
+<pre>dohq 1585129980.043300: まとめだけ読んでほんと身にならない結論出てたのでそっ閉じした…</pre>
+<pre>kuu 1585130059.045500: 言語の速度気にしてる人に「お前のコードの書き方じゃ速度出ないから」と言った時の顔を拝みたい</pre>
+<pre>mattn 1585130075.045900: きょうび最近のパフォーマンスを競う様なプログラミング言語だと SIMD とかそういうのは実装してるのでループ回数の競争やっても意味ないんよなー。</pre>
+<pre>eihigh 1585130089.046500: なにもわかってない人「書き方を考えないと速度が出ない言語は遅い」</pre>
+<pre>dohq 1585130154.047800: 速いの?っていうタイトルなら
+「この言語はこういうことやるには速度出ますね。～～は～～と比べると遅いかも」
+くらいしっかり書いてほしい</pre>
+<pre>johejo 1585130203.048200: いかがでしたか？</pre>
+<pre>k-takata 1585130331.050300: タコでした。</pre>
+<pre>mattn 1585130403.052100: 確かに計算も速いだろうけど Go が本当に威力を発揮するのって
+&gt; あるウェブページから画像ファイルを200枚ダウンロードして、リサイズして保存して下さい。ただしサーバは同時に3接続、5 req/sec しか出ません。ダウンロードには 500ms 掛かります。画像のリサイズには 200ms 掛かります。どうやれば一番早く処理が終わりますか？
+こういうケースなのであんま素数計算が微量な差で勝っても負けても何も響かない。</pre>
+<pre>mattn 1585130476.052900: ダウンロード 500ms 掛かったら 3接続 5req/sec 無理やなw</pre>
+<pre>koron 1585132649.058100: 素数計算はちゃんとしたライブラリ使ってくださいとしか…</pre>
+<pre>koron 1585132658.058300: 素数判定ライブラリ</pre>
+<pre>tsuyoshi_cho 1585139831.058800: せめて計算ならたらいまわし関数とかみたいなのじゃないと意味なさそう...</pre>
+<pre>mattn 1585182179.059500: 開発者やコミュニティにこんだけ気使う言語も珍しいな <https://blog.golang.org/pandemic></pre>
+<pre>mattn 1585182213.059900: 仕事を探してるならここを見て、とか。</pre>
+<pre>tyru 1585182271.060800: Go コミュニティの人達はそこまで気が回せる開発者の人が多い印象（皆 UNIX の大家ということもあって年齢が高いこともあるけど）</pre>
+<pre>kuu 1585182462.062300: 言語の仕様からして気を遣ってる節ある、チームで開発するの見越してる辺りとか</pre>
+<pre> 1585183354.062400: ども
+「VimとGoを操るゴリラ」です</pre>
+<pre>ゴリラ 1585183384.063100: 収録したGoの授業がいよいよ公開される
+どきどきがむね</pre>
+<pre>iwata 1585183518.063800: 並ぶと違和感がすごいですねｗ</pre>
+<pre>mattn 1585183551.064200: 人、人、人、ゴリラ、人</pre>
+<pre>tsuyoshi_cho 1585183628.065600: アイコンが可愛い系でもなく、情景/風景とかでもなく、がっつりゴリラのバストショットですからねえw</pre>
+<pre>mattn 1585183630.065800: 収録って事は動画なんです？</pre>
+<pre>ゴリラ 1585183746.066000: はい</pre>
+<pre>ゴリラ 1585183756.066300: スタジオいって収録しました</pre>
+<pre>ゴリラ 1585183791.067000: 一人で喋りつつ、スクリーン収録してって感じですね</pre>
+<pre>thinca 1585184401.067500: アイコンと違う人がしゃべってる！ってなる</pre>
+<pre>0Δ 1585184472.068200: お面を被るかVTuberみたいにモデル動かしながらやれば</pre>
+<pre>ゴリラ 1585184508.069300: １．お面被って収録
+２．パペット方式で収録
+の案が２つあったが、結局画面と音声のみになった</pre>
+<pre>ゴリラ 1585184523.069900: 気楽です笑</pre>
+<pre>tsuyoshi_cho 1585184525.070000: 0Deltaさんとかaiya000さんはそっち向きかw
+自分とかゴリラさんは、プリントTシャツくらいでなんとかw</pre>
+<pre>kuu 1585184544.070700: 人(いやゴリラか)が映らないスタイルは便利</pre>
+<pre>kuu 1585184571.071200: そもそも生き物じゃない方々はどうすればいいんだ</pre>
+<pre>tsuyoshi_cho 1585184609.071400: 顔ハメで...</pre>
+<pre>ゴリラ 1585184681.071800: 生き物じゃない場合は、まず擬人化から（違</pre>
+<pre>0Δ 1585184736.072200: 美少女(声はオッサン)の授業</pre>
+<pre>mattn 1585184748.072500: 音声のみ？</pre>
+<pre>tsuyoshi_cho 1585184786.073200: 逆にリアル登壇なのに音声だけボイチェン噛ませるとかやったらシュールすぎるなw</pre>
+<pre> 1585184787.073300: </pre>
+<pre>0Δ 1585184803.074000: わりと違和感なかった(個人の感想</pre>
+<pre>koron 1585184946.074500: <https://www.amazon.co.jp/s?k=%E3%82%B4%E3%83%AA%E3%83%A9%E3%83%9E%E3%82%B9%E3%82%AF></pre>
+<pre>ゴリラ 1585184988.075000: 吹いた</pre>
+<pre>mattn 1585185008.075900: 昔アノニマスのお面被りながら発表してて呼吸困難になった人もいる(生きてる)し、たぶん大丈夫(?)</pre>
+<pre>ゴリラ 1585185010.076000: Twitterの新しいプロフィールに使おうかな</pre>
+<pre>tsuyoshi_cho 1585185029.076400: ガイフォークスですか...</pre>
+<pre> 1585185044.076700: これツボった
+やばい</pre>
+<pre>mattn 1585185045.077000: いや雑コラ使うのやめてw</pre>
+<pre>kuu 1585185078.077700: golangチャンネルで最初にスターしたのがこれなんですよね</pre>
+<pre>tsuyoshi_cho 1585185106.078100: 説明時の画面に使うのはよさそう(?)</pre>
+<pre>ゴリラ 1585186293.078600: w</pre>
+<pre>hrsh7th 1585199561.079900: 収録中に語尾をウホにしていたのかが気になりますね。</pre>
+<pre>ゴリラ 1585199974.080300: ちゃんと日本語で喋りましたのでご安心を（違</pre>
+<pre>mattn 1585200295.080600: 見てたらもひとり異色な先生いた。</pre>
+<pre> 1585200301.080700: </pre>
+<pre>dohq 1585200676.081600: どうみても屍人でひぇってなった</pre>
+<pre>mattn 1585200892.082200: むっちゃ先生いっぱいいるな、と思ってポチポチとページめくってたら一向に終わりが出て来ないw</pre>
+<pre>mattn 1585200923.082700: 先生 2750 人以上いるw</pre>
+<pre>mattn 1585201368.082900: <https://github.com/TheSecondSun/GoSH></pre>
+<pre>mattn 1585201373.083200: `.swp` ...</pre>
+<pre>itchyny 1585202244.083400: 実行ファイルもはいってる？</pre>
+<pre>mattn 1585202271.083600: 7.09 MB...</pre>
+<pre>itchyny 1585202294.084100: ELF binaryすね</pre>
+<pre>mattn 1585202301.084300: templates サブフォルダも酷かった。</pre>
+<pre>tsuyoshi_cho 1585202443.085000: スGoSHじゃなくてヒDoSHな感じが...</pre>
+<pre>ゴリラ 1585213582.085300: <https://twitter.com/gorilla0513/status/1243101121339510784?s=20></pre>
+<pre>ゴリラ 1585213585.085600: 公開された</pre>
+<pre>ゴリラ 1585213590.085800: 1コマ分</pre>
+<pre>ゴリラ 1585213604.086200: 緊張してめっちゃ声のトーンが低い</pre>
+<pre> 1585213674.086400: ふりがな力</pre>
+<pre>tsuyoshi_cho 1585213922.087200: 位置からすると「 操(ゴリラ)れる」だ(ちがいます</pre>
+<pre>ゴリラ 1585214642.087600: w</pre>
+<pre>vikke 1585292025.088700: リファレンス的に使えるGoの良い本ないしサイト、教えてたもれ。</pre>
+<pre>tsuyoshi_cho 1585292059.089000: <https://godoc.org/>
+これはただのリファレンス...</pre>
+<pre>vikke 1585292109.089500: もうね、package文の書き方とかファイルの命名規則とかからわからん。なにもわからん。</pre>
+<pre>koron 1585292233.090900: うーんちょっと最近の内容は入ってないけど書籍ならコレ
+<https://www.amazon.co.jp/dp/4621300253/></pre>
+<pre>vikke 1585292266.091600: やはりこれか。買っときます。</pre>
+<pre>koron 1585292271.091700: 英語サイトだとココの章を上から順番に
+<https://golang.org/doc/#learning></pre>
+<pre>koron 1585292342.092600: ちょっと毛色が違うけど、Goではなんでこうなっているのかという哲学的なところを知りたい&amp;C言語の経験があるならこの本も役立つ。
+<https://www.amazon.co.jp/dp/4048930524></pre>
+<pre>koron 1585292353.092800: プログラミング作法</pre>
+<pre>vikke 1585292375.093300: 面白そう。Cはわかる。</pre>
+<pre>vikke 1585292381.093500: あざます。</pre>
+<pre>koron 1585292468.094300: あと流行りの技巧というか、日本のトップGoユーザーがどう使ってるかみたいなところだと「みんなのGo言語 第2版」
+<https://www.amazon.co.jp/dp/4297107279></pre>
+<pre>koron 1585292543.094900: まぁぶっちゃけリファレンス的ということなら <https://golang.org/> に勝る情報源はないですね。</pre>
+<pre>vikke 1585292584.095500: これ、昔日本語版あったと思うんだけど、消えた?</pre>
+<pre>koron 1585292644.096500: <http://golang.jp|golang.jp> は更新滞ってます。もう1つあった気がするけどURLがでてこない。</pre>
+<pre>vikke 1585292658.096700: なるほど。</pre>
+<pre>koron 1585292750.098000: まぁ滞るってレベルじゃなくダメなんですがw</pre>
+<pre>vikke 1585293026.100200: ここで聞く。
+
+```.
+├── Makefile
+├── README.md
+├── go.mod
+├── go.sum
+├── hermes_client
+├── hermes_server
+├── idl
+│   ├── go.mod
+│   ├── hermes.pb.go
+│   └── hermes.proto
+└── src
+    ├── client.go
+    ├── hermes
+    │   ├── dispatcher
+    │   │   └── dispatcher.go
+    │   └── loader
+    │       └── hogehoge.go
+    └── main.go```
+こんなディレクトリ構成がある場合、main.goでのimportって、
+```import
+(
+    "./hermes/dispatcher"
+)```
+で、dispatcher.goのpackageは `package hermes/dispatcher` では駄目なんですかね?
+`src/hermes/dispatcher/dispatcher.go:one:15: expected ';', found '` と言われます。</pre>
+<pre>koron 1585293060.101000: うーんだめ</pre>
+<pre>raa0121 1585293065.101100: <https://github.com/golang-standards/project-layout>
+ディレクトリ構成は一応ここも参考になる</pre>
+<pre>vikke 1585293084.101800: &gt;  うーんだめ</pre>
+<pre>vikke 1585293089.102100: わろす</pre>
+<pre>koron 1585293099.102400: `.` = `$GOPATH/src/hermes` ですよね?</pre>
+<pre>vikke 1585293110.102600: ですね。</pre>
+<pre>koron 1585293147.103600: なら import には "hermes/dispatcher" かな。もしかしたらトップディレクトリに `.` が要る。</pre>
+<pre>koron 1585293226.104900: 以下、僕ならどうするか書きますね
+
+`.` = `$GOPATH/src/github.com/koron/hermes` とする。
+import は `"<http://github.com/koron/hermes/dipatcher|github.com/koron/hermes/dipatcher>"` とする。
+パッケージ名は `dispatcher` とする。</pre>
+<pre>vikke 1585293272.105600: 自分のファイルのimportも絶対pathで書くんですね。</pre>
+<pre>koron 1585293344.106500: 相対パスは、まず実験用くらいにしか使いません。</pre>
+<pre>koron 1585293402.107100: うごくけどねw</pre>
+<pre>koron 1585293483.109100: あとは最初からディレクトリは掘らないほうが良い。いきなり掘ると本質を見失うので。Javaとかとは違います。</pre>
+<pre>vikke 1585293516.109500: 一応確認ですが、 `.` = `$GOPATH/src/github.com/koron/hermes` の `.` って、makefileの場所を言ってます?</pre>
+<pre>vikke 1585293538.110100: 必要になってからdirectoryを掘る。覚えた。</pre>
+<pre> 1585293733.110200: 典型的なサーバーコマンドとそのクライアントコマンドを作るならこんな構成から始めるのが吉です。で必要に応じてパッケージに切り出していく。</pre>
+<pre>vikke 1585293770.110800: なるほど。</pre>
+<pre>vikke 1585293805.112000: 僕、途中にsrcとか入ってたから、絶対パスで切るときに、どうしたものかと考えてしまいました。</pre>
+<pre>koron 1585293810.112300: コンパイルは `go build ./hclient` とか `go build ./hserver` になる。</pre>
+<pre>vikke 1585293872.113500: ちょっと構成変えてやってみます。</pre>
+<pre>koron 1585293919.114400: とにかくいきなり最初からなにかしらの作法に従おうとするんじゃなくて、頭で整理して最小限の構成から始めるのが良いです。もち慣れたら分けても良いんですが、だいたい最初の頃の分け方はあとで「失敗した失敗した失敗した…」ってなります。</pre>
+<pre>koron 1585293978.114800: ですね。プロジェクトルートっていったほいうが良いですかね。makefileは必須ではないです。</pre>
+<pre>koron 1585294035.115100: 驚くほど、ほかの言語の知識・常識が邪魔になるんですよね。</pre>
+<pre>dohq 1585294107.116500: サーバとクライアントのレポジトリ分けるとまたシンプルになりそう</pre>
+<pre>kuu 1585294155.117100: Goに入ってはGoに従えって誰かが言ってたけどそれが全てだった</pre>
+<pre>dohq 1585294209.118300: 本体のソースが最高のお手本と聞いた</pre>
+<pre>koron 1585294239.118900: まぁ本体は結構アクロバティックなことしてる場所もあるので、読む場所の選択は大事ですねw</pre>
+<pre>koron 1585294257.119600: runtime下とか、いろんな知識いるからいきなり読むのはツライ。</pre>
+<pre>dohq 1585294265.119900: ioあたり好き</pre>
+<pre>koron 1585294268.120100: と思う。僕は読めるけど。</pre>
+<pre>dohq 1585294285.120800: interfaceの使い方とかなるほど…ってなる</pre>
+<pre>koron 1585294330.121600: それだと errors も面白いですね。As とかどうなってるんだろってのがわかって「え、そんな書き方ありなんだ?!」ってなりますw</pre>
+<pre>kuu 1585294343.122100: コンパイラ技術大好きだったのでcompile以下読みに行って「うーん:thinking_face: 」ってなったマンならおるで</pre>
+<pre>koron 1585294390.122600: Java, Ruby, php, bashの順かな～っていってもPHPは最近のお作法あんましらないので。</pre>
+<pre>dohq 1585294433.122800: おー、1.13より前に読んだっきりですね…
+また読もう</pre>
+<pre>koron 1585294435.123000: Javaはとにかく邪魔になる。オブジェクト指向とかあの妙に格式ばった手法の数々を導入しようとするとことごとく…</pre>
+<pre>vikke 1585294482.123300: javaが手に馴染んでる。。。。。</pre>
+<pre>koron 1585294541.123600: rubyは「1行に圧縮して書こう」っていうあの感じが絶対にGoとぶつかる。</pre>
+<pre>koron 1585294569.123800: 「この書き方が許されるならこう書けても良いだろ」的なのがことごとくGoとぶつかる。</pre>
+<pre>kuu 1585294721.124900: 自由度の高い言語を普段使いしてる人は総じて一度は地獄を見るという印象</pre>
+<pre>kuu 1585294756.126300: チーム開発での効率のためにそのへん犠牲にしてる言語なので</pre>
+<pre>koron 1585294762.126400: Goで僕がしでかした失敗でいうと、要件をいきなり大きく定義して、フレームワーク的に解決しようとしたとき。</pre>
+<pre>koron 1585294828.127700: いきなり抽象化したレイヤーを(他の言語で成功した方法を引き合いに)書いて、徐々に具体化するみたいなのはまず失敗してる。</pre>
+<pre>koron 1585294940.128900: 抽象じゃなくて概要から書いて詳細を埋めてく、っていうメンタリティだとだいたいうまく行ってるかもしれない。抽象的ないいかただけどwww</pre>
+<pre>eihigh 1585295697.130100: 共通機能から作ると死ぬのですべてのケースを腕力で書いて、あとから共通化できるのだけ共通化する。</pre>
+<pre>eihigh 1585295709.130500: というのを学ぶまでに何度も死んだな……</pre>
+<pre>eihigh 1585295728.131200: もちろん、腕力といっても、さじ加減なんですが</pre>
+<pre>tsuyoshi_cho 1585295814.132200: 剛腕すぎると、分割不能になりそうだw</pre>
+<pre>koron 1585295877.133100: Go腕</pre>
+<pre>ゴリラ 1585296241.134400: Goで `post name=gorilla age=27` でJSONをポストできるコマンドを作ろうかな</pre>
+<pre>ゴリラ 1585296244.134600: <https://github.com/skanehira/gjo></pre>
+<pre>ゴリラ 1585296254.135100: gjoのパッケージ構成を少し変更して</pre>
+<pre>ゴリラ 1585296269.135800: importできるようする感じで</pre>
+<pre>ゴリラ 1585296297.136400: なんか、KoRoNさんが似たようなのをつくっていた気がする
+postのやつ</pre>
+<pre>itchyny 1585296344.136600: httpie</pre>
+<pre>itchyny 1585296350.136800: <http://httpie.org|httpie.org></pre>
+<pre>ゴリラ 1585296644.137500: python製</pre>
+<pre>ゴリラ 1585296646.137700: なる</pre>
+<pre>ゴリラ 1585296670.138200: Go製が良いな
+つくろ</pre>
+<pre>dohq 1585296945.138600: go製でもありますね
+<https://github.com/astaxie/bat></pre>
+<pre>itchyny 1585296991.139100: <https://github.com/nojima/httpie-go> もある</pre>
+<pre>itchyny 1585297007.139600: けど作るのは止めません！どんどん車輪つくっていきましょう！</pre>
+<pre>ゴリラ 1585297331.140300: 車輪作るマン</pre>
+<pre>itchyny 1585297354.140700: ``` % jo foo=null
+{"foo":null}
+ % gjo foo=null
+{"foo":"null"}```</pre>
+<pre>itchyny 1585297380.141000: ``` % jo foo[]=null
+{"foo":[null]}
+ % gjo foo[]=null
+{"foo[]":"null"}```</pre>
+<pre>itchyny 1585297406.141400: (挙動ちょっと違うんだな…)</pre>
+<pre>ゴリラ 1585297433.142000: あれ、nullが文字列になっているのか</pre>
+<pre>ゴリラ 1585297447.142400: 下のシンタックスは移植していないな</pre>
+<pre>ゴリラ 1585297749.142800: <https://github.com/skanehira/gjo/commit/f5e3fc10dcbdb871be4cfc32104b4c867db460b9></pre>
+<pre>ゴリラ 1585297751.143100: 直した</pre>
+<pre>vikke 1585299028.147500: さっきのpackageの話の続きですいません。やはりオレオレパッケージに入ってるモジュールが読めません。
+```.
+├── Makefile
+├── README.md
+├── client
+│   └── client.go
+├── go.mod
+├── go.sum
+├── hermes
+│   └── dispatcher
+│       └── dispatcher.go
+├── idl
+│   ├── go.mod
+│   ├── hermes.pb.go
+│   └── hermes.proto
+└── server
+    └── main.gol```
+な状態で、 `server/main.go` では `hermes/hermes/dispatcher` をimport すると、coc.vimでは
+```[compiler] [E] "hermes/hermes/dispatcher" imported but not used 
+======================================================
+[compiler] [E] could not import hermes/hermes/dispatcher (no```
+と、どちやねんというようなエラーを出力します。
+`go build server/main.go` すると、
+```server/main.go:11:2: package hermes/hermes/dispatcher is not in GOROOT (/usr/lib/go/src/hermes/hermes/dispatcher)```
+と言われます。だれかお助けを。</pre>
+<pre>vikke 1585299132.148100: ちなみにmain.goの11行付近はこんな感じです。
+```    1 package main
+    2
+    3 import (
+    4     "context"
+    5     "log"
+    6     "net"
+    7
+    8     pb "fabric-tokyo-hermes/idl"
+    9
+   10     "<http://google.golang.org/grpc|google.golang.org/grpc>"
+&gt;&gt; 11     "hermes/hermes/dispatcher"
+   12 )
+   13
+ ```</pre>
+<pre>tennashi 1585299250.149300: go.mod には `module hermes` が書かれてるんですよね</pre>
+<pre>dictav 1585299258.149500: go.mod の中身見せてもらえますか？</pre>
+<pre>vikke 1585299324.150500: ```module <http://github.com/lifestyledesign/fabric-tokyo-hermes.git|github.com/lifestyledesign/fabric-tokyo-hermes.git>
+
+replace fabric-tokyo-hermes/idl =&gt; ./idl/
+
+go 1.14
+
+require (
+        fabric-tokyo-hermes/idl v0.0.0-00010101000000-000000000000
+        <http://github.com/golang/protobuf|github.com/golang/protobuf> v1.3.5
+        <http://golang.org/x/net|golang.org/x/net> v0.0.0-20200320220750-118fecf932d8 // indirect
+        <http://golang.org/x/sys|golang.org/x/sys> v0.0.0-20200323222414-85ca7c5b95cd // indirect
+        <http://golang.org/x/text|golang.org/x/text> v0.3.2 // indirect
+        <http://google.golang.org/genproto|google.golang.org/genproto> v0.0.0-20200323114720-3f67cca34472 // indirect
+        <http://google.golang.org/grpc|google.golang.org/grpc> v1.28.0
+)```
+なるほど、自分のパッケージにもgo.mod記載必要なんですね。</pre>
+<pre>dictav 1585299328.150700: ディレクトリを `~/go/src/` 配下に置いた方が早いのでは？</pre>
+<pre>koron 1585299351.151300: module名に.gitいらんでしょ。あと</pre>
+<pre>vikke 1585299352.151400: ~/go/src下に置いてます。</pre>
+<pre>dictav 1585299369.151800: 失礼しました</pre>
+<pre>vikke 1585299388.152400: いえいえ、指摘ありがとうございます。</pre>
+<pre>koron 1585299395.152700: そのmodule名なら `$GOPATH/src/github.com/lifestlyedesign/fabric-tokyo-herumes` を . にしないとあかん気がする</pre>
+<pre>koron 1585299480.154700: そのうえで `fabric-tokyo-hermes/idl v0.0.0-00010101000000-000000000000` の行が `<http://github.com/lifestlyedesign/fabric-tokyo-herumes/idl|github.com/lifestlyedesign/fabric-tokyo-herumes/idl> v0.0.0-00010101000000-000000000000` に代わる。</pre>
+<pre>vikke 1585299550.155900: なるほど。整理してやってみます。</pre>
+<pre>koron 1585299610.157900: で肝心のserver/main.go の11行目は `"<http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/dispatcher|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/dispatcher>"` に代わる。</pre>
+<pre>dictav 1585299760.160500: replace ってどうしてもやりたいんですっけ？
+ `pb "<http://github.com/lifestyledesign/fabric-tokyo-hermes/idl|github.com/lifestyledesign/fabric-tokyo-hermes/idl>"` で良いような気もするんですが</pre>
+<pre>koron 1585299816.161600: っていうか同じレポジトリなら go.mod に書く必要ない。</pre>
+<pre>koron 1585299820.161900: っていうかそもそも手でいじらない。</pre>
+<pre>vikke 1585299840.162300: 先日idlが生成したモジュールが見えなかった時に、確かmattnさんに教わった方法です、</pre>
+<pre>dictav 1585299898.164000: 上記の環境なら、正しくパッケージ名を入力すれば必要ないと思いますよ</pre>
+<pre>koron 1585299936.165300: 理解してない状況でgo.modを手でいじるのは NG</pre>
+<pre>vikke 1585299941.165600: それも含めてやってみます。</pre>
+<pre>eihigh 1585300013.168000: 今のコードを直すより小さいコードで正しい書き方を実験したほうがいいかも。</pre>
+<pre>kuu 1585300023.168500: go.modって手でいじるものでしたっけ
+僕の認識ではツールチェーンが勝手に作るものなんですが</pre>
+<pre>koron 1585300154.172300: 1. `$GOPATH/src` したにFQDN的にディレクトリを掘り、そこを作業ディレクトリ(=カレント)にする。 例: `$GOPATH/src/github.com/koron/foobar`
+2. go.modは手でいじらない。 `go mod init` で作って `go get {module name}` で更新。 `go mod tidy` でクリーンナップ
+3. カレントディレクトリ以下のパッケージも `import` する際は `$GOPATH/src` 以下をそのまま書く。 例: `<http://github.com/koron/foobar/subpackagea|github.com/koron/foobar/subpackagea>`</pre>
+<pre>tennashi 1585300162.172400: 小さいサンプル(公開する気のないやつ) はこんな感じに手で go.mod 書いたりします(私は)
+<https://play.golang.org/p/rtFrwxop19z></pre>
+<pre>tennashi 1585300237.172600: いずれ公開するぞってやつは go mod init 叩いて go.mod を自動生成させますけど</pre>
+<pre>vikke 1585300429.174300: 一端go.mod消して、go mod initするって有ですか?</pre>
+<pre>tennashi 1585300500.175700: ありですね、ソースコードから go.mod は再現できるので</pre>
+<pre>koron 1585300502.175800: ありですよ～</pre>
+<pre>vikke 1585300525.176500: 一端掃除する。go.modよさらば。</pre>
+<pre>koron 1585300538.176800: 例外としてバージョンの固定を維持したい場合は要検討だけど。</pre>
+<pre>tennashi 1585300670.177800: Go のコードの書き始めかたは <https://golang.org/doc/code.html> これがいい感じに説明してくれていたかと</pre>
+<pre>tennashi 1585300850.179200: <https://blog.golang.org/using-go-modules> go mod にフォーカスした資料だとこれですね</pre>
+<pre>vikke 1585300972.180600: わかりやすい。</pre>
+<pre>hnishi 1585301041.181700: おそらく go mod init しても動かないかと思います（replace directive は自動で追加してくれないので）
+
+```replace fabric-tokyo-hermes/idl =&gt; ./idl/```
+も、多分だめで、
+
+```replace hoge.fabric-tokyo-hermes/idl =&gt; ./idl/```
+みたいにルートのパスにドットを含めなければならないかと思います。
+
+モジュールをレポジトリに内包して使う場合は、私も色々とはまった経験があるので、以下の記事にまとめています（go1.13時点での話ですが）
+よかったら、参考にしてみてください。
+<https://qiita.com/hnishi/items/a9217249d7832ed2c035></pre>
+<pre>ゴリラ 1585301748.183500: go modules は、鬼門</pre>
+<pre>koron 1585301843.183800: 変なことしようとしなきゃ大丈夫なんですよ。</pre>
+<pre>koron 1585301875.184500: なにかしら的外れというか、ジャンプアップがあることしようとすると、学習曲線が急になる。</pre>
+<pre>koron 1585302025.185400: Goに限らないけれど、新しいことやるときは一気に何歩も進まないで、一歩一歩踏み固めていくのが基本です。</pre>
+<pre>mattn 1585302058.186000: リファレンスであれば tour やって Effective Go 読めばだいたい行けるはず。</pre>
+<pre>kuu 1585302091.186300: tourはよかった</pre>
+<pre>vikke 1585302107.187200: うまくいかん。。。だんだん病んできた。。。</pre>
+<pre>kuu 1585302118.187800: Play ground丸ごとローカルで動かせるのには感心した</pre>
+<pre>vikke 1585302125.188000: 闇のパワーよ。。。</pre>
+<pre>mattn 1585302146.188500: go module は変にローカルにこだわらずに vcs 形式でやった方がいいですよ。</pre>
+<pre>vikke 1585302177.189300: vcs形式とは? version control system方式？</pre>
+<pre>mattn 1585302208.189900: はい。replace とか使うのは最後の切り札的な感じです。</pre>
+<pre>vikke 1585302279.191000: ようするに、開発対象をgithubとかに入れて、そのpathを~/go/srcに入れてから開発って事ですかね?</pre>
+<pre>mattn 1585302310.191300: がいいと思います。</pre>
+<pre>mattn 1585302575.193200: replace を使うと、replace される側全てに go.mod おいて行かないと動かないんじゃないかな。</pre>
+<pre>dictav 1585303423.194100: 公開できる範囲で公開してくれたら Pull Request 送りますよー</pre>
+<pre>mattn 1585303585.195800: 昨日深夜にふと go で lisp 処理系を書き始めてしまったんでだけど、env を atomic にして四則演算も sync/atomic 使って `(go '(lambda (ch) (&lt;- ch 123)) ch)` みたいな事できる様にしたら面白いかなぁと思い始めた。</pre>
+<pre>vikke 1585303589.195900: すごい有り難いですが、さすがにお仕事なのでww。社内にナレッジが無くてつらたん。</pre>
+<pre>mattn 1585303622.196300: 何ができるねんって話だけどw</pre>
+<pre>vikke 1585303720.197300: ```package hermes/dispatcher
+
+type DispatcherSingle {
+    ScriptName string
+}
+
+func (ds *DispatcherSingle) DispatcherSingle() {
+    log.Printf("in dispatcher: %s"： ds.ScriptName)
+}```
+これで、
+```hermes/dispatcher/dispatcher.go:1:15: expected ';', found '/```
+と怒られるのは、packageのセパレーターの指定が間違ってる?</pre>
+<pre>dictav 1585303766.197500: `package` ではセパレータ使わないです。
+`package dispatcher` になります。</pre>
+<pre>vikke 1585303792.198200: え？じゃ、階層は作れないって事ですか?</pre>
+<pre>koron 1585303840.199000: 僕が使ってる唯一の `replace` がこれ。golintの場所が変わってしまったから、そのことを知らないパッケージにそれを伝えるため。
+
+```replace <http://github.com/golang/lint|github.com/golang/lint> =&gt; <http://golang.org/x/lint|golang.org/x/lint> v0.0.0-20190227174305-5b3e6a55c961```</pre>
+<pre>vikke 1585303864.199600: 明日やる事。 go tourやる。</pre>
+<pre>mattn 1585303920.200000: go tour やった後 <https://golang.org/doc/effective_go.html></pre>
+<pre>mattn 1585303925.200300: 日本語は <http://go.shibu.jp/effective_go.html></pre>
+<pre>dictav 1585303930.200500: それはディレクトリ構造でやります。
+例えば以下のように `package dispatcher` と書いた dispatcher.go が２箇所にあるとします。
+
+```~/go/src/github.com/dictav
+├── hermes
+│   └── dispatcher
+│       └── dispatcher.go
+└── hermes2
+    └── dispathcer
+        └── dispatcher.go```</pre>
+<pre>mattn 1585303952.201100: これに目を通せばだいたい基礎知識は ok なはず。</pre>
+<pre>dictav 1585304000.201700: このとき、import は以下のようになります。
+
+```import (
+    dispatcher1 "<http://github.com/dictav/hermes/dispatcher|github.com/dictav/hermes/dispatcher>"
+    dispatcher2 "<http://github.com/dictav/hermes2/dispatcher|github.com/dictav/hermes2/dispatcher>"
+)```</pre>
+<pre>mattn 1585304033.202500: あとは channel &amp; goroutine を使った実装パターン、sync.Mutex、sync.WaitGroup、context を使った実装パターン、と広げていく。</pre>
+<pre>vikke 1585304111.202900: なるほど。</pre>
+<pre>mattn 1585304343.203200: 少し古いのでツール(gofmt)とか今は違う物が含まれてるので目を通すくらいで。</pre>
+<pre> 1585305069.203600: こんな感じです。 typo していないと良いのですが。</pre>
+<pre>dictav 1585305295.204100: それぞれの `package` 名とファイルの配置、 `import` の使い方に注意してください。</pre>
+<pre>dictav 1585305588.205100: この replace の使い方は参考にさせてもらいました
+
+<https://github.com/golang/tools/blob/master/gopls/go.mod></pre>
+<pre>itchyny 1585356036.205900: Homebrew Go 1.14.1来ましたね</pre>
+<pre>tsuyoshi_cho 1585356168.206200: 「Go、入荷しました(自家製)」</pre>
+<pre>johejo 1585370246.207900: Goの新しいバージョンが降ってくるの、Ubuntuだとsnapがかなり速いですね</pre>
+<pre>mattn 1585370417.208400: 毎朝 git pull 勢「おそくね？」</pre>
+<pre>itchyny 1585371350.210800: formula集ではメンテされなくなったやつが新しいGoで通らなくなったりするんすよね…</pre>
+<pre>tsuyoshi_cho 1585371414.211200: goのコンパイラバージョン指定ってないんでしたっけ?</pre>
+<pre>raa0121 1585371487.212800: go.mod には書けますね</pre>
+<pre>kuu 1585371507.213900: gomodにバージョン指定あるけどどうやって活用するのかは分からない</pre>
+<pre>johejo 1585371589.216200: 後方互換性はあるとはいえビルドはなんとかできても、テストは落ちたりするしなあ</pre>
+<pre>tsuyoshi_cho 1585371593.216300: 必要なのはgoのfomulaの文法(というかなんというか)に依存するgoコンパイラバージョン指定と、それに対応するgoのコンパイラのkeg、かな?</pre>
+<pre>mattn 1585377912.216700: <https://play.golang.org/p/6EmAO0shGTU></pre>
+<pre>mattn 1585377920.217000: このコンパイルエラーメッセージってちょっと分かりにくい</pre>
+<pre>mattn 1585377938.217200: ```./prog.go:3:5: initialization loop:
+	prog.go:3:5: funcs refers to
+	prog.go:3:5: funcs```</pre>
+<pre>mattn 1585377975.218100: 実際はもうちょっと手の入った型とか関数で実装してたんだけど、最初意味が分からなくて数分悩んだ。</pre>
+<pre>tsuyoshi_cho 1585377984.218300: contain selfとかなんか言いようがありそうではある</pre>
+<pre>vikke 1585399950.219200: C初めてやったときの感触が蘇える。むずい。log.Fatal()一行入れるだけで動いたり落ちたり。</pre>
+<pre>vikke 1585399981.219600: gRPCもいっしょにやってるからかなー。問題の切り分けが出来てない?</pre>
+<pre>raa0121 1585400318.219800: <https://fkm.hatenablog.com/entry/20140801/p1></pre>
+<pre>raa0121 1585400413.220700: <@UEA8SS1RN> `os.Exit(1)` されるんです</pre>
+<pre>tsuyoshi_cho 1585400496.221000: そりゃ落ちる...</pre>
+<pre>raa0121 1585400516.221500: ねー 私も割と初期に通りました</pre>
+<pre>tsuyoshi_cho 1585400524.221700: というか、なぜ副作用があるような構造なんだろう?</pre>
+<pre>mattn 1585400554.222000: assert と思えばいいかな。</pre>
+<pre>mattn 1585400571.222300: 条件なし assert</pre>
+<pre>tsuyoshi_cho 1585400604.223000: あー、まあそういう意味ではありか...</pre>
+<pre>kuu 1585400628.224000: logという名前から勘違いしてしまうやつ</pre>
+<pre>mattn 1585400642.224300: 知らないとハマるんですが、慣れてくると log.Fatal(err) を気軽に投げれるので助かりマックス</pre>
+<pre>johejo 1585401048.225400: 書き捨てのコードにはよく使う</pre>
+<pre>eihigh 1585401525.226200: panicだとその後値を返さなくてもokにしてくれるけど、log.Fatalだとそれがないので、使わなくなってきたかも。
+formatted string出したいときちょっと面倒。</pre>
+<pre>ゴリラ 1585404047.226800: <https://vim-jp.slack.com/archives/CGABGC8LA/p1585401048225400|https://vim-jp.slack.com/archives/CGABGC8LA/p1585401048225400>
+
+わかりみ</pre>
+<pre>vikke 1585406077.227100: なんてこったいwwwww</pre>
+<pre>koron 1585445126.234800: 基本的に真面目なコードでは `log.Fatal` は呼ばない。</pre>
+<pre>koron 1585445133.235100: `panic()` も使わない。</pre>
+<pre>koron 1585445161.235800: とあるGraphQLのライブラリが `panic()` 前提で書かれてて頭を抱えたのがついこの間の話w</pre>
+<pre>koron 1585445280.236700: とはいえ gqlgen も graphql-go/graphql も panic() 前提なんですよねw</pre>
+<pre>koron 1585445299.237100: トップ2がこうだから頭抱えて、もうこの部分は諦めようってなった。</pre>
+<pre>koron 1585445351.238000: 逆に panic() や log.Fatal 使うのはメンテする気が一切ないコード。</pre>
+<pre>tsuyoshi_cho 1585445400.238800: なにか例外的に「panic前提がアリな(デザインの)パターン」、とかあるならわかりますが、特にそういう話は聞きせませんしね...</pre>
+<pre>kuu 1585445419.239200: そもそもあれは例外処理に使うものではない</pre>
+<pre>kuu 1585445429.239600: はず(初心者なのでよくわかってない)</pre>
+<pre>koron 1585445575.240100: <https://blog.amedama.jp/entry/2015/10/11/123535> から抜粋
+
+* 外部に公開する API はエラーを伝える手段として panic() を使ってはいけない
+    * 多値の返り値 w/ error インターフェースを使うこと
+    * panic() はパッケージをまたいで伝搬させることがないようにする
+* panic/recover 機構はスタックが深くなるような呼び出しをする際に有用
+    *使用することで可読性を向上させることができる</pre>
+<pre>tsuyoshi_cho 1585446124.241200: ですよね...という所</pre>
+<pre>ゴリラ 1585462029.241900: いまだにpanicの使い道が浮かばない</pre>
+<pre>mattn 1585462151.243300: err を返すまでもない、明らかに使い手側の問題の場合とか
+```var r = gorilla.NewReader(os.Stdin)```
+で引数には `io.Reader` だろうけど nil の場合とか。</pre>
+<pre>eihigh 1585462513.244500: あとenumのつもりで宣言したものに知らない値が渡るときとか。</pre>
+<pre>eihigh 1585462585.246300: 仕方なく複数の型をinterface{}で受けて想定外の型だったときとか（そもそもこれはイケてないかも）</pre>
+<pre>itchyny 1585462609.247100: 実装しおわったらunreachableなところとか (ユーザーの入力ではなく未実装の場所)</pre>
+<pre>tennashi 1585462721.249700: サーバの初期化部分は panic() させたりしてます
+RDB との接続部分とか</pre>
+<pre>tennashi 1585462765.250500: 変な状態で起動したふりをしないようにそうしてますが、他にもよい方法があるかも</pre>
+<pre>vikke 1585465153.251800: 質問です。
+変数をひきまわす事ってあると思うんですよ。で、Cだとheaderファイルで型を宣言しますけど、goだとどうします?</pre>
+<pre>vikke 1585465701.252300: 型推論が働くから、宣言しなくて良いのか。</pre>
+<pre>vikke 1585466087.252900: やっぱり、レシーバーの型は宣言しないと駄目?</pre>
+<pre>tennashi 1585467591.255900: 特に型宣言とかグローバル変数、関数のシグネチャだけをまとめたファイルとかはあんまり作らないと思います
+// C 詳しくないので回答になってるか分かりませんが...</pre>
+<pre>koron 1585470468.256800: import 周りは python の感覚が一番近いかもしれない。</pre>
+<pre>koron 1585470731.260500: `package foo` で定義された型を利用するときは `foo.Bar` みたいに基本的に必ずパッケージ名が付くことになる。だから `import "<http://github.com/myuser/foo|github.com/myuser/foo>"` 的に必ず import が必要になる。ただ `abc := newBar()` みたいに型推論だけで書くこともできてしまう(newBarは同パッケージ内の別ファイルで定義していると仮定してる)ので、全ファイルにimportを書かなければいけないというわけでもない。</pre>
+<pre>vikke 1585471308.261100: no matching versions for query "latest" ってなんだ?</pre>
+<pre>johejo 1585515349.263200: prometheus/client_golang のmetrics部分の置き換えに良さそう
+<https://github.com/VictoriaMetrics/metrics></pre>
+<pre>mattn 1585522395.263600: <https://github.com/golang/go/issues/38151|https://github.com/golang/go/issues/38151></pre>
+<pre>mattn 1585522411.264200: まだちゃんと読んでないけど良さそうな気もする。</pre>
+<pre>mattn 1585522634.265800: if で err を真偽値として扱えるって提案だけどこれでいくら手数が減るかは分からんけど。</pre>
+<pre>johejo 1585523328.268400: 個人的にはイイ感じに見えますが、implicitな挙動が増えるのはあとあと禍根を残しそうな予感</pre>
+<pre>johejo 1585523477.269600: 意味としては同じでもいままで二重否定でやってたところが何もなし変わるのはコードの見た目の変化が多い気もしますね。</pre>
+<pre>eihigh 1585524281.271700: 例のerrorまわりのproposalで一番シンプルなのがifの改行をなくせるやつ（gofmtいじるだけなので簡単だし互換性も壊さない）だったんですが、それとほぼ変わらないのでは…？</pre>
+<pre>eihigh 1585524556.272100: まあでも、短くなるのは歓迎ですが。</pre>
+<pre>eihigh 1585524946.273200: if err := foo(); err {}
+はbradfitz的にはナシか。気持ちはわかるがうーむ。</pre>
+<pre>kuu 1585525093.273600: 気持ちは分かるが変わってほしくはない</pre>
+<pre>kuu 1585525108.274200: 一行になんでも詰め込むのは悪い文明</pre>
+<pre>mattn 1585525117.274400: まぁわかる</pre>
+<pre>eihigh 1585525153.275100: ていうか敢えてbradfitzがこれをまた蒸し返してくるとは予想外。</pre>
+<pre>johejo 1585526813.275300: しぶしぶ `I reluctantly agreed to file an issue, so here it is.`</pre>
+<pre>Shougo 1585530371.275900: お、Goの例外処理が改善されるのかな</pre>
+<pre>vikke 1585532324.277700: 超初心者な質問なんですけど、させてください。
+```package main
+
+import (
+	"fmt"
+	"<http://github.com/test/foo|github.com/test/foo>"
+)
+
+func main() {
+	fmt.Println("start")
+	g := foo.Goo{val: "foobar"}
+	foo.Echo(&amp;g)
+}```
+```package foo
+
+import "log"
+
+type Goo struct {
+	val string
+}
+
+func Echo(g *Goo) string {
+	log.Println("Echo: %s", g.val)
+	return g.val
+}```
+で、
+```./main.go:10:15: unknown field 'val' in struct literal of type foo.Goo```
+とエラーが出てbuild出来ません。どこが悪いですか?</pre>
+<pre>kuu 1585532428.278400: これ？　<https://qiita.com/Yarimizu14/items/e93097c4f4cfd5468259></pre>
+<pre>eihigh 1585532434.278700: `val` がexportされてないからですね。
+小文字始まりの識別子は、パッケージの外からは見えなくなります。
+大文字なら見えるので、これは `Val` にすると見える。</pre>
+<pre>vikke 1585532445.278900: 見えた。。。。ありがとうございます。</pre>
+<pre>ゴリラ 1585532946.279400: 別パッケージのときは、publicじゃないといけないですね</pre>
+<pre>ゴリラ 1585532960.279800: あるある</pre>
+<pre>vikke 1585533790.282500: もうひとつすいません。
+```package dispatcher
+
+import (
+	"<http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader>"
+	"log"
+)
+
+func (s *Script) DispatcherSingle() {
+	s.Load()
+	log.Printf("DispatcherSingle: %s", s.ScriptName)
+}```
+```package loader
+
+import (
+	"log"
+)
+
+type Script struct {
+	ScriptName string
+}
+
+func (s *Script) Load() {
+	log.Printf("ScriptName: %s", s.ScriptName)
+}```
+dispatcher.DispatcherSingle()からs.Loadを呼びたいんですが、これもエラー出ます。
+```hermes/dispatcher/DispatcherSingle.go:4:2: imported and not used: "<http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader>"
+hermes/dispatcher/DispatcherSingle.go:8:10: undefined: Script```
+アドバイス貰えたら嬉しいです。</pre>
+<pre>vikke 1585533874.283200: いつかアドバイス出来る側に周りたい。。。</pre>
+<pre>kuu 1585533881.283300: dispatcher側をs/Script/loader.Script/でどうです？</pre>
+<pre>itchyny 1585533940.284100: 別パッケージの構造体にメソッドを生やすことはできないのです</pre>
+<pre>kuu 1585533974.284900: 違うか、すんません</pre>
+<pre>vikke 1585534034.286100: なるほど。構造体にメソッドを生やせるのは同一packageの場合のみですね。ってことは、その間は関数呼び出しになるわけですね。</pre>
+<pre>vikke 1585534058.286400: いや、マジ感謝。です。</pre>
+<pre>koron 1585534069.286700: っていうかメソッドは全部関数ですわ。</pre>
+<pre>itchyny 1585534239.287500: (うんうん拡張メソッド便利だよね…) (脇道にそれる人)</pre>
+<pre>vikke 1585534398.288100: importで別パッケージの構造体は読めますよね?</pre>
+<pre>koron 1585534431.288600: 読めますよ。触れるのは公開フィールド&amp;メソッドのみですが</pre>
+<pre>vikke 1585534465.288900: hoge.Foobarという構造体は読めると。</pre>
+<pre>mattn 1585535461.291300: 推奨されてないですが、小文字で始まる struct も NewFoobar などを介せばフィールド(大文字)は参照できます。</pre>
+<pre> 1585535598.291400: ざっくりこんな感じかな。</pre>
+<pre>mattn 1585535741.292700: はい。個人的にはあれ非推奨じゃなくてもいいやんって思ったりしてますが。</pre>
+<pre>vikke 1585535899.293800: メソッドの宣言に名前空間って使えないですか?こんな感じ。
+```func (s *loader.Script) Load() {
+	log.Printf("ScriptName: %s", s.ScriptName)
+}```</pre>
+<pre>vikke 1585535927.294300: loaderに構造体が定義されているんで、こうしたいんですよね。</pre>
+<pre>itchyny 1585536364.294800: それができないんですよね</pre>
+<pre>itchyny 1585536459.295700: 別のパッケージで同じパッケージの構造体のメソッド拡張があったときに、その両方のパッケージをimportしたらどっち使えばいいか分からなくなってしまう。</pre>
+<pre>raa0121 1585536506.296200: Load の引数に、`s *loader.Script` すればいいんじゃないかな？</pre>
+<pre>vikke 1585536636.298200: &gt; それができないんですよね
+じゃ、各所で使う構造体は一箇所に纏めて、それをimportとかになるんですかね?</pre>
+<pre>mattn 1585536644.298700: 外からパッケージを弄る(何かを宣言すること)事はできないです。</pre>
+<pre>raa0121 1585536714.299600: ```package dispatcher
+
+import (
+	"<http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader>"
+	"log"
+)
+
+func DispatcherSingle(s *loader.Script) {
+	s.Load()
+	log.Printf("DispatcherSingle: %s", s.ScriptName)
+}```
+```package loader
+
+import (
+	"log"
+)
+
+type Script struct {
+	ScriptName string
+}
+
+func (s *Script) Load() {
+	log.Printf("ScriptName: %s", s.ScriptName)
+}```</pre>
+<pre>raa0121 1585536725.299900: これなら、行けるかな</pre>
+<pre>vikke 1585537031.301100: ```package dispatcher
+
+import (
+	//"<http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader>"
+	"log"
+)
+
+type Script struct {
+	ScriptName string
+}
+
+func (s *Script) Load() {
+	log.Printf("ScriptName: %s", s)
+}
+
+func (s *Script) DispatcherSingle() {
+	s.Load()
+	log.Printf("DispatcherSingle: %s", s.ScriptName)
+}```
+```package loader
+
+import (
+	"log"
+)
+
+type Script struct {
+	ScriptName string
+}
+
+func (s *Script) Load() {
+	log.Printf("ScriptName: %s", s)
+}```
+これなら行けるんですよね。ただ、Scriptの宣言を両方でやる必要があって、不恰好だなと。</pre>
+<pre>mattn 1585537132.302200: どんな事をやられたいのかあまり分かってないですが、dispatcher の Load で loader の Load を呼びたいという事ですか？</pre>
+<pre>vikke 1585537223.302700: そうです。</pre>
+<pre>0Δ 1585537256.304400: interfaceを作って、それを両方にインポートするように構成する
+いやloaderだけで良いのか？</pre>
+<pre>mattn 1585537265.304900: dispatcher の操作イメージを教えて貰っていいですか？</pre>
+<pre>vikke 1585537594.307700: mainから、`script := dispatcher.Script{ScriptName: "ほげほげ"}` こんな感じで、scriptを作って、それに対して、 `script.DispatcherSingle()`して起動します。</pre>
+<pre>mattn 1585537946.308800: おそらくですが dispatcher 側の Script の役割は Script でなく Dispatcher なんですね。</pre>
+<pre>mattn 1585537990.309000: ```package dispatcher
+import (
+	"<http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader>"
+	"log"
+)
+
+type Dispatcher struct {
+	script *loader.Script
+}
+
+func New(name string) *Dispatcher() {
+	return &amp;Dispatcher {
+		script: &amp;loader.Script {ScriptName: name},
+	}
+}
+
+func (s *Dispatcher) DispatcherSingle() {
+	s.Load()
+	log.Printf("DispatcherSingle: %s", s.ScriptName)
+}```
+```package main
+
+import "...略..."
+
+func main() {
+	dispatcher := dispatcher.New("ほげほげ")
+	dispatcher.DispatcherSingle()
+}```</pre>
+<pre>vikke 1585538024.309200: 読み返してみます。</pre>
+<pre>vikke 1585538031.309400: ありがとうございます。</pre>
+<pre>koron 1585538684.313600: これは同じ名前だけど別の構造体になるんですよ。</pre>
+<pre>ゴリラ 1585539376.313800: この挙動しらんかった…</pre>
+<pre>tennashi 1585539555.314800: まぁほとんどの場合、ちゃんとパッケージの責務に応じた名前を付けたほうがよいので特定のとこだけでしか使わないですが...</pre>
+<pre>mattn 1585539561.315200: tennashi さんがあげてくれたのは type alias という物ですが混乱すると思うので今は気にしなくていいです。</pre>
+<pre>itchyny 1585539602.315500: type aliasではなさそう</pre>
+<pre>mattn 1585539615.315800: あ、ちがった。</pre>
+<pre>mattn 1585539623.316000: 失礼しました。</pre>
+<pre>mattn 1585539634.316400: ただ多段も今は考えない方がいいかも。</pre>
+<pre>mattn 1585539696.318200: どっちが型を提供して、どっちが型を操作するか、Go way を知るまでは。</pre>
+<pre>koron 1585539738.319300: そうそう。型自身の拡張はできないってことを刻み込むまでは。</pre>
+<pre>tennashi 1585539762.319800: そうですね、ちゃんとパッケージ内での役割に応じてちゃんと型を用意したほうがシンプルにコードが書けてよいと思います</pre>
+<pre>mattn 1585540068.324000: dispatch みたいなやつでうまく設計できない時ってだいたい名前が悪かったりするんですよね。なんか面白い。</pre>
+<pre>johejo 1585541025.327400: そういえばgoを書き始めたころわけもわからず型の埋め込みを多用して破滅したな....</pre>
+<pre>mattn 1585541092.328300: そこでよく分からないまま触らなくなって「Go イケてない」って言う人達が幾らかいるのが残念。</pre>
+<pre>johejo 1585541448.331000: 動的なJSONをなんとかしようとして自滅しましたね... 未だにGitHubのREST-APIにある `A | Array&lt;B&gt;` みたいなやべーJSONをGoでうまく扱える気がしない</pre>
+<pre>tennashi 1585541476.331600: データからふるまいを必要以上に分離するようなパッケージ構成にするとさっき挙げたようなトリックを使わないといけなくなるんですよね...</pre>
+<pre>johejo 1585541653.333400: Goだとカプセル化とか頑張ろうとしすぎると辛いからそういうふうにしなくても良いようにうまく設計するコツがいる...</pre>
+<pre>mattn 1585541802.335200: er 文化は最初なんやねんと思ったけど、あれ役者をハッキリさせる意味でとても便利。</pre>
+<pre>eihigh 1585541812.335500: Goにおけるメソッドは名前空間を分けるもう一つの手段ってイメージですね。
+ただの関数にしてもいいんだけど、生やす方がわかりやすく区切れるとき。</pre>
+<pre>koron 1585541883.335900: 直和型は欲しい。</pre>
+<pre>mattn 1585542231.336400: `A | Array&lt;B&gt;` は decode はいいんですが encode やるとなるとそこそこ大変。</pre>
+<pre>mattn 1585555604.338200: go で作ってる lisp 処理系で tak 動かしたら stack overflow した。</pre>
+<pre>mattn 1585555628.338900: 末尾再帰最適化入ってないのでしょうがない。</pre>
+<pre>johejo 1585609504.340900: 最近いくつかPRを送ってるんですが、oauth2_proxyがpusher社管轄から専用orgに移って名前もoauth2-proxyになりました。
+<https://github.com/oauth2-proxy/oauth2-proxy></pre>
+<pre>mattn 1585612794.341200: お、</pre>
+<pre>mattn 1585612803.341500: 使ってるので更新しないとな。</pre>
+<pre>johejo 1585612862.342200: 4系は脆弱性とかもあるのでアップグレード推奨です。</pre>
+<pre>mattn 1585613805.342700: oauth2-proxy、fork されまくって生き残ってるやつなので古い設定で動かなくなりそうでアレ。</pre>
+<pre>mattn 1585613842.343000: 手元のが 4 系どころか 2 系だった時の顔</pre>
+<pre>mattn 1585613856.343200: bitly のやつ</pre>
+<pre> 1585621453.343800: とどいたー。</pre>
+<pre>ゴリラ 1585621659.344700: :goodpoem:
+この本さらっと流し読みしましたが、入門には良さげだった</pre>
+<pre>vikke 1585622777.345300: さらっと流し読み。ｶｺｲｲ.</pre>
+<pre>mattn 1585622965.346200: 読んでない。けど ukai さんなので内容はおそらく確かなはず。</pre>
+<pre>budougumi0617 1585624771.346700: 200問くらい練習問題あるので、全部やればだいたいできるようになりますよ。</pre>
+<pre>mattn 1585624818.347100: あ、ukai さんは帯で書いたのは柴田さんの方だった。</pre>
+<pre>mattn 1585624840.347600: でも長い事 Go やってる方なので確かでしょうね。</pre>
+<pre>budougumi0617 1585625080.350100: 原著もGo teamの Alan Donovan （とカーニハン）なので、実質公式本だと思ってます。言語仕様の他に、言語思想もフォローされているので「なんでassetEqualsないの」みたいなこともわかりやすいです。</pre>
+<pre>koron 1585625210.350300: そうそう。実質公式本</pre>
+<pre>mattn 1585625317.351200: この本が出た頃は Go を取り囲む xerrors や context なんかがなくて本当に言語仕様が小さかった。今も十分小さいけど。</pre>
+<pre>mattn 1585625361.351400: typed nil も無かったし。</pre>
+<pre>ゴリラ 1585625504.352100: 1週間くらいでいいので、本を読むのを仕事にしたい</pre>
+<pre>ゴリラ 1585625570.353100: 並行処理は買って積んでいる
+インタプリタは読みながら実装している</pre>
+<pre>mattn 1585625781.353700: 並行処理本は良いですね。</pre>
+<pre>mattn 1585625847.354400: インタプリタ本は英語版は目を通した。</pre>
+<pre>mattn 1585625861.354900: 読んだとは言ってない。</pre>
+<pre>ゴリラ 1585625957.356100: インタプリタ、絶賛ASTを作るところに来ている</pre>
+<pre>koron 1585625958.356200: Goは公式ドキュメント (<https://golang.org/doc/#learning>) を *一通り手を動かしながら* 読むだけで :rikai: できるくらい小さい。</pre>
+<pre>ゴリラ 1585625981.356600: Effective Goは良かった
+<https://golang.org/doc/effective_go.html></pre>
+<pre>kuu 1585625999.357500: tourやってるだけで:rikai: はできたな</pre>
+<pre>kuu 1585626004.357700: あれめっちゃわかりやすい</pre>
+<pre>johejo 1585626035.358600: 並行処理本 何回読んでも :rikai: できない</pre>
+<pre>ゴリラ 1585626052.359000: tourは知るという観点ではよくまとまっていると思っている</pre>
+<pre>ゴリラ 1585626133.359600: <https://github.com/golang/go/wiki/NonEnglish#japanese---日本語></pre>
+<pre>ゴリラ 1585626154.360600: かまたさんの翻訳が公式Wikiにのっている</pre>
+<pre>ゴリラ 1585626158.360900: すご</pre>
+<pre>kuu 1585626162.361100: まあ理解したからといって使えるわけじゃないんですがね</pre>
+<pre>kuu 1585626179.361500: 昨日WaitGroupのAddをゴルーチンの中で行うという愚行を犯したところなので</pre>
+<pre>ゴリラ 1585626228.362300: Addをgoroutine内でやっちゃいけないのは知っているが、動きを理解できていないので、なぜまでは理解できていない</pre>
+<pre>kuu 1585626279.363200: 並列に処理が走るので書き方によってはAddに到達する前にWaitに到達するんですよ、そうなると止まらない</pre>
+<pre>ゴリラ 1585626302.363600: :rikai:</pre>
+<pre>kuu 1585626304.363700: これ <https://qiita.com/ruiu/items/dba58f7b03a9a2ffad65></pre>
+<pre>koron 1585626430.364800: このあたりはねpthread (C)でなんべんもやってるんで、Goの簡単さが際立っちゃうんですよね。</pre>
+<pre>ゴリラ 1585626642.365500: qiitaの記事からruiさんのブログにたどり着いて、このブログをさらっと読んだ
+<http://blog.sigbus.info/2016/03/seven-years.html></pre>
+<pre>ゴリラ 1585626666.365900: 想像以上にすごい人だった</pre>
+<pre>koron 1585626858.366900: あ、ruiさんか～すごいよね。</pre>
+<pre>koron 1585626864.367100: 逆転の発想みたいなの。</pre>
+<pre>itchyny 1585627478.367400: <https://github.com/golang/go/issues/38151> upとdownが割と拮抗している</pre>
+<pre>ゴリラ 1585627706.367900: errをboolとして扱えるようにしようぜってやつか</pre>
+<pre>ゴリラ 1585627729.368400: 個人的に、今のままでいいかな</pre>
+<pre>mattn 1585629011.373600: どこまで脳に負担を掛けずに書けるかな話で、書いてるだけでも負担が掛かる人には `!= nil` の数文字でも負担になるんでしょうな。</pre>
+<pre>ゴリラ 1585632262.375300: そこ、みんな脳死で書いていると思っていたがそうでもないのか</pre>
+<pre>vikke 1585636347.377900: また質問すいません。reflectionです。
+```package main
+
+import (
+	"<http://github.com/lifestyledesign/tmp/hoge|github.com/lifestyledesign/tmp/hoge>"
+	"log"
+	"reflect"
+)
+
+func main() {
+	ms := hoge.MyStruct{}
+	receiver := reflect.ValueOf(ms)
+
+	log.Println("before")s
+	method := receiver.MethodByName("method1")
+	method.MethodByName("method1").Call([]reflect.Value{})
+	log.Println("after")
+}```
+```package hoge
+
+import "log"
+
+type MyStruct struct {
+}
+
+func (ms *MyStruct) method1() {
+	log.Printf("foobar")
+}```
+これで、 `hoge.method1`を呼び出そうとしていますが、一応コンパイルはされるのですが、エラーメッセージも出るし、実行時もエラーになります。
+なにかアドバイスお願いします。</pre>
+<pre>koron 1585636470.379100: いちばんめんどうそうなほうにいってるなw
+
+エラーメッセージ、書いてください。っていうかreflectでも非公開メソッドは呼べないんじゃなかろうか?</pre>
+<pre>vikke 1585636587.380400: あ、メソッド名がprivateだった。publicに直しました。それで下記のようなエラーが出ます。
+```panic: reflect: call of reflect.Value.MethodByName on zero Value
+
+goroutine 1 [running]:
+reflect.Value.MethodByName(0x0, 0x0, 0x0, 0x4f70d9, 0x7, 0x0, 0x0, 0x0)
+        /usr/lib/go/src/reflect/value.go:1331 +0x19e
+main.main()
+        /home/vikke/go/src/github.com/lifestyledesign/tmp/main.go:15 +0x15b
+make: *** [Makefile:3: build] エラー 2```</pre>
+<pre>koron 1585636633.381000: ああ MethodByName の呼び出しが1つ多い。</pre>
+<pre>koron 1585636658.381700: `receiver.MethodByNmae("method1").Call(...)` で良いんじゃないの?</pre>
+<pre>vikke 1585636674.382100: あ、確かに。すごいチョンボだ。</pre>
+<pre>koron 1585636714.382800: 2つ疑問があって、なぜわざわざreflectつかってるのかって話と</pre>
+<pre>mattn 1585636714.382900: ```func main() {
+	ms := &amp;hoge.MyStruct{}
+	receiver := reflect.ValueOf(ms)
+	log.Println("before")
+	receiver.MethodByName("Method1").Call([]reflect.Value{})
+	log.Println("after")
+}```</pre>
+<pre>mattn 1585636719.383200: これでいけると思いますよ。</pre>
+<pre>koron 1585636757.383900: あとpointerに対してメソッド定義してんだけど、値に対してMethodBy</pre>
+<pre>koron 1585636763.384100: やってて大丈夫なのかなって</pre>
+<pre>koron 1585636847.385900: mattnさんのはそれも治ってる。ポインターを ValueOf に渡してるから。</pre>
+<pre>vikke 1585636854.386000: やりたい事は、エンジンと業務部を分けて、エンジンが業務部をリフレクションで呼び出す感じにしたいのです。新しい業務を追加する時に、その部分だけ考えれば良いように。</pre>
+<pre>koron 1585636871.386600: いやーそれいみないよー</pre>
+<pre>koron 1585636882.387300: もしどうしてもならinterfaceでやるべき。</pre>
+<pre>mattn 1585636885.387500: reflect を使う要件ではないですね。</pre>
+<pre>kuu 1585636887.387700: golangってその手の抽象的な設計に向いてない気がする</pre>
+<pre>vikke 1585636949.389000: golangのinterface勉強してきます。</pre>
+<pre>koron 1585636976.390100: むしろちゃんとtour最初から最後までやったほうが良いですよ。</pre>
+<pre>vikke 1585636984.390600: 了解です。</pre>
+<pre>vikke 1585637002.391700: interfaceにも触れる?</pre>
+<pre>koron 1585637018.392400: ふれないわけがない。</pre>
+<pre>vikke 1585637024.392700: なるほど。</pre>
+<pre>vikke 1585637051.393600: なんか、javaとかrubyっぽい作りになっちゃうんですよね。よくない。</pre>
+<pre>mattn 1585637091.394300: ```package main
+import "foo/bar/engine"
+type MyStruct struct {
+}
+func (m *MyStruct) Callback(msg string) {
+    println(msg)
+}
+func main() {
+    engine.New(&amp;MyStruct{}).DoSomething()
+}```
+```package engine
+type Callbacker interface {
+    Callback(string)
+}
+type Engine struct {
+    cb Callbacker
+}
+func New(cb Callbacker) &amp;Engine {
+    return &amp;Engine{cb: cb}
+}
+func (e *Engine) DoSomething() {
+    // Do something and call backback
+    e.cb.Callback("done")
+}```
+</pre>
+<pre>koron 1585637095.394500: tourは日本語もあるから。 <https://go-tour-jp.appspot.com/methods/1></pre>
+<pre>mattn 1585637095.394600: こんな感じ。</pre>
+<pre>koron 1585637119.394900: interfaceは9ページ目にでてくる。</pre>
+<pre>tsuyoshi_cho 1585637698.395600: <https://go-tour-jp.appspot.com/basics/9>
+Java is no / ひでぇw</pre>
+<pre>tsuyoshi_cho 1585637710.395900: (最初からやったので、位置は違います)</pre>
+<pre>vikke 1585637896.396600: <https://golang.org/pkg/> を見て、少しクラクラしてた。英語にそんなに忌避感は無いのにさすがにキタ。</pre>
+<pre>tennashi 1585638136.398800: よく使うのはそのうち十数個くらいじゃないですかね</pre>
+<pre>koron 1585638320.399700: んーしかも全部見るにしてもJavaよりははるかに少ない。</pre>
+<pre>tennashi 1585638425.399800: // 自分がよくつかうの、で見たら 22 個だった</pre>
+<pre>mattn 1585638825.400300: 良く使うの 36 個だった。(頻度低いやつ除いたらたぶん 30 個程度？)</pre>
+<pre>mattn 1585639361.404500: 勉強法、たぶん tour を読んだあと GitHub で興味あるツールなんかの人のソース見るのがいい気がする。</pre>
+<pre>johejo 1585639388.405100: 適当に指折りながら数えましたがよく使うパッケージは30個くらいかな</pre>
+<pre>mattn 1585639407.405500: すぐにハハーンてなる</pre>
+<pre>johejo 1585639561.408500: 他の言語と比べても各パッケージ内の型や関数もそんなに多くない気がする 気のせいかな</pre>
+<pre>mattn 1585639588.408700: 予約語が少ないんですよね。</pre>
+<pre>kuu 1585639616.409800: 本当に必要な物に絞られてるという印象を受ける</pre>
+<pre>kuu 1585639650.411100: Goを使ってるとライブラリ分厚いなあと感じるけど、実際そんなに大きくない</pre>
+<pre>tennashi 1585639725.412700: そう、SNMP なんかみんな使わんので標準パッケージになくてええんや!
+// 泣きながら SNMP パッケージ書いてる...</pre>
+<pre>johejo 1585639738.413500: stringsとか関数多いかな？って思ったけどよく見たら全然大した数じゃなかった</pre>
+<pre>eihigh 1585639762.414300: 読もうと思えば読める標準ライブラリってだけでありがた……C++……うっ頭が</pre>
+<pre>mattn 1585639839.415600: C++ の type_traits 使ったやつのヘッダファイルなんか、あれメンテするのかなり属人的だと思う。</pre>
+<pre> 1585639853.415900: いまのプロジェクトは21個</pre>
+<pre>mattn 1585639945.418400: bufio とか path/filepath とか html/template なんかが入ってないので少し偏ってるかもですね。</pre>
+<pre>johejo 1585639993.419300: 人人人人人人人人人人人人人人＿
+＞　突然のアセンブリとunsafe　＜
+￣Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^Y^￣
+とかもありますけどGoの標準ライブラリほんと凡人にも読めるのでありがたい</pre>
+<pre>eihigh 1585640006.419800: ```database/sql
+encoding/json
+fmt
+io
+os
+path/filepath
+sort
+strconv
+strings
+time```
+少ないな！</pre>
+<pre>lighttiger2505 1585640010.419900: 最近IOストリーム処理書いてるのでio.Writerとio.Readerってこのためにインタフェースになってったのか。ははーってなってます。</pre>
+<pre>kyoh86 1585640018.420200: reflectとかunsafeいじると最高にアガる</pre>
+<pre>kuu 1585640072.422000: ついこの前必要に迫られてScannerの中身読んだけどははーんってなった</pre>
+<pre>mattn 1585640075.422100: 今書いてる lisp 処理系
+```bufio
+bytes
+errors
+fmt
+io
+os
+strconv
+strings
+unicode```</pre>
+<pre>mattn 1585640106.422400: <http://github.com|github.com> も使って無かった。</pre>
+<pre>mattn 1585640146.422800: はい。構成見てたらたぶんそうだろうなと思いましたw</pre>
+<pre>eihigh 1585640170.423400: ゲームだと `image` `image/color` `math` あたりが入ってくる。</pre>
+<pre>itchyny 1585640196.423800: webサーバー、database/sqlとhtml/templateは入りがち</pre>
+<pre>mattn 1585640227.424500: image はリサイズと図形描画がないので、その辺りはサードパーティに頼らざるを得ないんですよね。</pre>
+<pre>eihigh 1585640253.424900: そうなんですよね。実際に `image.Image` を使うケースは少ないw
+colorはよく使いますが。</pre>
+<pre>eihigh 1585640272.425200: 実際にというか、単体では機能しないというか。</pre>
+<pre>raa0121 1585640358.425500: ```"bytes"
+"encoding/json"
+"errors"
+"fmt"
+"io"
+"io/ioutil"
+"math"
+"math/rand"
+"net/http"
+"net/http/httptest"
+"net/url"
+"os"
+"path/filepath"
+"reflect"
+"regexp"
+"sort"
+"strconv"
+"strings"
+"sync"
+"testing"
+"time"
+"unicode"
+"unicode/utf8"```</pre>
+<pre>raa0121 1585640379.426200: 手元で今作ってる TRPGダイスボットだと、こんな感じですね</pre>
+<pre>mattn 1585640387.426500: 標準ライブラリだけど animation gif は処理できるというアレ</pre>
+<pre>eihigh 1585640440.427500: 使用するパッケージから大体どんなプログラムか当てられそう。</pre>
+<pre>raa0121 1585640457.428100: CUI(REPL) と Webサーバも作ってるので、外部ライブラリとして、
+```"<http://github.com/andlabs/ui|github.com/andlabs/ui>"
+"<http://github.com/apaxa-go/eval|github.com/apaxa-go/eval>"
+"<http://github.com/chzyer/readline|github.com/chzyer/readline>"
+"<http://github.com/labstack/echo|github.com/labstack/echo>"
+"<http://github.com/labstack/echo/middleware|github.com/labstack/echo/middleware>"
+"<http://github.com/mattn/go-colorable|github.com/mattn/go-colorable>"
+"<http://github.com/seehuhn/mt19937|github.com/seehuhn/mt19937>"```</pre>
+<pre>mattn 1585640460.428300: 人によって regexp 使う頻度が変わりそう。</pre>
+<pre>ゴリラ 1585640463.428500: Go、本当にミニマムだなぁ</pre>
+<pre>mattn 1585640477.428800: 僕はあんま使わない</pre>
+<pre>ゴリラ 1585640488.429200: シンプル・イズ・ベストって感じがすごくある</pre>
+<pre>koron 1585640506.429700: 僕も基本は避けるかなぁ。</pre>
+<pre>eihigh 1585640532.430300: stringsパッケージが便利。</pre>
+<pre>hrsh7th 1585640612.432600: 超早くうごく LL って感じで使ってます。覚えゲーが少ないし、書くのも動かすのも楽なのが好きです。（GC もあるし。。。）
+そのメリットが、 if err って書くのめんどいとかを全部吹き飛ばしてくれる。</pre>
+<pre>tennashi 1585640632.432700: ```context
+crypto/tls
+errors
+fmt
+io
+io/ioutil
+net
+net/textproto
+strings```
+ライブラリだとこんな感じ...</pre>
+<pre>mattn 1585640652.433500: パッケージでどっち方面の書いてるか分かる。</pre>
+<pre>mattn 1585640698.435400: path/filepath と os が無いので純粋なライブラリなんだなって。</pre>
+<pre>raa0121 1585640714.435800: 不要だとは思いますが、使ってるパッケージ一覧を出すワンライナー
+`ag '^\t\".*' | awk '{print $2}' | sort -u`</pre>
+<pre>johejo 1585640757.436500: ```$ go list -f '{{join .Imports "\n"}}' ./... | sort | uniq | grep -v github | grep -v gopkg | grep -v <http://golang.org|golang.org>
+bufio
+bytes
+compress/gzip
+context
+crypto/sha256
+database/sql
+database/sql/driver
+encoding/base64
+encoding/csv
+encoding/hex
+encoding/json
+errors
+expvar
+flag
+fmt
+io
+io/ioutil
+log
+math
+net
+net/http
+net/http/httptest
+net/http/httputil
+net/http/pprof
+net/url
+os
+os/exec
+os/signal
+path/filepath
+reflect
+regexp
+runtime
+strconv
+strings
+sync
+syscall
+testing
+time```</pre>
+<pre>thinca 1585640760.436600: 未だに Go 入門できてない</pre>
+<pre>ゴリラ 1585640777.437100: thincaさん、一年前くらいから言っている気がするｗ</pre>
+<pre>thinca 1585640780.437300: 最初のハードルがとても高い</pre>
+<pre>kuu 1585640793.437700: とりあえずtourこなすといいと思う</pre>
+<pre>thinca 1585640802.438000: tour はかなり昔にやりました</pre>
+<pre>kuu 1585640833.439200: 後は作りたい物をGo縛りで書く</pre>
+<pre>thinca 1585640838.439500: 基礎文法一通りさらう程度はやってるのだけど、エコシステムが全然わからん</pre>
+<pre>mattn 1585640854.440400: 客観的にみると thinca さんは型付き言語の方が好きそうなイメージある。</pre>
+<pre>ゴリラ 1585640857.440500: まず作ってみたら色々わかる希ガス</pre>
+<pre>thinca 1585640869.440800: go tour にエコシステムの使い方なかったし…今は知らんけど少なくとも当時は</pre>
+<pre>kuu 1585640882.441400: 今も無い…</pre>
+<pre>thinca 1585640896.441900: private package を import するのに <http://github.com|github.com> って書きたくない</pre>
+<pre>mattn 1585640919.442600: conceal 使おう</pre>
+<pre>thinca 1585640929.443100: それだ</pre>
+<pre>johejo 1585641028.444600: goplsのimportが結構調子良くて最近手でimportほとんど書いてないな...</pre>
+<pre>hrsh7th 1585641074.446000: import を追加するのも、削除するのも最近ほぼ完全に自動になってますね。</pre>
+<pre>ゴリラ 1585641077.446200: まだ `goimports`勢</pre>
+<pre>kuu 1585641083.446600: vim-goimportsが活躍してる</pre>
+<pre>thinca 1585641099.447100: 単純にグローバルの名前を変えた時(リポジトリの移管とか)に内部同士での参照を書き換えないといけないと言う構造が個人的にすごく気持ち悪い</pre>
+<pre>ゴリラ 1585641099.447200: `goimports`ってフォーマットもしてくれるので :benri:</pre>
+<pre>thinca 1585641121.447500: ツールが補助してくれるとかではなくて気持ちが悪い</pre>
+<pre>ゴリラ 1585641133.447800: それ、わかりみ</pre>
+<pre>johejo 1585641165.448700: Javaのimportだるかったなあ... IDEなしではやってられない...</pre>
+<pre>kuu 1585641192.449800: Javaはテキストエディタじゃ書けない</pre>
+<pre>thinca 1585641194.449900: Java も package 名がファイル毎にフルで書くから同じ問題抱えてましたね…</pre>
+<pre>tsuyoshi_cho 1585641219.450700: 今モジュール化もあって、多少よくなった、のだろうか?</pre>
+<pre>ゴリラ 1585641221.451000: Javaはそもそも色々と長くてツライ</pre>
+<pre>thinca 1585641250.452600: Java はもうアセンブリと言う概念になったので直接書くことはほぼない(?)</pre>
+<pre>hrsh7th 1585641255.452900: 今だと go.mod に全部書いてあるのだし、モジュール名そこで指定させてくれればよかったのかなあ。でも、ソースコードと go.mod が一蓮托生になってしまうか。</pre>
+<pre>tsuyoshi_cho 1585641258.453000: ただ、同名パッケージという問題にはJavaについてはあたったことない</pre>
+<pre>tsuyoshi_cho 1585641298.454200: go.mod用の構文があれば、「go.mod使うなら一連托生でいく」を書き分けられた?</pre>
+<pre>johejo 1585641308.454800: using namespace ....</pre>
+<pre>itchyny 1585641350.455800: そういうの最初は気持ち悪く思ったかなぁ、どう感じたかすら忘れてしまったけど、そんなところ (importとかエラーハンドリングの書き方とか) がものすごく些細なところと思える (そこで言語を取捨選択するなんてもったいないと思う) くらい、Goの大きな利点を享受してしまる。</pre>
+<pre>raa0121 1585641372.456200: go.mod で replace すれば、<http://github.com/|github.com/>... を書かなくても済む…？
+邪道かもしれないけど…</pre>
+<pre>thinca 1585641435.456700: まあたぶん書き出せば言うほど気にならなくなるとは思っている…なので最初のハードル、ですね…</pre>
+<pre>thinca 1585641455.457200: 単純に時間が取れていないと言うのはまあある</pre>
+<pre>eihigh 1585641478.457800: 慣れれば将来動かされることはないので楽ではありますね、
+jsの環境構築は少し離れるたびに毎回キャッチアップしてる気がする…</pre>
+<pre>thinca 1585641506.458200: たぶん次何か言語自由で何か書くかってなったら Rust の練習をする可能性が高そう(ぉぃ</pre>
+<pre>raa0121 1585641522.458400: <#CMBKN4MNE|rust> の機運</pre>
+<pre>raa0121 1585641551.459100: thinca さんすでに入ってた</pre>
+<pre>thinca 1585641574.459900: Go も長いことパッケージの依存周りの管理が紆余曲折あって最近ようやく落ち着いたイメージがある。その間に入門した人大変そうだなーと(他人事)</pre>
+<pre>raa0121 1585641581.460100: ReactNative ならぬ、GoNative できないかなぁ…</pre>
+<pre>raa0121 1585641653.461800: gomobile はあるけど…</pre>
+<pre>mattn 1585641687.463300: 実際はあんま変わってないんですよ &gt; Go</pre>
+<pre>ゴリラ 1585641698.464300: 最近 go modules がメインになってきている（ワイ</pre>
+<pre>kuu 1585641703.464500: この前Androidで動くLinuxバイナリなら吐いた(違う)</pre>
+<pre>johejo 1585641708.464900: 私は1.11デビューでgo modが来た頃だったのであんまり苦労してないなあ
+vendorとか正直大変そう</pre>
+<pre>koron 1585641712.465100: 別に大変ではなかったかなぁ…</pre>
+<pre>kuu 1585641741.466300: gomodが安定するまで静観決めてた</pre>
+<pre>mattn 1585641755.466800: ローカルの GOPATH 内のを使ってたのが、プロジェクト専用のキャッシュを使う様になった。</pre>
+<pre>koron 1585641761.467000: betaのころに非対応モジュールと対応モジュールが混ざってた頃がキャッチアップめんどかったかな。あとはハッシュの計算が変わったやつくらいか。</pre>
+<pre>mattn 1585641771.467300: (そしてその間に vendor があった、が死んだ)</pre>
+<pre>koron 1585641786.467600: 僕は逆にvendorは使う気になれなかったのだった。</pre>
+<pre>thinca 1585641985.468600: 歴史</pre>
+<pre>ゴリラ 1585642014.469200: 個人でvendoerを使ったことがない
+初めてGoを書いた現場では使っていたから存在は知っていた</pre>
+<pre>mattn 1585642035.469800: ユーザ「Go のパッケージ管理、バージョン固定できない」
+開発者A「よし govendor 作った」
+mattn「よし gom 作った」
+開発者C「よし glide 作った」
+Go 寄りの有志「君らは甘いよ、deps を作った」</pre>
+<pre>mattn 1585642038.470100: 開発者A、mattn、開発者C「え～っ (マスオさん風)」</pre>
+<pre>mattn 1585642042.470400: ユーザ「でも deps、ちょっと使いづらい...」</pre>
+<pre>mattn 1585642045.470700: Go「君らは甘いよ、go module 作った」</pre>
+<pre>ゴリラ 1585642140.472200: mattnさんも作っていたのかｗ</pre>
+<pre>mattn 1585642228.472800: Gomfile というファイル名のあるプロジェクトは gom のプロジェクト。。。
+<https://github.com/search?q=filename%3Agomfile&amp;type=Code></pre>
+<pre>mattn 1585642237.473200: はやく go module に移行して...</pre>
+<pre>hrsh7th 1585642317.474000: 自分が作ったものがこんなに普及したことないからすごいの一言です。。。</pre>
+<pre>johejo 1585642369.474500: <https://github.com/golang/dep>
+<https://github.com/kardianos/govendor>
+<https://github.com/tools/godep>
+<https://github.com/Masterminds/glide>
+けっこうあるな...</pre>
+<pre>thinca 1585642480.476000: マスオさん…</pre>
+<pre>johejo 1585642526.476400: リポジトリをArchiveしてDO NOT USE THIS, PLEASE USE GO MODULE.ってreadmeに書いとくのがいいのかな</pre>
+<pre>mattn 1585642532.476600: hrsh7th さんが書いたコードで vim-lsp を使っております。</pre>
+<pre>hrsh7th 1585642628.478000: _余裕が出てきたらまた諸々改善を提出します_</pre>
+<pre>mattn 1585642746.478400: vim-lsp でコードを書き、dicwin-vim で辞書を引き、quickrun でコード片を実行し、openbrowser で URL を開き、previm でプレビューしつつ、ふと見れば lightline のステータスバー、あぁ皆に助けられているな、と思いながらおちんぎんを頂いています。</pre>
+<pre>tsuyoshi_cho 1585642790.479100: 各種goのツール使っていて、裏にmattnさんを感じたりしています</pre>
+<pre>johejo 1585642856.481000: go.modには居なくてもgo.sumにmattnさんがいる確率は結構高いですね。</pre>
+<pre>mattn 1585642861.481300: 僕もプログラマ引退したらスキンヘッドになって YouTube で Vim プラグイン紹介して小銭を稼ぎたい。</pre>
+<pre>kuu 1585642873.481600: go get -vするとよく見える :mattn:</pre>
+<pre>mattn 1585642889.482100: 直接使われることはあまりないですね。</pre>
+<pre>mattn 1585642907.482700: ロガー (go-colorable)
+CUI ライブラリ (go-isatty)
+とか。</pre>
+<pre>mattn 1585642944.483200: go-sqlite3 はあるか。</pre>
+<pre>mattn 1585643131.483900: 仕事のソースにも結構 mattn って出てくる。</pre>
+<pre>mattn 1585643181.484700: (開発メンバ誰もこれが僕のだって知らないしまさか 1.5 時間で適当に作ったとかは言えない)</pre>
+<pre>mattn 1585643341.487800: よくこれ仕事でつかえそうだな、ってのを OSS ライブラリにしたりするんだけどちょっと業務色が混じってしまう事があってそういうのはだいたい周りからみて「これ何に使うん？」みたいになりますね。</pre>
+<pre>mattn 1585643356.488200: <https://github.com/mattn/pingpong></pre>
+<pre>mattn 1585643358.488500: これとか。</pre>
+<pre>mattn 1585643373.488800: 実際使われてるけど一般の人にはまず必要ない。</pre>
+<pre>mattn 1585643410.489700: 一定間隔の ping (http) 送ってる最中、プロセスを起動しておくやつ。</pre>
+<pre>kuu 1585643432.490800: 画像のチョイスが謎い</pre>
+<pre>raa0121 1585643442.491100: README.md の Author に本名載ってるのに、開発メンバにバレないの、なかなかですね…</pre>
+<pre>johejo 1585643466.491800: でも正直なところ例のcore-jsみたいなOSSになるとメンテするのほんと辛そうだなあと思います</pre>
+<pre>mattn 1585643467.491900: 見ないでしょw README</pre>
+<pre>thinca 1585643502.492700: 見ないの…</pre>
+<pre>tsuyoshi_cho 1585643504.492900: たまに上司にバレて青くなるんですね、わかります(自分はない)</pre>
+<pre>mattn 1585643522.493600: 一度、過去に一人だけ「同じ名前ですね」って言ってきた人がいてその時には「あ、同じ名前の人がいるみたいね」って答えた。</pre>
+<pre>johejo 1585643572.495300: ライブラリのソースに if runtime.GOOS == "windows" って書いてあったらgithubでコントリビュータをチラ見します</pre>
+<pre>mattn 1585643588.495900: ウェブ業ならバレてたと思う。</pre>
+<pre>mattn 1585643651.496900: あと僕の名前、長いし特徴的じゃないからみんなあんま見ない。</pre>
+<pre>mattn 1585643660.497300: よく Matz と間違われるくらいだし。</pre>
+<pre>mattn 1585643691.497900: 昔「おい Matz が vim を使ってるぞ」ってプチ騒ぎになった。</pre>
+<pre>kuu 1585643727.499500: MatzさんEmacs派でしたっけ確か</pre>
+<pre>mattn 1585643744.000100: ドが付くくらいド Emacs ユーザ</pre>
+<pre>mattn 1585643779.001100: 確か使っておられるメーラは自作で elisp 製</pre>
+<pre>tsuyoshi_cho 1585643781.001200: どちらも松じゃないという</pre>
+<pre>raa0121 1585643939.003200: <https://jp.quora.com/Ruby%E3%81%AEMatz%E3%81%95%E3%82%93%E3%81%8CEmacs%E3%82%92%E6%84%9B%E7%94%A8%E3%81%95%E3%82%8C%E3%81%A6%E3%82%8B%E3%81%A8%E8%81%9E%E3%81%84%E3%81%A6%E5%AC%89%E3%81%97%E3%81%8F%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97></pre>
+<pre>mattn 1585643939.003300: 話戻して go module の考え方うまいですよね。deps も glide も gom も govendor も prod/dev を分ける作り、つまり prod/dev それぞれ依存を分ける作りをしてたけど、go module は全部持つって作りになった。たとえ tools/script.go が使っていたとしても go.mod には含まれる。</pre>
+<pre>mattn 1585643994.004300: 一部の言語マニアは Ruby は Matz lisp って呼ぶ事もありますね。</pre>
+<pre>mattn 1585644009.004700: 実際 ruby のソースの中身には lisp 色がある。(car とか cdr とか)</pre>
+<pre>mattn 1585644050.004900: <https://github.com/mruby/mruby/blob/ccf28775b896e7cf772657eacd8727de25c3a0f4/mrbgems/mruby-compiler/core/codegen.c#L652></pre>
+<pre>mattn 1585644089.005900: <https://github.com/ruby/ruby/blob/c5eb24349a4535948514fe765c3ddb0628d81004/regparse.h#L86-L87></pre>
+<pre>kuu 1585644104.006400: callccあったり、関数名の末尾に!や?を付ける文化なんかはもろLispだなと思う</pre>
+<pre>kuu 1585644136.007200: LispつーかSchemeか</pre>
+<pre>mattn 1585644148.007800: ただプログラミング言語の考え方って S 式をかなりイメージせざるを得ないので、まぁ分かる。</pre>
+<pre>tsuyoshi_cho 1585644168.009000: あー、!はlisp/scheme系か、腑に落ちた</pre>
+<pre>johejo 1585644183.009300: rustはコンパイルする言語だけどcargo tomlにdev depsあるな</pre>
+<pre>mattn 1585644205.009600: rust、あんまコンパイル速くしようって考えてなさそう。</pre>
+<pre>tsuyoshi_cho 1585644235.010500: (いろいろな意味で)強くあることが第一ですかね</pre>
+<pre>kuu 1585644300.011700: Rustはコンパイル時に大量の計算をする代わりに実行時の安全性と速度を保証しようみたいな考えなので、遅いのはまあ仕方ないかなと</pre>
+<pre>johejo 1585644378.013300: deps, dev-deps, build-deps 3カテゴリあるのか</pre>
+<pre>vikke 1585660865.019800: tour でStringers( <https://go-tour-jp.appspot.com/methods/17> ) を読んでるんですけど、 良くわかりません。
+Stringers interfaceを実装? した
+```func (p Person) String() string {
+	return fmt.Sprintf("%v (%v years)", p.Name, p.Age)
+}```
+は、`fmt.Println(a, z)` から呼ばれて来るという理解で良いですか?</pre>
+<pre>mattn 1585660990.021200: `String() string` というシグネチャを持った値は、fmt.Fprint や fmt.Print の引数として渡すと String() が呼ばれるという仕組みになっています。</pre>
+<pre>mattn 1585661041.022800: なので
+```var F int
+func (f F) String() string {
+    return "えふ"
+}```
+```func main() {
+    var f F = 0
+    fmt.Println(f)
+}```
+こうすると「えふ」と表示されます。</pre>
+<pre>mattn 1585661072.023400: これを応用して、struct に `String()` を付けて struct の中身を表示する、というコードです。</pre>
+<pre>vikke 1585661205.024500: なるほど。ありがとうございます。</pre>
+<pre>vikke 1585662945.026300: ```package main
+
+import "fmt"
+
+type IPAddr [4]byte
+
+// TODO: Add a "String() string" method to IPAddr.
+/*
+func (ip IPAddr) String() string {
+    return fmt.Sprintf("%d.%d.%d.%d", ip[0], ip[1], ip[2], ip[3])
+}
+*/
+
+func (s string) String() string {
+	return "hoge"
+}
+func main() {
+	hosts := map[string]IPAddr{
+		"loopback":  {127, 0, 0, 1},
+		"googleDNS": {8, 8, 8, 8},
+	}
+	for name, ip := range hosts {
+		fmt.Printf("%v: %v\n", name, ip)
+	}
+}```
+これだとエラーになります。
+```./prog.go:14:6: cannot define new methods on non-local type string```
+ <https://golang.org/pkg/fmt/#Stringer> を見てると実装は悪く無さげな気がするんですが。どこが悪いですか?</pre>
+<pre>kuu 1585663004.026800: string型にメソッド生やせないですよって言われてるように見える</pre>
+<pre>mattn 1585663038.027200: はい。その通り。</pre>
+<pre>vikke 1585663053.027700: あー、レシーバーがStringだから駄目なんですね。 non-local typeというのが良くわかりませんでした。</pre>
+<pre>mattn 1585663056.027800: 別名付けて下さい。
+```type mystring string```</pre>
+<pre>vikke 1585663577.030700: 解決しました。ありがとうございます。</pre>
+<pre>vikke 1585663854.032000: goのinterfaceとそれを継承したモジュール?(で良いの?)関係は implementsとかそういうワードが無いので、慣れてないと迷いますね。</pre>
+<pre>tsuyoshi_cho 1585664070.032500: 静的ダックタイピング系は安全は理解できるけど、納得が難しい感はある</pre>
+<pre>ゴリラ 1585664417.033100: 組み込みのデータ型にメソッドは生やせないんですよね</pre>
+<pre>ゴリラ 1585664466.034000: ```type mystring string```
+↑mattnさんの書いたように、基礎型(string)を元に新しい型(mystring)を作らないといけない</pre>
+<pre>tennashi 1585665796.038100: 仕様公開のための interface よりも、ユーザ側が使いたいメソッドを宣言するための interface という使い方のほうが好まれますね
+// "Accept inteface, return struct" をそういうことだと解釈してます</pre>
+<pre>tennashi 1585665856.038900: ~er という名付けが上手くいかないときは大体前者に名前を付けようとしていることが多い</pre>
+<pre>vikke 1585665979.040500: `b := make([]byte, 8)`と `var b [8]byte` って別物ですか?</pre>
+<pre>tennashi 1585666006.041200: 前者はスライスの宣言で後者は配列の宣言ですね</pre>
+<pre>eihigh 1585666015.041400: 型が違います。
+前者はbyte型スライス。
+後者は固定長(8)のbyte配列</pre>
+<pre>vikke 1585666021.041600: やはり。</pre>
+<pre>vikke 1585666028.041800: あざます。</pre>
+<pre>vikke 1585666383.042300: <https://golang.org/pkg/strings/#Reader.Read>
+の記載から、スライスか配列かって、どう判断出来ます?</pre>
+<pre>kuu 1585666523.042800: []の間に数字が書いてないやつは全部スライスですね</pre>
+<pre>kuu 1585666544.043200: そもそも配列を受け取るメソッドってあったっけ</pre>
+<pre>ゴリラ 1585666554.043500: 固定の場合？</pre>
+<pre>vikke 1585666626.044800: Reader.Read()って固定のsliceを引数に受けるじゃないですか。上のマニュアル見ると任意のサイズの配列にも見えちゃうんですよね。</pre>
+<pre>kuu 1585666675.045600: Goには任意のサイズの配列というものが無くて、固定長の配列と、それを包み込んで任意のサイズの配列に見せかけてくれるスライスの二種類しかないです</pre>
+<pre>vikke 1585666785.047200: 固定長の長さが任意って事です。例えば、 `var b [8] byte` であれば8バイトだし、 `var b [16] byte` だったら16バイトっていう任意のサイズに出来るじゃないですか。</pre>
+<pre>kuu 1585666857.047700: これ、サイズまで型扱いなんですよね…（さっき試して知った）</pre>
+<pre>kuu 1585666880.048100: なのでこんなの出ます
+`./a.go:9:6: cannot use a (type [4]byte) as type [8]byte in argument to test`</pre>
+<pre>vikke 1585666918.048800: へー。だから `[]` の場合はスライスと考えて問題無いですね。</pre>
+<pre>kuu 1585666957.049300: そういうことです、配列とスライス同士でもこのエラーは出るので</pre>
+<pre>vikke 1585666972.049700: 納得。</pre>
+<pre>tennashi 1585667102.050500: <https://golang.org/ref/spec#Array_types>
+このへんですかね</pre>
+<pre>ゴリラ 1585667430.051600: スライス、マジややこしい</pre>
+<pre>kuu 1585667453.051800: :sorena:</pre>
+<pre>kuu 1585667468.052200: 可変長の配列に見えるだけで可変長の配列ではないので下手に使うと死ぬ</pre>
+<pre>tennashi 1585667496.052900: そして `[...]` でさらに混乱するんですね、わかります</pre>
+<pre>kuu 1585667727.053600: `[...]`だと配列か、わかりにくいな</pre>
+<pre>mattn 1585667818.054900: 楽するためのやつ `[...]{1,2,3}`</pre>
+<pre>tennashi 1585667986.057500: あんまり意識してませんでしたが、 `[...]` ってリテラルの記法であって型ではないんですね</pre>
+<pre>tennashi 1585667991.057700: <https://golang.org/ref/spec#Composite_literals></pre>
+<pre>tennashi 1585669321.059800: `a[1:3:5]` この記法しらんかった、cap 制御できるのか...</pre>
+<pre>mattn 1585669411.060700: copy なんかで len より向こうにコピーしてしまうのを回避できます。</pre>
+<pre> 1585669610.061000: とどいたー。</pre>
+<pre>kuu 1585669630.061800: 遅延評価</pre>
+<pre>vikke 1585669655.062600: 二重投稿だな。こりゃ。</pre>
+<pre>mattn 1585669681.063100: Go の配列は動的なサイズで多次元を作れないんだけど、よく文句でないなーと思ってる。</pre>
+<pre>mattn 1585669734.063700: `make([][]int, [3,2])` みたいな(こんなの無い)</pre>
+<pre>mattn 1585670117.064000: 以前これをやる黒魔法は書いた。 <https://github.com/mattn/go-redimer></pre>
+<pre>Hajime Hoshi 1585670709.065000: インデックスの順序が型 ([][]int) と呼び出し (a[j][i]) で一致しているのが気に入っています</pre>
+<pre>Hajime Hoshi 1585670729.065400: C# のジャグ配列とかだと逆になるので混乱する</pre>
+<pre>mattn 1585671475.066900: C言語をやってる人だと意識してなくても `a[y*dy + x]` が2次元配列に見えてくる不思議。</pre>
+<pre>vikke 1585700148.067200: 今日も頑張ってGO書くごー</pre>
+<pre>ゴリラ 1585700846.067400: :goodpoem: </pre>
+<pre>vikke 1585701604.069600: ではどうやって呼び分けるんですか?</pre>
+<pre>vikke 1585701629.070200: ここが解決すると超楽になれる気がする。</pre>
+<pre>koron 1585701661.071300: a.Foo()
+a.Bar()
+
+でよいでしょ</pre>
+<pre>vikke 1585701688.071600: switch文?</pre>
+<pre>mattn 1585701714.072100: 要件がちゃんと伝わってないのでは？</pre>
+<pre>koron 1585701747.073100: 呼び分ける、の意味が合意できてない感じしますねw</pre>
+<pre>mattn 1585701814.074700: 突然差し込むリンク: この変更、認識してなかった。json.Number に不正な文字列入れるとエラーになる。(僕的にはOKだけどこれで壊れたと言ってる人が結構いる) <https://github.com/golang/go/issues/37308></pre>
+<pre>mattn 1585701860.075500: 前はこれがセーフだったっぽい。 <https://play.golang.org/p/3Bv8N_6DPST></pre>
+<pre>vikke 1585701899.076200: gRPCから電文が飛んで来ます。gRPCのエントリポイントは1箇所(ぶっちゃけ業務内容を言うとメール送信)で、電文内容に○○メールの内容を送信する為のmethod名が入ってて、業務処理を振り分ける感じです。業務処理呼び出しまでは、エンジンとして固めちゃって、業務処理以降をドンドン増やす感じです。</pre>
+<pre> 1585702074.076700: とりあえずinterfaceつかった呼び分けの一例ね。</pre>
+<pre>koron 1585702109.077100: ああ、そういう意味では `switch methodName {`
+
+でちゃんとdispatchしたほうが良いです。</pre>
+<pre>koron 1585702265.078800: gRPCってURL的な意味でのエントリポイントは1つでも、serviceとmethodで複数の機能を公開できるんで。</pre>
+<pre>mattn 1585702313.079900: interface は口しばる物でもありますが、抽象化に使うのが Go の interface の主目的ですね。</pre>
+<pre>mattn 1585702318.080100: <https://play.golang.org/p/M08FzcZvNQd></pre>
+<pre>johejo 1585702399.082100: 仮面ライダー笑
+率直な感想なんですけど日本語のコードって意外と読みにくいもんなんですかね...</pre>
+<pre>vikke 1585702420.082800: 仮面ライダーが出た。</pre>
+<pre>kuu 1585702448.083700: 異常系がエラー吐かないからと壊れた物を渡すような人間、滅んでもいいのでは(暴論)</pre>
+<pre>koron 1585702493.084200: ついでに言うとJavaみたいに機能を提供する側が定義するものじゃなくて、利用する側が定義したほうがうまくいくんですよね～そこが僕のお気に入りポイントでもあり、なかなか他言語から来た人に理解してもらえないポイントでもある。</pre>
+<pre> 1585702845.086100: gRPCの複数メソッド(rpc) が含まれたprotofileの例。</pre>
+<pre>ゴリラ 1585702868.087100: 人類は英語になりすぎている可能性あり</pre>
+<pre> 1585703307.087500: で `protoc *.proto  --go_out=plugins=grpc:.` ってするとこんなファイルが生成される。</pre>
+<pre>kuu 1585703372.088300: 日本語プログラミング言語触ったことあるけど、構文解析大変そうだなあと思った</pre>
+<pre>koron 1585703437.089400: あとは rpc が増えたら user.pb.go の再生成して UserServiceServer に増えたメソッドを実装してくイメージ。</pre>
+<pre>koron 1585703462.090200: せっかく go や gRPC 使うんだから、型とそのチェックを生かさないとね。</pre>
+<pre>vikke 1585703506.091100: なるほど。gRPCとかに手を入れないで、業務拡張しようとしたけど、言語のメリット殺してしまうんで、良くないんですね。</pre>
+<pre>koron 1585703588.091300: ですです。gRPCのレイヤは業務そのものを表せるし、生成ツールとかが基本的なことは全部やってくれるので、それに乗らないのは余計な手間が増えます。</pre>
+<pre>koron 1585703652.091500: っていうか gRPC の性質上、なんでもできるスーパーメソッドは作れないんじゃないかな。引数とか数字と型がセットになるんでJSの Object 相当の取り扱いがめんどい。</pre>
+{% endraw %}

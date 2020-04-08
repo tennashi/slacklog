@@ -1,0 +1,261 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #plugins - 2020年04月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>luma 1585726161.144200: Gina browse --yank と OpenBrowser を組み合わせている</pre>
+<pre>luma 1585726392.145000: tyruさんの専用のプラグインつかってみようかな...</pre>
+<pre>tyru 1585726980.145100: --yank あるのか。open-browser, open-browser-github 両方にほしいんだよな
+色々手が回ってない。逆に自分のプラグインにコミットするモチベがない時がある（昔からだけど最近結構そんな感じ）</pre>
+<pre>tyru 1585727029.145200: --yank 近日やるかー</pre>
+<pre>ycino 1585736941.146000: ちょっと前に話題になってたと思うんですけど、numberとrelativenumberをいい感じに管理してくれるプラグインって何がよさそうでしょう
+これ・・・？ <https://github.com/jeffkreeftmeijer/vim-numbertoggle></pre>
+<pre>ycino 1585737013.147100: これ実体は2行だけなのか、これならvimrcに書くのでよさそう
+なんかペアプロとかレビューのときのためにいい感じにtoggleする設定とかも合わせて入ってると助かりそうなんですが</pre>
+<pre>tsuyoshi_cho 1585737158.147700: 好みが人によるから、自分で設定しちゃうのが速いんだろうな...と思う
+やることはわりとあるけど</pre>
+<pre>ycino 1585737355.148600: やることありそうだから拾いたかったんですよねー、どうしようかな</pre>
+<pre>thinca 1585737392.149100: なぜ setlocal も使ってないプラグインがこんなにスター付くのか</pre>
+<pre>kuu 1585737421.149300: Vim script警察</pre>
+<pre>kuu 1585737452.149700: setlocal、何かで事故ってから必ず付けるようになった</pre>
+<pre>thinca 1585737487.150400: まあでもこれかなり昔からあってそれなりに歴史があるのか。紆余曲折を経て今のシンプルな形に落ち着いた感じはある (ミスってるが)</pre>
+<pre>thinca 1585737526.151300: 劇的ビフォーアフター <https://github.com/jeffkreeftmeijer/vim-numbertoggle/commit/db234b2417c3780306d201be1369ff06498f6697#diff-2e455b72fa8a7783b5f1e92d6a5c56ec></pre>
+<pre>luma 1585737566.151700: &gt; You can set it up yourself by putting the snippet above in your ~/.vimrc, or use the vim-numbertoggle plugin,
+ってあるしアイデアというか，vimrcの破片みたいな役割として存在しているのかも
+
+とおもったらめっちゃ変わってたｗ</pre>
+<pre>kuu 1585737582.152100: ぼくのかんがえたさいきょうのせってい時期と悟りを開いた時期</pre>
+<pre>tsuyoshi_cho 1585737635.152700: 若干記述がアレだけど自分はこれくらい
+```function! s:relativenumber_toggle(mode) abort " {{{
+  let enter = a:mode ==? 'enter'
+
+  if enter
+    let b:relativenumber = &amp;l:relativenumber " backup
+    setlocal norelativenumber
+  else
+    if get(b:,'relativenumber', 1)
+      " if backup value is relativenumber is active, re-active
+      setlocal relativenumber
+    endif
+  endif
+endfunction " }}}
+augroup MyAutoGroup
+  autocmd WinLeave,InsertEnter * nested call s:relativenumber_toggle('enter')
+  autocmd WinEnter,InsertLeave * nested call s:relativenumber_toggle('leave')
+augroup END```</pre>
+<pre>luma 1585737642.153000: setlocalつけたほうがいいのか，あとでvimrcに移し替えようかな</pre>
+<pre>thinca 1585737649.153200: ともあれ setlocal くらい使ってほしい</pre>
+<pre>thinca 1585737661.153500: 使ってる人は PR 送りましょう</pre>
+<pre>thinca 1585737761.154100: これはもしやコピペで作る vimrc シリーズなのかな</pre>
+<pre>hrsh7th 1585737878.154600: 昔のコードの `let g:insertmode = 1` の破壊力がすごい</pre>
+<pre>luma 1585737885.154800: <https://github.com/jeffkreeftmeijer/vim-numbertoggle/issues/46#issuecomment-542529511>
+これでいいかも</pre>
+<pre>luma 1585738057.156000: Tsuyoshi CHO さんのleaveで `nornu`  されてたら，それを尊重する，とかでもいいかもな</pre>
+<pre> 1585738754.156100: ちょっとアレすぎたので修正した</pre>
+<pre>kuu 1585741078.157300: 面白いの見つけた <https://www.reddit.com/r/neovim/comments/fsvna6/nvimluapad_interactive_neovim_scratchpad_for_lua/></pre>
+<pre>kuu 1585741117.157900: コード書き換える度に実行してデバッガみたいな感じで出してくれるやつ</pre>
+<pre>tyru 1585741891.158200: virtual text vim にもほしいなー</pre>
+<pre>dohq 1585742399.158900: これ系だとこれもありますね
+<https://github.com/metakirby5/codi.vim></pre>
+<pre>tyru 1585753331.159700: codi.vim べんりそう</pre>
+<pre>aiya000 1585784071.160900: sudo rm /*
+評価したらどうなるんだろ……</pre>
+<pre>yutakatay 1585795146.162300: 私は使わないですが、サクラエディタのGrepみたいなやつ
+<https://github.com/eugen0329/vim-esearch></pre>
+<pre>tsuyoshi_cho 1585796170.162900: 広めgrep+Qfreplaceみたいなのが別ウィンドウで、という感じかな...</pre>
+<pre>Shougo 1585807062.164400: neosnippetにinfoを追加してスニペットをプレビュー可能にします</pre>
+<pre>Shougo 1585819216.165700: 他の補完でもinfoをセットするようにしたいところ</pre>
+<pre>Shougo 1585827960.166300: 実装しました</pre>
+<pre>heavenshell 1585833037.171700: 今日のほっこり
+「バグってんだけど？これ設定な」
+ぼく「依存してるライブラリー古いっぽいから最新にして」
+「おk でも最新にしたけどまだバグってるんだけど」
+ぼく「再現せんから、スクリーンキャスト撮ってくれん？」
+「撮ろうと思ったら再現せんくなったwww 直ったわ！ありがと！」
+
+あるある。</pre>
+<pre>mattn 1585836833.172000: あるある</pre>
+<pre>mattn 1585836910.173400: 僕がよくあるのは、go-oci8 ていう Go の oracle ドライバで
+「バグってんだけど」
+ぼく「おかしいね、テストしたソースみせてくれる？」
+「これ！」
+ぼく「それ、僕のドライバじゃないよね？」
+
+音信不通...</pre>
+<pre>ゴリラ 1585837148.173600: ww</pre>
+<pre>Shougo 1585863412.175100: これはひどい。しかし、再現させようと条件を絞るうちに再現しなくなるのはよくある</pre>
+<pre>ycino 1585882329.176500: <@U7B4ZD49X> <https://github.com/yuki-ycino/fzf-preview.vim/issues/106> あたり、なんか経緯があって `-g \!"* *"` にしたと思ってるんですけどなんでしたっけ
+あと `\!"* *"` が自分でも実際に何にマッチさせてるか忘れたというあれな・・・</pre>
+<pre>yutakatay 1585882544.176700: 空白含むファイル名がうまくパースできないとかじゃなかったですっけ？？</pre>
+<pre>ycino 1585882599.176900: 空白問題でしたっけ、xargsの-dは覚えてるんだけどこっちもそうだっけな</pre>
+<pre>ycino 1585882697.177100: デフォルトの設定云々はむずいな・・・</pre>
+<pre>ycino 1585882730.177300: git ls-files or rgのデフォルト判定だからあんまり差違がないコマンドを使うようにしとけって話もわかる</pre>
+<pre>ycino 1585883116.178300: なんか完全に名前ぶつかってるのを見つけたけど偶然かな・・・？
+コードの流用とかじゃないから別に文句はないんだけど <https://github.com/chengzeyi/fzf-preview.vim></pre>
+<pre>thinca 1585883176.179000: 名前まんまだと、既存のがあるか調べないで作るとあるある</pre>
+<pre>kuu 1585883198.180000: fzfをrtpに突っ込まないと動かないやつだたぶん</pre>
+<pre>tsuyoshi_cho 1585883200.180100: そして謎な動物やら物品の名前のプラグイン</pre>
+<pre>yutakatay 1585883210.180300: fzf.vimをラップする感じか</pre>
+<pre>tsuyoshi_cho 1585883227.180600: f! z! f! (ラップちがい)</pre>
+<pre>ycino 1585883240.180900: 薄くwrapしてますね</pre>
+<pre>ycino 1585883637.182500: 他にも探してたらThink.vimの設定でfzf-previewがGinaと連携してるのがデフォルト設定として入ってるのを見つけた
+これ自分のvimrcからそのままもっていってるっぽいな・・・
+<https://github.com/hardcoreplayers/ThinkVim/blob/master/keybinds/config.vim#L154-L190></pre>
+<pre>heavenshell 1585884126.182800: ひどい</pre>
+<pre>tsuyoshi_cho 1585884192.183300: 設定の持ち込みはどうなのかな...これ自体はしょうがない?</pre>
+<pre>heavenshell 1585884221.184400: クレジットくらいはしてもいい気はしてますー。</pre>
+<pre>ycino 1585884246.184900: 別に個人的にはバグをこっちのせいにするみたいなのがなかったらいいではあるんですけど
+そういえばクレジット確認してなかった</pre>
+<pre>ycino 1585884350.185200: READMEのプラグインリストにも入ってなかったｗｗｗｗｗｗｗ</pre>
+<pre>ycino 1585884386.185700: Ginaもだ、まぁ悪意があるわけじゃなくて漏れなんだろうけど</pre>
+<pre>Shougo 1585884499.186200: vimrcについてはさすがに微妙なところである</pre>
+<pre>tyru 1585943820.186900: <@UDDCM376D> そういえば open-browser-github で行番号が付かない件はどうなりました？</pre>
+<pre>takets 1585951368.187800: fzfでgrepしたら、`(`をバックスペース入れないと検索できないの、雑に検索したいときちょっと面倒</pre>
+<pre>ゴリラ 1585956680.188300: 仕事で死んでました…
+今日issue出しますねー</pre>
+<pre>Nicholas 1586069109.190700: |ω') めちゃめちゃ荒削りなんですけどハイライト用のスクリプトこさえたんですけど…  <https://github.com/astrorobot110/vimrc/blob/master/autoload/technicolor.vim></pre>
+<pre>tsuyoshi_cho 1586069789.191600: 自分がインストールしてるカラースキームの素性を記録して、フィルタできたりするようにした</pre>
+<pre>tsuyoshi_cho 1586069896.192100: <https://gist.github.com/tsuyoshicho/78f983ebf0cfcb61f8ca8ce952656d9c>
+つかれた、けどこれでカラースキーム選びやすくなった</pre>
+<pre>kyoh86 1586085379.192600: open-browser-githubで行番号が付かない件、Issue起こそうかな</pre>
+<pre>kyoh86 1586086794.192800: <@UDDCM376D> <@U0M7GCBPD> 横からではありますが、
+Issue切らせてもらいました。
+<https://github.com/tyru/open-browser-github.vim/issues/32></pre>
+<pre>tyru 1586086847.193100: ありがとうございます！助かりました！</pre>
+<pre>tsuyoshi_cho 1586094123.194100: うう、deinのhookのところのコード、(初回はそうじゃないようだけど)普通にグローバル汚染してしまうので、直さないと...とほほ</pre>
+<pre>tsuyoshi_cho 1586094195.194500: 自分の理解があまかった(書いた最初はstate,cacheされないよね、そりゃ)</pre>
+<pre>Shougo 1586095806.195100: もちろんグローバルを汚染しますよ</pre>
+<pre>tsuyoshi_cho 1586096127.195800: ですよね...最初(キャッシュされてないとき)にエラーしないですんでて、それで枠内の意識があったっぽい...オオボケ</pre>
+<pre>ゴリラ 1586138872.196300: すんません
+土日も死んでました</pre>
+<pre>ゴリラ 1586138877.196700: issueありがとうございます</pre>
+<pre>ゴリラ 1586143231.197700: gitのプラグイン、gitに乗り換えるのを検討中</pre>
+<pre>kuu 1586143400.198200: ginaが便利すぎて今までどうやって暮らしてたのかわからない</pre>
+<pre>ycino 1586143492.198700: Effective Gina、技術書典に出て欲しい</pre>
+<pre>ycino 1586143508.198900: Effective fzfもほしい</pre>
+<pre>yutakatay 1586143553.199200: Effective zinitも</pre>
+<pre>yutakatay 1586143573.199700: Effective tmuxも</pre>
+<pre>kuu 1586143576.199900: Effective $(任意のツール)</pre>
+<pre>heavenshell 1586143576.200000: お二人が書くのが一番速そうな気がw</pre>
+<pre>thinca 1586143694.200800: Effective Effective Books</pre>
+<pre> 1586143946.201500: </pre>
+<pre>kuu 1586143980.202100: ひっどw</pre>
+<pre>kuu 1586143984.202300: めっちゃ笑ってる</pre>
+<pre>heavenshell 1586144027.202700: これはひどいww</pre>
+<pre>tsuyoshi_cho 1586144078.203600: サブタイがしっかりあるのがまたwww</pre>
+<pre>k-takata 1586144133.203900: マトリョムダリスエさん</pre>
+<pre>kuu 1586144179.204700: そのうちマトリョーシカの人で通じるようになるのでは（ならない）</pre>
+<pre>heavenshell 1586144196.204900: O RLY? == Oh really?</pre>
+<pre>mattn 1586144263.205200: <https://dev.to/rly></pre>
+<pre>mattn 1586144267.205500: ここで作った。</pre>
+<pre>thinca 1586144371.206600: 任意の画像をオライリーっぽいモノクロテイストの画像に変換する機能が必要</pre>
+<pre>ゴリラ 1586144442.207400: ゴリラがない</pre>
+<pre>thinca 1586144502.207700: Animal Code とあるのにキノコとかある</pre>
+<pre> 1586144587.208700: <https://onlinejpgtools.com/convert-jpg-to-grayscale>
+たとえばここでグレーにしてみた</pre>
+<pre>thinca 1586144593.209100: 本家だとこれだろうか <https://www.oreilly.co.jp/books/9784873113173/></pre>
+<pre>tsuyoshi_cho 1586144600.209400: 背景切ればいいかな</pre>
+<pre>thinca 1586144615.209800: 全身のほうがぽい</pre>
+<pre>kuu 1586144618.210000: リア充だ</pre>
+<pre>tsuyoshi_cho 1586144679.210400: <https://images.app.goo.gl/5jDH6xSUmJVkLBU38>
+全身というと、これを思い出す</pre>
+<pre>mattn 1586144858.210800: <http://dailym.ai/2pms0i0></pre>
+<pre>mattn 1586144865.211300: この1枚目、いい写真だな。</pre>
+<pre>dohq 1586144897.211500: 躍動感すごい</pre>
+<pre>ゴリラ 1586145050.211900: 躍動感よ</pre>
+<pre>koron 1586145466.212400: うちにあるやつ。 <https://photos.app.goo.gl/gAfJYLPF0TOzgelr1></pre>
+<pre>monaqa 1586145469.212600: UML ゴリラだったのか…</pre>
+<pre>koron 1586145599.213000: 上野にあるほんもの <https://photos.app.goo.gl/xT22BXbsJufxnnRi8></pre>
+<pre>ゴリラ 1586145970.213600: なぞにKoRoNさんちにゴリラ像があって吹き出した記憶がある</pre>
+<pre>ycino 1586189677.215100: なんかすごそう（まだ使ってない）
+<https://github.com/pechorin/any-jump.vim|https://github.com/pechorin/any-jump.vim></pre>
+<pre>Shougo 1586213297.215600: 私もチェックしてみよう</pre>
+<pre>tsuyoshi_cho 1586234833.216600: う、本体のノーマル/ビジュアル系切り替えとexpand-regionがぶつかっとる
+マッピング変えよかな...</pre>
+<pre>heavenshell 1586235530.216800: oh</pre>
+<pre>ycino 1586238271.217600: 入れてみるかなー</pre>
+<pre>ycino 1586246925.218400: 便利そうだけど普段使いに使いこなせない感ある</pre>
+<pre>takets 1586254070.218900: 使ってみたもののぴんとこなかったなぁ</pre>
+<pre>yutakatay 1586254270.220700: ctags, LSPなしでもジャンプできるの(rgで検索しているだけなので)で軽くコードを追っかけたいときとかに便利な感じがします。
+あとは見せ方がいいから普通にGrepするよりも見やすいとかそんな感じですかね。</pre>
+<pre>tsuyoshi_cho 1586262409.221600: ctagsの更新も裏で非同期でやってるので、常にLSPと二刀流...</pre>
+<pre>yutakatay 1586262440.222100: ctags更新なに使ってます？gutentags?自作?</pre>
+<pre>yutakatay 1586262465.222700: gutentagsよくエラー吐くからあまり有効にしときたくないんですよね・・・</pre>
+<pre>tsuyoshi_cho 1586262487.223100: <https://github.com/soramugi/auto-ctags.vim>
+を使ってます
+(要望マージしてもらって)</pre>
+<pre>yutakatay 1586262513.223400: 知らないプラグインだ</pre>
+<pre>yutakatay 1586262524.223700: とりあえず既読スターw</pre>
+<pre>tsuyoshi_cho 1586262548.224100: あ、マージしきってないから、自前のforkだったw</pre>
+<pre>mattn 1586262574.224400: auto-ctags はまぁまぁ老舗</pre>
+<pre>mattn 1586262602.225000: 結構昔からある。</pre>
+<pre>tsuyoshi_cho 1586262614.225300: universal-ctagsと.gitへの生成の合せ技で、便利に使っております</pre>
+<pre>mattn 1586262636.226100: 僕は自分で ctags -R したい派なので使ってないけど。</pre>
+<pre>heavenshell 1586262672.227000: なんか自作したけど結局 ctags 使ってないや。</pre>
+<pre>yutakatay 1586262678.227200: 私はgtags.vim -&gt; gutentagsですね。最近はgutentagsも手動起動しかしないようにしてますが</pre>
+<pre>mattn 1586262726.227600: vim のソースを見るのにすんげー便利なんですよ。ctags</pre>
+<pre>yutakatay 1586262755.228300: けど最近はLSP使うようにしてますね。vimも</pre>
+<pre>yutakatay 1586262771.229000: 最初はいまいちだったけど最近はいい感じ</pre>
+<pre>kuu 1586262781.229500: clangdがVimのソースをめっちゃ怒るので無効化にしたっきり</pre>
+<pre>mattn 1586262784.229700: LSP、というか clangd が若干変でヘッダファイルを開いちゃう問題があって困る。</pre>
+<pre>kuu 1586262792.230100: (解決策何も探してない)</pre>
+<pre>mattn 1586262797.230200: gd で proto の下を開いてしまう。</pre>
+<pre>tsuyoshi_cho 1586262873.231500: まあ、微妙なときはありますが、構造理解しているのはうれしい
+Hoverでコメント出るし</pre>
+<pre>mattn 1586262900.231900: :sorena:</pre>
+<pre>ycino 1586263341.232200: <https://github.com/jsfaint/gen_tags.vim|https://github.com/jsfaint/gen_tags.vim></pre>
+<pre>ycino 1586263352.232700: 今外だけど多分これ</pre>
+<pre>tsuyoshi_cho 1586263414.233500: 今だとctagsgen-language-serverみたいな生成込みのサーバがあるとうれしいかもしれないなあ(参照はオマケでいいので)</pre>
+<pre>yutakatay 1586263487.233600: スターがついていたので見たことあるみたい</pre>
+<pre>kg8m 1586263636.234900: auto-ctags、昔お世話になってた
+プロジェクト用 `tags` と別ディレクトリにいるライブラリ群用 `tags` を同時に非同期で異なるオプション与えながら作成するというのがうまくできなかったので結局自作関数になった</pre>
+<pre>hrsh7th 1586265156.235900: LSP と ctags 相性いいとはずなので進化させたいんですよね。root_uri でプロジェクトルート指定前提だし、documentSelector でタグ生成対象も絞れますし。。。</pre>
+<pre>mattn 1586265258.236400: efm-langserver の definition で ctags 使ってるけどまだ有効性を確認できてない。</pre>
+<pre>たまたまご 1586267525.237200: 自分は gutentags 使ってます</pre>
+<pre>mattn 1586267604.238300: <https://github.com/voldikss/vim-translator></pre>
+<pre>たまたまご 1586267611.238700: ちょっと質問なのですが、.git 内に生成の設定ってどうやるんでしょうか…？</pre>
+<pre>mattn 1586267613.238900: coc-translator の単品版？</pre>
+<pre>yutakatay 1586267771.239500: お、ぽいですね</pre>
+<pre>yutakatay 1586267860.240300: つかgifがmarkdownとかコメントとかじゃなくてコードを翻訳してるのおもしろいw</pre>
+<pre>kuu 1586267898.241000: めっちゃ遊んでる感出てる</pre>
+<pre>たまたまご 1586268112.243900: 参照の設定も聞いても大丈夫でしょうか？ご迷惑でなければ、教えていただきたいです</pre>
+<pre>tsuyoshi_cho 1586269044.244100: えっと、ここでやってる `set tags` がそうです。
+実体は今こうなってます(ベース設定と複合している)
+```tags=./.git/tags;C:\Users\tsuyoshi,./.svn/tags;C:\Users\tsuyoshi,./.hg/tags;C:\Users\tsuyoshi,./.bzr/tags;C:\Users\tsuyoshi,./CVS/tags;C:\Users\tsuyoshi,./tags;C:\Users\tsuyoshi,./TAGS;C:\Users\tsuyoshi,./**2/tags,./**2/TAGS,tags,TAGS```</pre>
+<pre>tsuyoshi_cho 1586269129.244300: あ、あと <https://github.com/mattn/vim-findroot>
+なんかのプロジェクトルートへの自動cd系のツールがないと、タグ検索がうまくいかないと思います( `./.git/tags` のように、カレントの下に.gitがあることを前提として調整してある)</pre>
+<pre>たまたまご 1586269227.244600: 詳しく解説していただき、ありがとうございます！
+vim-findroot ってのを使ってみようと思います！</pre>
+<pre>たまたまご 1586269566.244900: すみません。1つ質問なのですが、 `set tags` するときに、毎回、`;$HOME` をつけているのはどういった意味があるのでしょうか？
+`'tags'` についての知識がないため、理解できていないかもしれないです...</pre>
+<pre>tsuyoshi_cho 1586269999.245100: :help file-searching して、上向き検索、で確認してもらうといいんだけど、あるターゲット(カレントとか)に `;` がついてると、上のディレクトリを順に探していくんだけど、それが `$HOME`  まで到達したら止る、という風にしてあるんです
+なので、home下の作業であれば、findrootなくてもなんとかなる、はず
+あとこれしないと `/` まであがっちゃうので、それは避けてる、という...</pre>
+<pre> 1586270000.245300: E149: 残念ですが file-searching して、上向き検索、で確認してもらうといいんだけど、あるターゲット(カレントとか)に `;` がついてると、上のディレクトリを順に探していくんだけど、それが `$HOME`  まで到達したら止る、という風にしてあるんです にはヘルプがありません</pre>
+<pre>tsuyoshi_cho 1586270016.245500: :help file-searching</pre>
+<pre> 1586270016.245700: ```
+11. ファイル検索                                        *file-searching*
+ 
+{Vimが |+path_extra| 機能付きでコンパイルされたときのみ有効}
+ 
+現在の所、オプション 'path', 'cdpath', 'tags' と|finddir()|, |findfile()| で、
+本節で説明する「ファイル検索」にしたがってワイルドカードの展開が行われる。
+それ以外のコマンドでは |wildcards| という少し異なるルールにしたがう。
+ 
+ファイル検索には以下の3種類がある:
+```</pre>
+<pre>tsuyoshi_cho 1586270053.245900: これは path_extra な vim で `path` や `tags` で有効とのこと</pre>
+<pre>たまたまご 1586270087.246100: なるほど！！！</pre>
+<pre>たまたまご 1586270093.246300: スッキリしました！！！！</pre>
+<pre>たまたまご 1586270097.246500: ありがとうございます！</pre>
+<pre>たまたまご 1586270223.246800: 基本的には `$HOME` 以下で作業するので、この設定を入れてみることにします。</pre>
+<pre>tsuyoshi_cho 1586270486.247900: ほとんど問題ないですが、tags未生成で上のフォルダにあったりすると誤爆はするので、そこは注意してください
+まずないでしょうけど(上にあるなら下で作らないだろうから)</pre>
+{% endraw %}

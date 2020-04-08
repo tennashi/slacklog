@@ -1,0 +1,183 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #question - 2020年04月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>tsuyoshi_cho 1585731172.102200: `質問`
+シェルでエスケープコード混りの文字で表示文字だけを取得する定番の方法ってなにがあるでしょう?
+rel <#CNX3F8RFC|dotfiles></pre>
+<pre>tsuyoshi_cho 1585731310.103700: PS1で右寄せするに表示文字数をカウントしたいのですが、文字数カウントが素の文字列(エスケープコードを含む)で処理してしまうので、これに表示文字列だけを入れたい</pre>
+<pre>itchyny 1585731635.103900: `sed $'s|\x1B\\[[0-9;]*[a-zA-Z]||g'` こういうやつですか</pre>
+<pre>tsuyoshi_cho 1585732619.104600: あー、直に除去するしかないかな...なるべく外部コマンド使わずに(shellはbash)すめばなと思いましたが</pre>
+<pre>yutakatay 1585732842.106300: たぶん難しいですね（特にbashrcに記述するレベルのコマンドだと）。。。
+scriptコマンドとかでとったログのエスケープ文字とかも結局sedかperlで削除すること多いんで・・・</pre>
+<pre>tsuyoshi_cho 1585732901.106700: そうですよね...
+ありがとうございます。</pre>
+<pre>fumi 1585766908.109300: すでにご存知かもしれませんが ↓ の「カーソルの位置」のあたりとか参考になるでしょうか？
+<https://wiki.archlinux.jp/index.php/Bash/%E3%83%97%E3%83%AD%E3%83%B3%E3%83%97%E3%83%88%E3%81%AE%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA>
+
+```rightprompt()
+{
+    printf "%*s" $COLUMNS "right prompt"
+}
+
+export PS1='\[$(tput sc; rightprompt; tput rc)\]left prompt &gt; '```
+PS1 では `\[` `\]` で囲まれている部分は non-printing characters となります文字数にカウントされません
+<https://www.tldp.org/HOWTO/Bash-Prompt-HOWTO/bash-prompt-escape-sequences.html></pre>
+<pre>tsuyoshi_cho 1585774484.112000: ありがとうございます。
+一応知ってはいましたが、今抱えてる条件だとちょっと期待した結果にならない(出来ないというか)でした</pre>
+<pre>tsuyoshi_cho 1585774573.113700: オフィシャルなところで利用方法に制限付けてるし、たぶん無理だよな…</pre>
+<pre>kyoh86 1585806102.118100: そうか、RPROMPTってzshだけか</pre>
+<pre>kyoh86 1585806157.118800: bash使ってた頃は、RLMでトライした覚えがあるけど、成功したかは覚えていない…</pre>
+<pre>Nicholas 1585824912.120000: すいません、vimscript中でタブ幅考慮した見た目の文字数分ごとにテキスト切り取る方法探してるんですけどどうやったらいいですかね？</pre>
+<pre>thinca 1585824981.120400: :h strdisplaywidth()</pre>
+<pre> 1585824982.120500: ```
+strdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*
+                結果は数値で、文字列 {expr} が {col} (最初の桁はゼロ)で始まる
+                時のスクリーン上での表示セル幅を返す。
+                {col} が省略されたときはゼロが使われる。{col} には計算を開始す
+                るスクリーン上の列の位置を指定する。これはタブ文字の幅の計算に
+                影響する。
+                計算にはカレントウィンドウのオプションが使用される。'tabstop'
+                や 'display' のような表示を変更するようなオプションが影響す
+                る。
+                {expr} に幅が曖昧 (Ambiguous) な東アジアの文字が含まれていると
+                きは、文字幅は 'ambiwidth' の設定に依存する。
+                |strlen()|, |strwidth()|, |strchars()| も参照。
+ 
+                |method| としても使用できる:  
+                        GetText()-&gt;strdisplaywidth()
+```</pre>
+<pre>thinca 1585825040.121200: カレントバッファ/ウィンドウのオプションの値が影響を及ぼす関数、Vim script に結構あるけどやめてほしい…</pre>
+<pre>tyru 1585825109.122500: まーでも用途的にしゃーない感はある…
+それこそ <#CGABGC8LA|golang> で言ってた DI の話じゃないけど、&amp;tabstop, &amp;ambiwidth とかを引数で受け付けるようにするとか</pre>
+<pre>kuu 1585825114.122600: getbufvarやgetwinvarみたいに差し込めるようにしてほしさある</pre>
+<pre>Nicholas 1585825263.124800: これ使って、次の範囲、また次の範囲...って切り出したいんですけど、strdisplaywidth()と実際の長さの差をどうやったらいいだろう...ってなってて</pre>
+<pre>Nicholas 1585825293.125500: ループ回して地道に調整するしかないんですかね</pre>
+<pre>kuu 1585825352.126500: 長さってstrlenで拾えるやつとstrcharsで拾えるやつもありますが、そういうことではなく？</pre>
+<pre>kuu 1585825423.127400: 表示されてる長さごとに切り出したいという話かな、だとしたらループ回すしかなさそう</pre>
+<pre>Nicholas 1585825443.127800: それですね＞表示されてる長さ</pre>
+<pre>thinca 1585825583.129900: 1. 文字列を１文字単位で区切ります `split(str, '\zs')`
+2. 各文字の幅を取ります `map(chars, '[v:val, strdisplaywidth(v:val)]')`
+3. 目的の長さ未満になるところを探してそこまでをくっつけていきます</pre>
+<pre>thinca 1585825694.130400: そのようにしてあれやこれやとがんばったのがこちらになります
+<https://github.com/vim-jp/vital.vim/blob/master/autoload/vital/__vital__/Data/String.vim#L357-L415></pre>
+<pre>thinca 1585825704.130800: つまり vital.vim を入れれば解決</pre>
+<pre>kuu 1585825718.131100: :goodpoem:</pre>
+<pre>tyru 1585825767.132500: 3分クッキング</pre>
+<pre>thinca 1585825786.133300: ドキュメントはこちら <https://github.com/vim-jp/vital.vim/blob/master/doc/vital/Data/String.txt#L228-L268></pre>
+<pre>machakann 1585825788.133500: 見た目 n 桁目のバイト位置を二分探索で探す関数を昔書いた気がする</pre>
+<pre>Nicholas 1585825822.134200: この話の結果、tyruさんがカラースキーム関係の関数突っ込んだんならわざわざカラースキームいじるプラグインの為の作業を進める必要が揺らいでいます…</pre>
+<pre>tyru 1585825883.134600: すみませんすみません</pre>
+<pre>thinca 1585825884.134700: みんなで協力すると早くできる</pre>
+<pre>Nicholas 1585825915.135500: いやなんか、こっちはこっちで暇つぶしとして始めてしまったんで文句もへったくれもないんですけど</pre>
+<pre>kuu 1585825920.135700: 必要かどうかはともかくとして作るとVim scriptちからが上がります</pre>
+<pre>Nicholas 1585825971.136600: とりあえずctermの色に対する知見はめちゃめちゃ理解しまして...</pre>
+<pre>Nicholas 1585826043.137800: スクリプト内でのハイライトのコマンドの記述が想定すればするほどまとまらなくてつらい</pre>
+<pre>tyru 1585826053.138100: 風呂入ったらほんきだす</pre>
+<pre>tyru 1585826427.138600: いや昨日ほとんど寝てないんだった…</pre>
+<pre>Nicholas 1585826473.139200: ぼんやりしながらいい方法考えてます</pre>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1585837883.141700: <https://teratail.com/questions/250989?rss=all|mac側でコピーした内容をtmuxでペーストする方法>
+<https://www.noobs.tokyo/entry/2018/09/05/123711>
+↑のサイトを参考にして、macとtmuxのクリップボードを共有化を試みたのですが  
+tmux =&gt; mac　についてはクリップボードを共有できているのですが
+mac =&gt; tmux の時に、クリップボードを共有することができません。  
+なにか解決方法はありませんでしょうか？  
+tmux 3.0a
+MacOS 10.15.4
+
+<https://teratail.com/questions/250989?rss=all|続きを見る></pre>
+<pre>thinca 1585840106.142400: 一瞬騙されそうになったけど Vim 関係ないな?</pre>
+<pre>ゴリラ 1585840372.142700: 回答しようとしたけど、意図よくわからんってなってやめた</pre>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1586068273.145400: <https://teratail.com/questions/251509?rss=all|pythonのPATHをMacで通したい>
+Macにてpythonの環境設定を行いたい
+python3.7.7をインストールし、これのpathを通したいのだが
+どのようにすれば良いのでしょうか。  
+ゴール
+$ which python
+/Library/Frameworks/Python.framework/Versions/3.X/bin/python
+やったこと
+
+pathを記載するためのbash_profileがなかったので作成  
+
+%touch ~/.bash_profile
+
+vimでファイルを開く  
+
+%vim ~/.bash_profile
+
+pathを記入する  
+
+%export PATH=/Library/Frameworks/Python.framework/Versions/3.7.7/bin:$PATH
+
+実行できるようにする  
+
+%source ~/.bash_profile
+わからなか...
+
+<https://teratail.com/questions/251509?rss=all|続きを見る></pre>
+<pre>yutakatay 1586068484.145800: vim要素0.01....</pre>
+<pre>tsuyoshi_cho 1586068511.146300: vim発見クイズのときと、ガチvimの時の差がはげしいw</pre>
+<pre>johejo 1586069045.149800: 質問内容はほぼvimに関係ないけど、vimでファイルを開いて編集はできているようなのでvimmerとしての第一歩は踏めているのでは（錯乱）</pre>
+<pre>kuu 1586069315.150200: ファイルを編集するだけで賞賛されるエディタ</pre>
+<pre>Nicholas 1586069667.152200: ファイルを編集するだけでvimを使えることの満足が得られる
+→vimの学習はそんなに難しくない</pre>
+<pre>[Vim]の新着質問一覧｜teratail（テラテイル） 1586075477.152900: <https://teratail.com/questions/251545?rss=all|vimでコードの自動補完と同時に不思議な空間が挿入される>
+前提
+vim初学者です。
+iTermからmac vimを使用しています。  
+発生している問題
+コードの自動補完と同時におかしな空間、特殊文字のようなものが挿入されてしまいます。
+
+
+ここにカーソルをおくと動けなくなってしまいます。5回くらい連打すると動けます。
+見た目は1文字だけど中身は5文字のように感じます。
+  
+実現したいこと
+不思議な空間をなくして、自動補完が終わった状態を下図のようにしたいです。
+この状態でエンターを押すと自動でインデントが入るようにしたいです。
+  
+自分の.vimrc
+関係がありそうな部分のみ抜粋し...
+
+<https://teratail.com/questions/251545?rss=all|続きを見る></pre>
+<pre>tsuyoshi_cho 1586075636.153500: neocomplete関係はわからないな...</pre>
+<pre>yutakatay 1586076141.154000: 未だにneocom使ってる人いるんだ・・・</pre>
+<pre>heavenshell 1586076170.154200: はい。</pre>
+<pre>yutakatay 1586076250.155300: Neobundle＋Noecomplete+Unite、なにもかも皆懐かしい</pre>
+<pre>luma 1586077973.156200: これ neosnippet 展開した時のやつだ （目印で特殊な記号みたいなのが入って，conceal でかくされている（とかだと思う））</pre>
+<pre>tsuyoshi_cho 1586078047.156900: あー</pre>
+<pre>luma 1586078047.157000: スニペットでジャンプせずにescapeしたらこうなる，スニペット編集してください，とかだな</pre>
+<pre>luma 1586078061.157200: 回答するか</pre>
+<pre>luma 1586078412.157400: これ言語なんだろ</pre>
+<pre>luma 1586078469.157600: Rubyっぽいな</pre>
+<pre>luma 1586079050.157900: 回答 Done.</pre>
+<pre>nabezokodaikon 1586103619.160300: 質問です。
+deopleteなどで表示したポップアップの選択をループすることってできるんでしょうか？一番下までスクロールしたら、一番上まで戻るというような挙動です。</pre>
+<pre>Shougo 1586118526.162000: Vimのデフォルトの挙動では間に補完なしを挟むだけでループすると思うのですが</pre>
+<pre>Shougo 1586118533.162400: その挙動は必要ありますか？</pre>
+<pre>nabezokodaikon 1586169188.165400: 絶対必要というわけではないのですが、うっかり一番下を通り過ぎてしまったときや、一番上なのに上に行ってしまったりしたときに、新たにポップアップを開くとき一文字戻ったり、手動で開いたりするのがすこーし手間かなぁと思いました。</pre>
+<pre>thinca 1586171734.165700: 勝手に閉じたりはしないと思います</pre>
+<pre>Shougo 1586172881.166500: いや、そのときにループしますよ。開き直す必要はありません</pre>
+<pre>nabezokodaikon 1586174821.170000: C-nで下へ、C-pで上へと送ってるんですが、一番下まで行くと、Pattern not found とでて閉じてしまいます。ubuntuとmacとwindowsでもなるんですが...。そうでですか、ならないはずなんですか。</pre>
+<pre>Shougo 1586176140.170500: あ、これはdeopleteの問題ぽいぞ</pre>
+<pre>Shougo 1586176150.170800: deoplete使ってませんか</pre>
+<pre>nabezokodaikon 1586176179.171300: deoplete使ってます。最新版です。</pre>
+<pre>Shougo 1586176224.171600: あーやはり</pre>
+<pre>nabezokodaikon 1586176317.172800: 一応自分のdeopleteの設定を全部削除しても発生したので、(enable以外)deopleteではないと思ってました。</pre>
+<pre>Shougo 1586176466.173200: 直したのでdeopleteを最新版にしてください</pre>
+<pre>nabezokodaikon 1586176570.174200: 直っていることを確認しました。ありがとうございます！</pre>
+<pre>Shougo 1586176618.174500: これで安心ですね</pre>
+<pre>nabezokodaikon 1586176660.175700: はい。お手数おかけしました。</pre>
+<pre>Shougo 1586176678.176400: ちなみにこの問題は別のバグを直そうとしたときにエンバグしてたようです</pre>
+<pre>nabezokodaikon 1586176730.177400: はーなるほど。記憶違いでなければ、以前は発生しなかった気がするんですよね。</pre>
+<pre>nabezokodaikon 1586176787.177800: いつもありがとうございます。お疲れ様です。</pre>
+<pre>Shougo 1586177417.178600: はい。最近の修正によるエンバグなので認識は正しいです</pre>
+{% endraw %}

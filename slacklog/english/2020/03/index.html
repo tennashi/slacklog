@@ -1,0 +1,30 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #english - 2020年03月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>takets 1584403009.006600: &gt; |nvim_buf_attach| will take keyword args for the callbacks.
+|nvim_buf_attach| はコールバックに対してキーワード引数を取得します。
+と訳したのですが、ここの for どのように訳すのが良いのでしょうか。
+
+for は `～方面に` とか `～のために` と使うものと考えていたのですが、
+どちらもしっくりこない感じがあります。</pre>
+<pre>tsuyoshi_cho 1584403807.007500: xxはコールバックでキーワード引数を取ります。だとちょっと技術文的で簡略的すぎかな...</pre>
+<pre>takets 1584403946.008700: 最初の訳の `コールバックに対して` 取るという訳だと、意味が逆になるので、 for を ～でと訳するほうがよさそう感あります</pre>
+<pre>takets 1584403967.009300: 前置詞ぜんぜんわからない</pre>
+<pre>tsuyoshi_cho 1584404269.010000: あー、どっちがどっちなのかは わたしも前置詞ナニモワカラナイ状態なのでアテにはならずです...辞書~秘孔~引こう...</pre>
+<pre>takets 1584405479.010500: :haisho:</pre>
+<pre>tsuyoshi_cho 1584405677.011900: <https://dictionary.goo.ne.jp/word/en/for/#ej-33042>
+~のために、だと自身がcallbackとして動作する場合には必要、みたいになるし
+~に対する、だとcallbackを受け取る場合に必要だし
+まあ、これは受けとるだから、~に対して、がよさそげ?</pre>
+<pre>takets 1584405902.013200: ~に対してだと、やや固い印象があるので、 |nvim_buf_attach|はコールバック *から* 取得する、のほうが伝わりやすいかなぁ</pre>
+<pre>takets 1584405965.014000: となると、 forではなくfromであってほしい気もしますが、伝わりやすくするための意訳ということで……</pre>
+{% endraw %}

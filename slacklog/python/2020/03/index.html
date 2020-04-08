@@ -1,0 +1,50 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #python - 2020年03月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>relastle 1584430264.033500: `宣伝` `(と質問)`
+
+<https://github.com/relastle/vim-nayvy>
+
+import文の追加・削除  や 単体テストの実装などもう少しスピーディにしたいなと思っていたので、
+プラグインとして作ってみました。
+
+「君のやりたいこと、これ使ってもっとスタンダードにできるんじゃない？」
+というのがあったら教えて頂きたいです :pray:</pre>
+<pre>heavenshell 1584430888.034200: Cool!
+import の追加順序を respect flake8 してくれたら最高だと思いました！</pre>
+<pre>tsuyoshi_cho 1584431007.034900: 今だと <#CQ57P4XU4|lsp> の対応の話がでそうだけど、python系はどの程度だろ?</pre>
+<pre>heavenshell 1584431065.035300: どうでしょう。python で lsp 使ってないので何とも。</pre>
+<pre>relastle 1584431166.036100: ですよねえ、、
+`isort` と一緒に使って下さいっていう立場にしようと思っていたんですが、そこまでの手間でも無いと思うので対応しようと思います！
+
+ご意見ありがとうございます :smile:</pre>
+<pre>heavenshell 1584431170.036400: code action に入ると嬉しいとかそういのですかねー。個人的には ↑の動画見てたら単発のプラグインで解決できてるので便利にはなりそうですが。</pre>
+<pre>heavenshell 1584431188.036600: あ、それはそれでアリかもです。</pre>
+<pre>mattn 1584431200.037300: pyls に organize import あった気が。</pre>
+<pre>relastle 1584431323.039500: LSPの `code action` 系と絡めるのはいずれできたらなあと思っています。
+<https://github.com/iamcco/coc-actions>
+
+テストが実装されてない関数上だとAction Menuに「単体テストつくる」的なの出せればIDEっぽい体験もできるかなとか、、</pre>
+<pre>tsuyoshi_cho 1584431374.040500: pyls-msだけど、どうやるのかも、できるのかも :wakaranai:</pre>
+<pre>heavenshell 1584431861.041500: よく見てなくてすみません。autopep8 で対応してるんですね！autopep8 対応プラグイン作って運用してるのでこれで十分そうです！</pre>
+<pre>relastle 1584432089.041900: いえいえ！
+でもimport追加したら適切な場所にあるのが絶対あるべき姿だと思うので、僕としては対応したい気持ちです！ありがとうございます:smile:</pre>
+<pre>mattn 1584441050.042400: pyls と pyls-ms 試したけど organizeImport 無かった。。。</pre>
+<pre>mattn 1584441062.042800: あれ？さらに何か入れて設定せんと動かないのかも。</pre>
+<pre>mattn 1584441206.043100: <https://github.com/microsoft/python-language-server/blob/254c8f17d1dcee3057203c94010efb542c4b3ec3/src/LanguageServer/Impl/Protocol/Diagnostic.cs#L124></pre>
+<pre>mattn 1584441209.043400: 宣言しかない...</pre>
+<pre>dohq 1585431441.000100: “Jupyter is now a full-fledged IDE” by Dimitris Poulopoulos <https://link.medium.com/VUsrmbmve5|https://link.medium.com/VUsrmbmve5>
+
+jupyterにビジュアルデバッガーを追加するやつ
+mattnさんが好きそう(偏見)</pre>
+<pre>mattn 1585449020.000500: かっちょいい。</pre>
+{% endraw %}

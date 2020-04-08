@@ -1,0 +1,205 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - #coc - 2020年03月
+---
+<div>
+<h2><a href='{{ post.url }}'>{{ page.title }}</a></h2>
+
+<p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
+<a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
+
+{% raw %}
+<pre>yutakatay 1583812483.033100: <https://github.com/neoclide/coc.nvim/releases/tag/v0.0.76>
+バージョン上がった :tada:</pre>
+<pre>kashew_nuts 1584084213.035300: 以下のようにしたいんですが、みなさんどのようにnodejsのバージョンを管理されてますか？
+
+* coc.nvim: nodejs 10系に固定
+* プロジェクトA(仕事用): nodejs 11系に固定</pre>
+<pre>kashew_nuts 1584084350.037000: nodejs11系に固定できたらいいのですが、以下のIssueを対応してたときにバージョンが合わなくて分けたいと思った次第です。
+<https://github.com/neoclide/coc-vetur/issues/28#issuecomment-597628197></pre>
+<pre>kashew_nuts 1584084763.038500: プロジェクトの方ではnodenvを推奨されてるので、この辺やればよさそうかなぁ… <https://empitsu88.hatenablog.com/entry/2018/11/01/000000#プロジェクトごとのバージョン設定></pre>
+<pre>yutakatay 1584084845.039700: 私はnodeをcoc以外で使ってないんであれですが、今の私の環境ならzinit側でローカルに（coc専用として）入れるか、asdfで（プロジェクト専用に）入れるかする気がします。（あ、やったことはないのであくまで妄想です）</pre>
+<pre>kashew_nuts 1584084889.039900: これですかね。なるほど。 <https://github.com/asdf-vm/asdf-nodejs></pre>
+<pre>yutakatay 1584084918.040600: ですね。anyenvでもよいかもしれませんが、thincaさんがなんかこっちのほうが好きっていってたので</pre>
+<pre>ycino 1584084997.041800: `.node-version` でプロジェクトローカルなnodeを入れる？
+が普通かもしれないですけど、その場合ってプロジェクト上でvim開いたときglobalなnodeでcocが起動したかはちょっと記憶にないです</pre>
+<pre>ycino 1584085039.042700: 自分なら `nodenv local 11.x` 試すと思うんですけど、多分出来るのかなぁ</pre>
+<pre>kashew_nuts 1584085103.043500: なるほど `.node-version` はあります。</pre>
+<pre>lambdalisue 1584085104.043600: asdf しらんかった</pre>
+<pre>ycino 1584085173.046000: **env系のインターフェイスになれてしまった</pre>
+<pre>yutakatay 1584085178.046200: 私もthincaさんから初めて聞きました。 <#CNX3F8RFC|dotfiles> だったかな？
+日本人発ということでanyenvが強い感じですよね。</pre>
+<pre>kashew_nuts 1584085216.046800: 操作するペイン間違えたのかな….ひとまずプロジェクトローカルで期待したバージョンは設定できてるっぽいので、やってみますー。</pre>
+<pre>lambdalisue 1584085239.047200: **env 辛みが多いから asdf 試してみよう....</pre>
+<pre>ycino 1584085280.048300: 多分辛いとこ踏み抜いて慣れてしまったから麻痺してる気がする
+どの辺辛いです？</pre>
+<pre>lambdalisue 1584085306.048500: goenv</pre>
+<pre>lambdalisue 1584085314.048700: 辛すぎてやめたくらいは辛い</pre>
+<pre>lambdalisue 1584085350.049500: GOPATH/GOROOT が変わったり、変わらなかったりして成功するはずの go get が成功しないとか多発しました</pre>
+<pre>lambdalisue 1584085380.050200: あと起動速度かなぁ...</pre>
+<pre>ycino 1584085387.050500: goenvは使ってなかった
+rbenvとpyenvとnodenv使ってるけどどうにかなってるんですよね
+goは確かに辛そう</pre>
+<pre>lambdalisue 1584085400.051000: `eval $(anyenv init -)` これが結構遅い</pre>
+<pre>ycino 1584085405.051200: 起動速度、initのevalがやたら遅いやつですよね
+自分は展開して埋め込んでます</pre>
+<pre>lambdalisue 1584085413.051600: 僕も埋め込んでる</pre>
+<pre>lambdalisue 1584085421.052100: 埋め込むと goenv さんががが</pre>
+<pre>ycino 1584085429.052300: pyenvとnodenvとrbenvを全部initしたら400msくらい起動遅くなっちゃう</pre>
+<pre>lambdalisue 1584085461.052700: わかる</pre>
+<pre>lambdalisue 1584085463.053100: ```# anyenv
+if type anyenv &gt;/dev/null 2&gt;&amp;1; then
+  anyenv::cache() {
+    mkdir -p ~/.cache/anyenv
+    anyenv init - --no-rehash &gt; ~/.cache/anyenv/init.zsh
+    zcompile ~/.cache/anyenv/init.zsh
+  }
+  if [[ ! -f ~/.cache/anyenv/init.zsh ]]; then
+    anyenv::cache
+  fi
+  source ~/.cache/anyenv/init.zsh
+fi```</pre>
+<pre>lambdalisue 1584085477.053600: これが超お便利。更新したら `anyenv::cache` をマニュアルで呼べば良い</pre>
+<pre>yutakatay 1584085531.055200: 私dockerにこもる派なんであんまりenv系使わないんですよね。
+開発ツールとコンフリクトするときくらいかな。。。</pre>
+<pre>ycino 1584085537.055400: anyenv使わずそれぞれbrewで入れてるんですよね
+展開して少し書き直してます
+```path=(~/.rbenv/shims(N-/) $path)
+export RBENV_SHELL=zsh
+function rbenv() {
+  local command
+  command="$1"
+  if [[ "$#" -gt 0 ]]; then
+    shift
+  fi
+
+  case "$command" in
+    rehash|shell)
+      eval "$(rbenv "sh-$command" "$@")";;
+    *)
+      command rbenv "$command" "$@";;
+  esac
+}```</pre>
+<pre>ycino 1584085565.055900: 確かにcache効かせればよさそうな感じはする</pre>
+<pre>lambdalisue 1584085569.056100: コマンド呼び出し時まで遅延するタイプ昔使ってたけど問題多いからやめた</pre>
+<pre>lambdalisue 1584085588.056500: 補完されないとか内部実装依存系のプラグインが尽く死ぬとか</pre>
+<pre>ycino 1584085607.056700: あー、それは分かります</pre>
+<pre>ycino 1584085629.057400: nvmとかrvm試してたときめちゃくちゃ遅くて遅延ロードさせようとしたら事故が多かった</pre>
+<pre>lambdalisue 1584085636.057600: env 更新頻度と利用頻度考えるとマニュアルキャッシュ更新が一番しっくりきた</pre>
+<pre>lambdalisue 1584085647.057900: まぁ goenv とか死ぬんですけど</pre>
+<pre>ycino 1584085662.058200: goenv辛いのか、覚えておこう・・・</pre>
+<pre>lambdalisue 1584085728.059400: asdf も shims 系かぁ...</pre>
+<pre>ycino 1584085757.060100: あと、**envってzsh補完ぶっ壊れてないです？
+自分で直すの書いてどうにかしたんですけど</pre>
+<pre>ycino 1584085769.060600: anyenvだと通るのかもしれない</pre>
+<pre>lambdalisue 1584085853.061300: 壊れてるかも、あまり意識してなかったです</pre>
+<pre>lambdalisue 1584085861.061700: docker は辛すぎるからちゃんと書いた</pre>
+<pre>ycino 1584085867.061800: Qiitaに書いたスクリプトがzshプラグイン化されてるやつ
+<https://github.com/ress997/zsh-completions-anyenv></pre>
+<pre>ycino 1584085905.062400: 自分はバージョンの補完効かないの結構辛かったんですよね
+ローカルではfzfで補完させてます</pre>
+<pre>lambdalisue 1584085945.062900: あ `pyenv install |` とかの時の補完なら聴きますね</pre>
+<pre>ycino 1584085956.063100: あれ、今効くのかな</pre>
+<pre>lambdalisue 1584085967.063300: anyenv だからかな？</pre>
+<pre>lambdalisue 1584086011.063700: anyenv の `init` で補完出力されてますね</pre>
+<pre>ycino 1584086012.063800: あー、更新されてるみたい</pre>
+<pre>ycino 1584086021.064100: <https://qiita.com/yuki_ycino/items/883bcda3b6ccbe209220></pre>
+<pre>ycino 1584086035.064600: これ書いた当時は5年放置されてるとかだったみたい</pre>
+<pre>lambdalisue 1584086041.064800: なる</pre>
+<pre> 1584086084.064900: いまは補完ソースしてる</pre>
+<pre>ycino 1584086197.066500: 完全に別の話ですけど
+この辺って自分は別PC（仕事のやつとか）のために `~/` 使って書くんですけど、場合によっては手間かかりません？</pre>
+<pre>lambdalisue 1584086229.066900: あ、これ自動生成です</pre>
+<pre>lambdalisue 1584086238.067300: `$(anyenv init -)` の結果</pre>
+<pre>ycino 1584086242.067500: あ、なるほど
+anyenvのキャッシュか</pre>
+<pre>lambdalisue 1584086261.068000: 手書きはもちろん `~/` 使います :+1:</pre>
+<pre>ycino 1584086272.068400: ですよね
+逆になんかメリットあるのかと思った</pre>
+<pre>ycino 1584086325.068700: このフォントなんでしたっけ、記憶にあるんだけど名前が</pre>
+<pre>yutakatay 1584086359.069000: Cicaくさい</pre>
+<pre>lambdalisue 1584086365.069300: Cica</pre>
+<pre>yutakatay 1584086379.069700: やった</pre>
+<pre>lambdalisue 1584086380.069800: フォントソムリエすごい</pre>
+<pre>yutakatay 1584086385.070000: w</pre>
+<pre>lambdalisue 1584086394.070200: フォムリエ</pre>
+<pre>yutakatay 1584086420.070700: まず香りから判断します :sunglasses:</pre>
+<pre>ycino 1584086455.071400: Cica、使ってたこともあるんだけどなんか癖が強い部分が気になってやめちゃった記憶が蘇ってきた</pre>
+<pre>ycino 1584086490.071700: 今zshの設定見直してたらいらないのが結構残ってそうだ</pre>
+<pre> 1584086501.071800: Cica 脳死で devicon 対応してるのが良い</pre>
+<pre>ycino 1584086534.072600: `SF Mono Square` 使わせて貰ってる</pre>
+<pre>yutakatay 1584086538.072800: 私は字体的にはJetbrains monoのほうが好きですね</pre>
+<pre>ycino 1584086640.073600: ちょっと前までdevicon使ってなかったんですけど、fzf + devicon対応させたら思ったより視認性が上がってよくなったんですよね</pre>
+<pre>ycino 1584086673.073900: colorizeとdeviconは偉大だった</pre>
+<pre>ycino 1584086765.074300: `path=(/usr/local/opt/curl/bin(N-/) $path)` こんな設定してるけどこれなんで必要なんだっけ・・・</pre>
+<pre>hrsh7th 1584087137.074800: Cousine Nerd Font Mono 使っている（有名ではなさそうですが）</pre>
+<pre>ycino 1584087351.075200: ここ完全に <#CNX3F8RFC|dotfiles> と勘違いしてた・・・</pre>
+<pre>yutakatay 1584087396.075800: まあ脱線はいつものことなんで・・・</pre>
+<pre>yutakatay 1584087415.076200: 普通にlinuxでWindowsのアプリの話ししてますしねw</pre>
+<pre>yutakatay 1584415437.077600: cocでtagfuncが実装されました。
+`set tagfunc=CocTagFunc`
+で使えます。（が、ちょっと重い）
+
+<https://github.com/neoclide/coc.nvim/issues/1054></pre>
+<pre>yutakatay 1584421425.078700: またリリースされた :tada: 　最近リリースがはやい。
+（リリースノートはむっちゃ簡素になったけどなにがあったんだろう・・・）
+<https://github.com/neoclide/coc.nvim/releases/tag/v0.0.77></pre>
+<pre>ycino 1584427058.079400: tagfuncってC-]の挙動自体を任意の関数で置き換えてタグスタックとか含め管理してくれるようになるやつですよね？確か</pre>
+<pre>tyru 1584427403.079600: ですね</pre>
+<pre>ycino 1584427429.079800: どうしよう、TSだけでもやってみようかな？</pre>
+<pre>yaegassy 1584438584.080800: coc.nvim はプラグインとしてだけじゃなくて npm のパッケージ(モジュール)としても拡張側からimportして使う側面もあるので。npmにpublishするためにバージョンをバンバンあげてるのでしょうかね(想像)。拡張側から新機能を早く使えるように。まー、それでも更新履歴はたしかに欲しいかもですね</pre>
+<pre>yaegassy 1584438746.081000: coc.nvimの主要コントリビュータ達しかみえないところでやり取りしてて、その流れでバージョンをバンバンあげてるとかなのかも(想像)。例えばvim-jpのSlackみたいなのでとか(想像 of 想像)</pre>
+<pre>yutakatay 1584527367.081500: <https://github.com/voldikss/coc-translator>
+入れてみましたが普通にいい感じ :musical_note:</pre>
+<pre>takets 1584773336.083300: cocって設定をvimrcに書けなかったっけか</pre>
+<pre>takets 1584773412.083900: deopleteとcocの両方が入っていると、coc側でcompoptの設定が複数有ると言われてエラーになる</pre>
+<pre>takets 1584773939.084800: deopleteを有効にしたとき、vimrc側から `"suggest.autoTrigger":"none"` をセットしてcocのエラーが出ないようにしたいのだけれども、wikiのどこに書いてないのかなぁ</pre>
+<pre>takets 1584774183.085200: `call coc#config('suggest.autoTrigger', 'none')` これか</pre>
+<pre> 1584774673.085300: Deopleteを入れているだけで、問答無用で怒ってくるのか……</pre>
+<pre>takets 1584774936.085700: えぇ……</pre>
+<pre>takets 1584781241.086600: 結局、.config/nvim/plugged/deoplete.nvim/autoload/deoplete/mapping.vim のcompleteopt周りをコメントアウトするワークアラウンドでごまかした。</pre>
+<pre>Shougo 1584782904.087300: cocもcompleteoptを弄っていてコンフリクトするんだろう</pre>
+<pre>takets 1584784857.088700: &gt; cocもcompleteoptを弄っていてコンフリクトするんだろう
+ですよね。
+補完エンジンを２つ入れて使い分けるなんて奇特なことをしている人なんてごくわずかなので、手元でどうにかするのはやむなし</pre>
+<pre>yutakatay 1585147029.003500: cocの拡張ってdocとかないんでhelp引けないじゃないですか。
+パラメーター（coc-settings.jsonに設定するやつ）確認するときどうしてますか？？
+
+私は今はGitHubで見るか `~/.config/coc/extensions/node_modules/xxx/package.json`
+を見るかなんですけど、今使ってる設定情報がすべて記載されたjsonなんかを表示できれば個人的にはだいぶ楽になるんですが・・・</pre>
+<pre>monaqa 1585147443.005200: coc-json を入れれば coc-settings.json のキーを打つとき補完候補に出てくるので，そこからそれっぽいやつを見つける...というテキトーな対応しかしてないですね...</pre>
+<pre>luma 1585148524.006200: `:options` の coc 版の機運...ｺﾞｺﾞｺﾞ</pre>
+<pre>yutakatay 1585148711.007700: うーんやっぱりないのかな。みんな困ってないんかな・・・
+オプション結構デフォルトいい感じに倒してくれてること多いんでそんなにいじることないですが、オプションをまんべんなく眺めたいときだってあるんじゃないですかね。。。</pre>
+<pre>hrsh7th 1585152008.008500: CocLocalConfig とか出してくれないんですかねー</pre>
+<pre>yutakatay 1585153214.009200: 自分の設定したやつしか出してくれないんですよ :cry:
+全体を舐め回したいのに</pre>
+<pre>vikke 1585287241.012200: coc.vimを使ってて、<https://github.com/neoclide/coc.nvim> にあるexample vim configurationを少し弄ってつかってます。
+具体的には、僕のvimrcで、
+```nnoremap &lt;C-I&gt; &lt;C-O&gt;nnoremap &lt;C-O&gt; &lt;C-I&gt;```
+やってるので、 `Introduce function text object` の所をコメントアウトしています。
+これでも、C-I, C-Oが `[coc.nvim]Selection range provider not found for current document` と言われるんですけど、後、どこイジるべきですか?</pre>
+<pre>hrsh7th 1585288037.012600: ```" Use &lt;TAB&gt; for selections ranges.
+" NOTE: Requires 'textDocument/selectionRange' support from the language server.
+" coc-tsserver, coc-python are the examples of servers that support it.
+nmap &lt;silent&gt; &lt;TAB&gt; &lt;Plug&gt;(coc-range-select)
+xmap &lt;silent&gt; &lt;TAB&gt; &lt;Plug&gt;(coc-range-select)```
+ここだと思います。</pre>
+<pre>vikke 1585288367.014500: ありがとうございます。すいません。思った通りになりました。これってどういう機能を削ってるんですか?  選択したレンジに対してTABインデントが使えるとかでうか?</pre>
+<pre>hrsh7th 1585288463.015400: 言語サーバが「今のカーソル位置を含む範囲の階層構造」を返してくる機能が LSP にありまして</pre>
+<pre>hrsh7th 1585288485.016000: &lt;Tab&gt; を連打するといわゆる vim-expand-region 的な動きをするものだと思います。</pre>
+<pre>vikke 1585288495.016600: なるほど。</pre>
+<pre>hrsh7th 1585288502.016800: 今の所対応している言語サーバめっちゃ少ないのでまあ現時点では消えててもいいのかなと。</pre>
+<pre>vikke 1585288513.017000: ありがとうございます。</pre>
+<pre>yaegassy 1585555249.018000: おっ、↑でお話にあがってるの追加されたようですね <https://github.com/neoclide/coc.nvim/commit/2462667c7fbac3bc7f3b17e4fc85bdb5e6b2f14b></pre>
+<pre>yaegassy 1585555303.018300: yutakatay さん案の。</pre>
+<pre>yutakatay 1585555422.019000: あーですね。（まだ使ってないw）</pre>
+<pre>yaegassy 1585555442.019500: `:CocList extentions` -&gt; `任意の拡張でTABキー` で `(c)onfigurations` が追加されてて c タイプするとその拡張の package.json に飛ぶってやつ(？)みたい</pre>
+<pre>yutakatay 1585555509.020700: ですね。つかcocのIssue追っかけてたんですね :subara:</pre>
+<pre>yaegassy 1585555563.021400: いえいえ。たまたまですw</pre>
+<pre>yaegassy 1585555644.022700: まだ、releaseのほうにはあがってないみたいです</pre>
+<pre>yutakatay 1585555687.023600: です。ビルドしないといけないので業務終わってから試すかって思ってました。
+
+CocもNeovimでのまいけるさんみたいなウォッチャーがほしいところありますね・・・追いきれない・・・</pre>
+{% endraw %}
