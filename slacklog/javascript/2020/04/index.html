@@ -405,13 +405,13 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
     <span class='slacklog-name'>ycino</span>
     <a class='slacklog-datetime' href='#1586147021.157800'>6日 13:23:42</a>
-    <span class='slacklog-text'>人が多そうなんで全く別件で聞きたいんですけど<br>以下のコードでActionがswitchケースを網羅してるか型でチェックするみたいなのをやってるんですけど<br><code>type Action = A | B<br><br>const reducer = (action: Action) =&gt; {<br>  switch (action) {<br>    case A: {<br>      return<br>    }<br>    case B: {<br>      return<br>    }<br>    default: {<br>      const _: never = action<br>    }<br>  }<br>}</code></span>
+    <span class='slacklog-text'>人が多そうなんで全く別件で聞きたいんですけど<br>以下のコードでActionがswitchケースを網羅してるか型でチェックするみたいなのをやってるんですけど<br><pre>type Action = A | B<br><br>const reducer = (action: Action) =&gt; {<br>  switch (action) {<br>    case A: {<br>      return<br>    }<br>    case B: {<br>      return<br>    }<br>    default: {<br>      const _: never = action<br>    }<br>  }<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1586147081.158600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
     <span class='slacklog-name'>ycino</span>
     <a class='slacklog-datetime' href='#1586147081.158600'>6日 13:24:42</a>
-    <span class='slacklog-text'>Union型じゃないと <code>action</code> の型が <code>never</code> に確定されないの、どうしようもないですよねぇ<br><code>type Action = A<br><br>const reducer = (action: Action) =&gt; {<br>  switch (action) {<br>    case A: {<br>      return<br>    }<br>    default: {<br>      const _: never = action<br>    }<br>  }<br>}</code></span>
+    <span class='slacklog-text'>Union型じゃないと <code>action</code> の型が <code>never</code> に確定されないの、どうしようもないですよねぇ<br><pre>type Action = A<br><br>const reducer = (action: Action) =&gt; {<br>  switch (action) {<br>    case A: {<br>      return<br>    }<br>    default: {<br>      const _: never = action<br>    }<br>  }<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1586147521.159600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -435,7 +435,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1586149197.160700'>6日 13:59:58</a>
-    <span class='slacklog-text'><code>type Action = &#34;A&#34;;<br><br>const r = (action: Action) =&gt; {<br>  switch (action) {<br>    case &#34;A&#34;: {<br>      return &#34;Hello&#34;;<br>    }<br>    default: {<br>      const _: never = action;<br>    }<br>  }<br>};</code></span>
+    <span class='slacklog-text'><pre>type Action = &#34;A&#34;;<br><br>const r = (action: Action) =&gt; {<br>  switch (action) {<br>    case &#34;A&#34;: {<br>      return &#34;Hello&#34;;<br>    }<br>    default: {<br>      const _: never = action;<br>    }<br>  }<br>};</pre></span>
   </span>
   <span class='slacklog-message' id='1586149224.161200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -447,7 +447,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1586149238.161700'>6日 14:00:39</a>
-    <span class='slacklog-text'><code>type Action = &#34;A&#34; | &#34;B&#34;;<br><br>const r = (action: Action) =&gt; {<br>  switch (action) {<br>    case &#34;A&#34;: {<br>      return &#34;Hello&#34;;<br>    }<br>    default: {<br>      const _: never = action;<br>    }<br>  }<br>};</code></span>
+    <span class='slacklog-text'><pre>type Action = &#34;A&#34; | &#34;B&#34;;<br><br>const r = (action: Action) =&gt; {<br>  switch (action) {<br>    case &#34;A&#34;: {<br>      return &#34;Hello&#34;;<br>    }<br>    default: {<br>      const _: never = action;<br>    }<br>  }<br>};</pre></span>
   </span>
   <span class='slacklog-message' id='1586149239.162100'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -465,7 +465,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1586149258.162700'>6日 14:00:59</a>
-    <span class='slacklog-text'><code>type Action = &#34;A&#34; | &#34;B&#34;;<br><br>const r = (action: Action) =&gt; {<br>  switch (action) {<br>    case &#34;A&#34;: {<br>      return &#34;Hello&#34;;<br>    }<br>    case &#34;B&#34;: {<br>      return &#34;Hello&#34;;<br>    }<br>    default: {<br>      const _: never = action;<br>    }<br>  }<br>};</code></span>
+    <span class='slacklog-text'><pre>type Action = &#34;A&#34; | &#34;B&#34;;<br><br>const r = (action: Action) =&gt; {<br>  switch (action) {<br>    case &#34;A&#34;: {<br>      return &#34;Hello&#34;;<br>    }<br>    case &#34;B&#34;: {<br>      return &#34;Hello&#34;;<br>    }<br>    default: {<br>      const _: never = action;<br>    }<br>  }<br>};</pre></span>
   </span>
   <span class='slacklog-message' id='1586149262.163000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -555,7 +555,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年04月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
     <span class='slacklog-name'>luma</span>
     <a class='slacklog-datetime' href='#1586150751.170000'>6日 14:25:52</a>
-    <span class='slacklog-text'>セミコロンなし，行頭で括弧を使うと前の行の関数実行になってしまい，そこだけつけるのも統一感ないので，けっこうすきだったけどやめた...行単位での交換とかもできなくなるし，などで<br><br><code>a.b()<br>(c.d).f<br>(c as X).f</code></span>
+    <span class='slacklog-text'>セミコロンなし，行頭で括弧を使うと前の行の関数実行になってしまい，そこだけつけるのも統一感ないので，けっこうすきだったけどやめた...行単位での交換とかもできなくなるし，などで<br><br><pre>a.b()<br>(c.d).f<br>(c as X).f</pre></span>
   </span>
   <span class='slacklog-message' id='1586153176.170400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>

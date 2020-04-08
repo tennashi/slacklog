@@ -117,7 +117,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
     <span class='slacklog-name'>tsuyoshi_cho</span>
     <a class='slacklog-datetime' href='#1585737635.152700'>1日 19:40:36</a>
-    <span class='slacklog-text'>若干記述がアレだけど自分はこれくらい<br><code>function! s:relativenumber_toggle(mode) abort &#34; {{{<br>  let enter = a:mode ==? &#39;enter&#39;<br><br>  if enter<br>    let b:relativenumber = &amp;l:relativenumber &#34; backup<br>    setlocal norelativenumber<br>  else<br>    if get(b:,&#39;relativenumber&#39;, 1)<br>      &#34; if backup value is relativenumber is active, re-active<br>      setlocal relativenumber<br>    endif<br>  endif<br>endfunction &#34; }}}<br>augroup MyAutoGroup<br>  autocmd WinLeave,InsertEnter * nested call s:relativenumber_toggle(&#39;enter&#39;)<br>  autocmd WinEnter,InsertLeave * nested call s:relativenumber_toggle(&#39;leave&#39;)<br>augroup END</code></span>
+    <span class='slacklog-text'>若干記述がアレだけど自分はこれくらい<br><pre>function! s:relativenumber_toggle(mode) abort &#34; {{{<br>  let enter = a:mode ==? &#39;enter&#39;<br><br>  if enter<br>    let b:relativenumber = &amp;l:relativenumber &#34; backup<br>    setlocal norelativenumber<br>  else<br>    if get(b:,&#39;relativenumber&#39;, 1)<br>      &#34; if backup value is relativenumber is active, re-active<br>      setlocal relativenumber<br>    endif<br>  endif<br>endfunction &#34; }}}<br>augroup MyAutoGroup<br>  autocmd WinLeave,InsertEnter * nested call s:relativenumber_toggle(&#39;enter&#39;)<br>  autocmd WinEnter,InsertLeave * nested call s:relativenumber_toggle(&#39;leave&#39;)<br>augroup END</pre></span>
   </span>
   <span class='slacklog-message' id='1585737642.153000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -1119,7 +1119,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
     <span class='slacklog-name'>tsuyoshi_cho</span>
     <a class='slacklog-datetime' href='#1586269044.244100'>7日 23:17:25</a>
-    <span class='slacklog-text'>えっと、ここでやってる <code>set tags</code> がそうです。<br>実体は今こうなってます(ベース設定と複合している)<br><code>tags=./.git/tags;C:\Users\tsuyoshi,./.svn/tags;C:\Users\tsuyoshi,./.hg/tags;C:\Users\tsuyoshi,./.bzr/tags;C:\Users\tsuyoshi,./CVS/tags;C:\Users\tsuyoshi,./tags;C:\Users\tsuyoshi,./TAGS;C:\Users\tsuyoshi,./**2/tags,./**2/TAGS,tags,TAGS</code></span>
+    <span class='slacklog-text'>えっと、ここでやってる <code>set tags</code> がそうです。<br>実体は今こうなってます(ベース設定と複合している)<br><pre>tags=./.git/tags;C:\Users\tsuyoshi,./.svn/tags;C:\Users\tsuyoshi,./.hg/tags;C:\Users\tsuyoshi,./.bzr/tags;C:\Users\tsuyoshi,./CVS/tags;C:\Users\tsuyoshi,./tags;C:\Users\tsuyoshi,./TAGS;C:\Users\tsuyoshi,./**2/tags,./**2/TAGS,tags,TAGS</pre></span>
   </span>
   <span class='slacklog-message' id='1586269129.244300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1169,7 +1169,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年04月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
     <span class='slacklog-name'></span>
     <a class='slacklog-datetime' href='#1586270016.245700'>7日 23:33:37</a>
-    <span class='slacklog-text'><code><br>11. ファイル検索                                        *file-searching*<br> <br>{Vimが |+path_extra| 機能付きでコンパイルされたときのみ有効}<br> <br>現在の所、オプション &#39;path&#39;, &#39;cdpath&#39;, &#39;tags&#39; と|finddir()|, |findfile()| で、<br>本節で説明する「ファイル検索」にしたがってワイルドカードの展開が行われる。<br>それ以外のコマンドでは |wildcards| という少し異なるルールにしたがう。<br> <br>ファイル検索には以下の3種類がある:<br></code></span>
+    <span class='slacklog-text'><pre><br>11. ファイル検索                                        *file-searching*<br> <br>{Vimが |+path_extra| 機能付きでコンパイルされたときのみ有効}<br> <br>現在の所、オプション &#39;path&#39;, &#39;cdpath&#39;, &#39;tags&#39; と|finddir()|, |findfile()| で、<br>本節で説明する「ファイル検索」にしたがってワイルドカードの展開が行われる。<br>それ以外のコマンドでは |wildcards| という少し異なるルールにしたがう。<br> <br>ファイル検索には以下の3種類がある:<br></pre></span>
   </span>
   <span class='slacklog-message' id='1586270053.245900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>

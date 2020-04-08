@@ -97,7 +97,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
     <span class='slacklog-name'>raa0121</span>
     <a class='slacklog-datetime' href='#1583937608.137900'>11日 23:40:09</a>
-    <span class='slacklog-text'><code>export function FETCH_AVATER ({commit, dispatch}) {<br>  commit(&#39;FETCHING_AVATER&#39;);<br>  userObj = AsyncStorage.getItem(&#39;userObj&#39;)<br>  return new AvatorApi({basepath: userObj.server, username: userObj.username, password: userObj.password})             <br>    .getAvator2()<br>    .then(avators =&gt; {<br>      data = AvatorToJSON(avators);<br>      console.warn(data);<br>      return commit(&#39;SET_AVATORS&#39;, { data }); <br>    })  <br>    .catch((error) =&gt; {<br>      console.warn(error);<br>    }); <br>}</code><br>こんな感じで、vuex の actions.ts でやろうとしてるんですが、うまく行かなくて…</span>
+    <span class='slacklog-text'><pre>export function FETCH_AVATER ({commit, dispatch}) {<br>  commit(&#39;FETCHING_AVATER&#39;);<br>  userObj = AsyncStorage.getItem(&#39;userObj&#39;)<br>  return new AvatorApi({basepath: userObj.server, username: userObj.username, password: userObj.password})             <br>    .getAvator2()<br>    .then(avators =&gt; {<br>      data = AvatorToJSON(avators);<br>      console.warn(data);<br>      return commit(&#39;SET_AVATORS&#39;, { data }); <br>    })  <br>    .catch((error) =&gt; {<br>      console.warn(error);<br>    }); <br>}</pre><br>こんな感じで、vuex の actions.ts でやろうとしてるんですが、うまく行かなくて…</span>
   </span>
   <span class='slacklog-message' id='1583937749.138400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
@@ -127,7 +127,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
     <span class='slacklog-name'>heavenshell</span>
     <a class='slacklog-datetime' href='#1583938294.141200'>11日 23:51:35</a>
-    <span class='slacklog-text'>なんか適当に sample.ts みたいなのをつくつて<br><code>import { AvatorApi } from &#39;./apis/AvatorApi&#39;<br><br>const api = new AvatorApi({...})<br>console.log(api.getAvator2())</code><br>みたいなのして ts-node sample.ts みたいなので実行ですかね。</span>
+    <span class='slacklog-text'>なんか適当に sample.ts みたいなのをつくつて<br><pre>import { AvatorApi } from &#39;./apis/AvatorApi&#39;<br><br>const api = new AvatorApi({...})<br>console.log(api.getAvator2())</pre><br>みたいなのして ts-node sample.ts みたいなので実行ですかね。</span>
   </span>
   <span class='slacklog-message' id='1583938359.142200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
@@ -320,7 +320,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
     <span class='slacklog-name'>raa0121</span>
     <a class='slacklog-datetime' href='#1583978643.154800'>12日 11:04:04</a>
-    <span class='slacklog-text'><code>import {<br>  AvatorApi,<br>  Configuration,<br>  ConfigurationParameters,<br>} from &#34;SeikaCenter.ts&#34;;<br><br>const config:ConfigurationParameters = {<br>  basePath: &#34;<a href='https://voiro-api.raa0121.info'>https://voiro-api.raa0121.info</a>&#34;,<br>  username: &#34;raa0121&#34;,<br>  password: &#34;xxxxxxxx&#34;,<br>}<br>const configuration = new Configuration(config)<br>new AvatorApi(configuration)<br>  .getAvator2()<br>  .then(avators =&gt; {<br>    avators.data.forEach(elem =&gt; console.log(elem.name))<br>  })</code><br>axios にしたら、とりあえず ts-node でこれが動きました！</span>
+    <span class='slacklog-text'><pre>import {<br>  AvatorApi,<br>  Configuration,<br>  ConfigurationParameters,<br>} from &#34;SeikaCenter.ts&#34;;<br><br>const config:ConfigurationParameters = {<br>  basePath: &#34;<a href='https://voiro-api.raa0121.info'>https://voiro-api.raa0121.info</a>&#34;,<br>  username: &#34;raa0121&#34;,<br>  password: &#34;xxxxxxxx&#34;,<br>}<br>const configuration = new Configuration(config)<br>new AvatorApi(configuration)<br>  .getAvator2()<br>  .then(avators =&gt; {<br>    avators.data.forEach(elem =&gt; console.log(elem.name))<br>  })</pre><br>axios にしたら、とりあえず ts-node でこれが動きました！</span>
   </span>
   <span class='slacklog-message' id='1583979275.155800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -556,7 +556,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
     <span class='slacklog-name'>heavenshell</span>
     <a class='slacklog-datetime' href='#1584796304.172000'>21日 22:11:45</a>
-    <span class='slacklog-text'><code>try {<br>  await <a href='http://axios.post|axios.post'>axios.post</a>()<br>} catch (error) {<br>  if (error.response.status === 400) {}<br>}</code><br>みたいにも書きます。</span>
+    <span class='slacklog-text'><pre>try {<br>  await <a href='http://axios.post|axios.post'>axios.post</a>()<br>} catch (error) {<br>  if (error.response.status === 400) {}<br>}</pre><br>みたいにも書きます。</span>
   </span>
   <span class='slacklog-message' id='1584796588.172500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -646,7 +646,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
     <span class='slacklog-name'>heavenshell</span>
     <a class='slacklog-datetime' href='#1585058877.182100'>24日 23:07:58</a>
-    <span class='slacklog-text'><code>FETCH_AVATER({引数}).then().catch(e =&gt; console.log(e))</code><br>とかかかな？</span>
+    <span class='slacklog-text'><pre>FETCH_AVATER({引数}).then().catch(e =&gt; console.log(e))</pre><br>とかかかな？</span>
   </span>
   <span class='slacklog-message' id='1585058890.182400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -664,7 +664,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1585058945.183400'>24日 23:09:06</a>
-    <span class='slacklog-text'><code>export function FETCH_AVATER ({commit, state}) {<br>  commit(&#39;FETCHING_AVATER&#39;);<br>  // @ts-ignore<br>  return new Promise((resolve, reject) =&gt; {<br>    setTimeout(() =&gt; {<br>      console.log(&#34;HOGE&#34;);<br>      resolve(&#34;BAR&#34;);<br>    }, 1000);<br>  })<br>}</code></span>
+    <span class='slacklog-text'><pre>export function FETCH_AVATER ({commit, state}) {<br>  commit(&#39;FETCHING_AVATER&#39;);<br>  // @ts-ignore<br>  return new Promise((resolve, reject) =&gt; {<br>    setTimeout(() =&gt; {<br>      console.log(&#34;HOGE&#34;);<br>      resolve(&#34;BAR&#34;);<br>    }, 1000);<br>  })<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1585058956.183900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -748,7 +748,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1585059188.190600'>24日 23:13:09</a>
-    <span class='slacklog-text'><code>export function state(<br>  p: Promise&lt;any&gt;,<br>)Promise&lt;&#39;pending&#39; | &#39;fulfilled&#39; | &#39;rejected&#39;&gt; {<br>  const t = {};<br>  return Promise.race([p, t]).then(<br>    (v: any) =&gt; (v === t ? &#39;pending&#39; : &#39;fulfilled&#39;),<br>    () =&gt; &#39;rejected&#39;,<br>  ) as Promise&lt;&#39;pending&#39; | &#39;fulfilled&#39; | &#39;rejected&#39;&gt;;<br>}</code></span>
+    <span class='slacklog-text'><pre>export function state(<br>  p: Promise&lt;any&gt;,<br>)Promise&lt;&#39;pending&#39; | &#39;fulfilled&#39; | &#39;rejected&#39;&gt; {<br>  const t = {};<br>  return Promise.race([p, t]).then(<br>    (v: any) =&gt; (v === t ? &#39;pending&#39; : &#39;fulfilled&#39;),<br>    () =&gt; &#39;rejected&#39;,<br>  ) as Promise&lt;&#39;pending&#39; | &#39;fulfilled&#39; | &#39;rejected&#39;&gt;;<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1585059203.191000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -1524,7 +1524,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585624050.016800'>31日 12:07:31</a>
-    <span class='slacklog-text'><code>a = a || b</code></span>
+    <span class='slacklog-text'><pre>a = a || b</pre></span>
   </span>
   <span class='slacklog-message' id='1585624112.017300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -1780,19 +1780,19 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585634715.036300'>31日 15:05:16</a>
-    <span class='slacklog-text'>たまに <code>?.</code> が勘違いされてて<br><br><code>x?.foo?.bar?.baz</code><br>みたいに書かれる事があるんよね。</span>
+    <span class='slacklog-text'>たまに <code>?.</code> が勘違いされてて<br><br><pre>x?.foo?.bar?.baz</pre><br>みたいに書かれる事があるんよね。</span>
   </span>
   <span class='slacklog-message' id='1585634728.036600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585634728.036600'>31日 15:05:29</a>
-    <span class='slacklog-text'><code>x?.foo.bar.baz</code><br>で ok。</span>
+    <span class='slacklog-text'><pre>x?.foo.bar.baz</pre><br>で ok。</span>
   </span>
   <span class='slacklog-message' id='1585634746.037000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585634746.037000'>31日 15:05:47</a>
-    <span class='slacklog-text'><code>null?.null.null.null.null.null</code><br>とかやってると楽しい。(楽しくない)</span>
+    <span class='slacklog-text'><pre>null?.null.null.null.null.null</pre><br>とかやってると楽しい。(楽しくない)</span>
   </span>
   <span class='slacklog-message' id='1585634936.038300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
@@ -1834,7 +1834,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
     <span class='slacklog-name'>ゴリラ</span>
     <a class='slacklog-datetime' href='#1585655696.041800'>31日 20:54:57</a>
-    <span class='slacklog-text'>[質問]<br><code>forEach</code> と <code>entries</code> の使い分けって皆さんどうしていますか？<br>自分は大体こんな感じで書きますが、 <code>forEach</code>の用途がピンとこないので質問しました<br><br><code>for ([i, v] of list.entries) {<br>    // do something<br>}</code></span>
+    <span class='slacklog-text'>[質問]<br><code>forEach</code> と <code>entries</code> の使い分けって皆さんどうしていますか？<br>自分は大体こんな感じで書きますが、 <code>forEach</code>の用途がピンとこないので質問しました<br><br><pre>for ([i, v] of list.entries) {<br>    // do something<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1585655985.042700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -1972,7 +1972,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1585658682.054500'>31日 21:44:43</a>
-    <span class='slacklog-text'><code>// for<br>const memory = [];<br>for (const value of [...]) {<br>  // 超複雑な処理でムッチャ長いし分岐も多い<br>  memory.push(value);<br>}<br><br>// map<br>const memory = [...].map((v) =&gt; {<br>  // 超複雑な処理でムッチャ長い<br>  return v;<br>});</code></span>
+    <span class='slacklog-text'><pre>// for<br>const memory = [];<br>for (const value of [...]) {<br>  // 超複雑な処理でムッチャ長いし分岐も多い<br>  memory.push(value);<br>}<br><br>// map<br>const memory = [...].map((v) =&gt; {<br>  // 超複雑な処理でムッチャ長い<br>  return v;<br>});</pre></span>
   </span>
   <span class='slacklog-message' id='1585658687.054700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -2206,7 +2206,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1585659276.070800'>31日 21:54:37</a>
-    <span class='slacklog-text'><code>[...document.querySelector(&#34;div&#34;)].map(x =&gt; ...)</code></span>
+    <span class='slacklog-text'><pre>[...document.querySelector(&#34;div&#34;)].map(x =&gt; ...)</pre></span>
   </span>
   <span class='slacklog-message' id='1585659279.071000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -2266,7 +2266,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1585659620.073600'>31日 22:00:21</a>
-    <span class='slacklog-text'><code>[...document.querySelectorAll(&#34;div&#34;)].map(...)</code></span>
+    <span class='slacklog-text'><pre>[...document.querySelectorAll(&#34;div&#34;)].map(...)</pre></span>
   </span>
   <span class='slacklog-message' id='1585659621.073800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
@@ -2356,7 +2356,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585660605.083500'>31日 22:16:46</a>
-    <span class='slacklog-text'><code>[1,2,3].map(x =&gt; this[x] = x*2)</code></span>
+    <span class='slacklog-text'><pre>[1,2,3].map(x =&gt; this[x] = x*2)</pre></span>
   </span>
   <span class='slacklog-message' id='1585660616.083800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2782,7 +2782,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585662663.119000'>31日 22:51:04</a>
-    <span class='slacklog-text'>ruby だと<br><code>p x.map {|x| ...}. </code><br>みたいに少しずつ増やしながら確認できるのが好き。</span>
+    <span class='slacklog-text'>ruby だと<br><pre>p x.map {|x| ...}. </pre><br>みたいに少しずつ増やしながら確認できるのが好き。</span>
   </span>
   <span class='slacklog-message' id='1585662727.119300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>

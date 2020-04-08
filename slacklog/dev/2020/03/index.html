@@ -179,7 +179,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1583998612.354100'>12日 16:36:53</a>
-    <span class='slacklog-text'><code>picohashmap put: 2.781000 [sec]<br>picohashmap get: 1.103000 [sec]<br>C++ stl put: 5.126669 [sec]<br>C++ stl get: 1.272198 [sec]<br>klib hash put: 0.252785 [sec]<br>klib hash get: 0.036985 [sec]</code></span>
+    <span class='slacklog-text'><pre>picohashmap put: 2.781000 [sec]<br>picohashmap get: 1.103000 [sec]<br>C++ stl put: 5.126669 [sec]<br>C++ stl get: 1.272198 [sec]<br>klib hash put: 0.252785 [sec]<br>klib hash get: 0.036985 [sec]</pre></span>
   </span>
   <span class='slacklog-message' id='1583998620.354400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -421,7 +421,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
     <span class='slacklog-name'>k-takata</span>
     <a class='slacklog-datetime' href='#1584090421.374700'>13日 18:07:02</a>
-    <span class='slacklog-text'>文字列をキーにすると、ちょっと差が縮まったかな。<br><code>&gt;khash_test<br>klib hash put: 4.223000 [sec]<br>klib hash get: 2.414000 [sec]<br><br>&gt;st_test<br>st hash put: 5.829000 [sec]<br>st hash get: 3.870000 [sec]</code><br>putの方は <code>strdup</code> でキーをコピーするようにしたから遅くなって当然だけど、getが一気に遅くなったなー。</span>
+    <span class='slacklog-text'>文字列をキーにすると、ちょっと差が縮まったかな。<br><pre>&gt;khash_test<br>klib hash put: 4.223000 [sec]<br>klib hash get: 2.414000 [sec]<br><br>&gt;st_test<br>st hash put: 5.829000 [sec]<br>st hash get: 3.870000 [sec]</pre><br>putの方は <code>strdup</code> でキーをコピーするようにしたから遅くなって当然だけど、getが一気に遅くなったなー。</span>
   </span>
   <span class='slacklog-message' id='1584106084.376200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -629,7 +629,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5a214f7e90077a38c1ba15d011599e71.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
     <span class='slacklog-name'>ichizok</span>
     <a class='slacklog-datetime' href='#1584651227.392700'>20日 05:53:48</a>
-    <span class='slacklog-text'>メモリリークを直していて発見<br><code>def! F0(): number<br>  return 0<br>enddef<br><br>def! F1(): number<br>  return 1<br>enddef<br><br>try<br>  def! F0(): number<br>  enddef<br>catch<br>  echo v:exception<br>endtry<br><br>def! F2(): number<br>  return 2<br>enddef<br><br>echo F1()<br>echo F2()</code></span>
+    <span class='slacklog-text'>メモリリークを直していて発見<br><pre>def! F0(): number<br>  return 0<br>enddef<br><br>def! F1(): number<br>  return 1<br>enddef<br><br>try<br>  def! F0(): number<br>  enddef<br>catch<br>  echo v:exception<br>endtry<br><br>def! F2(): number<br>  return 2<br>enddef<br><br>echo F1()<br>echo F2()</pre></span>
   </span>
   <span class='slacklog-message' id='1584672611.393500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -1049,7 +1049,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
     <span class='slacklog-name'>presuku</span>
     <a class='slacklog-datetime' href='#1585126510.017300'>25日 17:55:11</a>
-    <span class='slacklog-text'>Xubuntu 18.04 ですが、以下のような compile_flags.txt で <code>src/main.c</code> の<code>#include &lt;limits.h&gt;</code> が見つからない的なエラーはないですねぇ<br><code>-DHAVE_CONFIG_H<br>-I.<br>-Isrc<br>-Isrc/proto</code></span>
+    <span class='slacklog-text'>Xubuntu 18.04 ですが、以下のような compile_flags.txt で <code>src/main.c</code> の<code>#include &lt;limits.h&gt;</code> が見つからない的なエラーはないですねぇ<br><pre>-DHAVE_CONFIG_H<br>-I.<br>-Isrc<br>-Isrc/proto</pre></span>
   </span>
   <span class='slacklog-message' id='1585126578.017900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1115,7 +1115,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-27/561893477331_a9e1f1634fb429357d68_48.jpg'>
     <span class='slacklog-name'>presuku</span>
     <a class='slacklog-datetime' href='#1585191572.030200'>26日 11:59:33</a>
-    <span class='slacklog-text'>vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、<br><code>let g:lsp_settings = {<br>      \  &#39;clangd&#39;: {&#39;cmd&#39;: [&#39;clangd-9&#39;, &#39;--background-index&#39;, &#39;-j=4&#39;]},<br>      \ }</code><br>と設定したら、ちゃんと *.c に飛ぶようになった。ちなみに LspDeclaration すると *.pro に飛ぶ。</span>
+    <span class='slacklog-text'>vim のソースで、clangd で LspDefinition すると *.c ではなく *.pro に飛んでたけど、ちゃんと bear で compile_commands.json 作って、<br><pre>let g:lsp_settings = {<br>      \  &#39;clangd&#39;: {&#39;cmd&#39;: [&#39;clangd-9&#39;, &#39;--background-index&#39;, &#39;-j=4&#39;]},<br>      \ }</pre><br>と設定したら、ちゃんと *.c に飛ぶようになった。ちなみに LspDeclaration すると *.pro に飛ぶ。</span>
   </span>
   <span class='slacklog-message' id='1585191764.030400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1163,7 +1163,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585197628.038900'>26日 13:40:29</a>
-    <span class='slacklog-text'>僕も専用の作るかな。<br><code>$ make-ccjson compile_flags.txt *.c *.h</code><br>が出来れば機能は十分そうだし。</span>
+    <span class='slacklog-text'>僕も専用の作るかな。<br><pre>$ make-ccjson compile_flags.txt *.c *.h</pre><br>が出来れば機能は十分そうだし。</span>
   </span>
   <span class='slacklog-message' id='1585197743.039300'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -1205,7 +1205,7 @@ title: vim-jp.slack.com log - &#35dev - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585198006.041700'>26日 13:46:47</a>
-    <span class='slacklog-text'>compiledb は以前使った時は手直しを何度かやったので<br><code>$ make 2&gt;&amp;1 | tee output<br>$ compiledb &lt; output</code><br>みたいな事をやってた。</span>
+    <span class='slacklog-text'>compiledb は以前使った時は手直しを何度かやったので<br><pre>$ make 2&gt;&amp;1 | tee output<br>$ compiledb &lt; output</pre><br>みたいな事をやってた。</span>
   </span>
   <span class='slacklog-message' id='1585222141.042400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>

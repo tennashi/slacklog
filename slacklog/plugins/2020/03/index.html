@@ -896,7 +896,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
     <span class='slacklog-name'>tyru</span>
     <a class='slacklog-datetime' href='#1584254809.370200'>15日 15:46:50</a>
-    <span class='slacklog-text'>随分前に &lt;@U9GUS1S0G&gt; さんが書いてくれた caw.vim operator mapping 用の設定が改めてシンプルすぎて美しい…っつってる<br>caw.vim のマッピングを operator をデフォルトにする場合でも <code>gcc</code> は operator-pending mode に入ってほしくない場合の設定。<br><code>nmap gcc &lt;Plug&gt;(caw:hatpos:toggle:operator)_<br>xmap gcc &lt;Plug&gt;(caw:hatpos:toggle:operator)</code><br><a href='https://github.com/tyru/caw.vim/issues/80'>https://github.com/tyru/caw.vim/issues/80</a></span>
+    <span class='slacklog-text'>随分前に &lt;@U9GUS1S0G&gt; さんが書いてくれた caw.vim operator mapping 用の設定が改めてシンプルすぎて美しい…っつってる<br>caw.vim のマッピングを operator をデフォルトにする場合でも <code>gcc</code> は operator-pending mode に入ってほしくない場合の設定。<br><pre>nmap gcc &lt;Plug&gt;(caw:hatpos:toggle:operator)_<br>xmap gcc &lt;Plug&gt;(caw:hatpos:toggle:operator)</pre><br><a href='https://github.com/tyru/caw.vim/issues/80'>https://github.com/tyru/caw.vim/issues/80</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -1220,7 +1220,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
               <span class='slacklog-attachment-other-servicename'>Qiita</span>
             </div>
             <div class='slacklog-attachment-other-title'><a href='https://qiita.com/k-takata/items/3e0e67cc2e2b8b3fd633'>Vimの言語インターフェースのバージョン確認 - Qiita</a></div>
-            <div class='slacklog-attachment-other-text'>Vimの各スクリプト言語インターフェースのバージョンを確認する方法。 入力とそれぞれの出力例を示す。 # Lua <code> :lua print(_VERSION) Lua 5.1 </code> ## LuaJIT ``` :lua ...</div>
+            <div class='slacklog-attachment-other-text'>Vimの各スクリプト言語インターフェースのバージョンを確認する方法。 入力とそれぞれの出力例を示す。 # Lua <pre> :lua print(_VERSION) Lua 5.1 </pre> ## LuaJIT ``` :lua ...</div>
           </span>
     </span>
   </span>
@@ -1538,7 +1538,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
     <span class='slacklog-name'>johejo</span>
     <a class='slacklog-datetime' href='#1584360864.437200'>16日 21:14:25</a>
-    <span class='slacklog-text'><a href='https://wiki.archlinux.jp/index.php/Arch_Linux_%E3%81%AE%E5%AE%89%E5%AE%9A%E5%8C%96'>https://wiki.archlinux.jp/index.php/Arch_Linux_%E3%81%AE%E5%AE%89%E5%AE%9A%E5%8C%96</a><br><br><code>ただし、設定のシンプリシティ、素早いバグレポート・バグフィックスサイクル、そしてアップストリームのソースコードにパッチをあてないで利用することを約束している Arch は本質的に安定しているものなのです。従って、Arch の設定やメンテナンスで以下のアドバイスに従えば、ユーザーは非常に安定したシステムに恵まれるでしょう。さらに、問題が起こった時にシステムを修復するのを楽にするアドバイスもあります。<br><br>実際のところ Arch はどれくらい安定していると言えるのでしょうか？Arch を本番サーバーに問題なく使えているという、熟練したシステム管理者による報告が Arch フォーラムにはごろごろあります。<a href='http://Archlinux.org|Archlinux.org'>Archlinux.org</a> はその一例と言えます。デスクトップでも、正しく設定されメンテナンスされている Arch は素晴らしいスタビリティを発揮します。</code><br>安定とは...</span>
+    <span class='slacklog-text'><a href='https://wiki.archlinux.jp/index.php/Arch_Linux_%E3%81%AE%E5%AE%89%E5%AE%9A%E5%8C%96'>https://wiki.archlinux.jp/index.php/Arch_Linux_%E3%81%AE%E5%AE%89%E5%AE%9A%E5%8C%96</a><br><br><pre>ただし、設定のシンプリシティ、素早いバグレポート・バグフィックスサイクル、そしてアップストリームのソースコードにパッチをあてないで利用することを約束している Arch は本質的に安定しているものなのです。従って、Arch の設定やメンテナンスで以下のアドバイスに従えば、ユーザーは非常に安定したシステムに恵まれるでしょう。さらに、問題が起こった時にシステムを修復するのを楽にするアドバイスもあります。<br><br>実際のところ Arch はどれくらい安定していると言えるのでしょうか？Arch を本番サーバーに問題なく使えているという、熟練したシステム管理者による報告が Arch フォーラムにはごろごろあります。<a href='http://Archlinux.org|Archlinux.org'>Archlinux.org</a> はその一例と言えます。デスクトップでも、正しく設定されメンテナンスされている Arch は素晴らしいスタビリティを発揮します。</pre><br>安定とは...</span>
   </span>
   <span class='slacklog-message' id='1584361024.438800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
@@ -2048,7 +2048,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
     <span class='slacklog-name'>takets</span>
     <a class='slacklog-datetime' href='#1584604461.498900'>19日 16:54:22</a>
-    <span class='slacklog-text'>また、先ほど発見したのですが、<br>phpでpostfix completionを使うさい、メソッドの中だと正常に動作して、<br><br><code>&lt;?php<br><br>for ($i=0; $i &lt; 10; $i++) {<br>    echo $i.&#34;\n&#34;;<br>}</code><br>のような単純なコードの場合だと報告したように、置換される入力した文字が消える現象が発生しました。</span>
+    <span class='slacklog-text'>また、先ほど発見したのですが、<br>phpでpostfix completionを使うさい、メソッドの中だと正常に動作して、<br><br><pre>&lt;?php<br><br>for ($i=0; $i &lt; 10; $i++) {<br>    echo $i.&#34;\n&#34;;<br>}</pre><br>のような単純なコードの場合だと報告したように、置換される入力した文字が消える現象が発生しました。</span>
   </span>
   <span class='slacklog-message' id='1584604467.499200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
@@ -2084,7 +2084,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1584604908.002400'>19日 17:01:49</a>
-    <span class='slacklog-text'>でもこんなので勘違いしてたら<br><code>var foo[] = {{&#34;foo&#34;:&#34;bar&#34;}, {|}}</code><br>こういう奴編集できない。</span>
+    <span class='slacklog-text'>でもこんなので勘違いしてたら<br><pre>var foo[] = {{&#34;foo&#34;:&#34;bar&#34;}, {|}}</pre><br>こういう奴編集できない。</span>
   </span>
   <span class='slacklog-message' id='1584604946.002600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2138,7 +2138,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1584605231.005900'>19日 17:07:12</a>
-    <span class='slacklog-text'><code>let g:sonictemplate_postfix_key = &#39;なんとか&#39;</code></span>
+    <span class='slacklog-text'><pre>let g:sonictemplate_postfix_key = &#39;なんとか&#39;</pre></span>
   </span>
   <span class='slacklog-message' id='1584605274.006300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -2194,7 +2194,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1584605905.011800'>19日 17:18:26</a>
-    <span class='slacklog-text'><code>imap &lt;expr&gt; &lt;c-y&gt;&lt;c-b&gt; pumvisible() ? &#34;&lt;c-y&gt;&lt;c-y&gt;&lt;c-y&gt;&lt;c-b&gt;&#34; : &#34;&lt;c-y&gt;&lt;c-y&gt;&lt;c-b&gt;&#34;</code></span>
+    <span class='slacklog-text'><pre>imap &lt;expr&gt; &lt;c-y&gt;&lt;c-b&gt; pumvisible() ? &#34;&lt;c-y&gt;&lt;c-y&gt;&lt;c-y&gt;&lt;c-b&gt;&#34; : &#34;&lt;c-y&gt;&lt;c-y&gt;&lt;c-b&gt;&#34;</pre></span>
   </span>
   <span class='slacklog-message' id='1584606104.012600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2206,7 +2206,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
     <span class='slacklog-name'>takets</span>
     <a class='slacklog-datetime' href='#1584606120.012800'>19日 17:22:01</a>
-    <span class='slacklog-text'><code>let g:sonictemplate_postfix_key = &#39;&lt;C-y&gt;&lt;C-b&gt;&#39;<br>function! s:ExpandPostfixCompletion()<br>  echo pumvisible()<br>  return pumvisible() ? 1 : 0<br>endfunction<br>command! ExpandPostfixCompletion call &lt;SID&gt;ExpandPostfixCompletion()<br>imap &lt;expr&gt; &lt;C-y&gt;&lt;C-b&gt; &lt;SID&gt;ExpandPostfixCompletion() ? &#34;\&lt;C-e&gt;\&lt;C-y&gt;\&lt;C-b&gt;&#34; : &#34;\&lt;C-y&gt;\&lt;C-b&gt;&#34;</code><br>別にメソッド作る必要なかった……</span>
+    <span class='slacklog-text'><pre>let g:sonictemplate_postfix_key = &#39;&lt;C-y&gt;&lt;C-b&gt;&#39;<br>function! s:ExpandPostfixCompletion()<br>  echo pumvisible()<br>  return pumvisible() ? 1 : 0<br>endfunction<br>command! ExpandPostfixCompletion call &lt;SID&gt;ExpandPostfixCompletion()<br>imap &lt;expr&gt; &lt;C-y&gt;&lt;C-b&gt; &lt;SID&gt;ExpandPostfixCompletion() ? &#34;\&lt;C-e&gt;\&lt;C-y&gt;\&lt;C-b&gt;&#34; : &#34;\&lt;C-y&gt;\&lt;C-b&gt;&#34;</pre><br>別にメソッド作る必要なかった……</span>
   </span>
   <span class='slacklog-message' id='1584606136.013200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2260,7 +2260,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1584606560.019200'>19日 17:29:21</a>
-    <span class='slacklog-text'><code>imap &lt;expr&gt; &lt;c-y&gt;&lt;c-b&gt; pumvisible()?&#34;&lt;c-e&gt;&lt;plug&gt;(sonictemplate-postfix)&#34;:&#34;&lt;plug&gt;(sonictemplate-postfix)&#34;</code></span>
+    <span class='slacklog-text'><pre>imap &lt;expr&gt; &lt;c-y&gt;&lt;c-b&gt; pumvisible()?&#34;&lt;c-e&gt;&lt;plug&gt;(sonictemplate-postfix)&#34;:&#34;&lt;plug&gt;(sonictemplate-postfix)&#34;</pre></span>
   </span>
   <span class='slacklog-message' id='1584606563.019400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2296,7 +2296,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1584606827.021300'>19日 17:33:48</a>
-    <span class='slacklog-text'><code>imap x yx</code></span>
+    <span class='slacklog-text'><pre>imap x yx</pre></span>
   </span>
   <span class='slacklog-message' id='1584606843.021600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2864,7 +2864,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
     <span class='slacklog-name'></span>
     <a class='slacklog-datetime' href='#1584782769.074900'>21日 18:26:10</a>
-    <span class='slacklog-text'><code><br>                                                *complete-items*<br>リストの各要素は文字列か辞書のどちらかであること。文字列の場合はそれが候補とな<br>る。辞書の場合は以下の要素を含んでいること:<br>        word            挿入されるテキスト。必須<br>        abbr            &#34;word&#34; の略。これが空でなければ、メニューで &#34;word&#34; の<br>                        代わりに表示される。<br>        menu            ポップアップメニューにおける追加情報。&#34;word&#34; または<br>                        &#34;abbr&#34; の後に表示される。<br>        info            この要素についての追加情報。プレビューまたはポップアッ<br>                        プウィンドウに表示することができる。<br>        kind            候補の種類を表す1文字<br>        icase           0 でないならば、候補同士を比較するとき大文字小文字は無<br>                        視される。省略された場合は 0 となり、大文字小文字の違<br>                        いしかない候補も追加される。<br>        equal           ゼロ以外の場合、比較時にこの項目が常に等しいと見なされ<br>                        る。つまり、&#34;equal=1&#34; はこのアイテムのフィルタリングを<br>                        無効にする。<br>        dup             0 でないならば、すでに同じ候補があってもこの候補を追加<br>                        する。<br>        empty           0 でないならば、空文字であってもこの候補を追加する。<br>        user_data       この要素に関連付けられた |v:completed_item| で使用可能<br>                        なカスタムデータ。任意の型が使用できる。既定は空文字<br>                        列。<br> <br>これらのうち &#34;icase&#34;, &#34;equal&#34;, &#34;dup&#34; および &#34;empty&#34; 以外は文字列でなければなら<br>ない。これらの要件が満たされない場合はエラーメッセージが表示され、リスト中のそ<br>れ以降の要素は無視される。リストの中で文字列と辞書が混在していてもよい。<br> <br>&#34;menu&#34; はポップアップメニューに表示される。長すぎる場合は切り詰められるので、<br>短くするとよい。&#34;info&#34; は &#39;completeopt&#39; に &#34;preview&#34; が含まれている場合にプレ<br>ビューウィンドウに表示され、&#39;completeopt&#39; に &#34;popup&#34; が含まれている場合にポッ<br>プアップウィンドウに表示されるので、これはもっと長くてもよい。プレビューウィン<br>ドウでは &#34;info&#34; はまた、ポップアップメニューが消えた後にもそのまま表示される。<br>これは関数の引数を表示する場合などに便利である。&#34;info&#34; にスペース1個を指定する<br>と、プレビューウィンドウに表示されているテキストが消去される。プレビューウィン<br>ドウの大きさは 3 行だが、&#39;previewheight&#39; が 1 か 2 のときはその高さで表示され<br>る。<br></code></span>
+    <span class='slacklog-text'><pre><br>                                                *complete-items*<br>リストの各要素は文字列か辞書のどちらかであること。文字列の場合はそれが候補とな<br>る。辞書の場合は以下の要素を含んでいること:<br>        word            挿入されるテキスト。必須<br>        abbr            &#34;word&#34; の略。これが空でなければ、メニューで &#34;word&#34; の<br>                        代わりに表示される。<br>        menu            ポップアップメニューにおける追加情報。&#34;word&#34; または<br>                        &#34;abbr&#34; の後に表示される。<br>        info            この要素についての追加情報。プレビューまたはポップアッ<br>                        プウィンドウに表示することができる。<br>        kind            候補の種類を表す1文字<br>        icase           0 でないならば、候補同士を比較するとき大文字小文字は無<br>                        視される。省略された場合は 0 となり、大文字小文字の違<br>                        いしかない候補も追加される。<br>        equal           ゼロ以外の場合、比較時にこの項目が常に等しいと見なされ<br>                        る。つまり、&#34;equal=1&#34; はこのアイテムのフィルタリングを<br>                        無効にする。<br>        dup             0 でないならば、すでに同じ候補があってもこの候補を追加<br>                        する。<br>        empty           0 でないならば、空文字であってもこの候補を追加する。<br>        user_data       この要素に関連付けられた |v:completed_item| で使用可能<br>                        なカスタムデータ。任意の型が使用できる。既定は空文字<br>                        列。<br> <br>これらのうち &#34;icase&#34;, &#34;equal&#34;, &#34;dup&#34; および &#34;empty&#34; 以外は文字列でなければなら<br>ない。これらの要件が満たされない場合はエラーメッセージが表示され、リスト中のそ<br>れ以降の要素は無視される。リストの中で文字列と辞書が混在していてもよい。<br> <br>&#34;menu&#34; はポップアップメニューに表示される。長すぎる場合は切り詰められるので、<br>短くするとよい。&#34;info&#34; は &#39;completeopt&#39; に &#34;preview&#34; が含まれている場合にプレ<br>ビューウィンドウに表示され、&#39;completeopt&#39; に &#34;popup&#34; が含まれている場合にポッ<br>プアップウィンドウに表示されるので、これはもっと長くてもよい。プレビューウィン<br>ドウでは &#34;info&#34; はまた、ポップアップメニューが消えた後にもそのまま表示される。<br>これは関数の引数を表示する場合などに便利である。&#34;info&#34; にスペース1個を指定する<br>と、プレビューウィンドウに表示されているテキストが消去される。プレビューウィン<br>ドウの大きさは 3 行だが、&#39;previewheight&#39; が 1 か 2 のときはその高さで表示され<br>る。<br></pre></span>
   </span>
   <span class='slacklog-message' id='1584783067.079000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-09-19/766087996341_c4b0930af904f66d8057_48.png'>
@@ -2920,7 +2920,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
     <span class='slacklog-name'>vikke</span>
     <a class='slacklog-datetime' href='#1584789896.091400'>21日 20:24:57</a>
-    <span class='slacklog-text'>neovim on ArchLinuxでcheckhealthすると、<br><code>health#denite#check<br>========================================================================<br>## denite.nvim<br>  - OK: has(&#34;python3&#34;) was successful<br>  - OK: Python 3.6.1+ was successful<br>  - ERROR: Require msgpack 1.0.0+ was not successful<br>    - ADVICE:<br>      - Please install/upgrade msgpack 1.0.0+.</code><br>て言われるんですけど、pacman -Ssしてもmsgpackそのものって無いんですよね。msgpackってライブラリなんですか?なんにせよ、どれを入れたら良いのでしょうか？</span>
+    <span class='slacklog-text'>neovim on ArchLinuxでcheckhealthすると、<br><pre>health#denite#check<br>========================================================================<br>## denite.nvim<br>  - OK: has(&#34;python3&#34;) was successful<br>  - OK: Python 3.6.1+ was successful<br>  - ERROR: Require msgpack 1.0.0+ was not successful<br>    - ADVICE:<br>      - Please install/upgrade msgpack 1.0.0+.</pre><br>て言われるんですけど、pacman -Ssしてもmsgpackそのものって無いんですよね。msgpackってライブラリなんですか?なんにせよ、どれを入れたら良いのでしょうか？</span>
   </span>
   <span class='slacklog-message' id='1584789979.092200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -3322,7 +3322,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
     <span class='slacklog-name'></span>
     <a class='slacklog-datetime' href='#1585039888.131900'>24日 17:51:29</a>
-    <span class='slacklog-text'><code><br>:EskkMap                                        *:EskkMap*<br>        今の所、内部的に使われているExコマンド。<br>        将来はこのExコマンドによってeskk有効時のマッピングを定義できる予定。<br></code></span>
+    <span class='slacklog-text'><pre><br>:EskkMap                                        *:EskkMap*<br>        今の所、内部的に使われているExコマンド。<br>        将来はこのExコマンドによってeskk有効時のマッピングを定義できる予定。<br></pre></span>
   </span>
   <span class='slacklog-message' id='1585040030.133700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -3424,7 +3424,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
     <span class='slacklog-name'>tyru</span>
     <a class='slacklog-datetime' href='#1585041097.143300'>24日 18:11:38</a>
-    <span class='slacklog-text'><code>let foo_nmap = savemap#save_map(&#39;n&#39;, &#39;foo&#39;)<br>...<br>call foo_nmap.restore()</code></span>
+    <span class='slacklog-text'><pre>let foo_nmap = savemap#save_map(&#39;n&#39;, &#39;foo&#39;)<br>...<br>call foo_nmap.restore()</pre></span>
   </span>
   <span class='slacklog-message' id='1585041118.143800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -3836,7 +3836,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
     <span class='slacklog-name'>luma</span>
     <a class='slacklog-datetime' href='#1585148087.032900'>25日 23:54:48</a>
-    <span class='slacklog-text'><code>[s]urround ([a]dd/[d]elete/[r]ename)<br>[i]nner [b]races<br>[a] [b]raced text</code><br>革命</span>
+    <span class='slacklog-text'><pre>[s]urround ([a]dd/[d]elete/[r]ename)<br>[i]nner [b]races<br>[a] [b]raced text</pre><br>革命</span>
   </span>
   <span class='slacklog-message' id='1585148126.033200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -4404,7 +4404,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
     <span class='slacklog-name'>luma</span>
     <a class='slacklog-datetime' href='#1585572826.085400'>30日 21:53:47</a>
-    <span class='slacklog-text'>これで reveal にできる<br><br><code>  function! s:reveal(dict) abort<br>    execute printf(&#34;Fern %s -reveal=%s&#34;, a:dict.root_path, a:dict.full_path)<br>  endfunction<br>  let g:Fern_mapping_fzf_file_sink = function(&#39;s:reveal&#39;)<br>  let g:Fern_mapping_fzf_dir_sink = function(&#39;s:reveal&#39;)</code></span>
+    <span class='slacklog-text'>これで reveal にできる<br><br><pre>  function! s:reveal(dict) abort<br>    execute printf(&#34;Fern %s -reveal=%s&#34;, a:dict.root_path, a:dict.full_path)<br>  endfunction<br>  let g:Fern_mapping_fzf_file_sink = function(&#39;s:reveal&#39;)<br>  let g:Fern_mapping_fzf_dir_sink = function(&#39;s:reveal&#39;)</pre></span>
   </span>
   <span class='slacklog-message' id='1585572958.086200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
@@ -4666,7 +4666,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
     <span class='slacklog-name'>yutakatay</span>
     <a class='slacklog-datetime' href='#1585708188.123800'>1日 11:29:49</a>
-    <span class='slacklog-text'>いっぱい使ってる・・・<br><code>Plug &#39;kana/vim-smartchr&#39;<br>Plug &#39;kana/vim-arpeggio&#39;<br>Plug &#39;kana/vim-textobj-user&#39;<br>Plug &#39;kana/vim-textobj-line&#39;<br>Plug &#39;kana/vim-textobj-entire&#39;<br>Plug &#39;kana/vim-operator-user&#39;<br>Plug &#39;kana/vim-operator-replace&#39;<br>Plug &#39;kana/vim-tabpagecd&#39;<br>Plug &#39;kana/vim-niceblock&#39;<br>Plug &#39;kana/vim-submode&#39;<br>Plug &#39;kana/vim-altr&#39;</code></span>
+    <span class='slacklog-text'>いっぱい使ってる・・・<br><pre>Plug &#39;kana/vim-smartchr&#39;<br>Plug &#39;kana/vim-arpeggio&#39;<br>Plug &#39;kana/vim-textobj-user&#39;<br>Plug &#39;kana/vim-textobj-line&#39;<br>Plug &#39;kana/vim-textobj-entire&#39;<br>Plug &#39;kana/vim-operator-user&#39;<br>Plug &#39;kana/vim-operator-replace&#39;<br>Plug &#39;kana/vim-tabpagecd&#39;<br>Plug &#39;kana/vim-niceblock&#39;<br>Plug &#39;kana/vim-submode&#39;<br>Plug &#39;kana/vim-altr&#39;</pre></span>
   </span>
   <span class='slacklog-message' id='1585708322.124200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2017-12-09/284380828226_585d265f54113004e478_48.jpg'>
@@ -4756,7 +4756,7 @@ title: vim-jp.slack.com log - &#35plugins - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
     <span class='slacklog-name'>ゴリラ</span>
     <a class='slacklog-datetime' href='#1585711678.129400'>1日 12:27:59</a>
-    <span class='slacklog-text'><code>	&#34; Opens current files highlighted place in <a href='http://github.com|github.com'>github.com</a><br>	&#34; ex) https://{hostname}/{user}/{repos}/blob/{hash or branch}/{relpath}#{lnum}<br>	:&#39;&lt;,&#39;&gt;OpenGithubFile</code></span>
+    <span class='slacklog-text'><pre>	&#34; Opens current files highlighted place in <a href='http://github.com|github.com'>github.com</a><br>	&#34; ex) https://{hostname}/{user}/{repos}/blob/{hash or branch}/{relpath}#{lnum}<br>	:&#39;&lt;,&#39;&gt;OpenGithubFile</pre></span>
   </span>
   <span class='slacklog-message' id='1585711702.130000'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>

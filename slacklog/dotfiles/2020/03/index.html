@@ -881,7 +881,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1583832593.474700'>10日 18:29:54</a>
-    <span class='slacklog-text'><code>echo パチンコ | GREP_COLOR=32 grep --color=always パ | GREP_COLOR=33 grep --color=always チ | GREP_COLOR=34 grep --color=always ン | GREP_COLOR=35 grep --color=always コ</code></span>
+    <span class='slacklog-text'><pre>echo パチンコ | GREP_COLOR=32 grep --color=always パ | GREP_COLOR=33 grep --color=always チ | GREP_COLOR=34 grep --color=always ン | GREP_COLOR=35 grep --color=always コ</pre></span>
   </span>
   <span class='slacklog-message' id='1583832690.475500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
@@ -971,7 +971,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1583833356.483100'>10日 18:42:37</a>
-    <span class='slacklog-text'><code>seq 30 47 | xargs -n 1 -i{} printf &#34;\x1b[%dm#\x1b[0m %d\n&#34; {} {}</code></span>
+    <span class='slacklog-text'><pre>seq 30 47 | xargs -n 1 -i{} printf &#34;\x1b[%dm#\x1b[0m %d\n&#34; {} {}</pre></span>
   </span>
   <span class='slacklog-message' id='1583833359.483300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -983,7 +983,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
     <span class='slacklog-name'>yutakatay</span>
     <a class='slacklog-datetime' href='#1583833451.485000'>10日 18:44:12</a>
-    <span class='slacklog-text'><code>  for code in {000..255}; do<br>    print -nP -- &#34;%F{$code}$code %f&#34;;<br>    if [ $((${code} % 16)) -eq 15 ]; then<br>      echo &#34;&#34;<br>    fi<br>  done</code><br>256版も便利ですよね</span>
+    <span class='slacklog-text'><pre>  for code in {000..255}; do<br>    print -nP -- &#34;%F{$code}$code %f&#34;;<br>    if [ $((${code} % 16)) -eq 15 ]; then<br>      echo &#34;&#34;<br>    fi<br>  done</pre><br>256版も便利ですよね</span>
   </span>
   <span class='slacklog-message' id='1583833465.485400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -1019,7 +1019,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
     <span class='slacklog-name'>ycino</span>
     <a class='slacklog-datetime' href='#1583833606.487400'>10日 18:46:47</a>
-    <span class='slacklog-text'><code>#!/usr/bin/env perl<br><br>use strict;<br>use warnings;<br><br>my $fg = &#34;\x1b[38;5;&#34;;<br>my $bg = &#34;\x1b[48;5;&#34;;<br>my $rs = &#34;\x1b[0m&#34;;<br><br>my $color = 0;<br><br>for (my $row = 0; $row &lt; 32; ++$row) {<br>for (my $col = 0; $col &lt; 8; ++$col) {<br>print get_color($color);<br>$color++;<br>}<br>print &#34;\n&#34;;<br>}<br><br>sub get_color {<br>    my ($color) = @_;<br>    my $number = sprintf &#39;%3d&#39;, $color;<br>    return qq/${bg}${color}m ${number} ${rs} ${fg}${color}m${number}${rs} /;<br>}</code></span>
+    <span class='slacklog-text'><pre>#!/usr/bin/env perl<br><br>use strict;<br>use warnings;<br><br>my $fg = &#34;\x1b[38;5;&#34;;<br>my $bg = &#34;\x1b[48;5;&#34;;<br>my $rs = &#34;\x1b[0m&#34;;<br><br>my $color = 0;<br><br>for (my $row = 0; $row &lt; 32; ++$row) {<br>for (my $col = 0; $col &lt; 8; ++$col) {<br>print get_color($color);<br>$color++;<br>}<br>print &#34;\n&#34;;<br>}<br><br>sub get_color {<br>    my ($color) = @_;<br>    my $number = sprintf &#39;%3d&#39;, $color;<br>    return qq/${bg}${color}m ${number} ${rs} ${fg}${color}m${number}${rs} /;<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1583833610.487700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -1152,7 +1152,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
     <span class='slacklog-name'>yutakatay</span>
     <a class='slacklog-datetime' href='#1583836766.002100'>10日 19:39:27</a>
-    <span class='slacklog-text'>apropos知らなかったです！便利だけど情報量おおいなw<br>一応 <code>apropos color code</code><br><code>console_codes (4)    - Linux console escape and control sequences</code></span>
+    <span class='slacklog-text'>apropos知らなかったです！便利だけど情報量おおいなw<br>一応 <code>apropos color code</code><br><pre>console_codes (4)    - Linux console escape and control sequences</pre></span>
   </span>
   <span class='slacklog-message' id='1583836790.002400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -2520,7 +2520,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
     <span class='slacklog-name'>yutakatay</span>
     <a class='slacklog-datetime' href='#1584003205.138100'>12日 17:53:26</a>
-    <span class='slacklog-text'>そういえばworkaroundしちゃってますけど、  <code>fzf_preview#command#file_list_command_options(&#39;fzf&#39;)</code> からデフォルト値引っ張ってきても、Helptagsとかがうまく動かなかったです。（エラーがでる）<br><code>Error detected while processing function &lt;SNR&gt;292_set_fzf_last_query:<br>line    6:<br>E121: Undefined variable: s:resource_func_name</code><br>--expect=と--promptを削除すれば動きました。<br><a href='https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844'>https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844</a></span>
+    <span class='slacklog-text'>そういえばworkaroundしちゃってますけど、  <code>fzf_preview#command#file_list_command_options(&#39;fzf&#39;)</code> からデフォルト値引っ張ってきても、Helptagsとかがうまく動かなかったです。（エラーがでる）<br><pre>Error detected while processing function &lt;SNR&gt;292_set_fzf_last_query:<br>line    6:<br>E121: Undefined variable: s:resource_func_name</pre><br>--expect=と--promptを削除すれば動きました。<br><a href='https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844'>https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844</a></span>
     <span class='slacklog-attachments'>
           <span class='slacklog-attachment slacklog-attachment-github'>
             <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
@@ -2630,7 +2630,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
     <span class='slacklog-name'>yutakatay</span>
     <a class='slacklog-datetime' href='#1584084545.145900'>13日 16:29:06</a>
-    <span class='slacklog-text'>いえ、オプションとってきたらそれが使える状態にあってほしいだけな感じです。<br><br>FZF_DEFAULT_OPTSがこれだとvim上ではエラーがでますね。（ちょっと私もコードまでは追えてないです。。。fzfでは大丈夫です）<br><br><code>--multi --reverse --ansi --bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up,?:toggle-preview   --expect=ctrl-v,ctrl-x,ctrl-q,ctrl-s,ctrl-t --prompt=&#34;fzf&gt; &#34;<br> --preview=&#39;[[ &#34;$(file --mime {})&#34; =<del> binary ]] &amp;&amp; echo &#34;{} is a binary file&#34; || bat --color=always --style=grid {-1}&#39;</code><br>現状これがほしい感じです。<br><br><code>--multi --reverse --ansi --bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up,?:toggle-preview    --preview=&#39;[[ &#34;$(file --mime {})&#34; =</del> binary ]] &amp;&amp; echo &#34;{}<br>is a binary file&#34; || bat --color=always --style=grid {-1}&#39;</code></span>
+    <span class='slacklog-text'>いえ、オプションとってきたらそれが使える状態にあってほしいだけな感じです。<br><br>FZF_DEFAULT_OPTSがこれだとvim上ではエラーがでますね。（ちょっと私もコードまでは追えてないです。。。fzfでは大丈夫です）<br><br><pre>--multi --reverse --ansi --bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up,?:toggle-preview   --expect=ctrl-v,ctrl-x,ctrl-q,ctrl-s,ctrl-t --prompt=&#34;fzf&gt; &#34;<br> --preview=&#39;[[ &#34;$(file --mime {})&#34; =<del> binary ]] &amp;&amp; echo &#34;{} is a binary file&#34; || bat --color=always --style=grid {-1}&#39;</pre><br>現状これがほしい感じです。<br><br><pre>--multi --reverse --ansi --bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up,?:toggle-preview    --preview=&#39;[[ &#34;$(file --mime {})&#34; =</del> binary ]] &amp;&amp; echo &#34;{}<br>is a binary file&#34; || bat --color=always --style=grid {-1}&#39;</pre></span>
   </span>
   <span class='slacklog-message' id='1584084800.146600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2960,7 +2960,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
     <span class='slacklog-name'>yutakatay</span>
     <a class='slacklog-datetime' href='#1585132374.007000'>25日 19:32:55</a>
-    <span class='slacklog-text'>あとzshで便利なのは↓とかですかね。ディレクトリをブラウザみたいに戻る＋進む感じで移動できます。<br><br><code>zle -N dir_forward<br>zle -N dir_back<br>bindkey &#39;[1;6C&#39; dir_forward<br>bindkey &#39;[1;6D&#39; dir_back</code></span>
+    <span class='slacklog-text'>あとzshで便利なのは↓とかですかね。ディレクトリをブラウザみたいに戻る＋進む感じで移動できます。<br><br><pre>zle -N dir_forward<br>zle -N dir_back<br>bindkey &#39;[1;6C&#39; dir_forward<br>bindkey &#39;[1;6D&#39; dir_back</pre></span>
   </span>
   <span class='slacklog-message' id='1585134212.008500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
@@ -3108,7 +3108,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
     <span class='slacklog-name'>tsuyoshi_cho</span>
     <a class='slacklog-datetime' href='#1585214095.024200'>26日 18:14:56</a>
-    <span class='slacklog-text'><code> --header-insertion=&lt;value&gt;</code><br>でいけるのではないか感はあるが、これを個別プロジェクトだけに反映しないとか...</span>
+    <span class='slacklog-text'><pre> --header-insertion=&lt;value&gt;</pre><br>でいけるのではないか感はあるが、これを個別プロジェクトだけに反映しないとか...</span>
   </span>
   <span class='slacklog-message' id='1585214112.024700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -3132,7 +3132,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
     <span class='slacklog-name'>tsuyoshi_cho</span>
     <a class='slacklog-datetime' href='#1585549431.029900'>30日 15:23:52</a>
-    <span class='slacklog-text'><code>(user) on (host) in ~ took 1m10s<br>🕒[ 2020-03-30T15:22:54 ] ❯</code><br>今は上みたいになる</span>
+    <span class='slacklog-text'><pre>(user) on (host) in ~ took 1m10s<br>🕒[ 2020-03-30T15:22:54 ] ❯</pre><br>今は上みたいになる</span>
   </span>
   <span class='slacklog-message' id='1585549462.030700'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
@@ -3250,7 +3250,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/6a6d6d3537875bb94e3fa9e685112e1a.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-48.png'>
     <span class='slacklog-name'>cappyzawa</span>
     <a class='slacklog-datetime' href='#1585633974.046400'>31日 14:52:55</a>
-    <span class='slacklog-text'>自分はstarshipをzinitでいれるようにしてます<br><code>zinit ice lucid as&#34;program&#34; from&#34;gh-r&#34; bpick&#34;starship-x86_64-*.tar.gz&#34; \<br>  atload&#39;export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml&#39;<br>zinit light starship/starship</code></span>
+    <span class='slacklog-text'>自分はstarshipをzinitでいれるようにしてます<br><pre>zinit ice lucid as&#34;program&#34; from&#34;gh-r&#34; bpick&#34;starship-x86_64-*.tar.gz&#34; \<br>  atload&#39;export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml&#39;<br>zinit light starship/starship</pre></span>
   </span>
   <span class='slacklog-message' id='1585634054.047600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
@@ -3394,7 +3394,7 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
     <span class='slacklog-name'>ゴリラ</span>
     <a class='slacklog-datetime' href='#1585642090.066200'>31日 17:08:11</a>
-    <span class='slacklog-text'><code>$ ghq create gorilla<br>$ cd $GOPATH/src/github.com/gorilla<br>$ hub create</code></span>
+    <span class='slacklog-text'><pre>$ ghq create gorilla<br>$ cd $GOPATH/src/github.com/gorilla<br>$ hub create</pre></span>
   </span>
   <span class='slacklog-message' id='1585642113.066500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
