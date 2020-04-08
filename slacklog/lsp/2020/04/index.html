@@ -84,6 +84,17 @@ title: vim-jp.slack.com log - &#35lsp - 2020年04月
   <span class='slacklog-text'>&lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585751019107900&gt;
 自分も再現しないですね……。 `g:asyncomplete_preprocessor` を自前でやってるのが理由かと思ってデフォルトでやってみましたが無事にポップアップは出ませんでした。</span>
     <span class='slacklog-attachments'>
+          <span class='slacklog-attachment slacklog-attachment-other'>
+            <div class='slacklog-attachment-other-text'>お暇なasyncomplete利用者のかたへ
+もしよければ、以下の操作での結果がどうなったか、教えていただけますか?
+1. 環境的にはpopupで補完が出る状況 + C-eなどにキャンセルがマップされてること
+2. 補完が行なわれるバッファでキー入力開始
+3. 補完の途中の状態でC-eなどで補完キャンセル
+4. そのままinsert modeの状態でスペースを入力
+```inoremap &amp;lt;expr&amp;gt; &amp;lt;C-e&amp;gt; pumvisible() ? asyncomplete#cancel_popup() : &#34;\&amp;lt;C-e&amp;gt;&#34;```
+確認したいこと: キャンセルした補完がポップアップされるか?
+(ポップアップが出ない、あるいは違う内容の補完が始まるなら、期待動作のはず、同じ補完が出ちゃうのはたぶん期待外動作)</div>
+          </span>
     </span>
   </span>
   <span class='slacklog-message' id='1585796114.115000'>
@@ -446,6 +457,9 @@ issueとして出してはいるのですが、
 &lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585798671115100&gt;
 は、やっぱりなにかしらの環境問題ですよね...</span>
     <span class='slacklog-attachments'>
+          <span class='slacklog-attachment slacklog-attachment-other'>
+            <div class='slacklog-attachment-other-text'>lsp_server_initが飛んでない...</div>
+          </span>
     </span>
   </span>
   <span class='slacklog-message' id='1585808656.146600'>
@@ -492,6 +506,10 @@ nestedが必要とかじゃないはずだと思うのですが...</span>
   <a class='slacklog-datetime' href='#1585811295.151800'>2日 16:08:16</a>
   <span class='slacklog-text'>&lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585802517125700&gt;</span>
     <span class='slacklog-attachments'>
+          <span class='slacklog-attachment slacklog-attachment-other'>
+            <div class='slacklog-attachment-other-text'>&lt;https://gist.github.com/tsuyoshicho/0bab16b946cf4fbbb7c540ac03c18664&gt;
+秘密(でもなんでもない) ログのfull</div>
+          </span>
     </span>
   </span>
   <span class='slacklog-message' id='1585812886.153500'>
@@ -805,6 +823,20 @@ E117: 未知の関数です: cutlass#getVersion```
   <span class='slacklog-text'>はいそうです
 &lt;https://vim-jp.slack.com/archives/CQ57P4XU4/p1585836587168000&gt;</span>
     <span class='slacklog-attachments'>
+          <span class='slacklog-attachment slacklog-attachment-other'>
+            <div class='slacklog-attachment-other-text'>yoinkを切って(前のyankroundに戻して)、再度ログを取りましたら...
+
+```s:on_stdout client option on_notification() error Vim(call):E20: マークは設定されていません User Autocommands for &#34;lsp_server_init&#34;```
+今度は出所がわからないorz
+
+```                    &#34; call client&#39;s on_notification first
+                    try
+                      call l:ctx[&#39;opts&#39;][&#39;on_notification&#39;](a:id, l:on_notification_data, &#39;on_notification&#39;)
+                    catch
+                      echomsg &#39;s:on_stdout client option on_notification() error&#39; v:exception v:throwpoint
+                      call lsp#log(&#39;s:on_stdout client option on_notification() error&#39;, v:exception ,v:throwpoint)
+                    endtry```</div>
+          </span>
     </span>
   </span>
   <span class='slacklog-message' id='1585837562.174000'>
@@ -1306,6 +1338,14 @@ Plug &#39;hrsh7th/vim-vsnip-integ&#39;
   <span class='slacklog-text'>&lt;https://qiita.com/yaegassy/items/8b3429196ea16cf754c0&gt;
 ネ申様ありがとう</span>
     <span class='slacklog-attachments'>
+          <span class='slacklog-attachment slacklog-attachment-other'>
+            <div>
+              <span class='slacklog-attachment-other-serviceicon'><img src='https://cdn.qiita.com/assets/favicons/public/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png'></span>
+              <span class='slacklog-attachment-other-servicename'>Qiita</span>
+            </div>
+            <div class='slacklog-attachment-other-title'><a href='https://qiita.com/yaegassy/items/8b3429196ea16cf754c0'>VimでPHPのオートローダー(vendor/autoload.php)を認識し補完や定義ジャンプを賢く行う（ついでにLaravelのファサードも補完） - Qiita</a></div>
+            <div class='slacklog-attachment-other-text'># はじめに 個人的に最近はPythonやJavaScript(JSはみんなそうですよね)を触ってたりしますがPHPネタです。そしてVimネタです。 いや、むしろサーバーやクラウドなどのインフラをイジイジばかりか、コードのレビューを...</div>
+          </span>
     </span>
   </span>
   <span class='slacklog-message' id='1586097100.246000'>
