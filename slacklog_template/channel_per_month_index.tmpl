@@ -4,7 +4,7 @@ layout: slacklog
 title: vim-jp.slack.com log - &#35<< .channel.Name >> - << .msgPerMonth.Year >>年<< .msgPerMonth.Month >>月
 ---
 <div>
-<h2><a href='/slacklog/'>vim-jp.slack.com log</a> - <a href='/slacklog/<< .channel.Name >>/'>&#35<< .channel.Name >></a> - << .msgPerMonth.Year >>年<< .msgPerMonth.Month >>月</h2>
+<h2><a href='<< $.baseUrl >>'>vim-jp.slack.com log</a> - <a href='<< $.baseUrl >><< .channel.Name >>/'>&#35<< .channel.Name >></a> - << .msgPerMonth.Year >>年<< .msgPerMonth.Month >>月</h2>
 
 {% raw %}
 <<- range .msgPerMonth.Messages >>

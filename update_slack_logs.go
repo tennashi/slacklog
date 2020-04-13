@@ -24,17 +24,17 @@ func main() {
 }
 
 func doMain() error {
-	if len(os.Args) < 4 {
-		fmt.Println("Usage: go run scripts/update_slack_logs.go {basedir} {indir} {outdir}")
-		fmt.Println("   ex: go run scripts/update_slack_logs.go scripts/update_slack_logs/ slacklog_data/ slacklog/")
+	if len(os.Args) < 5 {
+		fmt.Println("Usage: go run scripts/update_slack_logs.go {config.json} {templatedir} {indir} {outdir}")
 		return nil
 	}
 
-	baseDir := filepath.Clean(os.Args[1])
-	inDir := filepath.Clean(os.Args[2])
-	outDir := filepath.Clean(os.Args[3])
+	configJsonPath := filepath.Clean(os.Args[1])
+	templateDir := filepath.Clean(os.Args[2])
+	inDir := filepath.Clean(os.Args[3])
+	outDir := filepath.Clean(os.Args[4])
 
-	cfg, err := readConfig(filepath.Join(baseDir, "config.json"))
+	cfg, err := readConfig(configJsonPath)
 	if err != nil {
 		return fmt.Errorf("could not read config: %s", err)
 	}
@@ -65,7 +65,7 @@ func doMain() error {
 			return err
 		}
 		// Generate {outdir}/{channel}/index.html (links to {channel}/{year}/{month})
-		content, err := genChannelIndex(inDir, filepath.Join(baseDir, "template", "channel_index.tmpl"), &channels[i], msgMap)
+		content, err := genChannelIndex(inDir, filepath.Join(templateDir, "channel_index.tmpl"), &channels[i], msgMap, cfg)
 		if err != nil {
 			return fmt.Errorf("could not generate %s/%s: %s", outDir, channels[i].Name, err)
 		}
@@ -78,7 +78,7 @@ func doMain() error {
 			if err := mkdir(filepath.Join(outDir, channels[i].Name, msgPerMonth.Year, msgPerMonth.Month)); err != nil {
 				return fmt.Errorf("could not create %s/%s/%s/%s directory: %s", outDir, channels[i].Name, msgPerMonth.Year, msgPerMonth.Month, err)
 			}
-			content, err := genChannelPerMonthIndex(inDir, filepath.Join(baseDir, "template", "channel_per_month_index.tmpl"), &channels[i], msgPerMonth, userMap, threadMap, cfg)
+			content, err := genChannelPerMonthIndex(inDir, filepath.Join(templateDir, "channel_per_month_index.tmpl"), &channels[i], msgPerMonth, userMap, threadMap, cfg)
 			if err != nil {
 				return fmt.Errorf("could not generate %s/%s/%s/%s/index.html: %s", outDir, channels[i].Name, msgPerMonth.Year, msgPerMonth.Month, err)
 			}
@@ -99,7 +99,7 @@ func doMain() error {
 	channels = newChannels
 
 	// Generate {outdir}/index.html (links to {channel})
-	content, err := genIndex(channels, filepath.Join(baseDir, "template", "index.tmpl"))
+	content, err := genIndex(channels, filepath.Join(templateDir, "index.tmpl"), cfg)
 	err = ioutil.WriteFile(filepath.Join(outDir, "index.html"), content, 0666)
 	if err != nil {
 		return fmt.Errorf("could not create %s/index.html: %s", outDir, err)
@@ -120,8 +120,9 @@ func visibleMsg(msg *message) bool {
 	return msg.Subtype == "" || msg.Subtype == "bot_message" || msg.Subtype == "thread_broadcast"
 }
 
-func genIndex(channels []channel, tmplFile string) ([]byte, error) {
+func genIndex(channels []channel, tmplFile string, cfg *config) ([]byte, error) {
 	params := make(map[string]interface{})
+	params["baseUrl"] = cfg.BaseUrl
 	params["channels"] = channels
 	var out bytes.Buffer
 	name := filepath.Base(tmplFile)
@@ -133,8 +134,9 @@ func genIndex(channels []channel, tmplFile string) ([]byte, error) {
 	return out.Bytes(), err
 }
 
-func genChannelIndex(inDir, tmplFile string, channel *channel, msgMap map[string]*msgPerMonth) ([]byte, error) {
+func genChannelIndex(inDir, tmplFile string, channel *channel, msgMap map[string]*msgPerMonth, cfg *config) ([]byte, error) {
 	params := make(map[string]interface{})
+	params["baseUrl"] = cfg.BaseUrl
 	params["channel"] = channel
 	params["msgMap"] = msgMap
 	var out bytes.Buffer
@@ -149,6 +151,7 @@ func genChannelIndex(inDir, tmplFile string, channel *channel, msgMap map[string
 
 func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMonth *msgPerMonth, userMap map[string]*user, threadMap map[string][]*message, cfg *config) ([]byte, error) {
 	params := make(map[string]interface{})
+	params["baseUrl"] = cfg.BaseUrl
 	params["channel"] = channel
 	params["msgPerMonth"] = msgPerMonth
 	params["threadMap"] = threadMap
@@ -492,6 +495,7 @@ func readMessages(msgJsonPath string, msgPerMonth *msgPerMonth, threadMap map[st
 
 type config struct {
 	EditedSuffix string   `json:"edited_suffix"`
+	BaseUrl      string   `json:"base_url"`
 	Channels     []string `json:"channels"`
 }
 

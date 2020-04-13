@@ -11,7 +11,7 @@ title: vim-jp.slack.com log
 
 <ul>
 <<- range .channels >>
-<li><a href='/slacklog/<< .Name >>/'>#<< .Name >></a></li>
+<li><a href='<< $.baseUrl >><< .Name >>/'>#<< .Name >></a></li>
 <<- end >>
 </ul>
 
