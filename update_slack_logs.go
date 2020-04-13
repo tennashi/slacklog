@@ -157,10 +157,11 @@ func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMon
 	params["threadMap"] = threadMap
 	var out bytes.Buffer
 
+	// TODO tokenize/parse message.Text
 	var reLinkWithTitle = regexp.MustCompile(`&lt;(https?://[^>]+?\|(.+?))&gt;`)
 	var reLink = regexp.MustCompile(`&lt;(https?://[^>]+?)&gt;`)
 	// go regexp does not support back reference
-	var reCode = regexp.MustCompile("[`｀]{3}(.+?)[`｀]{3}")
+	var reCode = regexp.MustCompile("`{3}|｀{3}")
 	var reCodeShort = regexp.MustCompile("[`｀]([^`]+?)[`｀]")
 	var reDel = regexp.MustCompile(`~([^~]+?)~`)
 	var reMention = regexp.MustCompile(`&lt;@(\w+?)&gt;`)
@@ -169,24 +170,30 @@ func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMon
 	var text2Html = func(text string) string {
 		text = html.EscapeString(html.UnescapeString(text))
 		text = reNewline.ReplaceAllString(text, "<br>")
-		text = reLinkWithTitle.ReplaceAllString(text, "<a href='${1}'>${2}</a>")
-		text = reLink.ReplaceAllString(text, "<a href='${1}'>${1}</a>")
-		text = reCode.ReplaceAllString(text, "<pre>${1}</pre>")
-		text = reCodeShort.ReplaceAllString(text, "<code>${1}</code>")
-		text = reDel.ReplaceAllString(text, "<del>${1}</del>")
-		text = reMention.ReplaceAllStringFunc(text, func(whole string) string {
-			m := reMention.FindStringSubmatch(whole)
-			if name := getDisplayNameByUserId(m[1], userMap); name != "" {
-				return "@" + name
+		chunks := reCode.Split(text, -1)
+		for i := range chunks {
+			if i%2 == 0 {
+				chunks[i] = reLinkWithTitle.ReplaceAllString(chunks[i], "<a href='${1}'>${2}</a>")
+				chunks[i] = reLink.ReplaceAllString(chunks[i], "<a href='${1}'>${1}</a>")
+				chunks[i] = reCodeShort.ReplaceAllString(chunks[i], "<code>${1}</code>")
+				chunks[i] = reDel.ReplaceAllString(chunks[i], "<del>${1}</del>")
+				chunks[i] = reMention.ReplaceAllStringFunc(chunks[i], func(whole string) string {
+					m := reMention.FindStringSubmatch(whole)
+					if name := getDisplayNameByUserId(m[1], userMap); name != "" {
+						return "@" + name
+					}
+					return whole
+				})
+				chunks[i] = reChannel.ReplaceAllStringFunc(chunks[i], func(whole string) string {
+					channelName := reChannel.FindStringSubmatch(whole)[1]
+					name := html.EscapeString(channelName)
+					return "<a href='/slacklog/" + name + "/'>#" + name + "</a>"
+				})
+			} else {
+				chunks[i] = "<pre>" + chunks[i] + "</pre>"
 			}
-			return whole
-		})
-		text = reChannel.ReplaceAllStringFunc(text, func(whole string) string {
-			channelName := reChannel.FindStringSubmatch(whole)[1]
-			name := html.EscapeString(channelName)
-			return "<a href='/slacklog/" + name + "/'>#" + name + "</a>"
-		})
-		return text
+		}
+		return strings.Join(chunks, "")
 	}
 	var escapeText = func(text string) string {
 		text = html.EscapeString(html.UnescapeString(text))

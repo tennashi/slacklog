@@ -3432,7 +3432,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>ycino</span>
     <a class='slacklog-datetime' href='#1583828818.008000'>10日 17:26:59</a>
 
-    <span class='slacklog-text'><pre>  desc &#39;Override vscode settings file&#39;<br>  task settings: [&#39;.config/vscode/settings.json&#39;, &#39;.config/vscode/keybindings.json&#39;, &#39;.config/vscode/locale.json&#39;] do<br>    config_root = &#39;<del>/Library/Application\ Support/Code/User&#39;<br>    sh &#34;ln -sfn </del>/.config/vscode/settings.json #{config_root}/settings.json&#34;<br>    sh &#34;ln -sfn <del>/.config/vscode/keybindings.json #{config_root}/keybindings.json&#34;<br>    sh &#34;ln -sfn </del>/.config/vscode/locale.json #{config_root}/locale.json&#34;<br>  end</pre><br>Rakeでやってる</span>
+    <span class='slacklog-text'><pre>  desc &#39;Override vscode settings file&#39;<br>  task settings: [&#39;.config/vscode/settings.json&#39;, &#39;.config/vscode/keybindings.json&#39;, &#39;.config/vscode/locale.json&#39;] do<br>    config_root = &#39;~/Library/Application\ Support/Code/User&#39;<br>    sh &#34;ln -sfn ~/.config/vscode/settings.json #{config_root}/settings.json&#34;<br>    sh &#34;ln -sfn ~/.config/vscode/keybindings.json #{config_root}/keybindings.json&#34;<br>    sh &#34;ln -sfn ~/.config/vscode/locale.json #{config_root}/locale.json&#34;<br>  end</pre><br>Rakeでやってる</span>
   </span>
   <span class='slacklog-message' id='1583828854.008200'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -5814,7 +5814,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>ycino</span>
     <a class='slacklog-datetime' href='#1584194336.235800'>14日 22:58:57</a>
 
-    <span class='slacklog-text'>いつの間にかcheckhealthでperlが出るようになってる<br>使ってるプラグインあるのかな・・・？<br><pre>## Perl provider (optional)<br>  - WARNING: <code>perl</code> and <code>cpanm</code> must be in $PATH.<br>    - ADVICE:<br>      - Install Perl and cpanminus and verify that <code>perl</code> and <code>cpanm</code> commands work.</pre></span>
+    <span class='slacklog-text'>いつの間にかcheckhealthでperlが出るようになってる<br>使ってるプラグインあるのかな・・・？<br><pre>## Perl provider (optional)<br>  - WARNING: `perl` and `cpanm` must be in $PATH.<br>    - ADVICE:<br>      - Install Perl and cpanminus and verify that `perl` and `cpanm` commands work.</pre></span>
     <details class='slacklog-thread'>
       <summary class-'slacklog-thread-summary'>1 件の返信
         <span class='slacklog-thread-mtime'>最終返信:15日 09:32:38</span>
@@ -6039,7 +6039,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>vimhelp</span>
     <a class='slacklog-datetime' href='#1584348415.256300'>16日 17:46:56</a>
 
-    <span class='slacklog-text'><pre><br>                                                *&#39;* *&#39;a* *<code>* *</code>a*<br>&#39;{a-z}  `{a-z}          カレントバッファのマーク {a-z} へジャンプ。<br></pre></span>
+    <span class='slacklog-text'><pre><br>                                                *&#39;* *&#39;a* *`* *`a*<br>&#39;{a-z}  `{a-z}          カレントバッファのマーク {a-z} へジャンプ。<br></pre></span>
   </span>
   <span class='slacklog-message' id='1584348425.256500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -6074,7 +6074,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>vimhelp</span>
     <a class='slacklog-datetime' href='#1584348453.257100'>16日 17:47:34</a>
 
-    <span class='slacklog-text'><pre><br>                                                        *&#39;&#39;* *`<code>*<br>&#39;&#39;  </code><code>                  カーソルがジャンプする直前にいた、もしくは最後の &#34;m&#39;&#34;<br>                        か &#34;m</code>&#34; コマンドが行われた位置に移動します。<br>                        |:keepjumps| コマンドモディファイヤが使われた場合には<br>                        セットされません。<br>                        |restore-position| も参照。<br></pre></span>
+    <span class='slacklog-text'><pre><br>                                                        *&#39;&#39;* *``*<br>&#39;&#39;  ``                  カーソルがジャンプする直前にいた、もしくは最後の &#34;m&#39;&#34;<br>                        か &#34;m`&#34; コマンドが行われた位置に移動します。<br>                        |:keepjumps| コマンドモディファイヤが使われた場合には<br>                        セットされません。<br>                        |restore-position| も参照。<br></pre></span>
   </span>
   <span class='slacklog-message' id='1584348473.257500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -6239,7 +6239,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
                 <span class='slacklog-attachment-other-servicename'>Qiita</span>
               </div>
               <div class='slacklog-attachment-other-title'><a href='https://qiita.com/yuya_presto/items/ef199e08021dea777715#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E5%A4%89%E6%9B%B4%E3%82%92%E8%BF%BD%E8%B7%A1%E3%81%97%E3%81%A6log--p%E3%82%84diff%E3%82%92%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B'>gitのdiff, status, logを極限までコンパクト化＋便利化する - Qiita</a></div>
-              <div class='slacklog-attachment-other-text'>gitで色表示が有効になっていることを前提としています。まだの方は下記のコマンドで設定してください。 ```bash: git config --global color.ui auto # 出力先が端末のときに色をつけて表示...</div>
+              <div class='slacklog-attachment-other-text'>gitで色表示が有効になっていることを前提としています。まだの方は下記のコマンドで設定してください。 <pre>bash: git config --global color.ui auto # 出力先が端末のときに色をつけて表示...</pre></div>
             </span>
         </span>
       </span>
@@ -6324,7 +6324,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
             <span class='slacklog-attachment-other-servicename'>Qiita</span>
           </div>
           <div class='slacklog-attachment-other-title'><a href='https://qiita.com/yuya_presto/items/ef199e08021dea777715#%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E5%A4%89%E6%9B%B4%E3%82%92%E8%BF%BD%E8%B7%A1%E3%81%97%E3%81%A6log--p%E3%82%84diff%E3%82%92%E3%82%B3%E3%83%B3%E3%83%91%E3%82%AF%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B'>gitのdiff, status, logを極限までコンパクト化＋便利化する - Qiita</a></div>
-          <div class='slacklog-attachment-other-text'>gitで色表示が有効になっていることを前提としています。まだの方は下記のコマンドで設定してください。 ```bash: git config --global color.ui auto # 出力先が端末のときに色をつけて表示...</div>
+          <div class='slacklog-attachment-other-text'>gitで色表示が有効になっていることを前提としています。まだの方は下記のコマンドで設定してください。 <pre>bash: git config --global color.ui auto # 出力先が端末のときに色をつけて表示...</pre></div>
         </span>
     </span>
   </span>
@@ -6423,7 +6423,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1584369484.284100'>16日 23:38:05</a>
 
-    <span class='slacklog-text'><pre>$ go get <a href='http://github.com/mattn/go-sixel/cmd/gosr|github.com/mattn/go-sixel/cmd/gosr'>github.com/mattn/go-sixel/cmd/gosr</a></pre><br>して<br><pre>$ gosr input.png &gt; output.drcs</pre><br>すると出来上がります。</span>
+    <span class='slacklog-text'><pre>$ go get &lt;http://github.com/mattn/go-sixel/cmd/gosr|github.com/mattn/go-sixel/cmd/gosr&gt;</pre><br>して<br><pre>$ gosr input.png &gt; output.drcs</pre><br>すると出来上がります。</span>
   </span>
   <span class='slacklog-message' id='1584369509.284500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -6502,7 +6502,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>tomoya</span>
     <a class='slacklog-datetime' href='#1584370794.291100'>16日 23:59:55</a>
 
-    <span class='slacklog-text'>こういうのはむりすかね?<br><br><pre>$ curl -vs <a href='http://wttr.in/Tokyo.png|wttr.in/Tokyo.png'>wttr.in/Tokyo.png</a> 2&gt;&amp;1 | gosr<br>Usage of gosr: gosr [images]<br>  -blur string<br>    	Blur image by [Dev,Size]<br>  -resize string<br>    	Resize image by [WxH]<br>  -rotate float<br>    	Rotate image by [N] deg</pre><br></span>
+    <span class='slacklog-text'>こういうのはむりすかね?<br><br><pre>$ curl -vs &lt;http://wttr.in/Tokyo.png|wttr.in/Tokyo.png&gt; 2&gt;&amp;1 | gosr<br>Usage of gosr: gosr [images]<br>  -blur string<br>    	Blur image by [Dev,Size]<br>  -resize string<br>    	Resize image by [WxH]<br>  -rotate float<br>    	Rotate image by [N] deg</pre><br></span>
   </span>
   <span class='slacklog-message' id='1584370853.291400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -6635,7 +6635,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>tomoya</span>
     <a class='slacklog-datetime' href='#1584372865.297400'>17日 00:34:26</a>
 
-    <span class='slacklog-text'><pre>curl -s <a href='https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.gif'>https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.gif</a> | gosgif</pre><br></span>
+    <span class='slacklog-text'><pre>curl -s &lt;https://media.giphy.com/media/ule4vhcY1xEKQ/giphy.gif&gt; | gosgif</pre><br></span>
   </span>
   <span class='slacklog-message' id='1584372872.297600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b52d91913fe73adf7f68f393c397a6d5.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0022-48.png'>
@@ -6910,7 +6910,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
             <span class='slacklog-attachment-other-servicename'>Qiita</span>
           </div>
           <div class='slacklog-attachment-other-title'><a href='https://qiita.com/pure-adachi/items/ba82b03dba3ebabc6312'>Githubまたはローカルのnpm のパッケージをinstallする方法 - Qiita</a></div>
-          <div class='slacklog-attachment-other-text'># はじめに <code>npm</code>パッケージを作ろうとした時、公開前に手元のプロジェクトへインストールして動作を試す方法が分からなかったので調べてみました。 # Githubからインストール ```sh $ npm install acc...</div>
+          <div class='slacklog-attachment-other-text'># はじめに <code>npm</code>パッケージを作ろうとした時、公開前に手元のプロジェクトへインストールして動作を試す方法が分からなかったので調べてみました。 # Githubからインストール <pre>sh $ npm install acc...</pre></div>
         </span>
     </span>
   </span>
@@ -10987,7 +10987,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>vimhelp</span>
     <a class='slacklog-datetime' href='#1584604827.160600'>19日 17:00:28</a>
 
-    <span class='slacklog-text'><pre><br>glob({expr} [, {nosuf} [, {list} [, {alllinks}]]])              *glob()*<br>                {expr}内のファイル名のワイルドカードを展開する。特殊文字につい<br>                ては|wildcards|を参照。<br> <br>                {nosuf} に|TRUE|を指定しない限り、&#39;suffixes&#39; と &#39;wildignore&#39;<br>                が適用される。つまり &#39;wildignore&#39; のパターンにマッチする名前は<br>                スキップされ、&#39;suffixes&#39; がマッチの順番に影響を与える。<br>                &#39;wildignorecase&#39; は常に適用される。<br> <br>                {list} が指定されその値が|TRUE|なら、マッチしたすべてのファイ<br>                ルがリストとして返される。リストを使うことで、改行を含むファイ<br>                ル名があっても結果を正しく受け取ることができる。<br>                そうでない場合は結果は文字列で返される。その場合、複数のマッチ<br>                があるときはそれらは文字 &lt;NL&gt; で区切られる。<br> <br>                展開が失敗した場合、空の文字列またはリストが返される。<br> <br>                マッチの数を制限するなど、複雑なことをする必要がある場合にも<br>                |readdir()| を使用することができる。<br> <br>                存在しないファイル名は結果に含まれない。シンボリックリンクは、<br>                それが存在するファイルを指す場合のみ含まれる。<br>                ただし、{alllinks} 引数が存在し、それが|TRUE|である場合はすべ<br>                てのシンボリックリンクが含まれる。<br> <br>                多くのシステムではバッククォート(「<code>」という文字のこと)を、外<br>                部コマンドの実行結果からファイル名を取得するために使用できる。<br>                例:  <br>                        :let tagfiles = glob(&#34;</code>find . -name tags -print`&#34;)<br>                        :let &amp;tags = substitute(tagfiles, &#34;\n&#34;, &#34;,&#34;, &#34;g&#34;)<br>                バッククォート内のプログラムの実行結果は、一行に一つずつの項目<br>                が含まれてなければならない。項目内のスペースは許容される。<br> <br>                特殊なVimの変数を展開するためには|expand()|を参照。外部コマン<br>                ドの生の出力を得るためには|system()|を参照。<br> <br>                |method| としても使用できる:  <br>                        GetExpr()-&gt;glob()<br></pre></span>
+    <span class='slacklog-text'><pre><br>glob({expr} [, {nosuf} [, {list} [, {alllinks}]]])              *glob()*<br>                {expr}内のファイル名のワイルドカードを展開する。特殊文字につい<br>                ては|wildcards|を参照。<br> <br>                {nosuf} に|TRUE|を指定しない限り、&#39;suffixes&#39; と &#39;wildignore&#39;<br>                が適用される。つまり &#39;wildignore&#39; のパターンにマッチする名前は<br>                スキップされ、&#39;suffixes&#39; がマッチの順番に影響を与える。<br>                &#39;wildignorecase&#39; は常に適用される。<br> <br>                {list} が指定されその値が|TRUE|なら、マッチしたすべてのファイ<br>                ルがリストとして返される。リストを使うことで、改行を含むファイ<br>                ル名があっても結果を正しく受け取ることができる。<br>                そうでない場合は結果は文字列で返される。その場合、複数のマッチ<br>                があるときはそれらは文字 &lt;NL&gt; で区切られる。<br> <br>                展開が失敗した場合、空の文字列またはリストが返される。<br> <br>                マッチの数を制限するなど、複雑なことをする必要がある場合にも<br>                |readdir()| を使用することができる。<br> <br>                存在しないファイル名は結果に含まれない。シンボリックリンクは、<br>                それが存在するファイルを指す場合のみ含まれる。<br>                ただし、{alllinks} 引数が存在し、それが|TRUE|である場合はすべ<br>                てのシンボリックリンクが含まれる。<br> <br>                多くのシステムではバッククォート(「`」という文字のこと)を、外<br>                部コマンドの実行結果からファイル名を取得するために使用できる。<br>                例:  <br>                        :let tagfiles = glob(&#34;`find . -name tags -print`&#34;)<br>                        :let &amp;tags = substitute(tagfiles, &#34;\n&#34;, &#34;,&#34;, &#34;g&#34;)<br>                バッククォート内のプログラムの実行結果は、一行に一つずつの項目<br>                が含まれてなければならない。項目内のスペースは許容される。<br> <br>                特殊なVimの変数を展開するためには|expand()|を参照。外部コマン<br>                ドの生の出力を得るためには|system()|を参照。<br> <br>                |method| としても使用できる:  <br>                        GetExpr()-&gt;glob()<br></pre></span>
   </span>
   <span class='slacklog-message' id='1584604839.160900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -23525,7 +23525,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>heavenshell</span>
     <a class='slacklog-datetime' href='#1585560321.128200'>30日 18:25:22</a>
 
-    <span class='slacklog-text'><pre>curl <a href='https://corona-stats.online/japan/graph'>https://corona-stats.online/japan/graph</a></pre><br>グラフとか出るんすね…。すげ。</span>
+    <span class='slacklog-text'><pre>curl &lt;https://corona-stats.online/japan/graph&gt;</pre><br>グラフとか出るんすね…。すげ。</span>
   </span>
   <span class='slacklog-message' id='1585560416.128900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -23811,7 +23811,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
                 <span class='slacklog-attachment-other-servicename'>Qiita</span>
               </div>
               <div class='slacklog-attachment-other-title'><a href='https://qiita.com/yuya_presto/items/ef199e08021dea777715#git-diff%E3%82%92%E8%A6%8B%E3%82%84%E3%81%99%E3%81%8F%E3%81%99%E3%82%8B'>gitのdiff, status, logを極限までコンパクト化＋便利化する - Qiita</a></div>
-              <div class='slacklog-attachment-other-text'>gitで色表示が有効になっていることを前提としています。まだの方は下記のコマンドで設定してください。 ```bash: git config --global color.ui auto # 出力先が端末のときに色をつけて表示...</div>
+              <div class='slacklog-attachment-other-text'>gitで色表示が有効になっていることを前提としています。まだの方は下記のコマンドで設定してください。 <pre>bash: git config --global color.ui auto # 出力先が端末のときに色をつけて表示...</pre></div>
             </span>
         </span>
       </span>

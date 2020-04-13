@@ -235,7 +235,7 @@ title: vim-jp.slack.com log - &#35coc - 2020年03月
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1584085463.053100'>13日 16:44:24</a>
 
-    <span class='slacklog-text'><pre># anyenv<br>if type anyenv &gt;/dev/null 2&gt;&amp;1; then<br>  anyenv::cache() {<br>    mkdir -p <del>/.cache/anyenv<br>    anyenv init - --no-rehash &gt; </del>/.cache/anyenv/init.zsh<br>    zcompile <del>/.cache/anyenv/init.zsh<br>  }<br>  if [[ ! -f </del>/.cache/anyenv/init.zsh ]]; then<br>    anyenv::cache<br>  fi<br>  source ~/.cache/anyenv/init.zsh<br>fi</pre></span>
+    <span class='slacklog-text'><pre># anyenv<br>if type anyenv &gt;/dev/null 2&gt;&amp;1; then<br>  anyenv::cache() {<br>    mkdir -p ~/.cache/anyenv<br>    anyenv init - --no-rehash &gt; ~/.cache/anyenv/init.zsh<br>    zcompile ~/.cache/anyenv/init.zsh<br>  }<br>  if [[ ! -f ~/.cache/anyenv/init.zsh ]]; then<br>    anyenv::cache<br>  fi<br>  source ~/.cache/anyenv/init.zsh<br>fi</pre></span>
   </span>
   <span class='slacklog-message' id='1584085477.053600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>

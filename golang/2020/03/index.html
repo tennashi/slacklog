@@ -1096,7 +1096,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1583994262.309600'>12日 15:24:23</a>
 
-    <span class='slacklog-text'><pre>#!/bin/sh<br><br>set -e<br><br>for i in $(seq 700 -1 600); do<br>  echo $i<br>  ulimit -v <code>expr $i \* 1024</code><br>  ./helloworld<br>done</pre></span>
+    <span class='slacklog-text'><pre>#!/bin/sh<br><br>set -e<br><br>for i in $(seq 700 -1 600); do<br>  echo $i<br>  ulimit -v `expr $i \* 1024`<br>  ./helloworld<br>done</pre></span>
   </span>
   <span class='slacklog-message' id='1583994269.309800'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -4987,7 +4987,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>eihigh</span>
     <a class='slacklog-datetime' href='#1585123456.020800'>25日 17:04:17</a>
 
-    <span class='slacklog-text'><pre>import &#34;net/http&#34; &lt;= GOROOT見に行く<br>import &#34;<a href='http://github.com/mattn/go-isatty|github.com/mattn/go-isatty'>github.com/mattn/go-isatty</a>&#34; &lt;= GOPATH見に行く</pre><br>って仕様なので、ドメイン始まりでimportすべきところをパッケージ名だけでimportしてる、のが原因ですね。</span>
+    <span class='slacklog-text'><pre>import &#34;net/http&#34; &lt;= GOROOT見に行く<br>import &#34;&lt;http://github.com/mattn/go-isatty|github.com/mattn/go-isatty&gt;&#34; &lt;= GOPATH見に行く</pre><br>って仕様なので、ドメイン始まりでimportすべきところをパッケージ名だけでimportしてる、のが原因ですね。</span>
   </span>
   <span class='slacklog-message' id='1585123515.021600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -6451,7 +6451,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585299132.148100'>27日 17:52:13</a>
 
-    <span class='slacklog-text'>ちなみにmain.goの11行付近はこんな感じです。<br><pre>    1 package main<br>    2<br>    3 import (<br>    4     &#34;context&#34;<br>    5     &#34;log&#34;<br>    6     &#34;net&#34;<br>    7<br>    8     pb &#34;fabric-tokyo-hermes/idl&#34;<br>    9<br>   10     &#34;<a href='http://google.golang.org/grpc|google.golang.org/grpc'>google.golang.org/grpc</a>&#34;<br>&gt;&gt; 11     &#34;hermes/hermes/dispatcher&#34;<br>   12 )<br>   13<br> </pre></span>
+    <span class='slacklog-text'>ちなみにmain.goの11行付近はこんな感じです。<br><pre>    1 package main<br>    2<br>    3 import (<br>    4     &#34;context&#34;<br>    5     &#34;log&#34;<br>    6     &#34;net&#34;<br>    7<br>    8     pb &#34;fabric-tokyo-hermes/idl&#34;<br>    9<br>   10     &#34;&lt;http://google.golang.org/grpc|google.golang.org/grpc&gt;&#34;<br>&gt;&gt; 11     &#34;hermes/hermes/dispatcher&#34;<br>   12 )<br>   13<br> </pre></span>
   </span>
   <span class='slacklog-message' id='1585299250.149300'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-02-22/558858702327_2437d40cd696c208a5ab_48.png'>
@@ -6472,7 +6472,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585299324.150500'>27日 17:55:25</a>
 
-    <span class='slacklog-text'><pre>module <a href='http://github.com/lifestyledesign/fabric-tokyo-hermes.git|github.com/lifestyledesign/fabric-tokyo-hermes.git'>github.com/lifestyledesign/fabric-tokyo-hermes.git</a><br><br>replace fabric-tokyo-hermes/idl =&gt; ./idl/<br><br>go 1.14<br><br>require (<br>        fabric-tokyo-hermes/idl v0.0.0-00010101000000-000000000000<br>        <a href='http://github.com/golang/protobuf|github.com/golang/protobuf'>github.com/golang/protobuf</a> v1.3.5<br>        <a href='http://golang.org/x/net|golang.org/x/net'>golang.org/x/net</a> v0.0.0-20200320220750-118fecf932d8 // indirect<br>        <a href='http://golang.org/x/sys|golang.org/x/sys'>golang.org/x/sys</a> v0.0.0-20200323222414-85ca7c5b95cd // indirect<br>        <a href='http://golang.org/x/text|golang.org/x/text'>golang.org/x/text</a> v0.3.2 // indirect<br>        <a href='http://google.golang.org/genproto|google.golang.org/genproto'>google.golang.org/genproto</a> v0.0.0-20200323114720-3f67cca34472 // indirect<br>        <a href='http://google.golang.org/grpc|google.golang.org/grpc'>google.golang.org/grpc</a> v1.28.0<br>)</pre><br>なるほど、自分のパッケージにもgo.mod記載必要なんですね。</span>
+    <span class='slacklog-text'><pre>module &lt;http://github.com/lifestyledesign/fabric-tokyo-hermes.git|github.com/lifestyledesign/fabric-tokyo-hermes.git&gt;<br><br>replace fabric-tokyo-hermes/idl =&gt; ./idl/<br><br>go 1.14<br><br>require (<br>        fabric-tokyo-hermes/idl v0.0.0-00010101000000-000000000000<br>        &lt;http://github.com/golang/protobuf|github.com/golang/protobuf&gt; v1.3.5<br>        &lt;http://golang.org/x/net|golang.org/x/net&gt; v0.0.0-20200320220750-118fecf932d8 // indirect<br>        &lt;http://golang.org/x/sys|golang.org/x/sys&gt; v0.0.0-20200323222414-85ca7c5b95cd // indirect<br>        &lt;http://golang.org/x/text|golang.org/x/text&gt; v0.3.2 // indirect<br>        &lt;http://google.golang.org/genproto|google.golang.org/genproto&gt; v0.0.0-20200323114720-3f67cca34472 // indirect<br>        &lt;http://google.golang.org/grpc|google.golang.org/grpc&gt; v1.28.0<br>)</pre><br>なるほど、自分のパッケージにもgo.mod記載必要なんですね。</span>
   </span>
   <span class='slacklog-message' id='1585299328.150700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/f588267d3e7e23475cad3933226c1e96.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-48.png'>
@@ -6884,7 +6884,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
         <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/f588267d3e7e23475cad3933226c1e96.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-48.png'>
         <span class='slacklog-name'>Shintaro Abe</span>
         <a class='slacklog-datetime' href='#1585304000.201700'>27日 19:13:21</a>
-        <span class='slacklog-text'>このとき、import は以下のようになります。<br><br><pre>import (<br>    dispatcher1 &#34;<a href='http://github.com/dictav/hermes/dispatcher|github.com/dictav/hermes/dispatcher'>github.com/dictav/hermes/dispatcher</a>&#34;<br>    dispatcher2 &#34;<a href='http://github.com/dictav/hermes2/dispatcher|github.com/dictav/hermes2/dispatcher'>github.com/dictav/hermes2/dispatcher</a>&#34;<br>)</pre></span>
+        <span class='slacklog-text'>このとき、import は以下のようになります。<br><br><pre>import (<br>    dispatcher1 &#34;&lt;http://github.com/dictav/hermes/dispatcher|github.com/dictav/hermes/dispatcher&gt;&#34;<br>    dispatcher2 &#34;&lt;http://github.com/dictav/hermes2/dispatcher|github.com/dictav/hermes2/dispatcher&gt;&#34;<br>)</pre></span>
       </span>
       <span class='slacklog-message' id='1585304111.202900'>
         <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -6925,7 +6925,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#1585303840.199000'>27日 19:10:41</a>
 
-    <span class='slacklog-text'>僕が使ってる唯一の <code>replace</code> がこれ。golintの場所が変わってしまったから、そのことを知らないパッケージにそれを伝えるため。<br><br><pre>replace <a href='http://github.com/golang/lint|github.com/golang/lint'>github.com/golang/lint</a> =&gt; <a href='http://golang.org/x/lint|golang.org/x/lint'>golang.org/x/lint</a> v0.0.0-20190227174305-5b3e6a55c961</pre></span>
+    <span class='slacklog-text'>僕が使ってる唯一の <code>replace</code> がこれ。golintの場所が変わってしまったから、そのことを知らないパッケージにそれを伝えるため。<br><br><pre>replace &lt;http://github.com/golang/lint|github.com/golang/lint&gt; =&gt; &lt;http://golang.org/x/lint|golang.org/x/lint&gt; v0.0.0-20190227174305-5b3e6a55c961</pre></span>
   </span>
   <span class='slacklog-message' id='1585303864.199600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -7541,7 +7541,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585532324.277700'>30日 10:38:45</a>
 
-    <span class='slacklog-text'>超初心者な質問なんですけど、させてください。<br><pre>package main<br><br>import (<br>	&#34;fmt&#34;<br>	&#34;<a href='http://github.com/test/foo|github.com/test/foo'>github.com/test/foo</a>&#34;<br>)<br><br>func main() {<br>	fmt.Println(&#34;start&#34;)<br>	g := foo.Goo{val: &#34;foobar&#34;}<br>	foo.Echo(&amp;g)<br>}</pre><br><pre>package foo<br><br>import &#34;log&#34;<br><br>type Goo struct {<br>	val string<br>}<br><br>func Echo(g *Goo) string {<br>	log.Println(&#34;Echo: %s&#34;, g.val)<br>	return g.val<br>}</pre><br>で、<br><pre>./main.go:10:15: unknown field &#39;val&#39; in struct literal of type foo.Goo</pre><br>とエラーが出てbuild出来ません。どこが悪いですか?</span>
+    <span class='slacklog-text'>超初心者な質問なんですけど、させてください。<br><pre>package main<br><br>import (<br>	&#34;fmt&#34;<br>	&#34;&lt;http://github.com/test/foo|github.com/test/foo&gt;&#34;<br>)<br><br>func main() {<br>	fmt.Println(&#34;start&#34;)<br>	g := foo.Goo{val: &#34;foobar&#34;}<br>	foo.Echo(&amp;g)<br>}</pre><br><pre>package foo<br><br>import &#34;log&#34;<br><br>type Goo struct {<br>	val string<br>}<br><br>func Echo(g *Goo) string {<br>	log.Println(&#34;Echo: %s&#34;, g.val)<br>	return g.val<br>}</pre><br>で、<br><pre>./main.go:10:15: unknown field &#39;val&#39; in struct literal of type foo.Goo</pre><br>とエラーが出てbuild出来ません。どこが悪いですか?</span>
   </span>
   <span class='slacklog-message' id='1585532428.278400'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
@@ -7556,7 +7556,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
             <span class='slacklog-attachment-other-servicename'>Qiita</span>
           </div>
           <div class='slacklog-attachment-other-title'><a href='https://qiita.com/Yarimizu14/items/e93097c4f4cfd5468259'>【Golang】structのField名で気をつけるところ - Qiita</a></div>
-          <div class='slacklog-attachment-other-text'>Goの勉強を開始したのでメモ。 structのField名の違いで起こる挙動の違いについてまとめておきます。 (随時更新) # 小文字で始まるField名は外部パッケージからのアクセスできない ディレクトリ構成 ``` . |...</div>
+          <div class='slacklog-attachment-other-text'>Goの勉強を開始したのでメモ。 structのField名の違いで起こる挙動の違いについてまとめておきます。 (随時更新) # 小文字で始まるField名は外部パッケージからのアクセスできない ディレクトリ構成 <pre> . |...</pre></div>
         </span>
     </span>
   </span>
@@ -7593,7 +7593,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585533790.282500'>30日 11:03:11</a>
 
-    <span class='slacklog-text'>もうひとつすいません。<br><pre>package dispatcher<br><br>import (<br>	&#34;<a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader'>github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader</a>&#34;<br>	&#34;log&#34;<br>)<br><br>func (s *Script) DispatcherSingle() {<br>	s.Load()<br>	log.Printf(&#34;DispatcherSingle: %s&#34;, s.ScriptName)<br>}</pre><br><pre>package loader<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Script struct {<br>	ScriptName string<br>}<br><br>func (s *Script) Load() {<br>	log.Printf(&#34;ScriptName: %s&#34;, s.ScriptName)<br>}</pre><br>dispatcher.DispatcherSingle()からs.Loadを呼びたいんですが、これもエラー出ます。<br><pre>hermes/dispatcher/DispatcherSingle.go:4:2: imported and not used: &#34;<a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader'>github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader</a>&#34;<br>hermes/dispatcher/DispatcherSingle.go:8:10: undefined: Script</pre><br>アドバイス貰えたら嬉しいです。</span>
+    <span class='slacklog-text'>もうひとつすいません。<br><pre>package dispatcher<br><br>import (<br>	&#34;&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader&gt;&#34;<br>	&#34;log&#34;<br>)<br><br>func (s *Script) DispatcherSingle() {<br>	s.Load()<br>	log.Printf(&#34;DispatcherSingle: %s&#34;, s.ScriptName)<br>}</pre><br><pre>package loader<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Script struct {<br>	ScriptName string<br>}<br><br>func (s *Script) Load() {<br>	log.Printf(&#34;ScriptName: %s&#34;, s.ScriptName)<br>}</pre><br>dispatcher.DispatcherSingle()からs.Loadを呼びたいんですが、これもエラー出ます。<br><pre>hermes/dispatcher/DispatcherSingle.go:4:2: imported and not used: &#34;&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader&gt;&#34;<br>hermes/dispatcher/DispatcherSingle.go:8:10: undefined: Script</pre><br>アドバイス貰えたら嬉しいです。</span>
   </span>
   <span class='slacklog-message' id='1585533874.283200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -7762,7 +7762,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>raa0121</span>
     <a class='slacklog-datetime' href='#1585536714.299600'>30日 11:51:55</a>
 
-    <span class='slacklog-text'><pre>package dispatcher<br><br>import (<br>	&#34;<a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader'>github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader</a>&#34;<br>	&#34;log&#34;<br>)<br><br>func DispatcherSingle(s *loader.Script) {<br>	s.Load()<br>	log.Printf(&#34;DispatcherSingle: %s&#34;, s.ScriptName)<br>}</pre><br><pre>package loader<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Script struct {<br>	ScriptName string<br>}<br><br>func (s *Script) Load() {<br>	log.Printf(&#34;ScriptName: %s&#34;, s.ScriptName)<br>}</pre></span>
+    <span class='slacklog-text'><pre>package dispatcher<br><br>import (<br>	&#34;&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader&gt;&#34;<br>	&#34;log&#34;<br>)<br><br>func DispatcherSingle(s *loader.Script) {<br>	s.Load()<br>	log.Printf(&#34;DispatcherSingle: %s&#34;, s.ScriptName)<br>}</pre><br><pre>package loader<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Script struct {<br>	ScriptName string<br>}<br><br>func (s *Script) Load() {<br>	log.Printf(&#34;ScriptName: %s&#34;, s.ScriptName)<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1585536725.299900'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
@@ -7776,7 +7776,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585537031.301100'>30日 11:57:12</a>
 
-    <span class='slacklog-text'><pre>package dispatcher<br><br>import (<br>	//&#34;<a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader'>github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader</a>&#34;<br>	&#34;log&#34;<br>)<br><br>type Script struct {<br>	ScriptName string<br>}<br><br>func (s *Script) Load() {<br>	log.Printf(&#34;ScriptName: %s&#34;, s)<br>}<br><br>func (s *Script) DispatcherSingle() {<br>	s.Load()<br>	log.Printf(&#34;DispatcherSingle: %s&#34;, s.ScriptName)<br>}</pre><br><pre>package loader<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Script struct {<br>	ScriptName string<br>}<br><br>func (s *Script) Load() {<br>	log.Printf(&#34;ScriptName: %s&#34;, s)<br>}</pre><br>これなら行けるんですよね。ただ、Scriptの宣言を両方でやる必要があって、不恰好だなと。</span>
+    <span class='slacklog-text'><pre>package dispatcher<br><br>import (<br>	//&#34;&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader&gt;&#34;<br>	&#34;log&#34;<br>)<br><br>type Script struct {<br>	ScriptName string<br>}<br><br>func (s *Script) Load() {<br>	log.Printf(&#34;ScriptName: %s&#34;, s)<br>}<br><br>func (s *Script) DispatcherSingle() {<br>	s.Load()<br>	log.Printf(&#34;DispatcherSingle: %s&#34;, s.ScriptName)<br>}</pre><br><pre>package loader<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Script struct {<br>	ScriptName string<br>}<br><br>func (s *Script) Load() {<br>	log.Printf(&#34;ScriptName: %s&#34;, s)<br>}</pre><br>これなら行けるんですよね。ただ、Scriptの宣言を両方でやる必要があって、不恰好だなと。</span>
     <details class='slacklog-thread'>
       <summary class-'slacklog-thread-summary'>3 件の返信
         <span class='slacklog-thread-mtime'>最終返信:30日 12:39:16</span>
@@ -7851,7 +7851,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585537990.309000'>30日 12:13:11</a>
 
-    <span class='slacklog-text'><pre>package dispatcher<br>import (<br>	&#34;<a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader'>github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader</a>&#34;<br>	&#34;log&#34;<br>)<br><br>type Dispatcher struct {<br>	script *loader.Script<br>}<br><br>func New(name string) *Dispatcher() {<br>	return &amp;Dispatcher {<br>		script: &amp;loader.Script {ScriptName: name},<br>	}<br>}<br><br>func (s *Dispatcher) DispatcherSingle() {<br>	s.Load()<br>	log.Printf(&#34;DispatcherSingle: %s&#34;, s.ScriptName)<br>}</pre><br><pre>package main<br><br>import &#34;...略...&#34;<br><br>func main() {<br>	dispatcher := dispatcher.New(&#34;ほげほげ&#34;)<br>	dispatcher.DispatcherSingle()<br>}</pre></span>
+    <span class='slacklog-text'><pre>package dispatcher<br>import (<br>	&#34;&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader|github.com/lifestyledesign/fabric-tokyo-hermes/hermes/loader&gt;&#34;<br>	&#34;log&#34;<br>)<br><br>type Dispatcher struct {<br>	script *loader.Script<br>}<br><br>func New(name string) *Dispatcher() {<br>	return &amp;Dispatcher {<br>		script: &amp;loader.Script {ScriptName: name},<br>	}<br>}<br><br>func (s *Dispatcher) DispatcherSingle() {<br>	s.Load()<br>	log.Printf(&#34;DispatcherSingle: %s&#34;, s.ScriptName)<br>}</pre><br><pre>package main<br><br>import &#34;...略...&#34;<br><br>func main() {<br>	dispatcher := dispatcher.New(&#34;ほげほげ&#34;)<br>	dispatcher.DispatcherSingle()<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1585538024.309200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -8409,7 +8409,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585636347.377900'>31日 15:32:28</a>
 
-    <span class='slacklog-text'>また質問すいません。reflectionです。<br><pre>package main<br><br>import (<br>	&#34;<a href='http://github.com/lifestyledesign/tmp/hoge|github.com/lifestyledesign/tmp/hoge'>github.com/lifestyledesign/tmp/hoge</a>&#34;<br>	&#34;log&#34;<br>	&#34;reflect&#34;<br>)<br><br>func main() {<br>	ms := hoge.MyStruct{}<br>	receiver := reflect.ValueOf(ms)<br><br>	log.Println(&#34;before&#34;)s<br>	method := receiver.MethodByName(&#34;method1&#34;)<br>	method.MethodByName(&#34;method1&#34;).Call([]reflect.Value{})<br>	log.Println(&#34;after&#34;)<br>}</pre><br><pre>package hoge<br><br>import &#34;log&#34;<br><br>type MyStruct struct {<br>}<br><br>func (ms *MyStruct) method1() {<br>	log.Printf(&#34;foobar&#34;)<br>}</pre><br>これで、 <code>hoge.method1</code>を呼び出そうとしていますが、一応コンパイルはされるのですが、エラーメッセージも出るし、実行時もエラーになります。<br>なにかアドバイスお願いします。</span>
+    <span class='slacklog-text'>また質問すいません。reflectionです。<br><pre>package main<br><br>import (<br>	&#34;&lt;http://github.com/lifestyledesign/tmp/hoge|github.com/lifestyledesign/tmp/hoge&gt;&#34;<br>	&#34;log&#34;<br>	&#34;reflect&#34;<br>)<br><br>func main() {<br>	ms := hoge.MyStruct{}<br>	receiver := reflect.ValueOf(ms)<br><br>	log.Println(&#34;before&#34;)s<br>	method := receiver.MethodByName(&#34;method1&#34;)<br>	method.MethodByName(&#34;method1&#34;).Call([]reflect.Value{})<br>	log.Println(&#34;after&#34;)<br>}</pre><br><pre>package hoge<br><br>import &#34;log&#34;<br><br>type MyStruct struct {<br>}<br><br>func (ms *MyStruct) method1() {<br>	log.Printf(&#34;foobar&#34;)<br>}</pre><br>これで、 <code>hoge.method1</code>を呼び出そうとしていますが、一応コンパイルはされるのですが、エラーメッセージも出るし、実行時もエラーになります。<br>なにかアドバイスお願いします。</span>
   </span>
   <span class='slacklog-message' id='1585636470.379100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -8916,7 +8916,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
         <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
         <span class='slacklog-name'>raa0121</span>
         <a class='slacklog-datetime' href='#1585640457.428100'>31日 16:40:58</a>
-        <span class='slacklog-text'>CUI(REPL) と Webサーバも作ってるので、外部ライブラリとして、<br><pre>&#34;<a href='http://github.com/andlabs/ui|github.com/andlabs/ui'>github.com/andlabs/ui</a>&#34;<br>&#34;<a href='http://github.com/apaxa-go/eval|github.com/apaxa-go/eval'>github.com/apaxa-go/eval</a>&#34;<br>&#34;<a href='http://github.com/chzyer/readline|github.com/chzyer/readline'>github.com/chzyer/readline</a>&#34;<br>&#34;<a href='http://github.com/labstack/echo|github.com/labstack/echo'>github.com/labstack/echo</a>&#34;<br>&#34;<a href='http://github.com/labstack/echo/middleware|github.com/labstack/echo/middleware'>github.com/labstack/echo/middleware</a>&#34;<br>&#34;<a href='http://github.com/mattn/go-colorable|github.com/mattn/go-colorable'>github.com/mattn/go-colorable</a>&#34;<br>&#34;<a href='http://github.com/seehuhn/mt19937|github.com/seehuhn/mt19937'>github.com/seehuhn/mt19937</a>&#34;</pre></span>
+        <span class='slacklog-text'>CUI(REPL) と Webサーバも作ってるので、外部ライブラリとして、<br><pre>&#34;&lt;http://github.com/andlabs/ui|github.com/andlabs/ui&gt;&#34;<br>&#34;&lt;http://github.com/apaxa-go/eval|github.com/apaxa-go/eval&gt;&#34;<br>&#34;&lt;http://github.com/chzyer/readline|github.com/chzyer/readline&gt;&#34;<br>&#34;&lt;http://github.com/labstack/echo|github.com/labstack/echo&gt;&#34;<br>&#34;&lt;http://github.com/labstack/echo/middleware|github.com/labstack/echo/middleware&gt;&#34;<br>&#34;&lt;http://github.com/mattn/go-colorable|github.com/mattn/go-colorable&gt;&#34;<br>&#34;&lt;http://github.com/seehuhn/mt19937|github.com/seehuhn/mt19937&gt;&#34;</pre></span>
       </span>
     </details>
   </span>
@@ -9040,7 +9040,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年03月
     <span class='slacklog-name'>johejo</span>
     <a class='slacklog-datetime' href='#1585640757.436500'>31日 16:45:58</a>
 
-    <span class='slacklog-text'><pre>$ go list -f &#39;{{join .Imports &#34;\n&#34;}}&#39; ./... | sort | uniq | grep -v github | grep -v gopkg | grep -v <a href='http://golang.org|golang.org'>golang.org</a><br>bufio<br>bytes<br>compress/gzip<br>context<br>crypto/sha256<br>database/sql<br>database/sql/driver<br>encoding/base64<br>encoding/csv<br>encoding/hex<br>encoding/json<br>errors<br>expvar<br>flag<br>fmt<br>io<br>io/ioutil<br>log<br>math<br>net<br>net/http<br>net/http/httptest<br>net/http/httputil<br>net/http/pprof<br>net/url<br>os<br>os/exec<br>os/signal<br>path/filepath<br>reflect<br>regexp<br>runtime<br>strconv<br>strings<br>sync<br>syscall<br>testing<br>time</pre></span>
+    <span class='slacklog-text'><pre>$ go list -f &#39;{{join .Imports &#34;\n&#34;}}&#39; ./... | sort | uniq | grep -v github | grep -v gopkg | grep -v &lt;http://golang.org|golang.org&gt;<br>bufio<br>bytes<br>compress/gzip<br>context<br>crypto/sha256<br>database/sql<br>database/sql/driver<br>encoding/base64<br>encoding/csv<br>encoding/hex<br>encoding/json<br>errors<br>expvar<br>flag<br>fmt<br>io<br>io/ioutil<br>log<br>math<br>net<br>net/http<br>net/http/httptest<br>net/http/httputil<br>net/http/pprof<br>net/url<br>os<br>os/exec<br>os/signal<br>path/filepath<br>reflect<br>regexp<br>runtime<br>strconv<br>strings<br>sync<br>syscall<br>testing<br>time</pre></span>
   </span>
   <span class='slacklog-message' id='1585640760.436600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>

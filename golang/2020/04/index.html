@@ -335,7 +335,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585787904.119300'>2日 09:38:25</a>
 
-    <span class='slacklog-text'><pre>Permissions         *map[string]bool <code>json:&#34;permissions,omitempty&#34;</pre></code><br>これは意味あるのw</span>
+    <span class='slacklog-text'><pre>Permissions         *map[string]bool `json:&#34;permissions,omitempty&#34;</pre>`<br>これは意味あるのw</span>
   </span>
   <span class='slacklog-message' id='1585787917.119600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
@@ -2759,7 +2759,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585878756.364600'>3日 10:52:37</a>
 
-    <span class='slacklog-text'><pre>package main<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Receiver interface {<br>	Do()<br>}<br><br>type MyReceiver struct {<br>}<br><br>func (w Receiver) Do() {<br>	log.Println(&#34;Do&#34;)<br>}<br><br>func main() {<br>	mr := MyReceiver{}<br>	<a href='http://mr.Do|mr.Do'>mr.Do</a>()<br>}</pre><br>これって <code>func (w Receiver) Do() {</code>で  エラーになるんですけど、Interfaceで受けるって事は出来ないんでしょうか?(まー出来ないからエラーになるんだけど)。どうやるのがGoっぽいですか?</span>
+    <span class='slacklog-text'><pre>package main<br><br>import (<br>	&#34;log&#34;<br>)<br><br>type Receiver interface {<br>	Do()<br>}<br><br>type MyReceiver struct {<br>}<br><br>func (w Receiver) Do() {<br>	log.Println(&#34;Do&#34;)<br>}<br><br>func main() {<br>	mr := MyReceiver{}<br>	&lt;http://mr.Do|mr.Do&gt;()<br>}</pre><br>これって <code>func (w Receiver) Do() {</code>で  エラーになるんですけど、Interfaceで受けるって事は出来ないんでしょうか?(まー出来ないからエラーになるんだけど)。どうやるのがGoっぽいですか?</span>
   </span>
   <span class='slacklog-message' id='1585878825.365800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -3415,7 +3415,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
     <span class='slacklog-name'>mattn</span>
     <a class='slacklog-datetime' href='#1585897401.411400'>3日 16:03:22</a>
 
-    <span class='slacklog-text'><pre>#!anko<br><br>var http, ioutil = import(&#34;net/http&#34;), import(&#34;io/ioutil&#34;)<br><br>r = http.DefaultClient.Get(&#34;<a href='http://golang.org/'>http://golang.org/</a>&#34;)<br>b, _ = ioutil.ReadAll(r[0].Body)<br>printf(&#34;%s&#34;, toString(b))<br>r[0].Body.Close()</pre></span>
+    <span class='slacklog-text'><pre>#!anko<br><br>var http, ioutil = import(&#34;net/http&#34;), import(&#34;io/ioutil&#34;)<br><br>r = http.DefaultClient.Get(&#34;&lt;http://golang.org/&gt;&#34;)<br>b, _ = ioutil.ReadAll(r[0].Body)<br>printf(&#34;%s&#34;, toString(b))<br>r[0].Body.Close()</pre></span>
   </span>
   <span class='slacklog-message' id='1585897405.411800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
@@ -3825,7 +3825,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585914264.444600'>3日 20:44:25</a>
 
-    <span class='slacklog-text'>型アサーションでデータが欠落する事ってあります?<br><pre>    18: func SendMail(script module.Script, opt interface{}) {<br>    19:         v, _ := opt.(pb.OrderCancelAtShopParam)<br>=&gt;  20:         log.Printf(&#34;SendMail: %s&#34;, v.GetScriptName())<br>    21:<br>    22:         impl := module.InOutLoggerImpl{}<br>    23:         <a href='http://impl.In|impl.In'>impl.In</a>()<br>    24:         script.Exec(opt)<br>    25:         impl.Out()<br>(dlv) p opt<br>interface {}(*<a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam'>github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam</a>) *{<br>        Id: 1,<br>        ScriptName: &#34;OrderCancelAtShop&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}<br>(dlv) p v<br><a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam'>github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam</a> {<br>        Id: 0,<br>        ScriptName: &#34;&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}</pre><br>こんな感じで、型アサーションの前後でIdとScriptNameが欠落してしまってます。</span>
+    <span class='slacklog-text'>型アサーションでデータが欠落する事ってあります?<br><pre>    18: func SendMail(script module.Script, opt interface{}) {<br>    19:         v, _ := opt.(pb.OrderCancelAtShopParam)<br>=&gt;  20:         log.Printf(&#34;SendMail: %s&#34;, v.GetScriptName())<br>    21:<br>    22:         impl := module.InOutLoggerImpl{}<br>    23:         &lt;http://impl.In|impl.In&gt;()<br>    24:         script.Exec(opt)<br>    25:         impl.Out()<br>(dlv) p opt<br>interface {}(*&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam&gt;) *{<br>        Id: 1,<br>        ScriptName: &#34;OrderCancelAtShop&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}<br>(dlv) p v<br>&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam&gt; {<br>        Id: 0,<br>        ScriptName: &#34;&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}</pre><br>こんな感じで、型アサーションの前後でIdとScriptNameが欠落してしまってます。</span>
   </span>
   <span class='slacklog-message' id='1585914444.445100'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
@@ -3846,7 +3846,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#1585914676.446600'>3日 20:51:17</a>
 
-    <span class='slacklog-text'><pre>=&gt;  20:         log.Printf(&#34;ok: %s&#34;, ok)<br>    21:         log.Printf(&#34;SendMail: %s&#34;, v.GetScriptName())<br>    22:<br>    23:         impl := module.InOutLoggerImpl{}<br>    24:         <a href='http://impl.In|impl.In'>impl.In</a>()<br>    25:         script.Exec(opt)<br>(dlv) p ok<br>false<br>(dlv) p v<br><a href='http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam'>github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam</a> {<br>        Id: 0,<br>        ScriptName: &#34;&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}<br>(</pre><br>falseでした。型を思い込んでました。ありがとうございます。</span>
+    <span class='slacklog-text'><pre>=&gt;  20:         log.Printf(&#34;ok: %s&#34;, ok)<br>    21:         log.Printf(&#34;SendMail: %s&#34;, v.GetScriptName())<br>    22:<br>    23:         impl := module.InOutLoggerImpl{}<br>    24:         &lt;http://impl.In|impl.In&gt;()<br>    25:         script.Exec(opt)<br>(dlv) p ok<br>false<br>(dlv) p v<br>&lt;http://github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam|github.com/lifestyledesign/fabric-tokyo-hermes/idl.OrderCancelAtShopParam&gt; {<br>        Id: 0,<br>        ScriptName: &#34;&#34;,<br>        XXX_NoUnkeyedLiteral: struct {} {},<br>        XXX_unrecognized: []uint8 len: 0, cap: 0, nil,<br>        XXX_sizecache: 0,}<br>(</pre><br>falseでした。型を思い込んでました。ありがとうございます。</span>
   </span>
   <span class='slacklog-message' id='1585914703.447000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/e374ddea34651a9a43de332bfcba64a3.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-48.png'>
@@ -4240,7 +4240,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
             <span class='slacklog-attachment-other-servicename'>Qiita</span>
           </div>
           <div class='slacklog-attachment-other-title'><a href='https://qiita.com/Yarimizu14/items/e93097c4f4cfd5468259'>【Golang】structのField名で気をつけるところ - Qiita</a></div>
-          <div class='slacklog-attachment-other-text'>Goの勉強を開始したのでメモ。 structのField名の違いで起こる挙動の違いについてまとめておきます。 (随時更新) # 小文字で始まるField名は外部パッケージからのアクセスできない ディレクトリ構成 ``` . |...</div>
+          <div class='slacklog-attachment-other-text'>Goの勉強を開始したのでメモ。 structのField名の違いで起こる挙動の違いについてまとめておきます。 (随時更新) # 小文字で始まるField名は外部パッケージからのアクセスできない ディレクトリ構成 <pre> . |...</pre></div>
         </span>
     </span>
   </span>
@@ -4264,7 +4264,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
             <span class='slacklog-attachment-other-servicename'>Qiita</span>
           </div>
           <div class='slacklog-attachment-other-title'><a href='https://qiita.com/kyoh86/items/f5e007bc004c34b2d314'>goで作ったツールインストールするの面倒くさい - Qiita</a></div>
-          <div class='slacklog-attachment-other-text'>## goでツール作ろう 「まくる」と言うほどには作ってないけど。 ところで、go製のツールいっぱいあるけど、管理だるくない？ install は楽ちん。 <pre> $ go get <a href='http://github.com/foo/bar|github.com/foo/bar'>github.com/foo/bar</a> </pre> ...</div>
+          <div class='slacklog-attachment-other-text'>## goでツール作ろう 「まくる」と言うほどには作ってないけど。 ところで、go製のツールいっぱいあるけど、管理だるくない？ install は楽ちん。 <pre> $ go get &lt;http://github.com/foo/bar|github.com/foo/bar&gt; </pre> ...</div>
         </span>
     </span>
   </span>

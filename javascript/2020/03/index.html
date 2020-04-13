@@ -378,7 +378,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <span class='slacklog-name'>raa0121</span>
     <a class='slacklog-datetime' href='#1583978643.154800'>12日 11:04:04</a>
 
-    <span class='slacklog-text'><pre>import {<br>  AvatorApi,<br>  Configuration,<br>  ConfigurationParameters,<br>} from &#34;SeikaCenter.ts&#34;;<br><br>const config:ConfigurationParameters = {<br>  basePath: &#34;<a href='https://voiro-api.raa0121.info'>https://voiro-api.raa0121.info</a>&#34;,<br>  username: &#34;raa0121&#34;,<br>  password: &#34;xxxxxxxx&#34;,<br>}<br>const configuration = new Configuration(config)<br>new AvatorApi(configuration)<br>  .getAvator2()<br>  .then(avators =&gt; {<br>    avators.data.forEach(elem =&gt; console.log(elem.name))<br>  })</pre><br>axios にしたら、とりあえず ts-node でこれが動きました！</span>
+    <span class='slacklog-text'><pre>import {<br>  AvatorApi,<br>  Configuration,<br>  ConfigurationParameters,<br>} from &#34;SeikaCenter.ts&#34;;<br><br>const config:ConfigurationParameters = {<br>  basePath: &#34;&lt;https://voiro-api.raa0121.info&gt;&#34;,<br>  username: &#34;raa0121&#34;,<br>  password: &#34;xxxxxxxx&#34;,<br>}<br>const configuration = new Configuration(config)<br>new AvatorApi(configuration)<br>  .getAvator2()<br>  .then(avators =&gt; {<br>    avators.data.forEach(elem =&gt; console.log(elem.name))<br>  })</pre><br>axios にしたら、とりあえず ts-node でこれが動きました！</span>
   </span>
   <span class='slacklog-message' id='1583979055.155000'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -423,7 +423,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <span class='slacklog-name'>raa0121</span>
     <a class='slacklog-datetime' href='#1583980965.157200'>12日 11:42:46</a>
 
-    <span class='slacklog-text'><pre>While trying to resolve module <code>../../node_modules/SeikaCenter.ts</code> from file <code>/home/node/app/src/store/actions.ts</code>, the package <code>/home/node/app/node_modules/SeikaCenter.ts/package.json</code> was successfully found. However, this package itself specifies a <code>main</code> module field that could not be resolved (<code>/home/node/app/node_modules/SeikaCenter.ts/dist/index.js</pre></code><br>辛い…</span>
+    <span class='slacklog-text'><pre>While trying to resolve module `../../node_modules/SeikaCenter.ts` from file `/home/node/app/src/store/actions.ts`, the package `/home/node/app/node_modules/SeikaCenter.ts/package.json` was successfully found. However, this package itself specifies a `main` module field that could not be resolved (`/home/node/app/node_modules/SeikaCenter.ts/dist/index.js</pre>`<br>辛い…</span>
   </span>
   <span class='slacklog-message' id='1583981480.157800'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
@@ -656,7 +656,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <span class='slacklog-name'>heavenshell</span>
     <a class='slacklog-datetime' href='#1584796304.172000'>21日 22:11:45</a>
 
-    <span class='slacklog-text'><pre>try {<br>  await <a href='http://axios.post|axios.post'>axios.post</a>()<br>} catch (error) {<br>  if (error.response.status === 400) {}<br>}</pre><br>みたいにも書きます。</span>
+    <span class='slacklog-text'><pre>try {<br>  await &lt;http://axios.post|axios.post&gt;()<br>} catch (error) {<br>  if (error.response.status === 400) {}<br>}</pre><br>みたいにも書きます。</span>
   </span>
   <span class='slacklog-message' id='1584796588.172500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
@@ -2233,7 +2233,7 @@ title: vim-jp.slack.com log - &#35javascript - 2020年03月
     <span class='slacklog-name'>lambdalisue</span>
     <a class='slacklog-datetime' href='#1585658334.047300'>31日 21:38:55</a>
 
-    <span class='slacklog-text'><pre>function collect() {<br>  return [0, 1, 2, 3, 4, 5];<br>}<br><br>// case 1<br>collect()<br>  .filter((n) =&gt; n % 2 === 0)<br>  .map((n) =&gt; <code>No ${n}</code>)<br>  .forEach((s) =&gt; console.log(s));<br><br>// case 2<br>const values = collect()<br>  .filter((n) =&gt; n % 2 === 0)<br>  .map((n) =&gt; <code>No ${n}</code>);<br><br>for (const s of values) {<br>  console.log(s);<br>}</pre></span>
+    <span class='slacklog-text'><pre>function collect() {<br>  return [0, 1, 2, 3, 4, 5];<br>}<br><br>// case 1<br>collect()<br>  .filter((n) =&gt; n % 2 === 0)<br>  .map((n) =&gt; `No ${n}`)<br>  .forEach((s) =&gt; console.log(s));<br><br>// case 2<br>const values = collect()<br>  .filter((n) =&gt; n % 2 === 0)<br>  .map((n) =&gt; `No ${n}`);<br><br>for (const s of values) {<br>  console.log(s);<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1585658346.047600'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/2be992d8a8cd8b523ca0b1467e165376.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-48.png'>
