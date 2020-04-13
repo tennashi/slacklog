@@ -5814,7 +5814,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>ycino</span>
     <a class='slacklog-datetime' href='#1584194336.235800'>14日 22:58:57</a>
 
-    <span class='slacklog-text'>いつの間にかcheckhealthでperlが出るようになってる<br>使ってるプラグインあるのかな・・・？<br>``<code>## Perl provider (optional)<br>  - WARNING: </code>perl<code> and </code>cpanm<code> must be in $PATH.<br>    - ADVICE:<br>      - Install Perl and cpanminus and verify that </code>perl<code> and </code>cpanm<code> commands work.</code>``</span>
+    <span class='slacklog-text'>いつの間にかcheckhealthでperlが出るようになってる<br>使ってるプラグインあるのかな・・・？<br><pre>## Perl provider (optional)<br>  - WARNING: <code>perl</code> and <code>cpanm</code> must be in $PATH.<br>    - ADVICE:<br>      - Install Perl and cpanminus and verify that <code>perl</code> and <code>cpanm</code> commands work.</pre></span>
     <details class='slacklog-thread'>
       <summary class-'slacklog-thread-summary'>1 件の返信
         <span class='slacklog-thread-mtime'>最終返信:15日 09:32:38</span>
@@ -6039,7 +6039,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>vimhelp</span>
     <a class='slacklog-datetime' href='#1584348415.256300'>16日 17:46:56</a>
 
-    <span class='slacklog-text'>``<code><br>                                                *&#39;* *&#39;a* *</code>* *<code>a*<br>&#39;{a-z}  </code>{a-z}          カレントバッファのマーク {a-z} へジャンプ。<br>```</span>
+    <span class='slacklog-text'><pre><br>                                                *&#39;* *&#39;a* *<code>* *</code>a*<br>&#39;{a-z}  `{a-z}          カレントバッファのマーク {a-z} へジャンプ。<br></pre></span>
   </span>
   <span class='slacklog-message' id='1584348425.256500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
@@ -6074,7 +6074,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>vimhelp</span>
     <a class='slacklog-datetime' href='#1584348453.257100'>16日 17:47:34</a>
 
-    <span class='slacklog-text'>``<code><br>                                                        *&#39;&#39;* *</code><code>*<br>&#39;&#39;  </code><code>                  カーソルがジャンプする直前にいた、もしくは最後の &#34;m&#39;&#34;<br>                        か &#34;m</code>&#34; コマンドが行われた位置に移動します。<br>                        |:keepjumps| コマンドモディファイヤが使われた場合には<br>                        セットされません。<br>                        |restore-position| も参照。<br>```</span>
+    <span class='slacklog-text'><pre><br>                                                        *&#39;&#39;* *`<code>*<br>&#39;&#39;  </code><code>                  カーソルがジャンプする直前にいた、もしくは最後の &#34;m&#39;&#34;<br>                        か &#34;m</code>&#34; コマンドが行われた位置に移動します。<br>                        |:keepjumps| コマンドモディファイヤが使われた場合には<br>                        セットされません。<br>                        |restore-position| も参照。<br></pre></span>
   </span>
   <span class='slacklog-message' id='1584348473.257500'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
@@ -10987,7 +10987,7 @@ title: vim-jp.slack.com log - &#35random - 2020年03月
     <span class='slacklog-name'>vimhelp</span>
     <a class='slacklog-datetime' href='#1584604827.160600'>19日 17:00:28</a>
 
-    <span class='slacklog-text'>``<code><br>glob({expr} [, {nosuf} [, {list} [, {alllinks}]]])              *glob()*<br>                {expr}内のファイル名のワイルドカードを展開する。特殊文字につい<br>                ては|wildcards|を参照。<br> <br>                {nosuf} に|TRUE|を指定しない限り、&#39;suffixes&#39; と &#39;wildignore&#39;<br>                が適用される。つまり &#39;wildignore&#39; のパターンにマッチする名前は<br>                スキップされ、&#39;suffixes&#39; がマッチの順番に影響を与える。<br>                &#39;wildignorecase&#39; は常に適用される。<br> <br>                {list} が指定されその値が|TRUE|なら、マッチしたすべてのファイ<br>                ルがリストとして返される。リストを使うことで、改行を含むファイ<br>                ル名があっても結果を正しく受け取ることができる。<br>                そうでない場合は結果は文字列で返される。その場合、複数のマッチ<br>                があるときはそれらは文字 &lt;NL&gt; で区切られる。<br> <br>                展開が失敗した場合、空の文字列またはリストが返される。<br> <br>                マッチの数を制限するなど、複雑なことをする必要がある場合にも<br>                |readdir()| を使用することができる。<br> <br>                存在しないファイル名は結果に含まれない。シンボリックリンクは、<br>                それが存在するファイルを指す場合のみ含まれる。<br>                ただし、{alllinks} 引数が存在し、それが|TRUE|である場合はすべ<br>                てのシンボリックリンクが含まれる。<br> <br>                多くのシステムではバッククォート(「</code>」という文字のこと)を、外<br>                部コマンドの実行結果からファイル名を取得するために使用できる。<br>                例:  <br>                        :let tagfiles = glob(&#34;<code>find . -name tags -print</code>&#34;)<br>                        :let &amp;tags = substitute(tagfiles, &#34;\n&#34;, &#34;,&#34;, &#34;g&#34;)<br>                バッククォート内のプログラムの実行結果は、一行に一つずつの項目<br>                が含まれてなければならない。項目内のスペースは許容される。<br> <br>                特殊なVimの変数を展開するためには|expand()|を参照。外部コマン<br>                ドの生の出力を得るためには|system()|を参照。<br> <br>                |method| としても使用できる:  <br>                        GetExpr()-&gt;glob()<br>```</span>
+    <span class='slacklog-text'><pre><br>glob({expr} [, {nosuf} [, {list} [, {alllinks}]]])              *glob()*<br>                {expr}内のファイル名のワイルドカードを展開する。特殊文字につい<br>                ては|wildcards|を参照。<br> <br>                {nosuf} に|TRUE|を指定しない限り、&#39;suffixes&#39; と &#39;wildignore&#39;<br>                が適用される。つまり &#39;wildignore&#39; のパターンにマッチする名前は<br>                スキップされ、&#39;suffixes&#39; がマッチの順番に影響を与える。<br>                &#39;wildignorecase&#39; は常に適用される。<br> <br>                {list} が指定されその値が|TRUE|なら、マッチしたすべてのファイ<br>                ルがリストとして返される。リストを使うことで、改行を含むファイ<br>                ル名があっても結果を正しく受け取ることができる。<br>                そうでない場合は結果は文字列で返される。その場合、複数のマッチ<br>                があるときはそれらは文字 &lt;NL&gt; で区切られる。<br> <br>                展開が失敗した場合、空の文字列またはリストが返される。<br> <br>                マッチの数を制限するなど、複雑なことをする必要がある場合にも<br>                |readdir()| を使用することができる。<br> <br>                存在しないファイル名は結果に含まれない。シンボリックリンクは、<br>                それが存在するファイルを指す場合のみ含まれる。<br>                ただし、{alllinks} 引数が存在し、それが|TRUE|である場合はすべ<br>                てのシンボリックリンクが含まれる。<br> <br>                多くのシステムではバッククォート(「<code>」という文字のこと)を、外<br>                部コマンドの実行結果からファイル名を取得するために使用できる。<br>                例:  <br>                        :let tagfiles = glob(&#34;</code>find . -name tags -print`&#34;)<br>                        :let &amp;tags = substitute(tagfiles, &#34;\n&#34;, &#34;,&#34;, &#34;g&#34;)<br>                バッククォート内のプログラムの実行結果は、一行に一つずつの項目<br>                が含まれてなければならない。項目内のスペースは許容される。<br> <br>                特殊なVimの変数を展開するためには|expand()|を参照。外部コマン<br>                ドの生の出力を得るためには|system()|を参照。<br> <br>                |method| としても使用できる:  <br>                        GetExpr()-&gt;glob()<br></pre></span>
   </span>
   <span class='slacklog-message' id='1584604839.160900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
