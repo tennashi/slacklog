@@ -12,11 +12,11 @@ title: vim-jp.slack.com log - &#35<< .channel.Name >> - << .msgPerMonth.Year >>�
   <span class='slacklog-message' id='<< .Ts >>'>
     <img class='slacklog-icon' src='<< userIconUrl . >>'>
     <span class='slacklog-name'><< username . >></span>
-    <a class='slacklog-datetime' href='#<< .Ts >>'><< datetime .Ts >></a>
+    <a class='slacklog-datetime' href='#ts-<< .Ts >>'><< datetime .Ts >></a>
 
     <<- if and (ne .ThreadTs "") (ne .ThreadTs .Ts) >>
     <span class='slacklog-thread-broadcast-link'>
-      このスレッドに返信しました : <a href='#<<- .ThreadTs >>'><<- threadRootText .ThreadTs >></a>
+      このスレッドに返信しました : <a href='#ts-<<- .ThreadTs >>'><<- threadRootText .ThreadTs >></a>
     </span>
     <<- end >>
 
@@ -82,7 +82,7 @@ title: vim-jp.slack.com log - &#35<< .channel.Name >> - << .msgPerMonth.Year >>�
       <<- end >>
         <img class='slacklog-icon' src='<< userIconUrl . >>'>
         <span class='slacklog-name'><< username . >></span>
-        <a class='slacklog-datetime' href='#<< .Ts >>'><< datetime .Ts >></a>
+        <a class='slacklog-datetime' href='#ts-<< .Ts >>'><< datetime .Ts >></a>
         <span class='slacklog-text'><< text . >></span>
 
         <<- if .Attachments >>
