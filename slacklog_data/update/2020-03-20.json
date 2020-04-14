@@ -1,0 +1,200 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/98be7fecac80b30c5a323b67903eb1d0094007ea|patch 8.2.0417: Travis CI config can be improved>\npatch 8.2.0417: Travis CI config can be improved\n\nProblem:    Travis CI config can be improved.\nSolution:   Remove COVERAGE variable. Add load-snd-dummy script. add \"-i NONE\"\n            to avoid messages about viminfo. (Ozaki Kiichi, closes #5813)",
+        "ts": "1584724711.026700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0417: Travis CI config can be improved · vim\/vim@98be7fe",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/98be7fecac80b30c5a323b67903eb1d0094007ea",
+                "text": "Problem: Travis CI config can be improved. Solution: Remove COVERAGE variable. Add load-snd-dummy script. add &amp;quot;-i NONE&amp;quot; to avoid messages about viminfo. (Ozaki Kiichi, cl...",
+                "fallback": "GitHub: patch 8.2.0417: Travis CI config can be improved · vim\/vim@98be7fe",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/98be7fecac80b30c5a323b67903eb1d0094007ea",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/98be7fecac80b30c5a323b67903eb1d0094007ea"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584724712.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/8b633135106dda8605463b780573c45b00c22afe|patch 8.2.0418: code in eval.c not sufficiently covered by tests>\npatch 8.2.0418: code in eval.c not sufficiently covered by tests\n\nProblem:    Code in eval.c not sufficiently covered by tests.\nSolution:   Add more tests. (Yegappan Lakshmanan, closes #5815)",
+        "ts": "1584725918.026900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0418: code in eval.c not sufficiently covered by tests · vim\/vim@8b63313",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/8b633135106dda8605463b780573c45b00c22afe",
+                "text": "Problem: Code in eval.c not sufficiently covered by tests. Solution: Add more tests. (Yegappan Lakshmanan, closes #5815)",
+                "fallback": "GitHub: patch 8.2.0418: code in eval.c not sufficiently covered by tests · vim\/vim@8b63313",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/8b633135106dda8605463b780573c45b00c22afe",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/8b633135106dda8605463b780573c45b00c22afe"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584725919.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/20431c9dbb592ebe0666bf042af7d2b373107372|patch 8.2.0419: various memory leaks in Vim9 script code>\npatch 8.2.0419: various memory leaks in Vim9 script code\n\nProblem:    Various memory leaks in Vim9 script code.\nSolution:   Fix the leaks. (Ozaki Kiichi, closes #5814)",
+        "ts": "1584727116.027100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0419: various memory leaks in Vim9 script code · vim\/vim@20431c9",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/20431c9dbb592ebe0666bf042af7d2b373107372",
+                "text": "Problem: Various memory leaks in Vim9 script code. Solution: Fix the leaks. (Ozaki Kiichi, closes #5814)",
+                "fallback": "GitHub: patch 8.2.0419: various memory leaks in Vim9 script code · vim\/vim@20431c9",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/20431c9dbb592ebe0666bf042af7d2b373107372",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/20431c9dbb592ebe0666bf042af7d2b373107372"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584727118.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/f1ec378b014efb9897422c40369a6462163a512a|patch 8.2.0420: Vim9: cannot interrupt a loop with CTRL-C>\npatch 8.2.0420: Vim9: cannot interrupt a loop with CTRL-C\n\nProblem:    Vim9: cannot interrupt a loop with CTRL-C.\nSolution:   Check for CTRL-C once in a while.  Doesn't fully work yet.",
+        "ts": "1584729516.027300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0420: Vim9: cannot interrupt a loop with CTRL-C · vim\/vim@f1ec378",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/f1ec378b014efb9897422c40369a6462163a512a",
+                "text": "Problem: Vim9: cannot interrupt a loop with CTRL-C. Solution: Check for CTRL-C once in a while. Doesn't fully work yet.",
+                "fallback": "GitHub: patch 8.2.0420: Vim9: cannot interrupt a loop with CTRL-C · vim\/vim@f1ec378",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/f1ec378b014efb9897422c40369a6462163a512a",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/f1ec378b014efb9897422c40369a6462163a512a"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584729517.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/9645e2d9fc8a591f1db30383caccf71d40e0810c|patch 8.2.0421: interrupting with CTRL-C does not always work>\npatch 8.2.0421: interrupting with CTRL-C does not always work\n\nProblem:    Interrupting with CTRL-C does not always work.\nSolution:   Recognize CTRL-C while modifyOtherKeys is set.",
+        "ts": "1584734312.027500",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0421: interrupting with CTRL-C does not always work · vim\/vim@9645e2d",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/9645e2d9fc8a591f1db30383caccf71d40e0810c",
+                "text": "Problem: Interrupting with CTRL-C does not always work. Solution: Recognize CTRL-C while modifyOtherKeys is set.",
+                "fallback": "GitHub: patch 8.2.0421: interrupting with CTRL-C does not always work · vim\/vim@9645e2d",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/9645e2d9fc8a591f1db30383caccf71d40e0810c",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/9645e2d9fc8a591f1db30383caccf71d40e0810c"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584734313.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/0f1563ffee4397f5b379517c41b7c9a977fd2e22|patch 8.2.0422: crash when passing popup window to win_splitmove()>\npatch 8.2.0422: crash when passing popup window to win_splitmove()\n\nProblem:    Crash when passing popup window to win_splitmove(). (john Devin)\nSolution:   Disallow moving a popup window. (closes #5816)",
+        "ts": "1584735522.027700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0422: crash when passing popup window to win_splitmove() · vim\/vim@0f1563f",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/0f1563ffee4397f5b379517c41b7c9a977fd2e22",
+                "text": "Problem: Crash when passing popup window to win_splitmove(). (john Devin) Solution: Disallow moving a popup window. (closes #5816)",
+                "fallback": "GitHub: patch 8.2.0422: crash when passing popup window to win_splitmove() · vim\/vim@0f1563f",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/0f1563ffee4397f5b379517c41b7c9a977fd2e22",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/0f1563ffee4397f5b379517c41b7c9a977fd2e22"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584735522.000000"
+        }
+    }
+]

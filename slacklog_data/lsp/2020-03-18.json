@@ -1,0 +1,567 @@
+[
+    {
+        "client_msg_id": "4f44195f-7b5e-4ca9-9645-4369b3798d0b",
+        "type": "message",
+        "text": "LSPの``workspace\/executeCommand``仕様のふわふわ具合にどうしたものかと。\n<https:\/\/microsoft.github.io\/language-server-protocol\/specifications\/specification-current\/#workspace_executeCommand>",
+        "user": "U80CX6XDZ",
+        "ts": "1584544537.376200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U80CX6XDZ",
+            "ts": "1584544561.000000"
+        },
+        "attachments": [
+            {
+                "title": "Specification",
+                "title_link": "https:\/\/microsoft.github.io\/language-server-protocol\/specifications\/specification-current\/#workspace_executeCommand",
+                "text": "Language Server Protocol Specification - 3.15This document describes the 3.15.x version of the language server protocol. An implementation for node of the 3....",
+                "fallback": "Specification",
+                "from_url": "https:\/\/microsoft.github.io\/language-server-protocol\/specifications\/specification-current\/#workspace_executeCommand",
+                "service_icon": "https:\/\/microsoft.github.io\/language-server-protocol\/img\/favicon.png",
+                "service_name": "microsoft.github.io",
+                "id": 1,
+                "original_url": "https:\/\/microsoft.github.io\/language-server-protocol\/specifications\/specification-current\/#workspace_executeCommand"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Fwx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "LSPの`"
+                            },
+                            {
+                                "type": "text",
+                                "text": "workspace\/executeCommand",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "`仕様のふわふわ具合にどうしたものかと。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/microsoft.github.io\/language-server-protocol\/specifications\/specification-current\/#workspace_executeCommand"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "859c14cf-d7a1-41ed-8808-d4faa64d5344",
+        "type": "message",
+        "text": "vim-lspの `workspace\/executeCommand` もReturnがAnyなので、何を返したものか状態なんですね。まあそうなりますよね。",
+        "user": "U80CX6XDZ",
+        "ts": "1584544848.377700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U80CX6XDZ",
+            "ts": "1584544860.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=NGdh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim-lspの "
+                            },
+                            {
+                                "type": "text",
+                                "text": "workspace\/executeCommand",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " もReturnがAnyなので、何を返したものか状態なんですね。まあそうなりますよね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cce53e8f-b1ac-4d7e-9e08-e5387a464bdc",
+        "type": "message",
+        "text": "逆にいうと独自で作るって話ですね。",
+        "user": "U03C6TEAZ",
+        "ts": "1584546391.378300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VxrLS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "逆にいうと独自で作るって話ですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3DA562BB-75F8-41D5-9DC0-2FB690DAAB32",
+        "type": "message",
+        "text": "綺麗にやろうとクライアント実装するなら各LSP側のexecuteCommand実装を見て、一通り捌けるようにしてあげる。雑にやるなら、どれも文字列で解釈できるものとして、バッファ表示してあげるかという感じですかね。",
+        "user": "U80CX6XDZ",
+        "ts": "1584547095.381900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gB1uG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "綺麗にやろうとクライアント実装するなら各LSP側のexecuteCommand実装を見て、一通り捌けるようにしてあげる。雑にやるなら、どれも文字列で解釈できるものとして、バッファ表示してあげるかという感じですかね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "15A0107E-07D6-4EB2-A944-443EFDE5ABC5",
+        "type": "message",
+        "text": "sqlsのクエリ実行結果表示を作ってるのですが、出来たらvim-lsp側を触ってみます。",
+        "user": "U80CX6XDZ",
+        "ts": "1584547168.383700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Hp9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "sqlsのクエリ実行結果表示を作ってるのですが、出来たらvim-lsp側を触ってみます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3c5c0ee8-d251-4528-be9d-3664a0bff735",
+        "type": "message",
+        "text": "僕も前試したんですが code-action からの連携(register_command)でやるのはほぼ意味が無くて結局 `lsp#send_request` で直接 executeCommand 叩いて応答を JSON パースした方が楽でした。",
+        "user": "U03C6TEAZ",
+        "ts": "1584547285.385000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Sk8Af",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "僕も前試したんですが code-action からの連携(register_command)でやるのはほぼ意味が無くて結局 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "lsp#send_request",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " で直接 executeCommand 叩いて応答を JSON パースした方が楽でした。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9dee4802-a7c9-4edd-8954-e6e072746714",
+        "type": "message",
+        "text": "速さを求めるなら Go 側で表作って Vim ではそれ表示するだけ、とかもあると思います。",
+        "user": "U03C6TEAZ",
+        "ts": "1584547329.385700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rkdxS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "速さを求めるなら Go 側で表作って Vim ではそれ表示するだけ、とかもあると思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "da55deac-41fa-4e7d-877d-8ee50758a3ad",
+        "type": "message",
+        "text": "<https:\/\/github.com\/olekukonko\/tablewriter>",
+        "user": "U03C6TEAZ",
+        "ts": "1584547329.385900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "olekukonko\/tablewriter",
+                "title_link": "https:\/\/github.com\/olekukonko\/tablewriter",
+                "text": "ASCII table in golang. Contribute to olekukonko\/tablewriter development by creating an account on GitHub.",
+                "fallback": "GitHub: olekukonko\/tablewriter",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/2615393?s=400&v=4",
+                "from_url": "https:\/\/github.com\/olekukonko\/tablewriter",
+                "thumb_width": 420,
+                "thumb_height": 420,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/olekukonko\/tablewriter"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GFf+r",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/olekukonko\/tablewriter"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "af385122-d99a-414e-8c7b-6d8c08141ca9",
+        "type": "message",
+        "text": "&gt;  速さを求めるなら Go 側で表作って Vim ではそれ表示するだけ、とかもあると思います\nまさにそれでテーブル表示を作ろうとしていたところでした。",
+        "user": "U80CX6XDZ",
+        "ts": "1584547539.386500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U80CX6XDZ",
+            "ts": "1584547650.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "amSLT",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": " 速さを求めるなら Go 側で表作って Vim ではそれ表示するだけ、とかもあると思います"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まさにそれでテーブル表示を作ろうとしていたところでした。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "efm-langserver の completion-command に単語のみ抽出するコマンド作って設定してみた。日本語にも対応してしまったのでやっぱりちょっと遅いね。",
+        "files": [
+            {
+                "id": "F010AH4RNQM",
+                "created": 1584580067,
+                "timestamp": 1584580067,
+                "name": "screenshot.gif",
+                "title": "screenshot.gif",
+                "mimetype": "image\/gif",
+                "filetype": "gif",
+                "pretty_type": "GIF",
+                "user": "U03C6TEAZ",
+                "editable": false,
+                "size": 72677,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010AH4RNQM\/screenshot.gif?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010AH4RNQM\/download\/screenshot.gif?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 360,
+                "thumb_360_h": 224,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_480.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_w": 480,
+                "thumb_480_h": 299,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_720.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720_w": 720,
+                "thumb_720_h": 449,
+                "thumb_360_gif": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_360.gif?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_gif": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_480.gif?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "image_exif_rotation": 1,
+                "original_w": 722,
+                "original_h": 450,
+                "deanimate_gif": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010AH4RNQM-e45eae7464\/screenshot_deanimate_gif.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_tiny": "AwAdADCkCfWjJ9aB\/nmk5\/yaAF3NSc+9HNJk+tABz70Z96MmjJoAUj2pKeZAT\/q0H4Gmls\/wgUAJRS59hS7x\/cT8qAG0U\/eM\/wCrT8qXzR\/zxi\/I\/wCNAH\/\/2Q==",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U03C6TEAZ\/F010AH4RNQM\/screenshot.gif",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F010AH4RNQM-64a6ddb827",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Dne",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "efm-langserver の completion-command に単語のみ抽出するコマンド作って設定してみた。日本語にも対応してしまったのでやっぱりちょっと遅いね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U03C6TEAZ",
+        "display_as_bot": false,
+        "ts": "1584580073.386800",
+        "client_msg_id": "a2a44d7c-1001-4dfa-a56f-a14a84bb90d4"
+    },
+    {
+        "client_msg_id": "8afefd10-9a59-4a85-9b75-9147977021c3",
+        "type": "message",
+        "text": "<https:\/\/github.com\/mattn\/words>",
+        "user": "U03C6TEAZ",
+        "ts": "1584580081.387200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "mattn\/words",
+                "title_link": "https:\/\/github.com\/mattn\/words",
+                "text": "Contribute to mattn\/words development by creating an account on GitHub.",
+                "fallback": "GitHub: mattn\/words",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/10111?s=400&v=4",
+                "from_url": "https:\/\/github.com\/mattn\/words",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/mattn\/words"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3B+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/mattn\/words"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1::skin-tone-5",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    }
+]

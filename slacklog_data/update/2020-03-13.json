@@ -1,0 +1,167 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/8210693795d6d0d51bf5b70674d4539cdde0330b|patch 8.2.0375: Coverity warning for not using return value>\npatch 8.2.0375: Coverity warning for not using return value\n\nProblem:    Coverity warning for not using return value.\nSolution:   Move error message to separate function.",
+        "ts": "1584106705.017700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0375: Coverity warning for not using return value · vim\/vim@8210693",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/8210693795d6d0d51bf5b70674d4539cdde0330b",
+                "text": "Problem: Coverity warning for not using return value. Solution: Move error message to separate function.",
+                "fallback": "GitHub: patch 8.2.0375: Coverity warning for not using return value · vim\/vim@8210693",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/8210693795d6d0d51bf5b70674d4539cdde0330b",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/8210693795d6d0d51bf5b70674d4539cdde0330b"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584106706.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/fa5d8a191d0f2deacffebf62dced5c2198cc0880|patch 8.2.0376: nasty callback test fails on some systems>\npatch 8.2.0376: nasty callback test fails on some systems\n\nProblem:    Nasty callback test fails on some systems.\nSolution:   Increase the sleep time.",
+        "ts": "1584107907.017900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0376: nasty callback test fails on some systems · vim\/vim@fa5d8a1",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/fa5d8a191d0f2deacffebf62dced5c2198cc0880",
+                "text": "Problem: Nasty callback test fails on some systems. Solution: Increase the sleep time.",
+                "fallback": "GitHub: patch 8.2.0376: nasty callback test fails on some systems · vim\/vim@fa5d8a1",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/fa5d8a191d0f2deacffebf62dced5c2198cc0880",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/fa5d8a191d0f2deacffebf62dced5c2198cc0880"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584107908.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/d47e6f0b4cc82e3ccdc4605bb1811861a5b2d115|patch 8.2.0377: no CI test for a big-endian system>\npatch 8.2.0377: no CI test for a big-endian system\n\nProblem:    No CI test for a big-endian system.\nSolution:   Test with s390x. (James McCoy, closes #5772)",
+        "ts": "1584111510.018100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0377: no CI test for a big-endian system · vim\/vim@d47e6f0",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/d47e6f0b4cc82e3ccdc4605bb1811861a5b2d115",
+                "text": "Problem: No CI test for a big-endian system. Solution: Test with s390x. (James McCoy, closes #5772)",
+                "fallback": "GitHub: patch 8.2.0377: no CI test for a big-endian system · vim\/vim@d47e6f0",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/d47e6f0b4cc82e3ccdc4605bb1811861a5b2d115",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/d47e6f0b4cc82e3ccdc4605bb1811861a5b2d115"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584111511.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/346f18e5fe12e6aaba5a6a18f6d0deb55eb7a9e8|patch 8.2.0378: prop_find() does not find all props>\npatch 8.2.0378: prop_find() does not find all props\n\nProblem:    prop_find() does not find all props.\nSolution:   Check being in the start line. (Axel Forsman, closes #5776)",
+        "ts": "1584131915.018300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0378: prop_find() does not find all props · vim\/vim@346f18e",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/346f18e5fe12e6aaba5a6a18f6d0deb55eb7a9e8",
+                "text": "Problem: prop_find() does not find all props. Solution: Check being in the start line. (Axel Forsman, closes #5776)",
+                "fallback": "GitHub: patch 8.2.0378: prop_find() does not find all props · vim\/vim@346f18e",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/346f18e5fe12e6aaba5a6a18f6d0deb55eb7a9e8",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/346f18e5fe12e6aaba5a6a18f6d0deb55eb7a9e8"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584131916.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/965fd8d4dc5e84f612d8fc1efeaa78bd17842c9b|patch 8.2.0379: gcc warns for ambiguous else>\npatch 8.2.0379: gcc warns for ambiguous else\n\nProblem:    Gcc warns for ambiguous else.\nSolution:   Add braces. (Dominique Pelle, closes #5778)",
+        "ts": "1584169099.018500",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0379: gcc warns for ambiguous else · vim\/vim@965fd8d",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/965fd8d4dc5e84f612d8fc1efeaa78bd17842c9b",
+                "text": "Problem: Gcc warns for ambiguous else. Solution: Add braces. (Dominique Pelle, closes #5778)",
+                "fallback": "GitHub: patch 8.2.0379: gcc warns for ambiguous else · vim\/vim@965fd8d",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/965fd8d4dc5e84f612d8fc1efeaa78bd17842c9b",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/965fd8d4dc5e84f612d8fc1efeaa78bd17842c9b"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584169099.000000"
+        }
+    }
+]

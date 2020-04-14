@@ -1,0 +1,54 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585911475.096000",
+        "user": "UMRAUJY22",
+        "text": "<@UMRAUJY22> has joined the channel"
+    },
+    {
+        "client_msg_id": "17c82061-ac59-43ad-846a-0bf6492cc8cd",
+        "type": "message",
+        "text": "Linux Mintが好き",
+        "user": "U7HFY4HFY",
+        "ts": "1585914897.097400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb58a0397ae4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6b58a0397ae4e1045da22ce63cd61012.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0020-72.png",
+            "first_name": "バクダンくん",
+            "real_name": "バクダンくん",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "bakudankun",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lq69q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Linux Mintが好き"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585923948.097600",
+        "user": "UJV04G927",
+        "text": "<@UJV04G927> has joined the channel"
+    }
+]

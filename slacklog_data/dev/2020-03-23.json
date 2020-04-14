@@ -1,0 +1,154 @@
+[
+    {
+        "client_msg_id": "f88fa4d9-b471-40bc-aaa2-052620f2a09d",
+        "type": "message",
+        "text": "terminalなんかバグっぽい挙動するな",
+        "user": "U9S4G0LJW",
+        "ts": "1584979025.422800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IVhKh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "terminalなんかバグっぽい挙動するな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "869fc741-097f-4c2e-a661-6d835d821b0e",
+        "type": "message",
+        "text": "Vimのterminalって引数渡すとシェルみたいに区切ってコマンド実行するけど、末尾にスペースが入ってると空の引数を渡してしまう",
+        "user": "U9S4G0LJW",
+        "ts": "1584979110.423700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Dbv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vimのterminalって引数渡すとシェルみたいに区切ってコマンド実行するけど、末尾にスペースが入ってると空の引数を渡してしまう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6ccb2c63-bab7-4c42-990a-bfc1e6f98d45",
+        "type": "message",
+        "text": "ジョブの区切り方がおかしいんか、明日調べよ",
+        "user": "U9S4G0LJW",
+        "ts": "1584980288.424400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gFkZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ジョブの区切り方がおかしいんか、明日調べよ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "E3504D8D-8C63-4F5E-8FB9-6393BCEDDBDA",
+        "type": "message",
+        "text": "なんか前に似たようなのに当たったことがあるがする\nでも、あれは自分のミスだった気がした",
+        "user": "UDDCM376D",
+        "ts": "1584982240.425700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/H3iy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんか前に似たようなのに当たったことがあるがする\nでも、あれは自分のミスだった気がした"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

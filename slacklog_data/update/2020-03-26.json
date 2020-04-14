@@ -1,0 +1,398 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/cf3f8bf4ddfbc0f5ce53f0c9270dc15567f4feea|patch 8.2.0449: Vim9: crash if return type is invalid>\npatch 8.2.0449: Vim9: crash if return type is invalid\n\nProblem:    Vim9: crash if return type is invalid. (Yegappan Lakshmanan)\nSolution:   Always return some type, not NULL.",
+        "ts": "1585225100.001000",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0449: Vim9: crash if return type is invalid · vim\/vim@cf3f8bf",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/cf3f8bf4ddfbc0f5ce53f0c9270dc15567f4feea",
+                "text": "Problem: Vim9: crash if return type is invalid. (Yegappan Lakshmanan) Solution: Always return some type, not NULL.",
+                "fallback": "GitHub: patch 8.2.0449: Vim9: crash if return type is invalid · vim\/vim@cf3f8bf",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/cf3f8bf4ddfbc0f5ce53f0c9270dc15567f4feea",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/cf3f8bf4ddfbc0f5ce53f0c9270dc15567f4feea"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585225101.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/7d941ee032c02a4b682201881eb5c1f1958f17ee|patch 8.2.0450: not enough testing for restricted mode and function c…>\npatch 8.2.0450: not enough testing for restricted mode and function calls\n\nProblem:    Not enough testing for restricted mode and function calls.\nSolution:   Add more tests. (Yegappan Lakshmanan, closes #5847)",
+        "ts": "1585228703.001200",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0450: not enough testing for restricted mode and function c… · vim\/vim@7d941ee",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/7d941ee032c02a4b682201881eb5c1f1958f17ee",
+                "text": "…alls Problem: Not enough testing for restricted mode and function calls. Solution: Add more tests. (Yegappan Lakshmanan, closes #5847)",
+                "fallback": "GitHub: patch 8.2.0450: not enough testing for restricted mode and function c… · vim\/vim@7d941ee",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/7d941ee032c02a4b682201881eb5c1f1958f17ee",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/7d941ee032c02a4b682201881eb5c1f1958f17ee"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585228703.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/82e743c5b343847d88b958594ad3433213ef9405|patch 8.2.0451: Win32: double-width character displayed incorrectly>\npatch 8.2.0451: Win32: double-width character displayed incorrectly\n\nProblem:    Win32: double-width character displayed incorrectly.\nSolution:   First move the cursor to the first column. (Nobuhiro Takasaki,\n            closes #5848)",
+        "ts": "1585234705.001400",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0451: Win32: double-width character displayed incorrectly · vim\/vim@82e743c",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/82e743c5b343847d88b958594ad3433213ef9405",
+                "text": "Problem: Win32: double-width character displayed incorrectly. Solution: First move the cursor to the first column. (Nobuhiro Takasaki, closes #5848)",
+                "fallback": "GitHub: patch 8.2.0451: Win32: double-width character displayed incorrectly · vim\/vim@82e743c",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/82e743c5b343847d88b958594ad3433213ef9405",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/82e743c5b343847d88b958594ad3433213ef9405"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585234706.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/a9c3a30891edd7347d94298c48ea68bb5c165fd7|patch 8.2.0452: channel_parse_messages() fails when called recursively>\npatch 8.2.0452: channel_parse_messages() fails when called recursively\n\nProblem:    channel_parse_messages() fails when called recursively.\nSolution:   Return for a recursive call. (closes #5835)",
+        "ts": "1585235907.001600",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0452: channel_parse_messages() fails when called recursively · vim\/vim@a9c3a30",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/a9c3a30891edd7347d94298c48ea68bb5c165fd7",
+                "text": "Problem: channel_parse_messages() fails when called recursively. Solution: Return for a recursive call. (closes #5835)",
+                "fallback": "GitHub: patch 8.2.0452: channel_parse_messages() fails when called recursively · vim\/vim@a9c3a30",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/a9c3a30891edd7347d94298c48ea68bb5c165fd7",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/a9c3a30891edd7347d94298c48ea68bb5c165fd7"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585235909.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/7851b1ca992222880df1314684a790f293e11896|patch 8.2.0453: trailing space in job_start() command causes empty ar…>\npatch 8.2.0453: trailing space in job_start() command causes empty argument\n\nProblem:    Trailing space in job_start() command causes empty argument.\nSolution:   Ignore trailing space. (closes #5851)",
+        "ts": "1585237106.001800",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0453: trailing space in job_start() command causes empty ar… · vim\/vim@7851b1c",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/7851b1ca992222880df1314684a790f293e11896",
+                "text": "…gument Problem: Trailing space in job_start() command causes empty argument. Solution: Ignore trailing space. (closes #5851)",
+                "fallback": "GitHub: patch 8.2.0453: trailing space in job_start() command causes empty ar… · vim\/vim@7851b1c",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/7851b1ca992222880df1314684a790f293e11896",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/7851b1ca992222880df1314684a790f293e11896"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585237106.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/3ed9efc2b15b624268bcce4e4d312fb35840a12b|patch 8.2.0454: some tests fail when the system is slow>\npatch 8.2.0454: some tests fail when the system is slow\n\nProblem:    Some tests fail when the system is slow.\nSolution:   Make the run number global, use in the test to increase the\n            waiting time. (closes #5841)",
+        "ts": "1585238309.002000",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0454: some tests fail when the system is slow · vim\/vim@3ed9efc",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/3ed9efc2b15b624268bcce4e4d312fb35840a12b",
+                "text": "Problem: Some tests fail when the system is slow. Solution: Make the run number global, use in the test to increase the waiting time. (closes #5841)",
+                "fallback": "GitHub: patch 8.2.0454: some tests fail when the system is slow · vim\/vim@3ed9efc",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/3ed9efc2b15b624268bcce4e4d312fb35840a12b",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/3ed9efc2b15b624268bcce4e4d312fb35840a12b"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585238309.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/83d4790a04780328c9c7ad22d18f404a27c11601|patch 8.2.0455: cannot set the highlight group for a specific terminal>\npatch 8.2.0455: cannot set the highlight group for a specific terminal\n\nProblem:    Cannot set the highlight group for a specific terminal.\nSolution:   Add the \"highlight\" option to term_start(). (closes #5818)",
+        "ts": "1585251505.002200",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0455: cannot set the highlight group for a specific terminal · vim\/vim@83d4790",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/83d4790a04780328c9c7ad22d18f404a27c11601",
+                "text": "Problem: Cannot set the highlight group for a specific terminal. Solution: Add the \"highlight\" option to term_start(). (closes #5818)",
+                "fallback": "GitHub: patch 8.2.0455: cannot set the highlight group for a specific terminal · vim\/vim@83d4790",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/83d4790a04780328c9c7ad22d18f404a27c11601",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/83d4790a04780328c9c7ad22d18f404a27c11601"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585251507.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/72749f062f15c7147f512bc581695c25ad78fb4e|patch 8.2.0456: Test_confirm_cmd is flaky>\npatch 8.2.0456: Test_confirm_cmd is flaky\n\nProblem:    Test_confirm_cmd is flaky.\nSolution:   Add a term_wait() call. (closes #5854)",
+        "ts": "1585252704.002400",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0456: Test_confirm_cmd is flaky · vim\/vim@72749f0",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/72749f062f15c7147f512bc581695c25ad78fb4e",
+                "text": "Problem: Test_confirm_cmd is flaky. Solution: Add a term_wait() call. (closes #5854)",
+                "fallback": "GitHub: patch 8.2.0456: Test_confirm_cmd is flaky · vim\/vim@72749f0",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/72749f062f15c7147f512bc581695c25ad78fb4e",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/72749f062f15c7147f512bc581695c25ad78fb4e"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585252704.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/26bde6e2eb307898ab7ed42bf8e7e2ccde979e02|patch 8.2.0457: Test_quotestar() often fails when run under valgrind>\npatch 8.2.0457: Test_quotestar() often fails when run under valgrind\n\nProblem:    Test_quotestar() often fails when run under valgrind.\nSolution:   Wait longer for the GUI to start.",
+        "ts": "1585253908.002600",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0457: Test_quotestar() often fails when run under valgrind · vim\/vim@26bde6e",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/26bde6e2eb307898ab7ed42bf8e7e2ccde979e02",
+                "text": "Problem: Test_quotestar() often fails when run under valgrind. Solution: Wait longer for the GUI to start.",
+                "fallback": "GitHub: patch 8.2.0457: Test_quotestar() often fails when run under valgrind · vim\/vim@26bde6e",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/26bde6e2eb307898ab7ed42bf8e7e2ccde979e02",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/26bde6e2eb307898ab7ed42bf8e7e2ccde979e02"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585253909.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/bea9023d4260349c130faf447aa8d4cbadeffab2|patch 8.2.0458: missing feature check in test function>\npatch 8.2.0458: missing feature check in test function\n\nProblem:    Missing feature check in test function.\nSolution:   Add check commands.",
+        "ts": "1585257505.002800",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0458: missing feature check in test function · vim\/vim@bea9023",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/bea9023d4260349c130faf447aa8d4cbadeffab2",
+                "text": "Problem: Missing feature check in test function. Solution: Add check commands.",
+                "fallback": "GitHub: patch 8.2.0458: missing feature check in test function · vim\/vim@bea9023",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/bea9023d4260349c130faf447aa8d4cbadeffab2",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/bea9023d4260349c130faf447aa8d4cbadeffab2"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585257506.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/15c476023f3c5fb32eb1936c5eb5f0f5f413f3c7|patch 8.2.0459: cannot check if a function name is correct>\npatch 8.2.0459: cannot check if a function name is correct\n\nProblem:    Cannot check if a function name is correct.\nSolution:   Add \"?funcname\" to exists().",
+        "ts": "1585257505.002900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0459: cannot check if a function name is correct · vim\/vim@15c4760",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/15c476023f3c5fb32eb1936c5eb5f0f5f413f3c7",
+                "text": "Problem: Cannot check if a function name is correct. Solution: Add \"?funcname\" to exists().",
+                "fallback": "GitHub: patch 8.2.0459: cannot check if a function name is correct · vim\/vim@15c4760",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/15c476023f3c5fb32eb1936c5eb5f0f5f413f3c7",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/15c476023f3c5fb32eb1936c5eb5f0f5f413f3c7"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585257506.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/bd5e622bfa12bd80a5ce9406704205400e3faa6a|patch 8.2.0460: build failure because of wrong feature name>\npatch 8.2.0460: build failure because of wrong feature name\n\nProblem:    Build failure because of wrong feature name.\nSolution:   Correct feature name.",
+        "ts": "1585261701.003200",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0460: build failure because of wrong feature name · vim\/vim@bd5e622",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/bd5e622bfa12bd80a5ce9406704205400e3faa6a",
+                "text": "Problem: Build failure because of wrong feature name. Solution: Correct feature name.",
+                "fallback": "GitHub: patch 8.2.0460: build failure because of wrong feature name · vim\/vim@bd5e622",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/bd5e622bfa12bd80a5ce9406704205400e3faa6a",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/bd5e622bfa12bd80a5ce9406704205400e3faa6a"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585261701.000000"
+        }
+    }
+]

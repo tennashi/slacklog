@@ -1,0 +1,1442 @@
+[
+    {
+        "client_msg_id": "44f799ec-f109-4891-8c9e-a12fb8134967",
+        "type": "message",
+        "text": "curl で 4xx 系だった時はコマンドを失敗にしたいのだけど、レスポンスの表示もしたい場合ってどうすればいいでしょう? `--fail` だとレスポンスが表示されず…",
+        "user": "U03C71D7H",
+        "ts": "1583680818.199200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uAHL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "curl で 4xx 系だった時はコマンドを失敗にしたいのだけど、レスポンスの表示もしたい場合ってどうすればいいでしょう? "
+                            },
+                            {
+                                "type": "text",
+                                "text": "--fail",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " だとレスポンスが表示されず…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "F44B7135-BC99-478A-A55A-72E4BC638FD5",
+        "type": "message",
+        "text": "-o とか指定してもダメな感じすか？",
+        "user": "UDDCM376D",
+        "ts": "1583681164.199900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6XX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "-o とか指定してもダメな感じすか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0bb4ebbb-62a2-40ee-afcf-ecde3c1fd5ce",
+        "type": "message",
+        "text": "ググったらシェルで頑張るという答えとwgetを使うという答えが出てきました:totemoturai:",
+        "user": "U9S4G0LJW",
+        "ts": "1583681291.200500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Pyk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ググったらシェルで頑張るという答えとwgetを使うという答えが出てきました"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "totemoturai"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4ad7f938-97a9-4a1f-b4e3-f32c7bd23dee",
+        "type": "message",
+        "text": "<https:\/\/stackoverflow.com\/questions\/22506024\/get-page-output-with-curl-fail>",
+        "user": "U9S4G0LJW",
+        "ts": "1583681296.200700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Stack Overflow",
+                "title": "Get page output with curl --fail",
+                "title_link": "https:\/\/stackoverflow.com\/questions\/22506024\/get-page-output-with-curl-fail",
+                "text": "Calling curl without parameters, i get the page output, even with an http status code = 404: $ curl <http:\/\/www.google.com\/linux;> <!DOCTYPE html> &lt;html lang=en&gt; &lt;meta charset=utf-8...",
+                "fallback": "Stack Overflow: Get page output with curl --fail",
+                "thumb_url": "https:\/\/cdn.sstatic.net\/Sites\/stackoverflow\/img\/apple-touch-icon@2.png?v=73d79a89bded",
+                "from_url": "https:\/\/stackoverflow.com\/questions\/22506024\/get-page-output-with-curl-fail",
+                "thumb_width": 316,
+                "thumb_height": 316,
+                "service_icon": "https:\/\/cdn.sstatic.net\/Sites\/stackoverflow\/img\/apple-touch-icon.png?v=c78bd457575a",
+                "id": 1,
+                "original_url": "https:\/\/stackoverflow.com\/questions\/22506024\/get-page-output-with-curl-fail"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "32rY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/stackoverflow.com\/questions\/22506024\/get-page-output-with-curl-fail"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "567739a4-844f-4724-aaaa-4b9683a8e055",
+        "type": "message",
+        "text": "curl単品だと無理っぽい、manにも-f付けないと終了コード22は使われないよって書いてあるし",
+        "user": "U9S4G0LJW",
+        "ts": "1583681373.201700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3vAc0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "curl単品だと無理っぽい、manにも-f付けないと終了コード22は使われないよって書いてあるし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "de495960-ef5c-4828-85c2-f2927e421ed7",
+        "type": "message",
+        "text": "-o指定しても-f付いてたら保存されない",
+        "user": "U9S4G0LJW",
+        "ts": "1583681399.202000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DxmR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "-o指定しても-f付いてたら保存されない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "44ce2280-8ce7-4628-b8e7-8fd8d2f164bd",
+        "type": "message",
+        "text": "15年前からドキュメントに書いてある、と close される issue です。ご確認下さい。 <https:\/\/github.com\/curl\/curl\/issues\/1978>",
+        "user": "U03C6TEAZ",
+        "ts": "1583681492.202700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "use of --fail hides http headers\/body · Issue #1978 · curl\/curl",
+                "title_link": "https:\/\/github.com\/curl\/curl\/issues\/1978",
+                "text": "I did this % curl --fail --dump-header - --request POST --data-urlencode foo=bar 127.0.0.1:9999 curl: (22) The requested URL returned error: 403 Forbidden % echo $? 22 I expected the following % cu...",
+                "fallback": "GitHub: use of --fail hides http headers\/body · Issue #1978 · curl\/curl",
+                "from_url": "https:\/\/github.com\/curl\/curl\/issues\/1978",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/569041\/a7c0b500-5cae-11e9-9287-1d94b1db9c95",
+                "thumb_width": 500,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/curl\/curl\/issues\/1978"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1\/nI9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "15年前からドキュメントに書いてある、と close される issue です。ご確認下さい。 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/curl\/curl\/issues\/1978"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fe9ef34d-1d8e-4902-ac62-4fbb2e2fda5a",
+        "type": "message",
+        "text": "とてもつらい",
+        "user": "U03C71D7H",
+        "ts": "1583681746.203100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "svqm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とてもつらい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7f288bf3-c5cf-4def-9589-66a20d406ad8",
+        "type": "message",
+        "text": "GitHub API を curl で叩くのに、失敗したらそこで止まってほしいけど失敗の理由は出力されてほしい…",
+        "user": "U03C71D7H",
+        "ts": "1583681891.203700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tSaVo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "GitHub API を curl で叩くのに、失敗したらそこで止まってほしいけど失敗の理由は出力されてほしい…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "19636776-60f8-40fe-9704-fd6468162b40",
+        "type": "message",
+        "text": "メッセージは stderr にでますけどそれでは不十分？",
+        "user": "U03C6TEAZ",
+        "ts": "1583682153.204100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FZuI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "メッセージは stderr にでますけどそれでは不十分？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8a14735a-e7ff-4d80-9f06-e4ead4f978aa",
+        "type": "message",
+        "text": "あれ、レスポンスの body でます?",
+        "user": "U03C71D7H",
+        "ts": "1583682261.204300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VxwtY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれ、レスポンスの body でます?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "126325e8-2d2a-48c3-ace1-4d88f9df8d36",
+        "type": "message",
+        "text": "メッセージだけ出ます。",
+        "user": "U03C6TEAZ",
+        "ts": "1583682283.204700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wks",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "メッセージだけ出ます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "88a7c493-11cb-4bd7-b45c-7bdd73bda10f",
+        "type": "message",
+        "text": "header の。",
+        "user": "U03C6TEAZ",
+        "ts": "1583682292.205000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sMJj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "header の。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e771945d-6afd-4c86-9698-f521f6fe5c04",
+        "type": "message",
+        "text": "API は失敗するとレスポンスの body に失敗の理由を返してくれるので、できればそれを残したい感じです",
+        "user": "U03C71D7H",
+        "ts": "1583682309.205400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Tyl3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "API は失敗するとレスポンスの body に失敗の理由を返してくれるので、できればそれを残したい感じです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7d217534-d614-4c99-84bf-a9f0395822db",
+        "type": "message",
+        "text": "stackoverflow とか見ると wget 使えと書いてますね。",
+        "user": "U03C6TEAZ",
+        "ts": "1583682346.206100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fom9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "stackoverflow とか見ると wget 使えと書いてますね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5126b8f1-42dd-4c71-866d-a5ded92367d7",
+        "type": "message",
+        "text": "wget かー POST が割とダルいイメージ…",
+        "user": "U03C71D7H",
+        "ts": "1583682382.206500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "a66",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "wget かー POST が割とダルいイメージ…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b412a7d4-8b4f-418a-86f3-b0233e615788",
+        "type": "message",
+        "text": "がんばるしかないか",
+        "user": "U03C71D7H",
+        "ts": "1583682469.207500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+dzb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "がんばるしかないか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f9779e3c-069b-47a9-8155-f47b5a4b2424",
+        "type": "message",
+        "text": "HTTP のレスポンスが HTML 返すか `{\"error\": \"xxx\"}` 返すかは特にルール無いので(ドキュメント化されてなければ)、もし取れても汎用的に作れるかどうかは分からないすねー。",
+        "user": "U03C6TEAZ",
+        "ts": "1583682488.207900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oUFay",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "HTTP のレスポンスが HTML 返すか "
+                            },
+                            {
+                                "type": "text",
+                                "text": "{\"error\": \"xxx\"}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 返すかは特にルール無いので(ドキュメント化されてなければ)、もし取れても汎用的に作れるかどうかは分からないすねー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ba4f30e6-0dcb-4b6e-ab0b-e32ffe973ef9",
+        "type": "message",
+        "text": "あー単に人が見る用なので形式はなんでもよいのです。GHA が失敗した時に理由がないとしんどいと言うアレ",
+        "user": "U03C71D7H",
+        "ts": "1583682536.208700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "43J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー単に人が見る用なので形式はなんでもよいのです。GHA が失敗した時に理由がないとしんどいと言うアレ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "U03C6TEAZ"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c60274a8-dd41-4af6-92fe-e221fbe61cb5",
+        "type": "message",
+        "text": "<https:\/\/github.com\/actions\/virtual-environments\/blob\/master\/images\/linux\/Ubuntu1804-README.md>\nwget はさすがに入ってそうなのでやるか",
+        "user": "U03C71D7H",
+        "ts": "1583682628.209200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "actions\/virtual-environments",
+                "title_link": "https:\/\/github.com\/actions\/virtual-environments\/blob\/master\/images\/linux\/Ubuntu1804-README.md",
+                "text": "GitHub Actions virtual environments. Contribute to actions\/virtual-environments development by creating an account on GitHub.",
+                "fallback": "GitHub: actions\/virtual-environments",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/44036562?s=400&v=4",
+                "from_url": "https:\/\/github.com\/actions\/virtual-environments\/blob\/master\/images\/linux\/Ubuntu1804-README.md",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/actions\/virtual-environments\/blob\/master\/images\/linux\/Ubuntu1804-README.md"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ppB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/actions\/virtual-environments\/blob\/master\/images\/linux\/Ubuntu1804-README.md"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nwget はさすがに入ってそうなのでやるか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f20c4fe5-7272-4afb-90f6-3fa87f68673a",
+        "type": "message",
+        "text": "wget で検索しているのに curl を含む結果を返してくる Google さん…",
+        "user": "U03C71D7H",
+        "ts": "1583682671.209700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HN7W",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "wget で検索しているのに curl を含む結果を返してくる Google さん…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0c79fc9a-406e-47b2-8255-a428d7c53afb",
+        "type": "message",
+        "text": "curl のコマンドラインを wget に変換するツールほしい",
+        "user": "U03C71D7H",
+        "ts": "1583682721.210100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "t246",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "curl のコマンドラインを wget に変換するツールほしい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "95a6b1be-c8f1-4e7e-a2ad-aa4b627f9e28",
+        "type": "message",
+        "text": "たぶん書き直せた。 `--content-on-error` 最高",
+        "user": "U03C71D7H",
+        "ts": "1583683232.210400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "b\/E",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "たぶん書き直せた。 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "--content-on-error",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 最高"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tiken",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6fa2d02c-2d1f-4184-b22e-fbf06a5fd3b6",
+        "type": "message",
+        "text": "あとは、 `-v` つけて、 `&lt; HTTP\/2 404` とか `&lt; HTTP\/1.1 404` を `grep` するとか？",
+        "user": "U06ECBRTJ",
+        "ts": "1583684763.211800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hPR9h",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あとは、 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "-v",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " つけて、 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "< HTTP\/2 404",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とか "
+                            },
+                            {
+                                "type": "text",
+                                "text": "< HTTP\/1.1 404",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を "
+                            },
+                            {
+                                "type": "text",
+                                "text": "grep",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " するとか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5b3bd944-ecde-4d97-bb48-12fa7f65eb35",
+        "type": "message",
+        "text": "絶対にやりたくない",
+        "user": "U03C71D7H",
+        "ts": "1583684865.212000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QDfFi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "絶対にやりたくない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "50e12619-da11-40a8-975a-af1a2e345567",
+        "type": "message",
+        "text": "もしそれやるなら `-i` がいい。",
+        "user": "U03C6TEAZ",
+        "ts": "1583684919.212500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tsh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もしそれやるなら "
+                            },
+                            {
+                                "type": "text",
+                                "text": "-i",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " がいい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0f47ce6d-f439-4999-b07b-385907c8f02e",
+        "type": "message",
+        "text": "確かにそうですね",
+        "user": "U06ECBRTJ",
+        "ts": "1583684948.213200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eQ9+F",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "確かにそうですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3896552f-21a0-4e56-8e32-c1ef05aaca84",
+        "type": "message",
+        "text": "Ruby とかならともかく Bash ではやりたくないですねw",
+        "user": "U03C71D7H",
+        "ts": "1583684955.213400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "q+C8w",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Ruby とかならともかく Bash ではやりたくないですねw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8139f4c7-8540-4a80-94ce-e28dd7af622e",
+        "type": "message",
+        "text": "もしくは、 `--head` か…",
+        "user": "U06ECBRTJ",
+        "ts": "1583684969.213700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OaX1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もしくは、 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "--head",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " か…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "75ad8e2b-bb34-400d-9952-604e91c67efa",
+        "type": "message",
+        "text": "今日のarchlinux活の様子です <https:\/\/aur.archlinux.org\/packages\/acroread\/#comment-732753>",
+        "user": "U03C4RC8X",
+        "ts": "1583688113.214000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "AUR (en) - acroread",
+                "title_link": "https:\/\/aur.archlinux.org\/packages\/acroread\/#comment-732753",
+                "text": "Adobe Acrobat Reader is a PDF file viewer",
+                "fallback": "AUR (en) - acroread",
+                "from_url": "https:\/\/aur.archlinux.org\/packages\/acroread\/#comment-732753",
+                "service_name": "aur.archlinux.org",
+                "id": 1,
+                "original_url": "https:\/\/aur.archlinux.org\/packages\/acroread\/#comment-732753"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nG3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今日のarchlinux活の様子です "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/aur.archlinux.org\/packages\/acroread\/#comment-732753"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bf1a2f91-b19b-4748-b98a-9c7d77d4f387",
+        "type": "message",
+        "text": "<https:\/\/ja.wikipedia.org\/wiki\/Adwaita_(%E3%83%86%E3%83%BC%E3%83%9E)>\nadwaita ってこれだろうけど、 warn として出ても、無視して大丈夫って割と思ってた",
+        "user": "U06ECBRTJ",
+        "ts": "1583713144.214900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/2\/22\/GNOME_Files_v3.34_%282019-09%29.png\/1200px-GNOME_Files_v3.34_%282019-09%29.png",
+                "image_width": 1200,
+                "image_height": 644,
+                "image_bytes": 143533,
+                "title": "Adwaita (テーマ)",
+                "title_link": "https:\/\/ja.wikipedia.org\/wiki\/Adwaita_(%E3%83%86%E3%83%BC%E3%83%9E)",
+                "from_url": "https:\/\/ja.wikipedia.org\/wiki\/Adwaita_(%E3%83%86%E3%83%BC%E3%83%9E)",
+                "author_name": "Wikipedia",
+                "author_link": "https:\/\/ja.wikipedia.org\/",
+                "text": "Adwaita（アドワイタ）は、GTK向けのテーマ。また、同名のアイコンのセットも存在する。GNOMEデスクトップ環境において、バージョン3以降のデフォルトのテーマとなっている。",
+                "fallback": "wikipedia: Adwaita (テーマ)",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/wikipedia.png",
+                "id": 1,
+                "original_url": "https:\/\/ja.wikipedia.org\/wiki\/Adwaita_(%E3%83%86%E3%83%BC%E3%83%9E)"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "g=T",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ja.wikipedia.org\/wiki\/Adwaita_(%E3%83%86%E3%83%BC%E3%83%9E)"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nadwaita ってこれだろうけど、 warn として出ても、無視して大丈夫って割と思ってた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b629a158-8411-42fe-a5f9-07d48240dd12",
+        "type": "message",
+        "text": "うむ、おそらくこれは無関係&gt;adwaita",
+        "user": "U03C4RC8X",
+        "ts": "1583717038.215500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OA4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "うむ、おそらくこれは無関係>adwaita"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

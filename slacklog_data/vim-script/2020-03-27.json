@@ -1,0 +1,206 @@
+[
+    {
+        "client_msg_id": "38e5cf2d-31f6-4557-90f1-3edf56eed310",
+        "type": "message",
+        "text": "そもそも式でなく identifier のはずなんですよねぇ",
+        "user": "U0M7GCBPD",
+        "ts": "1585298044.011900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "f3S6z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そもそも式でなく identifier のはずなんですよねぇ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "18725ee4-47d4-48fe-a1c6-e5c943ed464b",
+        "type": "message",
+        "text": "tokenizer が先に token として認識しちゃってそう。\n<https:\/\/github.com\/vim-jp\/vim-vimlparser\/blob\/4139d51700ed72702bd9f7352e5359ac0cf54c6c\/autoload\/vimlparser.vim#L3301-L3310>",
+        "user": "U06BRP8VD",
+        "ts": "1585300420.012600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "vim-jp\/vim-vimlparser",
+                "title_link": "https:\/\/github.com\/vim-jp\/vim-vimlparser\/blob\/4139d51700ed72702bd9f7352e5359ac0cf54c6c\/autoload\/vimlparser.vim#L3301-L3310",
+                "text": "Vim script parser. Contribute to vim-jp\/vim-vimlparser development by creating an account on GitHub.",
+                "fallback": "GitHub: vim-jp\/vim-vimlparser",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/1051958?s=400&v=4",
+                "from_url": "https:\/\/github.com\/vim-jp\/vim-vimlparser\/blob\/4139d51700ed72702bd9f7352e5359ac0cf54c6c\/autoload\/vimlparser.vim#L3301-L3310",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim-jp\/vim-vimlparser\/blob\/4139d51700ed72702bd9f7352e5359ac0cf54c6c\/autoload\/vimlparser.vim#L3301-L3310"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "K9HI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "tokenizer が先に token として認識しちゃってそう。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/vim-vimlparser\/blob\/4139d51700ed72702bd9f7352e5359ac0cf54c6c\/autoload\/vimlparser.vim#L3301-L3310"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1585300420.012600",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1585300476.012800",
+        "reply_users": [
+            "U06BRP8VD"
+        ],
+        "replies": [
+            {
+                "user": "U06BRP8VD",
+                "ts": "1585300476.012800"
+            }
+        ],
+        "subscribed": false,
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            },
+            {
+                "name": "naruhodo",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dee10c8a-167f-40bd-8225-bc539f4105f7",
+        "type": "message",
+        "text": "issueに転載しといた",
+        "user": "U06BRP8VD",
+        "ts": "1585300476.012800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2Hjzz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "issueに転載しといた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1585300420.012600",
+        "parent_user_id": "U06BRP8VD"
+    },
+    {
+        "client_msg_id": "44d03efa-be10-4ab8-9840-6a9892642dcb",
+        "type": "message",
+        "text": "Vim script は逐次で処理するので事前に tokenizer で種別決定できない辛さがあるなぁ。",
+        "user": "U03C6TEAZ",
+        "ts": "1585302371.013600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZVYo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vim script は逐次で処理するので事前に tokenizer で種別決定できない辛さがあるなぁ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

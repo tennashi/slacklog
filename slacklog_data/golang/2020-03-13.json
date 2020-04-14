@@ -1,0 +1,2162 @@
+[
+    {
+        "client_msg_id": "944dc850-b15b-45d4-88eb-8dcd08e35d15",
+        "type": "message",
+        "text": "<https:\/\/github.com\/golang\/go\/issues\/37739>",
+        "user": "U03C6TEAZ",
+        "ts": "1584092235.379500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "proposal: Go 2: lazy values · Issue #37739 · golang\/go",
+                "title_link": "https:\/\/github.com\/golang\/go\/issues\/37739",
+                "text": "This is just a thought. I&amp;#39;m interested in what people think. Background: Go has two short circuit binary operators, &amp;&amp; and ||, that only evaluate their second operand under certain cond...",
+                "fallback": "GitHub: proposal: Go 2: lazy values · Issue #37739 · golang\/go",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/4314092?s=400&v=4",
+                "from_url": "https:\/\/github.com\/golang\/go\/issues\/37739",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/golang\/go\/issues\/37739"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "w27",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/37739"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U77U7B85A"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cd1e7ecf-98f1-4338-a80a-eeff498374c8",
+        "type": "message",
+        "text": "<https:\/\/github.com\/eliukblau\/pixterm>",
+        "user": "UDDCM376D",
+        "ts": "1584105648.379800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "eliukblau\/pixterm",
+                "title_link": "https:\/\/github.com\/eliukblau\/pixterm",
+                "text": "Draw images in your ANSI terminal with true color. Contribute to eliukblau\/pixterm development by creating an account on GitHub.",
+                "fallback": "GitHub: eliukblau\/pixterm",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/655950?s=400&v=4",
+                "from_url": "https:\/\/github.com\/eliukblau\/pixterm",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/eliukblau\/pixterm"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gYqNz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/eliukblau\/pixterm"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fc2edb3d-796a-4989-9f7f-f8a9664fe2e6",
+        "type": "message",
+        "text": "これでドラ○エを作れそう",
+        "user": "UDDCM376D",
+        "ts": "1584105664.380400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "efL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これでドラ○エを作れそう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4f6908d5-e556-4541-b662-7e54ae81c10f",
+        "type": "message",
+        "text": "longcat で使ってます。",
+        "user": "U03C6TEAZ",
+        "ts": "1584109193.380700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NYTJG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "longcat で使ってます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "AE3F0B19-3CF9-4FF0-ACEC-3ED33AAE0A5E",
+        "type": "message",
+        "text": "完全理解",
+        "user": "UDDCM376D",
+        "ts": "1584109519.380900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fAU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "完全理解"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "937ef41c-ba14-4c73-895f-de8909353663",
+        "type": "message",
+        "text": "sixel未対応のtmuxとかでも猫が出るのはpixtermのおかげですね",
+        "user": "UNJ2DANJC",
+        "ts": "1584109988.383900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eDG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "sixel未対応のtmuxとかでも猫が出るのはpixtermのおかげですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "EBF35BC7-5B22-46C0-BBC1-C431D063050F",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/gorilla0513\/status\/1238484658557292545?s=21|https:\/\/twitter.com\/gorilla0513\/status\/1238484658557292545?s=21>",
+        "user": "UDDCM376D",
+        "ts": "1584113097.384100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/gorilla0513|@gorilla0513>: なんか帰りの電車でこんなのが出来上がった <https:\/\/pbs.twimg.com\/media\/ES_7KZfU4AwwLc2.png>",
+                "ts": 1584112727,
+                "author_name": "ゴリラ@バナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナバナナ",
+                "author_link": "https:\/\/twitter.com\/gorilla0513\/status\/1238484658557292545",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1142704713156026368\/qafj2_Vy_normal.jpg",
+                "author_subname": "@gorilla0513",
+                "text": "なんか帰りの電車でこんなのが出来上がった <https:\/\/pbs.twimg.com\/media\/ES_7KZfU4AwwLc2.png>",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/gorilla0513\/status\/1238484658557292545?s=21",
+                "image_url": "https:\/\/pbs.twimg.com\/media\/ES_7KZfU4AwwLc2.png",
+                "image_width": 512,
+                "image_height": 463,
+                "image_bytes": 69369,
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/gorilla0513\/status\/1238484658557292545?s=21",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HXo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/gorilla0513\/status\/1238484658557292545?s=21",
+                                "text": "https:\/\/twitter.com\/gorilla0513\/status\/1238484658557292545?s=21"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "fuita",
+                "users": [
+                    "U9S4G0LJW",
+                    "UFYACJ537",
+                    "UBDMG6N2J",
+                    "U06BRP8VD"
+                ],
+                "count": 4
+            }
+        ]
+    },
+    {
+        "client_msg_id": "628411D6-4628-4FC2-A88E-F8F92239AA2A",
+        "type": "message",
+        "text": "雑に作ってみた",
+        "user": "UDDCM376D",
+        "ts": "1584113105.384500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ljS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "雑に作ってみた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "A92F73D3-0C6D-41FE-8303-6E4C2ADFB0CC",
+        "type": "message",
+        "text": "ちゃんと作る",
+        "user": "UDDCM376D",
+        "ts": "1584113118.384900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "W25",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちゃんと作る"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d87ff999-811f-4742-bc54-e86e1c230695",
+        "type": "message",
+        "text": "↑の Go 1.14 が VSZ を多めに取る件をコミッタの人達に聞いてみたんですが、やはりページアロケータの変更により多めになったそうです。 <https:\/\/golang.org\/doc\/go1.14#runtime>",
+        "user": "U03C6TEAZ",
+        "ts": "1584124680.386000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "Go 1.14 Release Notes - The Go Programming Language",
+                "title_link": "https:\/\/golang.org\/doc\/go1.14#runtime",
+                "text": "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.",
+                "fallback": "Go 1.14 Release Notes - The Go Programming Language",
+                "from_url": "https:\/\/golang.org\/doc\/go1.14#runtime",
+                "service_icon": "https:\/\/golang.org\/favicon.ico",
+                "service_name": "golang.org",
+                "id": 1,
+                "original_url": "https:\/\/golang.org\/doc\/go1.14#runtime"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8e6g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "↑の Go 1.14 が VSZ を多めに取る件をコミッタの人達に聞いてみたんですが、やはりページアロケータの変更により多めになったそうです。 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/golang.org\/doc\/go1.14#runtime"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sasumatsu",
+                "users": [
+                    "UNJ2DANJC"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b3ded9ab-54f4-4d44-913f-650417e9d43c",
+        "type": "message",
+        "text": "で、言っても物理メモリじゃないのでいいっちゃぁいいんですが、kaoriya さんの本来の目的の docker で動かすプロセスの over commit 時に stack-trace を得たいという要件については VSZ で確認すべきではないという回答を貰いました。やるなら RSS だ、との事です。",
+        "user": "U03C6TEAZ",
+        "ts": "1584124751.387600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Oga2e",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "で、言っても物理メモリじゃないのでいいっちゃぁいいんですが、kaoriya さんの本来の目的の docker で動かすプロセスの over commit 時に stack-trace を得たいという要件については VSZ で確認すべきではないという回答を貰いました。やるなら RSS だ、との事です。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c95c0db1-f92b-49f6-83c3-b9f3b29a582b",
+        "type": "message",
+        "text": "ただもちろん RSS だと OOM で SIGKILL が発生して stack-trace が得られないので",
+        "user": "U03C6TEAZ",
+        "ts": "1584124774.388200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SJDX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただもちろん RSS だと OOM で SIGKILL が発生して stack-trace が得られないので"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0d8270f1-4d27-440b-ab35-018ac5473cf5",
+        "type": "message",
+        "text": "\/proc\/sys\/vm\/overcommit_memory を監視しておきなさい、との事でした。",
+        "user": "U03C6TEAZ",
+        "ts": "1584124802.388600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7u3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/proc\/sys\/vm\/overcommit_memory を監視しておきなさい、との事でした。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584124802.388600",
+        "reply_count": 4,
+        "reply_users_count": 2,
+        "latest_reply": "1584156703.405200",
+        "reply_users": [
+            "U06BRP8VD",
+            "U03C6TEAZ"
+        ],
+        "replies": [
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584156278.401900"
+            },
+            {
+                "user": "U03C6TEAZ",
+                "ts": "1584156398.402400"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584156676.405000"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584156703.405200"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "d53385c5-e72f-4b3a-8b47-536efceba885",
+        "type": "message",
+        "text": "言い換えるなら ulimit -m は使えない(SIGKILL なので)、ulimit -v は VSZ なので目的に沿わない、他の方法で検出してね、との事。",
+        "user": "U03C6TEAZ",
+        "ts": "1584124910.389700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZAC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "言い換えるなら ulimit -m は使えない(SIGKILL なので)、ulimit -v は VSZ なので目的に沿わない、他の方法で検出してね、との事。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584124910.389700",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584156890.405400",
+        "reply_users": [
+            "U06BRP8VD"
+        ],
+        "replies": [
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584156890.405400"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "53f35933-e1c0-4052-bdbf-2cb043727e9a",
+        "type": "message",
+        "text": "<https:\/\/drive.google.com\/file\/d\/1nPdvhB0PutEJzdCq5ms6UI58dp50fcAN\/view>",
+        "user": "U03C6TEAZ",
+        "ts": "1584154135.390200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=FSK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/drive.google.com\/file\/d\/1nPdvhB0PutEJzdCq5ms6UI58dp50fcAN\/view"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "360a438e-ef66-4aa4-883f-4101e1f5fba4",
+        "type": "message",
+        "text": "このスライド良いから Go やってる人読んで。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154150.390700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=Mv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "このスライド良いから Go やってる人読んで。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c0d3fc9f-97a3-4b01-b1e6-17e16683105f",
+        "type": "message",
+        "text": "このスライドの中だと固定数の worker はそれほど良くない物だと書いてある。固定数 worker とはこれの一番最後の奴ね。 <https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20160706165757.htm>",
+        "user": "U03C6TEAZ",
+        "ts": "1584154231.391500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Big Sky",
+                "title": "Big Sky :: golang の channel を使ったテクニックあれこれ",
+                "title_link": "https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20160706165757.htm",
+                "text": "システム開発屋がひっそり語るぼやき",
+                "fallback": "Big Sky: Big Sky :: golang の channel を使ったテクニックあれこれ",
+                "thumb_url": "https:\/\/mattn.kaoriya.net\/images\/logo.png",
+                "from_url": "https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20160706165757.htm",
+                "thumb_width": 113,
+                "thumb_height": 113,
+                "service_icon": "https:\/\/mattn.kaoriya.net\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20160706165757.htm"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "d=iB5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "このスライドの中だと固定数の worker はそれほど良くない物だと書いてある。固定数 worker とはこれの一番最後の奴ね。 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20160706165757.htm"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9a8a1e8d-fd4a-4be9-b31d-49d49447e776",
+        "type": "message",
+        "text": "で、何が変わりにいいかというと",
+        "user": "U03C6TEAZ",
+        "ts": "1584154265.391900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2OYP5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "で、何が変わりにいいかというと"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e3723de0-6542-4d12-b08d-ed02cb293ea7",
+        "type": "message",
+        "text": "<https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20171221111857.htm>",
+        "user": "U03C6TEAZ",
+        "ts": "1584154265.392100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Big Sky",
+                "title": "Big Sky :: 簡単に goroutine の実行個数を制限する方法",
+                "title_link": "https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20171221111857.htm",
+                "text": "システム開発屋がひっそり語るぼやき",
+                "fallback": "Big Sky: Big Sky :: 簡単に goroutine の実行個数を制限する方法",
+                "thumb_url": "https:\/\/mattn.kaoriya.net\/images\/logo.png",
+                "from_url": "https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20171221111857.htm",
+                "thumb_width": 113,
+                "thumb_height": 113,
+                "service_icon": "https:\/\/mattn.kaoriya.net\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20171221111857.htm"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aHx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/mattn.kaoriya.net\/software\/lang\/go\/20171221111857.htm"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3c57b0a1-e197-4ba8-9bc6-ec25c9f0069e",
+        "type": "message",
+        "text": "これが良いと書いてある。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154272.392400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fBa9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これが良いと書いてある。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "da16e586-d849-4886-81f3-2de6ae7b11fc",
+        "type": "message",
+        "text": "goroutine pool として働くからだと。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154287.392900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tlOx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "goroutine pool として働くからだと。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ffc2c9d0-e2b2-454a-98ef-d535530ec688",
+        "type": "message",
+        "text": "ちなみに↑のスライドの人は Go core team の人です。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154306.393600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aTWFb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに↑のスライドの人は Go core team の人です。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a2ce31d-2380-43df-9e4c-29a2e5625406",
+        "type": "message",
+        "text": "とは言っても channel のバッファ数で同時実行が制限されるだけで実際に goroutine は起動してしまう。 N x 2kb のメモリは食う。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154365.394700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BmM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とは言っても channel のバッファ数で同時実行が制限されるだけで実際に goroutine は起動してしまう。 N x 2kb のメモリは食う。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ba14ea40-861b-494f-8a61-dd66489eada8",
+        "type": "message",
+        "text": "ここについては今本人に「無視していい範疇だからですよね？」を確認してます。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154401.395400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IyY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ここについては今本人に「無視していい範疇だからですよね？」を確認してます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "30319531-f19d-4631-9955-b93991c4bdea",
+        "type": "message",
+        "text": "fixed workers がそんなにいい物じゃないという説明をこのスライドの 1\/3 を割いて説明してる。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154531.396300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bpF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fixed workers がそんなにいい物じゃないという説明をこのスライドの 1\/3 を割いて説明してる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4c9e947f-a4a8-4525-b320-0d740e5bcb1d",
+        "type": "message",
+        "text": "僕からは N x 2kb 消費するのと pause 状態ではあるけど goroutine 起動してるのでそのスタックや heap (あれば) が必要ですよね？あと stop the world の対象になりえますよね？を確認したい。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154620.397600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4c+C",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "僕からは N x 2kb 消費するのと pause 状態ではあるけど goroutine 起動してるのでそのスタックや heap (あれば) が必要ですよね？あと stop the world の対象になりえますよね？を確認したい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ef0dd956-ea23-4fc1-a3b8-6835b9430a36",
+        "type": "message",
+        "text": "要は fixed worker は「良くはないかも知れないけど悪くはないよね」を聞きたい。",
+        "user": "U03C6TEAZ",
+        "ts": "1584154656.398200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U03C6TEAZ",
+            "ts": "1584154683.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jlO=j",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "要は fixed worker は「良くはないかも知れないけど悪くはないよね」を聞きたい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c4d8226c-0a27-4659-87e2-06f4c30465cc",
+        "type": "message",
+        "text": "自動制御がいいところ、とはいえ制御したくはあるときもあるし、むずかしいですねえ...",
+        "user": "UAZ33BKV2",
+        "ts": "1584154781.398800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Oyff",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自動制御がいいところ、とはいえ制御したくはあるときもあるし、むずかしいですねえ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "90575de3-a7af-45db-ab4a-5a1dbb5b3614",
+        "type": "message",
+        "text": "fixed worker 生きっぱなしなのが良くないというのが主張ぽい気がするな。",
+        "user": "U03C6TEAZ",
+        "ts": "1584155035.399500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QfJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fixed worker 生きっぱなしなのが良くないというのが主張ぽい気がするな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0515fe04-b0a6-4e29-8014-76cc1aee27a6",
+        "type": "message",
+        "text": "workerのmax limitができると双方のいいとこどりでハッピー?",
+        "user": "UAZ33BKV2",
+        "ts": "1584155195.400200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ex6BL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "workerのmax limitができると双方のいいとこどりでハッピー?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0c98c55c-f776-4849-9262-cccac8b320eb",
+        "type": "message",
+        "text": "ちなみに fixed worker の話は p75 以降。",
+        "user": "U03C6TEAZ",
+        "ts": "1584155996.400500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sDGH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに fixed worker の話は p75 以降。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8fdebe61-6eba-49ef-938d-41555db9e937",
+        "type": "message",
+        "text": "lifetime が長いのが良くないといってる様に見える。",
+        "user": "U03C6TEAZ",
+        "ts": "1584156058.400800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rTmN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "lifetime が長いのが良くないといってる様に見える。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d63527bd-7354-47b1-ad4a-ae4d5228c40c",
+        "type": "message",
+        "text": "* lifetime が長いのがなぜいけないのか\n* channel によるストットリングは本当に goroutine pool になり得るのか\nここがポイントすな。",
+        "user": "U03C6TEAZ",
+        "ts": "1584156105.401700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VY2WU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "* lifetime が長いのがなぜいけないのか\n* channel によるストットリングは本当に goroutine pool になり得るのか\nここがポイントすな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c5240902-24e5-4f1d-9285-fcc39ed1276f",
+        "type": "message",
+        "text": "あざます～",
+        "user": "U06BRP8VD",
+        "ts": "1584156278.401900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Us15t",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あざます～"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584124802.388600",
+        "parent_user_id": "U03C6TEAZ"
+    },
+    {
+        "client_msg_id": "d4da9279-7063-4891-b463-758c9660c399",
+        "type": "message",
+        "text": "僕も気になってたので。",
+        "user": "U03C6TEAZ",
+        "ts": "1584156398.402400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GarLR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "僕も気になってたので。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584124802.388600",
+        "parent_user_id": "U03C6TEAZ"
+    },
+    {
+        "client_msg_id": "9bca6eb5-34a7-467c-8012-9d6bd3018a63",
+        "type": "message",
+        "text": "fixed worker、結局そのworkerを管理するアレコレつくらんといかんですよね。",
+        "user": "U06BRP8VD",
+        "ts": "1584156416.402900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SSQ\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fixed worker、結局そのworkerを管理するアレコレつくらんといかんですよね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ee0ec90c-2734-4b7a-92af-96f9c5c609a8",
+        "type": "message",
+        "text": "どのくらいタスク処理したら作り直すとかそういうめんどいのもいずれ要る。",
+        "user": "U06BRP8VD",
+        "ts": "1584156431.403600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QEvw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どのくらいタスク処理したら作り直すとかそういうめんどいのもいずれ要る。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ac2657bd-cdf0-424f-b837-1ce822855a89",
+        "type": "message",
+        "text": "ですね。後片付けが難しいと書かれてますね。",
+        "user": "U03C6TEAZ",
+        "ts": "1584156431.403700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wdpL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですね。後片付けが難しいと書かれてますね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fe29c558-bbf1-433b-b937-ee7f919466aa",
+        "type": "message",
+        "text": "僕のこれまでの経験では、全部goroutine起動するけど同時起動できる個数を制限する(パフォーマンス的にはコア数が上限)、っていう感じ。",
+        "user": "U06BRP8VD",
+        "ts": "1584156498.404900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YQU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "僕のこれまでの経験では、全部goroutine起動するけど同時起動できる個数を制限する(パフォーマンス的にはコア数が上限)、っていう感じ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5baef427-9e81-4376-adef-c25ee8d39ded",
+        "type": "message",
+        "text": "よくわかってないんですが overcommit_memory は監視する意味ないですよね? オーバーコミットのポリシーを設定するやつだから。",
+        "user": "U06BRP8VD",
+        "ts": "1584156676.405000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vRxyQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "よくわかってないんですが overcommit_memory は監視する意味ないですよね? オーバーコミットのポリシーを設定するやつだから。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584124802.388600",
+        "parent_user_id": "U03C6TEAZ"
+    },
+    {
+        "client_msg_id": "e013842d-b3d6-4e50-978b-5ca94b66155e",
+        "type": "message",
+        "text": "\/proc\/meminfoもしくは\/proc\/{PID}\/ のどこかかしら?",
+        "user": "U06BRP8VD",
+        "ts": "1584156703.405200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+T7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/proc\/meminfoもしくは\/proc\/{PID}\/ のどこかかしら?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584124802.388600",
+        "parent_user_id": "U03C6TEAZ"
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "検出する方法はいくらか思いついたけど、検出時にどうするかの方針が立たないんですよねぇ。",
+        "user": "U06BRP8VD",
+        "ts": "1584156890.405400",
+        "thread_ts": "1584124910.389700",
+        "root": {
+            "client_msg_id": "d53385c5-e72f-4b3a-8b47-536efceba885",
+            "type": "message",
+            "text": "言い換えるなら ulimit -m は使えない(SIGKILL なので)、ulimit -v は VSZ なので目的に沿わない、他の方法で検出してね、との事。",
+            "user": "U03C6TEAZ",
+            "ts": "1584124910.389700",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "ZAC",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "言い換えるなら ulimit -m は使えない(SIGKILL なので)、ulimit -v は VSZ なので目的に沿わない、他の方法で検出してね、との事。"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584124910.389700",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1584156890.405400",
+            "reply_users": [
+                "U06BRP8VD"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ze8sG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "検出する方法はいくらか思いついたけど、検出時にどうするかの方針が立たないんですよねぇ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "ec52245f-2b07-4065-ad13-fac76db2aa22"
+    },
+    {
+        "client_msg_id": "bc68de7b-c0f0-4c14-beaa-c5acd0caa6de",
+        "type": "message",
+        "text": "いまのままだと「引かぬ(リソース返却とか間にあわない)、媚びぬ(スワップとかじゃ無理)、省みぬ(潔く死ぬ)」みたいになってしまう...か?",
+        "user": "UAZ33BKV2",
+        "ts": "1584157723.406800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "00a",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いまのままだと「引かぬ(リソース返却とか間にあわない)、媚びぬ(スワップとかじゃ無理)、省みぬ(潔く死ぬ)」みたいになってしまう...か?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f690910a-3d5a-48e1-9bd0-b94609f1286f",
+        "type": "message",
+        "text": "この話はスワップかどうかは関係ないかなぁ。",
+        "user": "U06BRP8VD",
+        "ts": "1584157868.407400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "V7a\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "この話はスワップかどうかは関係ないかなぁ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0eaf1f62-19f7-438c-88fe-85237f128b58",
+        "type": "message",
+        "text": "(そこはちょっと無理があったか...)まあそうですね...初期値とかだし",
+        "user": "UAZ33BKV2",
+        "ts": "1584157892.408300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/=Rj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(そこはちょっと無理があったか...)まあそうですね...初期値とかだし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d4aa21f6-b5c5-4a78-9b87-d1d2450825b9",
+        "type": "message",
+        "text": "メモリ逼迫の検出はできるけど、止まるにしてもグレースフルに止まらなきゃとかダンプはどうやって出すかなぁとか",
+        "user": "U06BRP8VD",
+        "ts": "1584157949.409500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7GHei",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "メモリ逼迫の検出はできるけど、止まるにしてもグレースフルに止まらなきゃとかダンプはどうやって出すかなぁとか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0cd19fd3-d935-40c8-be9b-9d5ae4ee477d",
+        "type": "message",
+        "text": "死ぬときって自殺はいいけど他殺(メモリ不足とかでOS側から殺される\/ライブラリが初期化失敗)とかはすごい難しいですねえ...",
+        "user": "UAZ33BKV2",
+        "ts": "1584158002.410500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HTK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "死ぬときって自殺はいいけど他殺(メモリ不足とかでOS側から殺される\/ライブラリが初期化失敗)とかはすごい難しいですねえ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5c54cb1f-aa04-404f-b366-86a2fd98b157",
+        "type": "message",
+        "text": "今回の場合は「OOM-Killされる前にアポトーシス」ですね。でそのアポトーシスの手段と内容が問われる。",
+        "user": "U06BRP8VD",
+        "ts": "1584158254.411800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OYpd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今回の場合は「OOM-Killされる前にアポトーシス」ですね。でそのアポトーシスの手段と内容が問われる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "77a3d151-6c50-4fbe-b3e3-2ad890085660",
+        "type": "message",
+        "text": "それをいかに上手く検知してうまく死ぬか...か",
+        "user": "UAZ33BKV2",
+        "ts": "1584158285.412200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tZ\/Cr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それをいかに上手く検知してうまく死ぬか...か"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b893ce6d-dbf9-4c99-bd70-dd51e52b8664",
+        "type": "message",
+        "text": "検知はほぼprocfsの監視しか手がない。なぜならruntime.MemStatには計上されないRSSがあるから。さらにRSSとVSSの区別もつかないから、RSSを見てるOOM-Killerと合わない。",
+        "user": "U06BRP8VD",
+        "ts": "1584158417.413800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IqbT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "検知はほぼprocfsの監視しか手がない。なぜならruntime.MemStatには計上されないRSSがあるから。さらにRSSとVSSの区別もつかないから、RSSを見てるOOM-Killerと合わない。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "totemoturai",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0106bf53-6bac-42bd-b11a-c4beeab33aa2",
+        "type": "message",
+        "text": "んPSS見るほうが良いのかな? OOM Killerはどこみてるんだ?",
+        "user": "U06BRP8VD",
+        "ts": "1584158497.414300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "G\/7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "んPSS見るほうが良いのかな? OOM Killerはどこみてるんだ?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

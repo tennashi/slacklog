@@ -1,0 +1,125 @@
+[
+    {
+        "type": "message",
+        "text": "coc-explorerがポップアップでファイルの情報出してくれるようになってた",
+        "files": [
+            {
+                "id": "F0111EPGGBV",
+                "created": 1585888175,
+                "timestamp": 1585888175,
+                "name": "2020-04-03_13-28.png",
+                "title": "2020-04-03_13-28.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U7B4ZD49X",
+                "editable": false,
+                "size": 76314,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F0111EPGGBV\/2020-04-03_13-28.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F0111EPGGBV\/download\/2020-04-03_13-28.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F0111EPGGBV-9b1d48b3ab\/2020-04-03_13-28_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F0111EPGGBV-9b1d48b3ab\/2020-04-03_13-28_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F0111EPGGBV-9b1d48b3ab\/2020-04-03_13-28_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 360,
+                "thumb_360_h": 109,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F0111EPGGBV-9b1d48b3ab\/2020-04-03_13-28_480.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_w": 480,
+                "thumb_480_h": 146,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F0111EPGGBV-9b1d48b3ab\/2020-04-03_13-28_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F0111EPGGBV-9b1d48b3ab\/2020-04-03_13-28_720.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720_w": 720,
+                "thumb_720_h": 219,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F0111EPGGBV-9b1d48b3ab\/2020-04-03_13-28_800.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_800_w": 800,
+                "thumb_800_h": 243,
+                "original_w": 949,
+                "original_h": 288,
+                "thumb_tiny": "AwAOADCnnrkikzzTaKAJNp9f0o2n+8aQMcck0uaAAZHRjSY9zSmkx7UCP\/\/Z",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U7B4ZD49X\/F0111EPGGBV\/2020-04-03_13-28.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F0111EPGGBV-90a6955aa1",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ApP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "coc-explorerがポップアップでファイルの情報出してくれるようになってた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U7B4ZD49X",
+        "display_as_bot": false,
+        "ts": "1585888177.035500",
+        "client_msg_id": "fbe1aa54-4eff-4832-9f0c-329d811ff657",
+        "reactions": [
+            {
+                "name": "benri",
+                "users": [
+                    "UFP0GQZ4K",
+                    "U8R597E9H",
+                    "U7JL1UKKL",
+                    "U72TB62UF",
+                    "US5UW1UNB"
+                ],
+                "count": 5
+            }
+        ]
+    },
+    {
+        "client_msg_id": "07760378-4520-49fa-ad21-d71a84426dc5",
+        "type": "message",
+        "text": "coc-explorerさん、起動時にフォーカスがエクスプローラ側に行ってしまうのをなんとかしたい。",
+        "user": "U72TB62UF",
+        "ts": "1585890867.036700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "c1E",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "coc-explorerさん、起動時にフォーカスがエクスプローラ側に行ってしまうのをなんとかしたい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

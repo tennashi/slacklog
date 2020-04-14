@@ -1,0 +1,754 @@
+[
+    {
+        "client_msg_id": "0e9b1d7e-d783-4f48-a6ed-ba20fa60512d",
+        "type": "message",
+        "text": "実際にやるかは置いといて、setup-vim で +lua をサポートするのは現実的なんだろうか。3OS で Lua を用意しないといけない。ビルド済みの Vim を使う場合はバージョンの指定とか DLL の配置場所とか…",
+        "user": "U03C71D7H",
+        "ts": "1585645785.105200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hpBl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "実際にやるかは置いといて、setup-vim で +lua をサポートするのは現実的なんだろうか。3OS で Lua を用意しないといけない。ビルド済みの Vim を使う場合はバージョンの指定とか DLL の配置場所とか…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ff8406b9-17d0-4caf-8b7a-63ba73311c8d",
+        "type": "message",
+        "text": "そもそも+luaを実際に使ってる人ってどれくらいいるんですかね、現状",
+        "user": "U9S4G0LJW",
+        "ts": "1585645834.105600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FoNMP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そもそも+luaを実際に使ってる人ってどれくらいいるんですかね、現状"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "89e903ff-7d34-4e38-96c9-283642c97ea7",
+        "type": "message",
+        "text": "使ったことがない",
+        "user": "UDDCM376D",
+        "ts": "1585645849.105800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yqh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "使ったことがない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a681e236-97b6-480b-ba62-8a4a3c4574ce",
+        "type": "message",
+        "text": "vital.vim の CI で <@UAZ33BKV2> さんがセットアップしようとしていたはず",
+        "user": "U03C71D7H",
+        "ts": "1585645878.106100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U03C71D7H",
+            "ts": "1585645897.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wu5u",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vital.vim の CI で "
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "UAZ33BKV2"
+                            },
+                            {
+                                "type": "text",
+                                "text": " さんがセットアップしようとしていたはず"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "25d5cf3a-3630-4952-9ace-c7dd1923e03d",
+        "type": "message",
+        "text": "まだ neocomplete.vim なので、 +lua ですね…",
+        "user": "U06ECBRTJ",
+        "ts": "1585645899.106700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pvHx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まだ neocomplete.vim なので、 +lua ですね…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4bcc1280-b505-402e-88a2-5db700853a65",
+        "type": "message",
+        "text": "eskkなので(ry まあこれはフォールバックあるけど",
+        "user": "U9S4G0LJW",
+        "ts": "1585645935.107000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OEN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "eskkなので(ry まあこれはフォールバックあるけど"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5e6a6317-9453-4715-a892-13e1dea1ad35",
+        "type": "message",
+        "text": "+lua もそうだけど +python3 も欲しい人はいそうな気がしている",
+        "user": "U03C71D7H",
+        "ts": "1585645969.107300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "M7UB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "+lua もそうだけど +python3 も欲しい人はいそうな気がしている"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fa670064-7250-423c-acc8-d286531283af",
+        "type": "message",
+        "text": "<https:\/\/github.com\/roxma\/vim-hug-neovim-rpc>",
+        "user": "U9S4G0LJW",
+        "ts": "1585646016.107500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "roxma\/vim-hug-neovim-rpc",
+                "title_link": "https:\/\/github.com\/roxma\/vim-hug-neovim-rpc",
+                "text": "EXPERIMENTAL. Contribute to roxma\/vim-hug-neovim-rpc development by creating an account on GitHub.",
+                "fallback": "GitHub: roxma\/vim-hug-neovim-rpc",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/4538941?s=400&v=4",
+                "from_url": "https:\/\/github.com\/roxma\/vim-hug-neovim-rpc",
+                "thumb_width": 224,
+                "thumb_height": 224,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/roxma\/vim-hug-neovim-rpc"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MzEr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/roxma\/vim-hug-neovim-rpc"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "25c282ab-33f5-4d0a-aadd-42afc5e04118",
+        "type": "message",
+        "text": "こいつがpython3要求するので",
+        "user": "U9S4G0LJW",
+        "ts": "1585646024.107900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uGB7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こいつがpython3要求するので"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f0379710-1964-4ed3-9e12-9ee4fc13c60a",
+        "type": "message",
+        "text": "dark vimmerには必須",
+        "user": "U9S4G0LJW",
+        "ts": "1585646042.108300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tol",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "dark vimmerには必須"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "38a617cc-8071-4a90-9837-f5e254f719af",
+        "type": "message",
+        "text": "そうなの",
+        "user": "U03C71D7H",
+        "ts": "1585646051.108500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7Va",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そうなの"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "878a96c0-2f8c-44dd-8828-15ddf71a7a10",
+        "type": "message",
+        "text": "現実的に必要なのは 1. +python3 2. +lua かなぁ",
+        "user": "U03C71D7H",
+        "ts": "1585646083.109600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+3y1l",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "現実的に必要なのは 1. +python3 2. +lua かなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b3afc06f-6d10-441f-8be3-8fe51621546c",
+        "type": "message",
+        "text": "優先度順",
+        "user": "U03C71D7H",
+        "ts": "1585646088.109900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "F6yy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "優先度順"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7055905a-dcbd-44b1-a837-9423b916148c",
+        "type": "message",
+        "text": "neovim の remote plugin の仕組みを vim で動かすためのプラグインでしたっけ ＞ rpc",
+        "user": "U06ECBRTJ",
+        "ts": "1585646089.110000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "X38",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "neovim の remote plugin の仕組みを vim で動かすためのプラグインでしたっけ ＞ rpc"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a945178b-16ae-4205-b59c-bc6a78623bb2",
+        "type": "message",
+        "text": "ですねー",
+        "user": "U9S4G0LJW",
+        "ts": "1585646103.110400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tP9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですねー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bd53a5d6-7581-4424-9d66-1f29d1cd958b",
+        "type": "message",
+        "text": "これもか <https:\/\/github.com\/roxma\/nvim-yarp>",
+        "user": "U9S4G0LJW",
+        "ts": "1585646150.110600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "roxma\/nvim-yarp",
+                "title_link": "https:\/\/github.com\/roxma\/nvim-yarp",
+                "text": "Yet Another Remote Plugin Framework for Neovim. Contribute to roxma\/nvim-yarp development by creating an account on GitHub.",
+                "fallback": "GitHub: roxma\/nvim-yarp",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/4538941?s=400&v=4",
+                "from_url": "https:\/\/github.com\/roxma\/nvim-yarp",
+                "thumb_width": 224,
+                "thumb_height": 224,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/roxma\/nvim-yarp"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+7Hr0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これもか "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/roxma\/nvim-yarp"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "21ae7476-2f67-4efa-b2dd-20ecb6874179",
+        "type": "message",
+        "text": "あると嬉しいけど、無理させたくないですし。\n完全サポートより、buildで(事前に用意してあったら)組み込める(とその設定例)があると嬉しいかな...",
+        "user": "UAZ33BKV2",
+        "ts": "1585647202.111800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zWI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あると嬉しいけど、無理させたくないですし。\n完全サポートより、buildで(事前に用意してあったら)組み込める(とその設定例)があると嬉しいかな..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ca3d3657-58bc-4c1b-9cc9-71813a27497c",
+        "type": "message",
+        "text": "<https:\/\/github.com\/vim-jp\/vital.vim\/pull\/701>\nです",
+        "user": "UAZ33BKV2",
+        "ts": "1585647256.112000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "WIP: Vital.vim work under GitHub Actions by tsuyoshicho · Pull Request #701 · vim-jp\/vital.vim",
+                "title_link": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/701",
+                "text": "Travis\/AppVeyor での動作について、GitHub Actions下で動作させる コンセプトPRです。 必要になったとき、参考にしたり、部分マージしたりする用として保持するため にPRを作成しました。",
+                "fallback": "GitHub: WIP: Vital.vim work under GitHub Actions by tsuyoshicho · Pull Request #701 · vim-jp\/vital.vim",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/1051958?s=400&v=4",
+                "from_url": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/701",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/701"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WHmDN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/701"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

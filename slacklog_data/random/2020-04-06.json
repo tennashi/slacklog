@@ -1,0 +1,1116 @@
+[
+    {
+        "client_msg_id": "72c6e711-b319-44a4-bc52-b4231b01c5aa",
+        "type": "message",
+        "text": "Emacs押した覚えないけど…。",
+        "user": "U7JL1UKKL",
+        "ts": "1586162181.063400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bLau5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Emacs押した覚えないけど…。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586147637.036900",
+        "parent_user_id": "UGXMRNBUM",
+        "reactions": [
+            {
+                "name": "hiee",
+                "users": [
+                    "UGXMRNBUM",
+                    "UL6CFN8NR"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "80e7b448-44a9-4cae-8099-51bee08852f7",
+        "type": "message",
+        "text": "changelog書いてねっていうスタンスのOSSへの貢献、changelogを書くことはとても良いことなのだが、すぐにchangelogがコンフリクトを起こしてしまうのでPRをmergeしてもらえるまで他のPRがmergeされるたびに粘り強くupstreamブランチをmergeしてpushし続ける根気がいる。\nもしかしてコンフリクト起こしやすいchagelogのフォーマットが悪いのでは...",
+        "user": "UNJ2DANJC",
+        "ts": "1586169925.066400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UNJ2DANJC",
+            "ts": "1586169960.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "h5iN0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "changelog書いてねっていうスタンスのOSSへの貢献、changelogを書くことはとても良いことなのだが、すぐにchangelogがコンフリクトを起こしてしまうのでPRをmergeしてもらえるまで他のPRがmergeされるたびに粘り強くupstreamブランチをmergeしてpushし続ける根気がいる。\nもしかしてコンフリクト起こしやすいchagelogのフォーマットが悪いのでは..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c08c2a37-3368-42ea-9231-0ce2aebd7787",
+        "type": "message",
+        "text": "コミットとタグとblameがあれば代用可能な気がする",
+        "user": "U9S4G0LJW",
+        "ts": "1586170221.067300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "XEl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "コミットとタグとblameがあれば代用可能な気がする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3152d3e4-c72c-46e0-b656-a30b48fb477b",
+        "type": "message",
+        "text": "コミットログをちゃんと書いてればこういうので自動作成とか？\n<https:\/\/github.com\/git-chglog\/git-chglog>",
+        "user": "U8CC7MDCL",
+        "ts": "1586171199.067800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "git-chglog\/git-chglog",
+                "title_link": "https:\/\/github.com\/git-chglog\/git-chglog",
+                "text": "CHANGELOG generator implemented in Go (Golang). Contribute to git-chglog\/git-chglog development by creating an account on GitHub.",
+                "fallback": "GitHub: git-chglog\/git-chglog",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/35998660?s=400&v=4",
+                "from_url": "https:\/\/github.com\/git-chglog\/git-chglog",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/git-chglog\/git-chglog"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WlmUq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "コミットログをちゃんと書いてればこういうので自動作成とか？\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/git-chglog\/git-chglog"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b7a3cdbb-fa58-4561-8a4b-4536f88a8df7",
+        "type": "message",
+        "text": "そうですね。読む側のことを考えると利用者にいちいちgitのログを細かく深く漁らせるのはちょっと申し訳ない気持ちがあります。\n<https:\/\/github.com\/conventional-changelog\/standard-version|https:\/\/github.com\/conventional-changelog\/standard-version>\nstandard versionとかでもchangelog自動生成できるですが、個人的には仕事だといろいろ回って手書きに落ち着いてます。",
+        "user": "UNJ2DANJC",
+        "ts": "1586171570.076200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "conventional-changelog\/standard-version",
+                "title_link": "https:\/\/github.com\/conventional-changelog\/standard-version",
+                "text": ":trophy: Automate versioning and CHANGELOG generation, with <http:\/\/semver.org|semver.org> and <http:\/\/conventionalcommits.org|conventionalcommits.org> - conventional-changelog\/standard-version",
+                "fallback": "GitHub: conventional-changelog\/standard-version",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/16443515?s=400&v=4",
+                "from_url": "https:\/\/github.com\/conventional-changelog\/standard-version",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/conventional-changelog\/standard-version"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mvLE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そうですね。読む側のことを考えると利用者にいちいちgitのログを細かく深く漁らせるのはちょっと申し訳ない気持ちがあります。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/conventional-changelog\/standard-version",
+                                "text": "https:\/\/github.com\/conventional-changelog\/standard-version"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nstandard versionとかでもchangelog自動生成できるですが、個人的には仕事だといろいろ回って手書きに落ち着いてます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tashikani",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6ea312e1-0180-4053-b897-ba239b3201d2",
+        "type": "message",
+        "text": "開発者目線以外を忘れつつあるな、よくない",
+        "user": "U9S4G0LJW",
+        "ts": "1586171791.078000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "E9Z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "開発者目線以外を忘れつつあるな、よくない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "023fa1e7-6b5d-4618-84e8-89ec485f7ad1",
+        "type": "message",
+        "text": "changelog 人間が書いても疲弊するだけなので最近は release-drafter に任せとります。",
+        "user": "U78A6ESHM",
+        "ts": "1586172066.081700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pwUO6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "changelog 人間が書いても疲弊するだけなので最近は release-drafter に任せとります。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ba984859-dbb5-4f30-877d-04879473ff2d",
+        "type": "message",
+        "text": "zipやtgzで配布するツールにはバイナリと一緒にchangelogが付いていることが多いですね。\nインターネットにつながらない環境（）だと意外と助かります。",
+        "user": "UNJ2DANJC",
+        "ts": "1586172091.081800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9zf5g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "zipやtgzで配布するツールにはバイナリと一緒にchangelogが付いていることが多いですね。\nインターネットにつながらない環境（）だと意外と助かります。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5e0298fa-424f-49ec-9ded-465dc241c7fc",
+        "type": "message",
+        "text": "インターネッツォ",
+        "user": "U9S4G0LJW",
+        "ts": "1586172106.082400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2Do",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "インターネッツォ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4f3238c1-b070-4021-9de1-afe7eba9bd4e",
+        "type": "message",
+        "text": "ここにも人権を得てない人が……",
+        "user": "U78A6ESHM",
+        "ts": "1586172124.083100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OEV9\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ここにも人権を得てない人が……"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2f6ac800-cb4c-4e49-b232-6d3fb745dbc6",
+        "type": "message",
+        "text": "いや、私の今の仕事はインターネッツォに繋がりますよ笑",
+        "user": "UNJ2DANJC",
+        "ts": "1586172187.085500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UNJ2DANJC",
+            "ts": "1586172197.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "i=fHr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いや、私の今の仕事はインターネッツォに繋がりますよ笑"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7710e7be-c758-41d7-a183-f7a95ee42e48",
+        "type": "message",
+        "text": "人権の無い環境が入ってくると有用な記事をスクラップする癖が付いてくるので容易にストレージが爆発する",
+        "user": "U9S4G0LJW",
+        "ts": "1586172199.086200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=Uw\/n",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "人権の無い環境が入ってくると有用な記事をスクラップする癖が付いてくるので容易にストレージが爆発する"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2499b99f-b0b4-4ed7-b92e-774042ed78cd",
+        "type": "message",
+        "text": "自動生成ツール便利なんですがchangelog更新で勝手にコミットされてしまうタイプはあんまり好きになれない",
+        "user": "UNJ2DANJC",
+        "ts": "1586172302.087900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N90",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自動生成ツール便利なんですがchangelog更新で勝手にコミットされてしまうタイプはあんまり好きになれない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f830e2bd-7edb-4676-9eed-6fd758053262",
+        "type": "message",
+        "text": "自分も。なので release-drafter で GitHub のリリースノートを勝手に更新するやつにしてますー。",
+        "user": "U78A6ESHM",
+        "ts": "1586172677.088800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vhaeN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自分も。なので release-drafter で GitHub のリリースノートを勝手に更新するやつにしてますー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "765ef60d-a70b-4803-8d4d-906e530b1ed4",
+        "type": "message",
+        "text": "この前作ったリポジトリは CHANGELOG.md は人力で書くけど、新しくタグ切って push すれば gh releases は自動で作られるようにしておいた",
+        "user": "U03C71D7H",
+        "ts": "1586172757.089800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PXhtq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "この前作ったリポジトリは CHANGELOG.md は人力で書くけど、新しくタグ切って push すれば gh releases は自動で作られるようにしておいた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "621acb3f-1efa-43a1-b675-97863703862d",
+        "type": "message",
+        "text": "songmuさんがPRからCHANGELOG生成するghchってツールつくってた気がするけどどうなんだろう",
+        "user": "UBNPMJJGM",
+        "ts": "1586174119.089900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gc3ec8434af0",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/0c3ec8434af0d4cbcbd17bd51bcf1154.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "",
+            "real_name": "kg8m",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "an.ironic.man",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qlC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "songmuさんがPRからCHANGELOG生成するghchってツールつくってた気がするけどどうなんだろう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6a702506-f1ad-47a5-8b5d-d2882a679e50",
+        "type": "message",
+        "text": "いっそ、みんなlatestのchangelogリンク(前との差分コミットの一覧)を見てね、にしたりしてw(本末転倒)",
+        "user": "UAZ33BKV2",
+        "ts": "1586175006.090700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kLbV",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いっそ、みんなlatestのchangelogリンク(前との差分コミットの一覧)を見てね、にしたりしてw(本末転倒)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d3dd6a71-f012-4d50-9708-b28d5ef9b1ac",
+        "type": "message",
+        "text": "うちのvimrcにはVimShellの行があるのであとはそのとおり...!",
+        "user": "U03C4RC8X",
+        "ts": "1586216811.092600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jn1=p",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "うちのvimrcにはVimShellの行があるのであとはそのとおり...!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sonomasakada",
+                "users": [
+                    "U9S4G0LJW",
+                    "U7JL1UKKL",
+                    "UEBF2KQTD"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ee3f2a9f-0551-4522-90f3-b5a999786a3d",
+        "type": "message",
+        "text": "Deolの行にしたいけどまだしきれていない...",
+        "user": "U03C4RC8X",
+        "ts": "1586216826.092900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KZNsd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Deolの行にしたいけどまだしきれていない..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "91ea8861-c6cd-4a5d-8351-1392c843ca52",
+        "type": "message",
+        "text": "deol便利になりましたよ。私が毎日使ってるから地味な改善がある",
+        "user": "U7JL1UKKL",
+        "ts": "1586217986.093900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gkTTN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "deol便利になりましたよ。私が毎日使ってるから地味な改善がある"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "goodpoem",
+                "users": [
+                    "UFP0GQZ4K"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ea53b1e2-d23b-4962-85b9-414654e9bc32",
+        "type": "message",
+        "text": "ビデオチャットするにしても、なんで既知の信頼できるソフトじゃないんだろう、と思うのだが...\n<https:\/\/www.itmedia.co.jp\/enterprise\/articles\/2004\/07\/news027.html>",
+        "user": "UAZ33BKV2",
+        "ts": "1586221239.094500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "ITmedia エンタープライズ",
+                "title": "Zoomのセキュリティ問題はなぜ「修正だけでは済まない」のか　脆弱性の“捉え方”から解説しよう",
+                "title_link": "https:\/\/www.itmedia.co.jp\/enterprise\/articles\/2004\/07\/news027.html",
+                "text": "テレワークに多くの企業が移行する中、Web会議でおなじみになりつつある「Zoom」の脆弱性が話題になっています。どんなアプリにも脆弱性は付き物で、基本的に修正、アップデートすれば解決する――はずなのですが、今回はセキュリティ記者として見過ごせない問題が出てきたので、解説します。",
+                "fallback": "ITmedia エンタープライズ: Zoomのセキュリティ問題はなぜ「修正だけでは済まない」のか　脆弱性の“捉え方”から解説しよう",
+                "image_url": "https:\/\/image.itmedia.co.jp\/enterprise\/articles\/2004\/07\/cover_news027.jpg",
+                "from_url": "https:\/\/www.itmedia.co.jp\/enterprise\/articles\/2004\/07\/news027.html",
+                "image_width": 333,
+                "image_height": 250,
+                "image_bytes": 22986,
+                "service_icon": "https:\/\/www.itmedia.co.jp\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/www.itmedia.co.jp\/enterprise\/articles\/2004\/07\/news027.html"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PdZmI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ビデオチャットするにしても、なんで既知の信頼できるソフトじゃないんだろう、と思うのだが...\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/www.itmedia.co.jp\/enterprise\/articles\/2004\/07\/news027.html"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d648a778-62f5-41c9-946c-b50712a0e0fc",
+        "type": "message",
+        "text": "Zoomがアカウント作らなくてよくて楽だったからかなと思いますね",
+        "user": "U7JL1UKKL",
+        "ts": "1586221336.095100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fqpr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Zoomがアカウント作らなくてよくて楽だったからかなと思いますね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c7dab1cb-f447-4635-ae29-b2b155399f9e",
+        "type": "message",
+        "text": "あー...",
+        "user": "UAZ33BKV2",
+        "ts": "1586221350.095300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qmjH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5AFE6420-9CDF-415D-88C7-AE7D3FE1F40E",
+        "type": "message",
+        "text": "利便性、安定性が他より群を抜いてると思いますねー。",
+        "user": "U78A6ESHM",
+        "ts": "1586221449.096900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jPa",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "利便性、安定性が他より群を抜いてると思いますねー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "adb0095d-4f2d-4f75-b7f3-3411a6778e65",
+        "type": "message",
+        "text": "ちゃんと使い比べたことがない",
+        "user": "U03C71D7H",
+        "ts": "1586221466.097200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kpt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちゃんと使い比べたことがない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "69badcab-0af1-4e71-8fbf-51188a52d596",
+        "type": "message",
+        "text": ":goodpoem: &gt; 毎日",
+        "user": "U03C4RC8X",
+        "ts": "1586223734.098700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DNdL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "goodpoem"
+                            },
+                            {
+                                "type": "text",
+                                "text": " > 毎日"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586234963.099200",
+        "user": "U0118QKR3BL",
+        "text": "<@U0118QKR3BL> has joined the channel"
+    }
+]

@@ -1,0 +1,234 @@
+[
+    {
+        "client_msg_id": "d18ad836-6cd1-44f5-bd3d-dade492c16d1",
+        "type": "message",
+        "text": "caw.vim で JSX, TSX をサポートする PR を試してくれる方を募集しています。\nft=javascript や ft=typescript でカーソル下が JSX だったら `&lt;Header&gt;` → `{\/* &lt;Header&gt; *\/}` になります。\n<https:\/\/github.com\/tyru\/caw.vim\/pull\/111>",
+        "user": "U0M7GCBPD",
+        "ts": "1584122650.363900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Support for JSX and TSX by tyru · Pull Request #111 · tyru\/caw.vim",
+                "title_link": "https:\/\/github.com\/tyru\/caw.vim\/pull\/111",
+                "text": "Need to install Shougo\/context_filetype.vim with this PR: Shougo\/context_filetype.vim#43 Merged. Please update context_filetype.vim Fix #91 Fix #109",
+                "fallback": "GitHub: Support for JSX and TSX by tyru · Pull Request #111 · tyru\/caw.vim",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/48169?s=400&v=4",
+                "from_url": "https:\/\/github.com\/tyru\/caw.vim\/pull\/111",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/tyru\/caw.vim\/pull\/111"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pUa1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "caw.vim で JSX, TSX をサポートする PR を試してくれる方を募集しています。\nft=javascript や ft=typescript でカーソル下が JSX だったら "
+                            },
+                            {
+                                "type": "text",
+                                "text": "<Header>",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " → "
+                            },
+                            {
+                                "type": "text",
+                                "text": "{\/* <Header> *\/}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " になります。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tyru\/caw.vim\/pull\/111"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "15e2e9dc-8f00-43e6-9176-a0f959c3bc55",
+        "type": "message",
+        "text": "便利そう",
+        "user": "U7JL1UKKL",
+        "ts": "1584126360.364200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "haHU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "便利そう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ce7967c6-02b6-4973-a5a0-2f27261656b6",
+        "type": "message",
+        "text": "context_filetype.vim 素早いマージ助かりました",
+        "user": "U0M7GCBPD",
+        "ts": "1584138719.364500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hUXJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "context_filetype.vim 素早いマージ助かりました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2a5e8761-acd2-40a1-b754-723e15c83373",
+        "type": "message",
+        "text": "caw.vim で Vim 7.4 まだサポートしてたの完全に忘れてた…（CI がコケて知った）",
+        "user": "U0M7GCBPD",
+        "ts": "1584138764.365300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "C1ZVx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "caw.vim で Vim 7.4 まだサポートしてたの完全に忘れてた…（CI がコケて知った）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "793e44b1-d109-488b-98a8-8c9b2393cec5",
+        "type": "message",
+        "text": ".travis.yml いじるより 7.4 で動くように作った方が楽で 7.4 対応してしまった",
+        "user": "U0M7GCBPD",
+        "ts": "1584138822.366300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RsrK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ".travis.yml いじるより 7.4 で動くように作った方が楽で 7.4 対応してしまった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

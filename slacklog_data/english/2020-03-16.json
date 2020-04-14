@@ -1,0 +1,433 @@
+[
+    {
+        "client_msg_id": "0efdaf80-1516-485a-8f4d-f51f783cbcb0",
+        "type": "message",
+        "text": "&gt; |nvim_buf_attach| will take keyword args for the callbacks.\n|nvim_buf_attach| はコールバックに対してキーワード引数を取得します。\nと訳したのですが、ここの for どのように訳すのが良いのでしょうか。\n\nfor は `～方面に` とか `～のために` と使うものと考えていたのですが、\nどちらもしっくりこない感じがあります。",
+        "user": "U72TB62UF",
+        "ts": "1584403009.006600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JMwM",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "|nvim_buf_attach| will take keyword args for the callbacks."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "|nvim_buf_attach| はコールバックに対してキーワード引数を取得します。\nと訳したのですが、ここの for どのように訳すのが良いのでしょうか。\n\nfor は "
+                            },
+                            {
+                                "type": "text",
+                                "text": "～方面に",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とか "
+                            },
+                            {
+                                "type": "text",
+                                "text": "～のために",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " と使うものと考えていたのですが、\nどちらもしっくりこない感じがあります。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1862e62e-6070-4132-8ef0-34416919c115",
+        "type": "message",
+        "text": "xxはコールバックでキーワード引数を取ります。だとちょっと技術文的で簡略的すぎかな...",
+        "user": "UAZ33BKV2",
+        "ts": "1584403807.007500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "prmo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "xxはコールバックでキーワード引数を取ります。だとちょっと技術文的で簡略的すぎかな..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "574d808f-2a85-47c2-81bb-50247afbcaba",
+        "type": "message",
+        "text": "最初の訳の `コールバックに対して` 取るという訳だと、意味が逆になるので、 for を ～でと訳するほうがよさそう感あります",
+        "user": "U72TB62UF",
+        "ts": "1584403946.008700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LJZdX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最初の訳の "
+                            },
+                            {
+                                "type": "text",
+                                "text": "コールバックに対して",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 取るという訳だと、意味が逆になるので、 for を ～でと訳するほうがよさそう感あります"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d4167cce-3906-42ce-a453-5b54bd060a9a",
+        "type": "message",
+        "text": "前置詞ぜんぜんわからない",
+        "user": "U72TB62UF",
+        "ts": "1584403967.009300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vAcX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "前置詞ぜんぜんわからない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aae0f350-f437-4c0a-b11c-01fe8494d4aa",
+        "type": "message",
+        "text": "あー、どっちがどっちなのかは わたしも前置詞ナニモワカラナイ状態なのでアテにはならずです...辞書~秘孔~引こう...",
+        "user": "UAZ33BKV2",
+        "ts": "1584404269.010000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gvf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー、どっちがどっちなのかは わたしも前置詞ナニモワカラナイ状態なのでアテにはならずです...辞書"
+                            },
+                            {
+                                "type": "text",
+                                "text": "秘孔",
+                                "style": {
+                                    "strike": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "引こう..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "66a8a390-68b7-46bd-ad3d-87cc243391ca",
+        "type": "message",
+        "text": ":haisho:",
+        "user": "U72TB62UF",
+        "ts": "1584405479.010500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PkXf\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "haisho"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "419bbec3-1eb1-40cd-9999-3c5c7ec12443",
+        "type": "message",
+        "text": "<https:\/\/dictionary.goo.ne.jp\/word\/en\/for\/#ej-33042>\n~のために、だと自身がcallbackとして動作する場合には必要、みたいになるし\n~に対する、だとcallbackを受け取る場合に必要だし\nまあ、これは受けとるだから、~に対して、がよさそげ?",
+        "user": "UAZ33BKV2",
+        "ts": "1584405677.011900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "goo辞書",
+                "title": "forの意味 - goo辞書 英和和英",
+                "title_link": "https:\/\/dictionary.goo.ne.jp\/word\/en\/for\/#ej-33042",
+                "text": "forとは。意味や和訳。forの主な意味前1 〈場所〉を目的地にして1a 〈物〉（の獲得）を目的にして1b 〈事〉（の実現）を目ざして1c 〈人〉（の利益）のために2 〈物〉と交換（を目的に）して2a …（に相当する）として2b …（に相当する）理由で2c …（に相当する）間◆目的地を「目ざす」意味は「目的」につながる．２者間の「等価交換」を接点に，２者の「釣り合い」に，さらに２者の「間」に意味が広がる．━━[前]【目的... - 80万項目以上収録、例文・コロケーションが豊富な無料英和和英辞典。",
+                "fallback": "goo辞書: forの意味 - goo辞書 英和和英",
+                "image_url": "https:\/\/u.xgoo.jp\/img\/sns\/dictionary.png",
+                "from_url": "https:\/\/dictionary.goo.ne.jp\/word\/en\/for\/#ej-33042",
+                "image_width": 250,
+                "image_height": 250,
+                "image_bytes": 7687,
+                "service_icon": "http:\/\/u.xgoo.jp\/img\/sns\/dictionary.png",
+                "id": 1,
+                "original_url": "https:\/\/dictionary.goo.ne.jp\/word\/en\/for\/#ej-33042"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "T9Nah",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/dictionary.goo.ne.jp\/word\/en\/for\/#ej-33042"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n~のために、だと自身がcallbackとして動作する場合には必要、みたいになるし\n~に対する、だとcallbackを受け取る場合に必要だし\nまあ、これは受けとるだから、~に対して、がよさそげ?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d0dfd41e-0841-4d54-bf62-03d539727c1c",
+        "type": "message",
+        "text": "~に対してだと、やや固い印象があるので、 |nvim_buf_attach|はコールバック *から* 取得する、のほうが伝わりやすいかなぁ",
+        "user": "U72TB62UF",
+        "ts": "1584405902.013200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U72TB62UF",
+            "ts": "1584405931.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "42G6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "~に対してだと、やや固い印象があるので、 |nvim_buf_attach|はコールバック "
+                            },
+                            {
+                                "type": "text",
+                                "text": "から",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 取得する、のほうが伝わりやすいかなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "de9b71e3-9782-4b57-acf4-dc52aadc0293",
+        "type": "message",
+        "text": "となると、 forではなくfromであってほしい気もしますが、伝わりやすくするための意訳ということで……",
+        "user": "U72TB62UF",
+        "ts": "1584405965.014000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7MyR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "となると、 forではなくfromであってほしい気もしますが、伝わりやすくするための意訳ということで……"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

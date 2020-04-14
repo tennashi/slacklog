@@ -1,0 +1,4860 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584428626.000200",
+        "user": "UGXMRNBUM",
+        "text": "<@UGXMRNBUM> has joined the channel"
+    },
+    {
+        "client_msg_id": "b5f84a30-02f4-4afc-88af-39652b6f84b4",
+        "type": "message",
+        "text": "アカウントもGmailで+つかってサービス別にしてるので、なにか漏洩は検知できるはず、だがいまの所ない...",
+        "user": "UAZ33BKV2",
+        "ts": "1584428709.000500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eZv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "アカウントもGmailで+つかってサービス別にしてるので、なにか漏洩は検知できるはず、だがいまの所ない..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "15c25ba9-0b02-4cd9-a934-488681d310a5",
+        "type": "message",
+        "text": "アカウント分けるの、ある時から面倒くさくなって止めてしまったなぁ…",
+        "user": "UGXMRNBUM",
+        "ts": "1584428731.000900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1vnG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "アカウント分けるの、ある時から面倒くさくなって止めてしまったなぁ…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9048e6b5-a2b0-4ef1-a3fd-8158bfdf1edc",
+        "type": "message",
+        "text": "分けたいのに `+` が入ってると受け付けてくれないサービスがある…",
+        "user": "U03C71D7H",
+        "ts": "1584428748.001400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "M9dEM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "分けたいのに "
+                            },
+                            {
+                                "type": "text",
+                                "text": "+",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " が入ってると受け付けてくれないサービスがある…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "UGXMRNBUM",
+                    "UAZ33BKV2"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584428749.001600",
+        "user": "UD73ZNZAP",
+        "text": "<@UD73ZNZAP> has joined the channel"
+    },
+    {
+        "client_msg_id": "b85eb754-d5f3-4014-91c5-43c0b3206984",
+        "type": "message",
+        "text": "+が入ってると受け付けないけど、 `@` の直前に `.` があっても許す",
+        "user": "UGXMRNBUM",
+        "ts": "1584428783.002800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "I5YlF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "+が入ってると受け付けないけど、 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "@",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の直前に "
+                            },
+                            {
+                                "type": "text",
+                                "text": ".",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " があっても許す"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ec68049c-6285-4b2f-8fab-5875b969a1e8",
+        "type": "message",
+        "text": "なのでだめなときはそのまま\nただアングラ気味(マイナーというかサービスがサブカル的というか)はGmailのサブアカウントで登録したり",
+        "user": "UAZ33BKV2",
+        "ts": "1584428793.003300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/Uim4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なのでだめなときはそのまま\nただアングラ気味(マイナーというかサービスがサブカル的というか)はGmailのサブアカウントで登録したり"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4ffbd083-0d88-4af4-a6af-3cc39fca5ead",
+        "type": "message",
+        "text": "どんな文字列もクォートすれば...(たいがいだめ)",
+        "user": "UAZ33BKV2",
+        "ts": "1584428812.004100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "THpz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どんな文字列もクォートすれば...(たいがいだめ)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "641f92ea-6fe8-42fd-8e7c-7abdbb18deb6",
+        "type": "message",
+        "text": "メールアドレスの RFC ちゃんと読んでほしい",
+        "user": "U03C71D7H",
+        "ts": "1584428818.004200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wcf87",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "メールアドレスの RFC ちゃんと読んでほしい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "23a58faa-498c-40d2-8a90-85aaeaf2dae8",
+        "type": "message",
+        "text": "そして完全対応で死ぬ",
+        "user": "UAZ33BKV2",
+        "ts": "1584428834.004800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pf5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そして完全対応で死ぬ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "94788c51-681f-408b-b0a6-55ad02556e5b",
+        "type": "message",
+        "text": "正確に従おうとするとまあ死ぬ",
+        "user": "U03C71D7H",
+        "ts": "1584428841.005100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kjljW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "正確に従おうとするとまあ死ぬ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f6de8aed-2a7b-474f-ac09-cad9bf927dbe",
+        "type": "message",
+        "text": "「登録できないんだけど」と問い合わせが来る",
+        "user": "UGXMRNBUM",
+        "ts": "1584428846.005300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PzsH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "「登録できないんだけど」と問い合わせが来る"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b64a909a-8fc5-4a93-90b3-de6fff62816d",
+        "type": "message",
+        "text": "酷いのは、登録は受け付けるくせに、ログインフォームで `+` で弾かれる",
+        "user": "UAZ33BKV2",
+        "ts": "1584428868.006000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wARhQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "酷いのは、登録は受け付けるくせに、ログインフォームで "
+                            },
+                            {
+                                "type": "text",
+                                "text": "+",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " で弾かれる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tiken",
+                "users": [
+                    "UGXMRNBUM"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7b4ae949-c8e9-4812-9eae-b564afe1f675",
+        "type": "message",
+        "text": "これは問い合せして直させる(サービスorメールアドレス)",
+        "user": "UAZ33BKV2",
+        "ts": "1584428881.006500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wkvlu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これは問い合せして直させる(サービスorメールアドレス)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b18d8940-b467-4e45-a73e-93eb3400be75",
+        "type": "message",
+        "text": "あと、地味に登録のメールの大文字小文字の状態を保持したり、しなかったりする",
+        "user": "UAZ33BKV2",
+        "ts": "1584428897.006900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wGZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あと、地味に登録のメールの大文字小文字の状態を保持したり、しなかったりする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2e59c191-6a97-461b-a245-bd6eb4de043e",
+        "type": "message",
+        "text": "そのまま入れないと入れなかったり、登録で大文字あっても小文字じゃないと入れなかったり",
+        "user": "UAZ33BKV2",
+        "ts": "1584428916.007500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Gz6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そのまま入れないと入れなかったり、登録で大文字あっても小文字じゃないと入れなかったり"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d7b077e3-5046-493f-ab79-69fa0db7140d",
+        "type": "message",
+        "text": "受け入れは寛容に、をしてほしい...",
+        "user": "UAZ33BKV2",
+        "ts": "1584428930.007800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mvIMG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "受け入れは寛容に、をしてほしい..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2e4e2c68-2a46-4f1a-9927-854ddd052d56",
+        "type": "message",
+        "text": "ちなみに弾かれると、最悪アカウント削除すらできないというときもあったorz",
+        "user": "UAZ33BKV2",
+        "ts": "1584429133.008400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6XOgf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに弾かれると、最悪アカウント削除すらできないというときもあったorz"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b4fc570a-7d75-4064-8143-d55862dd734d",
+        "type": "message",
+        "text": "フォームのその手のダルいですね",
+        "user": "UGXMRNBUM",
+        "ts": "1584429234.008600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "c\/eI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "フォームのその手のダルいですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f1f658ea-c715-4741-8e54-ca8f45d7a829",
+        "type": "message",
+        "text": "IT Proのフォームがやばかったの思い出した",
+        "user": "UGXMRNBUM",
+        "ts": "1584429243.008900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "a1emD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "IT Proのフォームがやばかったの思い出した"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "61e61819-9fa7-42d8-bd31-61bbafaf5240",
+        "type": "message",
+        "text": "あれはひどかった記憶",
+        "user": "UAZ33BKV2",
+        "ts": "1584429256.009100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BRj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれはひどかった記憶"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f26bbc62-85c1-41fa-aa64-0af7214c9805",
+        "type": "message",
+        "text": "最近日経新聞社のWEB担当の人にあったけど、\n今はだいぶ色々頑張ってるみたいですね",
+        "user": "UGXMRNBUM",
+        "ts": "1584429315.009600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xAPH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最近日経新聞社のWEB担当の人にあったけど、\n今はだいぶ色々頑張ってるみたいですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6de64ef5-d26b-4294-8650-4518775c7003",
+        "type": "message",
+        "text": "どの ID\/PW がどのサービスで使えるのか全く ~分からない~ 分からなかった",
+        "user": "U0M7GCBPD",
+        "ts": "1584429341.010200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U0M7GCBPD",
+            "ts": "1584429363.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uAjQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どの ID\/PW がどのサービスで使えるのか全く "
+                            },
+                            {
+                                "type": "text",
+                                "text": "分からない",
+                                "style": {
+                                    "strike": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 分からなかった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "35a918c4-306e-474e-9776-3b0511fbcb05",
+        "type": "message",
+        "text": "日経(Webは)はわりと改善した感じ、記事にもなってましたっけ",
+        "user": "UAZ33BKV2",
+        "ts": "1584429346.010400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IKk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "日経(Webは)はわりと改善した感じ、記事にもなってましたっけ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4fe87c37-6d4d-4297-8952-19246fdf869a",
+        "type": "message",
+        "text": "記事にもなってましたね",
+        "user": "UGXMRNBUM",
+        "ts": "1584429397.010800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0rN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "記事にもなってましたね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584429663.011000",
+        "user": "UK0JC4CM8",
+        "text": "<@UK0JC4CM8> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584429670.011200",
+        "user": "UGP5AJKU4",
+        "text": "<@UGP5AJKU4> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584435585.011400",
+        "user": "UBNPMJJGM",
+        "text": "<@UBNPMJJGM> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584435849.011600",
+        "user": "UD69ADC3X",
+        "text": "<@UD69ADC3X> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584440030.011800",
+        "user": "U7B4ZD49X",
+        "text": "<@U7B4ZD49X> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584440571.012000",
+        "user": "UEX9VPSET",
+        "text": "<@UEX9VPSET> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584442620.012200",
+        "user": "UNJ2DANJC",
+        "text": "<@UNJ2DANJC> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584442851.012400",
+        "user": "UQB5KD0FL",
+        "text": "<@UQB5KD0FL> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584445405.012600",
+        "user": "UCEPRE53K",
+        "text": "<@UCEPRE53K> has joined the channel"
+    },
+    {
+        "client_msg_id": "bd1834f9-413f-492b-bf4f-24694b7d52cd",
+        "type": "message",
+        "text": "使える記号の種類を選べるパスワードジェネレータが少ないが、なぜか日本のサービスは一部の記号のみ許可みたいなことをするので、ジェネレータで記号が使えずに結局記号なしで生成してしまう",
+        "user": "U03C71D7H",
+        "ts": "1584496301.013900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1Nzw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "使える記号の種類を選べるパスワードジェネレータが少ないが、なぜか日本のサービスは一部の記号のみ許可みたいなことをするので、ジェネレータで記号が使えずに結局記号なしで生成してしまう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "UK0JC4CM8",
+                    "UL6CFN8NR"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "69223624-7313-4b1d-bd31-39aae390f7a7",
+        "type": "message",
+        "text": "<https:\/\/github.com\/mattn\/genpw>",
+        "user": "U03C6TEAZ",
+        "ts": "1584496485.014100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "mattn\/genpw",
+                "title_link": "https:\/\/github.com\/mattn\/genpw",
+                "text": "Password Generator. Contribute to mattn\/genpw development by creating an account on GitHub.",
+                "fallback": "GitHub: mattn\/genpw",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/10111?s=400&v=4",
+                "from_url": "https:\/\/github.com\/mattn\/genpw",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/mattn\/genpw"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6uip",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/mattn\/genpw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "96fd83b4-6004-46a4-ab4b-d4c162c7645c",
+        "type": "message",
+        "text": "パスワード生成、lesspass を使っている",
+        "user": "U03C71D7H",
+        "ts": "1584496528.014600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zqd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パスワード生成、lesspass を使っている"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c4b91f8c-b2f7-4980-b1c1-0e31ee2f4763",
+        "type": "message",
+        "text": "記号のありなし(最小出現個数)、数字のありなし、を指定できる物が無かったので作った。",
+        "user": "U03C6TEAZ",
+        "ts": "1584496620.015400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "V9W",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "記号のありなし(最小出現個数)、数字のありなし、を指定できる物が無かったので作った。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8ecb3230-cfde-4570-a032-a71c0cb2b6d3",
+        "type": "message",
+        "text": "pwgen を勧められたけどあの羅列の中から条件にあったの探すの非常に無駄時間。",
+        "user": "U03C6TEAZ",
+        "ts": "1584496646.016000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x5Mw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "pwgen を勧められたけどあの羅列の中から条件にあったの探すの非常に無駄時間。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b4e496e7-3989-4a7b-92dd-93552af6fd20",
+        "type": "message",
+        "text": "ああ、これも記号を選べるわけではないのか",
+        "user": "U03C71D7H",
+        "ts": "1584496678.016300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/rM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ああ、これも記号を選べるわけではないのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "911dbf2a-bd89-447f-a654-6957924d0496",
+        "type": "message",
+        "text": "lesspass は、Web サイトとログインIDとマスターパスワードからランダムっぽいパスワードを生成しつつもマスターパスワード(と生成するのに使う文字種とか)を覚えておけば復元が可能なのでパスワード管理サービスがなくなっても最悪なんとかなるみたいな代物です",
+        "user": "U03C71D7H",
+        "ts": "1584496789.017700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mic",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "lesspass は、Web サイトとログインIDとマスターパスワードからランダムっぽいパスワードを生成しつつもマスターパスワード(と生成するのに使う文字種とか)を覚えておけば復元が可能なのでパスワード管理サービスがなくなっても最悪なんとかなるみたいな代物です"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5543f4d5-374f-4932-9cd5-ea038d96f97e",
+        "type": "message",
+        "text": "オンラインのパスワード生成、まったく信用してない。",
+        "user": "U03C6TEAZ",
+        "ts": "1584496907.018200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "u18",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "オンラインのパスワード生成、まったく信用してない。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aaac7f6f-6181-4c62-a145-c27fb1e31081",
+        "type": "message",
+        "text": "<https:\/\/github.com\/thinca\/config\/blob\/master\/dotfiles\/dot.vim\/vimrc#L1557-L1579>",
+        "user": "U03C71D7H",
+        "ts": "1584496920.018400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "thinca\/config",
+                "title_link": "https:\/\/github.com\/thinca\/config\/blob\/master\/dotfiles\/dot.vim\/vimrc#L1557-L1579",
+                "text": "My configuration files. Contribute to thinca\/config development by creating an account on GitHub.",
+                "fallback": "GitHub: thinca\/config",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/20474?s=400&v=4",
+                "from_url": "https:\/\/github.com\/thinca\/config\/blob\/master\/dotfiles\/dot.vim\/vimrc#L1557-L1579",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/thinca\/config\/blob\/master\/dotfiles\/dot.vim\/vimrc#L1557-L1579"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8pva",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/thinca\/config\/blob\/master\/dotfiles\/dot.vim\/vimrc#L1557-L1579"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c0370c74-4c49-4313-8bf9-ecc4eeb7b0f8",
+        "type": "message",
+        "text": "パスワード生成、絶対に捨てないと決めてる本の各ページの1文字目から取っている…",
+        "user": "UGXMRNBUM",
+        "ts": "1584497989.019200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QY0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パスワード生成、絶対に捨てないと決めてる本の各ページの1文字目から取っている…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ba194a73-1579-4a14-8aee-ed04a603cba9",
+        "type": "message",
+        "text": "記号だけ換字表作ってるけど",
+        "user": "UGXMRNBUM",
+        "ts": "1584498000.019700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0\/7Oc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "記号だけ換字表作ってるけど"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "698f609c-182e-4731-86b7-830999989853",
+        "type": "message",
+        "text": "モバイルPASMO、秘密の質問が強制でかつ生で保存している",
+        "user": "U03C71D7H",
+        "ts": "1584499820.020500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Y4Pf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "モバイルPASMO、秘密の質問が強制でかつ生で保存している"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            },
+            {
+                "name": "innocent",
+                "users": [
+                    "UBNPMJJGM"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e027121a-7da4-4fed-a146-c7be683a6847",
+        "type": "message",
+        "text": "最悪、人が介在しないといけない可能性があるという方針なら〇だけどセキュリティ的には×",
+        "user": "U03C6TEAZ",
+        "ts": "1584499920.021100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FA=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最悪、人が介在しないといけない可能性があるという方針なら〇だけどセキュリティ的には×"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c6f3d253-6ba5-4ff5-9dc6-2cc9b7e449c2",
+        "type": "message",
+        "text": "客「秘密の質問を忘れてしまって」\nオペレータ「えー、なんとかの名前です」\n客「あー、ペットの名前」\nオペレータ「はい」\n客「シンカです、シンカ」\nオペレータ「本人確認しました」",
+        "user": "U03C6TEAZ",
+        "ts": "1584499996.022500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4y7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "客「秘密の質問を忘れてしまって」\nオペレータ「えー、なんとかの名前です」\n客「あー、ペットの名前」\nオペレータ「はい」\n客「シンカです、シンカ」\nオペレータ「本人確認しました」"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "af981ea8-8db3-4dc9-801d-b51982e396dd",
+        "type": "message",
+        "text": "ペットなのか…",
+        "user": "U9S4G0LJW",
+        "ts": "1584500077.022700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "566",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ペットなのか…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "56fb43b3-828f-473c-badb-69c577b5dece",
+        "type": "message",
+        "text": "頼むから秘密の質問じゃなくてパスワードリセットにしてくれ～っていつも思う",
+        "user": "U9S4G0LJW",
+        "ts": "1584500130.023500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "I4Tta",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "頼むから秘密の質問じゃなくてパスワードリセットにしてくれ～っていつも思う"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c3a7ce3d-a785-4c3b-8c58-90d09d98eacb",
+        "type": "message",
+        "text": "秘密の質問、何が秘密なのか全くわからないしリスクを上げているだけなので今すぐやめてほしい (N回目)",
+        "user": "U03C71D7H",
+        "ts": "1584500140.023800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vukU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "秘密の質問、何が秘密なのか全くわからないしリスクを上げているだけなので今すぐやめてほしい (N回目)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U7B4ZD49X",
+                    "UBNPMJJGM"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9bfa714d-d379-4590-b905-912e04b39cad",
+        "type": "message",
+        "text": "なぜ日本の企業は何も学ばないのか",
+        "user": "U03C71D7H",
+        "ts": "1584500159.024100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TNa",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なぜ日本の企業は何も学ばないのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e6ab251f-62cc-4717-ab5d-0ec36d280356",
+        "type": "message",
+        "text": "秘密の質問はほんとうによくない文明",
+        "user": "U03C4RC8X",
+        "ts": "1584500259.024300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OCaH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "秘密の質問はほんとうによくない文明"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6b6431ff-7eec-48f3-8376-e248b2ef1228",
+        "type": "message",
+        "text": "あとパスワード文字数上限と文字種固定もよくない文明",
+        "user": "U03C4RC8X",
+        "ts": "1584500270.024900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NpL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あとパスワード文字数上限と文字種固定もよくない文明"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U9S4G0LJW",
+                    "UAZ33BKV2",
+                    "U03C71D7H",
+                    "U7B4ZD49X",
+                    "UBNPMJJGM"
+                ],
+                "count": 5
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8d1c5b38-2886-4080-8c67-fe56e0c4073c",
+        "type": "message",
+        "text": "法律で決まってるんじゃないかって勘ぐってしまうくらいにどこも秘密の質問だらけでつらい",
+        "user": "UK0JC4CM8",
+        "ts": "1584500289.025800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7884afb59ae5",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-12-05\/849455683763_7884afb59ae5cd33e24f_72.jpg",
+            "first_name": "",
+            "real_name": "YMD",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "misawork330",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QnrR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "法律で決まってるんじゃないかって勘ぐってしまうくらいにどこも秘密の質問だらけでつらい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "laughing",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "26232a1a-9f59-4e7f-9e48-ac6a63fe3743",
+        "type": "message",
+        "text": "この手のセキュリティインシデントで一番怖いの身内だし、案外人間身内を信用するので脆弱",
+        "user": "U9S4G0LJW",
+        "ts": "1584500302.026100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9O2H",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "この手のセキュリティインシデントで一番怖いの身内だし、案外人間身内を信用するので脆弱"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0da63193-f57e-4475-8ba9-caeefd85f1b8",
+        "type": "message",
+        "text": "妙に短いパスワードを要求してくるサイト、平文保存してるのではって思う",
+        "user": "U9S4G0LJW",
+        "ts": "1584500376.027500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U9S4G0LJW",
+            "ts": "1584500387.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RDq=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "妙に短いパスワードを要求してくるサイト、平文保存してるのではって思う"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3219fac2-1f04-4eb3-8611-ba3fadd7d5c4",
+        "type": "message",
+        "text": "パスワード、無限はさすがに別の厄介さがあるだろうし期待しないけど200とか十分長く受け付けて欲しい。",
+        "user": "UAZ33BKV2",
+        "ts": "1584500455.029600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vNd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パスワード、無限はさすがに別の厄介さがあるだろうし期待しないけど200とか十分長く受け付けて欲しい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5dc89d30-3b90-4cca-9d64-017806136487",
+        "type": "message",
+        "text": "僕はパスワード厳しめなんだけど奥さんが緩い方なので、家族共有のアカウントがつらい。",
+        "user": "U03C6TEAZ",
+        "ts": "1584500790.030800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dnC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "僕はパスワード厳しめなんだけど奥さんが緩い方なので、家族共有のアカウントがつらい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "affa5c5c-b654-4a26-843c-e4fb6f274fb9",
+        "type": "message",
+        "text": "暗号学を専門としてた友人がパスワード文字数最低120文字とかだったので僕もそういう感じにしてます",
+        "user": "U03C4RC8X",
+        "ts": "1584500818.031600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "V4i",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "暗号学を専門としてた友人がパスワード文字数最低120文字とかだったので僕もそういう感じにしてます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a3946f6f-84b6-47d9-9b4a-0fc8fd0ec604",
+        "type": "message",
+        "text": "普通に手入力ですらすら入力してました",
+        "user": "U03C4RC8X",
+        "ts": "1584500824.031800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VcqvY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "普通に手入力ですらすら入力してました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "27276aee-f6f9-4eb0-a938-9b20300d7d2b",
+        "type": "message",
+        "text": "いわゆるパスフレーズ",
+        "user": "U03C4RC8X",
+        "ts": "1584500828.032100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LG07A",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いわゆるパスフレーズ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "36c0a41f-8c8e-4faf-b7fa-3d9cbf66ed5e",
+        "type": "message",
+        "text": "英語圏はいいよなー",
+        "user": "U03C6TEAZ",
+        "ts": "1584500858.032400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e3Nw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "英語圏はいいよなー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c74c5d5c-0538-41dc-aad6-ec8225e9dd74",
+        "type": "message",
+        "text": "日本だと「パスフレーズ」と言いながら実質「パスワード」になってしまってる感ある。",
+        "user": "U03C6TEAZ",
+        "ts": "1584500890.032900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "74gGZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "日本だと「パスフレーズ」と言いながら実質「パスワード」になってしまってる感ある。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8863919f-40e3-476f-aa4f-f56f34fa00c6",
+        "type": "message",
+        "text": "自社のパスワードが、定期更新なし、代わりに最低24字(だったか)になったのは革新的かつ嬉しかった",
+        "user": "UAZ33BKV2",
+        "ts": "1584501155.035700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Hw+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自社のパスワードが、定期更新なし、代わりに最低24字(だったか)になったのは革新的かつ嬉しかった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "goodpoem",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a667af93-e9c1-4e33-b994-257a9103f601",
+        "type": "message",
+        "text": ":erai:",
+        "user": "U03C4RC8X",
+        "ts": "1584501192.036000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Q17",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "erai"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "16b48d2e-7e9d-43d4-9615-a807d21d0880",
+        "type": "message",
+        "text": "定期更新なしは総務省からもお達し出てますね確か",
+        "user": "UGXMRNBUM",
+        "ts": "1584501512.036500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x87",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "定期更新なしは総務省からもお達し出てますね確か"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "afc3635d-be7d-48f4-8d1b-6e04f99931ef",
+        "type": "message",
+        "text": "定期更新強要されたときは二つパスワードを用意して交互に入力することでやり過ごした",
+        "user": "U9S4G0LJW",
+        "ts": "1584501570.037500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uBi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "定期更新強要されたときは二つパスワードを用意して交互に入力することでやり過ごした"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "eb3dc47e-42a3-4e4a-9c32-3e6832d46d13",
+        "type": "message",
+        "text": "過去n個のパスワードを覚えてるサービスがあってね… Salesforce っていうんですけど n=10 だったかな…",
+        "user": "U06BRP8VD",
+        "ts": "1584501613.038100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "c8+pT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "過去n個のパスワードを覚えてるサービスがあってね… Salesforce っていうんですけど n=10 だったかな…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "hai-small",
+                "users": [
+                    "U9S4G0LJW",
+                    "UGXMRNBUM"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "19f81fd0-7d22-4099-be36-a6fe39ecf031",
+        "type": "message",
+        "text": "未だにセキュリティチェックシートの記入を要求してくるお客さんで\n「パスワードの変更は義務付けていますか」みたいな質問来るから、\n毎回総務省のPDF貼り付けて「かえって危険性が増すため実施してません」と回答している",
+        "user": "UGXMRNBUM",
+        "ts": "1584501726.039400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "t2z0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "未だにセキュリティチェックシートの記入を要求してくるお客さんで\n「パスワードの変更は義務付けていますか」みたいな質問来るから、\n毎回総務省のPDF貼り付けて「かえって危険性が増すため実施してません」と回答している"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d9e172df-18ed-4b0b-9992-c75f69b50070",
+        "type": "message",
+        "text": "一番下に数字付けてインクリメントするやつですね。",
+        "user": "U03C6TEAZ",
+        "ts": "1584501750.040000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dN8MF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "一番下に数字付けてインクリメントするやつですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "01c762c2-7e9b-4895-bdd9-71cb2e3c1368",
+        "type": "message",
+        "text": "笑",
+        "user": "UGXMRNBUM",
+        "ts": "1584501754.040300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "T0L",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "笑"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b9fb89b6-b4aa-4c58-94eb-aa6378a69c40",
+        "type": "message",
+        "text": "覚えるパスワードを1つ長くしたら強度は同じなので実質同じ。",
+        "user": "U03C6TEAZ",
+        "ts": "1584501860.041500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/=Z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "覚えるパスワードを1つ長くしたら強度は同じなので実質同じ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1e8442c5-5de0-462c-9efb-8318abb0fa0b",
+        "type": "message",
+        "text": "総務省、そろそろ秘密の質問もやめろと言ってほしい\nそもそも秘密の質問って日本以外で流行ってる国あるのかな。確かパスワードの定期変更が危険ってのは海外の何かがソースで総務省はそれに従った形だった気がする",
+        "user": "U03C71D7H",
+        "ts": "1584502009.042800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JtIW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "総務省、そろそろ秘密の質問もやめろと言ってほしい\nそもそも秘密の質問って日本以外で流行ってる国あるのかな。確かパスワードの定期変更が危険ってのは海外の何かがソースで総務省はそれに従った形だった気がする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bfc22429-248f-436e-9244-8bf93b265490",
+        "type": "message",
+        "text": "NISTですかね",
+        "user": "UGXMRNBUM",
+        "ts": "1584502037.043000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IHRI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "NISTですかね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c896879a-3607-4adc-8f93-b14f3b4ea0b8",
+        "type": "message",
+        "text": "秘密の質問、Mojangの垢取る時に入れさせられた気がする",
+        "user": "U9S4G0LJW",
+        "ts": "1584502059.043600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U9S4G0LJW",
+            "ts": "1584502084.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QVFEK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "秘密の質問、Mojangの垢取る時に入れさせられた気がする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "88d9b3d2-b829-4515-a31c-64a3cce328ac",
+        "type": "message",
+        "text": "記憶違いだったらごめんなさい感",
+        "user": "U9S4G0LJW",
+        "ts": "1584502070.044000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VVvsm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "記憶違いだったらごめんなさい感"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b532939d-be3d-411a-9ee1-36f351a51074",
+        "type": "message",
+        "text": "<https:\/\/en.wikipedia.org\/wiki\/Security_question>",
+        "user": "UGXMRNBUM",
+        "ts": "1584502098.044500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "Security question",
+                "title_link": "https:\/\/en.wikipedia.org\/wiki\/Security_question",
+                "from_url": "https:\/\/en.wikipedia.org\/wiki\/Security_question",
+                "author_name": "Wikipedia",
+                "author_link": "https:\/\/en.wikipedia.org\/",
+                "text": "A security question is form of shared secret used as an authenticator. It is commonly used by banks, cable companies and wireless providers as an extra security layer.\nFinancial institutions have used questions to authenticate customers since at least the early 20th century. In a 1906 speech at a meeting of a section of the American Bankers Association, Baltimore banker William M. Hayden described his institution's use of security questions as a supplement to customer signature records. He described the signature cards used in opening new accounts, which had spaces for the customer's birthplace, \"residence\", mother's maiden name, occupation and age.\nHayden noted that some of these items were often left blank and that the \"residence\" information was used primarily to contact the customer, but the mother's maiden name was useful as a \"strong test of identity\". Although he observed that it was rare for someone outside the customer's family to try to withdraw money from a customer account, he said that the mother's maiden name was useful in verification because it was rarely known outside the family and that even the people opening accounts were \"often unprepared for this question\". Similarly, under modern practice, a credit card provider could request a customer's mother's maiden name before issuing a replacement for a lost <http:\/\/card.In|card.In> the 2000s, security questions came into widespread use on the Internet.  As a form of self-service password reset, security questions have reduced information technology help desk costs.  By allowing the use of security questions online, they are rendered vulnerable to keystroke logging attacks. In addition, whereas a human customer service representative may be able to cope with inexact security answers appropriately, computers are less adept.  As such, users must remember the exact spelling and sometimes even case of the answers they provide, which poses the threat that more answers will be written down, exposing them to physical theft.\nDue to the commonplace nature of social-media, many of the older traditional security questions are no longer useful or secure. It is important to remember that a security question is just another password. Therefore, a security question should not be shared with anyone else, or include any information readily available on social media websites, while remaining simple, memorable, difficult to guess, and constant over time. Understanding that not every question will work for everyone, RSA (a U.S. network security provider, a division of EMC Corporation) gives banks 150 questions to choose from.Many have questioned the usefulness of security questions. Security specialist Bruce Schneier points out that since they are public facts about a person, they are easier to guess for hackers than passwords. Users that know this create fake answers to the questions, then forget the answers, thus defeating the purpose and creating an inconvenience not worth the investment.",
+                "fallback": "wikipedia: Security question",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/wikipedia.png",
+                "id": 1,
+                "original_url": "https:\/\/en.wikipedia.org\/wiki\/Security_question"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6S8X5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/en.wikipedia.org\/wiki\/Security_question"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e21a15ac-4357-4607-9584-9b96bc10d08b",
+        "type": "message",
+        "text": "それっぽいページはある（えいごがよめないのでほんとうにそれかはわからない）",
+        "user": "UGXMRNBUM",
+        "ts": "1584502117.045100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "O0e",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それっぽいページはある（えいごがよめないのでほんとうにそれかはわからない）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8abdfe3d-e6fe-4e95-bfd9-cecb4fc57704",
+        "type": "message",
+        "text": "&gt; As a form of self-service password reset, security questions have reduced information technology help desk costs\nそれっぽい",
+        "user": "UGXMRNBUM",
+        "ts": "1584502154.045300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "J4c",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "As a form of self-service password reset, security questions have reduced information technology help desk costs"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nそれっぽい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "84fc4b43-c136-4b8d-9e75-6756c57713c2",
+        "type": "message",
+        "text": "日本語のページもあるのね <https:\/\/ja.wikipedia.org\/wiki\/%E7%A7%98%E5%AF%86%E3%81%AE%E8%B3%AA%E5%95%8F>",
+        "user": "U03C71D7H",
+        "ts": "1584502246.045600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "秘密の質問",
+                "title_link": "https:\/\/ja.wikipedia.org\/wiki\/%E7%A7%98%E5%AF%86%E3%81%AE%E8%B3%AA%E5%95%8F",
+                "from_url": "https:\/\/ja.wikipedia.org\/wiki\/%E7%A7%98%E5%AF%86%E3%81%AE%E8%B3%AA%E5%95%8F",
+                "author_name": "Wikipedia",
+                "author_link": "https:\/\/ja.wikipedia.org\/",
+                "text": "秘密の質問（ひみつのしつもん、英語: secret question）またはセキュリティ質問（セキュリティしつもん、英語: security question）は、認証者によって用いられる共有秘密鍵の一形式である。 「あなたのペットの名前は？」「あなたの母親の旧姓は？」「初めて見た映画のタイトルは？」などの質問が秘密の質問として挙げられる。銀行（例えばりそな銀行）、通信会社、インターネット事業者（ウェブサイト）が更なるセキュリティとして導入しているが、その効果については非難の声も多く、実装によっては逆にセキュリティホールになってしまっている場合もある。",
+                "fallback": "wikipedia: 秘密の質問",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/wikipedia.png",
+                "id": 1,
+                "original_url": "https:\/\/ja.wikipedia.org\/wiki\/%E7%A7%98%E5%AF%86%E3%81%AE%E8%B3%AA%E5%95%8F"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AYHl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "日本語のページもあるのね "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ja.wikipedia.org\/wiki\/%E7%A7%98%E5%AF%86%E3%81%AE%E8%B3%AA%E5%95%8F"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "70ee3d02-be68-4d5a-9db6-497b07288358",
+        "type": "message",
+        "text": "&gt; 秘密の質問に対する最も堅牢なセキュリティ対策は、「秘密の質問を使わない」ことである。\nわかりみしかない",
+        "user": "U03C71D7H",
+        "ts": "1584502263.046000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "w+i",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "秘密の質問に対する最も堅牢なセキュリティ対策は、「秘密の質問を使わない」ことである。"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nわかりみしかない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "erai",
+                "users": [
+                    "U03C4RC8X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2a3795d5-929c-4a54-adc0-f8c9f51679e0",
+        "type": "message",
+        "text": "結局秘密の質問の回答をパスワードマネージャーに記録する必要が生じて",
+        "user": "UGXMRNBUM",
+        "ts": "1584502290.046600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bVQE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "結局秘密の質問の回答をパスワードマネージャーに記録する必要が生じて"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2da343cc-0e75-423f-8fa5-97e156e4d3e2",
+        "type": "message",
+        "text": "手間ばかり増す…",
+        "user": "UGXMRNBUM",
+        "ts": "1584502293.046800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VkSc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "手間ばかり増す…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "edba3763-70b6-4c26-a0e0-472f6b77109b",
+        "type": "message",
+        "text": "IPA仕事しろ…",
+        "user": "UGXMRNBUM",
+        "ts": "1584502335.047000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Epg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "IPA仕事しろ…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f20420f8-7404-4403-8937-2f300d64fe77",
+        "type": "message",
+        "text": "家から徒歩5分くらいのところにあるから毎日殴り込みに行きたい衝動にカラれてしまう",
+        "user": "UGXMRNBUM",
+        "ts": "1584502351.047500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sR5x7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "家から徒歩5分くらいのところにあるから毎日殴り込みに行きたい衝動にカラれてしまう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "97ba8922-1ba1-44fc-8c1f-c698f5dfe34a",
+        "type": "message",
+        "text": "秘密の質問残念ながらいろんな国のサービスで実在してます",
+        "user": "U03C4RC8X",
+        "ts": "1584502445.048500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g9d0ceb387e3",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/d9d0ceb387e3b6de5c4562af78e8a910.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "ujihisa",
+            "real_name": "ujihisa",
+            "display_name": "u",
+            "team": "T03C4RC8V",
+            "name": "u",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HUjb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "秘密の質問残念ながらいろんな国のサービスで実在してます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "gunnyari",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            },
+            {
+                "name": "totemoturai",
+                "users": [
+                    "U9S4G0LJW",
+                    "UAZ33BKV2"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d2002ae4-e616-4daa-a062-f9f1b200de78",
+        "type": "message",
+        "text": "登録が面倒なサービス、そもそもサービスの利用を諦めることがよくある",
+        "user": "U9S4G0LJW",
+        "ts": "1584502531.050000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0cn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "登録が面倒なサービス、そもそもサービスの利用を諦めることがよくある"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b9ee1ec8-135c-4feb-aa94-f853b6a9e104",
+        "type": "message",
+        "text": "昔同僚が面倒だからと「母親の旧姓の苗字は？」みたいな質問の答えに「母親の旧姓の苗字は？」を入れてるって言っててさすがに「あかんやろ」って言った。",
+        "user": "U03C6TEAZ",
+        "ts": "1584502557.050400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Hcyn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "昔同僚が面倒だからと「母親の旧姓の苗字は？」みたいな質問の答えに「母親の旧姓の苗字は？」を入れてるって言っててさすがに「あかんやろ」って言った。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c38f9867-c4c8-4537-ba87-dfcbd2a1b9e8",
+        "type": "message",
+        "text": "まぁ実際の母親の苗字がバレないという利点はある。",
+        "user": "U03C6TEAZ",
+        "ts": "1584502598.051200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6E36",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まぁ実際の母親の苗字がバレないという利点はある。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "benri",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "56b5d628-6f5d-48d4-a6b3-544aa83434e9",
+        "type": "message",
+        "text": "質問を質問で返すなぁーっ！！",
+        "user": "U9S4G0LJW",
+        "ts": "1584502613.051600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "s7=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "質問を質問で返すなぁーっ！！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U03C6TEAZ"
+                ],
+                "count": 1
+            },
+            {
+                "name": "fuita",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "78151dec-e4f1-439f-9a53-193111f015da",
+        "type": "message",
+        "text": "秘密の質問、ランダムひらがな20文字くらい。パスワードマネージャーに入れる :totemoturai:",
+        "user": "UAZ33BKV2",
+        "ts": "1584502703.053100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "M2wx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "秘密の質問、ランダムひらがな20文字くらい。パスワードマネージャーに入れる "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "totemoturai"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "totemoturai",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7d4fc743-db04-4885-9ac6-8ca0d8ea2cf9",
+        "type": "message",
+        "text": "それもはや忘れると詰む系のパスワードなのでは",
+        "user": "U9S4G0LJW",
+        "ts": "1584502766.054200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NOr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それもはや忘れると詰む系のパスワードなのでは"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584502766.054200",
+        "reply_count": 2,
+        "reply_users_count": 2,
+        "latest_reply": "1584503042.056700",
+        "reply_users": [
+            "UAZ33BKV2",
+            "U9S4G0LJW"
+        ],
+        "replies": [
+            {
+                "user": "UAZ33BKV2",
+                "ts": "1584502997.056300"
+            },
+            {
+                "user": "U9S4G0LJW",
+                "ts": "1584503042.056700"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "40dd313a-e184-4c2c-9da5-0bc859a2c409",
+        "type": "message",
+        "text": "秘密の質問とは一体…",
+        "user": "U9S4G0LJW",
+        "ts": "1584502794.054700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=Ynz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "秘密の質問とは一体…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a6ab1f67-305b-4217-b208-90902e0caf03",
+        "type": "message",
+        "text": "Google パスワードマネージャーのアプリ出ないかなあ",
+        "user": "UGXMRNBUM",
+        "ts": "1584502810.055000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UGXMRNBUM",
+            "ts": "1584502815.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oDwG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Google パスワードマネージャーのアプリ出ないかなあ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2a5c626b-5c5a-4ca9-9e64-00884fe265ef",
+        "type": "message",
+        "text": "Microsoft Authenticator、好きなのであの仕組み Google も真似してほしい。",
+        "user": "U03C6TEAZ",
+        "ts": "1584502896.056100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Clv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Microsoft Authenticator、好きなのであの仕組み Google も真似してほしい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U776661HA"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d505d4e1-f158-47fb-b0bb-7aca9dd5a6ea",
+        "type": "message",
+        "text": "秘密の質問は母親の旧姓とかほぼ公開情報みたいなものではなくへそくりの隠し場所は？とか本当に秘密みたいな質問も追加してほしい",
+        "user": "UK0JC4CM8",
+        "ts": "1584502897.056200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7884afb59ae5",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-12-05\/849455683763_7884afb59ae5cd33e24f_72.jpg",
+            "first_name": "",
+            "real_name": "YMD",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "misawork330",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "thT8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "秘密の質問は母親の旧姓とかほぼ公開情報みたいなものではなくへそくりの隠し場所は？とか本当に秘密みたいな質問も追加してほしい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584502897.056200",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584503407.057500",
+        "reply_users": [
+            "UAZ33BKV2"
+        ],
+        "replies": [
+            {
+                "user": "UAZ33BKV2",
+                "ts": "1584503407.057500"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "そうなのですが、自分自身ならともかく、家族のプライバシーをセキュリティをダシにされて渡すのもなー、と。",
+        "user": "UAZ33BKV2",
+        "ts": "1584502997.056300",
+        "thread_ts": "1584502766.054200",
+        "root": {
+            "client_msg_id": "7d4fc743-db04-4885-9ac6-8ca0d8ea2cf9",
+            "type": "message",
+            "text": "それもはや忘れると詰む系のパスワードなのでは",
+            "user": "U9S4G0LJW",
+            "ts": "1584502766.054200",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "NOr",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "それもはや忘れると詰む系のパスワードなのでは"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584502766.054200",
+            "reply_count": 2,
+            "reply_users_count": 2,
+            "latest_reply": "1584503042.056700",
+            "reply_users": [
+                "UAZ33BKV2",
+                "U9S4G0LJW"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ANi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そうなのですが、自分自身ならともかく、家族のプライバシーをセキュリティをダシにされて渡すのもなー、と。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "fa8649a3-b8d9-4994-937b-c24cd197ea0a",
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "改めて考えるとひどい話やな",
+        "user": "U9S4G0LJW",
+        "ts": "1584503042.056700",
+        "thread_ts": "1584502766.054200",
+        "root": {
+            "client_msg_id": "7d4fc743-db04-4885-9ac6-8ca0d8ea2cf9",
+            "type": "message",
+            "text": "それもはや忘れると詰む系のパスワードなのでは",
+            "user": "U9S4G0LJW",
+            "ts": "1584502766.054200",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "NOr",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "それもはや忘れると詰む系のパスワードなのでは"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584502766.054200",
+            "reply_count": 2,
+            "reply_users_count": 2,
+            "latest_reply": "1584503042.056700",
+            "reply_users": [
+                "UAZ33BKV2",
+                "U9S4G0LJW"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FVI1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "改めて考えるとひどい話やな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "e6688b00-1a42-472a-8c87-d18f96ddb0b3"
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "裏帳簿の隠し場所、初めて性的に致した場所、好きなドラッグとでもすればみんな入力拒否するんだけどなー",
+        "user": "UAZ33BKV2",
+        "ts": "1584503407.057500",
+        "thread_ts": "1584502897.056200",
+        "root": {
+            "client_msg_id": "d505d4e1-f158-47fb-b0bb-7aca9dd5a6ea",
+            "type": "message",
+            "text": "秘密の質問は母親の旧姓とかほぼ公開情報みたいなものではなくへそくりの隠し場所は？とか本当に秘密みたいな質問も追加してほしい",
+            "user": "UK0JC4CM8",
+            "ts": "1584502897.056200",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "thT8",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "秘密の質問は母親の旧姓とかほぼ公開情報みたいなものではなくへそくりの隠し場所は？とか本当に秘密みたいな質問も追加してほしい"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584502897.056200",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1584503407.057500",
+            "reply_users": [
+                "UAZ33BKV2"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yALN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "裏帳簿の隠し場所、初めて性的に致した場所、好きなドラッグとでもすればみんな入力拒否するんだけどなー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "3a11f785-536d-4f86-8235-7eb90620e500"
+    },
+    {
+        "client_msg_id": "0a516df3-e4d7-47c5-ad4e-36ff5bd091e5",
+        "type": "message",
+        "text": "モバイルpasmo 特定の端末でしかモバイルSuicaと併用できないみたいでがっかりしている。\nアプリ起動した瞬間にエラーが出た。。。\n秘密の質問とかどうでもいいからなんとかしてくれー",
+        "user": "UNJ2DANJC",
+        "ts": "1584504461.060300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UNJ2DANJC",
+            "ts": "1584504484.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gAfYM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "モバイルpasmo 特定の端末でしかモバイルSuicaと併用できないみたいでがっかりしている。\nアプリ起動した瞬間にエラーが出た。。。\n秘密の質問とかどうでもいいからなんとかしてくれー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U03C71D7H"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6549c810-547c-4bcf-a701-ec55e1153ef1",
+        "type": "message",
+        "text": "これはセキュアエレメントなりなんなりのチップの実装内容量っぽい(カードの切り替えIFが見えた)ので、サービス側ではどうしようもないと思う。\nどうしても使うならSuicaを削除するしかない...",
+        "user": "UAZ33BKV2",
+        "ts": "1584504549.061600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7DUea",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これはセキュアエレメントなりなんなりのチップの実装内容量っぽい(カードの切り替えIFが見えた)ので、サービス側ではどうしようもないと思う。\nどうしても使うならSuicaを削除するしかない..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c120d900-ca1a-4139-a227-fd0faad05f6e",
+        "type": "message",
+        "text": "SuicaやPASMOをオンラインロッカーに仕舞える作りくらいは欲いけど",
+        "user": "UAZ33BKV2",
+        "ts": "1584504597.062100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZX=h",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "SuicaやPASMOをオンラインロッカーに仕舞える作りくらいは欲いけど"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "31ac2bc1-efbe-4e72-83e7-431fbab7ffde",
+        "type": "message",
+        "text": "だた、カードのIDがチップで変わる(える)ことのセキュリティも絡むので、預けられたとしても、チャージ金額とかくらいしか意味がない...定期なり他との登録もやりなおしになるだろうし",
+        "user": "UAZ33BKV2",
+        "ts": "1584504669.063600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ghjoo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "だた、カードのIDがチップで変わる(える)ことのセキュリティも絡むので、預けられたとしても、チャージ金額とかくらいしか意味がない...定期なり他との登録もやりなおしになるだろうし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7ae83541-6445-4419-8be1-68c0f87281ea",
+        "type": "message",
+        "text": "私も今朝乗り換えましたけど、案外モバイルSuica削除するのは簡単でしたよ。",
+        "user": "U7B4ZD49X",
+        "ts": "1584504687.064000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "L9pz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私も今朝乗り換えましたけど、案外モバイルSuica削除するのは簡単でしたよ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c2705ef3-6652-4f39-92e0-6fd4829b5a0d",
+        "type": "message",
+        "text": "定期があるので...定期切り替え時に必要かも含めてどうするか検討しよう",
+        "user": "UAZ33BKV2",
+        "ts": "1584504712.064800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1584504752.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aft",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "定期があるので...定期切り替え時に必要かも含めてどうするか検討しよう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e6f5bd27-2bb8-4488-a1c2-228bdff2efb1",
+        "type": "message",
+        "text": "ですね。私も定期も乗り換えられるかと思ってましたが無理でしたね。",
+        "user": "U7B4ZD49X",
+        "ts": "1584504738.065400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rAi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですね。私も定期も乗り換えられるかと思ってましたが無理でしたね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "824bc98a-9781-4076-835e-865630af781f",
+        "type": "message",
+        "text": "モバイルSuica残高がある場合は、Amazonでギフト（チャージ版）→電子マネーで購入→モバイルSuica支払い\nモバイルSuicaを機種変更設定にしてFelicaから削除\n\nみたいな感じでした",
+        "user": "U7B4ZD49X",
+        "ts": "1584504797.067300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "L3g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "モバイルSuica残高がある場合は、Amazonでギフト（チャージ版）→電子マネーで購入→モバイルSuica支払い\nモバイルSuicaを機種変更設定にしてFelicaから削除\n\nみたいな感じでした"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "68eb8049-8fae-4724-bd22-f7affa9d5ef0",
+        "type": "message",
+        "text": "いま、モバイルSuicaの利用の利点は\n1. オートチャージをスマホで\n2. 定期が一体\n3. JRE Pointからのチャージ\nなので、必要になるとしたら路線的にJRがないときだけかな...",
+        "user": "UAZ33BKV2",
+        "ts": "1584504811.067500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iV54",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いま、モバイルSuicaの利用の利点は\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_list",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "オートチャージをスマホで"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "定期が一体"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "JRE Pointからのチャージ"
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "ordered",
+                        "indent": 0
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なので、必要になるとしたら路線的にJRがないときだけかな..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "eaed261c-374a-40da-bfbd-0355ef79ddd4",
+        "type": "message",
+        "text": "あ、ギフトはいいですね",
+        "user": "UAZ33BKV2",
+        "ts": "1584504818.067800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "csiNu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、ギフトはいいですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1fe94c1f-9b24-43ce-933a-1755c639cb5c",
+        "type": "message",
+        "text": "機種変更か、なるほど",
+        "user": "UAZ33BKV2",
+        "ts": "1584504833.068200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "icMF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "機種変更か、なるほど"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4dcf858f-fdbb-4613-9347-9b8797ed519c",
+        "type": "message",
+        "text": "ですね。私は非JR民なんでほしかった。",
+        "user": "U7B4ZD49X",
+        "ts": "1584504856.068700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "L9a",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですね。私は非JR民なんでほしかった。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "652b737a-e1a5-4bc0-9a4a-e0c4865aa9bc",
+        "type": "message",
+        "text": "最寄りは私鉄なので、覚えておかないとな",
+        "user": "UAZ33BKV2",
+        "ts": "1584504973.069100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tOy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最寄りは私鉄なので、覚えておかないとな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cab08b2b-cd09-4187-92ac-62fd47fbc48f",
+        "type": "message",
+        "text": "なるほど、どちらも使いたいので新しい端末買います。",
+        "user": "UNJ2DANJC",
+        "ts": "1584505077.070400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=oo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど、どちらも使いたいので新しい端末買います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1c32cd68-c2d4-44a6-8eed-ba14683b1436",
+        "type": "message",
+        "text": "こういうイベントは買い替えのいいタイミングだな....",
+        "user": "UNJ2DANJC",
+        "ts": "1584505145.071500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x6m",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こういうイベントは買い替えのいいタイミングだな...."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a5639f6b-42d6-4f74-9e78-0383e92d31c9",
+        "type": "message",
+        "text": "そして今日はdocomoの発表だったという...w",
+        "user": "UAZ33BKV2",
+        "ts": "1584506134.071800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QErb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そして今日はdocomoの発表だったという...w"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c0536b97-43c6-4929-b085-8bef5095f602",
+        "type": "message",
+        "text": "そろそろ買い替え時だから次はPixel4aにしようかな",
+        "user": "U7B4ZD49X",
+        "ts": "1584506178.072300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "39GMv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そろそろ買い替え時だから次はPixel4aにしようかな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9d7e5b1d-396a-4fbf-b065-63baf81c1f57",
+        "type": "message",
+        "text": "Pixel欲しいが優先順位が低い",
+        "user": "U9S4G0LJW",
+        "ts": "1584506236.073400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vnk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Pixel欲しいが優先順位が低い"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e992e904-3884-4391-814f-0ca75a609962",
+        "type": "message",
+        "text": "モバイルSuicaは使ってなかったし残高も0にしてあったので退会した",
+        "user": "U03C71D7H",
+        "ts": "1584506236.073500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tlnj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "モバイルSuicaは使ってなかったし残高も0にしてあったので退会した"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "48b2c742-de35-44ef-9891-298a9d8f3a75",
+        "type": "message",
+        "text": "ちょうど Pixel 4 買えるかと思ったけど今のスマホが生き延びてしまって買えなかった\n廉価版なんてあるんだ &gt;Pixel 4a",
+        "user": "U0M7GCBPD",
+        "ts": "1584514173.074600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "O7s",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちょうど Pixel 4 買えるかと思ったけど今のスマホが生き延びてしまって買えなかった\n廉価版なんてあるんだ >Pixel 4a"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a8b31732-b05f-476a-b990-188e55ce2808",
+        "type": "message",
+        "text": "リーク情報的には５月に出るらしいですよ。",
+        "user": "U7B4ZD49X",
+        "ts": "1584514216.075100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+6Ck",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "リーク情報的には５月に出るらしいですよ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "caa94337-5271-42e8-bad4-e6ade256b394",
+        "type": "message",
+        "text": "コロナあって不透明感はありますが",
+        "user": "U7B4ZD49X",
+        "ts": "1584514230.075400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2g2eq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "コロナあって不透明感はありますが"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9bdc9266-c3d7-49dd-9170-ff99b762cfba",
+        "type": "message",
+        "text": "&gt; 今のスマホが生き延びてしまって買えなかった\n分かり手",
+        "user": "U9S4G0LJW",
+        "ts": "1584514252.075700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "reF",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今のスマホが生き延びてしまって買えなかった"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "分かり手"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

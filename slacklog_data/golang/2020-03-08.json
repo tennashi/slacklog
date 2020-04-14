@@ -1,0 +1,1137 @@
+[
+    {
+        "client_msg_id": "1ea0d6ad-5b47-40e8-a929-4fbc356614c6",
+        "type": "message",
+        "text": "<https:\/\/jovi0608.hatenablog.com\/entry\/2020\/03\/09\/094737>",
+        "user": "U8CC7MDCL",
+        "ts": "1583721167.240900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "ぼちぼち日記",
+                "title": "Let's EncryptがはまったGolangの落とし穴 - ぼちぼち日記",
+                "title_link": "https:\/\/jovi0608.hatenablog.com\/entry\/2020\/03\/09\/094737",
+                "text": "0. 短いまとめ 300万以上の証明書の失効を迫られたLet's Encryptのインシデントは「Golangでよくある間違い」と書かれているようなバグが原因でした。 1. はじめに、 Let's Encryptは、無料でサーバ証明書を自動化して発行するサービスを行う非営利団体として2014年に設立されました。 2015年にサービス開始されると証明書の発行数はぐんぐん伸び、先月末のプレスリリースでは累計10億枚のサーバ証明書を発行したことがアナウンスされました「Let's Encrypt Has Issued a Billion Certificates」。CTLogの調査から、2020年2月…",
+                "fallback": "ぼちぼち日記: Let's EncryptがはまったGolangの落とし穴 - ぼちぼち日記",
+                "image_url": "https:\/\/cdn-ak.f.st-hatena.com\/images\/fotolife\/j\/jovi0608\/20200309\/20200309042603.jpg",
+                "ts": 1583714857,
+                "from_url": "https:\/\/jovi0608.hatenablog.com\/entry\/2020\/03\/09\/094737",
+                "image_width": 405,
+                "image_height": 250,
+                "image_bytes": 111591,
+                "service_icon": "https:\/\/cdn.blog.st-hatena.com\/images\/touch-icon-iphone-retina.png",
+                "id": 1,
+                "original_url": "https:\/\/jovi0608.hatenablog.com\/entry\/2020\/03\/09\/094737"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WCza",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/jovi0608.hatenablog.com\/entry\/2020\/03\/09\/094737"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d69969d4-9f82-4e4a-8d54-8728f0867e67",
+        "type": "message",
+        "text": "let's encryptのアレ",
+        "user": "U8CC7MDCL",
+        "ts": "1583721191.241500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Vit",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "let's encryptのアレ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d3b60bc7-f057-4186-8fcc-bfb0107b17d6",
+        "type": "message",
+        "text": "とっても詳しい…",
+        "user": "U8CC7MDCL",
+        "ts": "1583721214.241900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "caIYj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とっても詳しい…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7715d1fa-e921-497a-8170-0a76dfe822be",
+        "type": "message",
+        "text": "i := i のあれか",
+        "user": "UNJ2DANJC",
+        "ts": "1583722323.242500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bCg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "i := i のあれか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "22c0258c-9654-406f-b745-52054acfb0c1",
+        "type": "message",
+        "text": "<https:\/\/golang.org\/doc\/faq#closures_and_goroutines>\n\n&gt;  This behavior of the language, not defining a new variable for each iteration, may have been a mistake in retrospect. It may be addressed in a later version but, for compatibility, cannot change in Go version 1.\n公式が「ミスってたゴメン」って言ってる挙動ですね。",
+        "user": "U776661HA",
+        "ts": "1583722928.243200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U776661HA",
+            "ts": "1583722986.000000"
+        },
+        "attachments": [
+            {
+                "title": "Frequently Asked Questions (FAQ) - The Go Programming Language",
+                "title_link": "https:\/\/golang.org\/doc\/faq#closures_and_goroutines",
+                "text": "Go is an open source programming language that makes it easy to build simple, reliable, and efficient software.",
+                "fallback": "Frequently Asked Questions (FAQ) - The Go Programming Language",
+                "from_url": "https:\/\/golang.org\/doc\/faq#closures_and_goroutines",
+                "service_icon": "https:\/\/golang.org\/favicon.ico",
+                "service_name": "golang.org",
+                "id": 1,
+                "original_url": "https:\/\/golang.org\/doc\/faq#closures_and_goroutines"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MwqnN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/golang.org\/doc\/faq#closures_and_goroutines"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": " This behavior of the language, not defining a new variable for each iteration, may have been a mistake in retrospect. It may be addressed in a later version but, for compatibility, cannot change in Go version 1."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n公式が「ミスってたゴメン」って言ってる挙動ですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bb076175-bd71-400a-9811-b015a7f4aa2c",
+        "type": "message",
+        "text": "某大手クラウドのフレームワークもそうだけどポインタで速くなる神話みたいなのがある。",
+        "user": "U03C6TEAZ",
+        "ts": "1583723998.243900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vq+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "某大手クラウドのフレームワークもそうだけどポインタで速くなる神話みたいなのがある。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "71ab2f1b-6f21-41b8-b14a-1ccc18111cc7",
+        "type": "message",
+        "text": "ただこれそんなに難しくなく静的解析できそうな気もするしそのうち誰かがツール作りそうな気はする。",
+        "user": "U03C6TEAZ",
+        "ts": "1583724119.245700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "h3Y",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただこれそんなに難しくなく静的解析できそうな気もするしそのうち誰かがツール作りそうな気はする。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "12650a33-bd6f-4c23-b1c1-6f7a367a9c39",
+        "type": "message",
+        "text": "まあ気持ちはなあ...",
+        "user": "UAZ33BKV2",
+        "ts": "1583724146.245900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1AP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まあ気持ちはなあ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1c16c49c-a5f6-4beb-827f-f781283f7b5b",
+        "type": "message",
+        "text": "<https:\/\/github.com\/kyoh86\/scopelint>",
+        "user": "U7H4TJEG0",
+        "ts": "1583724166.246100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "kyoh86\/scopelint",
+                "title_link": "https:\/\/github.com\/kyoh86\/scopelint",
+                "text": "scopelint checks for unpinned variables in go programs - kyoh86\/scopelint",
+                "fallback": "GitHub: kyoh86\/scopelint",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/5582459?s=400&v=4",
+                "from_url": "https:\/\/github.com\/kyoh86\/scopelint",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/kyoh86\/scopelint"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "obG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/kyoh86\/scopelint"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ed23144a-68b7-4ca2-9dbd-0119a2c88030",
+        "type": "message",
+        "text": "はてぶでも↑上げてる人おったな",
+        "user": "U8CC7MDCL",
+        "ts": "1583724192.246700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+eA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はてぶでも↑上げてる人おったな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2b734a74-8f36-47a4-9bb2-8aff5744d287",
+        "type": "message",
+        "text": "scopelint で引っ掛かるんかな。",
+        "user": "U03C6TEAZ",
+        "ts": "1583724617.247000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Yw0p7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "scopelint で引っ掛かるんかな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "48c6c4bf-169f-4c62-a16a-489078332b7f",
+        "type": "message",
+        "text": "<https:\/\/play.golang.org\/p\/PUmje6lSEKU>",
+        "user": "U03C6TEAZ",
+        "ts": "1583724662.248000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Jt51",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/play.golang.org\/p\/PUmje6lSEKU"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4c153494-b202-418a-b063-bfd8b40da56a",
+        "type": "message",
+        "text": "これが引っ掛かるなら ok",
+        "user": "U03C6TEAZ",
+        "ts": "1583724666.248400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hqY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これが引っ掛かるなら ok"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9a3ef7eb-d91f-475d-a147-87dd4e493d21",
+        "type": "message",
+        "text": "golangci-lintにscopelint入ってる。いつの間にか使ってたのか。",
+        "user": "UNJ2DANJC",
+        "ts": "1583724685.249000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wSqKt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "golangci-lintにscopelint入ってる。いつの間にか使ってたのか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "35eaebd6-1d05-4977-aec3-d8fb21e3283e",
+        "type": "message",
+        "text": "ただこれ、こういう意図で書くコードはほぼ無いにしても、逆にこれを期待して書く(キーがポインタとか？)人もいるからなぁ。",
+        "user": "U03C6TEAZ",
+        "ts": "1583724738.250400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+VUJE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただこれ、こういう意図で書くコードはほぼ無いにしても、逆にこれを期待して書く(キーがポインタとか？)人もいるからなぁ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "50f670ca-8ebd-484f-aea2-6ef3a0d07301",
+        "type": "message",
+        "text": "お、<https:\/\/github.com\/kyoh86\/scopelint\/blob\/master\/scopelint\/lint_test.go|https:\/\/github.com\/kyoh86\/scopelint\/blob\/master\/scopelint\/lint_test.go>",
+        "user": "UNJ2DANJC",
+        "ts": "1583724739.250500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "kyoh86\/scopelint",
+                "title_link": "https:\/\/github.com\/kyoh86\/scopelint\/blob\/master\/scopelint\/lint_test.go",
+                "text": "scopelint checks for unpinned variables in go programs - kyoh86\/scopelint",
+                "fallback": "GitHub: kyoh86\/scopelint",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/5582459?s=400&v=4",
+                "from_url": "https:\/\/github.com\/kyoh86\/scopelint\/blob\/master\/scopelint\/lint_test.go",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/kyoh86\/scopelint\/blob\/master\/scopelint\/lint_test.go"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mgC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "お、"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/kyoh86\/scopelint\/blob\/master\/scopelint\/lint_test.go",
+                                "text": "https:\/\/github.com\/kyoh86\/scopelint\/blob\/master\/scopelint\/lint_test.go"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a580daf-c082-460d-83d1-13b3125fc523",
+        "type": "message",
+        "text": "<https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1583724662248000>\n`main.go:13:8: Using a reference for the variable on range scope \"v\"`",
+        "user": "U7H4TJEG0",
+        "ts": "1583724778.250900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "from_url": "https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1583724662248000",
+                "fallback": "[March 8th, 2020 8:31 PM] mattn: <https:\/\/play.golang.org\/p\/PUmje6lSEKU>",
+                "ts": "1583724662.248000",
+                "author_id": "U03C6TEAZ",
+                "author_subname": "mattn",
+                "channel_id": "CGABGC8LA",
+                "channel_name": "golang",
+                "is_msg_unfurl": true,
+                "text": "<https:\/\/play.golang.org\/p\/PUmje6lSEKU>",
+                "author_name": "mattn",
+                "author_link": "https:\/\/vim-jp.slack.com\/team\/U03C6TEAZ",
+                "author_icon": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_48.png",
+                "mrkdwn_in": [
+                    "text"
+                ],
+                "id": 1,
+                "original_url": "https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1583724662248000",
+                "footer": "Posted in #golang"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "m\/e",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1583724662248000"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "main.go:13:8: Using a reference for the variable on range scope \"v\"",
+                                "style": {
+                                    "code": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8b3506ea-67aa-400d-a4ed-e24fe937481b",
+        "type": "message",
+        "text": "お、いいすね。",
+        "user": "U03C6TEAZ",
+        "ts": "1583724793.251300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mzPp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "お、いいすね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "975c7244-332e-44f8-a610-daa8a3828b2b",
+        "type": "message",
+        "text": "Go はこういうツールで回避できるだけ(まだ)マシというのもあるなぁ。",
+        "user": "U03C6TEAZ",
+        "ts": "1583724887.251700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U03C6TEAZ",
+            "ts": "1583724901.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/JY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Go はこういうツールで回避できるだけ(まだ)マシというのもあるなぁ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4bf93d99-57a0-47db-8257-02b1c1281286",
+        "type": "message",
+        "text": "これ go vet or golint がやるべきすな。",
+        "user": "U03C6TEAZ",
+        "ts": "1583724949.252700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ChZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ go vet or golint がやるべきすな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "175ec153-ea81-4715-91a0-cb4f8f52d592",
+        "type": "message",
+        "text": "golangci-lintだとデフォルトではオフか\nfalse positiveの関係上しかたないか",
+        "user": "UNJ2DANJC",
+        "ts": "1583725002.253500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LZo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "golangci-lintだとデフォルトではオフか\nfalse positiveの関係上しかたないか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fed77b0c-8d97-4f99-8005-a4e31c5c9fd3",
+        "type": "message",
+        "text": "てかこの boulder、for の値をポインタで渡す文化なの？",
+        "user": "U03C6TEAZ",
+        "ts": "1583725965.254100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MfBYh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "てかこの boulder、for の値をポインタで渡す文化なの？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6969752d-bd8d-4b3a-8f7f-0f0bec57535a",
+        "type": "message",
+        "text": "まだ結構あるみたいだけど。",
+        "user": "U03C6TEAZ",
+        "ts": "1583725969.254300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JivDf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まだ結構あるみたいだけど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8577f1e8-bde9-4257-bf4d-daaeb530bbc3",
+        "type": "message",
+        "text": "<https:\/\/github.com\/letsencrypt\/boulder\/blob\/9232f0e9a46f21a94c4a176125d7b8336d138308\/cmd\/boulder-va\/main.go#L145>",
+        "user": "U03C6TEAZ",
+        "ts": "1583726001.254500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "letsencrypt\/boulder",
+                "title_link": "https:\/\/github.com\/letsencrypt\/boulder\/blob\/9232f0e9a46f21a94c4a176125d7b8336d138308\/cmd\/boulder-va\/main.go#L145",
+                "text": "An ACME-based certificate authority, written in Go. - letsencrypt\/boulder",
+                "fallback": "GitHub: letsencrypt\/boulder",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/9289019?s=400&v=4",
+                "from_url": "https:\/\/github.com\/letsencrypt\/boulder\/blob\/9232f0e9a46f21a94c4a176125d7b8336d138308\/cmd\/boulder-va\/main.go#L145",
+                "thumb_width": 256,
+                "thumb_height": 256,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/letsencrypt\/boulder\/blob\/9232f0e9a46f21a94c4a176125d7b8336d138308\/cmd\/boulder-va\/main.go#L145"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "s+A",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/letsencrypt\/boulder\/blob\/9232f0e9a46f21a94c4a176125d7b8336d138308\/cmd\/boulder-va\/main.go#L145"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "780ef0f0-eed3-47aa-b69c-fdf8edc36fed",
+        "type": "message",
+        "text": "ケースによるから分からないな。",
+        "user": "U03C6TEAZ",
+        "ts": "1583726043.255000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2ib",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ケースによるから分からないな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e793b79b-c8bc-481a-bc31-2444412b2694",
+        "type": "message",
+        "text": "このコード、何度か見返すたびにだんだん「テスト不足なんじゃないの」という気になってくる。",
+        "user": "U03C6TEAZ",
+        "ts": "1583731219.256000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VJEu7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "このコード、何度か見返すたびにだんだん「テスト不足なんじゃないの」という気になってくる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

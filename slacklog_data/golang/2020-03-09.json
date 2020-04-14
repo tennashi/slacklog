@@ -1,0 +1,1308 @@
+[
+    {
+        "client_msg_id": "dfbac875-85df-467c-906d-795d84d8823c",
+        "type": "message",
+        "text": "うなっ",
+        "user": "UGXMRNBUM",
+        "ts": "1583746040.256300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vZZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "うなっ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583746040.256300",
+        "reply_count": 6,
+        "reply_users_count": 2,
+        "latest_reply": "1583746795.258400",
+        "reply_users": [
+            "U06ECBRTJ",
+            "UGXMRNBUM"
+        ],
+        "replies": [
+            {
+                "user": "U06ECBRTJ",
+                "ts": "1583746614.257300"
+            },
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1583746698.257600"
+            },
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1583746731.257800"
+            },
+            {
+                "user": "U06ECBRTJ",
+                "ts": "1583746752.258000"
+            },
+            {
+                "user": "U06ECBRTJ",
+                "ts": "1583746763.258200"
+            },
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1583746795.258400"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "47832605-b4c4-4c73-b951-33bd03f472d7",
+        "type": "message",
+        "text": "scopelint、徐々に古くなってるのでメンテせねば…",
+        "user": "UGXMRNBUM",
+        "ts": "1583746051.256600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ahuS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "scopelint、徐々に古くなってるのでメンテせねば…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0ca68e37-f07a-49ec-9da6-6137d617501a",
+        "type": "message",
+        "text": "あと、False positiveをゼロにできる案が無いので、\n\n&gt; go vet or golint\nに仕込むには、頭脳が要る…",
+        "user": "UGXMRNBUM",
+        "ts": "1583746269.257200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wTCs",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あと、False positiveをゼロにできる案が無いので、\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "go vet or golint"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nに仕込むには、頭脳が要る…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d472deef-24fb-4968-998f-62cce4982ce3",
+        "type": "message",
+        "text": "<https:\/\/otomachiuna.jp\/>\nウナと聞いて(ぇ",
+        "user": "U06ECBRTJ",
+        "ts": "1583746614.257300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "音街ウナ公式サイト | バーチャルボーカリスト「音街ウナ」公式サイトです。",
+                "title_link": "https:\/\/otomachiuna.jp\/",
+                "text": "バーチャルボーカリスト「音街ウナ」の公式サイトです♪VOCALOID音街ウナ、音街ウナTalkEx、キュートブースターの製品紹介。無料素材の配布。最新情報などをおしらせしています♪",
+                "fallback": "音街ウナ公式サイト | バーチャルボーカリスト「音街ウナ」公式サイトです。",
+                "from_url": "https:\/\/otomachiuna.jp\/",
+                "service_name": "otomachiuna.jp",
+                "id": 1,
+                "original_url": "https:\/\/otomachiuna.jp\/"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KpE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/otomachiuna.jp\/"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nウナと聞いて(ぇ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583746040.256300",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "ed3f55d1-10a9-49bd-a39c-fc88da2a31dc",
+        "type": "message",
+        "text": "残念、深淵の慣れ果て派なのです",
+        "user": "UGXMRNBUM",
+        "ts": "1583746698.257600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8M3K",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "残念、深淵の慣れ果て派なのです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583746040.256300",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "c3c74adf-4f0b-4b34-abc0-8e4680919009",
+        "type": "message",
+        "text": "（アレはんなぁですが）",
+        "user": "UGXMRNBUM",
+        "ts": "1583746731.257800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AIu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "（アレはんなぁですが）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583746040.256300",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "076c400c-782a-4a11-b2ce-9fbd296fe94e",
+        "type": "message",
+        "text": "ナナチ！ ナナチじゃないか！",
+        "user": "U06ECBRTJ",
+        "ts": "1583746752.258000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "A2s",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ナナチ！ ナナチじゃないか！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583746040.256300",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "2ac7547e-b113-4cc2-9225-c1db30405123",
+        "type": "message",
+        "text": "(映画は未視聴",
+        "user": "U06ECBRTJ",
+        "ts": "1583746763.258200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zwq+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(映画は未視聴"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583746040.256300",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "0e1d6ad1-7b75-4f69-89ef-31ebee34e011",
+        "type": "message",
+        "text": "（映画もとても良いですよ。愛ですよ）",
+        "user": "UGXMRNBUM",
+        "ts": "1583746795.258400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nMXJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "（映画もとても良いですよ。愛ですよ）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583746040.256300",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "c69c1852-6260-456d-9953-8e21c173a7d4",
+        "type": "message",
+        "text": "cli の cobra、ドキュメント生成機能あったのね。",
+        "user": "U03C6TEAZ",
+        "ts": "1583806077.258900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ST+aQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cli の cobra、ドキュメント生成機能あったのね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FUSUXGGM9",
+                "created": 1583806131,
+                "timestamp": 1583806131,
+                "name": "image.png",
+                "title": "image.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U03C6TEAZ",
+                "editable": false,
+                "size": 30009,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FUSUXGGM9\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FUSUXGGM9\/download\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUSUXGGM9-d064a2bcf1\/image_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUSUXGGM9-d064a2bcf1\/image_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUSUXGGM9-d064a2bcf1\/image_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 289,
+                "thumb_360_h": 360,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUSUXGGM9-d064a2bcf1\/image_480.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_w": 385,
+                "thumb_480_h": 480,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUSUXGGM9-d064a2bcf1\/image_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "image_exif_rotation": 1,
+                "original_w": 463,
+                "original_h": 577,
+                "thumb_tiny": "AwAwACbSPUc8emKWkbPYkfhQDxzk\/hQAtFJn2NGfY\/lQAtFA5ooAa2M8kCjGe9KaTdg4oANp9aUD3NIW4o3UALj6\/nRj6\/nQD7GjP1oACcdiaBz2xQaTHtQA7FGBTce1HP8AkUAOxRigdOaKAP\/Z",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U03C6TEAZ\/FUSUXGGM9\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-FUSUXGGM9-a717e73f3f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U03C6TEAZ",
+        "display_as_bot": false,
+        "ts": "1583806134.259000",
+        "client_msg_id": "5ee6c05a-83e8-469e-93fa-e1a828ff3556"
+    },
+    {
+        "client_msg_id": "762b4628-bcd7-4457-9a8c-2411ff26ed10",
+        "type": "message",
+        "text": "コマンド分、markdown 吐いてくれる。",
+        "user": "U03C6TEAZ",
+        "ts": "1583806145.259500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "D\/9v",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "コマンド分、markdown 吐いてくれる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8786c88f-c6e2-48af-ad80-b0864bf95164",
+        "type": "message",
+        "text": "ヒューッ!",
+        "user": "U06ECBRTJ",
+        "ts": "1583806193.259700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4Eqj2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ヒューッ!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "999348cc-82bc-4a34-a01f-57ddda3f2050",
+        "type": "message",
+        "text": "めっちゃ便利そう",
+        "user": "UDDCM376D",
+        "ts": "1583816012.259900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "paM1x",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "めっちゃ便利そう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "60511b02-9cfb-453e-a362-54e4291b367e",
+        "type": "message",
+        "text": "おっ <https:\/\/github.com\/nametake\/golangci-lint-langserver|https:\/\/github.com\/nametake\/golangci-lint-langserver>",
+        "user": "UNJ2DANJC",
+        "ts": "1583818253.260200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "nametake\/golangci-lint-langserver",
+                "title_link": "https:\/\/github.com\/nametake\/golangci-lint-langserver",
+                "text": "golangci-lint language server. Contribute to nametake\/golangci-lint-langserver development by creating an account on GitHub.",
+                "fallback": "GitHub: nametake\/golangci-lint-langserver",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/4082108?s=400&v=4",
+                "from_url": "https:\/\/github.com\/nametake\/golangci-lint-langserver",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/nametake\/golangci-lint-langserver"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aZcL6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おっ "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/nametake\/golangci-lint-langserver",
+                                "text": "https:\/\/github.com\/nametake\/golangci-lint-langserver"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8ac44757-92c8-47ff-9358-81c7a2a640e0",
+        "type": "message",
+        "text": "お",
+        "user": "UDDCM376D",
+        "ts": "1583818352.260500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "008JT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "お"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a1ed25ba-33fc-4e3f-a8be-b816572311b1",
+        "type": "message",
+        "text": "これは",
+        "user": "UDDCM376D",
+        "ts": "1583818353.260700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gE4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これは"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ee6af232-acfd-43bf-9842-216e6a37b225",
+        "type": "message",
+        "text": "生まれたて",
+        "user": "UDDCM376D",
+        "ts": "1583818359.260900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HDq4j",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "生まれたて"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7d7db443-0c8d-47a7-8c00-88d9904a6f48",
+        "type": "message",
+        "text": "<https:\/\/github.com\/mattn\/vim-lsp-settings\/pull\/194>",
+        "user": "U03C6TEAZ",
+        "ts": "1583818830.262300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fQw9A",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/mattn\/vim-lsp-settings\/pull\/194"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sokudo",
+                "users": [
+                    "U9S4G0LJW",
+                    "U06ECBRTJ",
+                    "UNJ2DANJC"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1d59235c-b1e5-4e73-aa2f-e2922c7c5b50",
+        "type": "message",
+        "text": "早すぎｗ",
+        "user": "UDDCM376D",
+        "ts": "1583818894.262600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aHnl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "早すぎｗ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ecf1680b-4f00-49b1-996f-f8be6f68ea0d",
+        "type": "message",
+        "text": "ほしいとは思ったけどｗ",
+        "user": "UDDCM376D",
+        "ts": "1583818897.262800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hk2Y",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ほしいとは思ったけどｗ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "147cd173-0ce1-4db0-be22-fd5195336c08",
+        "type": "message",
+        "text": "golangci-lint-langserver、ちらっとソース見たけど、まだ実装途中っぽい？",
+        "user": "UDDCM376D",
+        "ts": "1583818917.263200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=U\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "golangci-lint-langserver、ちらっとソース見たけど、まだ実装途中っぽい？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6237f88f-bbd9-437d-bfd3-42f9a9113b47",
+        "type": "message",
+        "text": "そんなことなかったっぽい",
+        "user": "UDDCM376D",
+        "ts": "1583818962.263400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tsBa8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そんなことなかったっぽい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "db1601ce-ce3f-4d2e-9fd7-64d7a2bea9c8",
+        "type": "message",
+        "text": "LSP何もわからない",
+        "user": "UDDCM376D",
+        "ts": "1583818965.263600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BzH0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "LSP何もわからない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "73a1b21a-7218-48ba-a07c-b0035a0c6023",
+        "type": "message",
+        "text": "<https:\/\/github.com\/nametake\/golangci-lint-langserver\/blob\/e5457fa925444ec35f388a90145656de50258f31\/handler.go#L98>",
+        "user": "UDDCM376D",
+        "ts": "1583818971.263800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "nametake\/golangci-lint-langserver",
+                "title_link": "https:\/\/github.com\/nametake\/golangci-lint-langserver\/blob\/e5457fa925444ec35f388a90145656de50258f31\/handler.go#L98",
+                "text": "golangci-lint language server. Contribute to nametake\/golangci-lint-langserver development by creating an account on GitHub.",
+                "fallback": "GitHub: nametake\/golangci-lint-langserver",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/4082108?s=400&v=4",
+                "from_url": "https:\/\/github.com\/nametake\/golangci-lint-langserver\/blob\/e5457fa925444ec35f388a90145656de50258f31\/handler.go#L98",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/nametake\/golangci-lint-langserver\/blob\/e5457fa925444ec35f388a90145656de50258f31\/handler.go#L98"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2715",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/nametake\/golangci-lint-langserver\/blob\/e5457fa925444ec35f388a90145656de50258f31\/handler.go#L98"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FV6QWUE4E",
+                "created": 1583819568,
+                "timestamp": 1583819568,
+                "name": "image.png",
+                "title": "image.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U03C6TEAZ",
+                "editable": false,
+                "size": 8875,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FV6QWUE4E\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FV6QWUE4E\/download\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV6QWUE4E-784b4cc413\/image_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV6QWUE4E-784b4cc413\/image_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV6QWUE4E-784b4cc413\/image_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 360,
+                "thumb_360_h": 192,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV6QWUE4E-784b4cc413\/image_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "image_exif_rotation": 1,
+                "original_w": 419,
+                "original_h": 223,
+                "thumb_tiny": "AwAZADCqYvOuWXfjv0qT7B\/01\/8AHaidmSdihwfWmmef\/no1AE\/2Af8APX\/x2j+z\/wDpr\/47Vf7TP\/z0b86PtM3\/AD0b86ALH2Af89f\/AB2q1xF5Mm3du4znGKX7TN\/z0b86Y7tI2XYk+poARmLMWPU0maKKACiiigAooooA\/9k=",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U03C6TEAZ\/FV6QWUE4E\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-FV6QWUE4E-5092b47794",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U03C6TEAZ",
+        "display_as_bot": false,
+        "ts": "1583819571.264200",
+        "client_msg_id": "ce5fdd2d-2882-419c-8398-9d5526436d41"
+    },
+    {
+        "client_msg_id": "142b8dfa-dc0b-431d-ad4a-59b376a687d5",
+        "type": "message",
+        "text": "動いた。",
+        "user": "U03C6TEAZ",
+        "ts": "1583819572.264700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Vv=4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "動いた。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cffa3e3c-ef83-4786-a08e-d6a22efa0c13",
+        "type": "message",
+        "text": "音速でmergeされたw 自分の環境にも入れよう。ちょっと手直ししてPRもあとで出します。",
+        "user": "UNJ2DANJC",
+        "ts": "1583819903.265900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lJH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "音速でmergeされたw 自分の環境にも入れよう。ちょっと手直ししてPRもあとで出します。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b82eacd8-a55a-42dd-bb5b-8b1160ed5b92",
+        "type": "message",
+        "text": "<https:\/\/github.com\/nametake\/golangci-lint-langserver\/pull\/1>",
+        "user": "U03C6TEAZ",
+        "ts": "1583820149.266300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Update README.md by mattn · Pull Request #1 · nametake\/golangci-lint-langserver",
+                "title_link": "https:\/\/github.com\/nametake\/golangci-lint-langserver\/pull\/1",
+                "text": "Add vim-lsp",
+                "fallback": "GitHub: Update README.md by mattn · Pull Request #1 · nametake\/golangci-lint-langserver",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/4082108?s=400&v=4",
+                "from_url": "https:\/\/github.com\/nametake\/golangci-lint-langserver\/pull\/1",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/nametake\/golangci-lint-langserver\/pull\/1"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x\/j9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/nametake\/golangci-lint-langserver\/pull\/1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "07fba09a-134d-43fe-8381-0400181a31d8",
+        "type": "message",
+        "text": "コードがすごい efm 色あるw",
+        "user": "U03C6TEAZ",
+        "ts": "1583820323.266700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e2t3s",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "コードがすごい efm 色あるw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

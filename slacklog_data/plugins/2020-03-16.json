@@ -1,0 +1,3660 @@
+[
+    {
+        "client_msg_id": "e0d7248a-900f-42e3-819d-3d956a5df4a3",
+        "type": "message",
+        "text": "妙な振る舞いをする箇所は特定できたので、issue登録。",
+        "user": "U72TB62UF",
+        "ts": "1584343055.382700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "c9Kp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "妙な振る舞いをする箇所は特定できたので、issue登録。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2e063006-ca35-4c75-92c2-6578581755ad",
+        "type": "message",
+        "text": "不思議なタイミングでペーストモードになるようになってしまって、ちゃんと設定する気力体力がなかったので一旦外しちゃってます… &lt; coc",
+        "user": "UQL86S77Y",
+        "ts": "1584343202.384200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "4af6aa0473fb",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-15\/835276797284_4af6aa0473fb54c5b45c_72.png",
+            "first_name": "",
+            "real_name": "phyllite",
+            "display_name": "phyllite",
+            "team": "T03C4RC8V",
+            "name": "me1790",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HXQ7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "不思議なタイミングでペーストモードになるようになってしまって、ちゃんと設定する気力体力がなかったので一旦外しちゃってます… < coc"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "38e2109a-d7f3-4617-a114-dab31163cb21",
+        "type": "message",
+        "text": "このところ cocというかintelephense（LSP）さんが黙って死んでしまう現象が多発しているので困る……",
+        "user": "U72TB62UF",
+        "ts": "1584343347.385200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3cB7s",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "このところ cocというかintelephense（LSP）さんが黙って死んでしまう現象が多発しているので困る……"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "69598768-747f-41db-84e8-f311429962c6",
+        "type": "message",
+        "text": "<@U03C71D7H> さん、お暇なときにお答えいただけると幸いなのですが。\n<https:\/\/github.com\/thinca\/action-setup-vim>\nでの Lua有効 Vimについてです。\nLinuxのAppImageは有効っぽいですが、Windowsではどのように有効にするのがお勧め(orできそうにない)ですか?\n(以前そのあたりで苦しんでいたように見受けました...)\nアクションでLuaJITやLuarocksを入れてもまあ、有効とはいかなかったので...でもWindowsはビルドサポートしてないしどうしたものかな...と",
+        "user": "UAZ33BKV2",
+        "ts": "1584347937.388000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "thinca\/action-setup-vim",
+                "title_link": "https:\/\/github.com\/thinca\/action-setup-vim",
+                "text": "GitHub Action to setup Vim, Neovim, or MacVim. Contribute to thinca\/action-setup-vim development by creating an account on GitHub.",
+                "fallback": "GitHub: thinca\/action-setup-vim",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/20474?s=400&v=4",
+                "from_url": "https:\/\/github.com\/thinca\/action-setup-vim",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/thinca\/action-setup-vim"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tWgFO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U03C71D7H"
+                            },
+                            {
+                                "type": "text",
+                                "text": " さん、お暇なときにお答えいただけると幸いなのですが。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/thinca\/action-setup-vim"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nでの Lua有効 Vimについてです。\nLinuxのAppImageは有効っぽいですが、Windowsではどのように有効にするのがお勧め(orできそうにない)ですか?\n(以前そのあたりで苦しんでいたように見受けました...)\nアクションでLuaJITやLuarocksを入れてもまあ、有効とはいかなかったので...でもWindowsはビルドサポートしてないしどうしたものかな...と"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7f71950e-b420-4ef3-ba1a-04d65c596a8f",
+        "type": "message",
+        "text": "今のところはできない、のかな? ダウンロード版を使って別途 Lua を入れたりすると行けたりするんだろうか?",
+        "user": "U03C71D7H",
+        "ts": "1584348072.389200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LVPVZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今のところはできない、のかな? ダウンロード版を使って別途 Lua を入れたりすると行けたりするんだろうか?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "84de60ef-350c-473d-aa15-5120f6abf9ab",
+        "type": "message",
+        "text": "(vital.vimの置き換え例でluaでコケてると指摘ありまして)",
+        "user": "UAZ33BKV2",
+        "ts": "1584348072.389300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PNLRq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(vital.vimの置き換え例でluaでコケてると指摘ありまして)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d41f4701-fca0-4af3-9c9a-2f5e0d4a8727",
+        "type": "message",
+        "text": "Lua サポート入れた方が良いですかねぇ (組合せ爆発)",
+        "user": "U03C71D7H",
+        "ts": "1584348108.390300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0i4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Lua サポート入れた方が良いですかねぇ (組合せ爆発)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "05f09fa7-97a6-4ce9-a90b-99cd00760e10",
+        "type": "message",
+        "text": "なるほど...、Windowsのインストーラ使ってる人の :tiken:  がほしいですね...",
+        "user": "UAZ33BKV2",
+        "ts": "1584348115.390500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CefqS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど...、Windowsのインストーラ使ってる人の "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "tiken"
+                            },
+                            {
+                                "type": "text",
+                                "text": "  がほしいですね..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "81c26155-6b5b-4a1b-9d70-2f1e737261f6",
+        "type": "message",
+        "text": "Lua サポート入れたら Python 辺りはほしいと言われるんだろうな",
+        "user": "U03C71D7H",
+        "ts": "1584348133.391100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vKS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Lua サポート入れたら Python 辺りはほしいと言われるんだろうな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7958220e-f05a-48fc-8570-5ef3fceadb8f",
+        "type": "message",
+        "text": "いやー、無理はしなくていいかなと思いますが、ただAppImageと条件が揃うと、テストしやすいのはあります",
+        "user": "UAZ33BKV2",
+        "ts": "1584348137.391300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9G1xC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いやー、無理はしなくていいかなと思いますが、ただAppImageと条件が揃うと、テストしやすいのはあります"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cc644169-e217-4c3f-8e86-c5d65d621a05",
+        "type": "message",
+        "text": "Windowsだけ「事前にこれやれ」、で揃えられればいいのですが",
+        "user": "UAZ33BKV2",
+        "ts": "1584348160.391700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1584348249.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+azBu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Windowsだけ「事前にこれやれ」、で揃えられればいいのですが"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0e155596-d780-4737-b71c-12b73fd9d0fd",
+        "type": "message",
+        "text": "ちなみに当方はTux版を使っており、当方はあのインストーラナニモワカラナイ状態...",
+        "user": "UAZ33BKV2",
+        "ts": "1584348227.392300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1584348262.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "21bQq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに当方はTux版を使っており、当方はあのインストーラナニモワカラナイ状態..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "feee0b62-5b0e-42b4-a94e-5f34bd45e381",
+        "type": "message",
+        "text": "ありがとうございました。",
+        "user": "UAZ33BKV2",
+        "ts": "1584348268.392800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fh8wc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございました。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3c9be1be-8a2d-45ff-9f2c-4683b9914b6f",
+        "type": "message",
+        "text": "vim-win32-installer は、リリースのページの Interface Informations のところに、どのバイナリを使ってビルドしてあるかが書かれているので、そのバージョンをDLしてきてください。Luaは <http:\/\/luabinaries.sourceforge.net\/download.html> のバイナリを使っています。",
+        "user": "U6XP9LZ6V",
+        "ts": "1584351319.394900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hah4F",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim-win32-installer は、リリースのページの Interface Informations のところに、どのバイナリを使ってビルドしてあるかが書かれているので、そのバージョンをDLしてきてください。Luaは "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/luabinaries.sourceforge.net\/download.html"
+                            },
+                            {
+                                "type": "text",
+                                "text": " のバイナリを使っています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584351319.394900",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584360713.434700",
+        "reply_users": [
+            "UAZ33BKV2"
+        ],
+        "replies": [
+            {
+                "user": "UAZ33BKV2",
+                "ts": "1584360713.434700"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "aabd53b9-2d0f-400a-9320-50db909ae5cd",
+        "type": "message",
+        "text": "自前ビルドは Lua, Perl, Python3, Ruby を有効にしてるけど、実際のところどれもほとんど使ってない…",
+        "user": "U6XP9LZ6V",
+        "ts": "1584351754.396100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AYoM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自前ビルドは Lua, Perl, Python3, Ruby を有効にしてるけど、実際のところどれもほとんど使ってない…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U9S4G0LJW",
+                    "U03C71D7H"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "95eeed6d-1b28-4b96-8ffd-0bf738d7ef3b",
+        "type": "message",
+        "text": "私は (Windows じゃなくて Linux だけど) 無駄に +tcl まで入ってる",
+        "user": "U03C71D7H",
+        "ts": "1584351943.396900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lvmfv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私は (Windows じゃなくて Linux だけど) 無駄に +tcl まで入ってる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "me-too",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "962bf7ad-0711-4dbe-be65-e3ff8278cd0e",
+        "type": "message",
+        "text": "tclのAPI一度も叩いたことない",
+        "user": "U9S4G0LJW",
+        "ts": "1584351995.397500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "X17",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "tclのAPI一度も叩いたことない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "84586da8-951b-4800-9a3d-5f24131c9d05",
+        "type": "message",
+        "text": "Tcl (と言うか各種 +if)のバージョンを確認するコマンドだけは用意してある",
+        "user": "U03C71D7H",
+        "ts": "1584352045.398200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lVVW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Tcl (と言うか各種 +if)のバージョンを確認するコマンドだけは用意してある"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d3cfdc0f-728f-44b9-bfb9-943fa3f1234a",
+        "type": "message",
+        "text": "`:tcl puts [info patchlevel]` ぐらいしかない",
+        "user": "U6XP9LZ6V",
+        "ts": "1584352050.398300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5z7oq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":tcl puts [info patchlevel]",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " ぐらいしかない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "75ee2654-e9e8-4af7-bf6e-3dc6ac47ef81",
+        "type": "message",
+        "text": "バージョンが表示されれば満足",
+        "user": "U03C71D7H",
+        "ts": "1584352067.398900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xrfiQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "バージョンが表示されれば満足"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "515d9d6e-594f-402e-9a60-928d1e3bbb66",
+        "type": "message",
+        "text": "一時期は全部入ってたけどmzschemeとrubyは切った",
+        "user": "U9S4G0LJW",
+        "ts": "1584352096.399500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "loDOJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "一時期は全部入ってたけどmzschemeとrubyは切った"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "22e6adc5-c690-499d-bb33-f8279de18608",
+        "type": "message",
+        "text": ":perl5: &lt; せ、セーフ",
+        "user": "U78A6ESHM",
+        "ts": "1584352173.400000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bnGqP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":perl5: < せ、セーフ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "84973e66-e8c2-41e2-a71a-2039ee74133b",
+        "type": "message",
+        "text": "perl枯れてるから何の問題も起きないので(ちなみに使ってない)",
+        "user": "U9S4G0LJW",
+        "ts": "1584352217.401200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pXCXk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "perl枯れてるから何の問題も起きないので(ちなみに使ってない)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "banjaku",
+                "users": [
+                    "U78A6ESHM"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0920a668-ef96-43c3-9cfd-bd4eee114496",
+        "type": "message",
+        "text": "昔こんな記事書いたけど、毎回この記事を探し出すのが面倒になって、結局本家のヘルプにねじ込んだ。\n<https:\/\/qiita.com\/k-takata\/items\/3e0e67cc2e2b8b3fd633>",
+        "user": "U6XP9LZ6V",
+        "ts": "1584352232.401600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Qiita",
+                "title": "Vimの言語インターフェースのバージョン確認 - Qiita",
+                "title_link": "https:\/\/qiita.com\/k-takata\/items\/3e0e67cc2e2b8b3fd633",
+                "text": "Vimの各スクリプト言語インターフェースのバージョンを確認する方法。 入力とそれぞれの出力例を示す。 # Lua ``` :lua print(_VERSION) Lua 5.1 ``` ## LuaJIT ``` :lua ...",
+                "fallback": "Qiita: Vimの言語インターフェースのバージョン確認 - Qiita",
+                "image_url": "https:\/\/qiita-user-contents.imgix.net\/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Fogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&w=1200&mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3DVim%25E3%2581%25AE%25E8%25A8%2580%25E8%25AA%259E%25E3%2582%25A4%25E3%2583%25B3%25E3%2582%25BF%25E3%2583%25BC%25E3%2583%2595%25E3%2582%25A7%25E3%2583%25BC%25E3%2582%25B9%25E3%2581%25AE%25E3%2583%2590%25E3%2583%25BC%25E3%2582%25B8%25E3%2583%25A7%25E3%2583%25B3%25E7%25A2%25BA%25E8%25AA%258D%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D66fa500ecc9841ec7bbbe3ec378e9772&mark-align=center%2Cmiddle&blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540k-takata%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D80587ba4aa81bca81027723cd3994c5e&blend-align=center%2Cmiddle&blend-mode=normal&s=c4b2df0e1ac52018d5f9dc8eda517e82",
+                "from_url": "https:\/\/qiita.com\/k-takata\/items\/3e0e67cc2e2b8b3fd633",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 38676,
+                "service_icon": "https:\/\/cdn.qiita.com\/assets\/favicons\/public\/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+                "id": 1,
+                "original_url": "https:\/\/qiita.com\/k-takata\/items\/3e0e67cc2e2b8b3fd633"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wGxan",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "昔こんな記事書いたけど、毎回この記事を探し出すのが面倒になって、結局本家のヘルプにねじ込んだ。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/qiita.com\/k-takata\/items\/3e0e67cc2e2b8b3fd633"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "afdf71b0-9f69-48f2-a85d-3d2efc9b063f",
+        "type": "message",
+        "text": "<https:\/\/github.com\/neoclide\/coc-smartf>\ncoc シリーズが増えていますね。",
+        "user": "U8R597E9H",
+        "ts": "1584355588.402100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "neoclide\/coc-smartf",
+                "title_link": "https:\/\/github.com\/neoclide\/coc-smartf",
+                "text": "Make jump to character easier. Contribute to neoclide\/coc-smartf development by creating an account on GitHub.",
+                "fallback": "GitHub: neoclide\/coc-smartf",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/23586922?s=400&v=4",
+                "from_url": "https:\/\/github.com\/neoclide\/coc-smartf",
+                "thumb_width": 80,
+                "thumb_height": 80,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/neoclide\/coc-smartf"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VJ7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/neoclide\/coc-smartf"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\ncoc シリーズが増えていますね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "63a8377b-d511-4ca1-9867-5d8a7c21f122",
+        "type": "message",
+        "text": "_8 ヶ月前だった。。。_",
+        "user": "U8R597E9H",
+        "ts": "1584355597.402400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OFH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "8 ヶ月前だった。。。",
+                                "style": {
+                                    "italic": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c54418b8-6061-4b1d-ae42-c46a2e6b3c52",
+        "type": "message",
+        "text": "coc と連動させてなんかうまみあるのかな…。",
+        "user": "U78A6ESHM",
+        "ts": "1584355731.402800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FboLy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "coc と連動させてなんかうまみあるのかな…。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1abd620a-75ed-4fcc-af13-e298607d6657",
+        "type": "message",
+        "text": "プラグインマネージャ入れなくても入るからなんですかねぇ",
+        "user": "U8996GYBF",
+        "ts": "1584356129.403200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SUM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "プラグインマネージャ入れなくても入るからなんですかねぇ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6435b1f9-f453-47fd-a53d-f8153042a5f5",
+        "type": "message",
+        "text": "なるほど。確かに。",
+        "user": "U78A6ESHM",
+        "ts": "1584356188.403400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "B0F7S",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど。確かに。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6c1d936e-972c-4ac5-9efb-015ee15242f3",
+        "type": "message",
+        "text": "開いた瞬間EasyMotionでよくない？ってなったけどソース見て納得した",
+        "user": "U9S4G0LJW",
+        "ts": "1584356708.404400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MCx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "開いた瞬間EasyMotionでよくない？ってなったけどソース見て納得した"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "58b15ee4-6f0e-4065-9b28-dde65a62f0d2",
+        "type": "message",
+        "text": "cocと連動しているというよりcocに依存している",
+        "user": "U9S4G0LJW",
+        "ts": "1584356723.404700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=owgV",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cocと連動しているというよりcocに依存している"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5a14cc5b-e751-4e5c-b0b0-e7d6d0825f64",
+        "type": "message",
+        "text": "Vim scriptが一行もないのはすごい",
+        "user": "U9S4G0LJW",
+        "ts": "1584356874.405000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gtS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vim scriptが一行もないのはすごい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "31ba1288-47ac-4a7e-915b-c04ea55bd5b9",
+        "type": "message",
+        "text": "全部 Vim script でなんとかしようぜみたいな vim-lsp と coc は対極的ですねぇ。",
+        "user": "U03C6TEAZ",
+        "ts": "1584357241.406700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Sbp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "全部 Vim script でなんとかしようぜみたいな vim-lsp と coc は対極的ですねぇ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e11413de-bf07-48dc-85a4-f5fc47db204a",
+        "type": "message",
+        "text": "全部 Vim script でなんとかしてやる、みたいには思ってないけど。",
+        "user": "U03C6TEAZ",
+        "ts": "1584357274.407700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "A\/1f",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "全部 Vim script でなんとかしてやる、みたいには思ってないけど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "80d14f2d-051c-4230-b605-af08e942dfe8",
+        "type": "message",
+        "text": "若者の深刻なVim script離れ",
+        "user": "U9S4G0LJW",
+        "ts": "1584357325.408600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "o76pK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "若者の深刻なVim script離れ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a8f69970-579f-4984-86f5-3783f5ea2411",
+        "type": "message",
+        "text": "neovimのプラグインらしいなって思いますね",
+        "user": "U9S4G0LJW",
+        "ts": "1584357331.408900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U9S4G0LJW",
+            "ts": "1584357342.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "U6Qv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "neovimのプラグインらしいなって思いますね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "86b0a810-8beb-4c16-878b-160426a6d27e",
+        "type": "message",
+        "text": "cocはpluginマネージャでもありますね~",
+        "user": "UNJ2DANJC",
+        "ts": "1584359229.409900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "D+UdO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cocはpluginマネージャでもありますね~"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1b17f6b1-aee1-4b64-afad-1a090943ea02",
+        "type": "message",
+        "text": "なるほど。coc 入れておけば全て完結するという世界は楽そう。",
+        "user": "U78A6ESHM",
+        "ts": "1584359318.410500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "30jvW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど。coc 入れておけば全て完結するという世界は楽そう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2ccf7ebc-8de0-4931-afd3-9987e294dcd3",
+        "type": "message",
+        "text": "coc はまさしくディストリビューションだよなぁ",
+        "user": "U0M7GCBPD",
+        "ts": "1584359593.410900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+ilN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "coc はまさしくディストリビューションだよなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "82bb07d2-c977-4dcc-a77f-6c0b1e74e94f",
+        "type": "message",
+        "text": "そのうちneovimをforkして最初からcocが入ったエディタをリリースしそうな予感",
+        "user": "UNJ2DANJC",
+        "ts": "1584359801.412200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kbdsg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そのうちneovimをforkして最初からcocが入ったエディタをリリースしそうな予感"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "fuita",
+                "users": [
+                    "U9S4G0LJW",
+                    "U78A6ESHM"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "52eac8ba-f988-4e64-a68f-02860874d8d8",
+        "type": "message",
+        "text": "UI を VSCode っぽくしましょう！",
+        "user": "U78A6ESHM",
+        "ts": "1584359844.412700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lgBs",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "UI を VSCode っぽくしましょう！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a9b5a52a-6e73-4e67-baac-5c31788165f4",
+        "type": "message",
+        "text": "実質VSCode",
+        "user": "U9S4G0LJW",
+        "ts": "1584359870.413600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4RnJJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "実質VSCode"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "302095aa-7323-45e6-9caf-49a924fe7a9e",
+        "type": "message",
+        "text": "気が付いた時には上から下まで全てTypeScriptで構成されていると",
+        "user": "U9S4G0LJW",
+        "ts": "1584359914.415500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DFSo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "気が付いた時には上から下まで全てTypeScriptで構成されていると"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5d896dbd-e367-4245-96ef-dea4754596ab",
+        "type": "message",
+        "text": "結構なユーザーが乗り換えてもおかしくないのでは",
+        "user": "UNJ2DANJC",
+        "ts": "1584359923.415800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NG2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "結構なユーザーが乗り換えてもおかしくないのでは"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7b5b58b7-f496-4f4b-a4cb-709c23cfebfe",
+        "type": "message",
+        "text": "Vim の体験と VSCode の体験をそのまま両方がっちゃんこできたら移動する人多そう。",
+        "user": "U78A6ESHM",
+        "ts": "1584359957.417800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "o=DHv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vim の体験と VSCode の体験をそのまま両方がっちゃんこできたら移動する人多そう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bc5de321-507e-4555-8440-574c474ebb28",
+        "type": "message",
+        "text": "いちおうVimscriptも動くVSCodeという絶妙な立ち位置",
+        "user": "UNJ2DANJC",
+        "ts": "1584359960.418000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AK3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いちおうVimscriptも動くVSCodeという絶妙な立ち位置"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "eefe8e7e-21a4-4d26-8a54-2bbd159e6260",
+        "type": "message",
+        "text": "coc製品だけ使っておけば、無駄にバグ踏むことないですからね。。。",
+        "user": "U7B4ZD49X",
+        "ts": "1584359963.418200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Smfok",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "coc製品だけ使っておけば、無駄にバグ踏むことないですからね。。。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d6345091-162f-4e4c-abb6-6ca8d9afdee1",
+        "type": "message",
+        "text": "ぼくはVimのマッピング機構さえ動けば乗り換え対象にできる",
+        "user": "U9S4G0LJW",
+        "ts": "1584359996.418800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "j7Z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ぼくはVimのマッピング機構さえ動けば乗り換え対象にできる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "55dc64f9-96eb-4e27-acfe-820993dfa966",
+        "type": "message",
+        "text": "あれがあればいくらでもVimっぽくできるので",
+        "user": "U9S4G0LJW",
+        "ts": "1584360012.419700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "whyB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれがあればいくらでもVimっぽくできるので"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "be941106-b3bf-41fd-a18d-3b0029448440",
+        "type": "message",
+        "text": "※ ただし起動速度は(ry",
+        "user": "U78A6ESHM",
+        "ts": "1584360024.420300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lbV",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "※ ただし起動速度は(ry"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2d846690-ec9e-4797-9517-d0c1ebe078e3",
+        "type": "message",
+        "text": "VSCode vim から乗り換える人たくさん出そうですね。",
+        "user": "U78A6ESHM",
+        "ts": "1584360070.421100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oQ=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "VSCode vim から乗り換える人たくさん出そうですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aab175dc-db21-4391-9f10-709b9c806ab5",
+        "type": "message",
+        "text": "vscode拡張にcoc用のパッチをあてる職人とか居そう",
+        "user": "UNJ2DANJC",
+        "ts": "1584360108.422300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5RG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vscode拡張にcoc用のパッチをあてる職人とか居そう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0d6321f9-076a-400b-af71-e1a26b810dac",
+        "type": "message",
+        "text": "インストール手順とか考えると coc はまだ vscode には届かないなぁと思います。",
+        "user": "U03C6TEAZ",
+        "ts": "1584360109.422400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "d26",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "インストール手順とか考えると coc はまだ vscode には届かないなぁと思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "62c62e69-5d01-4d36-a8f6-4374fa6952de",
+        "type": "message",
+        "text": "なるほど。",
+        "user": "U78A6ESHM",
+        "ts": "1584360127.422700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5dGLy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "39560726-2bbb-44f4-85e7-e4f54425e204",
+        "type": "message",
+        "text": "設定ファイルとか本当に何も触れない人でもインストールできるところまで行ったら並びそう。",
+        "user": "U03C6TEAZ",
+        "ts": "1584360162.424400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ea6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "設定ファイルとか本当に何も触れない人でもインストールできるところまで行ったら並びそう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a175d23-df97-4d5a-a5a5-3308ccd704b9",
+        "type": "message",
+        "text": "もしかしてvimがVSCodeに歩み寄るのではなく、VSCodeにvimscriptランタイム乗せればいいのでは",
+        "user": "UNJ2DANJC",
+        "ts": "1584360190.426000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6Y+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もしかしてvimがVSCodeに歩み寄るのではなく、VSCodeにvimscriptランタイム乗せればいいのでは"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "kzk",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5c06551c-5188-4ae0-8d3b-26c206aaeeee",
+        "type": "message",
+        "text": "coc-rust-analyzerは結構その領域まで行ってますね",
+        "user": "U7B4ZD49X",
+        "ts": "1584360190.426100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OuR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "coc-rust-analyzerは結構その領域まで行ってますね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "99e16b73-fcf0-4d3b-b8ae-49b60cc58ad6",
+        "type": "message",
+        "text": "ブートストラップから作れたら最高ですね\n個人的に volt + α でそういう世界を実現できたら…みたいなのはしょっちゅう妄想してる",
+        "user": "U0M7GCBPD",
+        "ts": "1584360211.427000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0o+y",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ブートストラップから作れたら最高ですね\n個人的に volt + α でそういう世界を実現できたら…みたいなのはしょっちゅう妄想してる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c228915d-05c8-46c5-b94e-430377e2fe76",
+        "type": "message",
+        "text": "TypeScript で全て完結できない！ &gt; VSCode に Vim script ランタイム",
+        "user": "U78A6ESHM",
+        "ts": "1584360240.428600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qQU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "TypeScript で全て完結できない！ > VSCode に Vim script ランタイム"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5fe1beaa-a746-4bd4-8781-b2ce9808f583",
+        "type": "message",
+        "text": "？？？「VSCodeでよくね？」",
+        "user": "U9S4G0LJW",
+        "ts": "1584360268.429500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Tc3aF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "？？？「VSCodeでよくね？」"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U78A6ESHM"
+                ],
+                "count": 1
+            },
+            {
+                "name": "hai-small",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4ae299ee-f90f-4d64-ab32-0759312159e1",
+        "type": "message",
+        "text": "cocインストール済みneovimディストリビューションだと割とそのレベルに近いかもしれない",
+        "user": "UNJ2DANJC",
+        "ts": "1584360274.429800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Fp+O",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cocインストール済みneovimディストリビューションだと割とそのレベルに近いかもしれない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "18236f0d-cde5-4728-aa11-d009f144c04b",
+        "type": "message",
+        "text": "apt で coc が入ればいいのかな。",
+        "user": "U03C6TEAZ",
+        "ts": "1584360298.430200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AiHcK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "apt で coc が入ればいいのかな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dea6c0d8-8800-4c85-b3b4-0b7e12292957",
+        "type": "message",
+        "text": "もうだれか仕掛けてそうだけど。",
+        "user": "U03C6TEAZ",
+        "ts": "1584360307.430600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rb5y",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もうだれか仕掛けてそうだけど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9a99f190-93f8-4e78-9d6c-35d6a039066e",
+        "type": "message",
+        "text": "デバッガーが・・・",
+        "user": "U7B4ZD49X",
+        "ts": "1584360331.431000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vtKC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "デバッガーが・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5f6a85a5-446c-49aa-91a3-59f96a8e07fc",
+        "type": "message",
+        "text": "spaceneovim って名前にしよう！って思ったらその名前はすでにあったw",
+        "user": "U78A6ESHM",
+        "ts": "1584360343.431200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "i6TJq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "spaceneovim って名前にしよう！って思ったらその名前はすでにあったw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "majika",
+                "users": [
+                    "U9S4G0LJW",
+                    "U72TB62UF"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "260d9f6b-6508-4e13-99b7-d5dc0e94dd9e",
+        "type": "message",
+        "text": "vim-syntastic とかはもう apt で入りますからね。",
+        "user": "U03C6TEAZ",
+        "ts": "1584360382.431600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NVKm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim-syntastic とかはもう apt で入りますからね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a4d0a55-b889-4064-9ae7-ba95b541467c",
+        "type": "message",
+        "text": "へーー！",
+        "user": "U78A6ESHM",
+        "ts": "1584360391.432000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "I19L",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "へーー！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fccdc00c-384c-4e3c-a39c-834ae0ce385d",
+        "type": "message",
+        "text": "ここまではきてる <https:\/\/github.com\/neoclide\/coc.nvim\/wiki\/Install-coc.nvim|https:\/\/github.com\/neoclide\/coc.nvim\/wiki\/Install-coc.nvim>",
+        "user": "UNJ2DANJC",
+        "ts": "1584360403.432500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "neoclide\/coc.nvim",
+                "title_link": "https:\/\/github.com\/neoclide\/coc.nvim\/wiki\/Install-coc.nvim",
+                "text": "Intellisense engine for Vim8 &amp; Neovim, full language server protocol support as VSCode - neoclide\/coc.nvim",
+                "fallback": "GitHub: neoclide\/coc.nvim",
+                "from_url": "https:\/\/github.com\/neoclide\/coc.nvim\/wiki\/Install-coc.nvim",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/131770422\/11ead600-81d9-11e9-8028-45f8617ba5bd",
+                "thumb_width": 527,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/neoclide\/coc.nvim\/wiki\/Install-coc.nvim"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "EpA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ここまではきてる "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/neoclide\/coc.nvim\/wiki\/Install-coc.nvim",
+                                "text": "https:\/\/github.com\/neoclide\/coc.nvim\/wiki\/Install-coc.nvim"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ff163e28-7396-4667-8a55-ce8a5bc29325",
+        "type": "message",
+        "text": "Archは結構VimScriptいろいろ入れられます",
+        "user": "U7B4ZD49X",
+        "ts": "1584360404.432800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0X4BY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Archは結構VimScriptいろいろ入れられます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c9de2f39-5a1b-43d0-94bd-c723be9f724f",
+        "type": "message",
+        "text": "pacmanのリポジトリにvitalあるのはやばいってなる",
+        "user": "U9S4G0LJW",
+        "ts": "1584360423.433200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0Xxev",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "pacmanのリポジトリにvitalあるのはやばいってなる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fe24d96e-a1d1-42df-964a-2a41e1acc833",
+        "type": "message",
+        "text": "arch ってサーバ用途で使ってる人多いんですかね",
+        "user": "U03C6TEAZ",
+        "ts": "1584360649.434000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+UoZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "arch ってサーバ用途で使ってる人多いんですかね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "なるほど、あれそのものでイケるんですね、ありがとうございます。",
+        "user": "UAZ33BKV2",
+        "ts": "1584360713.434700",
+        "thread_ts": "1584351319.394900",
+        "root": {
+            "client_msg_id": "3c9be1be-8a2d-45ff-9f2c-4683b9914b6f",
+            "type": "message",
+            "text": "vim-win32-installer は、リリースのページの Interface Informations のところに、どのバイナリを使ってビルドしてあるかが書かれているので、そのバージョンをDLしてきてください。Luaは <http:\/\/luabinaries.sourceforge.net\/download.html> のバイナリを使っています。",
+            "user": "U6XP9LZ6V",
+            "ts": "1584351319.394900",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "hah4F",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "vim-win32-installer は、リリースのページの Interface Informations のところに、どのバイナリを使ってビルドしてあるかが書かれているので、そのバージョンをDLしてきてください。Luaは "
+                                },
+                                {
+                                    "type": "link",
+                                    "url": "http:\/\/luabinaries.sourceforge.net\/download.html"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": " のバイナリを使っています。"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584351319.394900",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1584360713.434700",
+            "reply_users": [
+                "UAZ33BKV2"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cWP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど、あれそのものでイケるんですね、ありがとうございます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "9f676943-2efd-4a35-abae-52cb43f4b56a"
+    },
+    {
+        "client_msg_id": "daee5bf4-6f6f-4f30-b111-4f54f0cdcd36",
+        "type": "message",
+        "text": "あれでサーバー立てるのは勇気いる、セキュリティアップデートも破壊的変更も一緒に降ってくるし",
+        "user": "U9S4G0LJW",
+        "ts": "1584360746.436000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eN09G",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれでサーバー立てるのは勇気いる、セキュリティアップデートも破壊的変更も一緒に降ってくるし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "24727bda-4802-46c7-a71c-06a6701f842f",
+        "type": "message",
+        "text": "ですね。debian の様に sarge みたいなリリースも無さそうだし。",
+        "user": "U03C6TEAZ",
+        "ts": "1584360842.436900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/LoJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですね。debian の様に sarge みたいなリリースも無さそうだし。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4ca6f2b8-87a6-4db5-91dd-b4498ac8094f",
+        "type": "message",
+        "text": "<https:\/\/wiki.archlinux.jp\/index.php\/Arch_Linux_%E3%81%AE%E5%AE%89%E5%AE%9A%E5%8C%96>\n\n```ただし、設定のシンプリシティ、素早いバグレポート・バグフィックスサイクル、そしてアップストリームのソースコードにパッチをあてないで利用することを約束している Arch は本質的に安定しているものなのです。従って、Arch の設定やメンテナンスで以下のアドバイスに従えば、ユーザーは非常に安定したシステムに恵まれるでしょう。さらに、問題が起こった時にシステムを修復するのを楽にするアドバイスもあります。\n\n実際のところ Arch はどれくらい安定していると言えるのでしょうか？Arch を本番サーバーに問題なく使えているという、熟練したシステム管理者による報告が Arch フォーラムにはごろごろあります。<http:\/\/Archlinux.org|Archlinux.org> はその一例と言えます。デスクトップでも、正しく設定されメンテナンスされている Arch は素晴らしいスタビリティを発揮します。```\n安定とは...",
+        "user": "UNJ2DANJC",
+        "ts": "1584360864.437200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UNJ2DANJC",
+            "ts": "1584360935.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "obYG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/wiki.archlinux.jp\/index.php\/Arch_Linux_%E3%81%AE%E5%AE%89%E5%AE%9A%E5%8C%96"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただし、設定のシンプリシティ、素早いバグレポート・バグフィックスサイクル、そしてアップストリームのソースコードにパッチをあてないで利用することを約束している Arch は本質的に安定しているものなのです。従って、Arch の設定やメンテナンスで以下のアドバイスに従えば、ユーザーは非常に安定したシステムに恵まれるでしょう。さらに、問題が起こった時にシステムを修復するのを楽にするアドバイスもあります。\n\n実際のところ Arch はどれくらい安定していると言えるのでしょうか？Arch を本番サーバーに問題なく使えているという、熟練したシステム管理者による報告が Arch フォーラムにはごろごろあります。"
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/Archlinux.org",
+                                "text": "Archlinux.org"
+                            },
+                            {
+                                "type": "text",
+                                "text": " はその一例と言えます。デスクトップでも、正しく設定されメンテナンスされている Arch は素晴らしいスタビリティを発揮します。"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n安定とは..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "adb47ca4-7a9b-4710-aee4-2557a96152f8",
+        "type": "message",
+        "text": "~熟練したシステム管理者~ 物好き",
+        "user": "UNJ2DANJC",
+        "ts": "1584361024.438800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bVpw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "熟練したシステム管理者",
+                                "style": {
+                                    "strike": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 物好き"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3824a2eb-bef7-477b-8a31-f39b1402132a",
+        "type": "message",
+        "text": "壊れてもすぐに直ることを安定とは言わないと思うがw",
+        "user": "U9S4G0LJW",
+        "ts": "1584361052.439000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OpYE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "壊れてもすぐに直ることを安定とは言わないと思うがw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7ce71886-67b5-4024-9325-77a739be5680",
+        "type": "message",
+        "text": "まあArchを好んで使うような物好きなら安定して運用させることぐらいできるんだろうな",
+        "user": "U9S4G0LJW",
+        "ts": "1584361100.439800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RwC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まあArchを好んで使うような物好きなら安定して運用させることぐらいできるんだろうな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "37d944fc-3ed8-4ce8-80b6-79356f959784",
+        "type": "message",
+        "text": "結局どっちで苦しむかですよね。\nパッケージの管理＋変な昔のバグで苦しむか、新しいバグで苦しむか",
+        "user": "U7B4ZD49X",
+        "ts": "1584361417.441500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+w=2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "結局どっちで苦しむかですよね。\nパッケージの管理＋変な昔のバグで苦しむか、新しいバグで苦しむか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "205f1494-fd25-4dc0-b4c2-b7c3d04668d4",
+        "type": "message",
+        "text": "最新版で10年来のバグで苦しむことになる、のもよくあるはなし...",
+        "user": "UAZ33BKV2",
+        "ts": "1584361461.442300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gef1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最新版で10年来のバグで苦しむことになる、のもよくあるはなし..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a6d8fb3b-3c66-4d9f-aa7f-c4eaacfc36d2",
+        "type": "message",
+        "text": "vimreg に `--tee` \/ `-t` オプションを追加して出力見ながら Vim のレジスタも更新できるようになった。\n<https:\/\/github.com\/tyru\/tapi-reg.vim\/pull\/1>",
+        "user": "U0M7GCBPD",
+        "ts": "1584366330.443800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Add --tee (-t) option by tyru · Pull Request #1 · tyru\/tapi-reg.vim",
+                "title_link": "https:\/\/github.com\/tyru\/tapi-reg.vim\/pull\/1",
+                "text": "This option uses tee command instead of cat command to receive standard input.",
+                "fallback": "GitHub: Add --tee (-t) option by tyru · Pull Request #1 · tyru\/tapi-reg.vim",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/48169?s=400&v=4",
+                "from_url": "https:\/\/github.com\/tyru\/tapi-reg.vim\/pull\/1",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/tyru\/tapi-reg.vim\/pull\/1"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OlIqR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vimreg に "
+                            },
+                            {
+                                "type": "text",
+                                "text": "--tee",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " \/ "
+                            },
+                            {
+                                "type": "text",
+                                "text": "-t",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " オプションを追加して出力見ながら Vim のレジスタも更新できるようになった。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tyru\/tapi-reg.vim\/pull\/1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6e363fed-0a38-4fa0-9541-24b98949abf2",
+        "type": "message",
+        "text": "themis のテストが落ちるようになって、原因を調べていく内にもしかしたら Ex mode (-e -s) だとsyntax enable やらしても synstack() が空を返すのでは… という気になってきた\nちょっと今日は時間もアレだし深追いするのはやめとこう…",
+        "user": "U0M7GCBPD",
+        "ts": "1584378136.445800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YwDe",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "themis のテストが落ちるようになって、原因を調べていく内にもしかしたら Ex mode (-e -s) だとsyntax enable やらしても synstack() が空を返すのでは… という気になってきた\nちょっと今日は時間もアレだし深追いするのはやめとこう…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4a9f7bd4-d8aa-429c-9f09-697d8b7617e1",
+        "type": "message",
+        "text": "<https:\/\/github.com\/numirias\/semshi> Neovimでしか動かないけどPythonコードをパースしてハイライトしてくれるらしい",
+        "user": "U9S4G0LJW",
+        "ts": "1584408404.446600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "numirias\/semshi",
+                "title_link": "https:\/\/github.com\/numirias\/semshi",
+                "text": ":rainbow: Semantic Highlighting for Python in Neovim. Contribute to numirias\/semshi development by creating an account on GitHub.",
+                "fallback": "GitHub: numirias\/semshi",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/29267777?s=400&v=4",
+                "from_url": "https:\/\/github.com\/numirias\/semshi",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/numirias\/semshi"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x=zgg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/numirias\/semshi"
+                            },
+                            {
+                                "type": "text",
+                                "text": " Neovimでしか動かないけどPythonコードをパースしてハイライトしてくれるらしい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4b30e470-78c2-4153-84c9-bbe33e919bbf",
+        "type": "message",
+        "text": "すごい！でも ast 解析してるっぽいから遅そうw",
+        "user": "U78A6ESHM",
+        "ts": "1584409761.448100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BTX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すごい！でも ast 解析してるっぽいから遅そうw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "70fd3e5d-eb8f-4ce4-afb6-c27bfeeadbaa",
+        "type": "message",
+        "text": "ほんとはこの手の処理もlsp側でやるのがいいんでしょうけど...",
+        "user": "UAZ33BKV2",
+        "ts": "1584409794.448600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e1J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ほんとはこの手の処理もlsp側でやるのがいいんでしょうけど..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b8aad173-11af-4377-b1c9-ee394c3b3ce4",
+        "type": "message",
+        "text": "vsnip に「既にスニペット展開中でも別スニペットの展開を可能にする対応」を入れました。\n（新しく展開されるスニペットは、もともと展開されていたスニペットの適切な位置に挿入されて一つのスニペットとして振る舞います。）\n\n割と面倒な処理だったので壊れていたら修正します。",
+        "user": "U8R597E9H",
+        "ts": "1584413863.450000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U8R597E9H",
+            "ts": "1584413888.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NJ6i",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vsnip に「既にスニペット展開中でも別スニペットの展開を可能にする対応」を入れました。\n（新しく展開されるスニペットは、もともと展開されていたスニペットの適切な位置に挿入されて一つのスニペットとして振る舞います。）\n\n割と面倒な処理だったので壊れていたら修正します。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tada",
+                "users": [
+                    "U78A6ESHM",
+                    "UBNPMJJGM",
+                    "UFP0GQZ4K"
+                ],
+                "count": 3
+            }
+        ]
+    }
+]

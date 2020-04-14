@@ -1,0 +1,233 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/97acfc781bdb7fa2838dc6e0e7f9952ea61bb2fd|patch 8.2.0424: checking for wrong return value>\npatch 8.2.0424: checking for wrong return value\n\nProblem:    Checking for wrong return value. (Tom)\nSolution:   Invert the check and fix the test.",
+        "ts": "1584882504.028100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0424: checking for wrong return value · vim\/vim@97acfc7",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/97acfc781bdb7fa2838dc6e0e7f9952ea61bb2fd",
+                "text": "Problem: Checking for wrong return value. (Tom) Solution: Invert the check and fix the test.",
+                "fallback": "GitHub: patch 8.2.0424: checking for wrong return value · vim\/vim@97acfc7",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/97acfc781bdb7fa2838dc6e0e7f9952ea61bb2fd",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/97acfc781bdb7fa2838dc6e0e7f9952ea61bb2fd"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584882504.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/515545e11f523d14343b1e588dc0b9bd3d362bc2|patch 8.2.0425: code for modeless selection not sufficiently tested>\npatch 8.2.0425: code for modeless selection not sufficiently tested\n\nProblem:    Code for modeless selection not sufficiently tested.\nSolution:   Add tests.  Move mouse code functionality to a common script file.\n            (Yegappan Lakshmanan, closes #5821)",
+        "ts": "1584883105.028300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0425: code for modeless selection not sufficiently tested · vim\/vim@515545e",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/515545e11f523d14343b1e588dc0b9bd3d362bc2",
+                "text": "Problem: Code for modeless selection not sufficiently tested. Solution: Add tests. Move mouse code functionality to a common script file. (Yegappan Lakshmanan, closes #5821)",
+                "fallback": "GitHub: patch 8.2.0425: code for modeless selection not sufficiently tested · vim\/vim@515545e",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/515545e11f523d14343b1e588dc0b9bd3d362bc2",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/515545e11f523d14343b1e588dc0b9bd3d362bc2"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584883106.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/9b9be007e7d674f49fc2b650f840d08532b180ad|patch 8.2.0426: some errors were not tested for>\npatch 8.2.0426: some errors were not tested for\n\nProblem:    Some errors were not tested for.\nSolution:   Add tests. (Dominique Pelle, closes #5824)",
+        "ts": "1584885505.028500",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0426: some errors were not tested for · vim\/vim@9b9be00",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/9b9be007e7d674f49fc2b650f840d08532b180ad",
+                "text": "Problem: Some errors were not tested for. Solution: Add tests. (Dominique Pelle, closes #5824)",
+                "fallback": "GitHub: patch 8.2.0426: some errors were not tested for · vim\/vim@9b9be00",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/9b9be007e7d674f49fc2b650f840d08532b180ad",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/9b9be007e7d674f49fc2b650f840d08532b180ad"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584885506.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/7929651e05b081fe55e0e745725a7ad78c51be16|patch 8.2.0427: it is not possible to check for a typo in a feature name>\npatch 8.2.0427: it is not possible to check for a typo in a feature name\n\nProblem:    It is not possible to check for a typo in a feature name.\nSolution:   Add an extra argument to has().",
+        "ts": "1584890305.028700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0427: it is not possible to check for a typo in a feature name · vim\/vim@7929651",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/7929651e05b081fe55e0e745725a7ad78c51be16",
+                "text": "Problem: It is not possible to check for a typo in a feature name. Solution: Add an extra argument to has().",
+                "fallback": "GitHub: patch 8.2.0427: it is not possible to check for a typo in a feature name · vim\/vim@7929651",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/7929651e05b081fe55e0e745725a7ad78c51be16",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/7929651e05b081fe55e0e745725a7ad78c51be16"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584890306.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/d5bc32df207eae408263ae6ab737771365d0bca1|patch 8.2.0428: buffer name may leak>\npatch 8.2.0428: buffer name may leak\n\nProblem:    Buffer name may leak.\nSolution:   Free the buffer name before overwriting it.",
+        "ts": "1584902311.028900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0428: buffer name may leak · vim\/vim@d5bc32d",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/d5bc32df207eae408263ae6ab737771365d0bca1",
+                "text": "Problem: Buffer name may leak. Solution: Free the buffer name before overwriting it.",
+                "fallback": "GitHub: patch 8.2.0428: buffer name may leak · vim\/vim@d5bc32d",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/d5bc32df207eae408263ae6ab737771365d0bca1",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/d5bc32df207eae408263ae6ab737771365d0bca1"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584902311.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/c5a8fdc42dbd304598b2d73db754c7b97665b182|patch 8.2.0429: no warning when test checks for option that never exists>\npatch 8.2.0429: no warning when test checks for option that never exists\n\nProblem:    No warning when test checks for option that never exists.\nSolution:   In tests check that the option can exist.",
+        "ts": "1584904711.029100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0429: no warning when test checks for option that never exists · vim\/vim@c5a8fdc",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/c5a8fdc42dbd304598b2d73db754c7b97665b182",
+                "text": "Problem: No warning when test checks for option that never exists. Solution: In tests check that the option can exist.",
+                "fallback": "GitHub: patch 8.2.0429: no warning when test checks for option that never exists · vim\/vim@c5a8fdc",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/c5a8fdc42dbd304598b2d73db754c7b97665b182",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/c5a8fdc42dbd304598b2d73db754c7b97665b182"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584904712.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/5080b0a0470511bae6176a704d4591d1caba0d07|patch 8.2.0430: window creation failure not properly tested>\npatch 8.2.0430: window creation failure not properly tested\n\nProblem:    Window creation failure not properly tested.\nSolution:   Improve the test. (Yegappan Lakshmanan, closes #5826)",
+        "ts": "1584909512.029300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0430: window creation failure not properly tested · vim\/vim@5080b0a",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/5080b0a0470511bae6176a704d4591d1caba0d07",
+                "text": "Problem: Window creation failure not properly tested. Solution: Improve the test. (Yegappan Lakshmanan, closes #5826)",
+                "fallback": "GitHub: patch 8.2.0430: window creation failure not properly tested · vim\/vim@5080b0a",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/5080b0a0470511bae6176a704d4591d1caba0d07",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/5080b0a0470511bae6176a704d4591d1caba0d07"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584909513.000000"
+        }
+    }
+]

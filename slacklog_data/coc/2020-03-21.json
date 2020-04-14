@@ -1,0 +1,287 @@
+[
+    {
+        "client_msg_id": "122ed7c3-53ba-44e8-9b9d-bb52b77e5265",
+        "type": "message",
+        "text": "`call coc#config('suggest.autoTrigger', 'none')` これか",
+        "user": "U72TB62UF",
+        "ts": "1584774183.085200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MokPA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "call coc#config('suggest.autoTrigger', 'none')",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " これか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "Deopleteを入れているだけで、問答無用で怒ってくるのか……",
+        "files": [
+            {
+                "id": "F010JAR69QX",
+                "created": 1584774667,
+                "timestamp": 1584774667,
+                "name": "スクリーンショット 2020-03-21 16.10.25.png",
+                "title": "スクリーンショット 2020-03-21 16.10.25.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U72TB62UF",
+                "editable": false,
+                "size": 122048,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010JAR69QX\/____________________________2020-03-21_16.10.25.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010JAR69QX\/download\/____________________________2020-03-21_16.10.25.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 360,
+                "thumb_360_h": 38,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_480.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_w": 480,
+                "thumb_480_h": 50,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_720.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720_w": 720,
+                "thumb_720_h": 75,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_800.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_800_w": 800,
+                "thumb_800_h": 84,
+                "thumb_960": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_960.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_960_w": 960,
+                "thumb_960_h": 100,
+                "thumb_1024": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010JAR69QX-5ea38661d2\/____________________________2020-03-21_16.10.25_1024.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_1024_w": 1024,
+                "thumb_1024_h": 107,
+                "image_exif_rotation": 1,
+                "original_w": 2546,
+                "original_h": 266,
+                "thumb_tiny": "AwAFADCtvf8AvN+dNPJ5OaWkFACUuBSUtAhQzKOGI+hoMj4++350lIelAM\/\/2Q==",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U72TB62UF\/F010JAR69QX\/____________________________2020-03-21_16.10.25.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F010JAR69QX-a7e65d18d3",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "X4hGH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Deopleteを入れているだけで、問答無用で怒ってくるのか……"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U72TB62UF",
+        "display_as_bot": false,
+        "ts": "1584774673.085300",
+        "client_msg_id": "e0d14a7e-467d-4889-a56a-c32292cffcec"
+    },
+    {
+        "client_msg_id": "cb411688-c9ba-4c34-8ec2-7af32d3c0289",
+        "type": "message",
+        "text": "えぇ……",
+        "user": "U72TB62UF",
+        "ts": "1584774936.085700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iJdv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "えぇ……"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "27f7e7de-b6c8-4f4a-b6b0-48830773798e",
+        "type": "message",
+        "text": "結局、.config\/nvim\/plugged\/deoplete.nvim\/autoload\/deoplete\/mapping.vim のcompleteopt周りをコメントアウトするワークアラウンドでごまかした。",
+        "user": "U72TB62UF",
+        "ts": "1584781241.086600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BRsWs",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "結局、.config\/nvim\/plugged\/deoplete.nvim\/autoload\/deoplete\/mapping.vim のcompleteopt周りをコメントアウトするワークアラウンドでごまかした。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7aa69acc-f27a-4f48-aa2a-4d463d3a5225",
+        "type": "message",
+        "text": "cocもcompleteoptを弄っていてコンフリクトするんだろう",
+        "user": "U7JL1UKKL",
+        "ts": "1584782904.087300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GedlP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cocもcompleteoptを弄っていてコンフリクトするんだろう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "465fb5e4-70c7-4068-a161-a3c7eae03112",
+        "type": "message",
+        "text": "&gt; cocもcompleteoptを弄っていてコンフリクトするんだろう\nですよね。\n補完エンジンを２つ入れて使い分けるなんて奇特なことをしている人なんてごくわずかなので、手元でどうにかするのはやむなし",
+        "user": "U72TB62UF",
+        "ts": "1584784857.088700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "exwcG",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cocもcompleteoptを弄っていてコンフリクトするんだろう"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですよね。\n補完エンジンを２つ入れて使い分けるなんて奇特なことをしている人なんてごくわずかなので、手元でどうにかするのはやむなし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

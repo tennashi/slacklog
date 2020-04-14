@@ -1,0 +1,78 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586110431.010000",
+        "user": "U011B81LBF1",
+        "text": "<@U011B81LBF1> has joined the channel"
+    },
+    {
+        "client_msg_id": "aa63333b-e4ea-4d21-b454-096eeb7430d9",
+        "type": "message",
+        "text": "こんばんは。夜中にすいません。最近Vimを使いはじめ、いろいろ調べていくなかでこちらを知りました。\nどうぞよろしくお願いいたします。",
+        "user": "U011B81LBF1",
+        "ts": "1586110882.011400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "a3bd423f01f1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-04-06\/1045274621143_a3bd423f01f13527e9d0_72.png",
+            "first_name": "shin-g",
+            "real_name": "shin-g",
+            "display_name": "shin-g",
+            "team": "T03C4RC8V",
+            "name": "s.gejima",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3Edd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こんばんは。夜中にすいません。最近Vimを使いはじめ、いろいろ調べていくなかでこちらを知りました。\nどうぞよろしくお願いいたします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tada",
+                "users": [
+                    "U8CC7MDCL",
+                    "UEX9VPSET",
+                    "U03C6TEAZ",
+                    "U9S4G0LJW",
+                    "UN01VCX4M",
+                    "U7ZRBF5LG",
+                    "UMUPYCYN8",
+                    "UK7DT8URY",
+                    "U06BRP8VD",
+                    "UGP5AJKU4",
+                    "UD73ZNZAP",
+                    "UL7QXD7C7",
+                    "URAM81C5D",
+                    "UTU5KG7NH",
+                    "UEACRCY0Z",
+                    "UGMLBL4NN",
+                    "UTMDDL5B9",
+                    "UU4TT074M",
+                    "UQL6475CG",
+                    "US26ZSNDN",
+                    "UFXDNDTHN",
+                    "U0119AFDQMN",
+                    "UFP0GQZ4K"
+                ],
+                "count": 23
+            }
+        ]
+    }
+]

@@ -1,0 +1,85 @@
+[
+    {
+        "client_msg_id": "78f0d7ec-709c-4a05-9d40-e2ff4f772aaf",
+        "type": "message",
+        "text": "今日のオレオレビルドからlambda高速化パッチを入れてみた。常用してみる。\n<https:\/\/github.com\/k-takata\/vim-kt\/releases\/tag\/v8.2.0373>\n体感できる差はないだろうけど。",
+        "user": "U6XP9LZ6V",
+        "ts": "1583992545.348300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "k-takata\/vim-kt",
+                "title_link": "https:\/\/github.com\/k-takata\/vim-kt\/releases\/tag\/v8.2.0373",
+                "text": "K.Takata's private Vim package for Windows. Contribute to k-takata\/vim-kt development by creating an account on GitHub.",
+                "fallback": "GitHub: k-takata\/vim-kt",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/840186?s=400&v=4",
+                "from_url": "https:\/\/github.com\/k-takata\/vim-kt\/releases\/tag\/v8.2.0373",
+                "thumb_width": 320,
+                "thumb_height": 320,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/k-takata\/vim-kt\/releases\/tag\/v8.2.0373"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7md",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今日のオレオレビルドからlambda高速化パッチを入れてみた。常用してみる。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/k-takata\/vim-kt\/releases\/tag\/v8.2.0373"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n体感できる差はないだろうけど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "goodpoem",
+                "users": [
+                    "U9S4G0LJW",
+                    "UAZ33BKV2",
+                    "UEACRCY0Z",
+                    "U06BRP8VD"
+                ],
+                "count": 4
+            },
+            {
+                "name": "subara",
+                "users": [
+                    "UAZ33BKV2",
+                    "U03C6TEAZ",
+                    "U06BRP8VD"
+                ],
+                "count": 3
+            }
+        ]
+    }
+]

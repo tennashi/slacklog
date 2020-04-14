@@ -1,0 +1,653 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585477040.025700",
+        "user": "UF9UGV0C9",
+        "text": "<@UF9UGV0C9> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585479356.026000",
+        "user": "U010Z7X704C",
+        "text": "<@U010Z7X704C> has joined the channel"
+    },
+    {
+        "client_msg_id": "af872c6b-0108-4280-80eb-37fb9fc4ecee",
+        "type": "message",
+        "text": "bashをstarshipにした、経過時間が出るの便利",
+        "user": "UAZ33BKV2",
+        "ts": "1585549243.026600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7obu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "bashをstarshipにした、経過時間が出るの便利"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e09814cf-845c-4868-b4cc-a2a2f5c64f4b",
+        "type": "message",
+        "text": "なお、コマンドの有無で、starship -&gt; gitstatusd -&gt; git (付属シェルスクリプト) -&gt; 素でがんばる -&gt; gitなし のフォールバックする作りになってしまった...\n整理はしてるけど複雑",
+        "user": "UAZ33BKV2",
+        "ts": "1585549359.028300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "277l",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なお、コマンドの有無で、starship -> gitstatusd -> git (付属シェルスクリプト) -> 素でがんばる -> gitなし のフォールバックする作りになってしまった...\n整理はしてるけど複雑"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bb57cb22-a6c0-41a9-aae3-e4d023e5d3e3",
+        "type": "message",
+        "text": "```(user) on (host) in ~ took 1m10s\n🕒[ 2020-03-30T15:22:54 ] ❯```\n今は上みたいになる",
+        "user": "UAZ33BKV2",
+        "ts": "1585549431.029900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1585551790.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0ivK",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(user) on (host) in ~ took 1m10s\n🕒[ 2020-03-30T15:22:54 ] ❯"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n今は上みたいになる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1b7f0b07-86e4-4ede-b210-d127785f5078",
+        "type": "message",
+        "text": "starship 一瞬試したんですが、重くなりませんでした？",
+        "user": "U78A6ESHM",
+        "ts": "1585549462.030700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BQ7b",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "starship 一瞬試したんですが、重くなりませんでした？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "efa17efa-2709-4163-a9c7-87f127e18a49",
+        "type": "message",
+        "text": "それならもうなければsharshipをbashrcで強制インストールするようにしたほうが楽じゃないですかね？？",
+        "user": "U7B4ZD49X",
+        "ts": "1585549471.031000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nU6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それならもうなければsharshipをbashrcで強制インストールするようにしたほうが楽じゃないですかね？？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b6dfb236-4f38-43c3-a486-a2b6e1b720e3",
+        "type": "message",
+        "text": "私は最近コマンドあるなしのfallback減らし気味",
+        "user": "U7B4ZD49X",
+        "ts": "1585549506.031700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PqLx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私は最近コマンドあるなしのfallback減らし気味"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bc7286fe-8493-41a0-8a94-f9c1a4b03dad",
+        "type": "message",
+        "text": "昔はよくやってたけどめんどうくさくなってきた",
+        "user": "U7B4ZD49X",
+        "ts": "1585549523.032600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gnWsB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "昔はよくやってたけどめんどうくさくなってきた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "988ce579-e7d8-493f-9cff-ff4d19a0601a",
+        "type": "message",
+        "text": "あと python の絵文字が… :snake: はやっぱダサいw",
+        "user": "U78A6ESHM",
+        "ts": "1585549530.033000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e75I",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あと python の絵文字が… "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "snake"
+                            },
+                            {
+                                "type": "text",
+                                "text": " はやっぱダサいw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "79977783-b20b-4a3a-be23-78c605b12b6e",
+        "type": "message",
+        "text": "すごく制限された環境とかにも住むので...\nまあ整理は続けます(brew\/choco install starshipで入るからほぼ入れる予定だけど初期状態では無いので)",
+        "user": "UAZ33BKV2",
+        "ts": "1585549546.033300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1585549569.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jfuMu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すごく制限された環境とかにも住むので...\nまあ整理は続けます(brew\/choco install starshipで入るからほぼ入れる予定だけど初期状態では無いので)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "acf50b0c-5354-4f4a-8a0a-0307e5a4e394",
+        "type": "message",
+        "text": "starship重くはないですね",
+        "user": "UAZ33BKV2",
+        "ts": "1585549588.034100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "c8x",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "starship重くはないですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b1a03288-b32e-4a6f-b19f-93d9e31c258a",
+        "type": "message",
+        "text": "このフォールバックはやりたいわけでもないので、いずれちゃんと解消したいですw",
+        "user": "UAZ33BKV2",
+        "ts": "1585549639.035400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "I\/MC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "このフォールバックはやりたいわけでもないので、いずれちゃんと解消したいですw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1f0b9035-e5ee-4702-a839-fbcc392df00c",
+        "type": "message",
+        "text": "なるほど。git promptは私も外部接続なしな状態でも動くようにはしてるか。\n\ngit-prompt(zshのプラグイン)-&gt; なければ -&gt;独自関数",
+        "user": "U7B4ZD49X",
+        "ts": "1585549643.035600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Uii",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど。git promptは私も外部接続なしな状態でも動くようにはしてるか。\n\ngit-prompt(zshのプラグイン)-> なければ ->独自関数"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "72a508d3-7ace-46aa-b742-5d3436f8e3ea",
+        "type": "message",
+        "text": "シェルの機能をシェルスクリプトで書かないという発想よいな",
+        "user": "U9S4G0LJW",
+        "ts": "1585549687.035800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5FcEj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "シェルの機能をシェルスクリプトで書かないという発想よいな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "83ff29ed-a018-4db1-99da-a9b889464097",
+        "type": "message",
+        "text": "一番の欠点は、コマンドがない\/実行できない\/意図しないエラー、とかが悩むことですかねえ",
+        "user": "UAZ33BKV2",
+        "ts": "1585549733.036400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "17f",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "一番の欠点は、コマンドがない\/実行できない\/意図しないエラー、とかが悩むことですかねえ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d4b2d3e1-7a7a-45c8-91af-368740962b2b",
+        "type": "message",
+        "text": "あと終了コードの保存をちゃんとしないと事故ることがあるw(プロンプト)",
+        "user": "UAZ33BKV2",
+        "ts": "1585549744.036700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1585549754.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "EoVJh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あと終了コードの保存をちゃんとしないと事故ることがあるw(プロンプト)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "46398676-7283-4755-863f-62866bb82c4e",
+        "type": "message",
+        "text": "promptを取得するスクリプトだけプラグインに任せて外出ししたい",
+        "user": "U8996GYBF",
+        "ts": "1585551541.037900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nrG+c",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "promptを取得するスクリプトだけプラグインに任せて外出ししたい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

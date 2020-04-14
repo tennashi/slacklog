@@ -1,0 +1,94 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585210652.023300",
+        "user": "U010SUJ18EQ",
+        "text": "<@U010SUJ18EQ> has joined the channel"
+    },
+    {
+        "client_msg_id": "6c39bd89-d9ef-4bfd-9eaa-4a077aaf8fd7",
+        "type": "message",
+        "text": "``` --header-insertion=&lt;value&gt;```\nでいけるのではないか感はあるが、これを個別プロジェクトだけに反映しないとか...",
+        "user": "UAZ33BKV2",
+        "ts": "1585214095.024200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "88qLN",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": " --header-insertion=<value>"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nでいけるのではないか感はあるが、これを個別プロジェクトだけに反映しないとか..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b87d687f-6f52-43b5-a5f0-dcc575e18bfc",
+        "type": "message",
+        "text": "vim-lsp-settings、ローカル読むようになったので、対応は可能と思われるが",
+        "user": "UAZ33BKV2",
+        "ts": "1585214112.024700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dsD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim-lsp-settings、ローカル読むようになったので、対応は可能と思われるが"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

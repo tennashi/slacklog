@@ -1,0 +1,147 @@
+[
+    {
+        "client_msg_id": "9037fa78-1bb0-4fa8-b324-70da4a199520",
+        "type": "message",
+        "text": "<@UDDCM376D> そういえば open-browser-github で行番号が付かない件はどうなりました？",
+        "user": "U0M7GCBPD",
+        "ts": "1585943820.186900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HHaj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "UDDCM376D"
+                            },
+                            {
+                                "type": "text",
+                                "text": " そういえば open-browser-github で行番号が付かない件はどうなりました？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c4c19cc8-efd3-4696-96ff-80d5744ac81a",
+        "type": "message",
+        "text": "fzfでgrepしたら、`(`をバックスペース入れないと検索できないの、雑に検索したいときちょっと面倒",
+        "user": "U72TB62UF",
+        "ts": "1585951368.187800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DZK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fzfでgrepしたら、"
+                            },
+                            {
+                                "type": "text",
+                                "text": "(",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "をバックスペース入れないと検索できないの、雑に検索したいときちょっと面倒"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "BFF87968-2AF6-489D-9E4F-34A726811733",
+        "type": "message",
+        "text": "仕事で死んでました…\n今日issue出しますねー",
+        "user": "UDDCM376D",
+        "ts": "1585956680.188300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=7TS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "仕事で死んでました…\n今日issue出しますねー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585964624.188500",
+        "user": "UR0M6D4AY",
+        "text": "<@UR0M6D4AY> has joined the channel"
+    }
+]

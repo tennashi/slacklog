@@ -1,0 +1,1903 @@
+[
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1583575470",
+    "change_type": "updated",
+    "rss_feed": true,
+    "rss_feed_change_type": "added",
+    "rss_feed_title": "vim_jp",
+    "rss_feed_url": "https:\/\/groups.google.com\/group\/vim_jp\/feed\/rss_v2_0_topics.xml",
+    "service_id": 811231012052,
+    "service_type": "RSS",
+    "scope": "commands,incoming-webhook",
+    "channel": "CJMV3MSLR"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1583575462",
+    "change_type": "updated",
+    "rss_feed": true,
+    "rss_feed_change_type": "removed",
+    "rss_feed_title": "vim_jp",
+    "rss_feed_url": "https:\/\/groups.google.com\/forum\/feed\/vim_jp\/topics\/atom_v1_0.xml",
+    "service_id": 811231012052,
+    "service_type": "RSS",
+    "scope": "commands,incoming-webhook",
+    "channel": "CJMV3MSLR"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1583552421",
+    "change_type": "updated",
+    "rss_feed": true,
+    "rss_feed_change_type": "added",
+    "rss_feed_title": "vim_jp",
+    "rss_feed_url": "https:\/\/groups.google.com\/forum\/feed\/vim_jp\/topics\/atom_v1_0.xml",
+    "service_id": 811231012052,
+    "service_type": "RSS",
+    "scope": "commands,incoming-webhook",
+    "channel": "CJMV3MSLR"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1583552399",
+    "change_type": "app_whitelist_added",
+    "app_type": "RSS",
+    "app_id": "A0F81R7U7"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1583552389",
+    "change_type": "app_whitelist_added",
+    "app_type": "Polly",
+    "app_id": "A04E6JX41"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1583552381",
+    "change_type": "app_whitelist_added",
+    "app_type": "Hubot",
+    "app_id": "A0F7XDU93"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1583106551",
+    "change_type": "app_whitelist_added",
+    "app_type": "slim",
+    "app_id": "AUSH5H138"
+},
+{
+    "user_id": "U9S4G0LJW",
+    "user_name": "kuu",
+    "date": "1583103835",
+    "change_type": "app_whitelist_requested",
+    "app_type": "slim",
+    "app_id": "AUSH5H138"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1581292313",
+    "change_type": "whitelist_permissions_updated"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1581292281",
+    "change_type": "whitelist_permissions_updated"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1581292266",
+    "change_type": "whitelist_requests_require_comment_enabled"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1581292253",
+    "change_type": "whitelist_permissions_updated"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1581292248",
+    "change_type": "whitelist_enabled"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1581292248",
+    "change_type": "whitelist_permissions_updated"
+},
+{
+    "user_id": "UL6CFN8NR",
+    "user_name": "mogassy",
+    "date": "1581139695",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "URW9T144Q",
+    "user_name": "unikura",
+    "date": "1577370435",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "UAZ33BKV2",
+    "user_name": "tsuyoshi_cho",
+    "date": "1576904294",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "identify,read,post,client,apps"
+},
+{
+    "user_id": "URW9T144Q",
+    "user_name": "unikura",
+    "date": "1576796511",
+    "change_type": "added",
+    "app_type": "IFTTT",
+    "app_id": "A028LGAFF",
+    "scope": "identify,ifttt"
+},
+{
+    "user_id": "URW9T144Q",
+    "user_name": "unikura",
+    "date": "1576764364",
+    "change_type": "added",
+    "app_type": "AutoWeb",
+    "app_id": "A12E8CESV",
+    "scope": "identify,channels:history,groups:history,im:history,mpim:history,channels:read,emoji:read,files:read,groups:read,im:read,mpim:read,reactions:read,search:read,stars:read,team:read,users:read,users:read.email,pins:read,usergroups:read,dnd:read,channels:write,chat:write:user,chat:write:bot,files:write:user,groups:write,im:write,mpim:write,reactions:write,stars:write,users:write,pins:write,usergroups:write,dnd:write"
+},
+{
+    "user_id": "UD1FQV38V",
+    "user_name": "claude0803sz",
+    "date": "1575550412",
+    "change_type": "updated",
+    "rss_feed": true,
+    "rss_feed_change_type": "added",
+    "rss_feed_title": "dotfiles Advent Calendarの記事 - Qiita",
+    "rss_feed_url": "https:\/\/qiita.com\/advent-calendar\/2019\/dotfiles\/feed",
+    "service_id": 811231012052,
+    "service_type": "RSS",
+    "scope": "commands,incoming-webhook",
+    "channel": "CNX3F8RFC"
+},
+{
+    "user_id": "UG9LY6J65",
+    "user_name": "tksgi12",
+    "date": "1575017838",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "UGH7U3SF2",
+    "user_name": "mira",
+    "date": "1574647623",
+    "change_type": "added",
+    "app_type": "Google Calendar",
+    "app_id": "ADZ494LHY",
+    "scope": "identify,bot,commands,users.profile:write"
+},
+{
+    "user_id": "U76GA7MFA",
+    "user_name": "hokorobi.hokorobi",
+    "date": "1572785978",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572500688",
+    "change_type": "removed",
+    "service_id": 281161946436,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572500483",
+    "change_type": "disabled",
+    "reason": "user",
+    "service_id": 281161946436,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572500155",
+    "change_type": "updated",
+    "service_id": 803277291490,
+    "service_type": "Hubot",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572500155",
+    "change_type": "updated",
+    "service_id": 803277291490,
+    "service_type": "Hubot",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572500054",
+    "change_type": "added",
+    "service_id": 803277291490,
+    "service_type": "Hubot",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572500026",
+    "change_type": "updated",
+    "service_id": 281161946436,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572500026",
+    "change_type": "updated",
+    "service_id": 281161946436,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572498508",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "IFTTT",
+    "app_id": "A028LGAFF",
+    "scope": "identify,ifttt"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572323181",
+    "change_type": "updated",
+    "rss_feed": true,
+    "rss_feed_change_type": "added",
+    "rss_feed_title": "Recent Commits to vim:master",
+    "rss_feed_url": "https:\/\/github.com\/vim\/vim\/commits\/master.atom",
+    "service_id": 811231012052,
+    "service_type": "RSS",
+    "scope": "commands,incoming-webhook",
+    "channel": "C0NUFLFU3"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572271287",
+    "change_type": "updated",
+    "rss_feed": true,
+    "rss_feed_change_type": "added",
+    "rss_feed_title": "[Vim]の新着質問一覧｜teratail（テラテイル）",
+    "rss_feed_url": "https:\/\/teratail.com\/rss\/feed\/all\/374",
+    "service_id": 811231012052,
+    "service_type": "RSS",
+    "scope": "commands,incoming-webhook",
+    "channel": "CJMV3MSLR"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572271234",
+    "change_type": "updated",
+    "rss_feed": true,
+    "rss_feed_change_type": "added",
+    "rss_feed_title": "vim タグが付けられた最新の質問 - スタック・オーバーフロー",
+    "rss_feed_url": "https:\/\/ja.stackoverflow.com\/feeds\/tag?tagnames=vim&sort=newest",
+    "service_id": 811231012052,
+    "service_type": "RSS",
+    "scope": "commands,incoming-webhook",
+    "channel": "CJMV3MSLR"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1572271209",
+    "change_type": "added",
+    "service_id": 811231012052,
+    "service_type": "RSS",
+    "scope": "commands,incoming-webhook"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1571193390",
+    "change_type": "removed",
+    "app_type": "GitHub",
+    "app_id": "A8GBNUWU8"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1571193001",
+    "change_type": "resource_grant_created",
+    "service_id": 796868239936,
+    "service_type": "App",
+    "scope": null,
+    "channel": "C07CZV6R0",
+    "app_type": "GitHub",
+    "app_id": "A8GBNUWU8"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1571193001",
+    "change_type": "resource_grant_created",
+    "service_id": 796868239936,
+    "service_type": "App",
+    "scope": null,
+    "channel": "private",
+    "app_type": "GitHub",
+    "app_id": "A8GBNUWU8"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1571193000",
+    "change_type": "expanded",
+    "service_id": 796868239936,
+    "service_type": "App",
+    "scope": null,
+    "app_type": "GitHub",
+    "app_id": "A8GBNUWU8"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1571193000",
+    "change_type": "expanded",
+    "service_id": 796868239936,
+    "service_type": "App",
+    "scope": null,
+    "app_type": "GitHub",
+    "app_id": "A8GBNUWU8"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1571193000",
+    "change_type": "resource_grant_created",
+    "service_id": 796868239936,
+    "service_type": "App",
+    "scope": null,
+    "app_type": "GitHub",
+    "app_id": "A8GBNUWU8"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1571193000",
+    "change_type": "added",
+    "app_type": "GitHub",
+    "app_id": "A8GBNUWU8"
+},
+{
+    "user_id": "UAZ33BKV2",
+    "user_name": "tsuyoshi_cho",
+    "date": "1569395483",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "identify,read,post,client,apps"
+},
+{
+    "user_id": "U77U7B85A",
+    "user_name": "daisuzu",
+    "date": "1568248425",
+    "change_type": "added",
+    "app_type": "Google Drive",
+    "app_id": "A6NL8MJ6Q",
+    "scope": "identify,bot,channels:read,files:read,team:read,users:read,users:read.email,chat:write:bot,links:read"
+},
+{
+    "user_id": "U77U7B85A",
+    "user_name": "daisuzu",
+    "date": "1568248419",
+    "change_type": "added",
+    "service_id": 757348425909,
+    "service_type": "Google Drive",
+    "scope": "files:write:user"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1566841501",
+    "change_type": "added",
+    "app_type": "Polly",
+    "app_id": "A04E6JX41",
+    "scope": "identify,bot,commands"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1566228864",
+    "change_type": "removed",
+    "reason": "user_revoked_auth",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "UJ53U1A9Y",
+    "user_name": "cj.bc-sd",
+    "date": "1566191798",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "sclack",
+    "app_id": "AJB7AVB8R",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": "UAZ33BKV2",
+    "user_name": "tsuyoshi_cho",
+    "date": "1566181083",
+    "change_type": "removed",
+    "reason": "user_revoked_auth",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "identify,read,post,client,apps"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1566180849",
+    "change_type": "removed",
+    "reason": "user_revoked_auth",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "UDDCM376D",
+    "user_name": "sho19921005",
+    "date": "1566180391",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "slack-cli",
+    "app_id": "AJTNVHE5B",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1566180348",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "Bitbucket Cloud",
+    "app_id": "A8W8QLZD1",
+    "scope": "identify,bot,commands,channels:read,groups:read,mpim:read,channels:write,groups:write,links:read,links:write"
+},
+{
+    "user_id": "UBRTB4N5C",
+    "user_name": "zn",
+    "date": "1565364292",
+    "change_type": "added",
+    "app_type": "wee-slack",
+    "app_id": "A1HSZ9V8E",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1563793889",
+    "change_type": "removed",
+    "service_id": 690319951763,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1563793844",
+    "change_type": "added",
+    "service_id": 690319951763,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U7ZRBF5LG",
+    "user_name": "ymzk.yamachan",
+    "date": "1562126149",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "wee-slack",
+    "app_id": "A1HSZ9V8E",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1561987403",
+    "change_type": "updated",
+    "service_id": 671494605428,
+    "service_type": "Trello Alerts",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1561987364",
+    "change_type": "updated",
+    "service_id": 671969004944,
+    "service_type": "Trello Alerts",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U7EEZ4LMR",
+    "user_name": "hello",
+    "date": "1561203244",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "Slack for Gmail",
+    "app_id": "AEFLFJR9Q",
+    "scope": "identify,channels:read,groups:read,im:read,mpim:read,team:read,users:read,im:write,emails:write"
+},
+{
+    "user_id": "U7EEZ4LMR",
+    "user_name": "hello",
+    "date": "1561203015",
+    "change_type": "added",
+    "app_type": "Slack for Gmail",
+    "app_id": "AEFLFJR9Q",
+    "scope": "identify,channels:read,groups:read,im:read,mpim:read,team:read,users:read,im:write,emails:write"
+},
+{
+    "user_id": "U7EEZ4LMR",
+    "user_name": "hello",
+    "date": "1561202959",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "Trello",
+    "app_id": "A074YH40Z",
+    "scope": "identify,bot,commands,channels:history,groups:history,im:history,mpim:history,channels:read,emoji:read,groups:read,mpim:read,reminders:read,search:read,stars:read,team:read,users:read,users:read.email,chat:write:user,chat:write:bot,im:write,reminders:write"
+},
+{
+    "user_id": "UJTGZD7V1",
+    "user_name": "niceage6690",
+    "date": "1561162568",
+    "change_type": "added",
+    "service_id": 674913057639,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1561083678",
+    "change_type": "updated",
+    "service_id": 671494605428,
+    "service_type": "Trello Alerts",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1561083659",
+    "change_type": "added",
+    "service_id": 671494605428,
+    "service_type": "Trello Alerts",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1561083608",
+    "change_type": "updated",
+    "service_id": 671969004944,
+    "service_type": "Trello Alerts",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1561083577",
+    "change_type": "added",
+    "service_id": 671969004944,
+    "service_type": "Trello Alerts",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1560907252",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "Vote",
+    "app_id": "A0K2DR88N",
+    "scope": "identify,commands"
+},
+{
+    "user_id": "U7EEZ4LMR",
+    "user_name": "hello",
+    "date": "1560169483",
+    "change_type": "added",
+    "app_type": "Trello",
+    "app_id": "A074YH40Z",
+    "scope": "identify,bot,commands,channels:history,groups:history,im:history,mpim:history,channels:read,emoji:read,groups:read,mpim:read,reminders:read,search:read,stars:read,team:read,users:read,users:read.email,chat:write:user,chat:write:bot,im:write,reminders:write"
+},
+{
+    "user_id": "U7ZRBF5LG",
+    "user_name": "ymzk.yamachan",
+    "date": "1559976778",
+    "change_type": "added",
+    "app_type": "wee-slack",
+    "app_id": "A1HSZ9V8E",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1559015794",
+    "change_type": "added",
+    "app_type": "Polly",
+    "app_id": "A04E6JX41",
+    "scope": "identify,bot,commands"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1559012906",
+    "change_type": "removed",
+    "service_id": 645274175494,
+    "service_type": "Dropbox (Legacy)",
+    "scope": "files:write:user,files:read"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1558949430",
+    "change_type": "removed",
+    "service_id": 262260408818,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1558949423",
+    "change_type": "removed",
+    "service_id": 253978080325,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1558949177",
+    "change_type": "removed",
+    "service_id": 6515662242,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1558949148",
+    "change_type": "removed",
+    "service_id": 234910234656,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1558949130",
+    "change_type": "disabled",
+    "reason": "channel_archive",
+    "service_id": 234910234656,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1558949130",
+    "change_type": "disabled",
+    "reason": "channel_archive",
+    "service_id": 253978080325,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1558949130",
+    "change_type": "disabled",
+    "reason": "channel_archive",
+    "service_id": 262260408818,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1558949129",
+    "change_type": "disabled",
+    "reason": "channel_archive",
+    "service_id": 6515662242,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1558944495",
+    "change_type": "removed",
+    "reason": "user_uninstalled_app",
+    "app_type": "Adobe Creative Cloud",
+    "app_id": "A7P35MCT0",
+    "scope": "identify,bot,chat:write:bot,links:read,links:write"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1558802316",
+    "change_type": "disabled",
+    "reason": "channel_archive",
+    "service_id": 426986115605,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": "UBQ2H65JQ",
+    "user_name": "naru123456789",
+    "date": "1558538128",
+    "change_type": "added",
+    "service_id": 645274175494,
+    "service_type": "Dropbox (Legacy)",
+    "scope": "files:write:user,files:read"
+},
+{
+    "user_id": "UDDCM376D",
+    "user_name": "sho19921005",
+    "date": "1558257089",
+    "change_type": "added",
+    "app_type": "slack-cli",
+    "app_id": "AJTNVHE5B",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1557785935",
+    "change_type": "removed",
+    "reason": "system_inactive_api_tester_token",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1557783860",
+    "change_type": "removed",
+    "reason": "system_inactive_api_tester_token",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "UJ53U1A9Y",
+    "user_name": "cj.bc-sd",
+    "date": "1557318856",
+    "change_type": "added",
+    "app_type": "sclack",
+    "app_id": "AJB7AVB8R",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1553731966",
+    "change_type": "removed",
+    "reason": "system_inactive_api_tester_token",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1553730803",
+    "change_type": "removed",
+    "reason": "system_inactive_api_tester_token",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1553729771",
+    "change_type": "removed",
+    "reason": "system_inactive_api_tester_token",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "UAZ33BKV2",
+    "user_name": "tsuyoshi_cho",
+    "date": "1551533303",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "identify,read,post,client,apps"
+},
+{
+    "user_id": "UAZ33BKV2",
+    "user_name": "tsuyoshi_cho",
+    "date": "1551532899",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "identify,read,post,client,apps"
+},
+{
+    "user_id": "U6XP9LZ6V",
+    "user_name": "k-takata",
+    "date": "1549588532",
+    "change_type": "added",
+    "app_type": "Bitbucket Cloud",
+    "app_id": "A8W8QLZD1",
+    "scope": "identify,bot,commands,channels:read,groups:read,mpim:read,channels:write,groups:write,links:read,links:write"
+},
+{
+    "user_id": "UECSGLW00",
+    "user_name": "astrorobot110",
+    "date": "1547544570",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "UECSGLW00",
+    "user_name": "astrorobot110",
+    "date": "1547544570",
+    "change_type": "removed",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "UECSGLW00",
+    "user_name": "astrorobot110",
+    "date": "1547544570",
+    "change_type": "reissued",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "UECSGLW00",
+    "user_name": "astrorobot110",
+    "date": "1547544564",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "UECSGLW00",
+    "user_name": "astrorobot110",
+    "date": "1547544224",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1540877081",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "UB46QMFEJ",
+    "user_name": "yukpiz",
+    "date": "1539138230",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "UC6N6HERZ",
+    "user_name": "jiroron666",
+    "date": "1538294583",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "UB46QMFEJ",
+    "user_name": "yukpiz",
+    "date": "1536389621",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "U776661HA",
+    "user_name": "lambdalisue",
+    "date": "1536142218",
+    "change_type": "added",
+    "app_type": "Adobe Creative Cloud",
+    "app_id": "A7P35MCT0",
+    "scope": "identify,bot,chat:write:bot,links:read,links:write"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1535697483",
+    "change_type": "added",
+    "service_id": 426986115605,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1535012590",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "U8CC7MDCL",
+    "user_name": "dorastone",
+    "date": "1533288724",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1532256771",
+    "change_type": "removed",
+    "app_type": "MultiTeam for Slack",
+    "app_id": "A0LRGB1FT",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1532256669",
+    "change_type": "removed",
+    "service_id": 245473708386,
+    "service_type": "Twitter",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1532085214",
+    "change_type": "removed",
+    "service_id": 235696335061,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1532084952",
+    "change_type": "removed",
+    "service_id": 21272422482,
+    "service_type": "Bitbucket (Legacy)",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1532084680",
+    "change_type": "removed",
+    "service_id": 6682645300,
+    "service_type": "Twitter",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1532083650",
+    "change_type": "updated",
+    "service_id": 390706522192,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1532083090",
+    "change_type": "removed",
+    "service_id": 401951022435,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1532082592",
+    "change_type": "updated",
+    "service_id": 401951022435,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1532082510",
+    "change_type": "removed",
+    "app_type": "GitLab",
+    "app_id": "A676ADMV5",
+    "scope": "identify,commands"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1532082510",
+    "change_type": "removed",
+    "app_type": "GitLab",
+    "app_id": "A676ADMV5",
+    "scope": "identify,commands"
+},
+{
+    "user_id": "U1MLSLA87",
+    "user_name": "aomoriringo",
+    "date": "1532082393",
+    "change_type": "added",
+    "service_id": 401951022435,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1530526482",
+    "change_type": "added",
+    "service_id": 390706522192,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "UB46QMFEJ",
+    "user_name": "yukpiz",
+    "date": "1528436290",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,identify,post,apps"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1526359652",
+    "change_type": "added",
+    "service_id": 363595418836,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1524815990",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,admin,identify,post,apps"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1524134034",
+    "change_type": "added",
+    "app_type": "Vote",
+    "app_id": "A0K2DR88N",
+    "scope": "identify,commands"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1524134017",
+    "change_type": "removed",
+    "app_type": "Simple Poll",
+    "app_id": "A0HFW7MR6",
+    "scope": "identify,commands,chat:write:bot,reactions:write"
+},
+{
+    "user_id": "U03C4RC8X",
+    "user_name": "u",
+    "date": "1524133879",
+    "change_type": "added",
+    "app_type": "Simple Poll",
+    "app_id": "A0HFW7MR6",
+    "scope": "identify,commands,chat:write:bot,reactions:write"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1520214266",
+    "change_type": "expanded",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,admin,identify,post,apps"
+},
+{
+    "user_id": "U95DHAGR5",
+    "user_name": "ishideo",
+    "date": "1517889559",
+    "change_type": "added",
+    "app_type": "MultiTeam for Slack",
+    "app_id": "A0LRGB1FT",
+    "scope": "read,client,identify,post"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1516354433",
+    "change_type": "removed",
+    "app_type": "Slackcat",
+    "app_id": "A0HLKJ690",
+    "scope": "identify,channels:read,files:read,groups:read,im:read,users:read,chat:write:user,files:write:user,users:read.email"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1516352480",
+    "change_type": "removed",
+    "service_id": 3414860638,
+    "service_type": "Google Drive",
+    "scope": "files:write:user"
+},
+{
+    "user_id": "U06BRP8VD",
+    "user_name": "koron",
+    "date": "1516352202",
+    "change_type": "removed",
+    "app_type": "Hoist",
+    "app_id": "A0AAS2F8Q",
+    "scope": "read,identify,post"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1516081556",
+    "change_type": "updated",
+    "service_id": 6515662242,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512371647",
+    "change_type": "updated",
+    "service_id": 281161946436,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512371647",
+    "change_type": "updated",
+    "service_id": 281161946436,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512370707",
+    "change_type": "added",
+    "service_id": 281161946436,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512369993",
+    "change_type": "disabled",
+    "reason": "server",
+    "service_id": 3414860638,
+    "service_type": "Google Drive",
+    "scope": "files:write:user"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512369263",
+    "change_type": "removed",
+    "service_id": 281257305941,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512369245",
+    "change_type": "added",
+    "service_id": 281257305941,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512368407",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "read,client,admin,identify,post,apps"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1512367995",
+    "change_type": "removed",
+    "service_id": 279095971313,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C90T1L",
+    "user_name": "kamichidu",
+    "date": "1512367982",
+    "change_type": "removed",
+    "service_id": 6363727970,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512367773",
+    "change_type": "removed",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512367623",
+    "change_type": "removed",
+    "service_id": 7987455972,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512367594",
+    "change_type": "removed",
+    "service_id": 6928411907,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C06FMHMM4"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1512031988",
+    "change_type": "removed",
+    "service_id": 3415344557,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1512031570",
+    "change_type": "removed",
+    "service_id": 276827057857,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1512031217",
+    "change_type": "updated",
+    "service_id": 279095971313,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1512031202",
+    "change_type": "updated",
+    "service_id": 279095971313,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1512031155",
+    "change_type": "updated",
+    "service_id": 279095971313,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1512031120",
+    "change_type": "updated",
+    "service_id": 279095971313,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C7RACGNMV"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1512030112",
+    "change_type": "added",
+    "service_id": 279095971313,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1511577240",
+    "change_type": "added",
+    "service_id": 276827057857,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1509440648",
+    "change_type": "enabled",
+    "reason": "user",
+    "service_id": 6515662242,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": 0,
+    "user_name": "slack",
+    "date": "1509431860",
+    "change_type": "disabled",
+    "reason": "errors",
+    "service_id": 6515662242,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1509070493",
+    "change_type": "updated",
+    "service_id": 6515662242,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1509070380",
+    "change_type": "removed",
+    "service_id": 24712166292,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1509070362",
+    "change_type": "removed",
+    "service_id": 21803001090,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1509010119",
+    "change_type": "updated",
+    "service_id": 262260408818,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1509010107",
+    "change_type": "updated",
+    "service_id": 262260408818,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1509009515",
+    "change_type": "updated",
+    "service_id": 6515662242,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C03C4RC97"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1509009092",
+    "change_type": "added",
+    "service_id": 262260408818,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1507611512",
+    "change_type": "updated",
+    "service_id": 253978080325,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1507611458",
+    "change_type": "added",
+    "service_id": 253978080325,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U06BRP8VD",
+    "user_name": "koron",
+    "date": "1507508129",
+    "change_type": "added",
+    "app_type": "GitLab",
+    "app_id": "A676ADMV5",
+    "scope": "identify,commands"
+},
+{
+    "user_id": "U7ESA5TKM",
+    "user_name": "strictsoft",
+    "date": "1507391588",
+    "change_type": "removed",
+    "service_id": 254068809095,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": "U7ESA5TKM",
+    "user_name": "strictsoft",
+    "date": "1507391157",
+    "change_type": "added",
+    "service_id": 254068809095,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": "U7ESA5TKM",
+    "user_name": "strictsoft",
+    "date": "1507390119",
+    "change_type": "updated",
+    "service_id": 234910234656,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U7ESA5TKM",
+    "user_name": "strictsoft",
+    "date": "1507388123",
+    "change_type": "removed",
+    "service_id": 235484657891,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U7ESA5TKM",
+    "user_name": "strictsoft",
+    "date": "1507388077",
+    "change_type": "updated",
+    "service_id": 235484657891,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U77FG03A8",
+    "user_name": "rentaroyoshidumi45923",
+    "date": "1506099587",
+    "change_type": "added",
+    "service_id": 245473708386,
+    "service_type": "Twitter",
+    "scope": "incoming-webhook"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1504912352",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1504414932",
+    "change_type": "updated",
+    "service_id": 234910234656,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1504414896",
+    "change_type": "updated",
+    "service_id": 235484657891,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C6YDBHCCW"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1504413296",
+    "change_type": "updated",
+    "service_id": 235696335061,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1504413296",
+    "change_type": "updated",
+    "service_id": 235696335061,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1504412122",
+    "change_type": "updated",
+    "service_id": 234910234656,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C03C4RC97"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1504411235",
+    "change_type": "updated",
+    "service_id": 234910234656,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C03C4RC97"
+},
+{
+    "user_id": "U03C71D7H",
+    "user_name": "thinca",
+    "date": "1504411218",
+    "change_type": "added",
+    "service_id": 235696335061,
+    "service_type": "Bots",
+    "scope": "bot"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1504411026",
+    "change_type": "updated",
+    "service_id": 234910234656,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C03C4RC97"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1504410994",
+    "change_type": "added",
+    "service_id": 234910234656,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1504410957",
+    "change_type": "updated",
+    "service_id": 235484657891,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C03C4RC97"
+},
+{
+    "user_id": "U6XGESM42",
+    "user_name": "takano32",
+    "date": "1504410914",
+    "change_type": "added",
+    "service_id": 235484657891,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "C03C4RC97"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1501558527",
+    "change_type": "expanded",
+    "app_type": "Slackcat",
+    "app_id": "A0HLKJ690",
+    "scope": "identify,channels:read,files:read,groups:read,im:read,users:read,chat:write:user,files:write:user,users:read.email"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457707352",
+    "change_type": "removed",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457707352",
+    "change_type": "reissued",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457670202",
+    "change_type": "added",
+    "app_type": "Slack API Tester",
+    "app_id": "A02",
+    "scope": "MAX"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457268811",
+    "change_type": "updated",
+    "service_id": 24712166292,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457268767",
+    "change_type": "added",
+    "service_id": 24712166292,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457268722",
+    "change_type": "removed",
+    "service_id": 24715499989,
+    "service_type": "Bitbucket (Legacy)",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457268688",
+    "change_type": "updated",
+    "service_id": 24715499989,
+    "service_type": "Bitbucket (Legacy)",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457268591",
+    "change_type": "added",
+    "service_id": 24715499989,
+    "service_type": "Bitbucket (Legacy)",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1457268112",
+    "change_type": "updated",
+    "service_id": 21272422482,
+    "service_type": "Bitbucket (Legacy)",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U06BRP8VD",
+    "user_name": "koron",
+    "date": "1456357471",
+    "change_type": "added",
+    "app_type": "IFTTT",
+    "app_id": "A028LGAFF",
+    "scope": "identify,ifttt"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1455726988",
+    "change_type": "updated",
+    "service_id": 21803001090,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1455726898",
+    "change_type": "updated",
+    "service_id": 21803001090,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1455726826",
+    "change_type": "added",
+    "service_id": 21803001090,
+    "service_type": "Incoming WebHooks",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1455372016",
+    "change_type": "added",
+    "service_id": 21272422482,
+    "service_type": "Bitbucket (Legacy)",
+    "scope": "incoming-webhook",
+    "channel": "private"
+},
+{
+    "user_id": "U03C6TEAZ",
+    "user_name": "mattn",
+    "date": "1452437160",
+    "change_type": "added",
+    "app_type": "Slackcat",
+    "app_id": "A0HLKJ690",
+    "scope": "identify,channels:read,files:read,groups:read,im:read,users:read,chat:write:user,files:write:user,users:read.email"
+},
+{
+    "user_id": "U06BRP8VD",
+    "user_name": "koron",
+    "date": "1452333640",
+    "change_type": "removed",
+    "service_id": 18101664149,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C06FMHMM4"
+},
+{
+    "user_id": "U06BRP8VD",
+    "user_name": "koron",
+    "date": "1452332685",
+    "change_type": "updated",
+    "service_id": 18101664149,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history",
+    "channel": "C06FMHMM4"
+},
+{
+    "user_id": "U06BRP8VD",
+    "user_name": "koron",
+    "date": "1452332644",
+    "change_type": "added",
+    "service_id": 18101664149,
+    "service_type": "Outgoing WebHooks",
+    "scope": "channels:history"
+},
+{
+    "user_id": "U06BRP8VD",
+    "user_name": "koron",
+    "date": "1452332588",
+    "change_type": "added",
+    "app_type": "Hoist",
+    "app_id": "A0AAS2F8Q",
+    "scope": "read,identify,post"
+}
+]

@@ -1,0 +1,1332 @@
+[
+    {
+        "client_msg_id": "8d234c3e-4ca2-4a10-9521-2fda0d65ac96",
+        "type": "message",
+        "text": "すいません、vimscript中でタブ幅考慮した見た目の文字数分ごとにテキスト切り取る方法探してるんですけどどうやったらいいですかね？",
+        "user": "UECSGLW00",
+        "ts": "1585824912.120000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "39F",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すいません、vimscript中でタブ幅考慮した見た目の文字数分ごとにテキスト切り取る方法探してるんですけどどうやったらいいですかね？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e2be2ecc-d2ca-4ea7-94ee-a4c475a73a0f",
+        "type": "message",
+        "text": ":h strdisplaywidth()",
+        "user": "U03C71D7H",
+        "ts": "1585824981.120400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "S5Dnr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":h strdisplaywidth()"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "bot_id": "BPM858KEE",
+        "type": "message",
+        "text": "```\nstrdisplaywidth({expr} [, {col}])                       *strdisplaywidth()*\n                結果は数値で、文字列 {expr} が {col} (最初の桁はゼロ)で始まる\n                時のスクリーン上での表示セル幅を返す。\n                {col} が省略されたときはゼロが使われる。{col} には計算を開始す\n                るスクリーン上の列の位置を指定する。これはタブ文字の幅の計算に\n                影響する。\n                計算にはカレントウィンドウのオプションが使用される。'tabstop'\n                や 'display' のような表示を変更するようなオプションが影響す\n                る。\n                {expr} に幅が曖昧 (Ambiguous) な東アジアの文字が含まれていると\n                きは、文字幅は 'ambiwidth' の設定に依存する。\n                |strlen()|, |strwidth()|, |strchars()| も参照。\n \n                |method| としても使用できる:  \n                        GetText()-&gt;strdisplaywidth()\n```",
+        "user": "UPZHKAM7W",
+        "ts": "1585824982.120500",
+        "team": "T03C4RC8V",
+        "bot_profile": {
+            "id": "BPM858KEE",
+            "deleted": false,
+            "name": "hubot",
+            "updated": 1572500054,
+            "app_id": "A0F7XDU93",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/hubot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/hubot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/hubot_72.png"
+            },
+            "team_id": "T03C4RC8V"
+        }
+    },
+    {
+        "client_msg_id": "d64f1466-0979-4828-bbee-fa0d7282b797",
+        "type": "message",
+        "text": "カレントバッファ\/ウィンドウのオプションの値が影響を及ぼす関数、Vim script に結構あるけどやめてほしい…",
+        "user": "U03C71D7H",
+        "ts": "1585825040.121200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gUkQb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "カレントバッファ\/ウィンドウのオプションの値が影響を及ぼす関数、Vim script に結構あるけどやめてほしい…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "98e4671f-f559-45da-99c1-d6ca3758ee9e",
+        "type": "message",
+        "text": "まーでも用途的にしゃーない感はある…\nそれこそ <#CGABGC8LA|golang> で言ってた DI の話じゃないけど、&amp;tabstop, &amp;ambiwidth とかを引数で受け付けるようにするとか",
+        "user": "U0M7GCBPD",
+        "ts": "1585825109.122500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dBXM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まーでも用途的にしゃーない感はある…\nそれこそ "
+                            },
+                            {
+                                "type": "channel",
+                                "channel_id": "CGABGC8LA"
+                            },
+                            {
+                                "type": "text",
+                                "text": " で言ってた DI の話じゃないけど、&tabstop, &ambiwidth とかを引数で受け付けるようにするとか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e0848e97-d3de-4041-a1ee-cee0b53a5f04",
+        "type": "message",
+        "text": "getbufvarやgetwinvarみたいに差し込めるようにしてほしさある",
+        "user": "U9S4G0LJW",
+        "ts": "1585825114.122600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZRzt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "getbufvarやgetwinvarみたいに差し込めるようにしてほしさある"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "80f27109-a0ff-4a8c-a2a1-2e6fd91380d7",
+        "type": "message",
+        "text": "これ使って、次の範囲、また次の範囲...って切り出したいんですけど、strdisplaywidth()と実際の長さの差をどうやったらいいだろう...ってなってて",
+        "user": "UECSGLW00",
+        "ts": "1585825263.124800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "K\/g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ使って、次の範囲、また次の範囲...って切り出したいんですけど、strdisplaywidth()と実際の長さの差をどうやったらいいだろう...ってなってて"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2b90ab69-ce1f-4146-854d-5e4abd58b9d7",
+        "type": "message",
+        "text": "ループ回して地道に調整するしかないんですかね",
+        "user": "UECSGLW00",
+        "ts": "1585825293.125500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RGF1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ループ回して地道に調整するしかないんですかね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "42a089a9-f4ef-4eca-a355-1e2b1fc7ce8b",
+        "type": "message",
+        "text": "長さってstrlenで拾えるやつとstrcharsで拾えるやつもありますが、そういうことではなく？",
+        "user": "U9S4G0LJW",
+        "ts": "1585825352.126500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5ms",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "長さってstrlenで拾えるやつとstrcharsで拾えるやつもありますが、そういうことではなく？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "31efc351-364c-4035-b766-733f4b8d0de7",
+        "type": "message",
+        "text": "表示されてる長さごとに切り出したいという話かな、だとしたらループ回すしかなさそう",
+        "user": "U9S4G0LJW",
+        "ts": "1585825423.127400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+Ob",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "表示されてる長さごとに切り出したいという話かな、だとしたらループ回すしかなさそう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "06ab690a-1908-46cb-9cfe-f28217f86104",
+        "type": "message",
+        "text": "それですね＞表示されてる長さ",
+        "user": "UECSGLW00",
+        "ts": "1585825443.127800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jCi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それですね＞表示されてる長さ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "96e94376-587f-487d-9660-d01a597b76cb",
+        "type": "message",
+        "text": "1. 文字列を１文字単位で区切ります `split(str, '\\zs')`\n2. 各文字の幅を取ります `map(chars, '[v:val, strdisplaywidth(v:val)]')`\n3. 目的の長さ未満になるところを探してそこまでをくっつけていきます",
+        "user": "U03C71D7H",
+        "ts": "1585825583.129900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RjXeK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "1. 文字列を１文字単位で区切ります "
+                            },
+                            {
+                                "type": "text",
+                                "text": "split(str, '\\zs')",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n2. 各文字の幅を取ります "
+                            },
+                            {
+                                "type": "text",
+                                "text": "map(chars, '[v:val, strdisplaywidth(v:val)]')",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n3. 目的の長さ未満になるところを探してそこまでをくっつけていきます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            },
+            {
+                "name": "ultrafastparrot",
+                "users": [
+                    "UECSGLW00"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "261e16a0-3794-48ee-b63a-572584155461",
+        "type": "message",
+        "text": "そのようにしてあれやこれやとがんばったのがこちらになります\n<https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/autoload\/vital\/__vital__\/Data\/String.vim#L357-L415>",
+        "user": "U03C71D7H",
+        "ts": "1585825694.130400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "vim-jp\/vital.vim",
+                "title_link": "https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/autoload\/vital\/__vital__\/Data\/String.vim#L357-L415",
+                "text": "A comprehensive Vim utility functions for Vim plugins - vim-jp\/vital.vim",
+                "fallback": "GitHub: vim-jp\/vital.vim",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/1051958?s=400&v=4",
+                "from_url": "https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/autoload\/vital\/__vital__\/Data\/String.vim#L357-L415",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/autoload\/vital\/__vital__\/Data\/String.vim#L357-L415"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kTr5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そのようにしてあれやこれやとがんばったのがこちらになります\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/autoload\/vital\/__vital__\/Data\/String.vim#L357-L415"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a2780c7a-3940-4e14-8918-89c23dbbc2b0",
+        "type": "message",
+        "text": "つまり vital.vim を入れれば解決",
+        "user": "U03C71D7H",
+        "ts": "1585825704.130800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ENI9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "つまり vital.vim を入れれば解決"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e63a8809-316d-436c-8131-f7dc84af7f96",
+        "type": "message",
+        "text": ":goodpoem:",
+        "user": "U9S4G0LJW",
+        "ts": "1585825718.131100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0AP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "goodpoem"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "38019465-ad98-4aeb-8c3e-d17ef25334e8",
+        "type": "message",
+        "text": "3分クッキング",
+        "user": "U0M7GCBPD",
+        "ts": "1585825767.132500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hfV",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "3分クッキング"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "81665957-1986-4d00-8464-5d6d37f7080b",
+        "type": "message",
+        "text": "ドキュメントはこちら <https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/doc\/vital\/Data\/String.txt#L228-L268>",
+        "user": "U03C71D7H",
+        "ts": "1585825786.133300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "vim-jp\/vital.vim",
+                "title_link": "https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/doc\/vital\/Data\/String.txt#L228-L268",
+                "text": "A comprehensive Vim utility functions for Vim plugins - vim-jp\/vital.vim",
+                "fallback": "GitHub: vim-jp\/vital.vim",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/1051958?s=400&v=4",
+                "from_url": "https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/doc\/vital\/Data\/String.txt#L228-L268",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/doc\/vital\/Data\/String.txt#L228-L268"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Uul",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ドキュメントはこちら "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/vital.vim\/blob\/master\/doc\/vital\/Data\/String.txt#L228-L268"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2588e007-6b8f-4ae1-abf3-6b28109843fd",
+        "type": "message",
+        "text": "見た目 n 桁目のバイト位置を二分探索で探す関数を昔書いた気がする",
+        "user": "U9GUS1S0G",
+        "ts": "1585825788.133500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "2102b9fe65a8",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-17\/331536821795_2102b9fe65a8287cf20b_72.jpg",
+            "first_name": "Masaaki",
+            "real_name": "Masaaki Nakamura",
+            "display_name": "machakann",
+            "team": "T03C4RC8V",
+            "name": "mckn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "k3bfP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "見た目 n 桁目のバイト位置を二分探索で探す関数を昔書いた気がする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "de6b2a09-93fd-4369-8322-e944870aa956",
+        "type": "message",
+        "text": "この話の結果、tyruさんがカラースキーム関係の関数突っ込んだんならわざわざカラースキームいじるプラグインの為の作業を進める必要が揺らいでいます…",
+        "user": "UECSGLW00",
+        "ts": "1585825822.134200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Db5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "この話の結果、tyruさんがカラースキーム関係の関数突っ込んだんならわざわざカラースキームいじるプラグインの為の作業を進める必要が揺らいでいます…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3c18d373-9764-464a-8fa3-0bbcb5d97e5a",
+        "type": "message",
+        "text": "すみませんすみません",
+        "user": "U0M7GCBPD",
+        "ts": "1585825883.134600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/xp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すみませんすみません"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a952bad9-386a-42d7-ac36-eda673fdedc9",
+        "type": "message",
+        "text": "みんなで協力すると早くできる",
+        "user": "U03C71D7H",
+        "ts": "1585825884.134700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wqr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "みんなで協力すると早くできる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "77ff35b3-3c11-4eb7-8912-c066c431dd27",
+        "type": "message",
+        "text": "いやなんか、こっちはこっちで暇つぶしとして始めてしまったんで文句もへったくれもないんですけど",
+        "user": "UECSGLW00",
+        "ts": "1585825915.135500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FHJ+k",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いやなんか、こっちはこっちで暇つぶしとして始めてしまったんで文句もへったくれもないんですけど"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "56c9a469-ae68-4c87-8ece-16d2666209f8",
+        "type": "message",
+        "text": "必要かどうかはともかくとして作るとVim scriptちからが上がります",
+        "user": "U9S4G0LJW",
+        "ts": "1585825920.135700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U9S4G0LJW",
+            "ts": "1585826144.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VMg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "必要かどうかはともかくとして作るとVim scriptちからが上がります"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U0M7GCBPD",
+                    "UECSGLW00"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f8c45a9d-b2ca-4468-8a2c-211915a310bd",
+        "type": "message",
+        "text": "とりあえずctermの色に対する知見はめちゃめちゃ理解しまして...",
+        "user": "UECSGLW00",
+        "ts": "1585825971.136600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YDY6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とりあえずctermの色に対する知見はめちゃめちゃ理解しまして..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1904f180-126b-4831-9386-ced82fe253ee",
+        "type": "message",
+        "text": "スクリプト内でのハイライトのコマンドの記述が想定すればするほどまとまらなくてつらい",
+        "user": "UECSGLW00",
+        "ts": "1585826043.137800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jdC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "スクリプト内でのハイライトのコマンドの記述が想定すればするほどまとまらなくてつらい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8a9faa98-b164-4112-924b-5397ad336b6d",
+        "type": "message",
+        "text": "風呂入ったらほんきだす",
+        "user": "U0M7GCBPD",
+        "ts": "1585826053.138100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UXp8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "風呂入ったらほんきだす"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "201acaf9-ffc0-4090-bde3-3ec773570b5c",
+        "type": "message",
+        "text": "いや昨日ほとんど寝てないんだった…",
+        "user": "U0M7GCBPD",
+        "ts": "1585826427.138600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Eqk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いや昨日ほとんど寝てないんだった…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4ca36676-1bd9-411d-a787-d32b71aee684",
+        "type": "message",
+        "text": "ぼんやりしながらいい方法考えてます",
+        "user": "UECSGLW00",
+        "ts": "1585826473.139200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "feeffd2d6185",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-11-28\/491043224518_feeffd2d618583c3ba1b_72.jpg",
+            "first_name": "",
+            "real_name": "Yusuke Itoh",
+            "display_name": "Nicholas",
+            "team": "T03C4RC8V",
+            "name": "astrorobot110",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Abwk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ぼんやりしながらいい方法考えてます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585831286.141200",
+        "user": "U011154KRTK",
+        "text": "<@U011154KRTK> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585833375.141500",
+        "user": "U010XRKHXKL",
+        "text": "<@U010XRKHXKL> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/teratail.com\/questions\/250989?rss=all|mac側でコピーした内容をtmuxでペーストする方法>\n<https:\/\/www.noobs.tokyo\/entry\/2018\/09\/05\/123711>\n↑のサイトを参考にして、macとtmuxのクリップボードを共有化を試みたのですが  \ntmux =&gt; mac　についてはクリップボードを共有できているのですが\nmac =&gt; tmux の時に、クリップボードを共有することができません。  \nなにか解決方法はありませんでしょうか？  \ntmux 3.0a\nMacOS 10.15.4\n\n<https:\/\/teratail.com\/questions\/250989?rss=all|続きを見る>",
+        "ts": "1585837883.141700",
+        "username": "[Vim]の新着質問一覧｜teratail（テラテイル）",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/814941997319_48.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "teratail[テラテイル]",
+                "title": "mac側でコピーした内容をtmuxでペーストする方法｜teratail",
+                "title_link": "https:\/\/teratail.com\/questions\/250989?rss=all",
+                "text": "<https:\/\/www.noobs.tokyo\/entry\/2018\/09\/05\/123711↑のサイトを参考にして、macとtmuxのクリップボードを共有化を試みたのですが> tmux =&gt; mac についてはクリップボードを共有できているのですがmac =&amp;g",
+                "fallback": "teratail[テラテイル]: mac側でコピーした内容をtmuxでペーストする方法｜teratail",
+                "thumb_url": "https:\/\/teratail.com\/img\/imgFacebookShare.png",
+                "from_url": "https:\/\/teratail.com\/questions\/250989?rss=all",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/teratail.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/teratail.com\/questions\/250989?rss=all"
+            },
+            {
+                "service_name": "ばーろぐわにる",
+                "title": "tmuxでクリップボードにコピーする（tmux 2.6以降） - ばーろぐわにる",
+                "title_link": "https:\/\/www.noobs.tokyo\/entry\/2018\/09\/05\/123711",
+                "text": "概要 tmuxでコピーした内容をクリップボードにコピーする方法について 何百番煎じかはわからないが、使ってるバージョンだと上手く動かないことがあったので書く 環境 macOS 10.13.6 tmux 2.7 設定 tmux-MacOSX-pasteboard使ってなんとかしようとしてたけど、tmux 2.6以上だと普通に設定できた もともとpbcopyがmac osのtmuxだと上手く動かないのが問題とのこと <http:\/\/github.com|github.com> tmux.confに以下を追記する bind-key -T copy-mode-vi v send -X begin-selection bind-key -T …",
+                "fallback": "ばーろぐわにる: tmuxでクリップボードにコピーする（tmux 2.6以降） - ばーろぐわにる",
+                "image_url": "https:\/\/ogimage.blog.st-hatena.com\/10257846132607482205\/10257846132620897624\/1536118631",
+                "ts": 1536118631,
+                "from_url": "https:\/\/www.noobs.tokyo\/entry\/2018\/09\/05\/123711",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 119106,
+                "service_icon": "https:\/\/cdn.blog.st-hatena.com\/images\/touch-icon-iphone-retina.png",
+                "id": 2,
+                "original_url": "https:\/\/www.noobs.tokyo\/entry\/2018\/09\/05\/123711"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585837884.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585839619.142000",
+        "user": "U010ZF2V2TV",
+        "text": "<@U010ZF2V2TV> has joined the channel"
+    },
+    {
+        "client_msg_id": "b27013b4-50dc-4dda-8822-27c94944ee89",
+        "type": "message",
+        "text": "一瞬騙されそうになったけど Vim 関係ないな?",
+        "user": "U03C71D7H",
+        "ts": "1585840106.142400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Lo9H",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "一瞬騙されそうになったけど Vim 関係ないな?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d7d3bc7d-b201-4bfb-bd29-324e07927aa9",
+        "type": "message",
+        "text": "回答しようとしたけど、意図よくわからんってなってやめた",
+        "user": "UDDCM376D",
+        "ts": "1585840372.142700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UDDCM376D",
+            "ts": "1585840387.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lnH92",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "回答しようとしたけど、意図よくわからんってなってやめた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585842418.143000",
+        "user": "U010YDLEJHY",
+        "text": "<@U010YDLEJHY> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585846838.143300",
+        "user": "U011CJ0NPUG",
+        "text": "<@U011CJ0NPUG> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585865368.143600",
+        "user": "U011B7F51EY",
+        "text": "<@U011B7F51EY> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585876706.143900",
+        "user": "U011BRFKLMC",
+        "text": "<@U011BRFKLMC> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585879067.144200",
+        "user": "U011ED2JQM6",
+        "text": "<@U011ED2JQM6> has joined the channel"
+    }
+]

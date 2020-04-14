@@ -1,0 +1,853 @@
+[
+    {
+        "client_msg_id": "5fb1e387-3e31-40b3-ad56-43c20d076e48",
+        "type": "message",
+        "text": "前提: rust で書いた CLI アプリケーションのバージョンを git タグから取得したい\n質問: どうすればよいでしょう？\n\n1. `git_version` みたいなの使ってビルド時に解決し CLI ではそれを使う（`Cargo.toml` の `version` は `0.1.0` とかで固定）\n2. 何かしらのすごい方法で `Cargo.toml` の `version` と Git のタグを同期して `CARGO_PKG_VERSION` とかを CLI で返す\n3. もっと良い方法",
+        "user": "U776661HA",
+        "ts": "1585012930.069800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HPj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "前提: rust で書いた CLI アプリケーションのバージョンを git タグから取得したい\n質問: どうすればよいでしょう？\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_list",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "git_version",
+                                        "style": {
+                                            "code": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " みたいなの使ってビルド時に解決し CLI ではそれを使う（"
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Cargo.toml",
+                                        "style": {
+                                            "code": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " の "
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "version",
+                                        "style": {
+                                            "code": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " は "
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "0.1.0",
+                                        "style": {
+                                            "code": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " とかで固定）"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "何かしらのすごい方法で "
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "Cargo.toml",
+                                        "style": {
+                                            "code": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " の "
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "version",
+                                        "style": {
+                                            "code": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " と Git のタグを同期して "
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": "CARGO_PKG_VERSION",
+                                        "style": {
+                                            "code": true
+                                        }
+                                    },
+                                    {
+                                        "type": "text",
+                                        "text": " とかを CLI で返す"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "もっと良い方法"
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "ordered",
+                        "indent": 0
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "325004ea-b39e-4db6-a81d-0e0014209100",
+        "type": "message",
+        "text": "あー別に rust は Cargo 必須というわけではないから `Cargo.toml` の `version` とアプリケーションのバージョンは別か... ってことは 1. が最適解かなぁ....?",
+        "user": "U776661HA",
+        "ts": "1585013114.070900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KSYh1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー別に rust は Cargo 必須というわけではないから "
+                            },
+                            {
+                                "type": "text",
+                                "text": "Cargo.toml",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の "
+                            },
+                            {
+                                "type": "text",
+                                "text": "version",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とアプリケーションのバージョンは別か... ってことは 1. が最適解かなぁ....?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "705a3b79-d4d0-4dfc-8f5c-361810007ce7",
+        "type": "message",
+        "text": "<https:\/\/www.reddit.com\/r\/rust\/comments\/aa95c5\/cargo_package_version_from_git_tag\/>",
+        "user": "U776661HA",
+        "ts": "1585013242.071100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "reddit",
+                "title": "Cargo package version from git tag",
+                "title_link": "https:\/\/www.reddit.com\/r\/rust\/comments\/aa95c5\/cargo_package_version_from_git_tag\/",
+                "text": "Is there a way to define the package version as a git tag instead of in the Cargo.toml?",
+                "fallback": "reddit: Cargo package version from git tag",
+                "thumb_url": "https:\/\/www.redditstatic.com\/new-icon.png",
+                "from_url": "https:\/\/www.reddit.com\/r\/rust\/comments\/aa95c5\/cargo_package_version_from_git_tag\/",
+                "thumb_width": 256,
+                "thumb_height": 256,
+                "service_icon": "http:\/\/www.redditstatic.com\/desktop2x\/img\/favicon\/apple-icon-57x57.png",
+                "id": 1,
+                "original_url": "https:\/\/www.reddit.com\/r\/rust\/comments\/aa95c5\/cargo_package_version_from_git_tag\/"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "myOGd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/www.reddit.com\/r\/rust\/comments\/aa95c5\/cargo_package_version_from_git_tag\/"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5928e0ba-4bc1-4f3e-9022-e38701bab407",
+        "type": "message",
+        "text": "alacrittyはこうやってました\n<https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/build.rs#L29|https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/build.rs#L29>",
+        "user": "UEB17JJJE",
+        "ts": "1585013301.071800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g83c988365a0",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c83c988365a0fabc4c83cdb600268d59.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-72.png",
+            "first_name": "",
+            "real_name": "Hirokazu Hata",
+            "display_name": "h-michael",
+            "team": "T03C4RC8V",
+            "name": "h.hata.ai.t",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "alacritty\/alacritty",
+                "title_link": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/build.rs#L29",
+                "text": "A cross-platform, GPU-accelerated terminal emulator - alacritty\/alacritty",
+                "fallback": "GitHub: alacritty\/alacritty",
+                "from_url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/build.rs#L29",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/51980455\/c6857780-448b-11ea-95ed-00fdbc59eb0b",
+                "thumb_width": 500,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/build.rs#L29"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bMhP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "alacrittyはこうやってました\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/build.rs#L29",
+                                "text": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/build.rs#L29"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a2f12031-b59d-463a-9aec-8530e0dcbe8d",
+        "type": "message",
+        "text": "<https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/src\/cli.rs#L76>",
+        "user": "U776661HA",
+        "ts": "1585013403.072100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "alacritty\/alacritty",
+                "title_link": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/src\/cli.rs#L76",
+                "text": "A cross-platform, GPU-accelerated terminal emulator - alacritty\/alacritty",
+                "fallback": "GitHub: alacritty\/alacritty",
+                "from_url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/src\/cli.rs#L76",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/51980455\/c6857780-448b-11ea-95ed-00fdbc59eb0b",
+                "thumb_width": 500,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/src\/cli.rs#L76"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wBBk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/src\/cli.rs#L76"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d918041f-2562-45f4-b399-7bd2cd403c6b",
+        "type": "message",
+        "text": "なるほど...",
+        "user": "U776661HA",
+        "ts": "1585013408.072400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NKQvJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "eb5b6c0c-3fc3-40e3-ae83-65f1556bed2b",
+        "type": "message",
+        "text": "<https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/Cargo.toml#L3>",
+        "user": "U776661HA",
+        "ts": "1585013424.072600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "alacritty\/alacritty",
+                "title_link": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/Cargo.toml#L3",
+                "text": "A cross-platform, GPU-accelerated terminal emulator - alacritty\/alacritty",
+                "fallback": "GitHub: alacritty\/alacritty",
+                "from_url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/Cargo.toml#L3",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/51980455\/c6857780-448b-11ea-95ed-00fdbc59eb0b",
+                "thumb_width": 500,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/Cargo.toml#L3"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "t7L",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/alacritty\/alacritty\/blob\/4000ec04d89b9bd77995960d2a9da8fcad55e003\/alacritty\/Cargo.toml#L3"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "84177474-8e42-4579-913c-7e63c4a6074d",
+        "type": "message",
+        "text": "`Cargo.toml` の `version` を手動管理した上で `GIT_HASH` があれば、そちらも表示する　的な運用ですね",
+        "user": "U776661HA",
+        "ts": "1585013497.073300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ogpNG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Cargo.toml",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の "
+                            },
+                            {
+                                "type": "text",
+                                "text": "version",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を手動管理した上で "
+                            },
+                            {
+                                "type": "text",
+                                "text": "GIT_HASH",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " があれば、そちらも表示する　的な運用ですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "239f00b7-6fda-4824-bc6c-1173db52c492",
+        "type": "message",
+        "text": "<https:\/\/github.com\/alacritty\/alacritty\/commit\/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e>\n\nできれば \"Bump version\" 的なコミットをしたくないw",
+        "user": "U776661HA",
+        "ts": "1585013527.073700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Bump version to 0.4.1 · alacritty\/alacritty@4d9253b",
+                "title_link": "https:\/\/github.com\/alacritty\/alacritty\/commit\/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e",
+                "text": "A cross-platform, GPU-accelerated terminal emulator - alacritty\/alacritty",
+                "fallback": "GitHub: Bump version to 0.4.1 · alacritty\/alacritty@4d9253b",
+                "from_url": "https:\/\/github.com\/alacritty\/alacritty\/commit\/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/8886672?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/alacritty\/alacritty\/commit\/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8ncy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/alacritty\/alacritty\/commit\/4d9253bb8d6ca6044742ef874e8ff554f4e3b45e"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nできれば \"Bump version\" 的なコミットをしたくないw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d5d17286-c185-422f-9f3e-34287b73ef4d",
+        "type": "message",
+        "text": "crates.ioの登録があるから仕方ないですかねー",
+        "user": "UEB17JJJE",
+        "ts": "1585013592.074700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g83c988365a0",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c83c988365a0fabc4c83cdb600268d59.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-72.png",
+            "first_name": "",
+            "real_name": "Hirokazu Hata",
+            "display_name": "h-michael",
+            "team": "T03C4RC8V",
+            "name": "h.hata.ai.t",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "B3hy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "crates.ioの登録があるから仕方ないですかねー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "687fd633-45ab-456e-9c82-f02421a51456",
+        "type": "message",
+        "text": "cargo release みたいなコマンドでラップするしかないか...",
+        "user": "U776661HA",
+        "ts": "1585013629.075000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iG0W",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cargo release みたいなコマンドでラップするしかないか..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c3107ff2-7db2-4665-925c-6cd81bd56361",
+        "type": "message",
+        "text": "やはり CLI のバージョンは Cargo パッケージのバージョンとは異なる、という立ち位置で考えるのが良さそうですね",
+        "user": "U776661HA",
+        "ts": "1585013707.075800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8tpP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "やはり CLI のバージョンは Cargo パッケージのバージョンとは異なる、という立ち位置で考えるのが良さそうですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f90cbf1f-f1c9-4881-ac47-058e915de00b",
+        "type": "message",
+        "text": "<http:\/\/crates.io|crates.io> に登録するわけではないし..",
+        "user": "U776661HA",
+        "ts": "1585013724.076100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zSQWx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "http:\/\/crates.io",
+                                "text": "crates.io"
+                            },
+                            {
+                                "type": "text",
+                                "text": " に登録するわけではないし.."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a18e5ed5-eaf0-490d-ace5-c3e22910782e",
+        "type": "message",
+        "text": "ひとまず `Cargo.toml` の `version` は `0.1.0` とかに固定して、別枠で <https:\/\/docs.rs\/git-version\/0.3.4\/git_version\/> とか使ってアプリケーションバージョンを定義することにしました :bow:",
+        "user": "U776661HA",
+        "ts": "1585014117.077400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "git_version - Rust",
+                "title_link": "https:\/\/docs.rs\/git-version\/0.3.4\/git_version\/",
+                "text": "API documentation for the Rust `git_version` crate.",
+                "fallback": "git_version - Rust",
+                "from_url": "https:\/\/docs.rs\/git-version\/0.3.4\/git_version\/",
+                "service_icon": "https:\/\/docs.rs\/favicon-20200108-1.42.0-nightly-caa231d99.ico",
+                "service_name": "docs.rs",
+                "id": 1,
+                "original_url": "https:\/\/docs.rs\/git-version\/0.3.4\/git_version\/"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vG9RB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ひとまず "
+                            },
+                            {
+                                "type": "text",
+                                "text": "Cargo.toml",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の "
+                            },
+                            {
+                                "type": "text",
+                                "text": "version",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " は "
+                            },
+                            {
+                                "type": "text",
+                                "text": "0.1.0",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とかに固定して、別枠で "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/docs.rs\/git-version\/0.3.4\/git_version\/"
+                            },
+                            {
+                                "type": "text",
+                                "text": " とか使ってアプリケーションバージョンを定義することにしました "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "bow"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

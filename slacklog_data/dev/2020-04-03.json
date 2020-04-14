@@ -1,0 +1,215 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585900624.083300",
+        "user": "U011AKJN7PZ",
+        "text": "<@U011AKJN7PZ> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585908423.083700",
+        "user": "UMRAUJY22",
+        "text": "<@UMRAUJY22> has joined the channel"
+    },
+    {
+        "client_msg_id": "5c556227-0630-431b-8521-eb5c14697527",
+        "type": "message",
+        "text": "<http:\/\/Haiku用のgui_haiku.cc|xn--haikugui_haiku-zi4mx491g.cc>、コード壊れててコンパイル通らないのはひどい",
+        "user": "U7986PPFH",
+        "ts": "1585971578.085200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ga214f7e9007",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5a214f7e90077a38c1ba15d011599e71.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "ichizok",
+            "display_name": "ichizok",
+            "team": "T03C4RC8V",
+            "name": "gclient.gaap",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hTEK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Haiku用のgui_haiku.cc、コード壊れててコンパイル通らないのはひどい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3d80b442-410d-401b-b9c5-a5d8a6a611a6",
+        "type": "message",
+        "text": "前試してコンパイル通らなかった時おま環だと思ってたけどそもそも壊れてるのか",
+        "user": "U9S4G0LJW",
+        "ts": "1585971981.086400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "51P9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "前試してコンパイル通らなかった時おま環だと思ってたけどそもそも壊れてるのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a39ee526-3202-4628-a3e8-6f7ca9141963",
+        "type": "message",
+        "text": "3566行目でコメントが閉じられてないので",
+        "user": "U7986PPFH",
+        "ts": "1585972060.087000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ga214f7e9007",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5a214f7e90077a38c1ba15d011599e71.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "ichizok",
+            "display_name": "ichizok",
+            "team": "T03C4RC8V",
+            "name": "gclient.gaap",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8cH3g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "3566行目でコメントが閉じられてないので"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5b94a3ec-696d-4820-b630-ded5bc1f797c",
+        "type": "message",
+        "text": ":totemoturai:",
+        "user": "U9S4G0LJW",
+        "ts": "1585972130.087200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kAo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "totemoturai"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "848076fe-7c5b-4717-a19f-8ad458cb5ae2",
+        "type": "message",
+        "text": "ヘルプ翻訳したけど、まるで偽典を翻訳した人みたいな気分になってしまうw...しかしひどいw",
+        "user": "UAZ33BKV2",
+        "ts": "1585972344.088000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SHc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ヘルプ翻訳したけど、まるで偽典を翻訳した人みたいな気分になってしまうw...しかしひどいw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

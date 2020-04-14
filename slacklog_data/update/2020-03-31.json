@@ -1,0 +1,68 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/bd5da371aafe5a2207065643502f4d1ff6b286c7|patch 8.2.0487: Vim9: compiling not sufficiently tested>\npatch 8.2.0487: Vim9: compiling not sufficiently tested\n\nProblem:    Vim9: compiling not sufficiently tested.\nSolution:   Add more tests.  Fix bug with PCALL.",
+        "ts": "1585690103.009000",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0487: Vim9: compiling not sufficiently tested · vim\/vim@bd5da37",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/bd5da371aafe5a2207065643502f4d1ff6b286c7",
+                "text": "Problem: Vim9: compiling not sufficiently tested. Solution: Add more tests. Fix bug with PCALL.",
+                "fallback": "GitHub: patch 8.2.0487: Vim9: compiling not sufficiently tested · vim\/vim@bd5da37",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/bd5da371aafe5a2207065643502f4d1ff6b286c7",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/bd5da371aafe5a2207065643502f4d1ff6b286c7"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585690105.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/05afceeddc4afbbca60e4e6a729a50d33d4b19f7|patch 8.2.0488: Vim9: compiling can break when using a lambda inside …>\npatch 8.2.0488: Vim9: compiling can break when using a lambda inside :def\n\nProblem:    Vim9: Compiling can break when using a lambda inside :def.\nSolution:   Do not keep a pointer to the dfunc_T for longer time.",
+        "ts": "1585691302.009200",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0488: Vim9: compiling can break when using a lambda inside … · vim\/vim@05afcee",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/05afceeddc4afbbca60e4e6a729a50d33d4b19f7",
+                "text": "…:def Problem: Vim9: Compiling can break when using a lambda inside :def. Solution: Do not keep a pointer to the dfunc_T for longer time.",
+                "fallback": "GitHub: patch 8.2.0488: Vim9: compiling can break when using a lambda inside … · vim\/vim@05afcee",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/05afceeddc4afbbca60e4e6a729a50d33d4b19f7",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/05afceeddc4afbbca60e4e6a729a50d33d4b19f7"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585691303.000000"
+        }
+    }
+]

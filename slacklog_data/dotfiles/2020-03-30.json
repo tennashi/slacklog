@@ -1,0 +1,290 @@
+[
+    {
+        "client_msg_id": "af140b0d-5363-49bb-8bd7-52f4d593621e",
+        "type": "message",
+        "text": "starship， spacefish のときからお世話になってました\nstarship は表示する絵文字を変更できるはずなので，ダサさが気になるようなら nerd font の適当なものとかに変更するのもありかも...",
+        "user": "UL6CFN8NR",
+        "ts": "1585552750.039100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "0edf66561724",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-07-28\/696621453314_0edf66561724b8e38e6a_72.png",
+            "first_name": "monaqa",
+            "real_name": "monaqa",
+            "display_name": "monaqa",
+            "team": "T03C4RC8V",
+            "name": "mogassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UL6CFN8NR",
+            "ts": "1585552762.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JIDC7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "starship， spacefish のときからお世話になってました\nstarship は表示する絵文字を変更できるはずなので，ダサさが気になるようなら nerd font の適当なものとかに変更するのもありかも..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ba196c87-c659-46b9-9364-273b62856663",
+        "type": "message",
+        "text": "出ない環境なら適時普通にしたりoffしたりできますしね",
+        "user": "UAZ33BKV2",
+        "ts": "1585552812.040300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tGx7u",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "出ない環境なら適時普通にしたりoffしたりできますしね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e73f3a7a-50b4-421f-a6b9-b280f13336fc",
+        "type": "message",
+        "text": "私も spacefish 時代に重くなることがありましたね（starship にしてからは割と快適な印象）．\nデフォルトで結構いろいろな情報を表示しようとするので，いらないやつを削るともしかすると軽くなるかもしれません\n\n<https:\/\/starship.rs\/config\/#default-prompt-order>",
+        "user": "UL6CFN8NR",
+        "ts": "1585552866.040600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "0edf66561724",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-07-28\/696621453314_0edf66561724b8e38e6a_72.png",
+            "first_name": "monaqa",
+            "real_name": "monaqa",
+            "display_name": "monaqa",
+            "team": "T03C4RC8V",
+            "name": "mogassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "Starship: Cross-Shell Prompt",
+                "title_link": "https:\/\/starship.rs\/config\/#default-prompt-order",
+                "text": "Starship is the minimal, blazing fast, and extremely customizable prompt for any shell! Shows the information you need, while staying sleek and minimal. Quick installation available for Bash, Fish, ZSH, Ion, and Powershell.",
+                "fallback": "Starship: Cross-Shell Prompt",
+                "thumb_url": "https:\/\/starship.rs\/icon.png",
+                "from_url": "https:\/\/starship.rs\/config\/#default-prompt-order",
+                "thumb_width": 512,
+                "thumb_height": 512,
+                "service_icon": "https:\/\/starship.rs\/icon.png",
+                "service_name": "starship.rs",
+                "id": 1,
+                "original_url": "https:\/\/starship.rs\/config\/#default-prompt-order"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "O=yx=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私も spacefish 時代に重くなることがありましたね（starship にしてからは割と快適な印象）．\nデフォルトで結構いろいろな情報を表示しようとするので，いらないやつを削るともしかすると軽くなるかもしれません\n\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/starship.rs\/config\/#default-prompt-order"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3a3b4ec6-137f-4ad6-b829-d7d97942e4dc",
+        "type": "message",
+        "text": "java 普段使わない人にとっては，リストの中にある `\"java\"` とか正直いらないはずなんですよ",
+        "user": "UL6CFN8NR",
+        "ts": "1585552904.041200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "0edf66561724",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-07-28\/696621453314_0edf66561724b8e38e6a_72.png",
+            "first_name": "monaqa",
+            "real_name": "monaqa",
+            "display_name": "monaqa",
+            "team": "T03C4RC8V",
+            "name": "mogassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5YEi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "java 普段使わない人にとっては，リストの中にある "
+                            },
+                            {
+                                "type": "text",
+                                "text": "\"java\"",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とか正直いらないはずなんですよ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "de62c7e2-2653-48dc-8c92-6161bb8f2149",
+        "type": "message",
+        "text": "自分はstarshipをzinitでいれるようにしてます\n```zinit ice lucid as\"program\" from\"gh-r\" bpick\"starship-x86_64-*.tar.gz\" \\\n  atload'export STARSHIP_CONFIG=$XDG_CONFIG_HOME\/starship\/starship.toml'\nzinit light starship\/starship```",
+        "user": "UH0D3CB5K",
+        "ts": "1585633974.046400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ga6d6d353787",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6a6d6d3537875bb94e3fa9e685112e1a.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0014-72.png",
+            "first_name": "",
+            "real_name": "cappyzawa",
+            "display_name": "cappyzawa",
+            "team": "T03C4RC8V",
+            "name": "cappyzawa",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UH0D3CB5K",
+            "ts": "1585634031.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5Uv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自分はstarshipをzinitでいれるようにしてます\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "zinit ice lucid as\"program\" from\"gh-r\" bpick\"starship-x86_64-*.tar.gz\" \\\n  atload'export STARSHIP_CONFIG=$XDG_CONFIG_HOME\/starship\/starship.toml'\nzinit light starship\/starship"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d8b382fa-0f30-4707-8226-e07815ce4a13",
+        "type": "message",
+        "text": "zshユーザーでCLIでしか使わないツールはそれが勝ちパターンな気がしますよね。\n（zinitに不安はあるけどw）",
+        "user": "U7B4ZD49X",
+        "ts": "1585634054.047600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jn4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "zshユーザーでCLIでしか使わないツールはそれが勝ちパターンな気がしますよね。\n（zinitに不安はあるけどw）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "UH0D3CB5K",
+                    "U9S4G0LJW",
+                    "U8CC7MDCL",
+                    "UD73ZNZAP"
+                ],
+                "count": 4
+            }
+        ]
+    }
+]

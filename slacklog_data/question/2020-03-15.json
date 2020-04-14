@@ -1,0 +1,1766 @@
+[
+    {
+        "client_msg_id": "8c92b171-f973-4aa8-bbed-8e0397cc75b6",
+        "type": "message",
+        "text": "[質問] nvimでFloating Window を開くと背景がピンクになります。背景色を変更したいのです。どうすればいいでしょうか？",
+        "user": "UM44F5275",
+        "ts": "1584281850.058200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "8bbded4a9d99",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-08-17\/729595826672_8bbded4a9d99df0862e0_72.png",
+            "first_name": "hotoolong",
+            "real_name": "hotoolong",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hotoolong.hogehoge",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HBkZf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "[質問] nvimでFloating Window を開くと背景がピンクになります。背景色を変更したいのです。どうすればいいでしょうか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "35447fb0-98fc-4f44-aa96-69968402ab38",
+        "type": "message",
+        "text": "`:hi NormalFloat &lt;ctermbg or guibg&gt;=#&lt;任意のカラーコード&gt;` といった感じのコマンドを実行すればとりあえずは色変わります",
+        "user": "U9S4G0LJW",
+        "ts": "1584281961.059500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U9S4G0LJW",
+            "ts": "1584282086.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RAsY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":hi NormalFloat <ctermbg or guibg>=#<任意のカラーコード>",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " といった感じのコマンドを実行すればとりあえずは色変わります"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "17d214f0-94ac-47e9-89c8-17b17303b605",
+        "type": "message",
+        "text": "ターミナルがフルカラーに対応してればguiで、してなければctermの方で",
+        "user": "U9S4G0LJW",
+        "ts": "1584281986.060000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fGP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ターミナルがフルカラーに対応してればguiで、してなければctermの方で"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "783a0091-175e-4a9e-a007-2cf63bae08be",
+        "type": "message",
+        "text": "個人的には何かしらのカラースキームを導入することをおすすめします",
+        "user": "U9S4G0LJW",
+        "ts": "1584282051.060500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fni",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "個人的には何かしらのカラースキームを導入することをおすすめします"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a33dd6d0-ebfe-43d8-91b8-9951266a139e",
+        "type": "message",
+        "text": "ありがとうございます！変更できました！",
+        "user": "UM44F5275",
+        "ts": "1584282270.061500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "8bbded4a9d99",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-08-17\/729595826672_8bbded4a9d99df0862e0_72.png",
+            "first_name": "hotoolong",
+            "real_name": "hotoolong",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hotoolong.hogehoge",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lik2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございます！変更できました！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tada",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b8dea965-2118-42c9-84a2-1d70870cc4c2",
+        "type": "message",
+        "text": "`質問です`\n\nはじめて質問させていただきます。何卒宜しくお願い致します。\n\nlightline.vim を導入、且つファイル書き込み、読み込み時に mkview および loadview を実施するようにしています。\nそのうえで、開いているファイルが別の箇所で更新された際に vim 上で再読み込みを行うと、ステータスラインが消えてしまいます。\nこちら、ステータスラインが消えないようにするにはどうすればいいか、ご教示いただきたいです。\n\n環境は\n\n+ Windows 10\n+ vim 8.2.390\n\nになります。\n\n**手順**\n\n1. lightline.vim を導入する\n - `mkdir %UserProfile%\\.vim-test\\pack\\test\\start`\n - `git clone <https:\/\/github.com\/itchyny\/lightline.vim.git> %UserProfile%\\.vim-test\\pack\\test\\start\\lightline.vim`\n\n2. 以下の通り `.vimrc.test` を用意する\n\n```set packpath^=~\/.vim-test\nset laststatus=2\n\n\" <https:\/\/vim-jp.org\/vim-users-jp\/2009\/10\/08\/Hack-84.html>\nautocmd BufWritePost * if expand('%') != '' &amp;&amp; &amp;buftype !~ 'nofile' | mkview | endif\nautocmd BufRead * if expand('%') != '' &amp;&amp; &amp;buftype !~ 'nofile' | silent loadview | endif\nset viewoptions-=options```\n3. あらかじめ test.txt を用意する\n - `copy nul test.txt`\n\n4. vim を起動し test.txt を開く\n - `vim -u .vimrc.test -N`\n - `:e test.txt`\n\n5. vim 以外の所で test.txt を更新する\n - `echo hoge &gt;&gt; test.txt`\n\n6. vim 上で test.txt を読み込む\n\n```W11: 警告: ファイル \"test.txt\" は編集開始後に変更されました\n詳細は \":help W11\" を参照してください\n[O]K, ファイル読込((L)):```\n --&gt; L を押下\n\n**実行結果**\n\nステータスラインが消えている。\n\n**実現したいこと**\n\nステータスラインが消えないようにしたい。\n\n\n何卒宜しくお願い致します。",
+        "user": "URM5YR5KK",
+        "ts": "1584328843.061900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g2580e8519eb",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2580e8519eb67ab0e29a6556a5f37031.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "",
+            "real_name": "ansanloms",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "ansanloms.jp",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "URM5YR5KK",
+            "ts": "1584341788.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "C\/hw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "質問です",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nはじめて質問させていただきます。何卒宜しくお願い致します。\n\nlightline.vim を導入、且つファイル書き込み、読み込み時に mkview および loadview を実施するようにしています。\nそのうえで、開いているファイルが別の箇所で更新された際に vim 上で再読み込みを行うと、ステータスラインが消えてしまいます。\nこちら、ステータスラインが消えないようにするにはどうすればいいか、ご教示いただきたいです。\n\n環境は\n\n+ Windows 10\n+ vim 8.2.390\n\nになります。\n\n*"
+                            },
+                            {
+                                "type": "text",
+                                "text": "手順",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "*\n\n1. lightline.vim を導入する\n - "
+                            },
+                            {
+                                "type": "text",
+                                "text": "mkdir %UserProfile%\\.vim-test\\pack\\test\\start",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n - "
+                            },
+                            {
+                                "type": "text",
+                                "text": "git clone ",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/itchyny\/lightline.vim.git",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " %UserProfile%\\.vim-test\\pack\\test\\start\\lightline.vim",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n2. 以下の通り "
+                            },
+                            {
+                                "type": "text",
+                                "text": ".vimrc.test",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を用意する\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "set packpath^=~\/.vim-test\nset laststatus=2\n\n\" "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/vim-jp.org\/vim-users-jp\/2009\/10\/08\/Hack-84.html"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nautocmd BufWritePost * if expand('%') != '' && &buftype !~ 'nofile' | mkview | endif\nautocmd BufRead * if expand('%') != '' && &buftype !~ 'nofile' | silent loadview | endif\nset viewoptions-=options"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "3. あらかじめ test.txt を用意する\n - "
+                            },
+                            {
+                                "type": "text",
+                                "text": "copy nul test.txt",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n4. vim を起動し test.txt を開く\n - "
+                            },
+                            {
+                                "type": "text",
+                                "text": "vim -u .vimrc.test -N",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n - "
+                            },
+                            {
+                                "type": "text",
+                                "text": ":e test.txt",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n5. vim 以外の所で test.txt を更新する\n - "
+                            },
+                            {
+                                "type": "text",
+                                "text": "echo hoge >> test.txt",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n6. vim 上で test.txt を読み込む\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "W11: 警告: ファイル \"test.txt\" は編集開始後に変更されました\n詳細は \":help W11\" を参照してください\n[O]K, ファイル読込((L)):"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": " --> L を押下\n\n*"
+                            },
+                            {
+                                "type": "text",
+                                "text": "実行結果",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "*\n\nステータスラインが消えている。\n\n*"
+                            },
+                            {
+                                "type": "text",
+                                "text": "実現したいこと",
+                                "style": {
+                                    "bold": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "*\n\nステータスラインが消えないようにしたい。\n\n\n何卒宜しくお願い致します。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584328843.061900",
+        "reply_count": 2,
+        "reply_users_count": 2,
+        "latest_reply": "1584354405.079400",
+        "reply_users": [
+            "URM5YR5KK",
+            "U7H4TJEG0"
+        ],
+        "replies": [
+            {
+                "user": "URM5YR5KK",
+                "ts": "1584354273.079000"
+            },
+            {
+                "user": "U7H4TJEG0",
+                "ts": "1584354405.079400"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "ca459f2c-fe8b-46e5-8f3d-a055e3264344",
+        "type": "message",
+        "text": "`++nested` をつけるとどうなりますか\n`autocmd BufRead * ++nested if expand('%') != '' &amp;&amp; &amp;buftype !~ 'nofile' | silent loadview | endif`",
+        "user": "U7H4TJEG0",
+        "ts": "1584329840.062400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9Vc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "++nested",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " をつけるとどうなりますか\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "autocmd BufRead * ++nested if expand('%') != '' && &buftype !~ 'nofile' | silent loadview | endif",
+                                "style": {
+                                    "code": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584329840.062400",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584330360.062500",
+        "reply_users": [
+            "URM5YR5KK"
+        ],
+        "replies": [
+            {
+                "user": "URM5YR5KK",
+                "ts": "1584330360.062500"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "<@U7H4TJEG0>\nご確認ありがとうございます。\n当該対応して改めて確認してみましたが、実行結果に変化はありませんでした。",
+        "user": "URM5YR5KK",
+        "ts": "1584330360.062500",
+        "thread_ts": "1584329840.062400",
+        "root": {
+            "client_msg_id": "ca459f2c-fe8b-46e5-8f3d-a055e3264344",
+            "type": "message",
+            "text": "`++nested` をつけるとどうなりますか\n`autocmd BufRead * ++nested if expand('%') != '' &amp;&amp; &amp;buftype !~ 'nofile' | silent loadview | endif`",
+            "user": "U7H4TJEG0",
+            "ts": "1584329840.062400",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "9Vc",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "++nested",
+                                    "style": {
+                                        "code": true
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "text": " をつけるとどうなりますか\n"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "autocmd BufRead * ++nested if expand('%') != '' && &buftype !~ 'nofile' | silent loadview | endif",
+                                    "style": {
+                                        "code": true
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584329840.062400",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1584330360.062500",
+            "reply_users": [
+                "URM5YR5KK"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ATU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U7H4TJEG0"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nご確認ありがとうございます。\n当該対応して改めて確認してみましたが、実行結果に変化はありませんでした。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "a84d1a29-f8ff-4c87-b01f-fed7a0819a81"
+    },
+    {
+        "client_msg_id": "8ce44618-e2e3-4138-b004-2a87460010c9",
+        "type": "message",
+        "text": "redrawしたらどうなりますか?",
+        "user": "UAZ33BKV2",
+        "ts": "1584330510.063100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "p+NEI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "redrawしたらどうなりますか?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8b75bd48-c83f-4af6-ab19-d1ecad91cfaa",
+        "type": "message",
+        "text": "(redrawstatusでもいいかも?)",
+        "user": "UAZ33BKV2",
+        "ts": "1584330544.063600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5MA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(redrawstatusでもいいかも?)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "13de7fc6-6076-4c2c-9f71-7d8ada3f8d75",
+        "type": "message",
+        "text": "loadviewでstatusline破壊されてるのではって感じする",
+        "user": "U9S4G0LJW",
+        "ts": "1584330593.064000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U9S4G0LJW",
+            "ts": "1584330607.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "u63",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "loadviewでstatusline破壊されてるのではって感じする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f5562c9e-b443-4b88-84b1-99e66a89c16c",
+        "type": "message",
+        "text": "っぽいですが、(自動的な復帰もふくめて)どうなんでしょうね...",
+        "user": "UAZ33BKV2",
+        "ts": "1584330675.065700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fzf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "っぽいですが、(自動的な復帰もふくめて)どうなんでしょうね..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0986f4e3-2d99-4a55-aec0-d2d17eb2f569",
+        "type": "message",
+        "text": "<@UAZ33BKV2>\nありがとうございます。\n`:redraw` および `:redrawstatus` を実施しましたが変化はありませんでした。\n※ `:e` で再読み込みすればステータスラインが表示されます。",
+        "user": "URM5YR5KK",
+        "ts": "1584330705.066300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g2580e8519eb",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2580e8519eb67ab0e29a6556a5f37031.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "",
+            "real_name": "ansanloms",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "ansanloms.jp",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "r963Z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "UAZ33BKV2"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nありがとうございます。\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": ":redraw",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " および "
+                            },
+                            {
+                                "type": "text",
+                                "text": ":redrawstatus",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を実施しましたが変化はありませんでした。\n※ "
+                            },
+                            {
+                                "type": "text",
+                                "text": ":e",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " で再読み込みすればステータスラインが表示されます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "06e90d42-606a-4f83-bd2f-0fb59a690d4b",
+        "type": "message",
+        "text": "`vim 上で test.txt を読み込む` この具体的な操作が知りたい",
+        "user": "U7H4TJEG0",
+        "ts": "1584330738.066600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bcQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim 上で test.txt を読み込む",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " この具体的な操作が知りたい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584330738.066600",
+        "reply_count": 3,
+        "reply_users_count": 2,
+        "latest_reply": "1584341759.078000",
+        "reply_users": [
+            "URM5YR5KK",
+            "U7H4TJEG0"
+        ],
+        "replies": [
+            {
+                "user": "URM5YR5KK",
+                "ts": "1584331031.066700"
+            },
+            {
+                "user": "U7H4TJEG0",
+                "ts": "1584338610.069500"
+            },
+            {
+                "user": "URM5YR5KK",
+                "ts": "1584341759.078000"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "<@U7H4TJEG0>\n4. を実施したターミナルとは別のターミナルを開き、5. を実施する。\n5. 実施後に 4. のターミナル(vimを開いているターミナル)にフォーカスを戻す旨を指します。\n`W11: 警告: ファイル \"test.txt\" は\n～` が実施されるまで、vim上で何か作業を実施しているわけではないです。\n# うまく伝わっておらず、申し訳ございません。",
+        "user": "URM5YR5KK",
+        "ts": "1584331031.066700",
+        "thread_ts": "1584330738.066600",
+        "root": {
+            "client_msg_id": "06e90d42-606a-4f83-bd2f-0fb59a690d4b",
+            "type": "message",
+            "text": "`vim 上で test.txt を読み込む` この具体的な操作が知りたい",
+            "user": "U7H4TJEG0",
+            "ts": "1584330738.066600",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "bcQ",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "vim 上で test.txt を読み込む",
+                                    "style": {
+                                        "code": true
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "text": " この具体的な操作が知りたい"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584330738.066600",
+            "reply_count": 3,
+            "reply_users_count": 2,
+            "latest_reply": "1584341759.078000",
+            "reply_users": [
+                "URM5YR5KK",
+                "U7H4TJEG0"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tS3z9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U7H4TJEG0"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n4. を実施したターミナルとは別のターミナルを開き、5. を実施する。\n5. 実施後に 4. のターミナル(vimを開いているターミナル)にフォーカスを戻す旨を指します。\n`W11: 警告: ファイル \"test.txt\" は\n～` が実施されるまで、vim上で何か作業を実施しているわけではないです。\n# うまく伝わっておらず、申し訳ございません。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "465fa115-7f41-40c4-a171-9b1cfe3efd06"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/teratail.com\/questions\/247437?rss=all|vscodeのインストールについて>\n前提・実現したいこと\niPad Proで、vscodeをインストールしたいのですが、可能でしょうか？  \n自分でも調べましたが、難しいのかな？と感じています。YouTubeを見ていたらブログも見ましたが、他の言語はできても、vscodeは難しいのか、詳しく書かれたものがなかったため、\n経験された方がいましたらよろしくお願いいたします。\nやはりパソコンがあったほうが良いかと思うのですが、今回はiPadでできるかどうかチャレンジしたいです。\nよろしくお願いいたします。  \n\n<https:\/\/teratail.com\/questions\/247437?rss=all|続きを見る>",
+        "ts": "1584337888.067000",
+        "username": "[Vim]の新着質問一覧｜teratail（テラテイル）",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/814941997319_48.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "teratail[テラテイル]",
+                "title": "vscodeのインストールについて｜teratail",
+                "title_link": "https:\/\/teratail.com\/questions\/247437?rss=all",
+                "text": "前提・実現したいことiPad Proで、vscodeをインストールしたいのですが、可能でしょうか？ 自分でも調べましたが、難しいのかな？と感じています。YouTubeを見ていたらブログも見ましたが、他の言語はできても、vscodeは難しいのか、詳しく書かれたものがなかったため、経験された",
+                "fallback": "teratail[テラテイル]: vscodeのインストールについて｜teratail",
+                "thumb_url": "https:\/\/teratail.com\/img\/imgFacebookShare.png",
+                "from_url": "https:\/\/teratail.com\/questions\/247437?rss=all",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/teratail.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/teratail.com\/questions\/247437?rss=all"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584337888.000000"
+        }
+    },
+    {
+        "client_msg_id": "e2d3a637-460d-4f51-afa6-8039900cb3a3",
+        "type": "message",
+        "text": "Vim関係無いと思ったら、回答の中に「Vimなら行けるよ！」ってのがあった…",
+        "user": "UK7DT8URY",
+        "ts": "1584338548.067700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+kUst",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vim関係無いと思ったら、回答の中に「Vimなら行けるよ！」ってのがあった…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d3f1fcc6-8bfb-428b-b2a7-456a456c2ff1",
+        "type": "message",
+        "text": "多分タグのvimに反応してる",
+        "user": "U9S4G0LJW",
+        "ts": "1584338567.068100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TGxXQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "多分タグのvimに反応してる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4246f36f-fa66-4cfd-9f44-7e9283ef9c68",
+        "type": "message",
+        "text": "これteratailの作りが悪いんかな、質問したことないからわからん",
+        "user": "U9S4G0LJW",
+        "ts": "1584338592.069100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+L3h\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これteratailの作りが悪いんかな、質問したことないからわからん"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9858eda2-5ccd-42e0-a008-7745c8f9f69f",
+        "type": "message",
+        "text": "すぐに見れなさそうなのでGitHubにissue立てていただけますか。時間があるときに見ます。",
+        "user": "U7H4TJEG0",
+        "ts": "1584338610.069500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wBU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すぐに見れなさそうなのでGitHubにissue立てていただけますか。時間があるときに見ます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584330738.066600",
+        "parent_user_id": "U7H4TJEG0"
+    },
+    {
+        "client_msg_id": "5112238f-9366-43c0-96c6-34da7b12cd6e",
+        "type": "message",
+        "text": "なんでタグに vim 入れるんですかね。",
+        "user": "U03C6TEAZ",
+        "ts": "1584338632.070200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0PWSg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんでタグに vim 入れるんですかね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "06fa37fb-be2f-43ef-a53b-d902e1e010b4",
+        "type": "message",
+        "text": "`Vi` まで書いてサジェストされたのをポンしている疑惑",
+        "user": "UK7DT8URY",
+        "ts": "1584338657.071200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "McF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vi",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " まで書いてサジェストされたのをポンしている疑惑"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bf4fc8db-9e77-4b1f-a1a5-989604cb40da",
+        "type": "message",
+        "text": "いやこれ手動ですよ。",
+        "user": "U03C6TEAZ",
+        "ts": "1584338674.071600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "R4E",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いやこれ手動ですよ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "longcat1",
+                "users": [
+                    "UK7DT8URY",
+                    "UEBF2KQTD"
+                ],
+                "count": 2
+            },
+            {
+                "name": "majika",
+                "users": [
+                    "U9S4G0LJW",
+                    "U7B4ZD49X",
+                    "UL6CFN8NR",
+                    "UEBF2KQTD"
+                ],
+                "count": 4
+            }
+        ]
+    },
+    {
+        "client_msg_id": "440bc8b2-8b2e-4661-9e15-ce59376764db",
+        "type": "message",
+        "text": "質問の仕方がわからない人がする質問が流れてくるのが正直しんどい。ここみたいにチャットならまだちょっとずつやり取りしてお互いの認識を埋めていけるけど、質問サイトは回答したあと質問者が音沙汰なしなんてのが平気で起きるからそりゃ回答者もやる気をなくす",
+        "user": "U03C71D7H",
+        "ts": "1584338684.071700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/buNB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "質問の仕方がわからない人がする質問が流れてくるのが正直しんどい。ここみたいにチャットならまだちょっとずつやり取りしてお互いの認識を埋めていけるけど、質問サイトは回答したあと質問者が音沙汰なしなんてのが平気で起きるからそりゃ回答者もやる気をなくす"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b691d3e0-daae-4c14-9a8d-9f30ecf305ba",
+        "type": "message",
+        "text": "CROS まったく関係なくて笑う",
+        "user": "U03C6TEAZ",
+        "ts": "1584338703.072000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YWgFc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "CROS まったく関係なくて笑う"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "UKHUVMBJR",
+                    "UK7DT8URY",
+                    "U78A6ESHM",
+                    "U7B4ZD49X",
+                    "UEBF2KQTD"
+                ],
+                "count": 5
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b0545c70-48e9-4922-8ec9-3d0b035e9117",
+        "type": "message",
+        "text": "ぶっ CORS (放送禁止)",
+        "user": "U03C6TEAZ",
+        "ts": "1584338726.072800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rqx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ぶっ CORS (放送禁止)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "warau",
+                "users": [
+                    "UEBF2KQTD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "83f15aa6-38ea-43c1-8087-b97092e6d638",
+        "type": "message",
+        "text": "しんどいのなら流すのやめたら?",
+        "user": "U06BRP8VD",
+        "ts": "1584338743.073400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nsjha",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "しんどいのなら流すのやめたら?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7629c5f7-b144-437e-bc72-bc08c5e7692f",
+        "type": "message",
+        "text": "と思ったときには（以下略",
+        "user": "UKHUVMBJR",
+        "ts": "1584338745.073500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "626bbc95c10c",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-08-09\/721207338820_626bbc95c10c7b6c7738_72.png",
+            "first_name": "",
+            "real_name": "eihigh",
+            "display_name": "eihigh",
+            "team": "T03C4RC8V",
+            "name": "eiichiro.takahashi",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hL\/l",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "と思ったときには（以下略"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ce922045-a9dd-4a36-9dd4-ad276aef4b5f",
+        "type": "message",
+        "text": "teratailさんごめんなさい",
+        "user": "U9S4G0LJW",
+        "ts": "1584338748.073700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ooS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "teratailさんごめんなさい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "56a14c45-cf68-420b-a088-24d508746a57",
+        "type": "message",
+        "text": "救ってあげられる質問も流れてくることがあるのがなんとも。まあ簡単な質問はあっち側の人が速攻で回答しちゃってるというのはあるけど…",
+        "user": "U03C71D7H",
+        "ts": "1584338799.075200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Y5UJm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "救ってあげられる質問も流れてくることがあるのがなんとも。まあ簡単な質問はあっち側の人が速攻で回答しちゃってるというのはあるけど…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2f1ec0b1-ab40-4531-9bac-e1f718e64f1d",
+        "type": "message",
+        "text": "逆に考えよう、僕等が正しい方法を積極的に流す事でteratailを浄化できると",
+        "user": "UK7DT8URY",
+        "ts": "1584338800.075300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CC=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "逆に考えよう、僕等が正しい方法を積極的に流す事でteratailを浄化できると"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e9a5b82c-59cb-48f6-91c1-a1f282431a3a",
+        "type": "message",
+        "text": "とりあえず Stack Overflow みたいに編集できるようにさせてくれるだけでもだいぶ違うのだけどなー",
+        "user": "U03C71D7H",
+        "ts": "1584338868.076500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Bwi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とりあえず Stack Overflow みたいに編集できるようにさせてくれるだけでもだいぶ違うのだけどなー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "UK7DT8URY"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "86fed69d-af96-4722-aed3-5677efbb9d7f",
+        "type": "message",
+        "text": "まあ、タグが酷いから、というのを答えられそうなのだけ答えるつもり、くらいの軽い気持ちで十分だという免罪符になるとしておけば、心は平穏かもしれない",
+        "user": "UAZ33BKV2",
+        "ts": "1584338929.077600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "btKIf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まあ、タグが酷いから、というのを答えられそうなのだけ答えるつもり、くらいの軽い気持ちで十分だという免罪符になるとしておけば、心は平穏かもしれない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ec9f0ef0-83fd-4941-a816-4358c7e5901a",
+        "type": "message",
+        "text": "<@U7H4TJEG0>\nお手数をおかけします。\n当該、下記に作成いたしました。\n<https:\/\/github.com\/itchyny\/lightline.vim\/issues\/430>\n\n何卒よろしくお願いします。",
+        "user": "URM5YR5KK",
+        "ts": "1584341759.078000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g2580e8519eb",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2580e8519eb67ab0e29a6556a5f37031.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "",
+            "real_name": "ansanloms",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "ansanloms.jp",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "BufWritePost \/ BufRead にて mkview および loadview を実施するようにしていると W11 発生時のファイル読込にてステータスラインが表示されなくなる · Issue #430 · itchyny\/lightline.vim",
+                "title_link": "https:\/\/github.com\/itchyny\/lightline.vim\/issues\/430",
+                "text": "ファイル書き込み、読み込み時に mkview および loadview を実施するようにしています。 そのうえで、開いているファイルが別の箇所で更新された際に vim 上で再読み込みを行うと、ステータスラインが消えてしまいます。 こちら、ステータスラインが消えないようにするにはどうすればいいか、ご教示いただきたいです。 何卒宜しくお願い致します。 環境 Windows 10 vim 8.2....",
+                "fallback": "GitHub: BufWritePost \/ BufRead にて mkview および loadview を実施するようにしていると W11 発生時のファイル読込にてステータスラインが表示されなくなる · Issue #430 · itchyny\/lightline.vim",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/375258?s=400&v=4",
+                "from_url": "https:\/\/github.com\/itchyny\/lightline.vim\/issues\/430",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/itchyny\/lightline.vim\/issues\/430"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Zxy\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U7H4TJEG0"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nお手数をおかけします。\n当該、下記に作成いたしました。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/itchyny\/lightline.vim\/issues\/430"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n何卒よろしくお願いします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584330738.066600",
+        "parent_user_id": "U7H4TJEG0"
+    }
+]

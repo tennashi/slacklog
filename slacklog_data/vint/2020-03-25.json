@@ -1,0 +1,75 @@
+[
+    {
+        "client_msg_id": "9ab5545d-575e-42a3-9651-bef1ca6c0634",
+        "type": "message",
+        "text": "<#CUPKWMQFK|vim-script> にマージされました",
+        "user": "U0M7GCBPD",
+        "ts": "1585171359.000400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ua7XC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "channel",
+                                "channel_id": "CUPKWMQFK"
+                            },
+                            {
+                                "type": "text",
+                                "text": " にマージされました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_leave",
+        "ts": "1585182168.000600",
+        "user": "UAZ33BKV2",
+        "text": "<@UAZ33BKV2> has left the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_topic",
+        "ts": "1585185161.000700",
+        "user": "U03C71D7H",
+        "text": "<@U03C71D7H> set the channel topic: <#CUPKWMQFK|vim-script> に統合されました\n<https:\/\/github.com\/Vimjas\/vint>",
+        "topic": "<#CUPKWMQFK|vim-script> に統合されました\n<https:\/\/github.com\/Vimjas\/vint>",
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_leave",
+        "ts": "1585187241.001000",
+        "user": "UH0D3CB5K",
+        "text": "<@UH0D3CB5K> has left the channel"
+    }
+]

@@ -1,0 +1,232 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/25b70c780a7e6063544e7f93c368fe403076f34e|patch 8.2.0489: Vim9: memory leaks>\npatch 8.2.0489: Vim9: memory leaks\n\nProblem:    Vim9: memory leaks.\nSolution:   Free memory in the right place.  Add hints for using asan.",
+        "ts": "1585752504.009400",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0489: Vim9: memory leaks · vim\/vim@25b70c7",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/25b70c780a7e6063544e7f93c368fe403076f34e",
+                "text": "Problem: Vim9: memory leaks. Solution: Free memory in the right place. Add hints for using asan.",
+                "fallback": "GitHub: patch 8.2.0489: Vim9: memory leaks · vim\/vim@25b70c7",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/25b70c780a7e6063544e7f93c368fe403076f34e",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/25b70c780a7e6063544e7f93c368fe403076f34e"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585752505.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/0afdcf8601792ee751984265b49fc2ca6f8ea858|patch 8.2.0490: Win32: VTP doesn't respect 'restorescreen'>\npatch 8.2.0490: Win32: VTP doesn't respect 'restorescreen'\n\nProblem:    Win32: VTP doesn't respect 'restorescreen'.\nSolution:   Use escape codes to switch to alternate screen. (Nobuhiro\n            Takasaki, closes #5872)",
+        "ts": "1585759700.009600",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0490: Win32: VTP doesn't respect 'restorescreen' · vim\/vim@0afdcf8",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/0afdcf8601792ee751984265b49fc2ca6f8ea858",
+                "text": "Problem: Win32: VTP doesn't respect 'restorescreen'. Solution: Use escape codes to switch to alternate screen. (Nobuhiro Takasaki, closes #5872)",
+                "fallback": "GitHub: patch 8.2.0490: Win32: VTP doesn't respect 'restorescreen' · vim\/vim@0afdcf8",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/0afdcf8601792ee751984265b49fc2ca6f8ea858",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/0afdcf8601792ee751984265b49fc2ca6f8ea858"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585759701.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/2da0f0c445da3c9b35b2a0cd595d10e81ad2a6f9|patch 8.2.0491: cannot recognize a &lt;script&gt; mapping using maparg()>\npatch 8.2.0491: cannot recognize a  mapping using maparg()\n\nProblem:    Cannot recognize a  mapping using maparg().\nSolution:   Add the \"script\" key. (closes #5873)",
+        "ts": "1585762110.009800",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0491: cannot recognize a  mapping using maparg() · vim\/vim@2da0f0c",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/2da0f0c445da3c9b35b2a0cd595d10e81ad2a6f9",
+                "fallback": "GitHub: patch 8.2.0491: cannot recognize a  mapping using maparg() · vim\/vim@2da0f0c",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/2da0f0c445da3c9b35b2a0cd595d10e81ad2a6f9",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/2da0f0c445da3c9b35b2a0cd595d10e81ad2a6f9"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585762110.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/a8c1770469504ae66c80bbdb03b6b31641215848|patch 8.2.0492: Vim9: some error messages not tested>\npatch 8.2.0492: Vim9: some error messages not tested\n\nProblem:    Vim9: some error messages not tested.\nSolution:   Add more tests.  Remove dead code.  Fix uncovered bugs.",
+        "ts": "1585769311.010100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0492: Vim9: some error messages not tested · vim\/vim@a8c1770",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/a8c1770469504ae66c80bbdb03b6b31641215848",
+                "text": "Problem: Vim9: some error messages not tested. Solution: Add more tests. Remove dead code. Fix uncovered bugs.",
+                "fallback": "GitHub: patch 8.2.0492: Vim9: some error messages not tested · vim\/vim@a8c1770",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/a8c1770469504ae66c80bbdb03b6b31641215848",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/a8c1770469504ae66c80bbdb03b6b31641215848"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585769311.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/e69f6d044c420d41dced9ba96a3b90f25788e39a|patch 8.2.0493: Vim9: some error messages not tested>\npatch 8.2.0493: Vim9: some error messages not tested\n\nProblem:    Vim9: some error messages not tested.\nSolution:   Add more tests.  Fix uncovered bugs.",
+        "ts": "1585772905.010300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0493: Vim9: some error messages not tested · vim\/vim@e69f6d0",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/e69f6d044c420d41dced9ba96a3b90f25788e39a",
+                "text": "Problem: Vim9: some error messages not tested. Solution: Add more tests. Fix uncovered bugs.",
+                "fallback": "GitHub: patch 8.2.0493: Vim9: some error messages not tested · vim\/vim@e69f6d0",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/e69f6d044c420d41dced9ba96a3b90f25788e39a",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/e69f6d044c420d41dced9ba96a3b90f25788e39a"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585772907.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/ea94fbe83bca69eda4f03e92ecf581d0343c7b47|patch 8.2.0494: Vim9: asan error>\npatch 8.2.0494: Vim9: asan error\n\nProblem:    Vim9: asan error.\nSolution:   Only get the type when there is one.",
+        "ts": "1585774103.010500",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0494: Vim9: asan error · vim\/vim@ea94fbe",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/ea94fbe83bca69eda4f03e92ecf581d0343c7b47",
+                "text": "Problem: Vim9: asan error. Solution: Only get the type when there is one.",
+                "fallback": "GitHub: patch 8.2.0494: Vim9: asan error · vim\/vim@ea94fbe",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/ea94fbe83bca69eda4f03e92ecf581d0343c7b47",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/ea94fbe83bca69eda4f03e92ecf581d0343c7b47"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585774104.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/80c34ca312506c2c65eef6b119e214f7e6f87eb9|patch 8.2.0495: Vim9: some code not tested>\npatch 8.2.0495: Vim9: some code not tested\n\nProblem:    Vim9: some code not tested.\nSolution:   Add more tests.  Support more const expressions.",
+        "ts": "1585775305.010700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0495: Vim9: some code not tested · vim\/vim@80c34ca",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/80c34ca312506c2c65eef6b119e214f7e6f87eb9",
+                "text": "Problem: Vim9: some code not tested. Solution: Add more tests. Support more const expressions.",
+                "fallback": "GitHub: patch 8.2.0495: Vim9: some code not tested · vim\/vim@80c34ca",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/80c34ca312506c2c65eef6b119e214f7e6f87eb9",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/80c34ca312506c2c65eef6b119e214f7e6f87eb9"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585775306.000000"
+        }
+    }
+]

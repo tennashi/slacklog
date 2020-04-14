@@ -1,0 +1,1294 @@
+[
+    {
+        "client_msg_id": "86588aa8-f2a1-4f65-a9a2-837d075a1ab9",
+        "type": "message",
+        "text": "Vimのhash (dict)の実装、Rubyのhash (st.c)に差し替えたら速くなったりしないかなーって妄想してる。",
+        "user": "U6XP9LZ6V",
+        "ts": "1583997986.350500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "v=M+L",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vimのhash (dict)の実装、Rubyのhash (st.c)に差し替えたら速くなったりしないかなーって妄想してる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "348b0ab4-2673-4d2d-b35b-6001ac51c020",
+        "type": "message",
+        "text": "<https:\/\/github.com\/ruby\/ruby\/blob\/master\/st.c>",
+        "user": "U6XP9LZ6V",
+        "ts": "1583998048.350700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "ruby\/ruby",
+                "title_link": "https:\/\/github.com\/ruby\/ruby\/blob\/master\/st.c",
+                "text": "The Ruby Programming Language [mirror]. Contribute to ruby\/ruby development by creating an account on GitHub.",
+                "fallback": "GitHub: ruby\/ruby",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/210414?s=400&v=4",
+                "from_url": "https:\/\/github.com\/ruby\/ruby\/blob\/master\/st.c",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/ruby\/ruby\/blob\/master\/st.c"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uAa+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/ruby\/ruby\/blob\/master\/st.c"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f2cf7b14-2e22-4a44-bf31-1a6560154ff4",
+        "type": "message",
+        "text": "Vim の実装は素朴ですからね…\nライセンス的には問題はない?",
+        "user": "U03C71D7H",
+        "ts": "1583998118.351500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Y7k",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vim の実装は素朴ですからね…\nライセンス的には問題はない?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "41e70774-29de-4511-831e-6325a023de4b",
+        "type": "message",
+        "text": "普通に klib 使っちゃダメなのかしら。",
+        "user": "U03C6TEAZ",
+        "ts": "1583998460.351900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/T2as",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "普通に klib 使っちゃダメなのかしら。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "59353a50-f43b-423d-9a14-d9464a7628fe",
+        "type": "message",
+        "text": "<https:\/\/github.com\/attractivechaos\/klib>",
+        "user": "U03C6TEAZ",
+        "ts": "1583998461.352100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "attractivechaos\/klib",
+                "title_link": "https:\/\/github.com\/attractivechaos\/klib",
+                "text": "A standalone and lightweight C library. Contribute to attractivechaos\/klib development by creating an account on GitHub.",
+                "fallback": "GitHub: attractivechaos\/klib",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/563093?s=400&v=4",
+                "from_url": "https:\/\/github.com\/attractivechaos\/klib",
+                "thumb_width": 420,
+                "thumb_height": 420,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/attractivechaos\/klib"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ez==k",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/attractivechaos\/klib"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fd940350-a77d-4057-b3cc-eac45cbd05a3",
+        "type": "message",
+        "text": "khash めっちゃ速いで。",
+        "user": "U03C6TEAZ",
+        "ts": "1583998475.352400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Vs1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "khash めっちゃ速いで。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "020dc059-a74e-45d1-9463-57e3caa023e3",
+        "type": "message",
+        "text": "昔 FNV-1 hashmap を書いた事があるけど khash に勝てなかった。",
+        "user": "U03C6TEAZ",
+        "ts": "1583998547.352900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PA=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "昔 FNV-1 hashmap を書いた事があるけど khash に勝てなかった。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a6a30182-cde7-4100-b46f-479c7b9db92c",
+        "type": "message",
+        "text": "<https:\/\/github.com\/mattn\/picohashmap>",
+        "user": "U03C6TEAZ",
+        "ts": "1583998553.353100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "mattn\/picohashmap",
+                "title_link": "https:\/\/github.com\/mattn\/picohashmap",
+                "text": "Contribute to mattn\/picohashmap development by creating an account on GitHub.",
+                "fallback": "GitHub: mattn\/picohashmap",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/10111?s=400&v=4",
+                "from_url": "https:\/\/github.com\/mattn\/picohashmap",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/mattn\/picohashmap"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x8h7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/mattn\/picohashmap"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2ef45e2d-a495-4eb5-aaca-f579e873a7f1",
+        "type": "message",
+        "text": "vimだと、hashdosは大丈夫、でいいのかな...？",
+        "user": "UAZ33BKV2",
+        "ts": "1583998568.353600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "m4T",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vimだと、hashdosは大丈夫、でいいのかな...？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "98e37968-11e7-4ac2-b502-9a8d90ce1041",
+        "type": "message",
+        "text": "```picohashmap put: 2.781000 [sec]\npicohashmap get: 1.103000 [sec]\nC++ stl put: 5.126669 [sec]\nC++ stl get: 1.272198 [sec]\nklib hash put: 0.252785 [sec]\nklib hash get: 0.036985 [sec]```",
+        "user": "U03C6TEAZ",
+        "ts": "1583998612.354100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0WP",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "picohashmap put: 2.781000 [sec]\npicohashmap get: 1.103000 [sec]\nC++ stl put: 5.126669 [sec]\nC++ stl get: 1.272198 [sec]\nklib hash put: 0.252785 [sec]\nklib hash get: 0.036985 [sec]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4d55410e-4782-4137-a154-1acbf4c2642d",
+        "type": "message",
+        "text": "klib バケモンすぎる。",
+        "user": "U03C6TEAZ",
+        "ts": "1583998620.354400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dvFt7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "klib バケモンすぎる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d9531c5b-00d8-4b19-85f3-107620f8313f",
+        "type": "message",
+        "text": "khash が使ってるこれがたぶん凄い効いてる。 <http:\/\/research.cs.vt.edu\/AVresearch\/hashing\/quadratic.php>",
+        "user": "U03C6TEAZ",
+        "ts": "1583998723.354700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DQsO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "khash が使ってるこれがたぶん凄い効いてる。 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/research.cs.vt.edu\/AVresearch\/hashing\/quadratic.php"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cde02e91-c9be-4fb5-9305-7fa9380f3845",
+        "type": "message",
+        "text": "すご",
+        "user": "UAZ33BKV2",
+        "ts": "1583998747.355000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bXe",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すご"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0946418c-9554-4321-ba8c-db26d459d30e",
+        "type": "message",
+        "text": "というところまで思い出して悔しい記憶がよみがえってきた。",
+        "user": "U03C6TEAZ",
+        "ts": "1583998757.355300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dZc6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "というところまで思い出して悔しい記憶がよみがえってきた。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c9b5ddd5-531d-451e-84af-f4a07f41aac4",
+        "type": "message",
+        "text": "Rubyのハッシュは2.4で高速化されたけど、どっちが速いかな？",
+        "user": "U6XP9LZ6V",
+        "ts": "1583998845.356400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cBt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Rubyのハッシュは2.4で高速化されたけど、どっちが速いかな？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "66025c5d-180a-4710-9685-af3ad52d4bfd",
+        "type": "message",
+        "text": "なんか小細工が見えるw <https:\/\/github.com\/ruby\/ruby\/blob\/74c398b82f80c30e8123f53e354b6518be3fe9aa\/st.c#L739>",
+        "user": "U03C6TEAZ",
+        "ts": "1583998959.356800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "ruby\/ruby",
+                "title_link": "https:\/\/github.com\/ruby\/ruby\/blob\/74c398b82f80c30e8123f53e354b6518be3fe9aa\/st.c#L739",
+                "text": "The Ruby Programming Language [mirror]. Contribute to ruby\/ruby development by creating an account on GitHub.",
+                "fallback": "GitHub: ruby\/ruby",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/210414?s=400&v=4",
+                "from_url": "https:\/\/github.com\/ruby\/ruby\/blob\/74c398b82f80c30e8123f53e354b6518be3fe9aa\/st.c#L739",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/ruby\/ruby\/blob\/74c398b82f80c30e8123f53e354b6518be3fe9aa\/st.c#L739"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "g+Z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんか小細工が見えるw "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/ruby\/ruby\/blob\/74c398b82f80c30e8123f53e354b6518be3fe9aa\/st.c#L739"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "902509cb-5263-4ce9-82c7-f3dd32adae2b",
+        "type": "message",
+        "text": "<https:\/\/employment.en-japan.com\/engineerhub\/entry\/2018\/01\/11\/110000>\nちょっと前のhashdosの時の構造説明(1.9があって、1.8の対策なので微妙)",
+        "user": "UAZ33BKV2",
+        "ts": "1583998991.357400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "エンジニアHub｜若手Webエンジニアのキャリアを考える！",
+                "title": "HashDoS脆弱性との戦い！ Rubyコミッター・卜部昌平が明かすプログラム堅牢化のノウハウ - エンジニアHub｜若手Webエンジニアのキャリアを考える！",
+                "title_link": "https:\/\/employment.en-japan.com\/engineerhub\/entry\/2018\/01\/11\/110000",
+                "text": "過去、HashDosの影響を受けたRuby。言語開発者はいかにしてこうした問題に対応してきたのでしょうか。コミッターである卜部氏の貴重な記録を公開します。",
+                "fallback": "エンジニアHub｜若手Webエンジニアのキャリアを考える！: HashDoS脆弱性との戦い！ Rubyコミッター・卜部昌平が明かすプログラム堅牢化のノウハウ - エンジニアHub｜若手Webエンジニアのキャリアを考える！",
+                "image_url": "https:\/\/cdn-ak.f.st-hatena.com\/images\/fotolife\/b\/blog-media\/20171229\/20171229111540.jpg",
+                "ts": 1515549600,
+                "from_url": "https:\/\/employment.en-japan.com\/engineerhub\/entry\/2018\/01\/11\/110000",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 171051,
+                "service_icon": "https:\/\/cdn.image.st-hatena.com\/image\/apple_touch_icon\/5b2fd5dcfeaff02ecd23d4dd52498944b6cf5fc7\/version=1\/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fcustom_blog_icon%2F125375497%2F1514216060853259",
+                "id": 1,
+                "original_url": "https:\/\/employment.en-japan.com\/engineerhub\/entry\/2018\/01\/11\/110000"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lxC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/employment.en-japan.com\/engineerhub\/entry\/2018\/01\/11\/110000"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nちょっと前のhashdosの時の構造説明(1.9があって、1.8の対策なので微妙)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "df18dd97-854a-4884-89c9-3020b3593a2b",
+        "type": "message",
+        "text": "これって分岐予測のヒントですよね。",
+        "user": "U03C6TEAZ",
+        "ts": "1583999007.357900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Qs3i",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これって分岐予測のヒントですよね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "267424ea-b56f-49b1-8e96-57fb64b4e1dd",
+        "type": "message",
+        "text": "`__builtin_expect` とか。",
+        "user": "U03C6TEAZ",
+        "ts": "1583999010.358100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GM6\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "__builtin_expect",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d530cfc1-0888-4a26-87ed-5e3468a4cc57",
+        "type": "message",
+        "text": "そこまでやると速いだろうなー。",
+        "user": "U03C6TEAZ",
+        "ts": "1583999018.358300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gka",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そこまでやると速いだろうなー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "54b035ca-7461-413e-b820-a5166eacc599",
+        "type": "message",
+        "text": "<https:\/\/qiita.com\/jnchito\/items\/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1>",
+        "user": "U03C6TEAZ",
+        "ts": "1583999094.358500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Qiita",
+                "title": "サンプルコードでわかる！Ruby 2.4の新機能と変更点 - Qiita",
+                "title_link": "https:\/\/qiita.com\/jnchito\/items\/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1",
+                "text": "## はじめに 2016年9月にRuby 2.4のpreview2が、11月にpreview3が、12月11日にrc1がリリースされました（[参考1](<https:\/\/www.ruby-lang.org\/en\/news\/2016\/0>...",
+                "fallback": "Qiita: サンプルコードでわかる！Ruby 2.4の新機能と変更点 - Qiita",
+                "image_url": "https:\/\/qiita-user-contents.imgix.net\/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Fogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&w=1200&mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3D%25E3%2582%25B5%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AB%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2589%25E3%2581%25A7%25E3%2582%258F%25E3%2581%258B%25E3%2582%258B%25EF%25BC%2581Ruby%25202.4%25E3%2581%25AE%25E6%2596%25B0%25E6%25A9%259F%25E8%2583%25BD%25E3%2581%25A8%25E5%25A4%2589%25E6%259B%25B4%25E7%2582%25B9%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D2457acf77dc34b0a3fc6703520dd8748&mark-align=center%2Cmiddle&blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540jnchito%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Dc1c16db9136004e87388aace8cdbea19&blend-align=center%2Cmiddle&blend-mode=normal&s=9edbb1f484de97717b1277a58a6afaf8",
+                "from_url": "https:\/\/qiita.com\/jnchito\/items\/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 49941,
+                "service_icon": "https:\/\/cdn.qiita.com\/assets\/favicons\/public\/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+                "id": 1,
+                "original_url": "https:\/\/qiita.com\/jnchito\/items\/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "A3m8a",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/qiita.com\/jnchito\/items\/9f9d45581816f121af07#%E3%83%91%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%B3%E3%82%B9%E6%94%B9%E5%96%84-1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dd7ee70c-3dfe-4db8-9608-c1828d414abc",
+        "type": "message",
+        "text": "これじゃないすかね。",
+        "user": "U03C6TEAZ",
+        "ts": "1583999097.358700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LI+RC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これじゃないすかね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "97af8df6-e5dc-4f1a-be0f-d6faceebd8f9",
+        "type": "message",
+        "text": "ちなみに僕のは C++ の stdlib には勝った。",
+        "user": "U03C6TEAZ",
+        "ts": "1583999156.359200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jkJT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに僕のは C++ の stdlib には勝った。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sasumatsu",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW",
+                    "U6XP9LZ6V",
+                    "U06ECBRTJ",
+                    "U7EEZ4LMR"
+                ],
+                "count": 5
+            },
+            {
+                "name": "puro",
+                "users": [
+                    "U9S4G0LJW",
+                    "U06ECBRTJ"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6022a1d2-708d-4477-8245-42e576d7c202",
+        "type": "message",
+        "text": ".oO( と心を落ち着かせて khash に負けた事を記憶から消し去った )",
+        "user": "U03C6TEAZ",
+        "ts": "1583999196.359900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sPfdx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ".oO( と心を落ち着かせて khash に負けた事を記憶から消し去った )"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sweat_smile",
+                "users": [
+                    "U9S4G0LJW",
+                    "UEACRCY0Z"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9ee31247-c1d1-460a-8eaf-0bafea022f5a",
+        "type": "message",
+        "text": "とりあえず、Rubyのst.[ch]を単体でビルドできるようにしたパッチ。\n<https:\/\/github.com\/k-takata\/ruby\/commit\/d0f9d3560571463a8fc78020134073b731171cf2>\n少し古いバージョンはonigmoに組み込んであるけど、このバージョンはまだ試してない。",
+        "user": "U6XP9LZ6V",
+        "ts": "1584018044.363200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "st: Make st work without Ruby · k-takata\/ruby@d0f9d35",
+                "title_link": "https:\/\/github.com\/k-takata\/ruby\/commit\/d0f9d3560571463a8fc78020134073b731171cf2",
+                "text": "Standalone version of Onigmo also uses st.[ch], but some modifications were needed. Import them into Ruby. * `RUBY` and `NOT_RUBY` were used. Use only `RUBY` for consistency. * Define some Ruby-sp...",
+                "fallback": "GitHub: st: Make st work without Ruby · k-takata\/ruby@d0f9d35",
+                "from_url": "https:\/\/github.com\/k-takata\/ruby\/commit\/d0f9d3560571463a8fc78020134073b731171cf2",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/840186?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/k-takata\/ruby\/commit\/d0f9d3560571463a8fc78020134073b731171cf2"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ovtx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とりあえず、Rubyのst.[ch]を単体でビルドできるようにしたパッチ。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/k-takata\/ruby\/commit\/d0f9d3560571463a8fc78020134073b731171cf2"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n少し古いバージョンはonigmoに組み込んであるけど、このバージョンはまだ試してない。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "043df73f-05db-477e-92b5-f0823c263236",
+        "type": "message",
+        "text": "k-takata さんに悲しいお知らせだ。 <https:\/\/bitbucket.org\/blog\/sunsetting-mercurial-support-in-bitbucket|https:\/\/bitbucket.org\/blog\/sunsetting-mercurial-support-in-bitbucket>",
+        "user": "U03C6TEAZ",
+        "ts": "1584052156.364600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Bitbucket",
+                "title": "Sunsetting Mercurial support in Bitbucket - Bitbucket",
+                "title_link": "https:\/\/bitbucket.org\/blog\/sunsetting-mercurial-support-in-bitbucket",
+                "text": "The version control software market has evolved a lot since Bitbucket began in 2008. When we launched, centralized version control was…",
+                "fallback": "Bitbucket: Sunsetting Mercurial support in Bitbucket - Bitbucket",
+                "image_url": "https:\/\/rlmr51w5rw3n7zek1m7tizzg-wpengine.netdna-ssl.com\/wp-content\/uploads\/2019\/08\/bitbucket-logo-gradient-blue@2x.png",
+                "image_width": 792,
+                "image_height": 250,
+                "ts": 1566294922,
+                "from_url": "https:\/\/bitbucket.org\/blog\/sunsetting-mercurial-support-in-bitbucket",
+                "image_bytes": 12241,
+                "service_icon": "https:\/\/rlmr51w5rw3n7zek1m7tizzg-wpengine.netdna-ssl.com\/wp-content\/uploads\/2017\/09\/cropped-android-chrome-512-1-180x180.png",
+                "id": 1,
+                "original_url": "https:\/\/bitbucket.org\/blog\/sunsetting-mercurial-support-in-bitbucket"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=FIup",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "k-takata さんに悲しいお知らせだ。 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/bitbucket.org\/blog\/sunsetting-mercurial-support-in-bitbucket",
+                                "text": "https:\/\/bitbucket.org\/blog\/sunsetting-mercurial-support-in-bitbucket"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "55a74e3b-8d3f-4ba3-a5d0-40a3e1b0e27a",
+        "type": "message",
+        "text": "すでにosdnに移っています。",
+        "user": "U6XP9LZ6V",
+        "ts": "1584055590.365300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "z+o",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すでにosdnに移っています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "otz",
+                "users": [
+                    "UAZ33BKV2",
+                    "U03C6TEAZ",
+                    "U06BRP8VD",
+                    "U7JL1UKKL"
+                ],
+                "count": 4
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ac0f6ce0-4e0b-4b94-a1c3-fa524b749343",
+        "type": "message",
+        "text": "パッチのリポジトリはここです。\n<https:\/\/osdn.net\/users\/k_takata\/pf\/vim-ktakata-mq\/wiki\/FrontPage>",
+        "user": "U6XP9LZ6V",
+        "ts": "1584064093.366000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "vim-ktakata-mq Wiki - OSDN",
+                "title_link": "https:\/\/osdn.net\/users\/k_takata\/pf\/vim-ktakata-mq\/wiki\/FrontPage",
+                "text": "vim-ktakata-mq Wiki #osdn",
+                "fallback": "vim-ktakata-mq Wiki - OSDN",
+                "thumb_url": "https:\/\/static.osdn.net\/OSDN_icon_125x125.png",
+                "from_url": "https:\/\/osdn.net\/users\/k_takata\/pf\/vim-ktakata-mq\/wiki\/FrontPage",
+                "thumb_width": 125,
+                "thumb_height": 125,
+                "service_icon": "https:\/\/osdn.net\/favicon.ico",
+                "service_name": "osdn.net",
+                "id": 1,
+                "original_url": "https:\/\/osdn.net\/users\/k_takata\/pf\/vim-ktakata-mq\/wiki\/FrontPage"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uIc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パッチのリポジトリはここです。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/osdn.net\/users\/k_takata\/pf\/vim-ktakata-mq\/wiki\/FrontPage"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

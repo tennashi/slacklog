@@ -1,0 +1,167 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/283e5f4e69b204e0eafd408548e69b7ca9b4871b|patch 8.2.0365: tag kind can't be a multi-byte character>\npatch 8.2.0365: tag kind can't be a multi-byte character\n\nProblem:    Tag kind can't be a multi-byte character. (Marcin Szamotulski)\nSolution:   Recognize multi-byte character. (closes #5724)",
+        "ts": "1583738303.015700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0365: tag kind can't be a multi-byte character · vim\/vim@283e5f4",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/283e5f4e69b204e0eafd408548e69b7ca9b4871b",
+                "text": "Problem: Tag kind can't be a multi-byte character. (Marcin Szamotulski) Solution: Recognize multi-byte character. (closes #5724)",
+                "fallback": "GitHub: patch 8.2.0365: tag kind can't be a multi-byte character · vim\/vim@283e5f4",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/283e5f4e69b204e0eafd408548e69b7ca9b4871b",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/283e5f4e69b204e0eafd408548e69b7ca9b4871b"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583738304.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/2e09634a7880f55a61cb6b959dd89c51972866af|patch 8.2.0366: hardcopy command not tested enough>\npatch 8.2.0366: hardcopy command not tested enough\n\nProblem:    Hardcopy command not tested enough.\nSolution:   Add tests for printing. (Dominique Pelle, closes #5748)",
+        "ts": "1583752701.015900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0366: hardcopy command not tested enough · vim\/vim@2e09634",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/2e09634a7880f55a61cb6b959dd89c51972866af",
+                "text": "Problem: Hardcopy command not tested enough. Solution: Add tests for printing. (Dominique Pelle, closes #5748)",
+                "fallback": "GitHub: patch 8.2.0366: hardcopy command not tested enough · vim\/vim@2e09634",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/2e09634a7880f55a61cb6b959dd89c51972866af",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/2e09634a7880f55a61cb6b959dd89c51972866af"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583752701.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/3a2505cc183b3c5f4852ae8a945172582fbc650f|patch 8.2.0367: can use :pedit in a popup window>\npatch 8.2.0367: can use :pedit in a popup window\n\nProblem:    Can use :pedit in a popup window.\nSolution:   Disallow it.",
+        "ts": "1583769512.016100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0367: can use :pedit in a popup window · vim\/vim@3a2505c",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/3a2505cc183b3c5f4852ae8a945172582fbc650f",
+                "text": "Problem: Can use :pedit in a popup window. Solution: Disallow it.",
+                "fallback": "GitHub: patch 8.2.0367: can use :pedit in a popup window · vim\/vim@3a2505c",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/3a2505cc183b3c5f4852ae8a945172582fbc650f",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/3a2505cc183b3c5f4852ae8a945172582fbc650f"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583769514.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/5269bd2a724fdb8c16c9635ef744a670f1bc8bd5|patch 8.2.0368: Vim9: import that redefines local variable does not fail>\npatch 8.2.0368: Vim9: import that redefines local variable does not fail\n\nProblem:    Vim9: import that redefines local variable does not fail.\nSolution:   Check for already defined symbols.",
+        "ts": "1583779111.016300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0368: Vim9: import that redefines local variable does not fail · vim\/vim@5269bd2",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/5269bd2a724fdb8c16c9635ef744a670f1bc8bd5",
+                "text": "Problem: Vim9: import that redefines local variable does not fail. Solution: Check for already defined symbols.",
+                "fallback": "GitHub: patch 8.2.0368: Vim9: import that redefines local variable does not fail · vim\/vim@5269bd2",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/5269bd2a724fdb8c16c9635ef744a670f1bc8bd5",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/5269bd2a724fdb8c16c9635ef744a670f1bc8bd5"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583779111.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/1671f4488105ee12a6a8558ae351436c26ab55fc|patch 8.2.0369: various Normal mode commands not fully tested>\npatch 8.2.0369: various Normal mode commands not fully tested\n\nProblem:    Various Normal mode commands not fully tested.\nSolution:   Add more tests. (Yegappan Lakshmanan, closes #5751)",
+        "ts": "1583823498.016500",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0369: various Normal mode commands not fully tested · vim\/vim@1671f44",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/1671f4488105ee12a6a8558ae351436c26ab55fc",
+                "text": "Problem: Various Normal mode commands not fully tested. Solution: Add more tests. (Yegappan Lakshmanan, closes #5751)",
+                "fallback": "GitHub: patch 8.2.0369: various Normal mode commands not fully tested · vim\/vim@1671f44",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/1671f4488105ee12a6a8558ae351436c26ab55fc",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/1671f4488105ee12a6a8558ae351436c26ab55fc"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583823498.000000"
+        }
+    }
+]

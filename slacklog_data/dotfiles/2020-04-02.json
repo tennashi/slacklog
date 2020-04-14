@@ -1,0 +1,2712 @@
+[
+    {
+        "client_msg_id": "9971e3f6-ae97-4264-8635-27e17b05001c",
+        "type": "message",
+        "text": "Issueがぽこぽこ立ってるときに申し訳無いですがFzfPreviewLocationList壊れてるくさいです",
+        "user": "U7B4ZD49X",
+        "ts": "1585842973.124000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nOD2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Issueがぽこぽこ立ってるときに申し訳無いですがFzfPreviewLocationList壊れてるくさいです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "client_msg_id": "59E0920F-C2A4-4550-B98A-A6D63D65500A",
+        "type": "message",
+        "text": "マジですか、ありがとうございます\n雑にでいいんでどんな感じか聞いてもいいです？",
+        "user": "U8996GYBF",
+        "ts": "1585876047.124800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4=l",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "マジですか、ありがとうございます\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "雑にでいいんでどんな感じか聞いてもいいです？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585879257.125200",
+        "user": "U011ED2JQM6",
+        "text": "<@U011ED2JQM6> has joined the channel"
+    },
+    {
+        "client_msg_id": "4c1f4eda-0bbd-4f52-bf03-ab563e88f76a",
+        "type": "message",
+        "text": "あれ？普通に使うとエラーでませんかね？？\n```syntax on\nfiletype plugin indent on\n\nset runtimepath^=~\/.vim\/plugged\/fzf-preview.vim```\nで\n\n```Error detected while processing function fzf_preview#initializer#initialize[28]..fzf_preview#pa\nrameter#build_parameter[1]..&lt;SNR&gt;35_locationlist:\nline    2:\nE684: list index out of range: 0\nE116: Invalid arguments for function split\nE116: Invalid arguments for function len\nE15: Invalid expression: len(split(resource[0], ':')) == 1\nError detected while processing function fzf_preview#runner#fzf_run:\nline    2:\nE715: Dictionary required\nline    3:\nE715: Dictionary required```",
+        "user": "U7B4ZD49X",
+        "ts": "1585879811.125400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U7B4ZD49X",
+            "ts": "1585879824.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "la0zU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれ？普通に使うとエラーでませんかね？？\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "syntax on\nfiletype plugin indent on\n\nset runtimepath^=~\/.vim\/plugged\/fzf-preview.vim"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "で\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Error detected while processing function fzf_preview#initializer#initialize[28]..fzf_preview#pa\nrameter#build_parameter[1]..<SNR>35_locationlist:\nline    2:\nE684: list index out of range: 0\nE116: Invalid arguments for function split\nE116: Invalid arguments for function len\nE15: Invalid expression: len(split(resource[0], ':')) == 1\nError detected while processing function fzf_preview#runner#fzf_run:\nline    2:\nE715: Dictionary required\nline    3:\nE715: Dictionary required"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "client_msg_id": "39918682-9F4E-45E9-BA49-8CE4455BDA97",
+        "type": "message",
+        "text": "今PCない状態で外にいるんで試せなかったんですが了解です\n露骨に落ちるなら後で試してみますー",
+        "user": "U8996GYBF",
+        "ts": "1585879889.127500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kfS5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今PCない状態で外にいるんで試せなかったんですが了解です\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "露骨に落ちるなら後で試してみますー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF",
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fb5f2ccd-757c-4d8c-8567-af9bddfeb2eb",
+        "type": "message",
+        "text": "手元で試すと通る、なんだろう",
+        "user": "U8996GYBF",
+        "ts": "1585880903.127800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kbVeW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "手元で試すと通る、なんだろう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "client_msg_id": "f9d89263-6f4b-4907-a460-f1847444cb57",
+        "type": "message",
+        "text": "お、そうなんですね。",
+        "user": "U7B4ZD49X",
+        "ts": "1585880961.128000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZW5I",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "お、そうなんですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "client_msg_id": "61e2e560-ae39-45a0-832d-811cfbd51ea0",
+        "type": "message",
+        "text": "あ、エラー起きた",
+        "user": "U8996GYBF",
+        "ts": "1585880982.128200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "f+FJk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、エラー起きた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "client_msg_id": "cb9cf0d5-c057-49bb-88fd-4d4abdd64912",
+        "type": "message",
+        "text": "ちょっと確認します",
+        "user": "U8996GYBF",
+        "ts": "1585880985.128400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2j77=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちょっと確認します"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF",
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b99a41b2-1825-4b7d-86a2-727979ff0006",
+        "type": "message",
+        "text": "locationlistが空だと起こる感じ・・・？\n何か入ってておきます？",
+        "user": "U8996GYBF",
+        "ts": "1585881077.128700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9TA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "locationlistが空だと起こる感じ・・・？\n何か入ってておきます？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "client_msg_id": "520c7b70-0714-4326-bdaa-1470e0ce63b4",
+        "type": "message",
+        "text": "なんにしても不親切なんでハンドリングはしたいですけど、要素が存在するときにも発生するエラーかどうかひとまず確定させたい",
+        "user": "U8996GYBF",
+        "ts": "1585881258.128900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "elhy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんにしても不親切なんでハンドリングはしたいですけど、要素が存在するときにも発生するエラーかどうかひとまず確定させたい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "client_msg_id": "30bb2a69-177b-456a-8036-f17712c87203",
+        "type": "message",
+        "text": "ですね。空のときっぽいですね。",
+        "user": "U7B4ZD49X",
+        "ts": "1585881285.129100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0p6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですね。空のときっぽいですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF"
+    },
+    {
+        "client_msg_id": "582f031e-d59d-465c-9d40-48bb427a0eed",
+        "type": "message",
+        "text": "お、ってことは空の時は空配列返せば終わりですかね？",
+        "user": "U8996GYBF",
+        "ts": "1585881305.129300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vL5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "お、ってことは空の時は空配列返せば終わりですかね？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF",
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ad565a99-fbcc-421e-95a6-bbdbf499e0be",
+        "type": "message",
+        "text": "今日明日、遅くとも日曜には直したいな\nありがとうございます",
+        "user": "U8996GYBF",
+        "ts": "1585881355.129600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dYSw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今日明日、遅くとも日曜には直したいな\nありがとうございます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583836765.002000",
+        "parent_user_id": "U8996GYBF",
+        "reactions": [
+            {
+                "name": "man-bowing",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "508108ef-681d-4dbd-9f52-34a9163b08e1",
+        "type": "message",
+        "text": "ripgrep インデックスを持つことを検討してるのか... すごいな <https:\/\/github.com\/BurntSushi\/ripgrep\/issues\/1497>",
+        "user": "UNJ2DANJC",
+        "ts": "1585888447.130500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "RFC: add ngram indexing support to ripgrep · Issue #1497 · BurntSushi\/ripgrep",
+                "title_link": "https:\/\/github.com\/BurntSushi\/ripgrep\/issues\/1497",
+                "text": "An alternative name for this issue is &amp;quot;ripgrep at scale.&amp;quot; I&amp;#39;ve been thinking about some kind of indexing feature in ripgrep for a long time. In particular, I created #95 with the hope...",
+                "fallback": "GitHub: RFC: add ngram indexing support to ripgrep · Issue #1497 · BurntSushi\/ripgrep",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/456674?s=400&v=4",
+                "from_url": "https:\/\/github.com\/BurntSushi\/ripgrep\/issues\/1497",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/BurntSushi\/ripgrep\/issues\/1497"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SIK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ripgrep インデックスを持つことを検討してるのか... すごいな "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/BurntSushi\/ripgrep\/issues\/1497"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U7B4ZD49X",
+                    "ULSB0AGHH",
+                    "U72TB62UF",
+                    "UM44F5275"
+                ],
+                "count": 4
+            }
+        ]
+    },
+    {
+        "client_msg_id": "21ad5914-19da-4477-b4e4-51ba47721f45",
+        "type": "message",
+        "text": "これはうれしい",
+        "user": "U7B4ZD49X",
+        "ts": "1585888544.131300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mhQlY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これはうれしい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0505e21e-7209-4a12-ba17-78ab4162174c",
+        "type": "message",
+        "text": "最近自分矯正がようやく進んできて、パイプのあともgrepじゃなくてrgできるようになってきたw",
+        "user": "U7B4ZD49X",
+        "ts": "1585888749.132900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DEL2L",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最近自分矯正がようやく進んできて、パイプのあともgrepじゃなくてrgできるようになってきたw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9ae0e045-4ad7-4418-8d8d-2029b3de0b2e",
+        "type": "message",
+        "text": "elasticsearchとかと連携するインターフェイスを持つみたいな実装でもいい気もする",
+        "user": "UNJ2DANJC",
+        "ts": "1585888792.133500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8xiTm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "elasticsearchとかと連携するインターフェイスを持つみたいな実装でもいい気もする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tashikani",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c004e324-5389-487a-ad58-71ba736ff4cf",
+        "type": "message",
+        "text": "rustで検索エンジン作ってるプロジェクト結構あるみたいだからこういうのを埋め込んだりするのかな... それとも完全オリジナル実装なのか\n<https:\/\/github.com\/tantivy-search\/tantivy>\n<https:\/\/github.com\/meilisearch\/MeiliSearch>",
+        "user": "UNJ2DANJC",
+        "ts": "1585888895.134900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "tantivy-search\/tantivy",
+                "title_link": "https:\/\/github.com\/tantivy-search\/tantivy",
+                "text": "Tantivy is a full-text search engine library inspired by Apache Lucene and written in Rust - tantivy-search\/tantivy",
+                "fallback": "GitHub: tantivy-search\/tantivy",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/23249022?s=400&v=4",
+                "from_url": "https:\/\/github.com\/tantivy-search\/tantivy",
+                "thumb_width": 300,
+                "thumb_height": 300,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/tantivy-search\/tantivy"
+            },
+            {
+                "service_name": "GitHub",
+                "title": "meilisearch\/MeiliSearch",
+                "title_link": "https:\/\/github.com\/meilisearch\/MeiliSearch",
+                "text": "Lightning Fast, Ultra Relevant, and Typo-Tolerant Search Engine - meilisearch\/MeiliSearch",
+                "fallback": "GitHub: meilisearch\/MeiliSearch",
+                "from_url": "https:\/\/github.com\/meilisearch\/MeiliSearch",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/130688011\/fc7b1d00-63a2-11ea-92c6-904946c1e8c8",
+                "thumb_width": 500,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 2,
+                "original_url": "https:\/\/github.com\/meilisearch\/MeiliSearch"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AGx79",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "rustで検索エンジン作ってるプロジェクト結構あるみたいだからこういうのを埋め込んだりするのかな... それとも完全オリジナル実装なのか\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tantivy-search\/tantivy"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/meilisearch\/MeiliSearch"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "08efc1d4-74bd-4332-8d4f-902fc44b6f6f",
+        "type": "message",
+        "text": "Rust製のものが世の中に増えていって嬉しい限りだ",
+        "user": "U7B4ZD49X",
+        "ts": "1585889153.135600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6L6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Rust製のものが世の中に増えていって嬉しい限りだ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U0119AFDQMN"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b800ef0e-0d0d-4b41-af0c-62a2dc2dea99",
+        "type": "message",
+        "text": "最近だとsonicなんてのも出ましたね\nこれもRustだ\n<https:\/\/github.com\/valeriansaliou\/sonic>",
+        "user": "U8CC7MDCL",
+        "ts": "1585889377.136700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "valeriansaliou\/sonic",
+                "title_link": "https:\/\/github.com\/valeriansaliou\/sonic",
+                "text": ":hedgehog: Fast, lightweight &amp; schema-less search backend. An alternative to Elasticsearch that runs on a few MBs of RAM. - valeriansaliou\/sonic",
+                "fallback": "GitHub: valeriansaliou\/sonic",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/1451907?s=400&v=4",
+                "from_url": "https:\/\/github.com\/valeriansaliou\/sonic",
+                "thumb_width": 380,
+                "thumb_height": 380,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/valeriansaliou\/sonic"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ppp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最近だとsonicなんてのも出ましたね\nこれもRustだ\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/valeriansaliou\/sonic"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e2d546c0-2475-4218-98d8-f0cf2aed1290",
+        "type": "message",
+        "text": "ちょっとちゃんとissue読んでみましたがdaemonizeするつもりないらしいし、キャッシュ的な自前実装になりそうな予感。indexは永続的でないという前提で設計するっぽい。",
+        "user": "UNJ2DANJC",
+        "ts": "1585889428.137800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TtW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちょっとちゃんとissue読んでみましたがdaemonizeするつもりないらしいし、キャッシュ的な自前実装になりそうな予感。indexは永続的でないという前提で設計するっぽい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bae3404d-4ba5-425f-aa9a-2dc9520cb2b7",
+        "type": "message",
+        "text": "russ coxのcodesearchのpocを参考にするって感じか <https:\/\/github.com\/google\/codesearch>",
+        "user": "UNJ2DANJC",
+        "ts": "1585889652.138900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "google\/codesearch",
+                "title_link": "https:\/\/github.com\/google\/codesearch",
+                "text": "Fast, indexed regexp search over large file trees. Contribute to google\/codesearch development by creating an account on GitHub.",
+                "fallback": "GitHub: google\/codesearch",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/1342004?s=400&v=4",
+                "from_url": "https:\/\/github.com\/google\/codesearch",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/google\/codesearch"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UxzV9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "russ coxのcodesearchのpocを参考にするって感じか "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/google\/codesearch"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ca6220e9-d1d9-4738-adf7-afb48505aca7",
+        "type": "message",
+        "text": "rustで書かれたプロダクトが増えていくことはとても歓迎ですが、利用者としては気軽にソースを追っかけられるように勉強しないとなあと急かされる気持ちですね。\nGoとかJavaは読むだけならなんちゃってでも割といけますがRustは結構難しい。",
+        "user": "UNJ2DANJC",
+        "ts": "1585889936.141600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dm7KL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "rustで書かれたプロダクトが増えていくことはとても歓迎ですが、利用者としては気軽にソースを追っかけられるように勉強しないとなあと急かされる気持ちですね。\nGoとかJavaは読むだけならなんちゃってでも割といけますがRustは結構難しい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U7B4ZD49X",
+                    "U9S4G0LJW",
+                    "U8CC7MDCL"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bd36fe14-c623-4167-9892-6ed7adcf529f",
+        "type": "message",
+        "text": "素直な単純コードは読めてもガチガチに作りこんでるのは読めないだろうな...",
+        "user": "UAZ33BKV2",
+        "ts": "1585889991.143000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KYRyj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "素直な単純コードは読めてもガチガチに作りこんでるのは読めないだろうな..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "60bc9c8c-eb28-4da6-b97b-9f921bcd513d",
+        "type": "message",
+        "text": "私学習が結構プロダクトのバグ起因だったりするので増えていったら読めるようになる感じですね。",
+        "user": "U7B4ZD49X",
+        "ts": "1585890030.143600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6B5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私学習が結構プロダクトのバグ起因だったりするので増えていったら読めるようになる感じですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a13f52be-a44c-4788-90fd-e79a603dc393",
+        "type": "message",
+        "text": "正直プログラムって作文するときと逆で、書くときが楽で、読むときが大変的な感じありますが、Rustは書くときのほうが大変・・・",
+        "user": "U7B4ZD49X",
+        "ts": "1585890178.145700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OmTax",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "正直プログラムって作文するときと逆で、書くときが楽で、読むときが大変的な感じありますが、Rustは書くときのほうが大変・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e91b182d-54b2-4b0b-a35d-279591cc5134",
+        "type": "message",
+        "text": "結果読むのはもっと大変にw? まあ読む時の問題を先取りで潰すというのはあるのかもしれん",
+        "user": "UAZ33BKV2",
+        "ts": "1585890864.146400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Q7g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "結果読むのはもっと大変にw? まあ読む時の問題を先取りで潰すというのはあるのかもしれん"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e1fe84bf-3df9-41f3-a06f-97b2ffc6354c",
+        "type": "message",
+        "text": "fishからzshに乗り換えようと思っているのですが、おすすめのテーマやプラグインなどありますか？",
+        "user": "UAUFDS92N",
+        "ts": "1585892005.146900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7c7dc2cc9ade",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-23\/367829135376_7c7dc2cc9adecdef7fd3_72.png",
+            "first_name": "ひがし",
+            "real_name": "ひがし",
+            "display_name": "ひがし",
+            "team": "T03C4RC8V",
+            "name": "higashi.ict",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hrn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fishからzshに乗り換えようと思っているのですが、おすすめのテーマやプラグインなどありますか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "abd6bc28-880b-4958-b186-18b18cc8d35a",
+        "type": "message",
+        "text": "私はテーマ自作ですが、ここで紹介してもらった\n<https:\/\/github.com\/romkatv\/powerlevel10k>\nが一番よかった気がしてます",
+        "user": "U7B4ZD49X",
+        "ts": "1585892342.147500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "romkatv\/powerlevel10k",
+                "title_link": "https:\/\/github.com\/romkatv\/powerlevel10k",
+                "text": "A Zsh theme. Contribute to romkatv\/powerlevel10k development by creating an account on GitHub.",
+                "fallback": "GitHub: romkatv\/powerlevel10k",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/1282067?s=400&v=4",
+                "from_url": "https:\/\/github.com\/romkatv\/powerlevel10k",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/romkatv\/powerlevel10k"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kzap",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私はテーマ自作ですが、ここで紹介してもらった\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/romkatv\/powerlevel10k"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nが一番よかった気がしてます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6e89c251-6c15-4568-a8b5-015f3f67c74d",
+        "type": "message",
+        "text": "zinit(小声)",
+        "user": "U8CC7MDCL",
+        "ts": "1585892381.148000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ljKh9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "zinit(小声)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fb46c822-d37c-4e90-a4dc-c57c23321ee4",
+        "type": "message",
+        "text": "テーマはpowerlevel10k、プラグインマネージャーはzinitにしてみます！",
+        "user": "UAUFDS92N",
+        "ts": "1585892437.148700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7c7dc2cc9ade",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-23\/367829135376_7c7dc2cc9adecdef7fd3_72.png",
+            "first_name": "ひがし",
+            "real_name": "ひがし",
+            "display_name": "ひがし",
+            "team": "T03C4RC8V",
+            "name": "higashi.ict",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hj1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "テーマはpowerlevel10k、プラグインマネージャーはzinitにしてみます！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d459e0fe-6efd-45a6-848a-2713ca273351",
+        "type": "message",
+        "text": "どうでもいい小話\n(powerlevel10kの作者とzinitの作者はこの間喧嘩したので相性よくないかもですw)",
+        "user": "U7B4ZD49X",
+        "ts": "1585892748.149700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "O3ghk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どうでもいい小話\n(powerlevel10kの作者とzinitの作者はこの間喧嘩したので相性よくないかもですw)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "aussieparrot",
+                "users": [
+                    "UNJ2DANJC"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4b206110-43fb-4761-94fd-9a71fc8429ae",
+        "type": "message",
+        "text": "マジですか...\nとりあえず入れてしばらく使ってみます",
+        "user": "UAUFDS92N",
+        "ts": "1585892838.150100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7c7dc2cc9ade",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-23\/367829135376_7c7dc2cc9adecdef7fd3_72.png",
+            "first_name": "ひがし",
+            "real_name": "ひがし",
+            "display_name": "ひがし",
+            "team": "T03C4RC8V",
+            "name": "higashi.ict",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "A+b",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "マジですか...\nとりあえず入れてしばらく使ってみます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a0e9af57-c67e-4fef-a78a-34c8ccaaacbb",
+        "type": "message",
+        "text": "<https:\/\/github.com\/romkatv\/gitstatus>\nもある",
+        "user": "UAZ33BKV2",
+        "ts": "1585892902.150800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "romkatv\/gitstatus",
+                "title_link": "https:\/\/github.com\/romkatv\/gitstatus",
+                "text": "10x faster implementation of `git status` command. Contribute to romkatv\/gitstatus development by creating an account on GitHub.",
+                "fallback": "GitHub: romkatv\/gitstatus",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/1282067?s=400&v=4",
+                "from_url": "https:\/\/github.com\/romkatv\/gitstatus",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/romkatv\/gitstatus"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/a36",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/romkatv\/gitstatus"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nもある"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5349326b-567e-4cf5-902d-7e9ad7f74b5c",
+        "type": "message",
+        "text": "gitstatusはzshのvcs_infoより早くて好き。",
+        "user": "U8CC7MDCL",
+        "ts": "1585892999.152200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cHaWR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "gitstatusはzshのvcs_infoより早くて好き。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7207656c-4dab-42d7-9397-b3fdc22c2ed7",
+        "type": "message",
+        "text": "今はstarship(at bash)だけど、お世話になった。\n軽い",
+        "user": "UAZ33BKV2",
+        "ts": "1585893115.152700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jwl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今はstarship(at bash)だけど、お世話になった。\n軽い"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a4d48b89-836b-45e9-a407-d5d21694cd5c",
+        "type": "message",
+        "text": "pureがシンプルですき\n<https:\/\/github.com\/sindresorhus\/pure>",
+        "user": "U72TB62UF",
+        "ts": "1585893173.153000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "sindresorhus\/pure",
+                "title_link": "https:\/\/github.com\/sindresorhus\/pure",
+                "text": "Pretty, minimal and fast ZSH prompt. Contribute to sindresorhus\/pure development by creating an account on GitHub.",
+                "fallback": "GitHub: sindresorhus\/pure",
+                "from_url": "https:\/\/github.com\/sindresorhus\/pure",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/5890857\/b6ad9d00-93ac-11e9-9405-a4917d4979bb",
+                "thumb_width": 500,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/sindresorhus\/pure"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "v\/id",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "pureがシンプルですき\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/sindresorhus\/pure"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "72184e79-0bd0-4883-9d7f-2c5027cc89e8",
+        "type": "message",
+        "text": "なるほど\n入れてみます！",
+        "user": "UAUFDS92N",
+        "ts": "1585893477.153400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7c7dc2cc9ade",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-23\/367829135376_7c7dc2cc9adecdef7fd3_72.png",
+            "first_name": "ひがし",
+            "real_name": "ひがし",
+            "display_name": "ひがし",
+            "team": "T03C4RC8V",
+            "name": "higashi.ict",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "49uS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど\n入れてみます！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5674478a-ed0c-4b4d-b19c-2dc169d05c77",
+        "type": "message",
+        "text": "<https:\/\/github.com\/starship\/starship>\nシェルがなんであれ、ラクはラクだな",
+        "user": "UAZ33BKV2",
+        "ts": "1585893608.153800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "starship\/starship",
+                "title_link": "https:\/\/github.com\/starship\/starship",
+                "text": ":comet::milky_way: The minimal, blazing-fast, and infinitely customizable prompt for any shell! - starship\/starship",
+                "fallback": "GitHub: starship\/starship",
+                "from_url": "https:\/\/github.com\/starship\/starship",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/178991158\/17096280-8d4d-11e9-97e9-7fed5f61d6bf",
+                "thumb_width": 500,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/starship\/starship"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lMo5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/starship\/starship"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nシェルがなんであれ、ラクはラクだな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a0bfd55c-431f-403e-b723-aea0eb21ea6f",
+        "type": "message",
+        "text": "個人的には  powerlevel10k &gt; starshipな感じですね\npureはシンプルでちょっと比較できない感じ",
+        "user": "U7B4ZD49X",
+        "ts": "1585893725.155200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8dDI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "個人的には  powerlevel10k > starshipな感じですね\npureはシンプルでちょっと比較できない感じ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "43223097-12ee-4e83-ace8-9be54528c9ea",
+        "type": "message",
+        "text": "zsh-usersのプラギンは大体入れとくと捗ります",
+        "user": "UNJ2DANJC",
+        "ts": "1585893757.155700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7Su3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "zsh-usersのプラギンは大体入れとくと捗ります"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7617d6c7-1ae8-4787-8185-f1c152f578f4",
+        "type": "message",
+        "text": "これを機になんかテーマ入れようかな",
+        "user": "U7B4ZD49X",
+        "ts": "1585893900.157100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rbR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これを機になんかテーマ入れようかな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "66E5743F-4D40-461F-B727-73E832C22596",
+        "type": "message",
+        "text": "どっちも使ったことないから使ってみようかなぁ\n完全自前で非同期PROMPTやってるの乗り換えれるんだろうか・・・",
+        "user": "U8996GYBF",
+        "ts": "1585893903.157300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+hT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どっちも使ったことないから使ってみようかなぁ\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "完全自前で非同期PROMPTやってるの乗り換えれるんだろうか・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "93f0164c-78ab-47c6-a7f4-f220eb353e6f",
+        "type": "message",
+        "text": "powerlevel10kのほうはカスタマイズ性高そうなんでいける気はしてます",
+        "user": "U7B4ZD49X",
+        "ts": "1585893935.157800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cqi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "powerlevel10kのほうはカスタマイズ性高そうなんでいける気はしてます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "05588A3B-F22A-4AE4-B56B-B41112ED2B01",
+        "type": "message",
+        "text": "週末プラグインのissue潰して時間更に余ってればとかになりそう",
+        "user": "U8996GYBF",
+        "ts": "1585893983.158600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U8996GYBF",
+            "ts": "1585893991.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Hba",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "週末プラグインのissue潰して時間更に余ってればとかになりそう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "CD567E6A-04BE-4CAC-8051-DA1BB2BE1BBA",
+        "type": "message",
+        "text": "pureがなんかいい感じにgit叩いてくれてるっぽいんだけどコードが読めなさすぎてスクラッチで書き直したんですよねー",
+        "user": "U8996GYBF",
+        "ts": "1585894217.160900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Sjw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "pureがなんかいい感じにgit叩いてくれてるっぽいんだけどコードが読めなさすぎてスクラッチで書き直したんですよねー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "db67cdfb-8f1f-4957-85f0-fee0adbe9cf4",
+        "type": "message",
+        "text": "Windowsのnyagos(go\/lua)シェルのpromptをがんばってstarshipで使ってる自分はかなり変",
+        "user": "UAZ33BKV2",
+        "ts": "1585894218.161000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SBq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Windowsのnyagos(go\/lua)シェルのpromptをがんばってstarshipで使ってる自分はかなり変"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f95986af-d01e-400f-9e97-f78adb9eed7a",
+        "type": "message",
+        "text": "pureはpowerlevel10kとかなり変わりますね",
+        "user": "UAUFDS92N",
+        "ts": "1585894662.161600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7c7dc2cc9ade",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-23\/367829135376_7c7dc2cc9adecdef7fd3_72.png",
+            "first_name": "ひがし",
+            "real_name": "ひがし",
+            "display_name": "ひがし",
+            "team": "T03C4RC8V",
+            "name": "higashi.ict",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SEdA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "pureはpowerlevel10kとかなり変わりますね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "44e71b03-8fd7-44b4-a80d-1caf303c8af3",
+        "type": "message",
+        "text": "powerlevel10kはpureライクなモードもあったはず",
+        "user": "U7B4ZD49X",
+        "ts": "1585894833.162100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nkmXn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "powerlevel10kはpureライクなモードもあったはず"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "82aea315-1c5a-46d4-9f91-4a56d45812f6",
+        "type": "message",
+        "text": "私はあんまりごついのが好きじゃないんでpureっぽいのが好みですね",
+        "user": "U7B4ZD49X",
+        "ts": "1585894861.162900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fo=L",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私はあんまりごついのが好きじゃないんでpureっぽいのが好みですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0f5214a8-3dff-4947-a42f-a1463d5e3b58",
+        "type": "message",
+        "text": "powerlevel10k  は zsh 専用なのね。",
+        "user": "U03C6TEAZ",
+        "ts": "1585894978.163200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pG5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "powerlevel10k  は zsh 専用なのね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d3ceb8a3-f782-47fd-842b-dc3f3833e659",
+        "type": "message",
+        "text": "fish使ってたときはpowerlevel10kみたいなごつめのテーマ使ってたのでzshへの乗り換えを気にpureみたいなシンプルなテーマに乗り換えるのもありかも...",
+        "user": "UAUFDS92N",
+        "ts": "1585895178.164500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7c7dc2cc9ade",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-23\/367829135376_7c7dc2cc9adecdef7fd3_72.png",
+            "first_name": "ひがし",
+            "real_name": "ひがし",
+            "display_name": "ひがし",
+            "team": "T03C4RC8V",
+            "name": "higashi.ict",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4D4Wj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fish使ってたときはpowerlevel10kみたいなごつめのテーマ使ってたのでzshへの乗り換えを気にpureみたいなシンプルなテーマに乗り換えるのもありかも..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bdf50c94-05a7-4c5a-b36c-7f2ae018f1b7",
+        "type": "message",
+        "text": "ごついの色的にも主張強すぎるんですよね・・・\n私はpureスタイルでも、もっと色減らしてほしいって思って、あとでやるか、で放置したのが前回だったことを思い出した",
+        "user": "U7B4ZD49X",
+        "ts": "1585895265.166000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zeJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ごついの色的にも主張強すぎるんですよね・・・\n私はpureスタイルでも、もっと色減らしてほしいって思って、あとでやるか、で放置したのが前回だったことを思い出した"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "UAUFDS92N"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "11cfe39d-6748-4d28-a3b2-2fbe1ddb11aa",
+        "type": "message",
+        "text": "確かにごついテーマってカラフルなのが多いですからね",
+        "user": "UAUFDS92N",
+        "ts": "1585895632.166900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7c7dc2cc9ade",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-23\/367829135376_7c7dc2cc9adecdef7fd3_72.png",
+            "first_name": "ひがし",
+            "real_name": "ひがし",
+            "display_name": "ひがし",
+            "team": "T03C4RC8V",
+            "name": "higashi.ict",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2vO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "確かにごついテーマってカラフルなのが多いですからね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8f66e7de-fc5e-4c40-9db7-cf4c1d4f62c2",
+        "type": "message",
+        "text": "シェルのテーマ、カラーテーマなのか機能テーマ(デザイン込み)なのか、がある気がする",
+        "user": "UAZ33BKV2",
+        "ts": "1585895663.167400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "t5T=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "シェルのテーマ、カラーテーマなのか機能テーマ(デザイン込み)なのか、がある気がする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0E0B3B55-4C29-4BB3-9793-893BA01186E7",
+        "type": "message",
+        "text": "シンプルなのを作って出すもの増やしていったらカラフルになっていったパターン",
+        "user": "U8996GYBF",
+        "ts": "1585895705.168100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1WN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "シンプルなのを作って出すもの増やしていったらカラフルになっていったパターン"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5d4e4379-d065-4e32-8f2e-edd7b3996e6a",
+        "type": "message",
+        "text": "私はシェルのエラーとGitの未コミット以外は基本色なしが好みなんですよね・・・\nちょっとどんどん消していこう・・・",
+        "user": "U7B4ZD49X",
+        "ts": "1585895852.169300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "imO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私はシェルのエラーとGitの未コミット以外は基本色なしが好みなんですよね・・・\nちょっとどんどん消していこう・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4bd40c44-ec82-4b1f-858c-98d44d7b62de",
+        "type": "message",
+        "text": "あとdircolorsとgit のcolorとpromptそろえたいけど、やばいくらい手間\n本質的に色がそろわないw\nせめてユーザー\/ホスト\/ディレクトリ\/ブランチの色の意味を統一したいけど無理w",
+        "user": "UAZ33BKV2",
+        "ts": "1585896176.170600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Zl83",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あとdircolorsとgit のcolorとpromptそろえたいけど、やばいくらい手間\n本質的に色がそろわないw\nせめてユーザー\/ホスト\/ディレクトリ\/ブランチの色の意味を統一したいけど無理w"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2af842cd-6f11-41f0-a3cf-c8dc698b311c",
+        "type": "message",
+        "text": "色はまじで統一感出そうと思ったらやばいですよね。デスクトップ環境側、エディタ、etc...\n私は一つ一つが主張強すぎるファッションみたいにならないようにシンプル目にしてますね。シンプルだとそこそこあってればダサさがなくなるから。。。",
+        "user": "U7B4ZD49X",
+        "ts": "1585896365.173600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U7B4ZD49X",
+            "ts": "1585896387.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZfY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "色はまじで統一感出そうと思ったらやばいですよね。デスクトップ環境側、エディタ、etc...\n私は一つ一つが主張強すぎるファッションみたいにならないようにシンプル目にしてますね。シンプルだとそこそこあってればダサさがなくなるから。。。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7543c501-398e-4add-99bd-74a4d7868d68",
+        "type": "message",
+        "text": "とりあえず週末はpowerlevel10kの色といらないGitStatusを削る作業をやって移行してみよう・・・",
+        "user": "U7B4ZD49X",
+        "ts": "1585896475.174400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "S\/z2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とりあえず週末はpowerlevel10kの色といらないGitStatusを削る作業をやって移行してみよう・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7c732d81-11a0-4da1-8d8f-2a020184c206",
+        "type": "message",
+        "text": "とりあえずpowerlevel10kからプロンプトもとに戻した。\n実家のような安心感w",
+        "user": "U7B4ZD49X",
+        "ts": "1585897129.175100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Pam",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とりあえずpowerlevel10kからプロンプトもとに戻した。\n実家のような安心感w"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

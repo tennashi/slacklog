@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/f66ca9f1df535c8042292ce20f4260cafc877670|patch 8.2.0445: png and xpm files not in MS-Windows zip file>\npatch 8.2.0445: png and xpm files not in MS-Windows zip file\n\nProblem:    Png and xpm files not in MS-Windows zip file.\nSolution:   Move files to shared between Unix and Windows target.",
+        "ts": "1585163914.000200",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0445: png and xpm files not in MS-Windows zip file · vim\/vim@f66ca9f",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/f66ca9f1df535c8042292ce20f4260cafc877670",
+                "text": "Problem: Png and xpm files not in MS-Windows zip file. Solution: Move files to shared between Unix and Windows target.",
+                "fallback": "GitHub: patch 8.2.0445: png and xpm files not in MS-Windows zip file · vim\/vim@f66ca9f",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/f66ca9f1df535c8042292ce20f4260cafc877670",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/f66ca9f1df535c8042292ce20f4260cafc877670"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585163915.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/a07e31af545b91925362854a48c42fee16dd8c28|patch 8.2.0446: listener with undo of deleting all lines not tested>\npatch 8.2.0446: listener with undo of deleting all lines not tested\n\nProblem:    Listener with undo of deleting all lines not tested.\nSolution:   Add a test.",
+        "ts": "1585167528.000400",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0446: listener with undo of deleting all lines not tested · vim\/vim@a07e31a",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/a07e31af545b91925362854a48c42fee16dd8c28",
+                "text": "Problem: Listener with undo of deleting all lines not tested. Solution: Add a test.",
+                "fallback": "GitHub: patch 8.2.0446: listener with undo of deleting all lines not tested · vim\/vim@a07e31a",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/a07e31af545b91925362854a48c42fee16dd8c28",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/a07e31af545b91925362854a48c42fee16dd8c28"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585167529.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/bfcfd5784a2fe950d8e58d1d534bbbb4824524eb|patch 8.2.0447: terminal scroll tests fails on some systems>\npatch 8.2.0447: terminal scroll tests fails on some systems\n\nProblem:    Terminal scroll tests fails on some systems.\nSolution:   Remove the fixed 100msec wait for Win32.  Add a loop to wait until\n            scrolling has finished. (James McCoy, closes #5842)",
+        "ts": "1585168716.000600",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0447: terminal scroll tests fails on some systems · vim\/vim@bfcfd57",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/bfcfd5784a2fe950d8e58d1d534bbbb4824524eb",
+                "text": "Problem: Terminal scroll tests fails on some systems. Solution: Remove the fixed 100msec wait for Win32. Add a loop to wait until scrolling has finished. (James McCoy, closes #5842)",
+                "fallback": "GitHub: patch 8.2.0447: terminal scroll tests fails on some systems · vim\/vim@bfcfd57",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/bfcfd5784a2fe950d8e58d1d534bbbb4824524eb",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/bfcfd5784a2fe950d8e58d1d534bbbb4824524eb"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585168717.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/0e05de46226eb4e5ea580beefa71831f92d613d3|patch 8.2.0448: various functions not properly tested>\npatch 8.2.0448: various functions not properly tested\n\nProblem:    Various functions not properly tested.\nSolution:   Add more tests, especially for failures. (Yegappan Lakshmanan,\n            closes #5843)",
+        "ts": "1585172315.000800",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0448: various functions not properly tested · vim\/vim@0e05de4",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/0e05de46226eb4e5ea580beefa71831f92d613d3",
+                "text": "Problem: Various functions not properly tested. Solution: Add more tests, especially for failures. (Yegappan Lakshmanan, closes #5843)",
+                "fallback": "GitHub: patch 8.2.0448: various functions not properly tested · vim\/vim@0e05de4",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/0e05de46226eb4e5ea580beefa71831f92d613d3",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/0e05de46226eb4e5ea580beefa71831f92d613d3"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585172315.000000"
+        }
+    }
+]

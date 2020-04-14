@@ -1,0 +1,856 @@
+[
+    {
+        "client_msg_id": "eeabcfc4-8951-49cb-bc2a-6327b95ef76f",
+        "type": "message",
+        "text": "Go 1.14の主なregression\n\n- runtime: mlock of signal stack failed: 12 #37436 <https:\/\/github.com\/golang\/go\/issues\/37436>\n  - 現象: mlockに失敗した時にメッセージ (increase the mlock limit (ulimit -l) or update your kernel to 5.3.15+, 5.4.2+, or 5.5+) を表示してpanicする\n  - 根本原因: Linuxカーネルのバグ (<https:\/\/bugzilla.kernel.org\/show_bug.cgi?id=205663>)\n  - 影響範囲: Linux 5.2.x, 5.3.0-5.3.14, 5.4.0-5.4.1\n  - Go側の原因: <https:\/\/github.com\/golang\/go\/issues\/35777> <https:\/\/go-review.googlesource.com\/c\/go\/+\/209899\/> <https:\/\/go-review.googlesource.com\/c\/go\/+\/210098>\n  - 修正: mlockで失敗したらwiki page (<https:\/\/golang.org\/wiki\/LinuxKernelSignalVectorBug>) へのリンクを表示して継続する、予期しないSIGSEGV, SIGBUGを受けてmlockに失敗していたらstack traceにwiki pageへのリンクを表示する <https:\/\/go-review.googlesource.com\/c\/go\/+\/223417>\n\n- SIGILL: illegal instruction on any go tool under macOS #37459 <https:\/\/github.com\/golang\/go\/issues\/37459>\n  - 現象: `runtime.asyncPreempt()` で `SIGILL: illegal instruction` が起きてpanicする\n  - 原因: `darwin\/amd64` にて `VZEROUPPER` を呼ぶようになった <https:\/\/go-review.googlesource.com\/c\/go\/+\/219131>\n  - 影響範囲: Sandy Bridgeよりも古いCPU (Advanced Vector Extensions (AVX) をサポートしていないCPU) のmacOS (Darwin\/amd64)\n  - 修正: AVXをサポートしていないCPUでは `VZEROUPPER` を呼ばない <https:\/\/go-review.googlesource.com\/c\/go\/+\/221058>\n\n- runtime: crash on 1.14 with unexpected return pc, fatal error: unknown caller pc #37664 <https:\/\/github.com\/golang\/go\/issues\/37664>\n  - 現象: 再帰的な関数呼び出しで、`defer` 内の `recover` 後に `panic` があるときに `fatal error: unknown caller pc` エラーとなりpanicする\n  - 原因: `defer` の実装の改善 <https:\/\/go-review.googlesource.com\/c\/go\/+\/190098>\n  - 修正: `panic` の実装の修正 <https:\/\/go-review.googlesource.com\/c\/go\/+\/222420>\n\n- math\/big: panic in big.ParseFloat (off by one access) #37499 <https:\/\/github.com\/golang\/go\/issues\/37499>\n  - 現象: `big.ParseFloat` でpanicする\n  - 原因: 割り算のアルゴリズムの変更 <https:\/\/github.com\/golang\/go\/issues\/21960> <https:\/\/go-review.googlesource.com\/c\/go\/+\/172018>\n  - 修正: `nat#divBasic` の実装の修正 <https:\/\/go-review.googlesource.com\/c\/go\/+\/221980>\n\n- cmd\/cgo: fails to generate certain types with Go 1.14 #37621 <https:\/\/github.com\/golang\/go\/issues\/37621>\n  - 現象: `cgo -godefs` で意図したコードが生成されない\n  - 原因: <https:\/\/github.com\/golang\/go\/issues\/31891> <https:\/\/go-review.googlesource.com\/c\/go\/+\/181857>",
+        "user": "U7H4TJEG0",
+        "ts": "1584337253.423700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U7H4TJEG0",
+            "ts": "1584337314.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MGfT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Go 1.14の主なregression\n\n- runtime: mlock of signal stack failed: 12 #37436 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/37436"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 現象: mlockに失敗した時にメッセージ (increase the mlock limit (ulimit -l) or update your kernel to 5.3.15+, 5.4.2+, or 5.5+) を表示してpanicする\n  - 根本原因: Linuxカーネルのバグ ("
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/bugzilla.kernel.org\/show_bug.cgi?id=205663"
+                            },
+                            {
+                                "type": "text",
+                                "text": ")\n  - 影響範囲: Linux 5.2.x, 5.3.0-5.3.14, 5.4.0-5.4.1\n  - Go側の原因: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/35777"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/209899\/"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/210098"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 修正: mlockで失敗したらwiki page ("
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/golang.org\/wiki\/LinuxKernelSignalVectorBug"
+                            },
+                            {
+                                "type": "text",
+                                "text": ") へのリンクを表示して継続する、予期しないSIGSEGV, SIGBUGを受けてmlockに失敗していたらstack traceにwiki pageへのリンクを表示する "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/223417"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n- SIGILL: illegal instruction on any go tool under macOS #37459 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/37459"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 現象: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "runtime.asyncPreempt()",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " で "
+                            },
+                            {
+                                "type": "text",
+                                "text": "SIGILL: illegal instruction",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " が起きてpanicする\n  - 原因: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "darwin\/amd64",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " にて "
+                            },
+                            {
+                                "type": "text",
+                                "text": "VZEROUPPER",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を呼ぶようになった "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/219131"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 影響範囲: Sandy Bridgeよりも古いCPU (Advanced Vector Extensions (AVX) をサポートしていないCPU) のmacOS (Darwin\/amd64)\n  - 修正: AVXをサポートしていないCPUでは "
+                            },
+                            {
+                                "type": "text",
+                                "text": "VZEROUPPER",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を呼ばない "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/221058"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n- runtime: crash on 1.14 with unexpected return pc, fatal error: unknown caller pc #37664 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/37664"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 現象: 再帰的な関数呼び出しで、"
+                            },
+                            {
+                                "type": "text",
+                                "text": "defer",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 内の "
+                            },
+                            {
+                                "type": "text",
+                                "text": "recover",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 後に "
+                            },
+                            {
+                                "type": "text",
+                                "text": "panic",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " があるときに "
+                            },
+                            {
+                                "type": "text",
+                                "text": "fatal error: unknown caller pc",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " エラーとなりpanicする\n  - 原因: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "defer",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の実装の改善 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/190098"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 修正: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "panic",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の実装の修正 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/222420"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n- math\/big: panic in big.ParseFloat (off by one access) #37499 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/37499"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 現象: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "big.ParseFloat",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " でpanicする\n  - 原因: 割り算のアルゴリズムの変更 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/21960"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/172018"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 修正: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "nat#divBasic",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の実装の修正 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/221980"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\n- cmd\/cgo: fails to generate certain types with Go 1.14 #37621 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/37621"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n  - 現象: "
+                            },
+                            {
+                                "type": "text",
+                                "text": "cgo -godefs",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " で意図したコードが生成されない\n  - 原因: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/issues\/31891"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/go-review.googlesource.com\/c\/go\/+\/181857"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U9S4G0LJW",
+                    "UG6DF6W87",
+                    "U03C6TEAZ",
+                    "U06BRP8VD",
+                    "UA4RVLHK7",
+                    "UHV7G5KKP",
+                    "U776661HA",
+                    "U0M7GCBPD",
+                    "U80CX6XDZ",
+                    "UD6US3V24",
+                    "UEWCGP7CP"
+                ],
+                "count": 11
+            },
+            {
+                "name": "god",
+                "users": [
+                    "U06ECBRTJ",
+                    "UG6DF6W87",
+                    "UKHUVMBJR",
+                    "U03C6TEAZ",
+                    "U06BRP8VD",
+                    "UHV7G5KKP",
+                    "U776661HA",
+                    "UK7DT8URY",
+                    "U80CX6XDZ",
+                    "UEWCGP7CP",
+                    "UGP5AJKU4"
+                ],
+                "count": 11
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9c464fa2-9675-452b-a3e1-8e187de35736",
+        "type": "message",
+        "text": "まとめすばら",
+        "user": "U03C6TEAZ",
+        "ts": "1584338503.424700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kOL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まとめすばら"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "05077450-0930-46ce-8be1-d932d23149cb",
+        "type": "message",
+        "text": "結構(使うのに)めんどいのが多いなぁw",
+        "user": "U06BRP8VD",
+        "ts": "1584338683.425500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JsMd7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "結構(使うのに)めんどいのが多いなぁw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7bf25b67-511e-470b-ae44-e9a1443ce405",
+        "type": "message",
+        "text": "1.15にfixするまで見送ってもいいんではないかという気持ちになりそうな、クリティカルというかデカいのが多い気が...",
+        "user": "UAZ33BKV2",
+        "ts": "1584338986.426300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NoLkG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "1.15にfixするまで見送ってもいいんではないかという気持ちになりそうな、クリティカルというかデカいのが多い気が..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "50980060-853d-4192-878e-2fcd6f6c8e92",
+        "type": "message",
+        "text": "1.14.1 ﾏﾀﾞｰ",
+        "user": "U06BRP8VD",
+        "ts": "1584339074.426500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2Pjw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "1.14.1 ﾏﾀﾞｰ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8d5e7484-6323-41c9-8cac-4f2e374cdc40",
+        "type": "message",
+        "text": "defer改善など恩恵も大きいはずなので1.14.1でたら上げていきたい所存",
+        "user": "U7H4TJEG0",
+        "ts": "1584339091.426900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dCN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "defer改善など恩恵も大きいはずなので1.14.1でたら上げていきたい所存"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6c117a5d-46e4-4e68-a06b-4f2167ec91ef",
+        "type": "message",
+        "text": "<https:\/\/github.com\/golang\/go\/milestone\/137>",
+        "user": "U06BRP8VD",
+        "ts": "1584339110.427400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "golang\/go",
+                "title_link": "https:\/\/github.com\/golang\/go\/milestone\/137",
+                "text": "The Go programming language. Contribute to golang\/go development by creating an account on GitHub.",
+                "fallback": "GitHub: golang\/go",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/4314092?s=400&v=4",
+                "from_url": "https:\/\/github.com\/golang\/go\/milestone\/137",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/golang\/go\/milestone\/137"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LHJ6H",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/milestone\/137"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "01fe81ae-6e66-4dd5-91c6-ce50f633e720",
+        "type": "message",
+        "text": "(patch verでfixが来れば大丈夫か...)",
+        "user": "UAZ33BKV2",
+        "ts": "1584339125.428100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iHFyn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(patch verでfixが来れば大丈夫か...)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2704dd63-d529-422c-bef0-45680cdde825",
+        "type": "message",
+        "text": "<@U7H4TJEG0> さんのまとめ  slack に書いとくのもったいない（すぐ消えるし）\n引用もしたいのでブログかなんかに書いてもらえたら嬉しいんですがどうでしょう…？",
+        "user": "U0M7GCBPD",
+        "ts": "1584341099.429800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8sssF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U7H4TJEG0"
+                            },
+                            {
+                                "type": "text",
+                                "text": " さんのまとめ  slack に書いとくのもったいない（すぐ消えるし）\n引用もしたいのでブログかなんかに書いてもらえたら嬉しいんですがどうでしょう…？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0526d529-58a7-4114-8776-754ab9f6b074",
+        "type": "message",
+        "text": "あと slack のインデント、きびしい。",
+        "user": "U03C6TEAZ",
+        "ts": "1584341118.430100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IxP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あと slack のインデント、きびしい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6c712d3d-1e00-4500-a1d3-a3d156c55f12",
+        "type": "message",
+        "text": "gistにはりつけました <https:\/\/gist.github.com\/itchyny\/e74dd400e3e2b7f0ada1cc0f729a9b4b>",
+        "user": "U7H4TJEG0",
+        "ts": "1584341575.430700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "o9aY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "gistにはりつけました "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/gist.github.com\/itchyny\/e74dd400e3e2b7f0ada1cc0f729a9b4b"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "subara",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW",
+                    "UK7DT8URY",
+                    "U0M7GCBPD",
+                    "U06BRP8VD",
+                    "U776661HA",
+                    "UGP5AJKU4"
+                ],
+                "count": 7
+            }
+        ]
+    },
+    {
+        "client_msg_id": "248e33fd-a8a1-4db8-aaea-0e7a730e2fcd",
+        "type": "message",
+        "text": "ありがとうございます！",
+        "user": "U0M7GCBPD",
+        "ts": "1584341845.431300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kAhzT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございます！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

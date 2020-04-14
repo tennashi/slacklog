@@ -1,0 +1,304 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585308654.065800",
+        "user": "U010YP3BC1L",
+        "text": "<@U010YP3BC1L> has joined the channel"
+    },
+    {
+        "client_msg_id": "1b9d3d43-24f5-4f7e-acb1-ad9dee598594",
+        "type": "message",
+        "text": "パッチ番号の 法則が 乱れる！",
+        "user": "U03C71D7H",
+        "ts": "1585377512.066800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oJRd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パッチ番号の 法則が 乱れる！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2a1f6def-0b5a-4a35-861c-1e875abb89d4",
+        "type": "message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7>",
+        "user": "U03C6TEAZ",
+        "ts": "1585377546.067100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Correct list of patch numbers · vim\/vim@495282b",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7",
+                "text": "The official Vim repository. Contribute to vim\/vim development by creating an account on GitHub.",
+                "fallback": "GitHub: Correct list of patch numbers · vim\/vim@495282b",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PY2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "436699c7-8382-4d3f-ab32-63d747058b7b",
+        "type": "message",
+        "text": "ぶぉ",
+        "user": "U03C6TEAZ",
+        "ts": "1585377549.067400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SgYi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ぶぉ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c7d7655e-99cb-4330-a7f0-8508d67943b6",
+        "type": "message",
+        "text": "かぶってたの...",
+        "user": "UAZ33BKV2",
+        "ts": "1585377577.067600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "otSn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "かぶってたの..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a96b41eb-b031-4b09-bdb4-76d01f6a1bc8",
+        "type": "message",
+        "text": "コミットメッセージとタグが変になったって言ってた。\n<https:\/\/groups.google.com\/d\/msg\/vim_dev\/LcPF0m4-JxI\/vQE14CELAwAJ>",
+        "user": "U6XP9LZ6V",
+        "ts": "1585377814.068500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iQ=8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "コミットメッセージとタグが変になったって言ってた。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/groups.google.com\/d\/msg\/vim_dev\/LcPF0m4-JxI\/vQE14CELAwAJ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b50a442f-9b08-4dd5-a22f-4df7dd9f8eed",
+        "type": "message",
+        "text": "8.2.0463に8.2.0464のメッセージとタグが付いちゃって、本当の8.2.0464にはタグが付いてないのか。",
+        "user": "U6XP9LZ6V",
+        "ts": "1585378065.069600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e6R",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "8.2.0463に8.2.0464のメッセージとタグが付いちゃって、本当の8.2.0464にはタグが付いてないのか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "49d9229d-f328-4758-8a42-a37621cabac6",
+        "type": "message",
+        "text": "タグはまぁ直せるからいいかな",
+        "user": "U03C6TEAZ",
+        "ts": "1585378116.069900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1=t95",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "タグはまぁ直せるからいいかな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

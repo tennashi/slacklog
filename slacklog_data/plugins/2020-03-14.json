@@ -1,0 +1,263 @@
+[
+    {
+        "client_msg_id": "ad3162db-aa08-409a-80db-2a5b3c143aed",
+        "type": "message",
+        "text": "上記の PR、devel ブランチにマージしたので試してくれる方がいたら嬉しいです（沢山 PR 出すとマージがつらいので devel に一本化した）\n<https:\/\/github.com\/tyru\/caw.vim\/pull\/118>",
+        "user": "U0M7GCBPD",
+        "ts": "1584174239.367600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "130",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "上記の PR、devel ブランチにマージしたので試してくれる方がいたら嬉しいです（沢山 PR 出すとマージがつらいので devel に一本化した）\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tyru\/caw.vim\/pull\/118"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584201446.367800",
+        "user": "U0102N1F8H4",
+        "text": "<@U0102N1F8H4> has joined the channel"
+    },
+    {
+        "client_msg_id": "4302d7b9-a08f-403d-a987-603c942649fd",
+        "type": "message",
+        "text": "随分前に <@U9GUS1S0G> さんが書いてくれた caw.vim operator mapping 用の設定が改めてシンプルすぎて美しい…っつってる\ncaw.vim のマッピングを operator をデフォルトにする場合でも `gcc` は operator-pending mode に入ってほしくない場合の設定。\n```nmap gcc &lt;Plug&gt;(caw:hatpos:toggle:operator)_\nxmap gcc &lt;Plug&gt;(caw:hatpos:toggle:operator)```\n<https:\/\/github.com\/tyru\/caw.vim\/issues\/80>",
+        "user": "U0M7GCBPD",
+        "ts": "1584254809.370200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Support for motion commands · Issue #80 · tyru\/caw.vim",
+                "title_link": "https:\/\/github.com\/tyru\/caw.vim\/issues\/80",
+                "text": "Is it possible to support motion commands when commenting? Specifically, I wish to do 5gcc to toggle comments on the next five lines. This is a feature I sorely miss from NerdCommenter My current a...",
+                "fallback": "GitHub: Support for motion commands · Issue #80 · tyru\/caw.vim",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/48169?s=400&v=4",
+                "from_url": "https:\/\/github.com\/tyru\/caw.vim\/issues\/80",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/tyru\/caw.vim\/issues\/80"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LyhF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "随分前に "
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "U9GUS1S0G"
+                            },
+                            {
+                                "type": "text",
+                                "text": " さんが書いてくれた caw.vim operator mapping 用の設定が改めてシンプルすぎて美しい…っつってる\ncaw.vim のマッピングを operator をデフォルトにする場合でも "
+                            },
+                            {
+                                "type": "text",
+                                "text": "gcc",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " は operator-pending mode に入ってほしくない場合の設定。\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "nmap gcc <Plug>(caw:hatpos:toggle:operator)_\nxmap gcc <Plug>(caw:hatpos:toggle:operator)"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tyru\/caw.vim\/issues\/80"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "52345512-5d41-44b6-9ae7-845b7691eafc",
+        "type": "message",
+        "text": "`_` なんてモーションしらんかった",
+        "user": "U0M7GCBPD",
+        "ts": "1584254817.370600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "o0U",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "_",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " なんてモーションしらんかった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ce51d62e-7580-42a4-a8a0-b4cc074f97f6",
+        "type": "message",
+        "text": "repeat.vim 用の PR 送ってもらった覚えがあるし本当にお世話になってばかりだなー",
+        "user": "U0M7GCBPD",
+        "ts": "1584254841.371100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "XH8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "repeat.vim 用の PR 送ってもらった覚えがあるし本当にお世話になってばかりだなー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5bbd76c5-2509-4732-a4af-b2589ebb3940",
+        "type": "message",
+        "text": "おー",
+        "user": "UAZ33BKV2",
+        "ts": "1584255395.371300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bie",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

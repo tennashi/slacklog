@@ -1,0 +1,1191 @@
+[
+    {
+        "client_msg_id": "40eccca8-7284-4e04-87f8-578089a0d868",
+        "type": "message",
+        "text": "カラースキームの中覗いてると`version &gt; 580`って書かれてるの見かけるけど、今時そんなに古いの使ってる人おるんかな",
+        "user": "U9S4G0LJW",
+        "ts": "1584689636.057000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jJu2a",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "カラースキームの中覗いてると"
+                            },
+                            {
+                                "type": "text",
+                                "text": "version > 580",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "って書かれてるの見かけるけど、今時そんなに古いの使ってる人おるんかな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584689636.057000",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584705220.064400",
+        "reply_users": [
+            "UGXMRNBUM"
+        ],
+        "replies": [
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1584705220.064400"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "65930bd0-6912-46da-a021-d02b5a2ae175",
+        "type": "message",
+        "text": "プロジェクト全体のテキストをfzfに流し込んでgrepしたい人って思ったよりいるんだなー、すぐ重くなるみたいなんだけどすごい（動く規模なら便利なのはわかる）",
+        "user": "U8996GYBF",
+        "ts": "1584692992.057600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U8996GYBF",
+            "ts": "1584693079.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9DcY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "プロジェクト全体のテキストをfzfに流し込んでgrepしたい人って思ったよりいるんだなー、すぐ重くなるみたいなんだけどすごい（動く規模なら便利なのはわかる）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a866197-7720-45bf-8a6f-52ff9d95d7ea",
+        "type": "message",
+        "text": "`rg .` をfzfに流し込むやつ",
+        "user": "U8996GYBF",
+        "ts": "1584693059.058000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "W8mvd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "rg .",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " をfzfに流し込むやつ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "954e0ca6-3484-40f4-8a8b-818af2584c42",
+        "type": "message",
+        "text": "そういえばvim-clapにもプロジェクトじゃないけど開いてる全ファイルの行を対象にしたプロバイダーがあるな",
+        "user": "U9S4G0LJW",
+        "ts": "1584693128.058600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "H2bm+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そういえばvim-clapにもプロジェクトじゃないけど開いてる全ファイルの行を対象にしたプロバイダーがあるな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "U8R597E9H"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5dec2565-e4fa-4585-acab-f05c60b2627a",
+        "type": "message",
+        "text": "どこに起因してるかは分からないんですけど、手元の14万行のをfzfに流し込むとそこそこ遅いんですよね",
+        "user": "U8996GYBF",
+        "ts": "1584693206.059200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "psI3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どこに起因してるかは分からないんですけど、手元の14万行のをfzfに流し込むとそこそこ遅いんですよね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d94068be-de6c-4b07-af1d-e7e314d0ddfa",
+        "type": "message",
+        "text": "あ、deviconが原因感ある",
+        "user": "U8996GYBF",
+        "ts": "1584693264.059800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ip=Qr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、deviconが原因感ある"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f6316dfa-f670-4884-827b-41d53dc84afb",
+        "type": "message",
+        "text": "14万行にloopでdevicon付けたらそりゃ遅いわって話か",
+        "user": "U8996GYBF",
+        "ts": "1584693280.060300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6b6m",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "14万行にloopでdevicon付けたらそりゃ遅いわって話か"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ddde726d-5f76-48c1-abc7-4f2590483c7f",
+        "type": "message",
+        "text": "さすがに画面表示ぶんだけにするなどの方法がとれないと辛そう、 &gt; icon",
+        "user": "UAZ33BKV2",
+        "ts": "1584693380.060800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "g7MHz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "さすがに画面表示ぶんだけにするなどの方法がとれないと辛そう、 > icon"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b1333acd-b723-4553-9d78-3272619cc95e",
+        "type": "message",
+        "text": "globalなオプションじゃなくて、コマンド実行時に上書き指定できるようにするかなぁ",
+        "user": "U8996GYBF",
+        "ts": "1584693411.061300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "K=\/6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "globalなオプションじゃなくて、コマンド実行時に上書き指定できるようにするかなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fe89f6fd-b261-4e6c-95b8-6dba2989087d",
+        "type": "message",
+        "text": "fzfは最初に全部流し込む必要があるから、どっちにするか決めないとなんですよねぇ",
+        "user": "U8996GYBF",
+        "ts": "1584693471.061700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1k9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fzfは最初に全部流し込む必要があるから、どっちにするか決めないとなんですよねぇ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b15dc6c3-6dbe-4e31-9a51-a9979e7d95b5",
+        "type": "message",
+        "text": "deviconを付けないgrepから絞り込んだクエリでdeviconを付けたgrep呼ぶとかは頑張ればできそう\nただfzfで使えるクエリとrgに渡すクエリの互換性がないから変換噛まさないといけないとかになって詰むと思う",
+        "user": "U8996GYBF",
+        "ts": "1584693584.062900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ApfK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "deviconを付けないgrepから絞り込んだクエリでdeviconを付けたgrep呼ぶとかは頑張ればできそう\nただfzfで使えるクエリとrgに渡すクエリの互換性がないから変換噛まさないといけないとかになって詰むと思う"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4664367b-6bb5-4c83-bde8-dbaf6e51ce01",
+        "type": "message",
+        "text": "画面側で加工できると...ですけど難しいですもんね",
+        "user": "UAZ33BKV2",
+        "ts": "1584693593.063200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/edX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "画面側で加工できると...ですけど難しいですもんね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8dbec251-d23f-4a05-a0e7-e5eb2eebb395",
+        "type": "message",
+        "text": "fzfにロックインされてるから、その上で工夫するしかないですねぇ・・・",
+        "user": "U8996GYBF",
+        "ts": "1584693609.063500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eLjw9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fzfにロックインされてるから、その上で工夫するしかないですねぇ・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7d1cc60b-5602-4488-be59-b82f79d5b525",
+        "type": "message",
+        "text": "ここからやりたいこと増やすときにfzfのロックインが制約になってきそう",
+        "user": "U8996GYBF",
+        "ts": "1584694097.064200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "arJky",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ここからやりたいこと増やすときにfzfのロックインが制約になってきそう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "そういえば僕も書いている…\nどっかのテンプレをコピペで作ってるんで、同じルーツの人がたくさんいるのかも",
+        "user": "UGXMRNBUM",
+        "ts": "1584705220.064400",
+        "thread_ts": "1584689636.057000",
+        "root": {
+            "client_msg_id": "40eccca8-7284-4e04-87f8-578089a0d868",
+            "type": "message",
+            "text": "カラースキームの中覗いてると`version &gt; 580`って書かれてるの見かけるけど、今時そんなに古いの使ってる人おるんかな",
+            "user": "U9S4G0LJW",
+            "ts": "1584689636.057000",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "jJu2a",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "カラースキームの中覗いてると"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "version > 580",
+                                    "style": {
+                                        "code": true
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "って書かれてるの見かけるけど、今時そんなに古いの使ってる人おるんかな"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584689636.057000",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1584705220.064400",
+            "reply_users": [
+                "UGXMRNBUM"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8yqQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そういえば僕も書いている…\nどっかのテンプレをコピペで作ってるんで、同じルーツの人がたくさんいるのかも"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "554f4077-4d3a-46e6-bcb4-892f6c54df2a",
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f7ec05c6-fc39-4e97-a419-c163d662cead",
+        "type": "message",
+        "text": "<https:\/\/github.com\/Shougo\/deoplete-nextword|https:\/\/github.com\/Shougo\/deoplete-nextword>",
+        "user": "U7JL1UKKL",
+        "ts": "1584757956.065000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Shougo\/deoplete-nextword",
+                "title_link": "https:\/\/github.com\/Shougo\/deoplete-nextword",
+                "text": "A deoplete source for nextword for completing words in English. - Shougo\/deoplete-nextword",
+                "fallback": "GitHub: Shougo\/deoplete-nextword",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/41495?s=400&v=4",
+                "from_url": "https:\/\/github.com\/Shougo\/deoplete-nextword",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/Shougo\/deoplete-nextword"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KKXt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/Shougo\/deoplete-nextword",
+                                "text": "https:\/\/github.com\/Shougo\/deoplete-nextword"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "benri",
+                "users": [
+                    "U78A6ESHM",
+                    "UAZ33BKV2",
+                    "U72TB62UF",
+                    "UNJ2DANJC",
+                    "U7TMPGWJ0"
+                ],
+                "count": 5
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ac71051f-e337-459a-9b31-1ae38ea2ab3d",
+        "type": "message",
+        "text": "neco-lookを置き換えることのできるsourceを作りました",
+        "user": "U7JL1UKKL",
+        "ts": "1584757973.065700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pEiss",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "neco-lookを置き換えることのできるsourceを作りました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "83760194-f365-4102-967e-8f1c519f30a0",
+        "type": "message",
+        "text": "英単語の入力にとても便利です",
+        "user": "U7JL1UKKL",
+        "ts": "1584757986.066100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hR+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "英単語の入力にとても便利です"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "67524862-19d8-4ebb-b56c-701cb265c6ec",
+        "type": "message",
+        "text": "lookコマンドに依存しませんがnextlookコマンドをインストールする必要があります",
+        "user": "U7JL1UKKL",
+        "ts": "1584758166.067000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fyD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "lookコマンドに依存しませんがnextlookコマンドをインストールする必要があります"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "25a9ae07-a7e6-4afb-9131-eecf2173967f",
+        "type": "message",
+        "text": "deniteにline\/external sourceを追加中",
+        "user": "U7JL1UKKL",
+        "ts": "1584765185.067800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oZSsX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "deniteにline\/external sourceを追加中"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b5359853-f749-4580-84ca-eea1b12f6171",
+        "type": "message",
+        "text": "外部コマンドを用いてバッファ検索を行います。",
+        "user": "U7JL1UKKL",
+        "ts": "1584765204.068400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Jrg5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "外部コマンドを用いてバッファ検索を行います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "816fed8e-81db-4f49-a383-8ab44f0615e8",
+        "type": "message",
+        "text": "やれることに制約がありますが、とても高速に動作",
+        "user": "U7JL1UKKL",
+        "ts": "1584765241.069000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KCwr+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "やれることに制約がありますが、とても高速に動作"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "891c38b4-5e6c-41f8-8133-f2eb0f2fceac",
+        "type": "message",
+        "text": "パフォーマンスを上げなければ自分の作業に支障がでていた",
+        "user": "U7JL1UKKL",
+        "ts": "1584766000.069700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qcU\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パフォーマンスを上げなければ自分の作業に支障がでていた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ebfddb65-1d14-4173-b628-4e8ded822295",
+        "type": "message",
+        "text": "ruby_hl_lvar.vim、便利なんだけどバグを踏み抜く頻度が多くて辛い・・・",
+        "user": "U8996GYBF",
+        "ts": "1584771429.070200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oQgmL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ruby_hl_lvar.vim、便利なんだけどバグを踏み抜く頻度が多くて辛い・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b4655b16-5a11-4ef7-8bd3-b54c827c8b9f",
+        "type": "message",
+        "text": "最近英語のドキュメント読み書きあるのでありがたし",
+        "user": "U72TB62UF",
+        "ts": "1584772142.072200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bvt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最近英語のドキュメント読み書きあるのでありがたし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f730a2fd-b7ce-480a-96b5-675a3527fea1",
+        "type": "message",
+        "text": "最近趣味で vim の補完プラグインを作ったりしてみているんですが、面白い事に気づきました。\n普通 `入力のたびに候補一覧を計算しなおして complete() 関数を叩く` と実装すると思うのですが、ここで `TextChangedI, TextChangedP` を利用すると\nvim 側のネイティブな挙動としてのフィルタリングが走った後に plugin 側で「filter -&gt; complete」と走るので、ちらつきます。",
+        "user": "U8R597E9H",
+        "ts": "1584772161.072600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2CG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最近趣味で vim の補完プラグインを作ったりしてみているんですが、面白い事に気づきました。\n普通 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "入力のたびに候補一覧を計算しなおして complete() 関数を叩く",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " と実装すると思うのですが、ここで "
+                            },
+                            {
+                                "type": "text",
+                                "text": "TextChangedI, TextChangedP",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を利用すると\nvim 側のネイティブな挙動としてのフィルタリングが走った後に plugin 側で「filter -> complete」と走るので、ちらつきます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "66355a12-0974-4378-b691-6248c4bdfd41",
+        "type": "message",
+        "text": "プラグイン側で `CursorMovedI` を使うとちらつかない事がわかりました。（ただ移動しただけで発動するのがアレなので特別な制御がいりそうですが）",
+        "user": "U8R597E9H",
+        "ts": "1584772192.073200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2l6N",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "プラグイン側で "
+                            },
+                            {
+                                "type": "text",
+                                "text": "CursorMovedI",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を使うとちらつかない事がわかりました。（ただ移動しただけで発動するのがアレなので特別な制御がいりそうですが）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584772192.073200",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584775758.073600",
+        "reply_users": [
+            "U8R597E9H"
+        ],
+        "replies": [
+            {
+                "user": "U8R597E9H",
+                "ts": "1584775758.073600"
+            }
+        ],
+        "subscribed": false
+    }
+]

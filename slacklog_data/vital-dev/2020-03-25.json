@@ -1,0 +1,2020 @@
+[
+    {
+        "client_msg_id": "01eb4e85-6c7b-4cc4-8e28-b466c7b04a05",
+        "type": "message",
+        "text": "<https:\/\/vim-jp.slack.com\/archives\/C03C4RC9F\/p1585099400013100>",
+        "user": "U0M7GCBPD",
+        "ts": "1585124347.000900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "from_url": "https:\/\/vim-jp.slack.com\/archives\/C03C4RC9F\/p1585099400013100",
+                "fallback": "[March 24th, 2020 6:23 PM] thinca: vital に color モジュールほしい",
+                "ts": "1585099400.013100",
+                "author_id": "U03C71D7H",
+                "author_subname": "thinca",
+                "channel_id": "C03C4RC9F",
+                "channel_name": "random",
+                "is_msg_unfurl": true,
+                "text": "vital に color モジュールほしい",
+                "author_name": "thinca",
+                "author_link": "https:\/\/vim-jp.slack.com\/team\/U03C71D7H",
+                "author_icon": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_48.jpg",
+                "mrkdwn_in": [
+                    "text"
+                ],
+                "id": 1,
+                "original_url": "https:\/\/vim-jp.slack.com\/archives\/C03C4RC9F\/p1585099400013100",
+                "footer": "Posted in #random"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AyRZo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/vim-jp.slack.com\/archives\/C03C4RC9F\/p1585099400013100"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cef1dd7e-c11e-419e-aa86-a8398fcf8879",
+        "type": "message",
+        "text": "<https:\/\/github.com\/vim-jp\/vital.vim\/pull\/732>",
+        "user": "U0M7GCBPD",
+        "ts": "1585124353.001200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rA36N",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/732"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "93d7c5d4-4ad3-4cad-b85f-9d0549be9ae8",
+        "type": "message",
+        "text": "おー",
+        "user": "UAZ33BKV2",
+        "ts": "1585124443.001900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jx8h",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b46580ff-40a9-4f87-9597-b397567b7eec",
+        "type": "message",
+        "text": "`s:Color.diff` って、`printf('rgb(%d,%d,%d)', abs(r1 - r2), abs(g1 - g2), abs(b1 - b2))` を出したほうがわかり易くないですかね？",
+        "user": "U06ECBRTJ",
+        "ts": "1585124502.002600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U06ECBRTJ",
+            "ts": "1585124562.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WWnx9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "s:Color.diff",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " って、"
+                            },
+                            {
+                                "type": "text",
+                                "text": "printf('rgb(%d,%d,%d)', abs(r1 - r2), abs(g1 - g2), abs(b1 - b2))",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を出したほうがわかり易くないですかね？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e82398cd-c5c0-4361-8ba4-b95fbd63f17e",
+        "type": "message",
+        "text": "わかりやすさというより比較用途ですね。\n浮動小数点で計算してから round() して整数にする都合上変換で誤差が生じてしまうので、テストでだいたい同じになってることを確認したくて追加した苦肉の策というか…\nぶっちゃけなくても（サポートしなくても）いいやつだと思います",
+        "user": "U0M7GCBPD",
+        "ts": "1585124737.005200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tlZk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "わかりやすさというより比較用途ですね。\n浮動小数点で計算してから round() して整数にする都合上変換で誤差が生じてしまうので、テストでだいたい同じになってることを確認したくて追加した苦肉の策というか…\nぶっちゃけなくても（サポートしなくても）いいやつだと思います"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2c2078bb-1329-42f4-a057-3ae43b31be79",
+        "type": "message",
+        "text": "「色の近さ」を取得したかったんですが、上のフォーマットだとそれができないです",
+        "user": "U0M7GCBPD",
+        "ts": "1585124805.006300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hvju0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "「色の近さ」を取得したかったんですが、上のフォーマットだとそれができないです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d599d2e2-e29c-493d-9f9d-ba2135354b32",
+        "type": "message",
+        "text": "あと rgb(-100, -100, -100) とかマイナスになってもデバッグ以外に用途がなさそう",
+        "user": "U0M7GCBPD",
+        "ts": "1585124817.006700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "acH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あと rgb(-100, -100, -100) とかマイナスになってもデバッグ以外に用途がなさそう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d87ba1c1-b7c5-4d1b-b983-cdaf820a9509",
+        "type": "message",
+        "text": "色相というか色の玉での距離を出すのがいいのだろうか...色難しいですね",
+        "user": "UAZ33BKV2",
+        "ts": "1585124876.007200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bzd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "色相というか色の玉での距離を出すのがいいのだろうか...色難しいですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d0cec97c-c2dc-4c51-96f4-fb377906e904",
+        "type": "message",
+        "text": "座標間とすると ベクトルとらないとなのかな?",
+        "user": "UAZ33BKV2",
+        "ts": "1585124934.008200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1585124984.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0sK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "座標間とすると ベクトルとらないとなのかな?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1c02bc8b-2336-4371-a798-c831072bb259",
+        "type": "message",
+        "text": "なるほど、ただやっぱこの値が機械的に近いことは確認できてもそれって vital のテスト以外で使えるものなのかなーとかいう疑問はある…",
+        "user": "U0M7GCBPD",
+        "ts": "1585125093.009900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JsuKP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど、ただやっぱこの値が機械的に近いことは確認できてもそれって vital のテスト以外で使えるものなのかなーとかいう疑問はある…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "16b15b37-e4e3-43c9-88f7-97523be3b18b",
+        "type": "message",
+        "text": "色の値によって中央値が違うからなー。",
+        "user": "U03C6TEAZ",
+        "ts": "1585125121.010400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "M=H",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "色の値によって中央値が違うからなー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c40ec7b7-108a-4298-b879-8578d1d399e8",
+        "type": "message",
+        "text": "最初に help を見ようと思ったらなかった",
+        "user": "U03C71D7H",
+        "ts": "1585125249.011100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1K92",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最初に help を見ようと思ったらなかった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "hai-small",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0d1f99aa-de9e-45d3-8204-c1a68a61158d",
+        "type": "message",
+        "text": "座標間の距離にして diff() → distance() にリネームした",
+        "user": "U0M7GCBPD",
+        "ts": "1585125316.011600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1kQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "座標間の距離にして diff() → distance() にリネームした"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "94eeb779-3ef1-4a89-acab-569f3953b127",
+        "type": "message",
+        "text": "<@U03C71D7H> とりあえずテストは書いた…",
+        "user": "U0M7GCBPD",
+        "ts": "1585125340.012100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/Pr+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U03C71D7H"
+                            },
+                            {
+                                "type": "text",
+                                "text": " とりあえずテストは書いた…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "goodjob",
+                "users": [
+                    "U03C71D7H",
+                    "UAZ33BKV2"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "01a0bbe1-20ab-4c50-a6ef-0fdcfd14d7e8",
+        "type": "message",
+        "text": "あと Color.xterm() の他にも端末ごと？の terminal code の palette を定義したいと思ってる\nただこの辺りの仕様がよくわかってない（Vim でも16色だけど `term_setansicolor()` でいじれたりするな）",
+        "user": "U0M7GCBPD",
+        "ts": "1585126310.014300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TY10C",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あと Color.xterm() の他にも端末ごと？の terminal code の palette を定義したいと思ってる\nただこの辺りの仕様がよくわかってない（Vim でも16色だけど "
+                            },
+                            {
+                                "type": "text",
+                                "text": "term_setansicolor()",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " でいじれたりするな）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6ccc4dcb-230a-4abd-ba39-a9cfca536dda",
+        "type": "message",
+        "text": "Xの16色、windowsのcmd...あとはvimがサポートするOSのhelp確認くらい?",
+        "user": "UAZ33BKV2",
+        "ts": "1585126359.014900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YoS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Xの16色、windowsのcmd...あとはvimがサポートするOSのhelp確認くらい?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4c1734e6-5283-472f-afde-ea6556a34ea1",
+        "type": "message",
+        "text": "あ、前出のurxvt こと rxvt-unicode?",
+        "user": "UAZ33BKV2",
+        "ts": "1585126400.015300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6=XKc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、前出のurxvt こと rxvt-unicode?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1f2bf35f-7b6b-4603-9f37-ecbaa146d8d7",
+        "type": "message",
+        "text": "ですね、そこらへんも気になってる…",
+        "user": "U0M7GCBPD",
+        "ts": "1585126414.015700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pfxts",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですね、そこらへんも気になってる…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "97cef0a7-6357-4908-8162-27bd11633c32",
+        "type": "message",
+        "text": "256",
+        "user": "U03C71D7H",
+        "ts": "1585126464.016300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zVrh3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "256"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f8e15972-1861-4908-b4e8-fff681634f87",
+        "type": "message",
+        "text": "ノリがtermcapの色サポートみたいになりそう...まあできるだけ?",
+        "user": "UAZ33BKV2",
+        "ts": "1585126480.016500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pFQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ノリがtermcapの色サポートみたいになりそう...まあできるだけ?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f45b5781-1ea8-446b-9e32-26ff4e310811",
+        "type": "message",
+        "text": "xterm-256colorsはたしかに別か...",
+        "user": "UAZ33BKV2",
+        "ts": "1585126491.016900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1585126570.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DNSv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "xterm-256colorsはたしかに別か..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e4f88e39-1660-4ee2-b2a5-9890597cc0d6",
+        "type": "message",
+        "text": "こうなると色名が欲しくなりそう。",
+        "user": "U03C6TEAZ",
+        "ts": "1585126528.017500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Bf2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こうなると色名が欲しくなりそう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3d670160-f78b-407c-80dc-e8e1ee63ae3f",
+        "type": "message",
+        "text": "$VIMRUNTIME\/rgb.txt の読み込みと色名での色の参照",
+        "user": "U03C71D7H",
+        "ts": "1585126542.017800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "D20NZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "$VIMRUNTIME\/rgb.txt の読み込みと色名での色の参照"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "080e4ef8-a7c8-4d1f-ba65-3598d53b4df8",
+        "type": "message",
+        "text": "かぶり",
+        "user": "U03C71D7H",
+        "ts": "1585126547.018000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ie+z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "かぶり"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "12ffd8a4-0ea7-41db-b292-49ca65ad9d0f",
+        "type": "message",
+        "text": "あの色指定、リストあったんだ",
+        "user": "U9S4G0LJW",
+        "ts": "1585126578.018300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "XJ6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あの色指定、リストあったんだ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6f040646-53bf-4b0f-9032-8011c780598c",
+        "type": "message",
+        "text": "色一覧の取得、色名から Color オブジェクトの取得、辺りの関数があって、最初に呼ばれた時に $VIMRUNTIME\/rgb.txt を読み込む、かなぁ",
+        "user": "U03C71D7H",
+        "ts": "1585126666.019100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "v9s6G",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "色一覧の取得、色名から Color オブジェクトの取得、辺りの関数があって、最初に呼ばれた時に $VIMRUNTIME\/rgb.txt を読み込む、かなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "93d0450a-a10d-4b3d-95dc-8a820425e007",
+        "type": "message",
+        "text": "色定義の追加まで考えると面倒",
+        "user": "U03C71D7H",
+        "ts": "1585126673.019400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Lq8C",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "色定義の追加まで考えると面倒"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f947d230-5afc-46cc-bba7-53e14c122b37",
+        "type": "message",
+        "text": "追加、多分いらない",
+        "user": "U9S4G0LJW",
+        "ts": "1585126718.019600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rFYAo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "追加、多分いらない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8ab02ec7-20d6-4a1a-8ea0-1c9d80440f8c",
+        "type": "message",
+        "text": "やりたければ自分のモジュールなり作ろう、でいいかと思う(すくなくとも今は)。",
+        "user": "UAZ33BKV2",
+        "ts": "1585126778.020400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4iXI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "やりたければ自分のモジュールなり作ろう、でいいかと思う(すくなくとも今は)。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "25f8839a-fba7-4c93-9832-fc9cef4771c4",
+        "type": "message",
+        "text": "追加してみた。 `s:Color.parse('snow')` とかできる\n<https:\/\/github.com\/vim-jp\/vital.vim\/pull\/732\/commits\/8d079ca83c37a35cdaad0ac8e696febc541ecf7b>",
+        "user": "U0M7GCBPD",
+        "ts": "1585128052.021800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "WIP: Add Color module by tyru · Pull Request #732 · vim-jp\/vital.vim",
+                "title_link": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/732\/commits\/8d079ca83c37a35cdaad0ac8e696febc541ecf7b",
+                "fallback": "GitHub: WIP: Add Color module by tyru · Pull Request #732 · vim-jp\/vital.vim",
+                "from_url": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/732\/commits\/8d079ca83c37a35cdaad0ac8e696febc541ecf7b",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/48169?s=400&v=4",
+                "thumb_width": 250,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/732\/commits\/8d079ca83c37a35cdaad0ac8e696febc541ecf7b"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9xF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "追加してみた。 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "s:Color.parse('snow')",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とかできる\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/vital.vim\/pull\/732\/commits\/8d079ca83c37a35cdaad0ac8e696febc541ecf7b"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "11f2c5c1-223e-4ce1-a07f-1ad53d90553f",
+        "type": "message",
+        "text": "色名を連続して使いたいかどうか微妙すねー。",
+        "user": "U03C6TEAZ",
+        "ts": "1585128312.022200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "70tv=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "色名を連続して使いたいかどうか微妙すねー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0185dd72-b44a-43b8-b33d-afd759088edf",
+        "type": "message",
+        "text": "メモリに残るの嫌って人もいるかもだし。",
+        "user": "U03C6TEAZ",
+        "ts": "1585128333.022500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VkgD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "メモリに残るの嫌って人もいるかもだし。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "56dd4e5b-fedc-4d80-9245-680b33576276",
+        "type": "message",
+        "text": "別 import という手も無くはないけど。",
+        "user": "U03C6TEAZ",
+        "ts": "1585128348.022900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5ol8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "別 import という手も無くはないけど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "04354e54-60d5-46c7-bcb0-a957dd8af904",
+        "type": "message",
+        "text": "vital 使わない勢なので感覚よく分かってないけど。",
+        "user": "U03C6TEAZ",
+        "ts": "1585128390.023500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Z6S",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vital 使わない勢なので感覚よく分かってないけど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "32380e7a-868a-4ff6-bb85-35cc9d5764e9",
+        "type": "message",
+        "text": "ちなみに今は残らないです",
+        "user": "U0M7GCBPD",
+        "ts": "1585129303.023800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "o9iCu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに今は残らないです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "12b1f9ed-563f-4b82-a78a-db24d3097dbf",
+        "type": "message",
+        "text": "環境変数に依存するのもアレかと思ったんですが、$VIMRUNTIME は Vim 組込みと考えていいかと。\nxxd コマンドが存在することを仮定するのと同じ",
+        "user": "U0M7GCBPD",
+        "ts": "1585129341.024500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "X5v=m",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "環境変数に依存するのもアレかと思ったんですが、$VIMRUNTIME は Vim 組込みと考えていいかと。\nxxd コマンドが存在することを仮定するのと同じ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "46ea1229-6ec0-4fc7-bc02-f3cc4a4a3330",
+        "type": "message",
+        "text": "ただ気持ち悪いという人がいそうなのもわかる",
+        "user": "U0M7GCBPD",
+        "ts": "1585129379.025200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mUf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただ気持ち悪いという人がいそうなのもわかる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "ちなみに現状もいくつかある",
+        "files": [
+            {
+                "id": "F010C2K8CGJ",
+                "created": 1585129442,
+                "timestamp": 1585129442,
+                "name": "無題",
+                "title": "無題",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U0M7GCBPD",
+                "editable": true,
+                "size": 795,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010C2K8CGJ\/______?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010C2K8CGJ\/download\/______?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U0M7GCBPD\/F010C2K8CGJ\/______",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F010C2K8CGJ-379ca1cfe9",
+                "edit_link": "https:\/\/vim-jp.slack.com\/files\/U0M7GCBPD\/F010C2K8CGJ\/______\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0zY3M",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに現状もいくつかある"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U0M7GCBPD",
+        "display_as_bot": false,
+        "ts": "1585129444.025400",
+        "client_msg_id": "e0f4de86-3999-4e53-a76b-2dbab14f7a00"
+    },
+    {
+        "client_msg_id": "b117bce7-0846-4940-8172-37274b20ad72",
+        "type": "message",
+        "text": "help 追加したので WIP も外した。さっき言った TODO は help に書いた。レビュー＆マージ可能です。",
+        "user": "U0M7GCBPD",
+        "ts": "1585132837.026800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=GC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "help 追加したので WIP も外した。さっき言った TODO は help に書いた。レビュー＆マージ可能です。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sokudo",
+                "users": [
+                    "US5UW1UNB"
+                ],
+                "count": 1
+            },
+            {
+                "name": "subara",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1331bec3-4b94-4f1f-98e8-7bd478d346d1",
+        "type": "message",
+        "text": "<https:\/\/github.com\/vim-jp\/vital.vim\/issues\/733#issuecomment-603890412>\n<@U8R597E9H> さーん、すみません、Promiseでnoopの引数があってないエラーが出たんですが、これ実装的にまずいような?",
+        "user": "UAZ33BKV2",
+        "ts": "1585148597.028000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Latest vital.vim error happen · Issue #733 · vim-jp\/vital.vim",
+                "title_link": "https:\/\/github.com\/vim-jp\/vital.vim\/issues\/733#issuecomment-603890412",
+                "text": "Update vital.vim in <https:\/\/github.com\/tsuyoshicho\/vim-fg> Use System.Filepath Text.TOML Data.List Data.OrderedSet Data.String ArgumentParser Async.Promise.Process System.Process Prelude Update to t...",
+                "fallback": "GitHub: Latest vital.vim error happen · Issue #733 · vim-jp\/vital.vim",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/1051958?s=400&v=4",
+                "from_url": "https:\/\/github.com\/vim-jp\/vital.vim\/issues\/733#issuecomment-603890412",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim-jp\/vital.vim\/issues\/733#issuecomment-603890412"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "toE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/vital.vim\/issues\/733#issuecomment-603890412"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "user",
+                                "user_id": "U8R597E9H"
+                            },
+                            {
+                                "type": "text",
+                                "text": " さーん、すみません、Promiseでnoopの引数があってないエラーが出たんですが、これ実装的にまずいような?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "500886d2-0cb9-4583-97e5-ce7083ebfc18",
+        "type": "message",
+        "text": "むむむ…。普通に使っていてもエラー出なかったのですが…確認します。",
+        "user": "U8R597E9H",
+        "ts": "1585152061.028800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yUvF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "むむむ…。普通に使っていてもエラー出なかったのですが…確認します。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "81645451-a7f3-4663-b37f-78a91d1c019a",
+        "type": "message",
+        "text": "ご連絡ありがとう御座います。",
+        "user": "U8R597E9H",
+        "ts": "1585152072.029200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hju\/O",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ご連絡ありがとう御座います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c6972d13-6125-4e67-91b3-1073f4860051",
+        "type": "message",
+        "text": "問題が起きているならば、v:null かなにかを入れて empty 判定しようかと思います :bow:",
+        "user": "U8R597E9H",
+        "ts": "1585152198.030700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WD6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "問題が起きているならば、v:null かなにかを入れて empty 判定しようかと思います "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "bow"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "33d0780f-4365-4324-ba75-9b62268bfe83",
+        "type": "message",
+        "text": "考えてたのですが、nopの意味でなら可変長引数にするのがよさそうですね。",
+        "user": "UAZ33BKV2",
+        "ts": "1585168226.032900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZSbg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "考えてたのですが、nopの意味でなら可変長引数にするのがよさそうですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6d75e617-ff03-46ef-b473-3fbee9e37706",
+        "type": "message",
+        "text": "テストケース、unhandleをnoopと自作ハンドラ、両方通す必要があるか…",
+        "user": "UAZ33BKV2",
+        "ts": "1585170467.035000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "XqhS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "テストケース、unhandleをnoopと自作ハンドラ、両方通す必要があるか…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "12365b0a-c188-4911-bc58-936e119f4c2c",
+        "type": "message",
+        "text": "これだとかなりわかりにくいので、日本語でコメントを追加します。",
+        "user": "UAZ33BKV2",
+        "ts": "1585181154.035300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CzLi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これだとかなりわかりにくいので、日本語でコメントを追加します。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6e705f9e-5b7f-426f-81c4-3d3dcde117e0",
+        "type": "message",
+        "text": "たしかに可変長引数にするの安定ですね！それで PR 作ります。",
+        "user": "U8R597E9H",
+        "ts": "1585199614.035900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iH1W",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "たしかに可変長引数にするの安定ですね！それで PR 作ります。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "00d3f302-027c-443c-832e-5eaf1b177fd9",
+        "type": "message",
+        "text": "ありがとうございます、よろしくおねがいします。\nそれ単品なら自分でもよかったんですが、テストが...ということで :sweat_smile:",
+        "user": "UAZ33BKV2",
+        "ts": "1585199862.036700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Fawh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございます、よろしくおねがいします。\nそれ単品なら自分でもよかったんですが、テストが...ということで "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "sweat_smile"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

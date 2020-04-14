@@ -1,0 +1,451 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585298806.006500",
+        "user": "U010LGLA25P",
+        "text": "<@U010LGLA25P> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585307946.006900",
+        "user": "U010YP3BC1L",
+        "text": "<@U010YP3BC1L> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585310801.007200",
+        "user": "U010YRT7QBY",
+        "text": "<@U010YRT7QBY> has joined the channel"
+    },
+    {
+        "client_msg_id": "99099afc-2497-4f80-be9b-cfc58c31183b",
+        "type": "message",
+        "text": "<https:\/\/qiita.com\/mattn\/items\/65ec8f5256e244e1ed77>\nコメント欄が面白いw",
+        "user": "UAZ33BKV2",
+        "ts": "1585316097.007600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Qiita",
+                "title": "ゴリラ言語の読み方 - Qiita",
+                "title_link": "https:\/\/qiita.com\/mattn\/items\/65ec8f5256e244e1ed77",
+                "text": "先日、「ウ」と「ホ」と改行文字だけでプログラミングできる「ゴリラ言語」を作りました。 &lt;blockquote class=&amp;quot;twitter-tweet&amp;quot;&gt;&lt;p lang=&amp;quot;ja&amp;quo...",
+                "fallback": "Qiita: ゴリラ言語の読み方 - Qiita",
+                "image_url": "https:\/\/qiita-user-contents.imgix.net\/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&w=1200&mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3D%25E3%2582%25B4%25E3%2583%25AA%25E3%2583%25A9%25E8%25A8%2580%25E8%25AA%259E%25E3%2581%25AE%25E8%25AA%25AD%25E3%2581%25BF%25E6%2596%25B9%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Df6ec80a4901c4f2e119f3ace97addd98&mark-align=center%2Cmiddle&blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540mattn%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Da71cc57cf393a26bf94006bdbd3af74d&blend-align=center%2Cmiddle&blend-mode=normal&s=74f5e4f0ea538eb01845db0032053757",
+                "from_url": "https:\/\/qiita.com\/mattn\/items\/65ec8f5256e244e1ed77",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 27109,
+                "service_icon": "https:\/\/cdn.qiita.com\/assets\/favicons\/public\/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+                "id": 1,
+                "original_url": "https:\/\/qiita.com\/mattn\/items\/65ec8f5256e244e1ed77"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3Jat",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/qiita.com\/mattn\/items\/65ec8f5256e244e1ed77"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nコメント欄が面白いw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "lgtm",
+                "users": [
+                    "U8CC7MDCL",
+                    "UDDCM376D",
+                    "UMUPYCYN8"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "16EBDD7A-407D-40DD-A83E-22160004B92C",
+        "type": "message",
+        "text": ":sorena: ",
+        "user": "UDDCM376D",
+        "ts": "1585318123.008500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "b39\/+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "sorena"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "839c3e67-b09b-4ae6-9c0e-28b828e16e70",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/souring001\/status\/1241718232915951618>",
+        "user": "U03C6TEAZ",
+        "ts": "1585371996.009100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/souring001|@souring001>: プログラミルクボーイ「Vim」 <https:\/\/pbs.twimg.com\/ext_tw_video_thumb\/1241717453094182918\/pu\/img\/z9322jKcx6u47Lkr.jpg>",
+                "ts": 1584883671,
+                "author_name": "aso",
+                "author_link": "https:\/\/twitter.com\/souring001\/status\/1241718232915951618",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1119596260237824000\/XxkzpdBm_normal.png",
+                "author_subname": "@souring001",
+                "text": "プログラミルクボーイ「Vim」",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/souring001\/status\/1241718232915951618",
+                "thumb_url": "https:\/\/pbs.twimg.com\/ext_tw_video_thumb\/1241717453094182918\/pu\/img\/z9322jKcx6u47Lkr.jpg",
+                "thumb_width": 1200,
+                "thumb_height": 675,
+                "video_html_width": 1200,
+                "video_html_height": 675,
+                "video_html": "<video controls poster=\"https:\/\/pbs.twimg.com\/ext_tw_video_thumb\/1241717453094182918\/pu\/img\/z9322jKcx6u47Lkr.jpg\" width=\"1200\" height=\"675\"><source type=\"video\/mp4\" src=\"https:\/\/video.twimg.com\/ext_tw_video\/1241717453094182918\/pu\/vid\/1280x720\/0ecicMm5hag-KwYE.mp4?tag=10\"><\/video>",
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/souring001\/status\/1241718232915951618",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4M1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/souring001\/status\/1241718232915951618"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b157df9c-2f7b-459c-b64e-7921e9ba1476",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/souring001\/status\/1241718665638064129>",
+        "user": "U03C6TEAZ",
+        "ts": "1585372005.009400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/souring001|@souring001>: 2人ともVimmerです。\nフル:<https:\/\/youtu.be\/P7LNU9HYr7M>",
+                "ts": 1584883774,
+                "author_name": "aso",
+                "author_link": "https:\/\/twitter.com\/souring001\/status\/1241718665638064129",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1119596260237824000\/XxkzpdBm_normal.png",
+                "author_subname": "@souring001",
+                "text": "2人ともVimmerです。\nフル:<https:\/\/youtu.be\/P7LNU9HYr7M>",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/souring001\/status\/1241718665638064129",
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/souring001\/status\/1241718665638064129",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0NP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/souring001\/status\/1241718665638064129"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5f316378-8097-4e40-9cbc-22b7a4f1bf82",
+        "type": "message",
+        "text": "ウケる",
+        "user": "U03C6TEAZ",
+        "ts": "1585372014.009700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=\/c",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ウケる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c1dd7647-303f-4973-8cd8-805f6902d4e0",
+        "type": "message",
+        "text": "卒論のために regex エンジンに手を入れた KoRoN さんに一言いただきたいw",
+        "user": "U78A6ESHM",
+        "ts": "1585372106.010500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "esGr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "卒論のために regex エンジンに手を入れた KoRoN さんに一言いただきたいw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "13f0a65b-6a09-4a83-a32c-207cf2a4a134",
+        "type": "message",
+        "text": "卒論はTeXstudioで書いたな... travis-ciで自動ビルドは組んでた",
+        "user": "UNJ2DANJC",
+        "ts": "1585372424.012000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UNJ2DANJC",
+            "ts": "1585372449.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Cqwa",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "卒論はTeXstudioで書いたな... travis-ciで自動ビルドは組んでた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e3f08d83-a584-46db-be65-05c459165696",
+        "type": "message",
+        "text": "おもしろかった",
+        "user": "U7B4ZD49X",
+        "ts": "1585372517.012400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "M2e4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おもしろかった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "40afafa1-aaaf-405b-be60-48859e1fb981",
+        "type": "message",
+        "text": "私は修論（日本語）を vimtex で書きましたね…",
+        "user": "UL6CFN8NR",
+        "ts": "1585374868.013000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "0edf66561724",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-07-28\/696621453314_0edf66561724b8e38e6a_72.png",
+            "first_name": "monaqa",
+            "real_name": "monaqa",
+            "display_name": "monaqa",
+            "team": "T03C4RC8V",
+            "name": "mogassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UL6CFN8NR",
+            "ts": "1585374914.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dEe",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私は修論（日本語）を vimtex で書きましたね…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

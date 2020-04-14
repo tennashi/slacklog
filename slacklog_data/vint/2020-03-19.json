@@ -1,0 +1,62 @@
+[
+    {
+        "client_msg_id": "c3b46eb8-6990-41af-b3d8-4a7599b4bb9e",
+        "type": "message",
+        "text": "<https:\/\/vim-jp.slack.com\/archives\/CUPKWMQFK\/p1584614028054500>",
+        "user": "U0M7GCBPD",
+        "ts": "1584614041.000200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "from_url": "https:\/\/vim-jp.slack.com\/archives\/CUPKWMQFK\/p1584614028054500",
+                "fallback": "[March 19th, 2020 3:33 AM] tyru: <@UAZ33BKV2> さんも言ってたと思うんですが、ここと <#CBNFS2BR6|vint> マージしちゃいませんかね？\n話題的にかぶる事も多いので。\n#vim-script-syntax とか？",
+                "ts": "1584614028.054500",
+                "author_id": "U0M7GCBPD",
+                "author_subname": "tyru",
+                "channel_id": "CUPKWMQFK",
+                "channel_name": "vimlparser",
+                "is_msg_unfurl": true,
+                "text": "<@UAZ33BKV2> さんも言ってたと思うんですが、ここと <#CBNFS2BR6|vint> マージしちゃいませんかね？\n話題的にかぶる事も多いので。\n#vim-script-syntax とか？",
+                "author_name": "tyru",
+                "author_link": "https:\/\/vim-jp.slack.com\/team\/U0M7GCBPD",
+                "author_icon": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png",
+                "mrkdwn_in": [
+                    "text"
+                ],
+                "id": 1,
+                "original_url": "https:\/\/vim-jp.slack.com\/archives\/CUPKWMQFK\/p1584614028054500",
+                "footer": "Posted in #vimlparser"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3Qr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/vim-jp.slack.com\/archives\/CUPKWMQFK\/p1584614028054500"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

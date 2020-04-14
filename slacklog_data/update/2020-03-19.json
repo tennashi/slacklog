@@ -1,0 +1,497 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/a3a9c8ef697bbf6f640cde99710b6f534f29f77d|patch 8.2.0403: when 'buftype' is \"nofile\" there is no overwrite check>\npatch 8.2.0403: when 'buftype' is \"nofile\" there is no overwrite check\n\nProblem:    When 'buftype' is \"nofile\" there is no overwrite check.\nSolution:   Also check for existing file when 'buftype' is set.\n            (closes #5807)",
+        "ts": "1584619108.023600",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0403: when 'buftype' is \"nofile\" there is no overwrite check · vim\/vim@a3a9c8e",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/a3a9c8ef697bbf6f640cde99710b6f534f29f77d",
+                "text": "Problem: When 'buftype' is \"nofile\" there is no overwrite check. Solution: Also check for existing file when 'buftype' is set. (closes #5807)",
+                "fallback": "GitHub: patch 8.2.0403: when 'buftype' is \"nofile\" there is no overwrite check · vim\/vim@a3a9c8e",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/a3a9c8ef697bbf6f640cde99710b6f534f29f77d",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/a3a9c8ef697bbf6f640cde99710b6f534f29f77d"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584619108.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/18a2b87ca27c378a555b20f14a284d2ce3511427|patch 8.2.0404: writefile() error does not give a hint>\npatch 8.2.0404: writefile() error does not give a hint\n\nProblem:    Writefile() error does not give a hint.\nSolution:   Add remark about first argument.",
+        "ts": "1584620905.023800",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0404: writefile() error does not give a hint · vim\/vim@18a2b87",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/18a2b87ca27c378a555b20f14a284d2ce3511427",
+                "text": "Problem: Writefile() error does not give a hint. Solution: Add remark about first argument.",
+                "fallback": "GitHub: patch 8.2.0404: writefile() error does not give a hint · vim\/vim@18a2b87",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/18a2b87ca27c378a555b20f14a284d2ce3511427",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/18a2b87ca27c378a555b20f14a284d2ce3511427"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584620905.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/3fa5e1326290e181215f805db17793f42cf73079|patch 8.2.0405: MSVC: build fails with some combination of features>\npatch 8.2.0405: MSVC: build fails with some combination of features\n\nProblem:    MSVC: build fails with some combination of features.\nSolution:   Enable CHANNEL if TERMINAL is enabled. (Mike Williams)",
+        "ts": "1584621509.024100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0405: MSVC: build fails with some combination of features · vim\/vim@3fa5e13",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/3fa5e1326290e181215f805db17793f42cf73079",
+                "text": "Problem: MSVC: build fails with some combination of features. Solution: Enable CHANNEL if TERMINAL is enabled. (Mike Williams)",
+                "fallback": "GitHub: patch 8.2.0405: MSVC: build fails with some combination of features · vim\/vim@3fa5e13",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/3fa5e1326290e181215f805db17793f42cf73079",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/3fa5e1326290e181215f805db17793f42cf73079"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584621511.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/e32848780cc07c368ba2e088cdefdbb8c3b827c2|patch 8.2.0406: FileReadCmd event not well tested>\npatch 8.2.0406: FileReadCmd event not well tested\n\nProblem:    FileReadCmd event not well tested.\nSolution:   Add a test.",
+        "ts": "1584622711.024300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0406: FileReadCmd event not well tested · vim\/vim@e328487",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/e32848780cc07c368ba2e088cdefdbb8c3b827c2",
+                "text": "Problem: FileReadCmd event not well tested. Solution: Add a test.",
+                "fallback": "GitHub: patch 8.2.0406: FileReadCmd event not well tested · vim\/vim@e328487",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/e32848780cc07c368ba2e088cdefdbb8c3b827c2",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/e32848780cc07c368ba2e088cdefdbb8c3b827c2"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584622713.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/2d10cd478047df8ba144d4b0fcc46480993af57f|patch 8.2.0407: no early check if :find and :sfind have an argument>\npatch 8.2.0407: no early check if :find and :sfind have an argument\n\nProblem:    No early check if :find and :sfind have an argument.\nSolution:   Add EX_NEEDARG.",
+        "ts": "1584625112.024500",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0407: no early check if :find and :sfind have an argument · vim\/vim@2d10cd4",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/2d10cd478047df8ba144d4b0fcc46480993af57f",
+                "text": "Problem: No early check if :find and :sfind have an argument. Solution: Add EX_NEEDARG.",
+                "fallback": "GitHub: patch 8.2.0407: no early check if :find and :sfind have an argument · vim\/vim@2d10cd4",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/2d10cd478047df8ba144d4b0fcc46480993af57f",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/2d10cd478047df8ba144d4b0fcc46480993af57f"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584625113.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/22da5596d00222c889b548daa2df5a289583a5fb|patch 8.2.0408: delete() commented out for testing>\npatch 8.2.0408: delete() commented out for testing\n\nProblem:    Delete() commented out for testing.\nSolution:   Undo commenting-out.",
+        "ts": "1584626309.024700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0408: delete() commented out for testing · vim\/vim@22da559",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/22da5596d00222c889b548daa2df5a289583a5fb",
+                "text": "Problem: Delete() commented out for testing. Solution: Undo commenting-out.",
+                "fallback": "GitHub: patch 8.2.0408: delete() commented out for testing · vim\/vim@22da559",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/22da5596d00222c889b548daa2df5a289583a5fb",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/22da5596d00222c889b548daa2df5a289583a5fb"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584626309.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/b68df220c5278365792b8f94d8d6f34d329b7746|patch 8.2.0409: search test leaves file behind>\npatch 8.2.0409: search test leaves file behind\n\nProblem:    Search test leaves file behind.\nSolution:   Delete the file.  Also use Check commands.",
+        "ts": "1584627515.024900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0409: search test leaves file behind · vim\/vim@b68df22",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/b68df220c5278365792b8f94d8d6f34d329b7746",
+                "text": "Problem: Search test leaves file behind. Solution: Delete the file. Also use Check commands.",
+                "fallback": "GitHub: patch 8.2.0409: search test leaves file behind · vim\/vim@b68df22",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/b68df220c5278365792b8f94d8d6f34d329b7746",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/b68df220c5278365792b8f94d8d6f34d329b7746"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584627515.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/3696839ef1165804159e28f50cb6113acc3d519d|patch 8.2.0410: channel test fails too often on slow Mac>\npatch 8.2.0410: channel test fails too often on slow Mac\n\nProblem:    Channel test fails too often on slow Mac.\nSolution:   Increase waiting time to 10 seconds.",
+        "ts": "1584632316.025100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0410: channel test fails too often on slow Mac · vim\/vim@3696839",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/3696839ef1165804159e28f50cb6113acc3d519d",
+                "text": "Problem: Channel test fails too often on slow Mac. Solution: Increase waiting time to 10 seconds.",
+                "fallback": "GitHub: patch 8.2.0410: channel test fails too often on slow Mac · vim\/vim@3696839",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/3696839ef1165804159e28f50cb6113acc3d519d",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/3696839ef1165804159e28f50cb6113acc3d519d"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584632317.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/24e9b6fe4b5d09bcced1318c6c1b92d807e96ac7|patch 8.2.0411: Mac: breakcheck is using a value from the stone ages>\npatch 8.2.0411: Mac: breakcheck is using a value from the stone ages\n\nProblem:    Mac: breakcheck is using a value from the stone ages.\nSolution:   Delete BREAKCHECK_SKIP from the Mac header file. (Ben Jackson)",
+        "ts": "1584632316.025200",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0411: Mac: breakcheck is using a value from the stone ages · vim\/vim@24e9b6f",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/24e9b6fe4b5d09bcced1318c6c1b92d807e96ac7",
+                "text": "Problem: Mac: breakcheck is using a value from the stone ages. Solution: Delete BREAKCHECK_SKIP from the Mac header file. (Ben Jackson)",
+                "fallback": "GitHub: patch 8.2.0411: Mac: breakcheck is using a value from the stone ages · vim\/vim@24e9b6f",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/24e9b6fe4b5d09bcced1318c6c1b92d807e96ac7",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/24e9b6fe4b5d09bcced1318c6c1b92d807e96ac7"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584632317.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/37f471df6ee422beb4d08ee4ccda35f8279e3bb7|patch 8.2.0412: MS-Windows: cannot use vimtutor from the start menu>\npatch 8.2.0412: MS-Windows: cannot use vimtutor from the start menu\n\nProblem:    MS-Windows: cannot use vimtutor from the start menu.\nSolution:   Better check for writable directory. Use the right path for the\n            executable. (Wu Yongwei, closes #5774, closes #5756)",
+        "ts": "1584634712.025500",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0412: MS-Windows: cannot use vimtutor from the start menu · vim\/vim@37f471d",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/37f471df6ee422beb4d08ee4ccda35f8279e3bb7",
+                "text": "Problem: MS-Windows: cannot use vimtutor from the start menu. Solution: Better check for writable directory. Use the right path for the executable. (Wu Yongwei, closes #5774, close...",
+                "fallback": "GitHub: patch 8.2.0412: MS-Windows: cannot use vimtutor from the start menu · vim\/vim@37f471d",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/37f471df6ee422beb4d08ee4ccda35f8279e3bb7",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/37f471df6ee422beb4d08ee4ccda35f8279e3bb7"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584634714.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/5e94a29ebbde10dd973d58f1adba9a2fc83877d1|patch 8.2.0413: buffer menu does not handle special buffers properly>\npatch 8.2.0413: buffer menu does not handle special buffers properly\n\nProblem:    Buffer menu does not handle special buffers properly.\nSolution:   Keep a dictionary with buffer names to reliably keep track of\n            entries.\n            Also trigger BufFilePre and BufFilePost for command-line and\n            terminal buffers when the name changes.",
+        "ts": "1584640718.025700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0413: buffer menu does not handle special buffers properly · vim\/vim@5e94a29",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/5e94a29ebbde10dd973d58f1adba9a2fc83877d1",
+                "text": "Problem: Buffer menu does not handle special buffers properly. Solution: Keep a dictionary with buffer names to reliably keep track of entries. Also trigger BufFilePre ...",
+                "fallback": "GitHub: patch 8.2.0413: buffer menu does not handle special buffers properly · vim\/vim@5e94a29",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/5e94a29ebbde10dd973d58f1adba9a2fc83877d1",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/5e94a29ebbde10dd973d58f1adba9a2fc83877d1"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584640718.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/373a876d0cac5f8aff352e8ca42fdac88a1a7c3b|patch 8.2.0414: channel connect_waittime() test is flaky>\npatch 8.2.0414: channel connect_waittime() test is flaky\n\nProblem:    Channel connect_waittime() test is flaky.\nSolution:   Set the test_is_flaky flag.  Use test_is_flaky for more tests.",
+        "ts": "1584644314.025900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0414: channel connect_waittime() test is flaky · vim\/vim@373a876",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/373a876d0cac5f8aff352e8ca42fdac88a1a7c3b",
+                "text": "Problem: Channel connect_waittime() test is flaky. Solution: Set the test_is_flaky flag. Use test_is_flaky for more tests.",
+                "fallback": "GitHub: patch 8.2.0414: channel connect_waittime() test is flaky · vim\/vim@373a876",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/373a876d0cac5f8aff352e8ca42fdac88a1a7c3b",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/373a876d0cac5f8aff352e8ca42fdac88a1a7c3b"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584644315.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/40d235e7305ce6ff696e8301c62a41f1f07f8aca|patch 8.2.0415: bsdl filetype is not detected>\npatch 8.2.0415: bsdl filetype is not detected\n\nProblem:    Bsdl filetype is not detected.\nSolution:   Add an entry in the filetype list. (Daniel Kho, closes #5810)",
+        "ts": "1584646713.026100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0415: bsdl filetype is not detected · vim\/vim@40d235e",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/40d235e7305ce6ff696e8301c62a41f1f07f8aca",
+                "text": "Problem: Bsdl filetype is not detected. Solution: Add an entry in the filetype list. (Daniel Kho, closes #5810)",
+                "fallback": "GitHub: patch 8.2.0415: bsdl filetype is not detected · vim\/vim@40d235e",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/40d235e7305ce6ff696e8301c62a41f1f07f8aca",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/40d235e7305ce6ff696e8301c62a41f1f07f8aca"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584646714.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/95e59a355bea9d6234fead07d855880e822a8eaf|patch 8.2.0416: test leaves file behind>\npatch 8.2.0416: test leaves file behind\n\nProblem:    Test leaves file behind.\nSolution:   Delete the file.",
+        "ts": "1584646713.026200",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0416: test leaves file behind · vim\/vim@95e59a3",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/95e59a355bea9d6234fead07d855880e822a8eaf",
+                "text": "Problem: Test leaves file behind. Solution: Delete the file.",
+                "fallback": "GitHub: patch 8.2.0416: test leaves file behind · vim\/vim@95e59a3",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/95e59a355bea9d6234fead07d855880e822a8eaf",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/95e59a355bea9d6234fead07d855880e822a8eaf"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584646714.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/ff78155aa1755aced96a3b343e81939c94aac721|Update runtime files>\nUpdate runtime files",
+        "ts": "1584646713.026300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Update runtime files · vim\/vim@ff78155",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/ff78155aa1755aced96a3b343e81939c94aac721",
+                "text": "The official Vim repository. Contribute to vim\/vim development by creating an account on GitHub.",
+                "fallback": "GitHub: Update runtime files · vim\/vim@ff78155",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/ff78155aa1755aced96a3b343e81939c94aac721",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/ff78155aa1755aced96a3b343e81939c94aac721"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584646715.000000"
+        }
+    }
+]

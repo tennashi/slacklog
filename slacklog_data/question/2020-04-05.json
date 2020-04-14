@@ -1,0 +1,584 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/teratail.com\/questions\/251545?rss=all|vimでコードの自動補完と同時に不思議な空間が挿入される>\n前提\nvim初学者です。\niTermからmac vimを使用しています。  \n発生している問題\nコードの自動補完と同時におかしな空間、特殊文字のようなものが挿入されてしまいます。\n\n\nここにカーソルをおくと動けなくなってしまいます。5回くらい連打すると動けます。\n見た目は1文字だけど中身は5文字のように感じます。\n  \n実現したいこと\n不思議な空間をなくして、自動補完が終わった状態を下図のようにしたいです。\nこの状態でエンターを押すと自動でインデントが入るようにしたいです。\n  \n自分の.vimrc\n関係がありそうな部分のみ抜粋し...\n\n<https:\/\/teratail.com\/questions\/251545?rss=all|続きを見る>",
+        "ts": "1586075477.152900",
+        "username": "[Vim]の新着質問一覧｜teratail（テラテイル）",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/814941997319_48.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "teratail[テラテイル]",
+                "title": "vimでコードの自動補完と同時に不思議な空間が挿入される｜teratail",
+                "title_link": "https:\/\/teratail.com\/questions\/251545?rss=all",
+                "text": "前提vim初学者です。iTermからmac vimを使用しています。 発生している問題コードの自動補完と同時におかしな空間、特殊文字のようなものが挿入されてしまいます。ここにカーソルをおくと動けなくなってしまいます。5回くらい連打すると動けます。見た目は1文字だけど中身は5文字のように感",
+                "fallback": "teratail[テラテイル]: vimでコードの自動補完と同時に不思議な空間が挿入される｜teratail",
+                "thumb_url": "https:\/\/teratail.com\/img\/imgFacebookShare.png",
+                "from_url": "https:\/\/teratail.com\/questions\/251545?rss=all",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/teratail.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/teratail.com\/questions\/251545?rss=all"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1586075477.000000"
+        }
+    },
+    {
+        "client_msg_id": "a8896b55-a846-4394-98b9-b653b8dac325",
+        "type": "message",
+        "text": "neocomplete関係はわからないな...",
+        "user": "UAZ33BKV2",
+        "ts": "1586075636.153500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pWC4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "neocomplete関係はわからないな..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3070e28d-3207-416e-a91c-159a692934ca",
+        "type": "message",
+        "text": "未だにneocom使ってる人いるんだ・・・",
+        "user": "U7B4ZD49X",
+        "ts": "1586076141.154000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Akam2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "未だにneocom使ってる人いるんだ・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "29ee28c6-e376-43fa-a536-317598832957",
+        "type": "message",
+        "text": "はい。",
+        "user": "U78A6ESHM",
+        "ts": "1586076170.154200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "A=boO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e787c1a9-aed4-4c1b-b80a-dceb0d737866",
+        "type": "message",
+        "text": "Neobundle＋Noecomplete+Unite、なにもかも皆懐かしい",
+        "user": "U7B4ZD49X",
+        "ts": "1586076250.155300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "INY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Neobundle＋Noecomplete+Unite、なにもかも皆懐かしい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "935169da-0c9b-4a90-a741-2def792fadaa",
+        "type": "message",
+        "text": "これ neosnippet 展開した時のやつだ （目印で特殊な記号みたいなのが入って，conceal でかくされている（とかだと思う））",
+        "user": "US5UW1UNB",
+        "ts": "1586077973.156200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vgvO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ neosnippet 展開した時のやつだ （目印で特殊な記号みたいなのが入って，conceal でかくされている（とかだと思う））"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8d36a091-e252-43c5-b290-b0e7e0a53ff5",
+        "type": "message",
+        "text": "あー",
+        "user": "UAZ33BKV2",
+        "ts": "1586078047.156900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3=r",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b57f9350-2df5-4e83-8df9-dfc67ef5718c",
+        "type": "message",
+        "text": "スニペットでジャンプせずにescapeしたらこうなる，スニペット編集してください，とかだな",
+        "user": "US5UW1UNB",
+        "ts": "1586078047.157000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "M8u",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "スニペットでジャンプせずにescapeしたらこうなる，スニペット編集してください，とかだな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d21a078e-e9b8-4e35-b4da-685d8bdb34c4",
+        "type": "message",
+        "text": "回答するか",
+        "user": "US5UW1UNB",
+        "ts": "1586078061.157200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8ULI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "回答するか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "43b75867-2815-4d72-8b8a-bccafb6152dc",
+        "type": "message",
+        "text": "これ言語なんだろ",
+        "user": "US5UW1UNB",
+        "ts": "1586078412.157400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VQxx=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ言語なんだろ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ce69b871-1879-436b-86aa-0208316ca8cd",
+        "type": "message",
+        "text": "Rubyっぽいな",
+        "user": "US5UW1UNB",
+        "ts": "1586078469.157600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/+YA=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Rubyっぽいな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1440dc5a-9988-4e31-84a5-9356fb5d7961",
+        "type": "message",
+        "text": "回答 Done.",
+        "user": "US5UW1UNB",
+        "ts": "1586079050.157900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Nl6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "回答 Done."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "subara",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW",
+                    "U78A6ESHM",
+                    "UEA8SS1RN"
+                ],
+                "count": 4
+            }
+        ]
+    },
+    {
+        "client_msg_id": "492f4e32-5417-4637-a8a1-ba334610bae8",
+        "type": "message",
+        "text": "質問です。\ndeopleteなどで表示したポップアップの選択をループすることってできるんでしょうか？一番下までスクロールしたら、一番上まで戻るというような挙動です。",
+        "user": "ULSHV7A6R",
+        "ts": "1586103619.160300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "f43f87e54f5b",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-17\/765044446022_f43f87e54f5be751759f_72.png",
+            "first_name": "",
+            "real_name": "nabezokodaikon",
+            "display_name": "nabezokodaikon",
+            "team": "T03C4RC8V",
+            "name": "nabezoko.daikon",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Vm4J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "質問です。\ndeopleteなどで表示したポップアップの選択をループすることってできるんでしょうか？一番下までスクロールしたら、一番上まで戻るというような挙動です。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586110431.161000",
+        "user": "U011B81LBF1",
+        "text": "<@U011B81LBF1> has joined the channel"
+    },
+    {
+        "client_msg_id": "e7e91b20-31b3-4dfd-9a9c-b0f8cb84e656",
+        "type": "message",
+        "text": "Vimのデフォルトの挙動では間に補完なしを挟むだけでループすると思うのですが",
+        "user": "U7JL1UKKL",
+        "ts": "1586118526.162000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sll6Z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vimのデフォルトの挙動では間に補完なしを挟むだけでループすると思うのですが"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "573c9623-ba7e-4592-96ed-3cc4e1c84704",
+        "type": "message",
+        "text": "その挙動は必要ありますか？",
+        "user": "U7JL1UKKL",
+        "ts": "1586118533.162400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gTzc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "その挙動は必要ありますか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
