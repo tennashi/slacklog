@@ -1371,94 +1371,8 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
     <span class='slacklog-text'>tldrとcheatかな</span>
     <details class='slacklog-thread'>
       <summary class-'slacklog-thread-summary'>25 件の返信
-        <span class='slacklog-thread-mtime'>最終返信:3日 11:35:56</span>
+        <span class='slacklog-thread-mtime'>最終返信:12日 23:38:00</span>
       </summary>
-      <span class='slacklog-message' id='1584084545.145900'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-        <span class='slacklog-name'>yutakatay</span>
-        <a class='slacklog-datetime' href='#ts-1584084545.145900'>13日 16:29:06</a>
-        <span class='slacklog-text'>いえ、オプションとってきたらそれが使える状態にあってほしいだけな感じです。<br><br>FZF_DEFAULT_OPTSがこれだとvim上ではエラーがでますね。（ちょっと私もコードまでは追えてないです。。。fzfでは大丈夫です）<br><br><pre>--multi --reverse --ansi --bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up,?:toggle-preview   --expect=ctrl-v,ctrl-x,ctrl-q,ctrl-s,ctrl-t --prompt=&#34;fzf&gt; &#34;<br> --preview=&#39;[[ &#34;$(file --mime {})&#34; =~ binary ]] &amp;&amp; echo &#34;{} is a binary file&#34; || bat --color=always --style=grid {-1}&#39;</pre><br>現状これがほしい感じです。<br><br><pre>--multi --reverse --ansi --bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up,?:toggle-preview    --preview=&#39;[[ &#34;$(file --mime {})&#34; =~ binary ]] &amp;&amp; echo &#34;{}<br>is a binary file&#34; || bat --color=always --style=grid {-1}&#39;</pre></span>
-      </span>
-      <span class='slacklog-message' id='1584003205.138100'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-        <span class='slacklog-name'>yutakatay</span>
-        <a class='slacklog-datetime' href='#ts-1584003205.138100'>12日 17:53:26</a>
-        <span class='slacklog-text'>そういえばworkaroundしちゃってますけど、  <code>fzf_preview#command#file_list_command_options(&#39;fzf&#39;)</code> からデフォルト値引っ張ってきても、Helptagsとかがうまく動かなかったです。（エラーがでる）<br><pre>Error detected while processing function &lt;SNR&gt;292_set_fzf_last_query:<br>line    6:<br>E121: Undefined variable: s:resource_func_name</pre><br>--expect=と--promptを削除すれば動きました。<br><a href='https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844'>https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844</a></span>
-        <span class='slacklog-attachments'>
-            <span class='slacklog-attachment slacklog-attachment-github'>
-              <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
-              <span class='slacklog-attachment-github-servicename'>GitHub</span>
-              <span class='slacklog-attachment-github-title'><a href='https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844'>yutakatay/dotfiles</a></span>
-              <span class='slacklog-attachment-github-text'>The best and strongest dotfiles. Contribute to yutakatay/dotfiles development by creating an account on GitHub.</span>
-            </span>
-        </span>
-      </span>
-      <span class='slacklog-message' id='1584007100.138500'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
-        <span class='slacklog-name'>ycino</span>
-        <a class='slacklog-datetime' href='#ts-1584007100.138500'>12日 18:58:21</a>
-        <span class='slacklog-text'>あとでちゃんと確認しようかと思うんですけど、その辺  <code>fzf_preview#command#get_common_command_options</code> 使うのが適切だったりしないです？</span>
-      </span>
-      <span class='slacklog-message' id='1584007150.138700'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
-        <span class='slacklog-name'>ycino</span>
-        <a class='slacklog-datetime' href='#ts-1584007150.138700'>12日 18:59:11</a>
-        <span class='slacklog-text'>中に何が入ってるかもうちゃんと覚えてない・・・</span>
-      </span>
-      <span class='slacklog-message' id='1584023879.139300'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-        <span class='slacklog-name'>yutakatay</span>
-        <a class='slacklog-datetime' href='#ts-1584023879.139300'>12日 23:38:00</a>
-        <span class='slacklog-text'><code>fzf_preview#command#get_common_command_options</code> だとプレビューがないですね。。。まあ今のままでもよいですが。</span>
-      </span>
-      <span class='slacklog-message' id='1586083438.183200'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
-        <span class='slacklog-name'>ycino</span>
-        <a class='slacklog-datetime' href='#ts-1586083438.183200'>5日 19:43:59</a>
-        <span class='slacklog-text'>直したんで適当なタイミングで見ておいて貰えるとー</span>
-      </span>
-      <span class='slacklog-message' id='1583836765.002000'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
-        <span class='slacklog-name'>ycino</span>
-        <a class='slacklog-datetime' href='#ts-1583836765.002000'>10日 19:39:26</a>
-        <span class='slacklog-text'>tldrとcheatかな</span>
-      </span>
-      <span class='slacklog-message' id='1583837165.008100'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-        <span class='slacklog-name'>yutakatay</span>
-        <a class='slacklog-datetime' href='#ts-1583837165.008100'>10日 19:46:06</a>
-        <span class='slacklog-text'>これ結局どっちが便利ですか？？</span>
-      </span>
-      <span class='slacklog-message' id='1583837199.009400'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
-        <span class='slacklog-name'>ycino</span>
-        <a class='slacklog-datetime' href='#ts-1583837199.009400'>10日 19:46:40</a>
-        <span class='slacklog-text'>どうだろ、結局あんまりどっちも使ってないんですよね・・・<br>入れたことあるってだけで</span>
-      </span>
-      <span class='slacklog-message' id='1583837212.010000'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-        <span class='slacklog-name'>yutakatay</span>
-        <a class='slacklog-datetime' href='#ts-1583837212.010000'>10日 19:46:53</a>
-        <span class='slacklog-text'>なんですよね。。。</span>
-      </span>
-      <span class='slacklog-message' id='1583837240.010500'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-        <span class='slacklog-name'>yutakatay</span>
-        <a class='slacklog-datetime' href='#ts-1583837240.010500'>10日 19:47:21</a>
-        <span class='slacklog-text'>自分の作業ワークフローにのせるのが大変なんですよね・・・</span>
-      </span>
-      <span class='slacklog-message' id='1583837258.011000'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-        <span class='slacklog-name'>yutakatay</span>
-        <a class='slacklog-datetime' href='#ts-1583837258.011000'>10日 19:47:39</a>
-        <span class='slacklog-text'>tldrは今引いてみたら補完がいまいちでしたね。。。</span>
-      </span>
-      <span class='slacklog-message' id='1585842973.124000'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
-        <span class='slacklog-name'>yutakatay</span>
-        <a class='slacklog-datetime' href='#ts-1585842973.124000'>3日 00:56:14</a>
-        <span class='slacklog-text'>Issueがぽこぽこ立ってるときに申し訳無いですがFzfPreviewLocationList壊れてるくさいです</span>
-      </span>
       <span class='slacklog-message' id='1585876047.124800'>
         <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
         <span class='slacklog-name'>ycino</span>
@@ -1530,6 +1444,92 @@ title: vim-jp.slack.com log - &#35dotfiles - 2020年03月
         <span class='slacklog-name'>ycino</span>
         <a class='slacklog-datetime' href='#ts-1585881355.129600'>3日 11:35:56</a>
         <span class='slacklog-text'>今日明日、遅くとも日曜には直したいな<br>ありがとうございます</span>
+      </span>
+      <span class='slacklog-message' id='1584083942.145700'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1584083942.145700'>13日 16:19:03</a>
+        <span class='slacklog-text'>忙しくて全然反応できてなかった、どういうインターフェイスがbetterってなんかあります？</span>
+      </span>
+      <span class='slacklog-message' id='1584084545.145900'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1584084545.145900'>13日 16:29:06</a>
+        <span class='slacklog-text'>いえ、オプションとってきたらそれが使える状態にあってほしいだけな感じです。<br><br>FZF_DEFAULT_OPTSがこれだとvim上ではエラーがでますね。（ちょっと私もコードまでは追えてないです。。。fzfでは大丈夫です）<br><br><pre>--multi --reverse --ansi --bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up,?:toggle-preview   --expect=ctrl-v,ctrl-x,ctrl-q,ctrl-s,ctrl-t --prompt=&#34;fzf&gt; &#34;<br> --preview=&#39;[[ &#34;$(file --mime {})&#34; =~ binary ]] &amp;&amp; echo &#34;{} is a binary file&#34; || bat --color=always --style=grid {-1}&#39;</pre><br>現状これがほしい感じです。<br><br><pre>--multi --reverse --ansi --bind=ctrl-d:preview-page-down,ctrl-u:preview-page-up,?:toggle-preview    --preview=&#39;[[ &#34;$(file --mime {})&#34; =~ binary ]] &amp;&amp; echo &#34;{}<br>is a binary file&#34; || bat --color=always --style=grid {-1}&#39;</pre></span>
+      </span>
+      <span class='slacklog-message' id='1586083438.183200'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1586083438.183200'>5日 19:43:59</a>
+        <span class='slacklog-text'>直したんで適当なタイミングで見ておいて貰えるとー</span>
+      </span>
+      <span class='slacklog-message' id='1583836765.002000'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1583836765.002000'>10日 19:39:26</a>
+        <span class='slacklog-text'>tldrとcheatかな</span>
+      </span>
+      <span class='slacklog-message' id='1583837165.008100'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1583837165.008100'>10日 19:46:06</a>
+        <span class='slacklog-text'>これ結局どっちが便利ですか？？</span>
+      </span>
+      <span class='slacklog-message' id='1583837199.009400'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1583837199.009400'>10日 19:46:40</a>
+        <span class='slacklog-text'>どうだろ、結局あんまりどっちも使ってないんですよね・・・<br>入れたことあるってだけで</span>
+      </span>
+      <span class='slacklog-message' id='1583837212.010000'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1583837212.010000'>10日 19:46:53</a>
+        <span class='slacklog-text'>なんですよね。。。</span>
+      </span>
+      <span class='slacklog-message' id='1583837240.010500'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1583837240.010500'>10日 19:47:21</a>
+        <span class='slacklog-text'>自分の作業ワークフローにのせるのが大変なんですよね・・・</span>
+      </span>
+      <span class='slacklog-message' id='1583837258.011000'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1583837258.011000'>10日 19:47:39</a>
+        <span class='slacklog-text'>tldrは今引いてみたら補完がいまいちでしたね。。。</span>
+      </span>
+      <span class='slacklog-message' id='1584003205.138100'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1584003205.138100'>12日 17:53:26</a>
+        <span class='slacklog-text'>そういえばworkaroundしちゃってますけど、  <code>fzf_preview#command#file_list_command_options(&#39;fzf&#39;)</code> からデフォルト値引っ張ってきても、Helptagsとかがうまく動かなかったです。（エラーがでる）<br><pre>Error detected while processing function &lt;SNR&gt;292_set_fzf_last_query:<br>line    6:<br>E121: Undefined variable: s:resource_func_name</pre><br>--expect=と--promptを削除すれば動きました。<br><a href='https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844'>https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844</a></span>
+        <span class='slacklog-attachments'>
+            <span class='slacklog-attachment slacklog-attachment-github'>
+              <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+              <span class='slacklog-attachment-github-servicename'>GitHub</span>
+              <span class='slacklog-attachment-github-title'><a href='https://github.com/yutakatay/dotfiles/blob/2c7b02e793918768d7501875260a7fb0232b64bd/.vim/rc/pluginconfig.vim#L1844'>yutakatay/dotfiles</a></span>
+              <span class='slacklog-attachment-github-text'>The best and strongest dotfiles. Contribute to yutakatay/dotfiles development by creating an account on GitHub.</span>
+            </span>
+        </span>
+      </span>
+      <span class='slacklog-message' id='1584007100.138500'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1584007100.138500'>12日 18:58:21</a>
+        <span class='slacklog-text'>あとでちゃんと確認しようかと思うんですけど、その辺  <code>fzf_preview#command#get_common_command_options</code> 使うのが適切だったりしないです？</span>
+      </span>
+      <span class='slacklog-message' id='1584007150.138700'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1584007150.138700'>12日 18:59:11</a>
+        <span class='slacklog-text'>中に何が入ってるかもうちゃんと覚えてない・・・</span>
+      </span>
+      <span class='slacklog-message' id='1584023879.139300'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1584023879.139300'>12日 23:38:00</a>
+        <span class='slacklog-text'><code>fzf_preview#command#get_common_command_options</code> だとプレビューがないですね。。。まあ今のままでもよいですが。</span>
       </span>
     </details>
   </span>
