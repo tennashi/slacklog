@@ -8465,13 +8465,16 @@ permalink: /golang/2020/03/index:output_ext
     <span class='slacklog-text'><pre>func main() {<br>	ms := &amp;hoge.MyStruct{}<br>	receiver := reflect.ValueOf(ms)<br>	log.Println(&#34;before&#34;)<br>	receiver.MethodByName(&#34;Method1&#34;).Call([]reflect.Value{})<br>	log.Println(&#34;after&#34;)<br>}</pre></span>
     <details class='slacklog-thread'>
       <summary class-'slacklog-thread-summary'>1 件の返信
-        <span class='slacklog-thread-mtime'>最終返信:31日 15:38:35</span>
+        <span class='slacklog-thread-mtime'>最終返信:1日 23:33:34</span>
       </summary>
-      <span class='slacklog-message' id='1585636714.382900'>
-        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
-        <span class='slacklog-name'>mattn</span>
-        <a class='slacklog-datetime' href='#ts-1585636714.382900'>31日 15:38:35</a>
-        <span class='slacklog-text'><pre>func main() {<br>	ms := &amp;hoge.MyStruct{}<br>	receiver := reflect.ValueOf(ms)<br>	log.Println(&#34;before&#34;)<br>	receiver.MethodByName(&#34;Method1&#34;).Call([]reflect.Value{})<br>	log.Println(&#34;after&#34;)<br>}</pre></span>
+      <span class='slacklog-message-broadcasted'>
+        <span class='slacklog-thread-broadcast-text'>チャンネルにも投稿済</span>
+        <span class='slacklog-message' id='1585751613.094400'>
+        <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+        <span class='slacklog-name'>Ichiro MATSUNAGA</span>
+        <a class='slacklog-datetime' href='#ts-1585751613.094400'>1日 23:33:34</a>
+        <span class='slacklog-text'>これ、<code>receiver.MethodByName(&#34;Method1&#34;).Call([]reflect.Value{})</code>の所、特に <code>[]reflect.Value{}]</code>の所って、Value構造体の配列が入るという事で良いですよね?<br> <code>func Method1(1, &#34;b&#34;) </code>の場合って、どう書いたら良いんですか? 値からValueを作る方法が良くわかりません。</span>
+      </span>
       </span>
     </details>
   </span>
@@ -8525,8 +8528,17 @@ permalink: /golang/2020/03/index:output_ext
     <span class='slacklog-text'>もしどうしてもならinterfaceでやるべき。</span>
     <details class='slacklog-thread'>
       <summary class-'slacklog-thread-summary'>2 件の返信
-        <span class='slacklog-thread-mtime'>最終返信:31日 15:41:23</span>
+        <span class='slacklog-thread-mtime'>最終返信:1日 09:39:34</span>
       </summary>
+      <span class='slacklog-message-broadcasted'>
+        <span class='slacklog-thread-broadcast-text'>チャンネルにも投稿済</span>
+        <span class='slacklog-message' id='1585701531.068200'>
+        <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
+        <span class='slacklog-name'>Ichiro MATSUNAGA</span>
+        <a class='slacklog-datetime' href='#ts-1585701531.068200'>1日 09:38:52</a>
+        <span class='slacklog-text'>interfaceで口をしばってやるのはjavaとかでもやりますけど、結局どれを呼び出すかは文字列で渡してreflectionする必要ありませんか?</span>
+      </span>
+      </span>
       <span class='slacklog-message-broadcasted'>
         <span class='slacklog-thread-broadcast-text'>チャンネルにも投稿済</span>
         <span class='slacklog-message' id='1585701573.068900'>
@@ -8535,12 +8547,6 @@ permalink: /golang/2020/03/index:output_ext
         <a class='slacklog-datetime' href='#ts-1585701573.068900'>1日 09:39:34</a>
         <span class='slacklog-text'>ないです。そんなことしたらコンパイラ言語である意味がなくなります。文字列間違っただけでエラーになっちゃうので。</span>
       </span>
-      </span>
-      <span class='slacklog-message' id='1585636882.387300'>
-        <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
-        <span class='slacklog-name'>KoRoN</span>
-        <a class='slacklog-datetime' href='#ts-1585636882.387300'>31日 15:41:23</a>
-        <span class='slacklog-text'>もしどうしてもならinterfaceでやるべき。</span>
       </span>
     </details>
   </span>
@@ -10331,7 +10337,7 @@ permalink: /golang/2020/03/index:output_ext
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
     <a class='slacklog-datetime' href='#ts-1585701531.068200'>1日 09:38:52</a>
     <span class='slacklog-thread-broadcast-link'>
-      このスレッドに返信しました : <a href='#ts-1585636882.387300'>interfaceで口をしばってやるのは ...</a>
+      このスレッドに返信しました : <a href='#ts-1585636882.387300'>もしどうしてもならinterfaceでや ...</a>
     </span>
 
     <span class='slacklog-text'>interfaceで口をしばってやるのはjavaとかでもやりますけど、結局どれを呼び出すかは文字列で渡してreflectionする必要ありませんか?</span>
@@ -10341,7 +10347,7 @@ permalink: /golang/2020/03/index:output_ext
     <span class='slacklog-name'>KoRoN</span>
     <a class='slacklog-datetime' href='#ts-1585701573.068900'>1日 09:39:34</a>
     <span class='slacklog-thread-broadcast-link'>
-      このスレッドに返信しました : <a href='#ts-1585636882.387300'>interfaceで口をしばってやるのは ...</a>
+      このスレッドに返信しました : <a href='#ts-1585636882.387300'>もしどうしてもならinterfaceでや ...</a>
     </span>
 
     <span class='slacklog-text'>ないです。そんなことしたらコンパイラ言語である意味がなくなります。文字列間違っただけでエラーになっちゃうので。</span>
