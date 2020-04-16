@@ -1,0 +1,1463 @@
+---
+# vim:set ts=2 sts=2 sw=2 et:
+layout: slacklog
+title: vim-jp.slack.com log - &#35plugins - 2020年04月
+permalink: /plugins/2020/04/index:output_ext
+---
+<div>
+<h2><a href='/slacklog/'>vim-jp.slack.com log</a> - <a href='/slacklog/plugins/'>&#35plugins</a> - 2020年04月</h2>
+
+{% raw %}
+  <span class='slacklog-message' id='1585726161.144200'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+    <span class='slacklog-name'>luma</span>
+    <a class='slacklog-datetime' href='#ts-1585726161.144200'>1日 16:29:22</a>
+
+    <span class='slacklog-text'>Gina browse --yank と OpenBrowser を組み合わせている</span>
+  </span>
+  <span class='slacklog-message' id='1585726392.145000'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+    <span class='slacklog-name'>luma</span>
+    <a class='slacklog-datetime' href='#ts-1585726392.145000'>1日 16:33:13</a>
+
+    <span class='slacklog-text'>tyruさんの専用のプラグインつかってみようかな...</span>
+  </span>
+  <span class='slacklog-message' id='1585726980.145100'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+    <span class='slacklog-name'>tyru</span>
+    <a class='slacklog-datetime' href='#ts-1585726980.145100'>1日 16:43:01</a>
+
+    <span class='slacklog-text'>--yank あるのか。open-browser, open-browser-github 両方にほしいんだよな<br>色々手が回ってない。逆に自分のプラグインにコミットするモチベがない時がある（昔からだけど最近結構そんな感じ）</span>
+  </span>
+  <span class='slacklog-message' id='1585727029.145200'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+    <span class='slacklog-name'>tyru</span>
+    <a class='slacklog-datetime' href='#ts-1585727029.145200'>1日 16:43:50</a>
+
+    <span class='slacklog-text'>--yank 近日やるかー</span>
+  </span>
+  <span class='slacklog-message' id='1585736941.146000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585736941.146000'>1日 19:29:02</a>
+
+    <span class='slacklog-text'>ちょっと前に話題になってたと思うんですけど、numberとrelativenumberをいい感じに管理してくれるプラグインって何がよさそうでしょう<br>これ・・・？ <a href='https://github.com/jeffkreeftmeijer/vim-numbertoggle'>https://github.com/jeffkreeftmeijer/vim-numbertoggle</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/jeffkreeftmeijer/vim-numbertoggle'>jeffkreeftmeijer/vim-numbertoggle</a></span>
+          <span class='slacklog-attachment-github-text'>Toggles between hybrid and absolute line numbers automatically - jeffkreeftmeijer/vim-numbertoggle</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585737013.147100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585737013.147100'>1日 19:30:14</a>
+
+    <span class='slacklog-text'>これ実体は2行だけなのか、これならvimrcに書くのでよさそう<br>なんかペアプロとかレビューのときのためにいい感じにtoggleする設定とかも合わせて入ってると助かりそうなんですが</span>
+  </span>
+  <span class='slacklog-message' id='1585737158.147700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1585737158.147700'>1日 19:32:39</a>
+
+    <span class='slacklog-text'>好みが人によるから、自分で設定しちゃうのが速いんだろうな...と思う<br>やることはわりとあるけど</span>
+  </span>
+  <span class='slacklog-message' id='1585737355.148600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585737355.148600'>1日 19:35:56</a>
+
+    <span class='slacklog-text'>やることありそうだから拾いたかったんですよねー、どうしようかな</span>
+  </span>
+  <span class='slacklog-message' id='1585737392.149100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1585737392.149100'>1日 19:36:33</a>
+
+    <span class='slacklog-text'>なぜ setlocal も使ってないプラグインがこんなにスター付くのか</span>
+  </span>
+  <span class='slacklog-message' id='1585737421.149300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1585737421.149300'>1日 19:37:02</a>
+
+    <span class='slacklog-text'>Vim script警察</span>
+  </span>
+  <span class='slacklog-message' id='1585737452.149700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1585737452.149700'>1日 19:37:33</a>
+
+    <span class='slacklog-text'>setlocal、何かで事故ってから必ず付けるようになった</span>
+  </span>
+  <span class='slacklog-message' id='1585737487.150400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1585737487.150400'>1日 19:38:08</a>
+
+    <span class='slacklog-text'>まあでもこれかなり昔からあってそれなりに歴史があるのか。紆余曲折を経て今のシンプルな形に落ち着いた感じはある (ミスってるが)</span>
+  </span>
+  <span class='slacklog-message' id='1585737526.151300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1585737526.151300'>1日 19:38:47</a>
+
+    <span class='slacklog-text'>劇的ビフォーアフター <a href='https://github.com/jeffkreeftmeijer/vim-numbertoggle/commit/db234b2417c3780306d201be1369ff06498f6697#diff-2e455b72fa8a7783b5f1e92d6a5c56ec'>https://github.com/jeffkreeftmeijer/vim-numbertoggle/commit/db234b2417c3780306d201be1369ff06498f6697#diff-2e455b72fa8a7783b5f1e92d6a5c56ec</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/jeffkreeftmeijer/vim-numbertoggle/commit/db234b2417c3780306d201be1369ff06498f6697#diff-2e455b72fa8a7783b5f1e92d6a5c56ec'>2.0: rewrite, remove config, drop &amp;lt; 7.3 support · jeffkreeftmeijer/vim-numbertoggle@db234b2</a></span>
+          <span class='slacklog-attachment-github-text'>Since version 2.0, numbertoggle dropped support for Vim &lt; 7.3, and removed its configuration options in favor of a simple implementation with sensible defaults. If that doesn&amp;#39;t work for you ...</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585737566.151700'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+    <span class='slacklog-name'>luma</span>
+    <a class='slacklog-datetime' href='#ts-1585737566.151700'>1日 19:39:27</a>
+
+    <span class='slacklog-text'>&gt; You can set it up yourself by putting the snippet above in your ~/.vimrc, or use the vim-numbertoggle plugin,<br>ってあるしアイデアというか，vimrcの破片みたいな役割として存在しているのかも<br><br>とおもったらめっちゃ変わってたｗ</span>
+  </span>
+  <span class='slacklog-message' id='1585737582.152100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1585737582.152100'>1日 19:39:43</a>
+
+    <span class='slacklog-text'>ぼくのかんがえたさいきょうのせってい時期と悟りを開いた時期</span>
+  </span>
+  <span class='slacklog-message' id='1585737635.152700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1585737635.152700'>1日 19:40:36</a>
+
+    <span class='slacklog-text'>若干記述がアレだけど自分はこれくらい<br><pre>function! s:relativenumber_toggle(mode) abort &#34; {{{<br>  let enter = a:mode ==? &#39;enter&#39;<br><br>  if enter<br>    let b:relativenumber = &amp;l:relativenumber &#34; backup<br>    setlocal norelativenumber<br>  else<br>    if get(b:,&#39;relativenumber&#39;, 1)<br>      &#34; if backup value is relativenumber is active, re-active<br>      setlocal relativenumber<br>    endif<br>  endif<br>endfunction &#34; }}}<br>augroup MyAutoGroup<br>  autocmd WinLeave,InsertEnter * nested call s:relativenumber_toggle(&#39;enter&#39;)<br>  autocmd WinEnter,InsertLeave * nested call s:relativenumber_toggle(&#39;leave&#39;)<br>augroup END</pre></span>
+  </span>
+  <span class='slacklog-message' id='1585737642.153000'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+    <span class='slacklog-name'>luma</span>
+    <a class='slacklog-datetime' href='#ts-1585737642.153000'>1日 19:40:43</a>
+
+    <span class='slacklog-text'>setlocalつけたほうがいいのか，あとでvimrcに移し替えようかな</span>
+  </span>
+  <span class='slacklog-message' id='1585737649.153200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1585737649.153200'>1日 19:40:50</a>
+
+    <span class='slacklog-text'>ともあれ setlocal くらい使ってほしい</span>
+  </span>
+  <span class='slacklog-message' id='1585737661.153500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1585737661.153500'>1日 19:41:02</a>
+
+    <span class='slacklog-text'>使ってる人は PR 送りましょう</span>
+  </span>
+  <span class='slacklog-message' id='1585737761.154100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1585737761.154100'>1日 19:42:42</a>
+
+    <span class='slacklog-text'>これはもしやコピペで作る vimrc シリーズなのかな</span>
+  </span>
+  <span class='slacklog-message' id='1585737878.154600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
+    <span class='slacklog-name'>hrsh7th</span>
+    <a class='slacklog-datetime' href='#ts-1585737878.154600'>1日 19:44:39</a>
+
+    <span class='slacklog-text'>昔のコードの <code>let g:insertmode = 1</code> の破壊力がすごい</span>
+  </span>
+  <span class='slacklog-message' id='1585737885.154800'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+    <span class='slacklog-name'>luma</span>
+    <a class='slacklog-datetime' href='#ts-1585737885.154800'>1日 19:44:46</a>
+
+    <span class='slacklog-text'><a href='https://github.com/jeffkreeftmeijer/vim-numbertoggle/issues/46#issuecomment-542529511'>https://github.com/jeffkreeftmeijer/vim-numbertoggle/issues/46#issuecomment-542529511</a><br>これでいいかも</span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/jeffkreeftmeijer/vim-numbertoggle/issues/46#issuecomment-542529511'>number toggle makes vim flashes · Issue #46 · jeffkreeftmeijer/vim-numbertoggle</a></span>
+          <span class='slacklog-attachment-github-text'>It seems that every toggle makes vim to redraw the whole interface so it flashes across the whole window. It works fine with older versions of vim but has this problem after a upgrade to 8.1.1681. ...</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585738057.156000'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/da34283a48f2b5323a65e4bf548a3b25.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-48.png'>
+    <span class='slacklog-name'>luma</span>
+    <a class='slacklog-datetime' href='#ts-1585738057.156000'>1日 19:47:38</a>
+
+    <span class='slacklog-text'>Tsuyoshi CHO さんのleaveで <code>nornu</code>  されてたら，それを尊重する，とかでもいいかもな</span>
+  </span>
+  <span class='slacklog-message' id='1585738754.156100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1585738754.156100'>1日 19:59:15</a>
+
+    <span class='slacklog-text'>ちょっとアレすぎたので修正した</span>
+  </span>
+  <span class='slacklog-message' id='1585741078.157300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1585741078.157300'>1日 20:37:59</a>
+
+    <span class='slacklog-text'>面白いの見つけた <a href='https://www.reddit.com/r/neovim/comments/fsvna6/nvimluapad_interactive_neovim_scratchpad_for_lua/'>https://www.reddit.com/r/neovim/comments/fsvna6/nvimluapad_interactive_neovim_scratchpad_for_lua/</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-other'>
+          <div>
+            <span class='slacklog-attachment-other-serviceicon'><img src='http://www.redditstatic.com/desktop2x/img/favicon/apple-icon-57x57.png'></span>
+            <span class='slacklog-attachment-other-servicename'>reddit</span>
+          </div>
+          <div class='slacklog-attachment-other-title'><a href='https://www.reddit.com/r/neovim/comments/fsvna6/nvimluapad_interactive_neovim_scratchpad_for_lua/'>nvim-luapad - Interactive neovim scratchpad for lua!</a></div>
+          <div class='slacklog-attachment-other-text'>Hi guys and gals! It will be my second post here yay! So I&#39;m currently working on rewriting (or rather completely refactoring) one of my old...</div>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585741117.157900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1585741117.157900'>1日 20:38:38</a>
+
+    <span class='slacklog-text'>コード書き換える度に実行してデバッガみたいな感じで出してくれるやつ</span>
+  </span>
+  <span class='slacklog-message' id='1585741891.158200'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+    <span class='slacklog-name'>tyru</span>
+    <a class='slacklog-datetime' href='#ts-1585741891.158200'>1日 20:51:32</a>
+
+    <span class='slacklog-text'>virtual text vim にもほしいなー</span>
+  </span>
+  <span class='slacklog-message' id='1585742399.158900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2017-12-09/284380828226_585d265f54113004e478_48.jpg'>
+    <span class='slacklog-name'>dohq</span>
+    <a class='slacklog-datetime' href='#ts-1585742399.158900'>1日 21:00:00</a>
+
+    <span class='slacklog-text'>これ系だとこれもありますね<br><a href='https://github.com/metakirby5/codi.vim'>https://github.com/metakirby5/codi.vim</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/metakirby5/codi.vim'>metakirby5/codi.vim</a></span>
+          <span class='slacklog-attachment-github-text'>:notebook_with_decorative_cover: The interactive scratchpad for hackers. - metakirby5/codi.vim</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585753331.159700'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+    <span class='slacklog-name'>tyru</span>
+    <a class='slacklog-datetime' href='#ts-1585753331.159700'>2日 00:02:12</a>
+
+    <span class='slacklog-text'>codi.vim べんりそう</span>
+  </span>
+  <span class='slacklog-message' id='1585784071.160900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-04-19/613222503344_7c236b445ac15b0b8007_48.jpg'>
+    <span class='slacklog-name'>aiya000</span>
+    <a class='slacklog-datetime' href='#ts-1585784071.160900'>2日 08:34:32</a>
+
+    <span class='slacklog-text'>sudo rm /*<br>評価したらどうなるんだろ……</span>
+  </span>
+  <span class='slacklog-message' id='1585795146.162300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1585795146.162300'>2日 11:39:07</a>
+
+    <span class='slacklog-text'>私は使わないですが、サクラエディタのGrepみたいなやつ<br><a href='https://github.com/eugen0329/vim-esearch'>https://github.com/eugen0329/vim-esearch</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/eugen0329/vim-esearch'>eugen0329/vim-esearch</a></span>
+          <span class='slacklog-attachment-github-text'>Perform search in files easily. Contribute to eugen0329/vim-esearch development by creating an account on GitHub.</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585796170.162900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1585796170.162900'>2日 11:56:11</a>
+
+    <span class='slacklog-text'>広めgrep+Qfreplaceみたいなのが別ウィンドウで、という感じかな...</span>
+  </span>
+  <span class='slacklog-message' id='1585807062.164400'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+    <span class='slacklog-name'>Shougo</span>
+    <a class='slacklog-datetime' href='#ts-1585807062.164400'>2日 14:57:43</a>
+
+    <span class='slacklog-text'>neosnippetにinfoを追加してスニペットをプレビュー可能にします</span>
+  </span>
+  <span class='slacklog-message' id='1585819216.165700'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+    <span class='slacklog-name'>Shougo</span>
+    <a class='slacklog-datetime' href='#ts-1585819216.165700'>2日 18:20:17</a>
+
+    <span class='slacklog-text'>他の補完でもinfoをセットするようにしたいところ</span>
+  </span>
+  <span class='slacklog-message' id='1585827960.166300'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+    <span class='slacklog-name'>Shougo</span>
+    <a class='slacklog-datetime' href='#ts-1585827960.166300'>2日 20:46:01</a>
+
+    <span class='slacklog-text'>実装しました</span>
+  </span>
+  <span class='slacklog-message' id='1585833037.171700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+    <span class='slacklog-name'>heavenshell</span>
+    <a class='slacklog-datetime' href='#ts-1585833037.171700'>2日 22:10:38</a>
+
+    <span class='slacklog-text'>今日のほっこり<br>「バグってんだけど？これ設定な」<br>ぼく「依存してるライブラリー古いっぽいから最新にして」<br>「おk でも最新にしたけどまだバグってるんだけど」<br>ぼく「再現せんから、スクリーンキャスト撮ってくれん？」<br>「撮ろうと思ったら再現せんくなったwww 直ったわ！ありがと！」<br><br>あるある。</span>
+  </span>
+  <span class='slacklog-message' id='1585836833.172000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1585836833.172000'>2日 23:13:54</a>
+
+    <span class='slacklog-text'>あるある</span>
+  </span>
+  <span class='slacklog-message' id='1585836910.173400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1585836910.173400'>2日 23:15:11</a>
+
+    <span class='slacklog-text'>僕がよくあるのは、go-oci8 ていう Go の oracle ドライバで<br>「バグってんだけど」<br>ぼく「おかしいね、テストしたソースみせてくれる？」<br>「これ！」<br>ぼく「それ、僕のドライバじゃないよね？」<br><br>音信不通...</span>
+  </span>
+  <span class='slacklog-message' id='1585837148.173600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+    <span class='slacklog-name'>ゴリラ</span>
+    <a class='slacklog-datetime' href='#ts-1585837148.173600'>2日 23:19:09</a>
+
+    <span class='slacklog-text'>ww</span>
+  </span>
+  <span class='slacklog-message' id='1585863412.175100'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+    <span class='slacklog-name'>Shougo</span>
+    <a class='slacklog-datetime' href='#ts-1585863412.175100'>3日 06:36:53</a>
+
+    <span class='slacklog-text'>これはひどい。しかし、再現させようと条件を絞るうちに再現しなくなるのはよくある</span>
+  </span>
+  <span class='slacklog-message' id='1585882329.176500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585882329.176500'>3日 11:52:10</a>
+
+    <span class='slacklog-text'>@yutakatay <a href='https://github.com/yuki-ycino/fzf-preview.vim/issues/106'>https://github.com/yuki-ycino/fzf-preview.vim/issues/106</a> あたり、なんか経緯があって <code>-g \!&#34;* *&#34;</code> にしたと思ってるんですけどなんでしたっけ<br>あと <code>\!&#34;* *&#34;</code> が自分でも実際に何にマッチさせてるか忘れたというあれな・・・</span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/yuki-ycino/fzf-preview.vim/issues/106'>Default filelist command with rg includes misc git files · Issue #106 · yuki-ycino/fzf-preview.vim</a></span>
+          <span class='slacklog-attachment-github-text'>The default command for file list (fzf_preview_filelist_command) is determined by this I believe: if !exists(&amp;#39;g:fzf_preview_filelist_command&amp;#39;) if executable(&amp;#39;rg&amp;#39;) let g:fzf_preview_...</span>
+        </span>
+    </span>
+    <details class='slacklog-thread'>
+      <summary class-'slacklog-thread-summary'>4 件の返信
+        <span class='slacklog-thread-mtime'>最終返信:3日 11:58:51</span>
+      </summary>
+      <span class='slacklog-message' id='1585882544.176700'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1585882544.176700'>3日 11:55:45</a>
+        <span class='slacklog-text'>空白含むファイル名がうまくパースできないとかじゃなかったですっけ？？</span>
+      </span>
+      <span class='slacklog-message' id='1585882599.176900'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1585882599.176900'>3日 11:56:40</a>
+        <span class='slacklog-text'>空白問題でしたっけ、xargsの-dは覚えてるんだけどこっちもそうだっけな</span>
+      </span>
+      <span class='slacklog-message' id='1585882697.177100'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1585882697.177100'>3日 11:58:18</a>
+        <span class='slacklog-text'>デフォルトの設定云々はむずいな・・・</span>
+      </span>
+      <span class='slacklog-message' id='1585882730.177300'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+        <span class='slacklog-name'>ycino</span>
+        <a class='slacklog-datetime' href='#ts-1585882730.177300'>3日 11:58:51</a>
+        <span class='slacklog-text'>git ls-files or rgのデフォルト判定だからあんまり差違がないコマンドを使うようにしとけって話もわかる</span>
+      </span>
+    </details>
+  </span>
+  <span class='slacklog-message' id='1585883116.178300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585883116.178300'>3日 12:05:17</a>
+
+    <span class='slacklog-text'>なんか完全に名前ぶつかってるのを見つけたけど偶然かな・・・？<br>コードの流用とかじゃないから別に文句はないんだけど <a href='https://github.com/chengzeyi/fzf-preview.vim'>https://github.com/chengzeyi/fzf-preview.vim</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/chengzeyi/fzf-preview.vim'>chengzeyi/fzf-preview.vim</a></span>
+          <span class='slacklog-attachment-github-text'>fzf :heart: preview. Contribute to chengzeyi/fzf-preview.vim development by creating an account on GitHub.</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585883176.179000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1585883176.179000'>3日 12:06:17</a>
+
+    <span class='slacklog-text'>名前まんまだと、既存のがあるか調べないで作るとあるある</span>
+  </span>
+  <span class='slacklog-message' id='1585883198.180000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1585883198.180000'>3日 12:06:39</a>
+
+    <span class='slacklog-text'>fzfをrtpに突っ込まないと動かないやつだたぶん</span>
+  </span>
+  <span class='slacklog-message' id='1585883200.180100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1585883200.180100'>3日 12:06:41</a>
+
+    <span class='slacklog-text'>そして謎な動物やら物品の名前のプラグイン</span>
+  </span>
+  <span class='slacklog-message' id='1585883210.180300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1585883210.180300'>3日 12:06:51</a>
+
+    <span class='slacklog-text'>fzf.vimをラップする感じか</span>
+  </span>
+  <span class='slacklog-message' id='1585883227.180600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1585883227.180600'>3日 12:07:08</a>
+
+    <span class='slacklog-text'>f! z! f! (ラップちがい)</span>
+  </span>
+  <span class='slacklog-message' id='1585883240.180900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585883240.180900'>3日 12:07:21</a>
+
+    <span class='slacklog-text'>薄くwrapしてますね</span>
+  </span>
+  <span class='slacklog-message' id='1585883637.182500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585883637.182500'>3日 12:13:58</a>
+
+    <span class='slacklog-text'>他にも探してたらThink.vimの設定でfzf-previewがGinaと連携してるのがデフォルト設定として入ってるのを見つけた<br>これ自分のvimrcからそのままもっていってるっぽいな・・・<br><a href='https://github.com/hardcoreplayers/ThinkVim/blob/master/keybinds/config.vim#L154-L190'>https://github.com/hardcoreplayers/ThinkVim/blob/master/keybinds/config.vim#L154-L190</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/hardcoreplayers/ThinkVim/blob/master/keybinds/config.vim#L154-L190'>hardcoreplayers/ThinkVim</a></span>
+          <span class='slacklog-attachment-github-text'>:dragon: A dark powerd nvim config. Contribute to hardcoreplayers/ThinkVim development by creating an account on GitHub.</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1585884126.182800'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+    <span class='slacklog-name'>heavenshell</span>
+    <a class='slacklog-datetime' href='#ts-1585884126.182800'>3日 12:22:07</a>
+
+    <span class='slacklog-text'>ひどい</span>
+  </span>
+  <span class='slacklog-message' id='1585884192.183300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1585884192.183300'>3日 12:23:13</a>
+
+    <span class='slacklog-text'>設定の持ち込みはどうなのかな...これ自体はしょうがない?</span>
+  </span>
+  <span class='slacklog-message' id='1585884221.184400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+    <span class='slacklog-name'>heavenshell</span>
+    <a class='slacklog-datetime' href='#ts-1585884221.184400'>3日 12:23:42</a>
+
+    <span class='slacklog-text'>クレジットくらいはしてもいい気はしてますー。</span>
+  </span>
+  <span class='slacklog-message' id='1585884246.184900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585884246.184900'>3日 12:24:07</a>
+
+    <span class='slacklog-text'>別に個人的にはバグをこっちのせいにするみたいなのがなかったらいいではあるんですけど<br>そういえばクレジット確認してなかった</span>
+  </span>
+  <span class='slacklog-message' id='1585884350.185200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585884350.185200'>3日 12:25:51</a>
+
+    <span class='slacklog-text'>READMEのプラグインリストにも入ってなかったｗｗｗｗｗｗｗ</span>
+  </span>
+  <span class='slacklog-message' id='1585884386.185700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1585884386.185700'>3日 12:26:27</a>
+
+    <span class='slacklog-text'>Ginaもだ、まぁ悪意があるわけじゃなくて漏れなんだろうけど</span>
+  </span>
+  <span class='slacklog-message' id='1585884499.186200'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+    <span class='slacklog-name'>Shougo</span>
+    <a class='slacklog-datetime' href='#ts-1585884499.186200'>3日 12:28:20</a>
+
+    <span class='slacklog-text'>vimrcについてはさすがに微妙なところである</span>
+  </span>
+  <span class='slacklog-message' id='1585943820.186900'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+    <span class='slacklog-name'>tyru</span>
+    <a class='slacklog-datetime' href='#ts-1585943820.186900'>4日 04:57:01</a>
+
+    <span class='slacklog-text'>@ゴリラ そういえば open-browser-github で行番号が付かない件はどうなりました？</span>
+  </span>
+  <span class='slacklog-message' id='1585951368.187800'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+    <span class='slacklog-name'>takets</span>
+    <a class='slacklog-datetime' href='#ts-1585951368.187800'>4日 07:02:49</a>
+
+    <span class='slacklog-text'>fzfでgrepしたら、<code>(</code>をバックスペース入れないと検索できないの、雑に検索したいときちょっと面倒</span>
+  </span>
+  <span class='slacklog-message' id='1585956680.188300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+    <span class='slacklog-name'>ゴリラ</span>
+    <a class='slacklog-datetime' href='#ts-1585956680.188300'>4日 08:31:21</a>
+
+    <span class='slacklog-text'>仕事で死んでました…<br>今日issue出しますねー</span>
+  </span>
+  <span class='slacklog-message' id='1586069109.190700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-11-28/491043224518_feeffd2d618583c3ba1b_48.jpg'>
+    <span class='slacklog-name'>Yusuke Itoh</span>
+    <a class='slacklog-datetime' href='#ts-1586069109.190700'>5日 15:45:10</a>
+
+    <span class='slacklog-text'>|ω&#39;) めちゃめちゃ荒削りなんですけどハイライト用のスクリプトこさえたんですけど…  <a href='https://github.com/astrorobot110/vimrc/blob/master/autoload/technicolor.vim'>https://github.com/astrorobot110/vimrc/blob/master/autoload/technicolor.vim</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/astrorobot110/vimrc/blob/master/autoload/technicolor.vim'>astrorobot110/vimrc</a></span>
+          <span class='slacklog-attachment-github-text'>Contribute to astrorobot110/vimrc development by creating an account on GitHub.</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1586069789.191600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586069789.191600'>5日 15:56:30</a>
+
+    <span class='slacklog-text'>自分がインストールしてるカラースキームの素性を記録して、フィルタできたりするようにした</span>
+  </span>
+  <span class='slacklog-message' id='1586069896.192100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586069896.192100'>5日 15:58:17</a>
+
+    <span class='slacklog-text'><a href='https://gist.github.com/tsuyoshicho/78f983ebf0cfcb61f8ca8ce952656d9c'>https://gist.github.com/tsuyoshicho/78f983ebf0cfcb61f8ca8ce952656d9c</a><br>つかれた、けどこれでカラースキーム選びやすくなった</span>
+  </span>
+  <span class='slacklog-message' id='1586085379.192600'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+    <span class='slacklog-name'>kyoh86</span>
+    <a class='slacklog-datetime' href='#ts-1586085379.192600'>5日 20:16:20</a>
+
+    <span class='slacklog-text'>open-browser-githubで行番号が付かない件、Issue起こそうかな</span>
+    <details class='slacklog-thread'>
+      <summary class-'slacklog-thread-summary'>4 件の返信
+        <span class='slacklog-thread-mtime'>最終返信:6日 11:07:58</span>
+      </summary>
+      <span class='slacklog-message' id='1586086794.192800'>
+        <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/9162cc079f6266ebd22e421799673eaf.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-48.png'>
+        <span class='slacklog-name'>kyoh86</span>
+        <a class='slacklog-datetime' href='#ts-1586086794.192800'>5日 20:39:55</a>
+        <span class='slacklog-text'>@ゴリラ @tyru 横からではありますが、<br>Issue切らせてもらいました。<br><a href='https://github.com/tyru/open-browser-github.vim/issues/32'>https://github.com/tyru/open-browser-github.vim/issues/32</a></span>
+        <span class='slacklog-attachments'>
+            <span class='slacklog-attachment slacklog-attachment-github'>
+              <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+              <span class='slacklog-attachment-github-servicename'>GitHub</span>
+              <span class='slacklog-attachment-github-title'><a href='https://github.com/tyru/open-browser-github.vim/issues/32'>:&#39;</a></span>
+              <span class='slacklog-attachment-github-text'>&amp;#39;:&amp;#39;&lt;,&amp;#39;&gt;OpenGithubFile&amp;#39; opens target file in GitHub. But the URL is without line-number. It shows message like below. opening &amp;#39;https://github.com/kyoh86/gordon/blob/9fe7952...</span>
+            </span>
+        </span>
+      </span>
+      <span class='slacklog-message' id='1586086847.193100'>
+        <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
+        <span class='slacklog-name'>tyru</span>
+        <a class='slacklog-datetime' href='#ts-1586086847.193100'>5日 20:40:48</a>
+        <span class='slacklog-text'>ありがとうございます！助かりました！</span>
+      </span>
+      <span class='slacklog-message' id='1586138872.196300'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+        <span class='slacklog-name'>ゴリラ</span>
+        <a class='slacklog-datetime' href='#ts-1586138872.196300'>6日 11:07:53</a>
+        <span class='slacklog-text'>すんません<br>土日も死んでました</span>
+      </span>
+      <span class='slacklog-message' id='1586138877.196700'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+        <span class='slacklog-name'>ゴリラ</span>
+        <a class='slacklog-datetime' href='#ts-1586138877.196700'>6日 11:07:58</a>
+        <span class='slacklog-text'>issueありがとうございます</span>
+      </span>
+    </details>
+  </span>
+  <span class='slacklog-message' id='1586094123.194100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586094123.194100'>5日 22:42:04</a>
+
+    <span class='slacklog-text'>うう、deinのhookのところのコード、(初回はそうじゃないようだけど)普通にグローバル汚染してしまうので、直さないと...とほほ</span>
+  </span>
+  <span class='slacklog-message' id='1586094195.194500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586094195.194500'>5日 22:43:16</a>
+
+    <span class='slacklog-text'>自分の理解があまかった(書いた最初はstate,cacheされないよね、そりゃ)</span>
+  </span>
+  <span class='slacklog-message' id='1586095806.195100'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+    <span class='slacklog-name'>Shougo</span>
+    <a class='slacklog-datetime' href='#ts-1586095806.195100'>5日 23:10:07</a>
+
+    <span class='slacklog-text'>もちろんグローバルを汚染しますよ</span>
+  </span>
+  <span class='slacklog-message' id='1586096127.195800'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586096127.195800'>5日 23:15:28</a>
+
+    <span class='slacklog-text'>ですよね...最初(キャッシュされてないとき)にエラーしないですんでて、それで枠内の意識があったっぽい...オオボケ</span>
+  </span>
+  <span class='slacklog-message' id='1586143231.197700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+    <span class='slacklog-name'>ゴリラ</span>
+    <a class='slacklog-datetime' href='#ts-1586143231.197700'>6日 12:20:32</a>
+
+    <span class='slacklog-text'>gitのプラグイン、gitに乗り換えるのを検討中</span>
+  </span>
+  <span class='slacklog-message' id='1586143400.198200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586143400.198200'>6日 12:23:21</a>
+
+    <span class='slacklog-text'>ginaが便利すぎて今までどうやって暮らしてたのかわからない</span>
+  </span>
+  <span class='slacklog-message' id='1586143492.198700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1586143492.198700'>6日 12:24:53</a>
+
+    <span class='slacklog-text'>Effective Gina、技術書典に出て欲しい</span>
+  </span>
+  <span class='slacklog-message' id='1586143508.198900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1586143508.198900'>6日 12:25:09</a>
+
+    <span class='slacklog-text'>Effective fzfもほしい</span>
+  </span>
+  <span class='slacklog-message' id='1586143553.199200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586143553.199200'>6日 12:25:54</a>
+
+    <span class='slacklog-text'>Effective zinitも</span>
+  </span>
+  <span class='slacklog-message' id='1586143573.199700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586143573.199700'>6日 12:26:14</a>
+
+    <span class='slacklog-text'>Effective tmuxも</span>
+  </span>
+  <span class='slacklog-message' id='1586143576.199900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586143576.199900'>6日 12:26:17</a>
+
+    <span class='slacklog-text'>Effective $(任意のツール)</span>
+  </span>
+  <span class='slacklog-message' id='1586143576.200000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+    <span class='slacklog-name'>heavenshell</span>
+    <a class='slacklog-datetime' href='#ts-1586143576.200000'>6日 12:26:17</a>
+
+    <span class='slacklog-text'>お二人が書くのが一番速そうな気がw</span>
+  </span>
+  <span class='slacklog-message' id='1586143694.200800'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1586143694.200800'>6日 12:28:15</a>
+
+    <span class='slacklog-text'>Effective Effective Books</span>
+  </span>
+  <span class='slacklog-message' id='1586143946.201500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586143946.201500'>6日 12:32:27</a>
+
+    <span class='slacklog-text'></span>
+  </span>
+  <span class='slacklog-message' id='1586143980.202100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586143980.202100'>6日 12:33:01</a>
+
+    <span class='slacklog-text'>ひっどw</span>
+  </span>
+  <span class='slacklog-message' id='1586143984.202300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586143984.202300'>6日 12:33:05</a>
+
+    <span class='slacklog-text'>めっちゃ笑ってる</span>
+  </span>
+  <span class='slacklog-message' id='1586144027.202700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+    <span class='slacklog-name'>heavenshell</span>
+    <a class='slacklog-datetime' href='#ts-1586144027.202700'>6日 12:33:48</a>
+
+    <span class='slacklog-text'>これはひどいww</span>
+  </span>
+  <span class='slacklog-message' id='1586144078.203600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586144078.203600'>6日 12:34:39</a>
+
+    <span class='slacklog-text'>サブタイがしっかりあるのがまたwww</span>
+  </span>
+  <span class='slacklog-message' id='1586144133.203900'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-48.png'>
+    <span class='slacklog-name'>Ken Takata</span>
+    <a class='slacklog-datetime' href='#ts-1586144133.203900'>6日 12:35:34</a>
+
+    <span class='slacklog-text'>マトリョムダリスエさん</span>
+  </span>
+  <span class='slacklog-message' id='1586144179.204700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586144179.204700'>6日 12:36:20</a>
+
+    <span class='slacklog-text'>そのうちマトリョーシカの人で通じるようになるのでは（ならない）</span>
+  </span>
+  <span class='slacklog-message' id='1586144196.204900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+    <span class='slacklog-name'>heavenshell</span>
+    <a class='slacklog-datetime' href='#ts-1586144196.204900'>6日 12:36:37</a>
+
+    <span class='slacklog-text'>O RLY? == Oh really?</span>
+  </span>
+  <span class='slacklog-message' id='1586144263.205200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586144263.205200'>6日 12:37:44</a>
+
+    <span class='slacklog-text'><a href='https://dev.to/rly'>https://dev.to/rly</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-other'>
+          <div>
+            <span class='slacklog-attachment-other-serviceicon'><img src='https://res.cloudinary.com/practicaldev/image/fetch/c_scale,fl_progressive,q_auto,w_180/f_auto/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/devlogo-pwa-512.png'></span>
+            <span class='slacklog-attachment-other-servicename'>DEV Community</span>
+          </div>
+          <div class='slacklog-attachment-other-title'><a href='https://dev.to/rly'>O RLY Parody Book Cover Generator</a></div>
+          <div class='slacklog-attachment-other-text'>Insult your co-workers with snarky O RLY parody book covers!</div>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1586144267.205500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586144267.205500'>6日 12:37:48</a>
+
+    <span class='slacklog-text'>ここで作った。</span>
+  </span>
+  <span class='slacklog-message' id='1586144371.206600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1586144371.206600'>6日 12:39:32</a>
+
+    <span class='slacklog-text'>任意の画像をオライリーっぽいモノクロテイストの画像に変換する機能が必要</span>
+  </span>
+  <span class='slacklog-message' id='1586144442.207400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+    <span class='slacklog-name'>ゴリラ</span>
+    <a class='slacklog-datetime' href='#ts-1586144442.207400'>6日 12:40:43</a>
+
+    <span class='slacklog-text'>ゴリラがない</span>
+  </span>
+  <span class='slacklog-message' id='1586144502.207700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1586144502.207700'>6日 12:41:43</a>
+
+    <span class='slacklog-text'>Animal Code とあるのにキノコとかある</span>
+  </span>
+  <span class='slacklog-message' id='1586144587.208700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586144587.208700'>6日 12:43:08</a>
+
+    <span class='slacklog-text'><a href='https://onlinejpgtools.com/convert-jpg-to-grayscale'>https://onlinejpgtools.com/convert-jpg-to-grayscale</a><br>たとえばここでグレーにしてみた</span>
+  </span>
+  <span class='slacklog-message' id='1586144593.209100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1586144593.209100'>6日 12:43:14</a>
+
+    <span class='slacklog-text'>本家だとこれだろうか <a href='https://www.oreilly.co.jp/books/9784873113173/'>https://www.oreilly.co.jp/books/9784873113173/</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-other'>
+          <div>
+            <span class='slacklog-attachment-other-serviceicon'><img src='https://www.oreilly.co.jp/favicon.ico'></span>
+            <span class='slacklog-attachment-other-servicename'>oreilly.co.jp</span>
+          </div>
+          <div class='slacklog-attachment-other-title'><a href='https://www.oreilly.co.jp/books/9784873113173/'>入門 UML 2.0</a></div>
+          <div class='slacklog-attachment-other-text'>本書は、理論ではなく実践に基づくUMLの入門書であり、旧バージョンから大幅に改訂されたUML 2.0に完全に対応しています。図の種類ごとに章を分け、実践的なサンプルを数多く使って、初心者にもわかりやすく説明しています。単に表記法を示すだけでなく、注意すべき点とその理由を丁寧に解説しているので、使用するツールや言語を問わず、あらゆるシステム開発プロジェクトに応用が可能です。旧バージョンからの改訂箇所を手早く学びたい方にも有用ですし、UMLを新たに学ぶ読者にとっても格好の手引きとなるでしょう。</div>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1586144600.209400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586144600.209400'>6日 12:43:21</a>
+
+    <span class='slacklog-text'>背景切ればいいかな</span>
+  </span>
+  <span class='slacklog-message' id='1586144615.209800'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
+    <span class='slacklog-name'>thinca</span>
+    <a class='slacklog-datetime' href='#ts-1586144615.209800'>6日 12:43:36</a>
+
+    <span class='slacklog-text'>全身のほうがぽい</span>
+  </span>
+  <span class='slacklog-message' id='1586144618.210000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586144618.210000'>6日 12:43:39</a>
+
+    <span class='slacklog-text'>リア充だ</span>
+  </span>
+  <span class='slacklog-message' id='1586144679.210400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586144679.210400'>6日 12:44:40</a>
+
+    <span class='slacklog-text'><a href='https://images.app.goo.gl/5jDH6xSUmJVkLBU38'>https://images.app.goo.gl/5jDH6xSUmJVkLBU38</a><br>全身というと、これを思い出す</span>
+  </span>
+  <span class='slacklog-message' id='1586144858.210800'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586144858.210800'>6日 12:47:39</a>
+
+    <span class='slacklog-text'><a href='http://dailym.ai/2pms0i0'>http://dailym.ai/2pms0i0</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-other'>
+          <div>
+            <span class='slacklog-attachment-other-serviceicon'><img src='https://www.dailymail.co.uk/favicon.ico'></span>
+            <span class='slacklog-attachment-other-servicename'>Mail Online</span>
+          </div>
+          <div class='slacklog-attachment-other-title'><a href='http://dailym.ai/2pms0i0'>Dancing gorilla Kionda shows off his moves to crowds at Devon zoo </a></div>
+          <div class='slacklog-attachment-other-text'>Visitors were given much more than they bargained for at Paignton Zoo, where they were treated to a &#39;ballet&#39; performance by its resident gorilla, the 15-year-old ape Kionda (pictured).</div>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1586144865.211300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586144865.211300'>6日 12:47:46</a>
+
+    <span class='slacklog-text'>この1枚目、いい写真だな。</span>
+  </span>
+  <span class='slacklog-message' id='1586144897.211500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2017-12-09/284380828226_585d265f54113004e478_48.jpg'>
+    <span class='slacklog-name'>dohq</span>
+    <a class='slacklog-datetime' href='#ts-1586144897.211500'>6日 12:48:18</a>
+
+    <span class='slacklog-text'>躍動感すごい</span>
+  </span>
+  <span class='slacklog-message' id='1586145050.211900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+    <span class='slacklog-name'>ゴリラ</span>
+    <a class='slacklog-datetime' href='#ts-1586145050.211900'>6日 12:50:51</a>
+
+    <span class='slacklog-text'>躍動感よ</span>
+  </span>
+  <span class='slacklog-message' id='1586145466.212400'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+    <span class='slacklog-name'>KoRoN</span>
+    <a class='slacklog-datetime' href='#ts-1586145466.212400'>6日 12:57:47</a>
+
+    <span class='slacklog-text'>うちにあるやつ。 <a href='https://photos.app.goo.gl/gAfJYLPF0TOzgelr1'>https://photos.app.goo.gl/gAfJYLPF0TOzgelr1</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-other'>
+          <div>
+            <span class='slacklog-attachment-other-serviceicon'><img src='http://ssl.gstatic.com/images/branding/product/1x/photos_512dp.png'></span>
+            <span class='slacklog-attachment-other-servicename'>Google Photos</span>
+          </div>
+          <div class='slacklog-attachment-other-title'><a href='https://photos.app.goo.gl/gAfJYLPF0TOzgelr1'>ゴリラ銅像の試作品の石膏コピー</a></div>
+          <div class='slacklog-attachment-other-text'>4 new photos added to shared album</div>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1586145469.212600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-07-28/696621453314_0edf66561724b8e38e6a_48.png'>
+    <span class='slacklog-name'>monaqa</span>
+    <a class='slacklog-datetime' href='#ts-1586145469.212600'>6日 12:57:50</a>
+
+    <span class='slacklog-text'>UML ゴリラだったのか…</span>
+  </span>
+  <span class='slacklog-message' id='1586145599.213000'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+    <span class='slacklog-name'>KoRoN</span>
+    <a class='slacklog-datetime' href='#ts-1586145599.213000'>6日 13:00:00</a>
+
+    <span class='slacklog-text'>上野にあるほんもの <a href='https://photos.app.goo.gl/xT22BXbsJufxnnRi8'>https://photos.app.goo.gl/xT22BXbsJufxnnRi8</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-other'>
+          <div>
+            <span class='slacklog-attachment-other-serviceicon'><img src='http://ssl.gstatic.com/images/branding/product/1x/photos_512dp.png'></span>
+            <span class='slacklog-attachment-other-servicename'>Google Photos</span>
+          </div>
+          <div class='slacklog-attachment-other-title'><a href='https://photos.app.goo.gl/xT22BXbsJufxnnRi8'>上野動物園にあるゴリラの銅像</a></div>
+          <div class='slacklog-attachment-other-text'>4 new photos · Album by Taro MURAOKA</div>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1586145970.213600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-06-23/667212021009_557c3073c5b377011dbb_48.png'>
+    <span class='slacklog-name'>ゴリラ</span>
+    <a class='slacklog-datetime' href='#ts-1586145970.213600'>6日 13:06:11</a>
+
+    <span class='slacklog-text'>なぞにKoRoNさんちにゴリラ像があって吹き出した記憶がある</span>
+  </span>
+  <span class='slacklog-message' id='1586189677.215100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1586189677.215100'>7日 01:14:38</a>
+
+    <span class='slacklog-text'>なんかすごそう（まだ使ってない）<br><a href='https://github.com/pechorin/any-jump.vim|https://github.com/pechorin/any-jump.vim'>https://github.com/pechorin/any-jump.vim</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/pechorin/any-jump.vim'>pechorin/any-jump.vim</a></span>
+          <span class='slacklog-attachment-github-text'>Jump to any definition and references :eye: IDE madness without overhead :rocket: - pechorin/any-jump.vim</span>
+        </span>
+    </span>
+    <details class='slacklog-thread'>
+      <summary class-'slacklog-thread-summary'>1 件の返信
+        <span class='slacklog-thread-mtime'>最終返信:7日 14:04:23</span>
+      </summary>
+      <span class='slacklog-message-broadcasted'>
+        <span class='slacklog-thread-broadcast-text'>チャンネルにも投稿済</span>
+        <span class='slacklog-message' id='1586235862.217100'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1586235862.217100'>7日 14:04:23</a>
+        <span class='slacklog-text'>これ使ったけどよかった</span>
+      </span>
+      </span>
+    </details>
+  </span>
+  <span class='slacklog-message' id='1586213297.215600'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-48.png'>
+    <span class='slacklog-name'>Shougo</span>
+    <a class='slacklog-datetime' href='#ts-1586213297.215600'>7日 07:48:18</a>
+
+    <span class='slacklog-text'>私もチェックしてみよう</span>
+  </span>
+  <span class='slacklog-message' id='1586234833.216600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586234833.216600'>7日 13:47:14</a>
+
+    <span class='slacklog-text'>う、本体のノーマル/ビジュアル系切り替えとexpand-regionがぶつかっとる<br>マッピング変えよかな...</span>
+  </span>
+  <span class='slacklog-message' id='1586235530.216800'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+    <span class='slacklog-name'>heavenshell</span>
+    <a class='slacklog-datetime' href='#ts-1586235530.216800'>7日 13:58:51</a>
+
+    <span class='slacklog-text'>oh</span>
+  </span>
+  <span class='slacklog-message' id='1586235862.217100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586235862.217100'>7日 14:04:23</a>
+    <span class='slacklog-thread-broadcast-link'>
+      このスレッドに返信しました : <a href='#ts-1586189677.215100'>なんかすごそう（まだ使ってない） &lt;ht ...</a>
+    </span>
+
+    <span class='slacklog-text'>これ使ったけどよかった</span>
+  </span>
+  <span class='slacklog-message' id='1586238271.217600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1586238271.217600'>7日 14:44:32</a>
+
+    <span class='slacklog-text'>入れてみるかなー</span>
+  </span>
+  <span class='slacklog-message' id='1586246925.218400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1586246925.218400'>7日 17:08:46</a>
+
+    <span class='slacklog-text'>便利そうだけど普段使いに使いこなせない感ある</span>
+  </span>
+  <span class='slacklog-message' id='1586254070.218900'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-48.png'>
+    <span class='slacklog-name'>takets</span>
+    <a class='slacklog-datetime' href='#ts-1586254070.218900'>7日 19:07:51</a>
+
+    <span class='slacklog-text'>使ってみたもののぴんとこなかったなぁ</span>
+  </span>
+  <span class='slacklog-message' id='1586254270.220700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586254270.220700'>7日 19:11:11</a>
+
+    <span class='slacklog-text'>ctags, LSPなしでもジャンプできるの(rgで検索しているだけなので)で軽くコードを追っかけたいときとかに便利な感じがします。<br>あとは見せ方がいいから普通にGrepするよりも見やすいとかそんな感じですかね。</span>
+  </span>
+  <span class='slacklog-message' id='1586262409.221600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586262409.221600'>7日 21:26:50</a>
+
+    <span class='slacklog-text'>ctagsの更新も裏で非同期でやってるので、常にLSPと二刀流...</span>
+  </span>
+  <span class='slacklog-message' id='1586262440.222100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586262440.222100'>7日 21:27:21</a>
+
+    <span class='slacklog-text'>ctags更新なに使ってます？gutentags?自作?</span>
+  </span>
+  <span class='slacklog-message' id='1586262465.222700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586262465.222700'>7日 21:27:46</a>
+
+    <span class='slacklog-text'>gutentagsよくエラー吐くからあまり有効にしときたくないんですよね・・・</span>
+  </span>
+  <span class='slacklog-message' id='1586262487.223100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586262487.223100'>7日 21:28:08</a>
+
+    <span class='slacklog-text'><a href='https://github.com/soramugi/auto-ctags.vim'>https://github.com/soramugi/auto-ctags.vim</a><br>を使ってます<br>(要望マージしてもらって)</span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/soramugi/auto-ctags.vim'>soramugi/auto-ctags.vim</a></span>
+          <span class='slacklog-attachment-github-text'>Vim plugin to execute ctags command on file change - soramugi/auto-ctags.vim</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1586262513.223400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586262513.223400'>7日 21:28:34</a>
+
+    <span class='slacklog-text'>知らないプラグインだ</span>
+  </span>
+  <span class='slacklog-message' id='1586262524.223700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586262524.223700'>7日 21:28:45</a>
+
+    <span class='slacklog-text'>とりあえず既読スターw</span>
+  </span>
+  <span class='slacklog-message' id='1586262548.224100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586262548.224100'>7日 21:29:09</a>
+
+    <span class='slacklog-text'>あ、マージしきってないから、自前のforkだったw</span>
+  </span>
+  <span class='slacklog-message' id='1586262574.224400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586262574.224400'>7日 21:29:35</a>
+
+    <span class='slacklog-text'>auto-ctags はまぁまぁ老舗</span>
+  </span>
+  <span class='slacklog-message' id='1586262602.225000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586262602.225000'>7日 21:30:03</a>
+
+    <span class='slacklog-text'>結構昔からある。</span>
+  </span>
+  <span class='slacklog-message' id='1586262614.225300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586262614.225300'>7日 21:30:15</a>
+
+    <span class='slacklog-text'>universal-ctagsと.gitへの生成の合せ技で、便利に使っております</span>
+    <details class='slacklog-thread'>
+      <summary class-'slacklog-thread-summary'>18 件の返信
+        <span class='slacklog-thread-mtime'>最終返信:7日 23:41:27</span>
+      </summary>
+      <span class='slacklog-message' id='1586267611.238700'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586267611.238700'>7日 22:53:32</a>
+        <span class='slacklog-text'>ちょっと質問なのですが、.git 内に生成の設定ってどうやるんでしょうか…？</span>
+      </span>
+      <span class='slacklog-message-broadcasted'>
+        <span class='slacklog-thread-broadcast-text'>チャンネルにも投稿済</span>
+        <span class='slacklog-message' id='1586267887.240400'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+        <span class='slacklog-name'>Tsuyoshi CHO</span>
+        <a class='slacklog-datetime' href='#ts-1586267887.240400'>7日 22:58:08</a>
+        <span class='slacklog-text'>ちょっと長いけど、自分の設定です。<br>生成自体は <code>g:auto_ctags_directory_list</code> の指定で順にトライしますので、それで、ですね<br>参照は tagsへうまく見るように調整しています。</span>
+      </span>
+      </span>
+      <span class='slacklog-message-broadcasted'>
+        <span class='slacklog-thread-broadcast-text'>チャンネルにも投稿済</span>
+        <span class='slacklog-message' id='1586267960.241500'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586267960.241500'>7日 22:59:21</a>
+        <span class='slacklog-text'>ありがとうございます！ちょっと触ってみます！</span>
+      </span>
+      </span>
+      <span class='slacklog-message' id='1586268112.243900'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586268112.243900'>7日 23:01:53</a>
+        <span class='slacklog-text'>参照の設定も聞いても大丈夫でしょうか？ご迷惑でなければ、教えていただきたいです</span>
+      </span>
+      <span class='slacklog-message' id='1586269044.244100'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+        <span class='slacklog-name'>Tsuyoshi CHO</span>
+        <a class='slacklog-datetime' href='#ts-1586269044.244100'>7日 23:17:25</a>
+        <span class='slacklog-text'>えっと、ここでやってる <code>set tags</code> がそうです。<br>実体は今こうなってます(ベース設定と複合している)<br><pre>tags=./.git/tags;C:\Users\tsuyoshi,./.svn/tags;C:\Users\tsuyoshi,./.hg/tags;C:\Users\tsuyoshi,./.bzr/tags;C:\Users\tsuyoshi,./CVS/tags;C:\Users\tsuyoshi,./tags;C:\Users\tsuyoshi,./TAGS;C:\Users\tsuyoshi,./**2/tags,./**2/TAGS,tags,TAGS</pre></span>
+      </span>
+      <span class='slacklog-message' id='1586269129.244300'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+        <span class='slacklog-name'>Tsuyoshi CHO</span>
+        <a class='slacklog-datetime' href='#ts-1586269129.244300'>7日 23:18:50</a>
+        <span class='slacklog-text'>あ、あと <a href='https://github.com/mattn/vim-findroot'>https://github.com/mattn/vim-findroot</a><br>なんかのプロジェクトルートへの自動cd系のツールがないと、タグ検索がうまくいかないと思います( <code>./.git/tags</code> のように、カレントの下に.gitがあることを前提として調整してある)</span>
+        <span class='slacklog-attachments'>
+            <span class='slacklog-attachment slacklog-attachment-github'>
+              <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+              <span class='slacklog-attachment-github-servicename'>GitHub</span>
+              <span class='slacklog-attachment-github-title'><a href='https://github.com/mattn/vim-findroot'>mattn/vim-findroot</a></span>
+              <span class='slacklog-attachment-github-text'>Find project root directory of the file. Contribute to mattn/vim-findroot development by creating an account on GitHub.</span>
+            </span>
+        </span>
+      </span>
+      <span class='slacklog-message' id='1586269227.244600'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586269227.244600'>7日 23:20:28</a>
+        <span class='slacklog-text'>詳しく解説していただき、ありがとうございます！<br>vim-findroot ってのを使ってみようと思います！</span>
+      </span>
+      <span class='slacklog-message' id='1586269566.244900'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586269566.244900'>7日 23:26:07</a>
+        <span class='slacklog-text'>すみません。1つ質問なのですが、 <code>set tags</code> するときに、毎回、<code>;$HOME</code> をつけているのはどういった意味があるのでしょうか？<br><code>&#39;tags&#39;</code> についての知識がないため、理解できていないかもしれないです...</span>
+      </span>
+      <span class='slacklog-message' id='1586269999.245100'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+        <span class='slacklog-name'>Tsuyoshi CHO</span>
+        <a class='slacklog-datetime' href='#ts-1586269999.245100'>7日 23:33:20</a>
+        <span class='slacklog-text'>:help file-searching して、上向き検索、で確認してもらうといいんだけど、あるターゲット(カレントとか)に <code>;</code> がついてると、上のディレクトリを順に探していくんだけど、それが <code>$HOME</code>  まで到達したら止る、という風にしてあるんです<br>なので、home下の作業であれば、findrootなくてもなんとかなる、はず<br>あとこれしないと <code>/</code> まであがっちゃうので、それは避けてる、という...</span>
+      </span>
+      <span class='slacklog-message' id='1586270000.245300'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
+        <span class='slacklog-name'>vimhelp</span>
+        <a class='slacklog-datetime' href='#ts-1586270000.245300'>7日 23:33:21</a>
+        <span class='slacklog-text'>E149: 残念ですが file-searching して、上向き検索、で確認してもらうといいんだけど、あるターゲット(カレントとか)に <code>;</code> がついてると、上のディレクトリを順に探していくんだけど、それが <code>$HOME</code>  まで到達したら止る、という風にしてあるんです にはヘルプがありません</span>
+      </span>
+      <span class='slacklog-message' id='1586270016.245500'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+        <span class='slacklog-name'>Tsuyoshi CHO</span>
+        <a class='slacklog-datetime' href='#ts-1586270016.245500'>7日 23:33:37</a>
+        <span class='slacklog-text'>:help file-searching</span>
+      </span>
+      <span class='slacklog-message' id='1586270016.245700'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-10-31/816062168560_170f8c3ffca39a8b27f7_48.png'>
+        <span class='slacklog-name'>vimhelp</span>
+        <a class='slacklog-datetime' href='#ts-1586270016.245700'>7日 23:33:37</a>
+        <span class='slacklog-text'><pre><br>11. ファイル検索                                        *file-searching*<br> <br>{Vimが |+path_extra| 機能付きでコンパイルされたときのみ有効}<br> <br>現在の所、オプション &#39;path&#39;, &#39;cdpath&#39;, &#39;tags&#39; と|finddir()|, |findfile()| で、<br>本節で説明する「ファイル検索」にしたがってワイルドカードの展開が行われる。<br>それ以外のコマンドでは |wildcards| という少し異なるルールにしたがう。<br> <br>ファイル検索には以下の3種類がある:<br></pre></span>
+      </span>
+      <span class='slacklog-message' id='1586270053.245900'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+        <span class='slacklog-name'>Tsuyoshi CHO</span>
+        <a class='slacklog-datetime' href='#ts-1586270053.245900'>7日 23:34:14</a>
+        <span class='slacklog-text'>これは path_extra な vim で <code>path</code> や <code>tags</code> で有効とのこと</span>
+      </span>
+      <span class='slacklog-message' id='1586270087.246100'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586270087.246100'>7日 23:34:48</a>
+        <span class='slacklog-text'>なるほど！！！</span>
+      </span>
+      <span class='slacklog-message' id='1586270093.246300'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586270093.246300'>7日 23:34:54</a>
+        <span class='slacklog-text'>スッキリしました！！！！</span>
+      </span>
+      <span class='slacklog-message' id='1586270097.246500'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586270097.246500'>7日 23:34:58</a>
+        <span class='slacklog-text'>ありがとうございます！</span>
+      </span>
+      <span class='slacklog-message' id='1586270223.246800'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+        <span class='slacklog-name'>たまたまご</span>
+        <a class='slacklog-datetime' href='#ts-1586270223.246800'>7日 23:37:04</a>
+        <span class='slacklog-text'>基本的には <code>$HOME</code> 以下で作業するので、この設定を入れてみることにします。</span>
+      </span>
+      <span class='slacklog-message' id='1586270486.247900'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+        <span class='slacklog-name'>Tsuyoshi CHO</span>
+        <a class='slacklog-datetime' href='#ts-1586270486.247900'>7日 23:41:27</a>
+        <span class='slacklog-text'>ほとんど問題ないですが、tags未生成で上のフォルダにあったりすると誤爆はするので、そこは注意してください<br>まずないでしょうけど(上にあるなら下で作らないだろうから)</span>
+      </span>
+    </details>
+  </span>
+  <span class='slacklog-message' id='1586262636.226100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586262636.226100'>7日 21:30:37</a>
+
+    <span class='slacklog-text'>僕は自分で ctags -R したい派なので使ってないけど。</span>
+  </span>
+  <span class='slacklog-message' id='1586262672.227000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-14/833953864853_aa245483338df08cd3b2_48.png'>
+    <span class='slacklog-name'>heavenshell</span>
+    <a class='slacklog-datetime' href='#ts-1586262672.227000'>7日 21:31:13</a>
+
+    <span class='slacklog-text'>なんか自作したけど結局 ctags 使ってないや。</span>
+  </span>
+  <span class='slacklog-message' id='1586262678.227200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586262678.227200'>7日 21:31:19</a>
+
+    <span class='slacklog-text'>私はgtags.vim -&gt; gutentagsですね。最近はgutentagsも手動起動しかしないようにしてますが</span>
+  </span>
+  <span class='slacklog-message' id='1586262726.227600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586262726.227600'>7日 21:32:07</a>
+
+    <span class='slacklog-text'>vim のソースを見るのにすんげー便利なんですよ。ctags</span>
+  </span>
+  <span class='slacklog-message' id='1586262755.228300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586262755.228300'>7日 21:32:36</a>
+
+    <span class='slacklog-text'>けど最近はLSP使うようにしてますね。vimも</span>
+  </span>
+  <span class='slacklog-message' id='1586262771.229000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586262771.229000'>7日 21:32:52</a>
+
+    <span class='slacklog-text'>最初はいまいちだったけど最近はいい感じ</span>
+  </span>
+  <span class='slacklog-message' id='1586262781.229500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586262781.229500'>7日 21:33:02</a>
+
+    <span class='slacklog-text'>clangdがVimのソースをめっちゃ怒るので無効化にしたっきり</span>
+  </span>
+  <span class='slacklog-message' id='1586262784.229700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586262784.229700'>7日 21:33:05</a>
+
+    <span class='slacklog-text'>LSP、というか clangd が若干変でヘッダファイルを開いちゃう問題があって困る。</span>
+    <details class='slacklog-thread'>
+      <summary class-'slacklog-thread-summary'>2 件の返信
+        <span class='slacklog-thread-mtime'>最終返信:7日 21:35:01</span>
+      </summary>
+      <span class='slacklog-message-broadcasted'>
+        <span class='slacklog-thread-broadcast-text'>チャンネルにも投稿済</span>
+        <span class='slacklog-message' id='1586262878.231600'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1586262878.231600'>7日 21:34:39</a>
+        <span class='slacklog-text'>そしてclangdだけ変なのか他もそうなのかのデバッグを無駄にやってしまうw</span>
+      </span>
+      </span>
+      <span class='slacklog-message' id='1586262900.231900'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+        <span class='slacklog-name'>mattn</span>
+        <a class='slacklog-datetime' href='#ts-1586262900.231900'>7日 21:35:01</a>
+        <span class='slacklog-text'>:sorena:</span>
+      </span>
+    </details>
+  </span>
+  <span class='slacklog-message' id='1586262792.230100'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586262792.230100'>7日 21:33:13</a>
+
+    <span class='slacklog-text'>(解決策何も探してない)</span>
+  </span>
+  <span class='slacklog-message' id='1586262797.230200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586262797.230200'>7日 21:33:18</a>
+
+    <span class='slacklog-text'>gd で proto の下を開いてしまう。</span>
+  </span>
+  <span class='slacklog-message' id='1586262873.231500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586262873.231500'>7日 21:34:34</a>
+
+    <span class='slacklog-text'>まあ、微妙なときはありますが、構造理解しているのはうれしい<br>Hoverでコメント出るし</span>
+  </span>
+  <span class='slacklog-message' id='1586262878.231600'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586262878.231600'>7日 21:34:39</a>
+    <span class='slacklog-thread-broadcast-link'>
+      このスレッドに返信しました : <a href='#ts-1586262784.229700'>LSP、というか clangd が若干変 ...</a>
+    </span>
+
+    <span class='slacklog-text'>そしてclangdだけ変なのか他もそうなのかのデバッグを無駄にやってしまうw</span>
+  </span>
+  <span class='slacklog-message' id='1586263341.232200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1586263341.232200'>7日 21:42:22</a>
+
+    <span class='slacklog-text'><a href='https://github.com/jsfaint/gen_tags.vim|https://github.com/jsfaint/gen_tags.vim'>https://github.com/jsfaint/gen_tags.vim</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/jsfaint/gen_tags.vim'>jsfaint/gen_tags.vim</a></span>
+          <span class='slacklog-attachment-github-text'>Async plugin for vim and neovim to ease the use of ctags/gtags - jsfaint/gen_tags.vim</span>
+        </span>
+    </span>
+    <details class='slacklog-thread'>
+      <summary class-'slacklog-thread-summary'>1 件の返信
+        <span class='slacklog-thread-mtime'>最終返信:7日 21:44:48</span>
+      </summary>
+      <span class='slacklog-message' id='1586263487.233600'>
+        <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+        <span class='slacklog-name'>yutakatay</span>
+        <a class='slacklog-datetime' href='#ts-1586263487.233600'>7日 21:44:48</a>
+        <span class='slacklog-text'>スターがついていたので見たことあるみたい</span>
+      </span>
+    </details>
+  </span>
+  <span class='slacklog-message' id='1586263352.232700'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-09/327298108645_48b1c10b3cf4092337c5_48.png'>
+    <span class='slacklog-name'>ycino</span>
+    <a class='slacklog-datetime' href='#ts-1586263352.232700'>7日 21:42:33</a>
+
+    <span class='slacklog-text'>今外だけど多分これ</span>
+  </span>
+  <span class='slacklog-message' id='1586263414.233500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586263414.233500'>7日 21:43:35</a>
+
+    <span class='slacklog-text'>今だとctagsgen-language-serverみたいな生成込みのサーバがあるとうれしいかもしれないなあ(参照はオマケでいいので)</span>
+  </span>
+  <span class='slacklog-message' id='1586263636.234900'>
+    <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/0c3ec8434af0d4cbcbd17bd51bcf1154.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
+    <span class='slacklog-name'>kg8m</span>
+    <a class='slacklog-datetime' href='#ts-1586263636.234900'>7日 21:47:17</a>
+
+    <span class='slacklog-text'>auto-ctags、昔お世話になってた<br>プロジェクト用 <code>tags</code> と別ディレクトリにいるライブラリ群用 <code>tags</code> を同時に非同期で異なるオプション与えながら作成するというのがうまくできなかったので結局自作関数になった</span>
+  </span>
+  <span class='slacklog-message' id='1586265156.235900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2020-02-25/956372982963_479264cbe2e1ea3d83ee_48.png'>
+    <span class='slacklog-name'>hrsh7th</span>
+    <a class='slacklog-datetime' href='#ts-1586265156.235900'>7日 22:12:37</a>
+
+    <span class='slacklog-text'>LSP と ctags 相性いいとはずなので進化させたいんですよね。root_uri でプロジェクトルート指定前提だし、documentSelector でタグ生成対象も絞れますし。。。</span>
+  </span>
+  <span class='slacklog-message' id='1586265258.236400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586265258.236400'>7日 22:14:19</a>
+
+    <span class='slacklog-text'>efm-langserver の definition で ctags 使ってるけどまだ有効性を確認できてない。</span>
+  </span>
+  <span class='slacklog-message' id='1586267525.237200'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+    <span class='slacklog-name'>たまたまご</span>
+    <a class='slacklog-datetime' href='#ts-1586267525.237200'>7日 22:52:06</a>
+
+    <span class='slacklog-text'>自分は gutentags 使ってます</span>
+  </span>
+  <span class='slacklog-message' id='1586267604.238300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586267604.238300'>7日 22:53:25</a>
+
+    <span class='slacklog-text'><a href='https://github.com/voldikss/vim-translator'>https://github.com/voldikss/vim-translator</a></span>
+    <span class='slacklog-attachments'>
+        <span class='slacklog-attachment slacklog-attachment-github'>
+          <span class='slacklog-attachment-github-serviceicon'><img src='https://a.slack-edge.com/80588/img/unfurl_icons/github.png'></span>
+          <span class='slacklog-attachment-github-servicename'>GitHub</span>
+          <span class='slacklog-attachment-github-title'><a href='https://github.com/voldikss/vim-translator'>voldikss/vim-translator</a></span>
+          <span class='slacklog-attachment-github-text'>:closed_book: Asynchronous translating plugin for Vim/Neovim - voldikss/vim-translator</span>
+        </span>
+    </span>
+  </span>
+  <span class='slacklog-message' id='1586267613.238900'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-07-31/407982080133_30e238cd92e6c88883f9_48.png'>
+    <span class='slacklog-name'>mattn</span>
+    <a class='slacklog-datetime' href='#ts-1586267613.238900'>7日 22:53:34</a>
+
+    <span class='slacklog-text'>coc-translator の単品版？</span>
+  </span>
+  <span class='slacklog-message' id='1586267771.239500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586267771.239500'>7日 22:56:12</a>
+
+    <span class='slacklog-text'>お、ぽいですね</span>
+  </span>
+  <span class='slacklog-message' id='1586267860.240300'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-11-03/819248061205_7abadc2cdb885adbac35_48.png'>
+    <span class='slacklog-name'>yutakatay</span>
+    <a class='slacklog-datetime' href='#ts-1586267860.240300'>7日 22:57:41</a>
+
+    <span class='slacklog-text'>つかgifがmarkdownとかコメントとかじゃなくてコードを翻訳してるのおもしろいw</span>
+  </span>
+  <span class='slacklog-message' id='1586267887.240400'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>
+    <span class='slacklog-name'>Tsuyoshi CHO</span>
+    <a class='slacklog-datetime' href='#ts-1586267887.240400'>7日 22:58:08</a>
+    <span class='slacklog-thread-broadcast-link'>
+      このスレッドに返信しました : <a href='#ts-1586262614.225300'>universal-ctagsと.git ...</a>
+    </span>
+
+    <span class='slacklog-text'>ちょっと長いけど、自分の設定です。<br>生成自体は <code>g:auto_ctags_directory_list</code> の指定で順にトライしますので、それで、ですね<br>参照は tagsへうまく見るように調整しています。</span>
+  </span>
+  <span class='slacklog-message' id='1586267898.241000'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-03-19/331496519296_b6fceab653cf61d7dd8b_48.png'>
+    <span class='slacklog-name'>kuu</span>
+    <a class='slacklog-datetime' href='#ts-1586267898.241000'>7日 22:58:19</a>
+
+    <span class='slacklog-text'>めっちゃ遊んでる感出てる</span>
+  </span>
+  <span class='slacklog-message' id='1586267960.241500'>
+    <img class='slacklog-icon' src='https://avatars.slack-edge.com/2019-01-25/533025384835_5f66c129c9904ee009be_48.jpg'>
+    <span class='slacklog-name'>たまたまご</span>
+    <a class='slacklog-datetime' href='#ts-1586267960.241500'>7日 22:59:21</a>
+    <span class='slacklog-thread-broadcast-link'>
+      このスレッドに返信しました : <a href='#ts-1586262614.225300'>universal-ctagsと.git ...</a>
+    </span>
+
+    <span class='slacklog-text'>ありがとうございます！ちょっと触ってみます！</span>
+  </span>
+{% endraw %}
+
+</div>

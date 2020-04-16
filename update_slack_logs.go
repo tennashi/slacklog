@@ -328,6 +328,9 @@ func getMsgPerMonth(inDir string, channelName string) (map[string]*msgPerMonth, 
 	}
 	defer dir.Close()
 	names, err := dir.Readdirnames(0)
+	sort.SliceStable(names, func(i, j int) bool {
+		return names[i] < names[j]
+	})
 	if err != nil {
 		return nil, nil, err
 	}
@@ -488,13 +491,27 @@ func readMessages(msgJsonPath string, msgPerMonth *msgPerMonth, threadMap map[st
 		if !visibleMsg(&msgs[i]) {
 			continue
 		}
-		if msgs[i].ThreadTs == "" || msgs[i].ThreadTs == msgs[i].Ts ||
+		rootMsgOfThread := msgs[i].ThreadTs == msgs[i].Ts
+		if msgs[i].ThreadTs == "" || rootMsgOfThread ||
 			msgs[i].Subtype == "thread_broadcast" ||
 			msgs[i].Subtype == "bot_message" {
 			msgPerMonth.Messages = append(msgPerMonth.Messages, msgs[i])
 		}
 		if msgs[i].ThreadTs != "" {
-			threadMap[msgs[i].ThreadTs] = append(threadMap[msgs[i].ThreadTs], &msgs[i])
+			if rootMsgOfThread {
+				threadTs := msgs[i].ThreadTs
+				replies := threadMap[msgs[i].ThreadTs]
+				for j := 0; j < len(replies); {    // remove root message(s)
+					if replies[j].Ts == threadTs {
+						replies = append(replies[:j], replies[j+1:]...)
+						continue
+					}
+					j++
+				}
+				threadMap[msgs[i].ThreadTs] = append([]*message{&msgs[i]}, replies...)
+			} else {
+				threadMap[msgs[i].ThreadTs] = append(threadMap[msgs[i].ThreadTs], &msgs[i])
+			}
 		}
 	}
 	return nil
