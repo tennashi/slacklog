@@ -167,10 +167,13 @@ func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMon
 	var reMention = regexp.MustCompile(`&lt;@(\w+?)&gt;`)
 	var reChannel = regexp.MustCompile(`&lt;#\w+?\|([^&]+?)&gt;`)
 	var reNewline = regexp.MustCompile(`\n`)
-	var text2Html = func(text string) string {
+	var escapeSpecialChars = func(text string) string {
 		text = html.EscapeString(html.UnescapeString(text))
 		text = strings.Replace(text, "{{", "&#123;&#123;", -1)
-		text = strings.Replace(text, "{%", "&#123;&#37;", -1)
+		return strings.Replace(text, "{%", "&#123;&#37;", -1)
+	}
+	var text2Html = func(text string) string {
+		text = escapeSpecialChars(text)
 		text = reNewline.ReplaceAllString(text, "<br>")
 		chunks := reCode.Split(text, -1)
 		for i := range chunks {
@@ -248,9 +251,9 @@ func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMon
 			},
 			"username": func(msg *message) string {
 				if msg.Subtype == "bot_message" {
-					return msg.Username
+					return escapeSpecialChars(msg.Username)
 				}
-				return getDisplayNameByUserId(msg.User, userMap)
+				return escapeSpecialChars(getDisplayNameByUserId(msg.User, userMap))
 			},
 			"userIconUrl": func(msg *message) string {
 				switch msg.Subtype {
