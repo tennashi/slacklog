@@ -5,9 +5,7 @@ title: vim-jp.slack.com log - &#35golang - 2020年04月
 permalink: /golang/2020/04/index:output_ext
 ---
 <div>
-<h2><a href='/slacklog/'>vim-jp.slack.com log</a> - <a href='/slacklog/golang/'>&#35golang</a> - 2020年04月</h2>
-
-{% raw %}
+<h2><a href='{{ site.baseurl }}/'>vim-jp.slack.com log</a> - <a href='{{ site.baseurl }}/golang/'>&#35golang</a> - 2020年04月</h2>
   <span class='slacklog-message' id='1585751613.094400'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
     <span class='slacklog-name'>Ichiro MATSUNAGA</span>
@@ -2174,7 +2172,7 @@ permalink: /golang/2020/04/index:output_ext
     <span class='slacklog-name'>tyru</span>
     <a class='slacklog-datetime' href='#ts-1585824967.309200'>2日 19:56:08</a>
 
-    <span class='slacklog-text'>(無限に脱線する性格なのでちゃんと Go の話しないと… せっかく <a href='/slacklog/golang/'>#golang</a> を求めてきた人がいっぱい join してきてくれたばっかりなのにｗ)</span>
+    <span class='slacklog-text'>(無限に脱線する性格なのでちゃんと Go の話しないと… せっかく <a href='{{ site.baseurl }}/golang/'>#golang</a> を求めてきた人がいっぱい join してきてくれたばっかりなのにｗ)</span>
   </span>
   <span class='slacklog-message' id='1585825835.311200'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-48.png'>
@@ -4490,7 +4488,7 @@ permalink: /golang/2020/04/index:output_ext
     <span class='slacklog-name'>itchyny</span>
     <a class='slacklog-datetime' href='#ts-1586146288.010400'>6日 13:11:29</a>
 
-    <span class='slacklog-text'><a href='/slacklog/javascript/'>#javascript</a> でASI (automatic semicolon insertion) が話題になっているけれど、Go言語も実はASIは行われている (JavaScriptと違ってむしろセミコロン省略が推奨される)。<a href='https://golang.org/ref/spec#Blocks'>https://golang.org/ref/spec#Blocks</a> を見ると <code>StatementList = { Statement &#34;;&#34; } .</code> となっており、ここに改行がセパレーターとして使えるという記述はない。セミコロン挿入のルールは <a href='https://golang.org/ref/spec#Semicolons'>https://golang.org/ref/spec#Semicolons</a> 。このルールが頭に入っていると以下のようなコードがなぜコンパイルできないのかが理解できる (そしてJavaScriptのASIルールとの違いも感じられる)。<br><pre>x := &#34;x&#34;<br>	+ &#34;y&#34;<br>switch strings.ToUpper(x)<br>{<br>	case &#34;XY&#34;:<br>		println(x)<br>}</pre></span>
+    <span class='slacklog-text'><a href='{{ site.baseurl }}/javascript/'>#javascript</a> でASI (automatic semicolon insertion) が話題になっているけれど、Go言語も実はASIは行われている (JavaScriptと違ってむしろセミコロン省略が推奨される)。<a href='https://golang.org/ref/spec#Blocks'>https://golang.org/ref/spec#Blocks</a> を見ると <code>StatementList = { Statement &#34;;&#34; } .</code> となっており、ここに改行がセパレーターとして使えるという記述はない。セミコロン挿入のルールは <a href='https://golang.org/ref/spec#Semicolons'>https://golang.org/ref/spec#Semicolons</a> 。このルールが頭に入っていると以下のようなコードがなぜコンパイルできないのかが理解できる (そしてJavaScriptのASIルールとの違いも感じられる)。<br><pre>x := &#34;x&#34;<br>	+ &#34;y&#34;<br>switch strings.ToUpper(x)<br>{<br>	case &#34;XY&#34;:<br>		println(x)<br>}</pre></span>
   </span>
   <span class='slacklog-message' id='1586148736.011500'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/5fdf83c448b8503add52517c7de0e3cc.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-48.png'>
@@ -5496,6 +5494,5 @@ permalink: /golang/2020/04/index:output_ext
 
     <span class='slacklog-text'>たしかに</span>
   </span>
-{% endraw %}
 
 </div>

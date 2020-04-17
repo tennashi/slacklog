@@ -122,7 +122,6 @@ func visibleMsg(msg *message) bool {
 
 func genIndex(channels []channel, tmplFile string, cfg *config) ([]byte, error) {
 	params := make(map[string]interface{})
-	params["baseUrl"] = cfg.BaseUrl
 	params["channels"] = channels
 	var out bytes.Buffer
 	name := filepath.Base(tmplFile)
@@ -136,7 +135,6 @@ func genIndex(channels []channel, tmplFile string, cfg *config) ([]byte, error) 
 
 func genChannelIndex(inDir, tmplFile string, channel *channel, msgMap map[string]*msgPerMonth, cfg *config) ([]byte, error) {
 	params := make(map[string]interface{})
-	params["baseUrl"] = cfg.BaseUrl
 	params["channel"] = channel
 	params["msgMap"] = msgMap
 	var out bytes.Buffer
@@ -151,7 +149,6 @@ func genChannelIndex(inDir, tmplFile string, channel *channel, msgMap map[string
 
 func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMonth *msgPerMonth, userMap map[string]*user, threadMap map[string][]*message, cfg *config) ([]byte, error) {
 	params := make(map[string]interface{})
-	params["baseUrl"] = cfg.BaseUrl
 	params["channel"] = channel
 	params["msgPerMonth"] = msgPerMonth
 	params["threadMap"] = threadMap
@@ -192,7 +189,7 @@ func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMon
 				chunks[i] = reChannel.ReplaceAllStringFunc(chunks[i], func(whole string) string {
 					channelName := reChannel.FindStringSubmatch(whole)[1]
 					name := html.EscapeString(channelName)
-					return "<a href='/slacklog/" + name + "/'>#" + name + "</a>"
+					return "<a href='{{ site.baseurl }}/" + name + "/'>#" + name + "</a>"
 				})
 			} else {
 				chunks[i] = "<pre>" + chunks[i] + "</pre>"
@@ -524,7 +521,6 @@ func readMessages(msgJsonPath string, msgPerMonth *msgPerMonth, threadMap map[st
 
 type config struct {
 	EditedSuffix string   `json:"edited_suffix"`
-	BaseUrl      string   `json:"base_url"`
 	Channels     []string `json:"channels"`
 }
 
