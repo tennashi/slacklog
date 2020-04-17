@@ -169,6 +169,8 @@ func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMon
 	var reNewline = regexp.MustCompile(`\n`)
 	var text2Html = func(text string) string {
 		text = html.EscapeString(html.UnescapeString(text))
+		text = strings.Replace(text, "{{", "&#123;&#123;", -1)
+		text = strings.Replace(text, "{%", "&#123;&#37;", -1)
 		text = reNewline.ReplaceAllString(text, "<br>")
 		chunks := reCode.Split(text, -1)
 		for i := range chunks {

@@ -4658,7 +4658,7 @@ permalink: /question/2020/03/index:output_ext
     <span class='slacklog-name'>Tsuyoshi CHO</span>
     <a class='slacklog-datetime' href='#ts-1585571527.074900'>30日 21:32:08</a>
 
-    <span class='slacklog-text'><pre>function! s:popup_cancel(rawchar, ...) abort &#34; {{{<br>  let result = &#39;&#39;<br>  if dein#is_sourced(&#39;asyncomplete.vim&#39;)<br>    let result = result . asyncomplete#cancel_popup()<br>    if a:0<br>      let result = result . a:1<br>    endif<br>  else<br>    let result = result . a:rawchar<br>  endif<br>  return result<br>endfunction &#34; }}}<br><br>inoremap &lt;expr&gt;&lt;silent&gt; &lt;C-e&gt;<br>    \ pumvisible() ? &lt;SID&gt;popup_cancel(&#34;\&lt;C-e&gt;&#34;            ) : &#34;\&lt;C-e&gt;&#34;</pre><br>こんな感じで、cancel_popupが発動することは確認できています(失敗してたときは、C-eで閉じても直ぐに再popupだったし、確認もしてます)</span>
+    <span class='slacklog-text'><pre>function! s:popup_cancel(rawchar, ...) abort &#34; &#123;&#123;{<br>  let result = &#39;&#39;<br>  if dein#is_sourced(&#39;asyncomplete.vim&#39;)<br>    let result = result . asyncomplete#cancel_popup()<br>    if a:0<br>      let result = result . a:1<br>    endif<br>  else<br>    let result = result . a:rawchar<br>  endif<br>  return result<br>endfunction &#34; }}}<br><br>inoremap &lt;expr&gt;&lt;silent&gt; &lt;C-e&gt;<br>    \ pumvisible() ? &lt;SID&gt;popup_cancel(&#34;\&lt;C-e&gt;&#34;            ) : &#34;\&lt;C-e&gt;&#34;</pre><br>こんな感じで、cancel_popupが発動することは確認できています(失敗してたときは、C-eで閉じても直ぐに再popupだったし、確認もしてます)</span>
   </span>
   <span class='slacklog-message' id='1585571585.075900'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2018-05-31/373472791093_ed16847a152da533e013_48.png'>

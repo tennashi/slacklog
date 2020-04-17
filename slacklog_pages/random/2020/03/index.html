@@ -5920,7 +5920,7 @@ permalink: /random/2020/03/index:output_ext
     <span class='slacklog-name'>tyru</span>
     <a class='slacklog-datetime' href='#ts-1584255973.245900'>15日 16:06:14</a>
 
-    <span class='slacklog-text'>ふと caw.vim の initial commit 調べたら10年前でもうそんなに前…！？<br>ってなったので入れてるプラグインで一番古いやつ10個調べてみた。<br>年月が過ぎるの早すぎて笑ってる<br><pre>for repo in $(volt list -f &#39;{{ range .Repos }}{{ println .Path }}{{ end }}&#39;); do (cd ~/volt/repos/$repo &amp;&amp; echo -e &#34;$(git show -s --format=%ci &#34;$(git rev-list --max-parents=0 HEAD | head -1)&#34;)\t$repo&#34;) 2&gt;/dev/null; done | sort | head</pre></span>
+    <span class='slacklog-text'>ふと caw.vim の initial commit 調べたら10年前でもうそんなに前…！？<br>ってなったので入れてるプラグインで一番古いやつ10個調べてみた。<br>年月が過ぎるの早すぎて笑ってる<br><pre>for repo in $(volt list -f &#39;&#123;&#123; range .Repos }}&#123;&#123; println .Path }}&#123;&#123; end }}&#39;); do (cd ~/volt/repos/$repo &amp;&amp; echo -e &#34;$(git show -s --format=%ci &#34;$(git rev-list --max-parents=0 HEAD | head -1)&#34;)\t$repo&#34;) 2&gt;/dev/null; done | sort | head</pre></span>
     <details class='slacklog-thread'>
       <summary class-'slacklog-thread-summary'>1 件の返信
         <span class='slacklog-thread-mtime'>最終返信:15日 16:31:03</span>
