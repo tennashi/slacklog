@@ -117,7 +117,7 @@ func mkdir(path string) error {
 }
 
 func visibleMsg(msg *message) bool {
-	return msg.Subtype == "" || msg.Subtype == "bot_message" || msg.Subtype == "thread_broadcast"
+	return msg.Subtype == "" || msg.Subtype == "bot_message" || msg.Subtype == "slackbot_response" || msg.Subtype == "thread_broadcast"
 }
 
 func genIndex(channels []channel, tmplFile string, cfg *config) ([]byte, error) {
@@ -247,7 +247,7 @@ func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMon
 				return ts2datetime(ts).Format("2日 15:04:05")
 			},
 			"username": func(msg *message) string {
-				if msg.Subtype == "bot_message" {
+				if msg.Subtype == "bot_message" || msg.Subtype == "slackbot_response" {
 					return escapeSpecialChars(msg.Username)
 				}
 				return escapeSpecialChars(getDisplayNameByUserId(msg.User, userMap))
@@ -260,7 +260,7 @@ func genChannelPerMonthIndex(inDir, tmplFile string, channel *channel, msgPerMon
 						return "" // TODO show default icon
 					}
 					return user.Profile.Image48
-				case "bot_message":
+				case "bot_message", "slackbot_response":
 					if msg.Icons != nil && msg.Icons.Image48 != "" {
 						return msg.Icons.Image48
 					}
@@ -496,7 +496,8 @@ func readMessages(msgJsonPath string, msgPerMonth *msgPerMonth, threadMap map[st
 		rootMsgOfThread := msgs[i].ThreadTs == msgs[i].Ts
 		if msgs[i].ThreadTs == "" || rootMsgOfThread ||
 			msgs[i].Subtype == "thread_broadcast" ||
-			msgs[i].Subtype == "bot_message" {
+			msgs[i].Subtype == "bot_message" ||
+			msgs[i].Subtype == "slackbot_response" {
 			msgPerMonth.Messages = append(msgPerMonth.Messages, msgs[i])
 		}
 		if msgs[i].ThreadTs != "" {
