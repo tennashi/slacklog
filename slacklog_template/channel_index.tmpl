@@ -5,14 +5,14 @@ title: vim-jp.slack.com log - &#35<< .channel.Name >>
 permalink: /<< .channel.Name >>/index:output_ext
 ---
 <div>
-<h2><a href='<< $.baseUrl >>'>vim-jp.slack.com log</a> - &#35<< .channel.Name >></h2>
+<h2><a href='{{ site.baseurl }}/'>vim-jp.slack.com log</a> - &#35<< .channel.Name >></h2>
 
 <p>参加方法、各チャンネルの概要等は以下を参照して下さい。<br>
 <a href='/docs/chat.html'>vim-jpのチャットルームについて</a></p>
 
 <ul>
 <<- range .msgMap >>
-<li><a href='<< $.baseUrl >><< $.channel.Name >>/<< .Year >>/<< .Month >>/index.html'><< .Year >>年<< .Month >>月</a></li>
+<li><a href='{{ site.baseurl }}/<< $.channel.Name >>/<< .Year >>/<< .Month >>/index.html'><< .Year >>年<< .Month >>月</a></li>
 <<- end >>
 </ul>
 

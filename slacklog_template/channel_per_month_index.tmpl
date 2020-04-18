@@ -5,9 +5,8 @@ title: vim-jp.slack.com log - &#35<< .channel.Name >> - << .msgPerMonth.Year >>�
 permalink: /<< .channel.Name >>/<< .msgPerMonth.Year >>/<< .msgPerMonth.Month >>/index:output_ext
 ---
 <div>
-<h2><a href='<< $.baseUrl >>'>vim-jp.slack.com log</a> - <a href='<< $.baseUrl >><< .channel.Name >>/'>&#35<< .channel.Name >></a> - << .msgPerMonth.Year >>年<< .msgPerMonth.Month >>月</h2>
+<h2><a href='{{ site.baseurl }}/'>vim-jp.slack.com log</a> - <a href='{{ site.baseurl }}/<< .channel.Name >>/'>&#35<< .channel.Name >></a> - << .msgPerMonth.Year >>年<< .msgPerMonth.Month >>月</h2>
 
-{% raw %}
 <<- range .msgPerMonth.Messages >>
 <<- if visible . >>
   <span class='slacklog-message' id='<< .Ts >>'>
@@ -139,6 +138,5 @@ permalink: /<< .channel.Name >>/<< .msgPerMonth.Year >>/<< .msgPerMonth.Month >>
   </span>
 <<- end >>
 <<- end >>
-{% endraw %}
 
 </div>
