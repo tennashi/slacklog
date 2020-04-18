@@ -3700,7 +3700,7 @@ permalink: /golang/2020/03/index:output_ext
     <span class='slacklog-name'>itchyny</span>
     <a class='slacklog-datetime' href='#ts-1584509519.006100'>18日 14:32:00</a>
 
-    <span class='slacklog-text'>完全に好みですが <code>run: echo &#34;::add-path::$(go env GOPATH)/bin&#34;</code> でPATH通してしまえば <code>${{ env.GOPATH }}/bin/</code> 書かなくても良くなりそう。</span>
+    <span class='slacklog-text'>完全に好みですが <code>run: echo &#34;::add-path::$(go env GOPATH)/bin&#34;</code> でPATH通してしまえば <code>$&#123;&#123; env.GOPATH }}/bin/</code> 書かなくても良くなりそう。</span>
   </span>
   <span class='slacklog-message' id='1584509544.006700'>
     <img class='slacklog-icon' src='https://secure.gravatar.com/avatar/4b5a6f711a4e22e617b74058239ade53.jpg?s=48&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-48.png'>
@@ -9050,7 +9050,7 @@ permalink: /golang/2020/03/index:output_ext
     <span class='slacklog-name'>johejo</span>
     <a class='slacklog-datetime' href='#ts-1585640757.436500'>31日 16:45:58</a>
 
-    <span class='slacklog-text'><pre>$ go list -f &#39;{{join .Imports &#34;\n&#34;}}&#39; ./... | sort | uniq | grep -v github | grep -v gopkg | grep -v &lt;http://golang.org|golang.org&gt;<br>bufio<br>bytes<br>compress/gzip<br>context<br>crypto/sha256<br>database/sql<br>database/sql/driver<br>encoding/base64<br>encoding/csv<br>encoding/hex<br>encoding/json<br>errors<br>expvar<br>flag<br>fmt<br>io<br>io/ioutil<br>log<br>math<br>net<br>net/http<br>net/http/httptest<br>net/http/httputil<br>net/http/pprof<br>net/url<br>os<br>os/exec<br>os/signal<br>path/filepath<br>reflect<br>regexp<br>runtime<br>strconv<br>strings<br>sync<br>syscall<br>testing<br>time</pre></span>
+    <span class='slacklog-text'><pre>$ go list -f &#39;&#123;&#123;join .Imports &#34;\n&#34;}}&#39; ./... | sort | uniq | grep -v github | grep -v gopkg | grep -v &lt;http://golang.org|golang.org&gt;<br>bufio<br>bytes<br>compress/gzip<br>context<br>crypto/sha256<br>database/sql<br>database/sql/driver<br>encoding/base64<br>encoding/csv<br>encoding/hex<br>encoding/json<br>errors<br>expvar<br>flag<br>fmt<br>io<br>io/ioutil<br>log<br>math<br>net<br>net/http<br>net/http/httptest<br>net/http/httputil<br>net/http/pprof<br>net/url<br>os<br>os/exec<br>os/signal<br>path/filepath<br>reflect<br>regexp<br>runtime<br>strconv<br>strings<br>sync<br>syscall<br>testing<br>time</pre></span>
   </span>
   <span class='slacklog-message' id='1585640760.436600'>
     <img class='slacklog-icon' src='https://avatars.slack-edge.com/2015-01-15/3417067010_04a676b32692fb2507e1_48.jpg'>
