@@ -1,0 +1,386 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585286779.010200",
+        "user": "UEA8SS1RN",
+        "text": "<@UEA8SS1RN> has joined the channel"
+    },
+    {
+        "client_msg_id": "d0406726-3467-49bc-bd83-cca9799c2491",
+        "type": "message",
+        "text": "coc.vimを使ってて、<https:\/\/github.com\/neoclide\/coc.nvim> にあるexample vim configurationを少し弄ってつかってます。\n具体的には、僕のvimrcで、\n```nnoremap &lt;C-I&gt; &lt;C-O&gt;nnoremap &lt;C-O&gt; &lt;C-I&gt;```\nやってるので、 `Introduce function text object` の所をコメントアウトしています。\nこれでも、C-I, C-Oが `[coc.nvim]Selection range provider not found for current document` と言われるんですけど、後、どこイジるべきですか?",
+        "user": "UEA8SS1RN",
+        "ts": "1585287241.012200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "neoclide\/coc.nvim",
+                "title_link": "https:\/\/github.com\/neoclide\/coc.nvim",
+                "text": "Intellisense engine for Vim8 &amp; Neovim, full language server protocol support as VSCode - neoclide\/coc.nvim",
+                "fallback": "GitHub: neoclide\/coc.nvim",
+                "from_url": "https:\/\/github.com\/neoclide\/coc.nvim",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/131770422\/11ead600-81d9-11e9-8028-45f8617ba5bd",
+                "thumb_width": 527,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/neoclide\/coc.nvim"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Swm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "coc.vimを使ってて、"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/neoclide\/coc.nvim"
+                            },
+                            {
+                                "type": "text",
+                                "text": " にあるexample vim configurationを少し弄ってつかってます。\n具体的には、僕のvimrcで、\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "nnoremap <C-I> <C-O>nnoremap <C-O> <C-I>"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nやってるので、 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "Introduce function text object",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の所をコメントアウトしています。\nこれでも、C-I, C-Oが "
+                            },
+                            {
+                                "type": "text",
+                                "text": "[coc.nvim]Selection range provider not found for current document",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " と言われるんですけど、後、どこイジるべきですか?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6ac633a6-ac03-47ae-a6a0-0163b9db3ce9",
+        "type": "message",
+        "text": "```\" Use &lt;TAB&gt; for selections ranges.\n\" NOTE: Requires 'textDocument\/selectionRange' support from the language server.\n\" coc-tsserver, coc-python are the examples of servers that support it.\nnmap &lt;silent&gt; &lt;TAB&gt; &lt;Plug&gt;(coc-range-select)\nxmap &lt;silent&gt; &lt;TAB&gt; &lt;Plug&gt;(coc-range-select)```\nここだと思います。",
+        "user": "U8R597E9H",
+        "ts": "1585288037.012600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ol0cA",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\" Use <TAB> for selections ranges.\n\" NOTE: Requires 'textDocument\/selectionRange' support from the language server.\n\" coc-tsserver, coc-python are the examples of servers that support it.\nnmap <silent> <TAB> <Plug>(coc-range-select)\nxmap <silent> <TAB> <Plug>(coc-range-select)"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ここだと思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cc0bcba5-f42b-42e5-a58e-979d9846683d",
+        "type": "message",
+        "text": "ありがとうございます。すいません。思った通りになりました。これってどういう機能を削ってるんですか?  選択したレンジに対してTABインデントが使えるとかでうか?",
+        "user": "UEA8SS1RN",
+        "ts": "1585288367.014500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OdYN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございます。すいません。思った通りになりました。これってどういう機能を削ってるんですか?  選択したレンジに対してTABインデントが使えるとかでうか?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a5af1c84-bd96-4a72-81b4-77f2217a1a8a",
+        "type": "message",
+        "text": "言語サーバが「今のカーソル位置を含む範囲の階層構造」を返してくる機能が LSP にありまして",
+        "user": "U8R597E9H",
+        "ts": "1585288463.015400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AO4Z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "言語サーバが「今のカーソル位置を含む範囲の階層構造」を返してくる機能が LSP にありまして"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ae3c53ff-ec18-4d5a-a772-21c3a5e5ab97",
+        "type": "message",
+        "text": "&lt;Tab&gt; を連打するといわゆる vim-expand-region 的な動きをするものだと思います。",
+        "user": "U8R597E9H",
+        "ts": "1585288485.016000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fnDD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "<Tab> を連打するといわゆる vim-expand-region 的な動きをするものだと思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "46f6e229-d588-4251-afe6-28a42e15a0b5",
+        "type": "message",
+        "text": "なるほど。",
+        "user": "UEA8SS1RN",
+        "ts": "1585288495.016600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/P16",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "67d1408e-c251-4a25-ad7f-ca34a3d78518",
+        "type": "message",
+        "text": "今の所対応している言語サーバめっちゃ少ないのでまあ現時点では消えててもいいのかなと。",
+        "user": "U8R597E9H",
+        "ts": "1585288502.016800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jhqOi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今の所対応している言語サーバめっちゃ少ないのでまあ現時点では消えててもいいのかなと。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5c25583b-7309-4b3c-b10c-2cd154572998",
+        "type": "message",
+        "text": "ありがとうございます。",
+        "user": "UEA8SS1RN",
+        "ts": "1585288513.017000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SrU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

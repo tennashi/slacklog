@@ -1,0 +1,101 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/b17893aa940dc7d45421f875f5d90855880aad27|Update runtime files>\nUpdate runtime files",
+        "ts": "1584171501.018700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Update runtime files · vim\/vim@b17893a",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/b17893aa940dc7d45421f875f5d90855880aad27",
+                "text": "The official Vim repository. Contribute to vim\/vim development by creating an account on GitHub.",
+                "fallback": "GitHub: Update runtime files · vim\/vim@b17893a",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/b17893aa940dc7d45421f875f5d90855880aad27",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/b17893aa940dc7d45421f875f5d90855880aad27"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584171501.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/193982650960f8411df51f3b3b0d44a75e1ac034|patch 8.2.0380: tiny popup when creating a terminal popup without min…>\npatch 8.2.0380: tiny popup when creating a terminal popup without minwidth\n\nProblem:    Tiny popup when creating a terminal popup without minwidth.\nSolution:   Use a default mininum size of 5 lines of 20 characters.",
+        "ts": "1584196702.018900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0380: tiny popup when creating a terminal popup without min… · vim\/vim@1939826",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/193982650960f8411df51f3b3b0d44a75e1ac034",
+                "text": "…width Problem: Tiny popup when creating a terminal popup without minwidth. Solution: Use a default mininum size of 5 lines of 20 characters.",
+                "fallback": "GitHub: patch 8.2.0380: tiny popup when creating a terminal popup without min… · vim\/vim@1939826",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/193982650960f8411df51f3b3b0d44a75e1ac034",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/193982650960f8411df51f3b3b0d44a75e1ac034"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584196703.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/2573af3519ad062ddad647b97e32090f106f2ac1|patch 8.2.0381: using freed memory with :lvimgrep and autocommand>\npatch 8.2.0381: using freed memory with :lvimgrep and autocommand\n\nProblem:    Using freed memory with :lvimgrep and autocommand. (extracted from\n            POC by Dominique Pelle)\nSolution:   Avoid deleting a dummy buffer used in a window. (closes #5777)",
+        "ts": "1584203908.019100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0381: using freed memory with :lvimgrep and autocommand · vim\/vim@2573af3",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/2573af3519ad062ddad647b97e32090f106f2ac1",
+                "text": "Problem: Using freed memory with :lvimgrep and autocommand. (extracted from POC by Dominique Pelle) Solution: Avoid deleting a dummy buffer used in a window. (closes #5777)",
+                "fallback": "GitHub: patch 8.2.0381: using freed memory with :lvimgrep and autocommand · vim\/vim@2573af3",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/2573af3519ad062ddad647b97e32090f106f2ac1",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/2573af3519ad062ddad647b97e32090f106f2ac1"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584203909.000000"
+        }
+    }
+]

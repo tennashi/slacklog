@@ -1,0 +1,353 @@
+[
+    {
+        "client_msg_id": "71cb9381-3b17-4bbf-8e28-035e21900f0c",
+        "type": "message",
+        "text": "#vim-script へのリネーム忘れてた。今やります",
+        "user": "U0M7GCBPD",
+        "ts": "1585133333.000400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4I17d",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "#vim-script へのリネーム忘れてた。今やります"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4f47a25f-9e4e-4be1-b402-1fc169a7ed5e",
+        "type": "message",
+        "text": "あ、権限なかった（終）",
+        "user": "U0M7GCBPD",
+        "ts": "1585133369.000700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dYI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、権限なかった（終）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "munen",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "84c17777-3f4a-4949-9379-c143031d3dc5",
+        "type": "message",
+        "text": "↑どなたかお願いします :bow:",
+        "user": "U0M7GCBPD",
+        "ts": "1585133410.001400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Aydx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "↑どなたかお願いします "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "bow"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7df6ac17-589a-4ee4-8266-124bbaeb0612",
+        "type": "message",
+        "text": "ところで vim-language-server の vimlparser が最新版になりました <https:\/\/github.com\/iamcco\/vim-language-server\/pull\/35>",
+        "user": "U0M7GCBPD",
+        "ts": "1585133439.001900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Update vimlparser (support EVAL, HEREDOC, METHOD nodes) by tyru · Pull Request #35 · iamcco\/vim-language-server",
+                "title_link": "https:\/\/github.com\/iamcco\/vim-language-server\/pull\/35",
+                "text": "vim-jp\/vim-vimlparser@90895c3",
+                "fallback": "GitHub: Update vimlparser (support EVAL, HEREDOC, METHOD nodes) by tyru · Pull Request #35 · iamcco\/vim-language-server",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/5492542?s=400&v=4",
+                "from_url": "https:\/\/github.com\/iamcco\/vim-language-server\/pull\/35",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/iamcco\/vim-language-server\/pull\/35"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VMbKJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ところで vim-language-server の vimlparser が最新版になりました "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/iamcco\/vim-language-server\/pull\/35"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "goodpoem",
+                "users": [
+                    "US5UW1UNB",
+                    "UAZ33BKV2"
+                ],
+                "count": 2
+            },
+            {
+                "name": "tada",
+                "users": [
+                    "UBNPMJJGM"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_name",
+        "ts": "1585139259.002200",
+        "user": "U03C6TEAZ",
+        "text": "<@U03C6TEAZ> has renamed the channel from \"vimlparser\" to \"vim-script\"",
+        "old_name": "vimlparser",
+        "name": "vim-script"
+    },
+    {
+        "client_msg_id": "b57898f0-45a7-4b44-998e-509fa0dceaeb",
+        "type": "message",
+        "text": "どね",
+        "user": "U03C6TEAZ",
+        "ts": "1585139265.002400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/1uX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "subara",
+                "users": [
+                    "U9S4G0LJW",
+                    "U06BRP8VD",
+                    "U0M7GCBPD"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2dcf1809-05a8-4f34-bfc4-0ef6986b7842",
+        "type": "message",
+        "text": "あざ！",
+        "user": "U0M7GCBPD",
+        "ts": "1585171306.003100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aey",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あざ！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3537fe66-faa3-4085-8e21-6ed0840903f2",
+        "type": "message",
+        "text": "<#CBNFS2BR6|vint> のアーカイブはしなくてもいいか",
+        "user": "U0M7GCBPD",
+        "ts": "1585171387.003300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U0M7GCBPD",
+            "ts": "1585171584.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vPA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "channel",
+                                "channel_id": "CBNFS2BR6"
+                            },
+                            {
+                                "type": "text",
+                                "text": " のアーカイブはしなくてもいいか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585187992.003600",
+        "user": "U8996GYBF",
+        "text": "<@U8996GYBF> has joined the channel"
+    }
+]

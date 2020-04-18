@@ -1,0 +1,200 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/9207d1f523c2e2fb1c8749ec6f84ab5ecc2c62f4|patch 8.2.0461: confirm test fails on amd64 system>\npatch 8.2.0461: confirm test fails on amd64 system\n\nProblem:    Confirm test fails on amd64 system. (Alimar Riesebieter)\nSolution:   Add an extra WaitForAssert(). (Dominique Pelle)",
+        "ts": "1585334905.003400",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0461: confirm test fails on amd64 system · vim\/vim@9207d1f",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/9207d1f523c2e2fb1c8749ec6f84ab5ecc2c62f4",
+                "text": "Problem: Confirm test fails on amd64 system. (Alimar Riesebieter) Solution: Add an extra WaitForAssert(). (Dominique Pelle)",
+                "fallback": "GitHub: patch 8.2.0461: confirm test fails on amd64 system · vim\/vim@9207d1f",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/9207d1f523c2e2fb1c8749ec6f84ab5ecc2c62f4",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/9207d1f523c2e2fb1c8749ec6f84ab5ecc2c62f4"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585334906.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/37bb030cd9088ee66dc2d41c2d3602d1e5f4a7ef|patch 8.2.0462: previewwindow test fails on some systems>\npatch 8.2.0462: previewwindow test fails on some systems\n\nProblem:    Previewwindow test fails on some systems. (James McCoy)\nSolution:   Wait a bit after sending the \"o\". (closes #5849)",
+        "ts": "1585337308.003600",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0462: previewwindow test fails on some systems · vim\/vim@37bb030",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/37bb030cd9088ee66dc2d41c2d3602d1e5f4a7ef",
+                "text": "Problem: Previewwindow test fails on some systems. (James McCoy) Solution: Wait a bit after sending the \"o\". (closes #5849)",
+                "fallback": "GitHub: patch 8.2.0462: previewwindow test fails on some systems · vim\/vim@37bb030",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/37bb030cd9088ee66dc2d41c2d3602d1e5f4a7ef",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/37bb030cd9088ee66dc2d41c2d3602d1e5f4a7ef"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585337309.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/191acfdecabfbd2a74867e77004196fb3b4a8c14|Update runtime files>\nUpdate runtime files",
+        "ts": "1585339706.003800",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Update runtime files · vim\/vim@191acfd",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/191acfdecabfbd2a74867e77004196fb3b4a8c14",
+                "text": "The official Vim repository. Contribute to vim\/vim development by creating an account on GitHub.",
+                "fallback": "GitHub: Update runtime files · vim\/vim@191acfd",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/191acfdecabfbd2a74867e77004196fb3b4a8c14",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/191acfdecabfbd2a74867e77004196fb3b4a8c14"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585339708.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/2d9d409ad4fab1ae7ceaecc0ef0e9b511d868374|patch 8.2.0464: typos and other small problems>\npatch 8.2.0464: typos and other small problems\n\nProblem:    Typos and other small problems.\nSolution:   Fix the typos.  Add missing file to distribution.",
+        "ts": "1585339706.003900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0464: typos and other small problems · vim\/vim@2d9d409",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/2d9d409ad4fab1ae7ceaecc0ef0e9b511d868374",
+                "text": "Problem: Typos and other small problems. Solution: Fix the typos. Add missing file to distribution.",
+                "fallback": "GitHub: patch 8.2.0464: typos and other small problems · vim\/vim@2d9d409",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/2d9d409ad4fab1ae7ceaecc0ef0e9b511d868374",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/2d9d409ad4fab1ae7ceaecc0ef0e9b511d868374"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585339707.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/14285cb801c5ba965fdb89c44e8c27d912edfe4b|patch 8.2.0464: typos and other small problems>\npatch 8.2.0464: typos and other small problems\n\nProblem:    Typos and other small problems.\nSolution:   Fix the typos.  Add missing files to the distribution.",
+        "ts": "1585339706.004000",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0464: typos and other small problems · vim\/vim@14285cb",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/14285cb801c5ba965fdb89c44e8c27d912edfe4b",
+                "text": "Problem: Typos and other small problems. Solution: Fix the typos. Add missing files to the distribution.",
+                "fallback": "GitHub: patch 8.2.0464: typos and other small problems · vim\/vim@14285cb",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/14285cb801c5ba965fdb89c44e8c27d912edfe4b",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/14285cb801c5ba965fdb89c44e8c27d912edfe4b"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585339707.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7|Correct list of patch numbers>\nCorrect list of patch numbers",
+        "ts": "1585339706.004100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Correct list of patch numbers · vim\/vim@495282b",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7",
+                "text": "The official Vim repository. Contribute to vim\/vim development by creating an account on GitHub.",
+                "fallback": "GitHub: Correct list of patch numbers · vim\/vim@495282b",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/495282b6e7e418d072a8ab53c9056b269dc308b7"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585339707.000000"
+        }
+    }
+]

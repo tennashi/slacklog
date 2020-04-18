@@ -1,0 +1,75 @@
+[
+    {
+        "client_msg_id": "ec952d47-fc55-41e1-a775-bb246be1d658",
+        "type": "message",
+        "text": "<https:\/\/github.com\/neoclide\/coc.nvim\/releases\/tag\/v0.0.76>\nバージョン上がった :tada:",
+        "user": "U7B4ZD49X",
+        "ts": "1583812483.033100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "neoclide\/coc.nvim",
+                "title_link": "https:\/\/github.com\/neoclide\/coc.nvim\/releases\/tag\/v0.0.76",
+                "text": "Intellisense engine for Vim8 &amp; Neovim, full language server protocol support as VSCode - neoclide\/coc.nvim",
+                "fallback": "GitHub: neoclide\/coc.nvim",
+                "from_url": "https:\/\/github.com\/neoclide\/coc.nvim\/releases\/tag\/v0.0.76",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/131770422\/11ead600-81d9-11e9-8028-45f8617ba5bd",
+                "thumb_width": 527,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/neoclide\/coc.nvim\/releases\/tag\/v0.0.76"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AJS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/neoclide\/coc.nvim\/releases\/tag\/v0.0.76"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nバージョン上がった "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "tada"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tada",
+                "users": [
+                    "UQL6475CG",
+                    "UFP0GQZ4K",
+                    "UJV2VRS9X"
+                ],
+                "count": 3
+            }
+        ]
+    }
+]

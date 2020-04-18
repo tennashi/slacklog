@@ -1,0 +1,266 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/599c89c82fe3c85378e8077b4e589f0ee4218da2|patch 8.2.0465: Vim9: dead code and wrong return type>\npatch 8.2.0465: Vim9: dead code and wrong return type\n\nProblem:    Vim9: dead code and wrong return type.\nSolution:   Remove dead code.  Fix return type.  Add more tests.",
+        "ts": "1585404501.004600",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0465: Vim9: dead code and wrong return type · vim\/vim@599c89c",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/599c89c82fe3c85378e8077b4e589f0ee4218da2",
+                "text": "Problem: Vim9: dead code and wrong return type. Solution: Remove dead code. Fix return type. Add more tests.",
+                "fallback": "GitHub: patch 8.2.0465: Vim9: dead code and wrong return type · vim\/vim@599c89c",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/599c89c82fe3c85378e8077b4e589f0ee4218da2",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/599c89c82fe3c85378e8077b4e589f0ee4218da2"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585404502.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/09c569038c42dcbdaa5c9b35fc9d1afbe5072cb4|patch 8.2.0466: not parsing messages recursively breaks the govim plugin>\npatch 8.2.0466: not parsing messages recursively breaks the govim plugin\n\nProblem:    Not parsing messages recursively breaks the govim plugin.\nSolution:   When called recursively do handle messages but do not close\n            channels.",
+        "ts": "1585415304.004800",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0466: not parsing messages recursively breaks the govim plugin · vim\/vim@09c5690",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/09c569038c42dcbdaa5c9b35fc9d1afbe5072cb4",
+                "text": "Problem: Not parsing messages recursively breaks the govim plugin. Solution: When called recursively do handle messages but do not close channels.",
+                "fallback": "GitHub: patch 8.2.0466: not parsing messages recursively breaks the govim plugin · vim\/vim@09c5690",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/09c569038c42dcbdaa5c9b35fc9d1afbe5072cb4",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/09c569038c42dcbdaa5c9b35fc9d1afbe5072cb4"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585415304.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/33fa29cf74ea314f89cfa58ec9ffc2d6781a59d4|patch 8.2.0467: Vim9: some errors are not tested>\npatch 8.2.0467: Vim9: some errors are not tested\n\nProblem:    Vim9: some errors are not tested\nSolution:   Add more tests.  Fix that Vim9 script flag is not reset.",
+        "ts": "1585421302.005000",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0467: Vim9: some errors are not tested · vim\/vim@33fa29c",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/33fa29cf74ea314f89cfa58ec9ffc2d6781a59d4",
+                "text": "Problem: Vim9: some errors are not tested Solution: Add more tests. Fix that Vim9 script flag is not reset.",
+                "fallback": "GitHub: patch 8.2.0467: Vim9: some errors are not tested · vim\/vim@33fa29c",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/33fa29cf74ea314f89cfa58ec9ffc2d6781a59d4",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/33fa29cf74ea314f89cfa58ec9ffc2d6781a59d4"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585421304.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/7c003aa314337ce732e18c541fa93d71cafedf03|patch 8.2.0468: GUI: pixel dust with some fonts and characters>\npatch 8.2.0468: GUI: pixel dust with some fonts and characters\n\nProblem:    GUI: pixel dust with some fonts and characters.\nSolution:   Always redraw the character before the cursor. (Nir Lichtman,\n            closes #5549, closes #5856)",
+        "ts": "1585424897.005200",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0468: GUI: pixel dust with some fonts and characters · vim\/vim@7c003aa",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/7c003aa314337ce732e18c541fa93d71cafedf03",
+                "text": "Problem: GUI: pixel dust with some fonts and characters. Solution: Always redraw the character before the cursor. (Nir Lichtman, closes #5549, closes #5856)",
+                "fallback": "GitHub: patch 8.2.0468: GUI: pixel dust with some fonts and characters · vim\/vim@7c003aa",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/7c003aa314337ce732e18c541fa93d71cafedf03",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/7c003aa314337ce732e18c541fa93d71cafedf03"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585424898.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/ee619e5bc0992e818f2d9540b093b769b9c27651|patch 8.2.0469: Vim9: no error for missing ] after list>\npatch 8.2.0469: Vim9: no error for missing ] after list\n\nProblem:    Vim9: no error for missing ] after list.\nSolution:   Add error message. Add more tests.",
+        "ts": "1585428502.005400",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0469: Vim9: no error for missing ] after list · vim\/vim@ee619e5",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/ee619e5bc0992e818f2d9540b093b769b9c27651",
+                "text": "Problem: Vim9: no error for missing ] after list. Solution: Add error message. Add more tests.",
+                "fallback": "GitHub: patch 8.2.0469: Vim9: no error for missing ] after list · vim\/vim@ee619e5",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/ee619e5bc0992e818f2d9540b093b769b9c27651",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/ee619e5bc0992e818f2d9540b093b769b9c27651"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585428504.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/7b1b36b1cb744e87adfbef88b7ce26c863b0594a|patch 8.2.0470: Test_confirm_cmd_cancel() can fail on a slow system>\npatch 8.2.0470: Test_confirm_cmd_cancel() can fail on a slow system\n\nProblem:    Test_confirm_cmd_cancel() can fail on a slow system.\nSolution:   Use WaitForAssert(). (Ozaki Kiichi, closes #5861)",
+        "ts": "1585429702.005600",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0470: Test_confirm_cmd_cancel() can fail on a slow system · vim\/vim@7b1b36b",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/7b1b36b1cb744e87adfbef88b7ce26c863b0594a",
+                "text": "Problem: Test_confirm_cmd_cancel() can fail on a slow system. Solution: Use WaitForAssert(). (Ozaki Kiichi, closes #5861)",
+                "fallback": "GitHub: patch 8.2.0470: Test_confirm_cmd_cancel() can fail on a slow system · vim\/vim@7b1b36b",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/7b1b36b1cb744e87adfbef88b7ce26c863b0594a",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/7b1b36b1cb744e87adfbef88b7ce26c863b0594a"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585429702.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/a30590d3e78aed3f6039edc642fb7532c40ea54e|patch 8.2.0471: missing change to compile_list()>\npatch 8.2.0471: missing change to compile_list()\n\nProblem:    Missing change to compile_list().\nSolution:   Add error message.",
+        "ts": "1585429702.005700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0471: missing change to compile_list() · vim\/vim@a30590d",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/a30590d3e78aed3f6039edc642fb7532c40ea54e",
+                "text": "Problem: Missing change to compile_list(). Solution: Add error message.",
+                "fallback": "GitHub: patch 8.2.0471: missing change to compile_list() · vim\/vim@a30590d",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/a30590d3e78aed3f6039edc642fb7532c40ea54e",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/a30590d3e78aed3f6039edc642fb7532c40ea54e"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585429703.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/360bdbda817920657a2ec8bf329c96a749dd7224|patch 8.2.0472: terminal highlight name is set twice, leaking memory>\npatch 8.2.0472: terminal highlight name is set twice, leaking memory\n\nProblem:    Terminal highlight name is set twice, leaking memory.\nSolution:   Delete one.",
+        "ts": "1585432097.006000",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0472: terminal highlight name is set twice, leaking memory · vim\/vim@360bdbd",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/360bdbda817920657a2ec8bf329c96a749dd7224",
+                "text": "Problem: Terminal highlight name is set twice, leaking memory. Solution: Delete one.",
+                "fallback": "GitHub: patch 8.2.0472: terminal highlight name is set twice, leaking memory · vim\/vim@360bdbd",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/360bdbda817920657a2ec8bf329c96a749dd7224",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/360bdbda817920657a2ec8bf329c96a749dd7224"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585432098.000000"
+        }
+    }
+]

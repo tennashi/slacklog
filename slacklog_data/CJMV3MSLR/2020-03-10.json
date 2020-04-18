@@ -1,0 +1,329 @@
+[
+    {
+        "type": "message",
+        "text": "【質問です】Deniteについての質問です。普段`:Denite file\/rec file_mru buffer`などをよく使うのですが、file\/recの候補に.editorconfigなどドットから始まるファイルが出てこないので調べたところ、以下のuniteのissueを見つけました。\n<https:\/\/github.com\/Shougo\/unite.vim\/issues\/894>\nこの内容とdeniteのhelpを見比べて、deniteでもデフォルトでmatcher\/hide_hidden_filesが有効になっているため自分でsourceのmatcherを上書きしないと出てこないのだと理解しました。\n<https:\/\/github.com\/Shougo\/denite.nvim\/blob\/51fb80b66faaff5117e661ebcffc773577763ecd\/doc\/denite.txt#L1432-L1434>\nこれをもとにこのように設定したのですが、`:Denite file\/rec`の結果には画像の通りドットから始まるファイルが出てこないです。`.git\/`については`matcher\/ignore_globs`の対象に設定しているので出てこなくてもいいのですが、.editorconfigは出したいです。直すべきところわかる方いたら教えて下さい。よろしくお願いします。\n```call denite#custom#source('file\/rec', 'matchers', ['matcher\/fuzzy'])```",
+        "files": [
+            {
+                "id": "FV8FERBGF",
+                "created": 1583889055,
+                "timestamp": 1583889055,
+                "name": "スクリーンショット 2020-03-11 10.04.08.png",
+                "title": "スクリーンショット 2020-03-11 10.04.08.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "UEG93BTD3",
+                "editable": false,
+                "size": 261510,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FV8FERBGF\/____________________________2020-03-11_10.04.08.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FV8FERBGF\/download\/____________________________2020-03-11_10.04.08.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV8FERBGF-67397ff89f\/____________________________2020-03-11_10.04.08_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV8FERBGF-67397ff89f\/____________________________2020-03-11_10.04.08_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV8FERBGF-67397ff89f\/____________________________2020-03-11_10.04.08_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 360,
+                "thumb_360_h": 285,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV8FERBGF-67397ff89f\/____________________________2020-03-11_10.04.08_480.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_w": 480,
+                "thumb_480_h": 380,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV8FERBGF-67397ff89f\/____________________________2020-03-11_10.04.08_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV8FERBGF-67397ff89f\/____________________________2020-03-11_10.04.08_720.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720_w": 720,
+                "thumb_720_h": 570,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV8FERBGF-67397ff89f\/____________________________2020-03-11_10.04.08_800.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_800_w": 800,
+                "thumb_800_h": 633,
+                "image_exif_rotation": 1,
+                "original_w": 816,
+                "original_h": 646,
+                "thumb_tiny": "AwAmADCzjnFLs+tRXRKRFh2xVP7S+O1U2yUaWwe9Gwe9Zv2l\/wDZ\/OgXDA9V\/OldgaWwe9JsHvWd9rb0Wj7W3otF2GhavWUwMAfSs8EAYNWZhlCM1XKY7imAhIxwB+VNpce4\/OjHuPzoASilI9x+dJQBYlPyGoMn1NTy\/cNQUMBKKWigBKKWigD\/2Q==",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/UEG93BTD3\/FV8FERBGF\/____________________________2020-03-11_10.04.08.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-FV8FERBGF-b8116a31c0",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QEaGw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "【質問です】Deniteについての質問です。普段"
+                            },
+                            {
+                                "type": "text",
+                                "text": ":Denite file\/rec file_mru buffer",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "などをよく使うのですが、file\/recの候補に.editorconfigなどドットから始まるファイルが出てこないので調べたところ、以下のuniteのissueを見つけました。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/Shougo\/unite.vim\/issues\/894"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nこの内容とdeniteのhelpを見比べて、deniteでもデフォルトでmatcher\/hide_hidden_filesが有効になっているため自分でsourceのmatcherを上書きしないと出てこないのだと理解しました。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/Shougo\/denite.nvim\/blob\/51fb80b66faaff5117e661ebcffc773577763ecd\/doc\/denite.txt#L1432-L1434"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nこれをもとにこのように設定したのですが、"
+                            },
+                            {
+                                "type": "text",
+                                "text": ":Denite file\/rec",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "の結果には画像の通りドットから始まるファイルが出てこないです。"
+                            },
+                            {
+                                "type": "text",
+                                "text": ".git\/",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "については"
+                            },
+                            {
+                                "type": "text",
+                                "text": "matcher\/ignore_globs",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "の対象に設定しているので出てこなくてもいいのですが、.editorconfigは出したいです。直すべきところわかる方いたら教えて下さい。よろしくお願いします。\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "call denite#custom#source('file\/rec', 'matchers', ['matcher\/fuzzy'])"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "UEG93BTD3",
+        "display_as_bot": false,
+        "ts": "1583889063.001000",
+        "client_msg_id": "8a1cbaa5-ba84-414b-a01c-25f748e1ca97"
+    },
+    {
+        "client_msg_id": "eb367f2e-2b3f-408f-b7f8-2771c0990370",
+        "type": "message",
+        "text": "その画面はdefxではないでしょうか",
+        "user": "U7JL1UKKL",
+        "ts": "1583892183.001700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2vjb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "その画面はdefxではないでしょうか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "19cb506c-c361-41d4-b43d-c63e04625baa",
+        "type": "message",
+        "text": "手元でデフォルト設定で試しましたけど.editorconfigがリストに出ますよ",
+        "user": "U7JL1UKKL",
+        "ts": "1583892392.003000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dwV",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "手元でデフォルト設定で試しましたけど.editorconfigがリストに出ますよ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583892392.003000",
+        "reply_count": 2,
+        "reply_users_count": 2,
+        "latest_reply": "1583960612.027100",
+        "reply_users": [
+            "UEG93BTD3",
+            "U7JL1UKKL"
+        ],
+        "replies": [
+            {
+                "user": "UEG93BTD3",
+                "ts": "1583945400.025700"
+            },
+            {
+                "user": "U7JL1UKKL",
+                "ts": "1583960612.027100"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "6ec40008-1bb4-4942-a670-223bcaf76fde",
+        "type": "message",
+        "text": "なので、最小構成を作ってだれでもテストできるようにしてくださいと私はいうしかないです",
+        "user": "U7JL1UKKL",
+        "ts": "1583892440.003700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tK+be",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なので、最小構成を作ってだれでもテストできるようにしてくださいと私はいうしかないです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "455cefb7-3dfe-4064-bfc0-336ec66d629d",
+        "type": "message",
+        "text": "@tk denite の file\/rec をカスタマイズしていませんか？",
+        "user": "U8R597E9H",
+        "ts": "1583893415.004500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nhSOB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "@tk denite の file\/rec をカスタマイズしていませんか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583893415.004500",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1583945475.026000",
+        "reply_users": [
+            "UEG93BTD3"
+        ],
+        "replies": [
+            {
+                "user": "UEG93BTD3",
+                "ts": "1583945475.026000"
+            }
+        ],
+        "subscribed": false
+    }
+]

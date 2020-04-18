@@ -1,0 +1,413 @@
+[
+    {
+        "client_msg_id": "33327ec8-599a-472c-a53e-9a3c92a9ae12",
+        "type": "message",
+        "text": "tag kind にマルチバイト「λ」入れたいと思った事がない。 <https:\/\/github.com\/vim\/vim\/issues\/5724>",
+        "user": "U03C6TEAZ",
+        "ts": "1583738485.343500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Non acsii characters in tag's kinds · Issue #5724 · vim\/vim",
+                "title_link": "https:\/\/github.com\/vim\/vim\/issues\/5724",
+                "text": "When a non ascii character is present as a kind for a tag vim displays it differently from ascii ones. See attached screenshot which contains a λ as a kind of a tag (a nice tag for lambdas, btw): S...",
+                "fallback": "GitHub: Non acsii characters in tag's kinds · Issue #5724 · vim\/vim",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/11618545?s=400&v=4",
+                "from_url": "https:\/\/github.com\/vim\/vim\/issues\/5724",
+                "thumb_width": 48,
+                "thumb_height": 48,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/issues\/5724"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vEHh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "tag kind にマルチバイト「λ」入れたいと思った事がない。 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim\/vim\/issues\/5724"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "14e2b079-3c6b-4f58-8add-876c5732eb41",
+        "type": "message",
+        "text": "Bramがこんな時間に活動してる！",
+        "user": "U6XP9LZ6V",
+        "ts": "1583738554.343900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "r5Q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Bramがこんな時間に活動してる！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4ebaee08-a032-4c25-9324-149f57a47830",
+        "type": "message",
+        "text": "Julia使いな人なのかな...?",
+        "user": "UAZ33BKV2",
+        "ts": "1583738574.344200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1583738589.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lpG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Julia使いな人なのかな...?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "582b200f-f376-4ba3-bc06-92f3d4d34690",
+        "type": "message",
+        "text": "<https:\/\/github.com\/vim-jp\/lang-ja\/pull\/123>",
+        "user": "U03C71D7H",
+        "ts": "1583765946.344500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Missing space by thinca · Pull Request #123 · vim-jp\/lang-ja",
+                "title_link": "https:\/\/github.com\/vim-jp\/lang-ja\/pull\/123",
+                "text": "In actual, the title of quickfix is followed to this message. Space is needed.",
+                "fallback": "GitHub: Missing space by thinca · Pull Request #123 · vim-jp\/lang-ja",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/1051958?s=400&v=4",
+                "from_url": "https:\/\/github.com\/vim-jp\/lang-ja\/pull\/123",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim-jp\/lang-ja\/pull\/123"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SJ0OI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/lang-ja\/pull\/123"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3d7519c4-f5d7-4c5d-b14f-cef42f567d60",
+        "type": "message",
+        "text": "修正okだと思いますが、ちなみに興味で聞きたいのですがこれって何かの文章が続く感じの奴ですか？",
+        "user": "U03C6TEAZ",
+        "ts": "1583766061.345300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wfb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "修正okだと思いますが、ちなみに興味で聞きたいのですがこれって何かの文章が続く感じの奴ですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "quickfix にはタイトルを設定できるんですが、そのタイトルが後に続きます。",
+        "files": [
+            {
+                "id": "FUT5FREC9",
+                "created": 1583766359,
+                "timestamp": 1583766359,
+                "name": "image.png",
+                "title": ":chistory の結果",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U03C71D7H",
+                "editable": false,
+                "size": 15155,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FUT5FREC9\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FUT5FREC9\/download\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUT5FREC9-a792d0a7f2\/image_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUT5FREC9-a792d0a7f2\/image_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUT5FREC9-a792d0a7f2\/image_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 360,
+                "thumb_360_h": 62,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUT5FREC9-a792d0a7f2\/image_480.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_w": 480,
+                "thumb_480_h": 83,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FUT5FREC9-a792d0a7f2\/image_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "image_exif_rotation": 1,
+                "original_w": 555,
+                "original_h": 96,
+                "thumb_tiny": "AwAIADCtuk5z\/KjLYHrTj1NHepuVYbuYHnpQWYjj09KU0gp3EJk5o+Y8Dr2pT0pyffFK4PY\/\/9k=",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U03C71D7H\/FUT5FREC9\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-FUT5FREC9-6a9711071f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Naa+V",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "quickfix にはタイトルを設定できるんですが、そのタイトルが後に続きます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U03C71D7H",
+        "display_as_bot": false,
+        "ts": "1583766366.345400",
+        "client_msg_id": "5eb72f2d-c31f-40ca-91e5-d91219232211",
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "U03C6TEAZ"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "ちなみに行頭から 34 バイト分(固定)は必ず余白があくようになっており、:language C でやるといい感じになったりします…",
+        "files": [
+            {
+                "id": "FV38938UQ",
+                "created": 1583766540,
+                "timestamp": 1583766540,
+                "name": "image.png",
+                "title": ":language C での :chistory の結果",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U03C71D7H",
+                "editable": false,
+                "size": 12477,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FV38938UQ\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FV38938UQ\/download\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV38938UQ-f5a740d896\/image_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV38938UQ-f5a740d896\/image_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV38938UQ-f5a740d896\/image_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 360,
+                "thumb_360_h": 62,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV38938UQ-f5a740d896\/image_480.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_w": 480,
+                "thumb_480_h": 83,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV38938UQ-f5a740d896\/image_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "image_exif_rotation": 1,
+                "original_w": 540,
+                "original_h": 93,
+                "thumb_tiny": "AwAIADCrvfGM80b2z1pfSkP+FTcdhQz5\/D0pC746807+I0h+9+VFx2EG44\/Wk39eakXqfoagpp3Je5\/\/2Q==",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U03C71D7H\/FV38938UQ\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-FV38938UQ-d7e6f6bdda",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "J9TQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちなみに行頭から 34 バイト分(固定)は必ず余白があくようになっており、:language C でやるといい感じになったりします…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U03C71D7H",
+        "display_as_bot": false,
+        "ts": "1583766551.345800",
+        "client_msg_id": "9d17f446-cf16-4f24-987a-15c7cadc94fc"
+    },
+    {
+        "client_msg_id": "43232cfd-10f5-4d03-9ed6-7bf1eae7cfe0",
+        "type": "message",
+        "text": "最近 Bram、この時間帯に活動してるなぁ。",
+        "user": "U03C6TEAZ",
+        "ts": "1583823557.346400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "g6z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最近 Bram、この時間帯に活動してるなぁ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

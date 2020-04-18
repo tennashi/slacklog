@@ -1,0 +1,1520 @@
+[
+    {
+        "client_msg_id": "56930ae2-3864-4a2c-a43d-ce82384961b5",
+        "type": "message",
+        "text": "C初めてやったときの感触が蘇える。むずい。log.Fatal()一行入れるだけで動いたり落ちたり。",
+        "user": "UEA8SS1RN",
+        "ts": "1585399950.219200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e0B0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "C初めてやったときの感触が蘇える。むずい。log.Fatal()一行入れるだけで動いたり落ちたり。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0f464b1a-25ed-4ac9-a4f3-1b4fb70bd88d",
+        "type": "message",
+        "text": "gRPCもいっしょにやってるからかなー。問題の切り分けが出来てない?",
+        "user": "UEA8SS1RN",
+        "ts": "1585399981.219600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "c3+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "gRPCもいっしょにやってるからかなー。問題の切り分けが出来てない?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2cc4ffb3-9613-4068-a5d9-c3e1a42eb1de",
+        "type": "message",
+        "text": "<https:\/\/fkm.hatenablog.com\/entry\/20140801\/p1>",
+        "user": "U06ECBRTJ",
+        "ts": "1585400318.219800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "fkm blog",
+                "title": "Goのlog.Fatal()を呼ぶと？ - fkm blog",
+                "title_link": "https:\/\/fkm.hatenablog.com\/entry\/20140801\/p1",
+                "text": "サーバーサイドでlog.Fatal()を呼んだら大変なことになった話. といってもログがでてプロセス止まっちゃったので何事？と思ってソースを読んでみる. func (l *Logger) Fatal(v ...interface{}) { l.Output(2, fmt.Sprint(v...)) os.Exit(1) } 気軽にFatal()は呼べません。。",
+                "fallback": "fkm blog: Goのlog.Fatal()を呼ぶと？ - fkm blog",
+                "image_url": "https:\/\/ogimage.blog.st-hatena.com\/13208692334729891831\/10257846132622097454\/1536220731",
+                "ts": 1406818800,
+                "from_url": "https:\/\/fkm.hatenablog.com\/entry\/20140801\/p1",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 108240,
+                "service_icon": "https:\/\/cdn.image.st-hatena.com\/image\/apple_touch_icon\/e69d7c64bc7d42683c89e54e624845d8b95931b0\/version=1\/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fblog_custom_icon%2F260781%2F153900336332126",
+                "id": 1,
+                "original_url": "https:\/\/fkm.hatenablog.com\/entry\/20140801\/p1"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Thta5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/fkm.hatenablog.com\/entry\/20140801\/p1"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0482a07d-e376-411a-a15e-5a3617adcff3",
+        "type": "message",
+        "text": "<@UEA8SS1RN> `os.Exit(1)` されるんです",
+        "user": "U06ECBRTJ",
+        "ts": "1585400413.220700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tdB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "UEA8SS1RN"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "text",
+                                "text": "os.Exit(1)",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " されるんです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c787abd4-bb91-4b6a-a8e8-398d545f2aa3",
+        "type": "message",
+        "text": "そりゃ落ちる...",
+        "user": "UAZ33BKV2",
+        "ts": "1585400496.221000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=PBY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そりゃ落ちる..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "64532656-1567-4675-b623-7e8c11400785",
+        "type": "message",
+        "text": "ねー 私も割と初期に通りました",
+        "user": "U06ECBRTJ",
+        "ts": "1585400516.221500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KUk3U",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ねー 私も割と初期に通りました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cacd998d-2767-4b70-b6b1-e12f8c987273",
+        "type": "message",
+        "text": "というか、なぜ副作用があるような構造なんだろう?",
+        "user": "UAZ33BKV2",
+        "ts": "1585400524.221700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ryZB0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "というか、なぜ副作用があるような構造なんだろう?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f1a8e551-f4c5-4e32-bc19-9da6cd9979a5",
+        "type": "message",
+        "text": "assert と思えばいいかな。",
+        "user": "U03C6TEAZ",
+        "ts": "1585400554.222000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7bU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "assert と思えばいいかな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "debaa639-76e8-457f-a710-ebd5d725bc28",
+        "type": "message",
+        "text": "条件なし assert",
+        "user": "U03C6TEAZ",
+        "ts": "1585400571.222300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6Xs2Y",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "条件なし assert"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c4f9ffb1-1556-4ddb-8c63-9f4d7ae53f6c",
+        "type": "message",
+        "text": "あー、まあそういう意味ではありか...",
+        "user": "UAZ33BKV2",
+        "ts": "1585400604.223000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ihC1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー、まあそういう意味ではありか..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3aa6a489-be5d-4e92-bf73-8cbc97a0a04c",
+        "type": "message",
+        "text": "logという名前から勘違いしてしまうやつ",
+        "user": "U9S4G0LJW",
+        "ts": "1585400628.224000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wxmC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "logという名前から勘違いしてしまうやつ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "042f42a1-5d32-4fc4-a3b8-5e143384d9e2",
+        "type": "message",
+        "text": "知らないとハマるんですが、慣れてくると log.Fatal(err) を気軽に投げれるので助かりマックス",
+        "user": "U03C6TEAZ",
+        "ts": "1585400642.224300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "80sn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "知らないとハマるんですが、慣れてくると log.Fatal(err) を気軽に投げれるので助かりマックス"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "442815c0-a5a5-4c47-9851-3bfd76dd095a",
+        "type": "message",
+        "text": "書き捨てのコードにはよく使う",
+        "user": "UNJ2DANJC",
+        "ts": "1585401048.225400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "C1kH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "書き捨てのコードにはよく使う"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aaaf633a-2c16-4ee0-a812-ec17e2e86e9e",
+        "type": "message",
+        "text": "panicだとその後値を返さなくてもokにしてくれるけど、log.Fatalだとそれがないので、使わなくなってきたかも。\nformatted string出したいときちょっと面倒。",
+        "user": "UKHUVMBJR",
+        "ts": "1585401525.226200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "626bbc95c10c",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-08-09\/721207338820_626bbc95c10c7b6c7738_72.png",
+            "first_name": "",
+            "real_name": "eihigh",
+            "display_name": "eihigh",
+            "team": "T03C4RC8V",
+            "name": "eiichiro.takahashi",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lO1jh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "panicだとその後値を返さなくてもokにしてくれるけど、log.Fatalだとそれがないので、使わなくなってきたかも。\nformatted string出したいときちょっと面倒。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "E01EA7D5-2554-4A43-B246-C65A38C2C65C",
+        "type": "message",
+        "text": "<https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1585401048225400|https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1585401048225400>\n\nわかりみ",
+        "user": "UDDCM376D",
+        "ts": "1585404047.226800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "from_url": "https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1585401048225400",
+                "fallback": "[March 28th, 2020 6:10 AM] mitsuo.heijo: 書き捨てのコードにはよく使う",
+                "ts": "1585401048.225400",
+                "author_id": "UNJ2DANJC",
+                "author_subname": "johejo",
+                "channel_id": "CGABGC8LA",
+                "channel_name": "golang",
+                "is_msg_unfurl": true,
+                "text": "書き捨てのコードにはよく使う",
+                "author_name": "johejo",
+                "author_link": "https:\/\/vim-jp.slack.com\/team\/UNJ2DANJC",
+                "author_icon": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_48.png",
+                "mrkdwn_in": [
+                    "text"
+                ],
+                "id": 1,
+                "original_url": "https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1585401048225400",
+                "footer": "Posted in #golang"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4yPd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1585401048225400",
+                                "text": "https:\/\/vim-jp.slack.com\/archives\/CGABGC8LA\/p1585401048225400"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nわかりみ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0d2e719f-2880-48dc-a57e-552045a04a28",
+        "type": "message",
+        "text": "なんてこったいwwwww",
+        "user": "UEA8SS1RN",
+        "ts": "1585406077.227100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hys",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんてこったいwwwww"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f563f89e-4358-426f-b9f4-f32ff7896c50",
+        "type": "message",
+        "text": "基本的に真面目なコードでは `log.Fatal` は呼ばない。",
+        "user": "U06BRP8VD",
+        "ts": "1585445126.234800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xe9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "基本的に真面目なコードでは "
+                            },
+                            {
+                                "type": "text",
+                                "text": "log.Fatal",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " は呼ばない。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b33d7fe2-9504-415e-aa5d-c021815e4797",
+        "type": "message",
+        "text": "`panic()` も使わない。",
+        "user": "U06BRP8VD",
+        "ts": "1585445133.235100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2wAw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "panic()",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " も使わない。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "UEACRCY0Z"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4d2a90ca-5f12-4ba6-912a-44111debc3d1",
+        "type": "message",
+        "text": "とあるGraphQLのライブラリが `panic()` 前提で書かれてて頭を抱えたのがついこの間の話w",
+        "user": "U06BRP8VD",
+        "ts": "1585445161.235800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "P7d",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とあるGraphQLのライブラリが "
+                            },
+                            {
+                                "type": "text",
+                                "text": "panic()",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 前提で書かれてて頭を抱えたのがついこの間の話w"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "UKHUVMBJR",
+                    "U7JL1UKKL",
+                    "U8CC7MDCL"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9b0802f6-1bcb-43dc-b5c7-57f9b1508475",
+        "type": "message",
+        "text": "とはいえ gqlgen も graphql-go\/graphql も panic() 前提なんですよねw",
+        "user": "U06BRP8VD",
+        "ts": "1585445280.236700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7bmRB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とはいえ gqlgen も graphql-go\/graphql も panic() 前提なんですよねw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2b94b61f-0a03-4811-9fe8-67f6317b70b7",
+        "type": "message",
+        "text": "トップ2がこうだから頭抱えて、もうこの部分は諦めようってなった。",
+        "user": "U06BRP8VD",
+        "ts": "1585445299.237100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cWW8J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "トップ2がこうだから頭抱えて、もうこの部分は諦めようってなった。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "totemoturai",
+                "users": [
+                    "U9S4G0LJW",
+                    "UAZ33BKV2"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b5c4f574-3c24-4eca-8e28-ee605f70f2f5",
+        "type": "message",
+        "text": "逆に panic() や log.Fatal 使うのはメンテする気が一切ないコード。",
+        "user": "U06BRP8VD",
+        "ts": "1585445351.238000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "R\/Lpa",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "逆に panic() や log.Fatal 使うのはメンテする気が一切ないコード。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "71b7afba-4d9b-449b-82ad-59c46672c867",
+        "type": "message",
+        "text": "なにか例外的に「panic前提がアリな(デザインの)パターン」、とかあるならわかりますが、特にそういう話は聞きせませんしね...",
+        "user": "UAZ33BKV2",
+        "ts": "1585445400.238800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xmjpA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なにか例外的に「panic前提がアリな(デザインの)パターン」、とかあるならわかりますが、特にそういう話は聞きせませんしね..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cc48f1ba-62db-4149-a55f-add4f70dac8a",
+        "type": "message",
+        "text": "そもそもあれは例外処理に使うものではない",
+        "user": "U9S4G0LJW",
+        "ts": "1585445419.239200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/F2d",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そもそもあれは例外処理に使うものではない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b412dfd0-5734-4075-9bf1-3a1d5840728d",
+        "type": "message",
+        "text": "はず(初心者なのでよくわかってない)",
+        "user": "U9S4G0LJW",
+        "ts": "1585445429.239600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NtPWo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はず(初心者なのでよくわかってない)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "42be0ae6-4ea8-4d94-bb10-302b6df3bd82",
+        "type": "message",
+        "text": "<https:\/\/blog.amedama.jp\/entry\/2015\/10\/11\/123535> から抜粋\n\n* 外部に公開する API はエラーを伝える手段として panic() を使ってはいけない\n    * 多値の返り値 w\/ error インターフェースを使うこと\n    * panic() はパッケージをまたいで伝搬させることがないようにする\n* panic\/recover 機構はスタックが深くなるような呼び出しをする際に有用\n    *使用することで可読性を向上させることができる",
+        "user": "U06BRP8VD",
+        "ts": "1585445575.240100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "CUBE SUGAR CONTAINER",
+                "title": "Golang の defer 文と panic\/recover 機構について - CUBE SUGAR CONTAINER",
+                "title_link": "https:\/\/blog.amedama.jp\/entry\/2015\/10\/11\/123535",
+                "text": "Golang の defer 文と、それにまつわる panic\/recover 機構について調べたので、その内容を書き残しておくことにする。 Golang では defer 文を使うことで、それを呼び出した関数が終了する際に実行すべき処理を記述することができる。 例えば関数の中でオープンしたリソースを確実にクローズするために使われたりする。 試してみよう まずは、シンプルなサンプルコードを使って defer 文の動作を確認してみることにする。 内容的にはメッセージを標準出力に出すということしかやっていない。 ただし、片方には defer が付いていて、もう片方には何もついていない。 コードの記…",
+                "fallback": "CUBE SUGAR CONTAINER: Golang の defer 文と panic\/recover 機構について - CUBE SUGAR CONTAINER",
+                "image_url": "https:\/\/ogimage.blog.st-hatena.com\/8454420450105652084\/6653458415124213870\/1444535814",
+                "ts": 1444534535,
+                "from_url": "https:\/\/blog.amedama.jp\/entry\/2015\/10\/11\/123535",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 141659,
+                "service_icon": "https:\/\/cdn.blog.st-hatena.com\/images\/touch-icon-iphone-retina.png",
+                "id": 1,
+                "original_url": "https:\/\/blog.amedama.jp\/entry\/2015\/10\/11\/123535"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TJlAU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/blog.amedama.jp\/entry\/2015\/10\/11\/123535"
+                            },
+                            {
+                                "type": "text",
+                                "text": " から抜粋\n\n* 外部に公開する API はエラーを伝える手段として panic() を使ってはいけない\n    * 多値の返り値 w\/ error インターフェースを使うこと\n    * panic() はパッケージをまたいで伝搬させることがないようにする\n* panic\/recover 機構はスタックが深くなるような呼び出しをする際に有用\n    *使用することで可読性を向上させることができる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "484d978c-ac85-42da-99d3-b2222765b7c0",
+        "type": "message",
+        "text": "ですよね...という所",
+        "user": "UAZ33BKV2",
+        "ts": "1585446124.241200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0077",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですよね...という所"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3DF2A34E-ED90-4DCA-B701-ABDA5DBF807E",
+        "type": "message",
+        "text": "いまだにpanicの使い道が浮かばない",
+        "user": "UDDCM376D",
+        "ts": "1585462029.241900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BV5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いまだにpanicの使い道が浮かばない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d07c9b1c-8b10-434b-b549-76447309e6b4",
+        "type": "message",
+        "text": "err を返すまでもない、明らかに使い手側の問題の場合とか\n```var r = gorilla.NewReader(os.Stdin)```\nで引数には `io.Reader` だろうけど nil の場合とか。",
+        "user": "U03C6TEAZ",
+        "ts": "1585462151.243300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2Z\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "err を返すまでもない、明らかに使い手側の問題の場合とか\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "var r = gorilla.NewReader(os.Stdin)"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "で引数には "
+                            },
+                            {
+                                "type": "text",
+                                "text": "io.Reader",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " だろうけど nil の場合とか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "eb12d733-be01-469b-a7ce-e62885f7d420",
+        "type": "message",
+        "text": "あとenumのつもりで宣言したものに知らない値が渡るときとか。",
+        "user": "UKHUVMBJR",
+        "ts": "1585462513.244500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "626bbc95c10c",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-08-09\/721207338820_626bbc95c10c7b6c7738_72.png",
+            "first_name": "",
+            "real_name": "eihigh",
+            "display_name": "eihigh",
+            "team": "T03C4RC8V",
+            "name": "eiichiro.takahashi",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "p=pA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あとenumのつもりで宣言したものに知らない値が渡るときとか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "182f7863-280a-4ca8-a680-b5d4ed883fa5",
+        "type": "message",
+        "text": "仕方なく複数の型をinterface{}で受けて想定外の型だったときとか（そもそもこれはイケてないかも）",
+        "user": "UKHUVMBJR",
+        "ts": "1585462585.246300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "626bbc95c10c",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-08-09\/721207338820_626bbc95c10c7b6c7738_72.png",
+            "first_name": "",
+            "real_name": "eihigh",
+            "display_name": "eihigh",
+            "team": "T03C4RC8V",
+            "name": "eiichiro.takahashi",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "soHC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "仕方なく複数の型をinterface{}で受けて想定外の型だったときとか（そもそもこれはイケてないかも）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ed9e5066-42d6-4705-966c-c6ee586102d3",
+        "type": "message",
+        "text": "実装しおわったらunreachableなところとか (ユーザーの入力ではなく未実装の場所)",
+        "user": "U7H4TJEG0",
+        "ts": "1585462609.247100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7dQr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "実装しおわったらunreachableなところとか (ユーザーの入力ではなく未実装の場所)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3e5972f2-f359-40e1-8dd7-18bbafa9f85d",
+        "type": "message",
+        "text": "サーバの初期化部分は panic() させたりしてます\nRDB との接続部分とか",
+        "user": "UG6DF6W87",
+        "ts": "1585462721.249700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "2437d40cd696",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-02-22\/558858702327_2437d40cd696c208a5ab_72.png",
+            "first_name": "tennashi",
+            "real_name": "tennashi",
+            "display_name": "tennashi",
+            "team": "T03C4RC8V",
+            "name": "yuya.gt",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "EYj=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "サーバの初期化部分は panic() させたりしてます\nRDB との接続部分とか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4bcd1b8b-0b73-4b7e-aa5c-87db54e49400",
+        "type": "message",
+        "text": "変な状態で起動したふりをしないようにそうしてますが、他にもよい方法があるかも",
+        "user": "UG6DF6W87",
+        "ts": "1585462765.250500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "2437d40cd696",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-02-22\/558858702327_2437d40cd696c208a5ab_72.png",
+            "first_name": "tennashi",
+            "real_name": "tennashi",
+            "display_name": "tennashi",
+            "team": "T03C4RC8V",
+            "name": "yuya.gt",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "E6OH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "変な状態で起動したふりをしないようにそうしてますが、他にもよい方法があるかも"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1b60564d-970b-442c-a636-5a619d0cbbf3",
+        "type": "message",
+        "text": "質問です。\n変数をひきまわす事ってあると思うんですよ。で、Cだとheaderファイルで型を宣言しますけど、goだとどうします?",
+        "user": "UEA8SS1RN",
+        "ts": "1585465153.251800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UEA8SS1RN",
+            "ts": "1585465175.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "96J",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "質問です。\n変数をひきまわす事ってあると思うんですよ。で、Cだとheaderファイルで型を宣言しますけど、goだとどうします?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

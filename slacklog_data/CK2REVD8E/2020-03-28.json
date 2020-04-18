@@ -1,0 +1,112 @@
+[
+    {
+        "client_msg_id": "de925078-8f9f-4646-ba41-7c1ec9a85da6",
+        "type": "message",
+        "text": "“Jupyter is now a full-fledged IDE” by Dimitris Poulopoulos <https:\/\/link.medium.com\/VUsrmbmve5|https:\/\/link.medium.com\/VUsrmbmve5>\n\njupyterにビジュアルデバッガーを追加するやつ\nmattnさんが好きそう(偏見)",
+        "user": "U8CC7MDCL",
+        "ts": "1585431441.000100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Medium",
+                "title": "Jupyter is now a full-fledged IDE",
+                "title_link": "https:\/\/link.medium.com\/VUsrmbmve5",
+                "text": "Literate programming is now a reality through nbdev and the new visual debugger for Jupyter.",
+                "fallback": "Medium: Jupyter is now a full-fledged IDE",
+                "image_url": "https:\/\/miro.medium.com\/max\/1200\/1*SFg_mpm_2QYlpOMaV4_J7Q.jpeg",
+                "fields": [
+                    {
+                        "title": "Reading time",
+                        "value": "5 min read",
+                        "short": true
+                    }
+                ],
+                "ts": 1585234967,
+                "from_url": "https:\/\/link.medium.com\/VUsrmbmve5",
+                "image_width": 375,
+                "image_height": 250,
+                "image_bytes": 95442,
+                "service_icon": "https:\/\/cdn-images-1.medium.com\/fit\/c\/152\/152\/1*8I-HPL0bfoIzGied-dzOvA.png",
+                "id": 1,
+                "original_url": "https:\/\/link.medium.com\/VUsrmbmve5"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UrU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "“Jupyter is now a full-fledged IDE” by Dimitris Poulopoulos "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/link.medium.com\/VUsrmbmve5",
+                                "text": "https:\/\/link.medium.com\/VUsrmbmve5"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\njupyterにビジュアルデバッガーを追加するやつ\nmattnさんが好きそう(偏見)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a88279c7-2494-4fe4-8aba-367c09b37e9c",
+        "type": "message",
+        "text": "かっちょいい。",
+        "user": "U03C6TEAZ",
+        "ts": "1585449020.000500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iYS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "かっちょいい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

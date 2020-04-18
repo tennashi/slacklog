@@ -1,0 +1,35 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/a21df1db3ca619afdcb47931af042508a6bbc8e5|patch 8.2.0398: profile test fails when two functions take same time>\npatch 8.2.0398: profile test fails when two functions take same time\n\nProblem:    Profile test fails when two functions take same time.\nSolution:   Add a short sleep in once function. (closes #5797)",
+        "ts": "1584475114.022500",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0398: profile test fails when two functions take same time · vim\/vim@a21df1d",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/a21df1db3ca619afdcb47931af042508a6bbc8e5",
+                "text": "Problem: Profile test fails when two functions take same time. Solution: Add a short sleep in once function. (closes #5797)",
+                "fallback": "GitHub: patch 8.2.0398: profile test fails when two functions take same time · vim\/vim@a21df1d",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/a21df1db3ca619afdcb47931af042508a6bbc8e5",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/a21df1db3ca619afdcb47931af042508a6bbc8e5"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584475115.000000"
+        }
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585477202.066800",
+        "user": "UF9UGV0C9",
+        "text": "<@UF9UGV0C9> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585478142.067100",
+        "user": "U010Z7X704C",
+        "text": "<@U010Z7X704C> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/ja.stackoverflow.com\/questions\/65225\/gvim-%E3%81%AE-terminal-%E3%81%AB%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%A7%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%81%97%E3%81%9F%E3%81%84|gvim の :terminal にマウスで貼り付けしたい>\nWindows 10 を使用しています。gvim で :terminal を起動するとデフォルトで cmd.exe が起動します。そこにマウスでテキストの貼り付け(クリップボードからの貼り付け)を行いたいのですが、テキストを別アプリでコピーした後、gvim上のターミナル上で右クリックを押しても何の反応もありませんでした。これは仕様なのでしょうか？\n\n期待した動作としては、vim で :terminal を起動した時と同じ動作。つまりは、右クリックでテキストの貼り付けが行えるか、gvim上のバッファで右クリックをした時の動作。つまりは、「貼り付け」含むコンテキストメニューの表示がされるかが期待した動作となります。\n\n今のところ、\"+ で貼り付けを行っていますが、マウスでやりたいときもあり(Vimmerとしては怒られそうですが) 設定等で期待した動作に近づけられるのであればやりたいとおもっています。",
+        "ts": "1585547415.067600",
+        "username": "vim タグが付けられた最新の質問 - スタック・オーバーフロー",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "thread_ts": "1585547415.067600",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1585548686.068800",
+        "reply_users": [
+            "U78UYGX8W"
+        ],
+        "replies": [
+            {
+                "user": "U78UYGX8W",
+                "ts": "1585548686.068800"
+            }
+        ],
+        "subscribed": false,
+        "attachments": [
+            {
+                "service_name": "スタック・オーバーフロー",
+                "title": "gvim の :terminal にマウスで貼り付けしたい",
+                "title_link": "https:\/\/ja.stackoverflow.com\/questions\/65225\/gvim-%E3%81%AE-terminal-%E3%81%AB%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%A7%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%81%97%E3%81%9F%E3%81%84",
+                "text": "Windows 10 を使用しています。gvim で :terminal を起動するとデフォルトで cmd.exe が起動します。そこにマウスでテキストの貼り付け(クリップボードからの貼り付け)を行いたいのですが、テキストを別アプリでコピーした後、gvim上のターミナル上で右クリックを押しても何の反応もありませんでした。これは仕様なのでしょうか？ 期待した動作としては、vim で :ter...",
+                "fallback": "スタック・オーバーフロー: gvim の :terminal にマウスで貼り付けしたい",
+                "thumb_url": "https:\/\/cdn.sstatic.net\/Sites\/ja\/img\/apple-touch-icon@2.png?v=1cfb10b305ca",
+                "from_url": "https:\/\/ja.stackoverflow.com\/questions\/65225\/gvim-%E3%81%AE-terminal-%E3%81%AB%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%A7%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%81%97%E3%81%9F%E3%81%84",
+                "thumb_width": 316,
+                "thumb_height": 316,
+                "service_icon": "https:\/\/cdn.sstatic.net\/Sites\/ja\/img\/apple-touch-icon.png?v=e7bfb9a9b0cd",
+                "id": 1,
+                "original_url": "https:\/\/ja.stackoverflow.com\/questions\/65225\/gvim-%E3%81%AE-terminal-%E3%81%AB%E3%83%9E%E3%82%A6%E3%82%B9%E3%81%A7%E8%B2%BC%E3%82%8A%E4%BB%98%E3%81%91%E3%81%97%E3%81%9F%E3%81%84"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1585547416.000000"
+        }
+    },
+    {
+        "client_msg_id": "26bfc6ab-59bc-44be-bd51-eaafaa598963",
+        "type": "message",
+        "text": "やってできないことはなさそうだけどうまくいく設定を試すのが面倒",
+        "user": "U03C71D7H",
+        "ts": "1585548064.068400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kyL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "やってできないことはなさそうだけどうまくいく設定を試すのが面倒"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5c0f7c92-62fd-484b-8385-4a48989fd16a",
+        "type": "message",
+        "text": "【自己解決】`tmap &lt;RightMouse&gt; &lt;C-W&gt;\"+` でいけました。。。",
+        "user": "U78UYGX8W",
+        "ts": "1585548686.068800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g75c2b6ed511",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/175c2b6ed51169eb6ecb0b99ee47d5eb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0013-72.png",
+            "first_name": "bamchoh",
+            "real_name": "bamchoh",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "bamchoh",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gs6zm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "【自己解決】"
+                            },
+                            {
+                                "type": "text",
+                                "text": "tmap <RightMouse> <C-W>\"+",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " でいけました。。。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1585547415.067600",
+        "reactions": [
+            {
+                "name": "clap::skin-tone-5",
+                "users": [
+                    "UAZ33BKV2",
+                    "UFP0GQZ4K",
+                    "UDDCM376D"
+                ],
+                "count": 3
+            }
+        ]
+    }
+]

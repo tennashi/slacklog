@@ -1,0 +1,1437 @@
+[
+    {
+        "client_msg_id": "f6c13b86-f087-4357-a0b8-006b8e7f4196",
+        "type": "message",
+        "text": "os.Getpidして自分自身に向かってsyscall.KillでSIGTERM送って実装済みのgraceful shutdownをキックするのアリなんだろうか\nそれでそのままk8sに再起動してもらう",
+        "user": "UNJ2DANJC",
+        "ts": "1584787762.071200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UNJ2DANJC",
+            "ts": "1584787897.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fK\/5z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "os.Getpidして自分自身に向かってsyscall.KillでSIGTERM送って実装済みのgraceful shutdownをキックするのアリなんだろうか\nそれでそのままk8sに再起動してもらう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584787762.071200",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584848436.072900",
+        "reply_users": [
+            "U06BRP8VD"
+        ],
+        "replies": [
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584848436.072900"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "6b09f59a-1680-4006-8fd3-4ef845d24d7f",
+        "type": "message",
+        "text": "bytes.Buffer.Read ソースコード読んでいるけど、ナニモワカラナイ",
+        "user": "UDDCM376D",
+        "ts": "1584847962.072600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "P9rpa",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "bytes.Buffer.Read ソースコード読んでいるけど、ナニモワカラナイ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "reply_count": 26,
+        "reply_users_count": 2,
+        "latest_reply": "1584862942.079300",
+        "reply_users": [
+            "U06BRP8VD",
+            "UDDCM376D"
+        ],
+        "replies": [
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584848526.073700"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584848617.074000"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584848670.074200"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584848699.074400"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584848737.074600"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584848806.075000"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584848912.075200"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584848929.075400"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584848937.075600"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584848943.075800"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584848999.076000"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584849018.076300"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584849084.076500"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584849092.076700"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584849094.076900"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584849107.077100"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584849189.077300"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584849213.077500"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584850295.077800"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584850329.078000"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584850476.078200"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584850484.078400"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584850512.078600"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584855165.078800"
+            },
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584855280.079000"
+            },
+            {
+                "user": "UDDCM376D",
+                "ts": "1584862942.079300"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "無しではないと思います。あんま気持ちよくはないですけど。ただGraceful Shutdownのコードがすでにあるなら、Context の cancel からそのコードが動くようにするのはそんなに難しくないはず。\n\nsigのチャンネル待ち受けてるselectでcontextのDoneみれば良いだけですから。",
+        "user": "U06BRP8VD",
+        "ts": "1584848436.072900",
+        "thread_ts": "1584787762.071200",
+        "root": {
+            "client_msg_id": "f6c13b86-f087-4357-a0b8-006b8e7f4196",
+            "type": "message",
+            "text": "os.Getpidして自分自身に向かってsyscall.KillでSIGTERM送って実装済みのgraceful shutdownをキックするのアリなんだろうか\nそれでそのままk8sに再起動してもらう",
+            "user": "UNJ2DANJC",
+            "ts": "1584787762.071200",
+            "team": "T03C4RC8V",
+            "edited": {
+                "user": "UNJ2DANJC",
+                "ts": "1584787897.000000"
+            },
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "fK\/5z",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "os.Getpidして自分自身に向かってsyscall.KillでSIGTERM送って実装済みのgraceful shutdownをキックするのアリなんだろうか\nそれでそのままk8sに再起動してもらう"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584787762.071200",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1584848436.072900",
+            "reply_users": [
+                "U06BRP8VD"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "T7s",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "無しではないと思います。あんま気持ちよくはないですけど。ただGraceful Shutdownのコードがすでにあるなら、Context の cancel からそのコードが動くようにするのはそんなに難しくないはず。\n\nsigのチャンネル待ち受けてるselectでcontextのDoneみれば良いだけですから。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "bf45697c-2436-4322-b783-8a2aea83a5c5",
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "UNJ2DANJC"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "09f00a40-9243-41b6-8717-7b6b6de5d83b",
+        "type": "message",
+        "text": "なにわからないです?\n\nReadは大きく2段階に分かれてて、copy以降の後半はめっちゃ簡単ですけれど…",
+        "user": "U06BRP8VD",
+        "ts": "1584848526.073700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tw63",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なにわからないです?\n\nReadは大きく2段階に分かれてて、copy以降の後半はめっちゃ簡単ですけれど…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "b3a6d11c-6fc8-4b87-9971-a2c0e2c0d172",
+        "type": "message",
+        "text": "まさにcopyの部分の挙動がわからないです\nデバッグで確認したのですが、\nBuffer.Readの↓の部分copyしてもpに何も入っていないし、nも0のままでした\n```n = copy(p, b.buf[b.off:])```\n",
+        "user": "UDDCM376D",
+        "ts": "1584848617.074000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HHsG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まさにcopyの部分の挙動がわからないです\nデバッグで確認したのですが、\nBuffer.Readの↓の部分copyしてもpに何も入っていないし、nも0のままでした\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "n = copy(p, b.buf[b.off:])"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": []
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "c8e4090f-400f-4926-86b7-67b8319c6999",
+        "type": "message",
+        "text": "len(p) と len(b.buf[b.off:]) をprintf してみました?",
+        "user": "U06BRP8VD",
+        "ts": "1584848670.074200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CG75",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "len(p) と len(b.buf[b.off:]) をprintf してみました?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "83532d3c-39a5-4431-be0b-440a42eefa18",
+        "type": "message",
+        "text": "どっちかが 0 になってるとか。まぁ後者が0ってことはb.empty() を抜けてるからないとは思いますが。",
+        "user": "U06BRP8VD",
+        "ts": "1584848699.074400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fKfq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どっちかが 0 になってるとか。まぁ後者が0ってことはb.empty() を抜けてるからないとは思いますが。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "type": "message",
+        "text": "こんな感じになっています",
+        "files": [
+            {
+                "id": "F010KEM8X9U",
+                "created": 1584848733,
+                "timestamp": 1584848733,
+                "name": "image.png",
+                "title": "image.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "UDDCM376D",
+                "editable": false,
+                "size": 81367,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010KEM8X9U\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010KEM8X9U\/download\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010KEM8X9U-e7807e5fe0\/image_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010KEM8X9U-e7807e5fe0\/image_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010KEM8X9U-e7807e5fe0\/image_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 360,
+                "thumb_360_h": 234,
+                "thumb_480": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010KEM8X9U-e7807e5fe0\/image_480.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_480_w": 480,
+                "thumb_480_h": 312,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010KEM8X9U-e7807e5fe0\/image_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010KEM8X9U-e7807e5fe0\/image_720.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_720_w": 720,
+                "thumb_720_h": 468,
+                "thumb_800": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-F010KEM8X9U-e7807e5fe0\/image_800.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_800_w": 800,
+                "thumb_800_h": 520,
+                "image_exif_rotation": 1,
+                "original_w": 840,
+                "original_h": 546,
+                "thumb_tiny": "AwAfADDQ29\/60U5elNGOfrQAUDmgY3Cn0AIBxRtpaKAGKwRcFhkUm9f7w\/OmtBG53FMt60C2jH8HFPQB4dP7w\/Ol8xP7wpgtov8AnmPzpPskH\/PMU9BaknmIf4h+dG9f7w\/Oo\/skH\/PMUfZIP+eYo90NT\/\/Z",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/UDDCM376D\/F010KEM8X9U\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F010KEM8X9U-8c2766dc0f",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YYB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こんな感じになっています"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "UDDCM376D",
+        "display_as_bot": false,
+        "ts": "1584848737.074600",
+        "client_msg_id": "81e69db5-7ba7-4651-98b5-3b505a05939b",
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "9e1f3e2d-7298-4cf3-98c2-a7f634cc7abf",
+        "type": "message",
+        "text": "コードは↓です\n\n```\tbuf := make([]byte, 0, 5)\n\tb := bytes.NewBufferString(\"hello\")\n\t_, err := b.Read(buf)\n\tif  err != nil {\n\t\tlog.Fatal(err)\n\t}\n\tprintln(string(buf))```",
+        "user": "UDDCM376D",
+        "ts": "1584848806.075000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Y8p2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "コードは↓です\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\tbuf := make([]byte, 0, 5)\n\tb := bytes.NewBufferString(\"hello\")\n\t_, err := b.Read(buf)\n\tif  err != nil {\n\t\tlog.Fatal(err)\n\t}\n\tprintln(string(buf))"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "d37a94f5-f83c-428e-89b9-70329cd3ee71",
+        "type": "message",
+        "text": "えっとbufがおかしくて、capacityは5だけど長さ0なんで読めないんですよ。",
+        "user": "U06BRP8VD",
+        "ts": "1584848912.075200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zzwG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "えっとbufがおかしくて、capacityは5だけど長さ0なんで読めないんですよ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "816fbf16-3706-4c24-8fc0-2ebbec59361f",
+        "type": "message",
+        "text": "あれ",
+        "user": "UDDCM376D",
+        "ts": "1584848929.075400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ycd7p",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "79c3ceff-ff3c-48aa-b1bc-59a01d641b3b",
+        "type": "message",
+        "text": "あー",
+        "user": "UDDCM376D",
+        "ts": "1584848937.075600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=hZAl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "839a4533-3c9e-49e7-abeb-0a7f777de6ef",
+        "type": "message",
+        "text": "`make([]byte, 5)` で長さもキャパシティも5にしないとね",
+        "user": "U06BRP8VD",
+        "ts": "1584848943.075800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pZk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "make([]byte, 5)",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " で長さもキャパシティも5にしないとね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "ac91637f-87b7-4fd9-8cd4-0c48cf092603",
+        "type": "message",
+        "text": ":rikai:",
+        "user": "UDDCM376D",
+        "ts": "1584848999.076000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9aW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "rikai"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D",
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U06BRP8VD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dfe7da92-2edd-429a-bb55-d635b602b688",
+        "type": "message",
+        "text": "ありがとうございます\n自分の中で、長さと容量の理解が曖昧だったのがわかりました",
+        "user": "UDDCM376D",
+        "ts": "1584849018.076300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "v0M9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございます\n自分の中で、長さと容量の理解が曖昧だったのがわかりました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "7ff5f93b-101a-4234-88ee-8cde50f40283",
+        "type": "message",
+        "text": "長さ ＝ 一度に読み取れるデータ量\n容量 ＝ スライスが保持できるデータ量",
+        "user": "UDDCM376D",
+        "ts": "1584849084.076500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DgolN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "長さ ＝ 一度に読み取れるデータ量\n容量 ＝ スライスが保持できるデータ量"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "79646c1d-12b1-409f-8304-aa9ab70c60bb",
+        "type": "message",
+        "text": "って解釈で合っていますか？",
+        "user": "UDDCM376D",
+        "ts": "1584849092.076700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NxH2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "って解釈で合っていますか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "86d53ea1-71f5-4b49-85f8-9cec699103e7",
+        "type": "message",
+        "text": "いやー微妙w",
+        "user": "U06BRP8VD",
+        "ts": "1584849094.076900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AgK57",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いやー微妙w"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "1f0707a6-23e2-4eef-86ea-a8345f7fb810",
+        "type": "message",
+        "text": "微妙だった…ｗ",
+        "user": "UDDCM376D",
+        "ts": "1584849107.077100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iEuqY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "微妙だった…ｗ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "fc57e91a-fb8b-4856-becc-1ca1bebbf086",
+        "type": "message",
+        "text": "容量ってのは裏にある配列のサイズなんです。長さってのは手前にあるスライスのサイズなんですね。\n\nでスライスにappendするときに容量までは配列の再確保無しにスライスが長さを拡張できるんです。容量を超えると配列の再確保が必要になる。",
+        "user": "U06BRP8VD",
+        "ts": "1584849189.077300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+e\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "容量ってのは裏にある配列のサイズなんです。長さってのは手前にあるスライスのサイズなんですね。\n\nでスライスにappendするときに容量までは配列の再確保無しにスライスが長さを拡張できるんです。容量を超えると配列の再確保が必要になる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "461d5ed0-bf86-47d8-a968-9a22f38594a7",
+        "type": "message",
+        "text": "↑ちょっと雑な説明ですけど、おおよそってことで勘弁してください。",
+        "user": "U06BRP8VD",
+        "ts": "1584849213.077500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U06BRP8VD",
+            "ts": "1584849221.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xHAc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "↑ちょっと雑な説明ですけど、おおよそってことで勘弁してください。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "9265936a-dce3-4af4-9939-395724fca558",
+        "type": "message",
+        "text": "```\tarray := [...]int{1, 2, 3, 4}\n\tfmt.Printf(\"array len: %d, cap: %d\\n\", len(array), cap(array))\n\tslice := array[1:3]\n\tfmt.Printf(\"slice len: %d, cap: %d\", len(slice), cap(slice))```\nこれが\n```array len: 4, cap: 4\nslice len: 2, cap: 3```\nなったので、tenntennさんの資料も合わせて以下の理解になりました\n\n• スライスは配列の一部を切り出したもの\n• スライスのlenは切り出した要素数、capは切り出した位置から配列の最後まで要素数",
+        "user": "UDDCM376D",
+        "ts": "1584850295.077800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "A1y",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\tarray := [...]int{1, 2, 3, 4}\n\tfmt.Printf(\"array len: %d, cap: %d\\n\", len(array), cap(array))\n\tslice := array[1:3]\n\tfmt.Printf(\"slice len: %d, cap: %d\", len(slice), cap(slice))"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nこれが\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "array len: 4, cap: 4\nslice len: 2, cap: 3"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nなったので、tenntennさんの資料も合わせて以下の理解になりました\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_list",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "スライスは配列の一部を切り出したもの"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "スライスのlenは切り出した要素数、capは切り出した位置から配列の最後まで要素数"
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "bullet",
+                        "indent": 0
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "d1394c50-0f92-4087-b49f-a269422daaf7",
+        "type": "message",
+        "text": "&gt; でスライスにappendするときに容量までは配列の再確保無しにスライスが長さを拡張できるんです。容量を超えると配列の再確保が必要になる\n:rikai:",
+        "user": "UDDCM376D",
+        "ts": "1584850329.078000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "u8p6g",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "でスライスにappendするときに容量までは配列の再確保無しにスライスが長さを拡張できるんです。容量を超えると配列の再確保が必要になる"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "rikai"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "8cbe2883-8010-4b8b-a3e1-60e4ae297ecf",
+        "type": "message",
+        "text": "あー、でも\nlenは今持っている要素数\nって解釈まら、lenが0のとき読み取れないってのはピンとこないな\nだから、スライスのサイズっていったほうが矛盾がないのか",
+        "user": "UDDCM376D",
+        "ts": "1584850476.078200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=4TvD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー、でも\nlenは今持っている要素数\nって解釈まら、lenが0のとき読み取れないってのはピンとこないな\nだから、スライスのサイズっていったほうが矛盾がないのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "947d5432-5b55-4d6f-9a2c-ae138903ae4f",
+        "type": "message",
+        "text": "なるほど",
+        "user": "UDDCM376D",
+        "ts": "1584850484.078400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Xpt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "b342d4ef-786b-4485-8067-e6dca58251ad",
+        "type": "message",
+        "text": "スライスのサイズが0ならそりゃ読み取れないなって話になるか",
+        "user": "UDDCM376D",
+        "ts": "1584850512.078600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "v3l",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "スライスのサイズが0ならそりゃ読み取れないなって話になるか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "77160e0e-0382-4014-af2b-fe418bad240d",
+        "type": "message",
+        "text": "io.Reader.Readに限って言えば、「最大何バイト読み込むか」っていう引数をスライスの長さで代用してるんですよ。ほかの言語の同等の関数だと、だいたい別途用意されてますからね。",
+        "user": "U06BRP8VD",
+        "ts": "1584855165.078800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "d+Dg2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "io.Reader.Readに限って言えば、「最大何バイト読み込むか」っていう引数をスライスの長さで代用してるんですよ。ほかの言語の同等の関数だと、だいたい別途用意されてますからね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "c58e3437-c8da-48d3-8de6-b501288f95da",
+        "type": "message",
+        "text": "C言語の fread <http:\/\/www9.plala.or.jp\/sgwr-t\/lib\/fread.html>\n\nJavaのreadの引数が多いほう <https:\/\/docs.oracle.com\/javase\/jp\/8\/docs\/api\/java\/io\/InputStream.html#read-byte:A-int-int->\n\nJavaに関してはgoみたいに配列の長さで指定するのもあるけど、スライスに対応する概念がないから別に用意されてる感じですね。",
+        "user": "U06BRP8VD",
+        "ts": "1584855280.079000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "k4V",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "C言語の fread "
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/www9.plala.or.jp\/sgwr-t\/lib\/fread.html"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nJavaのreadの引数が多いほう "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/docs.oracle.com\/javase\/jp\/8\/docs\/api\/java\/io\/InputStream.html#read-byte:A-int-int-"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n\nJavaに関してはgoみたいに配列の長さで指定するのもあるけど、スライスに対応する概念がないから別に用意されてる感じですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584847962.072600",
+        "parent_user_id": "UDDCM376D"
+    }
+]

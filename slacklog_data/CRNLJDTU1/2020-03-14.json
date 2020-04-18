@@ -1,0 +1,72 @@
+[
+    {
+        "client_msg_id": "c888fddc-d440-48f4-a4b2-857645cd1405",
+        "type": "message",
+        "text": "<@U06BRP8VD> <https:\/\/github.com\/vim-jp\/redirects\/pull\/19>",
+        "user": "U03C71D7H",
+        "ts": "1584197184.001100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MbXj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U06BRP8VD"
+                            },
+                            {
+                                "type": "text",
+                                "text": " "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/vim-jp\/redirects\/pull\/19"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U06BRP8VD"
+                ],
+                "count": 1
+            },
+            {
+                "name": "cat-salute",
+                "users": [
+                    "U06BRP8VD"
+                ],
+                "count": 1
+            },
+            {
+                "name": "merged",
+                "users": [
+                    "U06BRP8VD",
+                    "UEBF2KQTD"
+                ],
+                "count": 2
+            }
+        ]
+    }
+]

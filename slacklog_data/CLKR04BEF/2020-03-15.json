@@ -1,0 +1,858 @@
+[
+    {
+        "client_msg_id": "8409f6fc-d8ae-447e-bee4-7c10d81c8fac",
+        "type": "message",
+        "text": ":muscle:",
+        "user": "U9GUS1S0G",
+        "ts": "1584257457.371500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "2102b9fe65a8",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-17\/331536821795_2102b9fe65a8287cf20b_72.jpg",
+            "first_name": "Masaaki",
+            "real_name": "Masaaki Nakamura",
+            "display_name": "machakann",
+            "team": "T03C4RC8V",
+            "name": "mckn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "f8vl+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "muscle"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "kan",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            },
+            {
+                "name": "sha",
+                "users": [
+                    "U0M7GCBPD"
+                ],
+                "count": 1
+            },
+            {
+                "name": "pray::skin-tone-5",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            },
+            {
+                "name": "+1",
+                "users": [
+                    "U76GA7MFA"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "57dec41a-b713-47a5-ab55-680996037c4a",
+        "type": "message",
+        "text": "redditに貼ってあったけどいいな、これ <https:\/\/github.com\/wimstefan\/vim-artesanal\/>",
+        "user": "U9S4G0LJW",
+        "ts": "1584321099.372300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "wimstefan\/vim-artesanal",
+                "title_link": "https:\/\/github.com\/wimstefan\/vim-artesanal\/",
+                "text": "A Vim colorscheme with light and dark variants originally based on Material Design (now strongly modified to my likings). - wimstefan\/vim-artesanal",
+                "fallback": "GitHub: wimstefan\/vim-artesanal",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/4605934?s=400&v=4",
+                "from_url": "https:\/\/github.com\/wimstefan\/vim-artesanal\/",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/wimstefan\/vim-artesanal\/"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ErTs1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "redditに貼ってあったけどいいな、これ "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/wimstefan\/vim-artesanal\/"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "UFP0GQZ4K"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bd89d87e-ec60-445b-9916-0e01b653297f",
+        "type": "message",
+        "text": "お、fzf-previewが紹介されてる\n<https:\/\/www.reddit.com\/r\/vim\/comments\/figgt9\/vscodelike_preview_buffers_in_vim\/>",
+        "user": "U72TB62UF",
+        "ts": "1584321369.372700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "reddit",
+                "title": "VSCode-like \"preview\" buffers in Vim?",
+                "title_link": "https:\/\/www.reddit.com\/r\/vim\/comments\/figgt9\/vscodelike_preview_buffers_in_vim\/",
+                "text": "Hi everyone, A feature I miss in Vim from VSCode are preview <http:\/\/buffers.In|buffers.In> VSCode, when you open a buffer, it opens in a \"preview mode\" by default,...",
+                "fallback": "reddit: VSCode-like \"preview\" buffers in Vim?",
+                "thumb_url": "https:\/\/www.redditstatic.com\/new-icon.png",
+                "from_url": "https:\/\/www.reddit.com\/r\/vim\/comments\/figgt9\/vscodelike_preview_buffers_in_vim\/",
+                "thumb_width": 256,
+                "thumb_height": 256,
+                "service_icon": "http:\/\/www.redditstatic.com\/desktop2x\/img\/favicon\/apple-icon-57x57.png",
+                "id": 1,
+                "original_url": "https:\/\/www.reddit.com\/r\/vim\/comments\/figgt9\/vscodelike_preview_buffers_in_vim\/"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "h9r",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "お、fzf-previewが紹介されてる\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/www.reddit.com\/r\/vim\/comments\/figgt9\/vscodelike_preview_buffers_in_vim\/"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "goodpoem",
+                "users": [
+                    "U9S4G0LJW",
+                    "U78A6ESHM",
+                    "UNJ2DANJC"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4183446a-986f-4147-ad48-f034e88b2210",
+        "type": "message",
+        "text": "fzf-previewのProjectGrepの引数なし無くなってるのか...\n代替手段あったら教えてほしいです\n<https:\/\/github.com\/yuki-ycino\/fzf-preview.vim\/commit\/8093128dce5a24eab6c221c1bcbfc3b8fa575e32#diff-1e41d5f79df677cef673d5be29f3e843|https:\/\/github.com\/yuki-ycino\/fzf-preview.vim\/commit\/8093128dce5a24eab6c221c1bcbfc3b8fa575e32#diff-1e41d5f79df677cef673d5be29f3e843>",
+        "user": "UNJ2DANJC",
+        "ts": "1584324862.374600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Change argument of FzfPreviewProjectGrep to required · yuki-ycino\/fzf-preview.vim@8093128",
+                "title_link": "https:\/\/github.com\/yuki-ycino\/fzf-preview.vim\/commit\/8093128dce5a24eab6c221c1bcbfc3b8fa575e32#diff-1e41d5f79df677cef673d5be29f3e843",
+                "text": "Dark powered fzf plugin. Contribute to yuki-ycino\/fzf-preview.vim development by creating an account on GitHub.",
+                "fallback": "GitHub: Change argument of FzfPreviewProjectGrep to required · yuki-ycino\/fzf-preview.vim@8093128",
+                "from_url": "https:\/\/github.com\/yuki-ycino\/fzf-preview.vim\/commit\/8093128dce5a24eab6c221c1bcbfc3b8fa575e32#diff-1e41d5f79df677cef673d5be29f3e843",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/5423775?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/yuki-ycino\/fzf-preview.vim\/commit\/8093128dce5a24eab6c221c1bcbfc3b8fa575e32#diff-1e41d5f79df677cef673d5be29f3e843"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "K8h+\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fzf-previewのProjectGrepの引数なし無くなってるのか...\n代替手段あったら教えてほしいです\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yuki-ycino\/fzf-preview.vim\/commit\/8093128dce5a24eab6c221c1bcbfc3b8fa575e32#diff-1e41d5f79df677cef673d5be29f3e843",
+                                "text": "https:\/\/github.com\/yuki-ycino\/fzf-preview.vim\/commit\/8093128dce5a24eab6c221c1bcbfc3b8fa575e32#diff-1e41d5f79df677cef673d5be29f3e843"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a7e4b047-4fbc-4d3c-abf1-a92593f73fce",
+        "type": "message",
+        "text": "`FzfPreviewProjectGrep .` ですね",
+        "user": "U7B4ZD49X",
+        "ts": "1584328485.375100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U7B4ZD49X",
+            "ts": "1584328494.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "XhDB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "FzfPreviewProjectGrep .",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " ですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "ari",
+                "users": [
+                    "UNJ2DANJC"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c955b7f5-095b-43c4-bbce-40c08c198134",
+        "type": "message",
+        "text": "sonictemplateについてのqiitaの記事（<https:\/\/qiita.com\/gorilla0513\/items\/d1b826137aa35890f4df>）ですが、\n\n&gt; $ vim ~\/.vim\/sonictemplate\/go.stpl\n&gt; は\n&gt; $ vim ~\/.vim\/sonictemplate\/go\/go.stpl \nであってますでしょうか。",
+        "user": "U72TB62UF",
+        "ts": "1584329400.376000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Qiita",
+                "title": "vimで高速コーディングする方法 - Qiita",
+                "title_link": "https:\/\/qiita.com\/gorilla0513\/items\/d1b826137aa35890f4df",
+                "text": "こんにちわ、ゴリラです。 Vimといえば高速でコーディングできるという印象を持っている方が多いのではないでしょうか？ 今日は、Postfix Code Completion という手法をつかって早くコーディングする方法紹介します。 ...",
+                "fallback": "Qiita: vimで高速コーディングする方法 - Qiita",
+                "image_url": "https:\/\/qiita-user-contents.imgix.net\/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Fogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&w=1200&mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3Dvim%25E3%2581%25A7%25E9%25AB%2598%25E9%2580%259F%25E3%2582%25B3%25E3%2583%25BC%25E3%2583%2587%25E3%2582%25A3%25E3%2583%25B3%25E3%2582%25B0%25E3%2581%2599%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dab0ddadb759c868f9d95fafb6bc99f06&mark-align=center%2Cmiddle&blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540gorilla0513%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D67d6049c44cf4dabc404d80fc73db2e7&blend-align=center%2Cmiddle&blend-mode=normal&s=237316ee1fa7845f91ff6bd143b0cdf5",
+                "from_url": "https:\/\/qiita.com\/gorilla0513\/items\/d1b826137aa35890f4df",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 38306,
+                "service_icon": "https:\/\/cdn.qiita.com\/assets\/favicons\/public\/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+                "id": 1,
+                "original_url": "https:\/\/qiita.com\/gorilla0513\/items\/d1b826137aa35890f4df"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0mD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "sonictemplateについてのqiitaの記事（"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/qiita.com\/gorilla0513\/items\/d1b826137aa35890f4df"
+                            },
+                            {
+                                "type": "text",
+                                "text": "）ですが、\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "$ vim ~\/.vim\/sonictemplate\/go.stpl\nは\n$ vim ~\/.vim\/sonictemplate\/go\/go.stpl "
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "であってますでしょうか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583542793.230300",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "abf1de38-c5ce-4c2a-93f5-ec402b04ed28",
+        "type": "message",
+        "text": "はい\nあっています",
+        "user": "UDDCM376D",
+        "ts": "1584330823.376300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aKjPH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はい\nあっています"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583542793.230300",
+        "parent_user_id": "UDDCM376D"
+    },
+    {
+        "client_msg_id": "da29a821-385b-4b4f-ad0b-3e0ac35678d0",
+        "type": "message",
+        "text": "間違っていますね\n直しました",
+        "user": "UDDCM376D",
+        "ts": "1584330858.376500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UDDCM376D",
+            "ts": "1584330860.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rrC\/N",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "間違っていますね\n直しました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1583542793.230300",
+        "parent_user_id": "UDDCM376D",
+        "reactions": [
+            {
+                "name": "ari",
+                "users": [
+                    "U72TB62UF"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2e892877-fb36-43e5-a84f-e26217d930d7",
+        "type": "message",
+        "text": "sonictemplate.vimで、phpだけpostfix completionが効かないのはなんでだ…golangだと問題ないのに…",
+        "user": "U72TB62UF",
+        "ts": "1584331527.377400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "54Q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "sonictemplate.vimで、phpだけpostfix completionが効かないのはなんでだ…golangだと問題ないのに…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e84bf239-0dac-4a64-b5da-b1361c5b956d",
+        "type": "message",
+        "text": "最小環境でも再現するなぁ",
+        "user": "U72TB62UF",
+        "ts": "1584331544.377800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1VBoW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最小環境でも再現するなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0ace4a82-7e63-4cb8-92b2-f39da1c47938",
+        "type": "message",
+        "text": "php環境でpostfix completion使っている人おりますでしょうか",
+        "user": "U72TB62UF",
+        "ts": "1584331884.378400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rD9+o",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "php環境でpostfix completion使っている人おりますでしょうか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "78356c87-24ca-4321-93da-1af22a20847b",
+        "type": "message",
+        "text": "golangでもcoc.nvim使っている場合はpostfix completionが効かなくなる。なんじゃこれ。",
+        "user": "U72TB62UF",
+        "ts": "1584332071.378900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4HSmu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "golangでもcoc.nvim使っている場合はpostfix completionが効かなくなる。なんじゃこれ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "66857310-51d8-4e3f-87e6-dbf54800e21d",
+        "type": "message",
+        "text": "なんかキーが干渉してるんですかね?",
+        "user": "UAZ33BKV2",
+        "ts": "1584335694.379200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AmA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんかキーが干渉してるんですかね?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "65ae0297-c571-4edc-850c-e876fa438670",
+        "type": "message",
+        "text": "入力した内容が置き換わらずに消えるだけになっています",
+        "user": "U72TB62UF",
+        "ts": "1584337856.380200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U72TB62UF",
+            "ts": "1584337873.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OeDj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "入力した内容が置き換わらずに消えるだけになっています"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4220a3d8-43af-4a68-b22b-28401ccdf6d2",
+        "type": "message",
+        "text": "もう少し試して、確定したらissue出してみます",
+        "user": "U72TB62UF",
+        "ts": "1584337893.380700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pFl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もう少し試して、確定したらissue出してみます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d0b4c862-218c-47c5-819e-e788d44a762d",
+        "type": "message",
+        "text": "&gt;  L390: noautocmd silent! exe \"normal! a\\&lt;c-r&gt;=c\\&lt;cr&gt;\"\nが、golangだと正常に動いて、PHPのときは動作しない。なんだこれ。",
+        "user": "U72TB62UF",
+        "ts": "1584340684.381700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U72TB62UF",
+            "ts": "1584340695.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e3wG",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": " L390: noautocmd silent! exe \"normal! a\\<c-r>=c\\<cr>\""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "が、golangだと正常に動いて、PHPのときは動作しない。なんだこれ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f04be8c8-989a-4741-824a-91934c0cef57",
+        "type": "message",
+        "text": "ノーマルモードで文字列を入力しようとしているから、おかしなことになる？",
+        "user": "U72TB62UF",
+        "ts": "1584340766.382200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vEg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ノーマルモードで文字列を入力しようとしているから、おかしなことになる？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,113 @@
+[
+    {
+        "client_msg_id": "542ba132-8564-48db-a0da-fbe36e8fe630",
+        "type": "message",
+        "text": "<https:\/\/wiki.debian.org\/JapaneseEnvironment\/IbusSupportforBuster>\n&gt; システム全体でIMを切り替える方式。アプリケーション毎に切り替えることができない。この仕様を快く思わないユーザーが一定数いる。\n私はこの一定数の中に入っててibusがこの方針になってからuimにもどってます。fcitxを試さなかった理由は覚えてない。",
+        "user": "UQX22KG9F",
+        "ts": "1584166485.394400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g118f1b03058",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/118f1b03058d7f96af658ebc4d75ec4f.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "",
+            "real_name": "shitamo",
+            "display_name": "shitamo",
+            "team": "T03C4RC8V",
+            "name": "sitamo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TJNmk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/wiki.debian.org\/JapaneseEnvironment\/IbusSupportforBuster"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "システム全体でIMを切り替える方式。アプリケーション毎に切り替えることができない。この仕様を快く思わないユーザーが一定数いる。"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n私はこの一定数の中に入っててibusがこの方針になってからuimにもどってます。fcitxを試さなかった理由は覚えてない。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584056701.389600",
+        "parent_user_id": "U9S4G0LJW",
+        "reactions": [
+            {
+                "name": "me-too",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c33f5103-4a45-47d7-a5b7-aba7a09f111d",
+        "type": "message",
+        "text": "これもありますね、融通効かなさすぎって思った記憶がある。\nちなみに私もuim使ってます、SKKがそのまま動いて楽なので。",
+        "user": "U9S4G0LJW",
+        "ts": "1584166635.394700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Al5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これもありますね、融通効かなさすぎって思った記憶がある。\nちなみに私もuim使ってます、SKKがそのまま動いて楽なので。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584056701.389600",
+        "parent_user_id": "U9S4G0LJW"
+    }
+]

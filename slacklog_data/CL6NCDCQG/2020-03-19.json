@@ -1,0 +1,111 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584637251.030600",
+        "user": "UECSGLW00",
+        "text": "<@UECSGLW00> has joined the channel"
+    },
+    {
+        "client_msg_id": "747f5847-8915-427b-bd51-1de66a27a8ee",
+        "type": "message",
+        "text": "i3からswayへ移行中・・・\nなんかいろいろ普通に動いてビビるw i3blocksとかまんま表示されるし",
+        "user": "U7B4ZD49X",
+        "ts": "1584685238.032500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9BY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "i3からswayへ移行中・・・\nなんかいろいろ普通に動いてビビるw i3blocksとかまんま表示されるし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584685238.032500",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584887615.040800",
+        "reply_users": [
+            "U7B4ZD49X"
+        ],
+        "replies": [
+            {
+                "user": "U7B4ZD49X",
+                "ts": "1584887615.040800"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "92953521-b2c4-48e0-a246-525cda0a6354",
+        "type": "message",
+        "text": "この部屋いると native な linux ちょっと欲しくなるので不思議。",
+        "user": "U03C6TEAZ",
+        "ts": "1584685860.032900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2ye1l",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "この部屋いると native な linux ちょっと欲しくなるので不思議。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "+1",
+                "users": [
+                    "U7B4ZD49X",
+                    "U06BRP8VD",
+                    "UD1FQV38V",
+                    "U8CC7MDCL"
+                ],
+                "count": 4
+            }
+        ]
+    }
+]

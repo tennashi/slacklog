@@ -1,0 +1,1105 @@
+[
+    {
+        "client_msg_id": "36ebc533-1841-418e-8c46-b46796d2ef1d",
+        "type": "message",
+        "text": "CursorMovedP 相当がないのでだめぽいです…研究は続く",
+        "user": "U8R597E9H",
+        "ts": "1584775758.073600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wMWIN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "CursorMovedP 相当がないのでだめぽいです…研究は続く"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584772192.073200",
+        "parent_user_id": "U8R597E9H"
+    },
+    {
+        "client_msg_id": "2eec6ba1-d5d4-4f0b-9935-8712704507a4",
+        "type": "message",
+        "text": "Vimのネイティブなフィルタリングは無効にすることができます",
+        "user": "U7JL1UKKL",
+        "ts": "1584782692.074300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "r4dq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vimのネイティブなフィルタリングは無効にすることができます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584782692.074300",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584788171.089500",
+        "reply_users": [
+            "U8R597E9H"
+        ],
+        "replies": [
+            {
+                "user": "U8R597E9H",
+                "ts": "1584788171.089500"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "2ffb4f6f-b176-40dc-a079-3bec649ecce4",
+        "type": "message",
+        "text": ":help complete-items",
+        "user": "U7JL1UKKL",
+        "ts": "1584782768.074800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Y8E5+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":help complete-items"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "bot_id": "BPM858KEE",
+        "type": "message",
+        "text": "```\n                                                *complete-items*\nリストの各要素は文字列か辞書のどちらかであること。文字列の場合はそれが候補とな\nる。辞書の場合は以下の要素を含んでいること:\n        word            挿入されるテキスト。必須\n        abbr            \"word\" の略。これが空でなければ、メニューで \"word\" の\n                        代わりに表示される。\n        menu            ポップアップメニューにおける追加情報。\"word\" または\n                        \"abbr\" の後に表示される。\n        info            この要素についての追加情報。プレビューまたはポップアッ\n                        プウィンドウに表示することができる。\n        kind            候補の種類を表す1文字\n        icase           0 でないならば、候補同士を比較するとき大文字小文字は無\n                        視される。省略された場合は 0 となり、大文字小文字の違\n                        いしかない候補も追加される。\n        equal           ゼロ以外の場合、比較時にこの項目が常に等しいと見なされ\n                        る。つまり、\"equal=1\" はこのアイテムのフィルタリングを\n                        無効にする。\n        dup             0 でないならば、すでに同じ候補があってもこの候補を追加\n                        する。\n        empty           0 でないならば、空文字であってもこの候補を追加する。\n        user_data       この要素に関連付けられた |v:completed_item| で使用可能\n                        なカスタムデータ。任意の型が使用できる。既定は空文字\n                        列。\n \nこれらのうち \"icase\", \"equal\", \"dup\" および \"empty\" 以外は文字列でなければなら\nない。これらの要件が満たされない場合はエラーメッセージが表示され、リスト中のそ\nれ以降の要素は無視される。リストの中で文字列と辞書が混在していてもよい。\n \n\"menu\" はポップアップメニューに表示される。長すぎる場合は切り詰められるので、\n短くするとよい。\"info\" は 'completeopt' に \"preview\" が含まれている場合にプレ\nビューウィンドウに表示され、'completeopt' に \"popup\" が含まれている場合にポッ\nプアップウィンドウに表示されるので、これはもっと長くてもよい。プレビューウィン\nドウでは \"info\" はまた、ポップアップメニューが消えた後にもそのまま表示される。\nこれは関数の引数を表示する場合などに便利である。\"info\" にスペース1個を指定する\nと、プレビューウィンドウに表示されているテキストが消去される。プレビューウィン\nドウの大きさは 3 行だが、'previewheight' が 1 か 2 のときはその高さで表示され\nる。\n```",
+        "user": "UPZHKAM7W",
+        "ts": "1584782769.074900",
+        "team": "T03C4RC8V",
+        "bot_profile": {
+            "id": "BPM858KEE",
+            "deleted": false,
+            "name": "hubot",
+            "updated": 1572500054,
+            "app_id": "A0F7XDU93",
+            "icons": {
+                "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/hubot_36.png",
+                "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/hubot_48.png",
+                "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/hubot_72.png"
+            },
+            "team_id": "T03C4RC8V"
+        }
+    },
+    {
+        "client_msg_id": "9dc9b993-f1ce-4f03-8ecb-13de04af8bff",
+        "type": "message",
+        "text": "補完系の機能ってLSPを経由させるのか、そうではなく直接completion engineのsourceにするのか塩梅が難しそう",
+        "user": "UNJ2DANJC",
+        "ts": "1584783067.079000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=xN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "補完系の機能ってLSPを経由させるのか、そうではなく直接completion engineのsourceにするのか塩梅が難しそう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f2c4e06c-316e-4ca1-8a52-5894a7ea2652",
+        "type": "message",
+        "text": "LSPだけだと補完source足りないから結局補完エンジンは必要になると思う",
+        "user": "U7JL1UKKL",
+        "ts": "1584783226.079900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1Ib",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "LSPだけだと補完source足りないから結局補完エンジンは必要になると思う"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "be9ddb41-e4b4-4138-bde3-1aba336fb0f5",
+        "type": "message",
+        "text": "LSPはオムニ補完の代替でしかない",
+        "user": "U7JL1UKKL",
+        "ts": "1584783244.080400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZPB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "LSPはオムニ補完の代替でしかない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a8ec5286-54d4-4953-a41e-8d630bdcd654",
+        "type": "message",
+        "text": "vim上のあれこれをlspに伝えて、受けたデータを成形しないとですしねー。",
+        "user": "UAZ33BKV2",
+        "ts": "1584783444.083200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MHD0Q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim上のあれこれをlspに伝えて、受けたデータを成形しないとですしねー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5e508b98-8c50-4ee6-910d-29cbc26af6bf",
+        "type": "message",
+        "text": "<https:\/\/github.com\/tennashi\/gitsign.vim>\nvim-gitgutter ~のパクり~ を参考に自分で書いてみました\n\/\/ とくに gitgutter に比べてメリットがある訳ではないです、今のところ\n\/\/ diff 表示のロジックは ~gitgutter のやつよくわからなかったので~ VS Code を参考にシンプルにしてます",
+        "user": "UG6DF6W87",
+        "ts": "1584783698.085100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "2437d40cd696",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-02-22\/558858702327_2437d40cd696c208a5ab_72.png",
+            "first_name": "tennashi",
+            "real_name": "tennashi",
+            "display_name": "tennashi",
+            "team": "T03C4RC8V",
+            "name": "yuya.gt",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "tennashi\/gitsign.vim",
+                "title_link": "https:\/\/github.com\/tennashi\/gitsign.vim",
+                "text": "Contribute to tennashi\/gitsign.vim development by creating an account on GitHub.",
+                "fallback": "GitHub: tennashi\/gitsign.vim",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/10219626?s=400&v=4",
+                "from_url": "https:\/\/github.com\/tennashi\/gitsign.vim",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/tennashi\/gitsign.vim"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hwtn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tennashi\/gitsign.vim"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nvim-gitgutter "
+                            },
+                            {
+                                "type": "text",
+                                "text": "のパクり",
+                                "style": {
+                                    "strike": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を参考に自分で書いてみました\n\/\/ とくに gitgutter に比べてメリットがある訳ではないです、今のところ\n\/\/ diff 表示のロジックは "
+                            },
+                            {
+                                "type": "text",
+                                "text": "gitgutter のやつよくわからなかったので",
+                                "style": {
+                                    "strike": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " VS Code を参考にシンプルにしてます"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "071379cd-a2ee-4201-9300-7cd27048739b",
+        "type": "message",
+        "text": "LSPもcompletion engineからみるとsourceの一つでしかないんですよね。\nLSPサーバーはfiletypeごとに一つづつって感じですし、nextwordとかみたいなgenericなものはcompletion engineと直結させた方が良さそうな気がします。",
+        "user": "UNJ2DANJC",
+        "ts": "1584784057.089200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UNJ2DANJC",
+            "ts": "1584784230.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2Lv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "LSPもcompletion engineからみるとsourceの一つでしかないんですよね。\nLSPサーバーはfiletypeごとに一つづつって感じですし、nextwordとかみたいなgenericなものはcompletion engineと直結させた方が良さそうな気がします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cca4297a-33ab-45e6-9450-50b78e0f7c18",
+        "type": "message",
+        "text": "なるほど…！equals 使えばいいんですね。試してみます！",
+        "user": "U8R597E9H",
+        "ts": "1584788171.089500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tBaTI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど…！equals 使えばいいんですね。試してみます！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584782692.074300",
+        "parent_user_id": "U7JL1UKKL"
+    },
+    {
+        "client_msg_id": "4863484c-12e9-45b2-81ac-3ac52b8737b7",
+        "type": "message",
+        "text": "neovim on ArchLinuxでcheckhealthすると、\n```health#denite#check\n========================================================================\n## denite.nvim\n  - OK: has(\"python3\") was successful\n  - OK: Python 3.6.1+ was successful\n  - ERROR: Require msgpack 1.0.0+ was not successful\n    - ADVICE:\n      - Please install\/upgrade msgpack 1.0.0+.```\nて言われるんですけど、pacman -Ssしてもmsgpackそのものって無いんですよね。msgpackってライブラリなんですか?なんにせよ、どれを入れたら良いのでしょうか？",
+        "user": "UEA8SS1RN",
+        "ts": "1584789896.091400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LdeR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "neovim on ArchLinuxでcheckhealthすると、\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "health#denite#check\n========================================================================\n## denite.nvim\n  - OK: has(\"python3\") was successful\n  - OK: Python 3.6.1+ was successful\n  - ERROR: Require msgpack 1.0.0+ was not successful\n    - ADVICE:\n      - Please install\/upgrade msgpack 1.0.0+."
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nて言われるんですけど、pacman -Ssしてもmsgpackそのものって無いんですよね。msgpackってライブラリなんですか?なんにせよ、どれを入れたら良いのでしょうか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b06ef99e-8f96-400a-a131-414cb38e7e99",
+        "type": "message",
+        "text": "Pacman経由で入れたなら何もする必要ないかと、エラーが出る原因はわからないけど依存で入ってるので(パッケージ名はmsgpack-cです)",
+        "user": "U9S4G0LJW",
+        "ts": "1584789979.092200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YGY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Pacman経由で入れたなら何もする必要ないかと、エラーが出る原因はわからないけど依存で入ってるので(パッケージ名はmsgpack-cです)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "640076cb-dfd5-477d-b58b-c72f8412d3c3",
+        "type": "message",
+        "text": "あれ、 `pip3 install msgpack` って話ではなく入っている？",
+        "user": "U8996GYBF",
+        "ts": "1584790023.092700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oqC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれ、 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "pip3 install msgpack",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " って話ではなく入っている？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3f41bacd-a21e-43c7-ba28-5267e9b19d4c",
+        "type": "message",
+        "text": "まとめて入ったならmsgpackが古い可能性がありそう、自分も同じエラー出たんでこの前\n`pip3 install --upgrade msgpack` しました",
+        "user": "U8996GYBF",
+        "ts": "1584790048.093700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bFp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まとめて入ったならmsgpackが古い可能性がありそう、自分も同じエラー出たんでこの前\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "pip3 install --upgrade msgpack",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " しました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9b45ec92-aa3d-46e8-92f5-dab8b64fae65",
+        "type": "message",
+        "text": "逆にneovimパッケージ側に同梱されてて古いんなら面倒そうな・・・",
+        "user": "U8996GYBF",
+        "ts": "1584790070.094100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "EDpvD",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "逆にneovimパッケージ側に同梱されてて古いんなら面倒そうな・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7759fda4-b5f5-4ea0-9567-7cdf65eb1e98",
+        "type": "message",
+        "text": "ちゃんと読めてなかったけど `msgpack-c` っていうやつがあるんですね、それがdeniteで必要なmsgpackに対応していない？",
+        "user": "U8996GYBF",
+        "ts": "1584790128.094800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "u9Hy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ちゃんと読めてなかったけど "
+                            },
+                            {
+                                "type": "text",
+                                "text": "msgpack-c",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " っていうやつがあるんですね、それがdeniteで必要なmsgpackに対応していない？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "42fcf0de-4306-405b-aeea-98bc682d5b59",
+        "type": "message",
+        "text": "完全に勘違いしてました、pipでインストールしたら解決するなこれ",
+        "user": "U9S4G0LJW",
+        "ts": "1584790136.095000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "036",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "完全に勘違いしてました、pipでインストールしたら解決するなこれ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "754c76ec-1b37-4677-acfd-b2cfd2f0205c",
+        "type": "message",
+        "text": "pacmanのpython-msgpackが古い",
+        "user": "U9S4G0LJW",
+        "ts": "1584790171.095400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2=xs",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "pacmanのpython-msgpackが古い"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c64194a8-7075-4016-a1be-20b32ca60488",
+        "type": "message",
+        "text": "そっち削除してpipで最新入れる感じですかね？\nなんかそっちからもpythonのライブラリ提供してると絡み合って事故りそうで怖い",
+        "user": "U8996GYBF",
+        "ts": "1584790225.096400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HOm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そっち削除してpipで最新入れる感じですかね？\nなんかそっちからもpythonのライブラリ提供してると絡み合って事故りそうで怖い"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8d96429b-946b-4751-8adf-71468b3bca1a",
+        "type": "message",
+        "text": "これ入れておくとよさそう <https:\/\/www.archlinux.org\/packages\/community-testing\/x86_64\/python-msgpack\/>",
+        "user": "U9S4G0LJW",
+        "ts": "1584790318.096700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fNL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ入れておくとよさそう "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/www.archlinux.org\/packages\/community-testing\/x86_64\/python-msgpack\/"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "46e17845-f37e-422f-85fc-3c148a2ef425",
+        "type": "message",
+        "text": "話飛ぶんですけど、checkhealthでPython 2 providerのチェックが出ると思うんですけど、これもう捨てちゃっても基本的には大丈夫そうなんですかね\nMacはhomebrewからpython@2消えちゃったし",
+        "user": "U8996GYBF",
+        "ts": "1584790514.098600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U8996GYBF",
+            "ts": "1584790548.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ryC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "話飛ぶんですけど、checkhealthでPython 2 providerのチェックが出ると思うんですけど、これもう捨てちゃっても基本的には大丈夫そうなんですかね\nMacはhomebrewからpython@2消えちゃったし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ce24148a-8a7f-43cc-9d60-2eeaa60f5a0a",
+        "type": "message",
+        "text": "Python2に依存するプラグインを入れていない限り入れなくても問題ないと思います",
+        "user": "U9S4G0LJW",
+        "ts": "1584790577.099100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nCPx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Python2に依存するプラグインを入れていない限り入れなくても問題ないと思います"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cb8bc96e-9611-40c2-a2c2-ac8022613f92",
+        "type": "message",
+        "text": "有名どころって多分もう3ですよねぇ\n捨てちゃおうかな",
+        "user": "U8996GYBF",
+        "ts": "1584790596.099500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "20=d0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "有名どころって多分もう3ですよねぇ\n捨てちゃおうかな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "57feb4d7-4f0f-447b-8999-88eec9a243ef",
+        "type": "message",
+        "text": "はい。Archのmsgpackが古いんです",
+        "user": "U7JL1UKKL",
+        "ts": "1584790684.099900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "V\/6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はい。Archのmsgpackが古いんです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e16a4a22-8d25-4f46-8518-3e4b8f62a74f",
+        "type": "message",
+        "text": "pip install --upgrade msgpack で解決しました。ありがとう御座います。",
+        "user": "UEA8SS1RN",
+        "ts": "1584791249.100400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "V7f",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "pip install --upgrade msgpack で解決しました。ありがとう御座います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

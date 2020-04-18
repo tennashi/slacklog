@@ -1,0 +1,3332 @@
+[
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "そうすると master から develop へのマージが必要になるんですよね…正しい気もする(?)けどめんどい…",
+        "user": "U03C71D7H",
+        "ts": "1585119644.012900",
+        "thread_ts": "1585119069.010600",
+        "root": {
+            "client_msg_id": "5b610257-e140-4418-9ff4-be06beba056e",
+            "type": "message",
+            "text": "develop を master にマージしてから、バージョンを上げるコミットを作るとか？",
+            "user": "U6XP9LZ6V",
+            "ts": "1585119069.010600",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "3LR",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "develop を master にマージしてから、バージョンを上げるコミットを作るとか？"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1585119069.010600",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1585119644.012900",
+            "reply_users": [
+                "U03C71D7H"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Q1FS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そうすると master から develop へのマージが必要になるんですよね…正しい気もする(?)けどめんどい…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "fcc2adb3-e453-40b4-861c-6d42c9d6a401",
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c7815676-90cc-4448-86e2-4a5f8668af8a",
+        "type": "message",
+        "text": "非互換な変更を入れる場合は、master に直接つっこむのは怖いので、devel で様子を見てから入れることにしてる。というか minpac が今そういう状態。（で、devel を試したという報告もないし、すっかり忘れて放置中。）",
+        "user": "U6XP9LZ6V",
+        "ts": "1585120149.014900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Xytf=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "非互換な変更を入れる場合は、master に直接つっこむのは怖いので、devel で様子を見てから入れることにしてる。というか minpac が今そういう状態。（で、devel を試したという報告もないし、すっかり忘れて放置中。）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U03C71D7H"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "319d724d-fd18-402c-9f28-7e290437ab2e",
+        "type": "message",
+        "text": "feature ブランチ的な感じで、都度作られる感じでしょうか？",
+        "user": "U78A6ESHM",
+        "ts": "1585120195.015900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gBc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "feature ブランチ的な感じで、都度作られる感じでしょうか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cbb4c20c-4383-4879-9328-d30e03f044f9",
+        "type": "message",
+        "text": "そういう感じですかね。非互換な修正を入れない場合は、devel は残してあるけど更新もしない感じで。",
+        "user": "U6XP9LZ6V",
+        "ts": "1585120344.017200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "t96E",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そういう感じですかね。非互換な修正を入れない場合は、devel は残してあるけど更新もしない感じで。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "87441575-13be-4220-a264-db57585752b9",
+        "type": "message",
+        "text": "常に devel を使っていれば最新版が試せるという運用じゃないのは微妙ですが。",
+        "user": "U6XP9LZ6V",
+        "ts": "1585120394.018000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "khk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "常に devel を使っていれば最新版が試せるという運用じゃないのは微妙ですが。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9c126acd-cd73-43f4-82d8-5ec66dfec869",
+        "type": "message",
+        "text": "develop\/master で運用してると稀に master に pull-req 貰って戸惑ってしまう。",
+        "user": "U03C6TEAZ",
+        "ts": "1585120590.018500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hoju",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "develop\/master で運用してると稀に master に pull-req 貰って戸惑ってしまう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e59e2544-52b3-478b-ab78-a672ff0ede11",
+        "type": "message",
+        "text": "developは自リポジトリ内でのテストベッドで、PRはmasterにマージ、くらいの運用(vim pluginだから...でもないか他もそんなもんだ)",
+        "user": "UAZ33BKV2",
+        "ts": "1585120836.019500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6HX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "developは自リポジトリ内でのテストベッドで、PRはmasterにマージ、くらいの運用(vim pluginだから...でもないか他もそんなもんだ)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bf463496-c4a4-4a31-81ac-7b24f2b40cb8",
+        "type": "message",
+        "text": "cocoponさんのスター経由でdashboardにきたので知ったんだけど...\n<https:\/\/github.com\/AlessandroYorba\/Sierra>\nこの方のcolorscheme、オプションに微妙な厨二っぽさが...\n<https:\/\/github.com\/AlessandroYorba\/Alduin>\nとか特にw",
+        "user": "UAZ33BKV2",
+        "ts": "1585121091.020800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1585121100.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=V5+8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cocoponさんのスター経由でdashboardにきたので知ったんだけど...\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/AlessandroYorba\/Sierra"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nこの方のcolorscheme、オプションに微妙な厨二っぽさが...\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/AlessandroYorba\/Alduin"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nとか特にw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5b8a2458-8fa3-40fe-998d-ab11ce81f10a",
+        "type": "message",
+        "text": "(  ；´。 ｀；)←令和２年になってemmet-vimの便利さに衝撃を受けた顔文字",
+        "user": "U72TB62UF",
+        "ts": "1585138529.022200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0kF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(  ；´。 ｀；)←令和２年になってemmet-vimの便利さに衝撃を受けた顔文字"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "64e83027-035d-4082-b798-5e4486fd2987",
+        "type": "message",
+        "text": "マクロ展開系プラグインは本当に便利",
+        "user": "U9S4G0LJW",
+        "ts": "1585138682.022800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ly7lo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "マクロ展開系プラグインは本当に便利"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "BEAD94C3-EC60-493E-9F7F-579EA9F9E14A",
+        "type": "message",
+        "text": "emmet-vimはまじで便利",
+        "user": "UDDCM376D",
+        "ts": "1585139965.023300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gb69",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "emmet-vimはまじで便利"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "85b09208-c69d-4b71-8470-e68918b2513a",
+        "type": "message",
+        "text": "emmet 使えるようになりたい。数年ごとにやる気出すけど学習曲線に阻まれる（手打ちの方が早くて、そっちに逃げちゃう",
+        "user": "U776661HA",
+        "ts": "1585141360.024000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "EVzAu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "emmet 使えるようになりたい。数年ごとにやる気出すけど学習曲線に阻まれる（手打ちの方が早くて、そっちに逃げちゃう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0b691cb9-e6d8-4c1b-83f9-5b0b9a2b9d5c",
+        "type": "message",
+        "text": "私も普段バックエンドなんで一時期使ってても忘れてしまうんですよね。ググって忘れてを何度繰り返したか・・・",
+        "user": "U7B4ZD49X",
+        "ts": "1585141507.025200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "v35zy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私も普段バックエンドなんで一時期使ってても忘れてしまうんですよね。ググって忘れてを何度繰り返したか・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d4fbf838-ed84-4ed1-abaa-47d4983d0621",
+        "type": "message",
+        "text": "人間使わない物は覚えないようになっているので使わざるを得ない状況に追い込まない限り身に付かない",
+        "user": "U9S4G0LJW",
+        "ts": "1585141690.025800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LosiU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "人間使わない物は覚えないようになっているので使わざるを得ない状況に追い込まない限り身に付かない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U7B4ZD49X",
+                    "US5UW1UNB",
+                    "UL6CFN8NR"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "398dd687-fd14-4b13-bb1d-8dd486cd01b5",
+        "type": "message",
+        "text": "つまりスパルタンVim",
+        "user": "UAZ33BKV2",
+        "ts": "1585141824.026200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "om0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "つまりスパルタンVim"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0f919ead-e8df-4b03-8da8-458420664d8d",
+        "type": "message",
+        "text": "スパルタンたまにやるとなるほどってなる",
+        "user": "U9S4G0LJW",
+        "ts": "1585141949.026400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xM2H",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "スパルタンたまにやるとなるほどってなる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "111863a9-335e-4852-91c3-f76bca067c60",
+        "type": "message",
+        "text": "surround.vimが一生覚えられない",
+        "user": "US5UW1UNB",
+        "ts": "1585146195.026700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "brI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "surround.vimが一生覚えられない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "13db09cb-c50c-45cb-b306-c6a0ce6e9496",
+        "type": "message",
+        "text": "ALE，unusedとかで色が変わるの，IDEって感じで好きなんです",
+        "user": "US5UW1UNB",
+        "ts": "1585146239.027200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Bk+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ALE，unusedとかで色が変わるの，IDEって感じで好きなんです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "57e8479e-3c00-41ea-91cd-8e52556fd34c",
+        "type": "message",
+        "text": "これいいですよ <https:\/\/github.com\/machakann\/vim-sandwich>",
+        "user": "U9S4G0LJW",
+        "ts": "1585146275.027400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "machakann\/vim-sandwich",
+                "title_link": "https:\/\/github.com\/machakann\/vim-sandwich",
+                "text": "The set of operator and textobject plugins to search\/select\/edit sandwiched textobjects. - machakann\/vim-sandwich",
+                "fallback": "GitHub: machakann\/vim-sandwich",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/480049?s=400&v=4",
+                "from_url": "https:\/\/github.com\/machakann\/vim-sandwich",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/machakann\/vim-sandwich"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "juX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これいいですよ "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/machakann\/vim-sandwich"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "US5UW1UNB",
+                    "UFP0GQZ4K"
+                ],
+                "count": 2
+            },
+            {
+                "name": "sorena",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b43c5c0b-6a7e-4aba-b8e7-9f916ed3004a",
+        "type": "message",
+        "text": "sandwichはなんとかおぼえた(必要なことだけ)",
+        "user": "UAZ33BKV2",
+        "ts": "1585146296.027900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "D7q0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "sandwichはなんとかおぼえた(必要なことだけ)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0492c535-f0aa-42ea-b7f8-3e353e787ff9",
+        "type": "message",
+        "text": "すごい，かなりしあわせ",
+        "user": "US5UW1UNB",
+        "ts": "1585147839.030300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lVb5W",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すごい，かなりしあわせ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6794b54b-6efa-423f-b21e-f8f9c22402e1",
+        "type": "message",
+        "text": "頭悪いのでこれ系まったく覚えられない…。",
+        "user": "U78A6ESHM",
+        "ts": "1585147943.030600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "t+TZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "頭悪いのでこれ系まったく覚えられない…。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "afb487f3-836e-4998-89d1-6243edf04ec4",
+        "type": "message",
+        "text": "emmet も Postfix Completion も同様。",
+        "user": "U78A6ESHM",
+        "ts": "1585148003.031800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8FL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "emmet も Postfix Completion も同様。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1d3445ee-8e44-4e36-a12d-2f8dcbedfd51",
+        "type": "message",
+        "text": "sandwichはすごく覚えやすいとおもった",
+        "user": "US5UW1UNB",
+        "ts": "1585148068.032500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BRM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "sandwichはすごく覚えやすいとおもった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "acf1a9d5-070b-4056-b79d-02617a6391d6",
+        "type": "message",
+        "text": "```[s]urround ([a]dd\/[d]elete\/[r]ename)\n[i]nner [b]races\n[a] [b]raced text```\n革命",
+        "user": "US5UW1UNB",
+        "ts": "1585148087.032900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SL9W",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "[s]urround ([a]dd\/[d]elete\/[r]ename)\n[i]nner [b]races\n[a] [b]raced text"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n革命"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "industrialization",
+                "users": [
+                    "U9S4G0LJW",
+                    "UEBF2KQTD",
+                    "UFP0GQZ4K"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5065be56-ee2f-4e85-a8d0-d230b2ed9c1b",
+        "type": "message",
+        "text": "emmetまだ使いこなせていない...",
+        "user": "US5UW1UNB",
+        "ts": "1585148126.033200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8Lo9l",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "emmetまだ使いこなせていない..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dd26d21d-a47a-45c3-bb83-abd9cbac624c",
+        "type": "message",
+        "text": "なぜ CTRL-Yなんだろう，imapの展開系を CTRL-Y起点にしようとかそういうのですか",
+        "user": "US5UW1UNB",
+        "ts": "1585148191.033900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NEIBU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なぜ CTRL-Yなんだろう，imapの展開系を CTRL-Y起点にしようとかそういうのですか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ee10b462-311e-46f3-91df-bef6a5c48198",
+        "type": "message",
+        "text": "mattnさんいわく、emmetのC-Yはかなり後悔している、だったような",
+        "user": "UAZ33BKV2",
+        "ts": "1585148527.034500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4PyZJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "mattnさんいわく、emmetのC-Yはかなり後悔している、だったような"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "28f40000-399c-4801-b8e9-a00dfaf1c4bc",
+        "type": "message",
+        "text": "え，そうなのか",
+        "user": "US5UW1UNB",
+        "ts": "1585148536.034700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "g1k",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "え，そうなのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "31cc548d-557b-4b75-ad64-8b3ee2c4eef0",
+        "type": "message",
+        "text": "sandwichの覚えやすさ、vimのオペレータやモーションのネーミングが覚えやすいのと同じ感じある",
+        "user": "U9S4G0LJW",
+        "ts": "1585148584.035400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HQi2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "sandwichの覚えやすさ、vimのオペレータやモーションのネーミングが覚えやすいのと同じ感じある"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e3add33e-022e-4b13-b5e7-1ac37196dd7c",
+        "type": "message",
+        "text": "`vib -&gt; sd` とか `viw -&gt; sa\"` とか :benri:",
+        "user": "UAZ33BKV2",
+        "ts": "1585148663.036100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+\/eLu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vib -> sd",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とか "
+                            },
+                            {
+                                "type": "text",
+                                "text": "viw -> sa\"",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とか "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "benri"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dd7b6cea-440b-4ccf-bfe5-a1d922e8352e",
+        "type": "message",
+        "text": "そういえば，徐々に外側を選択していくやつ，なんでしたっけ...",
+        "user": "US5UW1UNB",
+        "ts": "1585148703.036600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Vwk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そういえば，徐々に外側を選択していくやつ，なんでしたっけ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "be8446f1-82ca-4092-8c55-177f7e05f6c8",
+        "type": "message",
+        "text": "あ、そうだいい加減それ入れようと思ったけど、同じく名前忘れて入れられなかったんでしたw",
+        "user": "U78A6ESHM",
+        "ts": "1585148730.037100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7=xZo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、そうだいい加減それ入れようと思ったけど、同じく名前忘れて入れられなかったんでしたw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "fuita",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            },
+            {
+                "name": "warau",
+                "users": [
+                    "US5UW1UNB",
+                    "U9S4G0LJW"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8d9a5f1e-a7ac-4a2f-af32-28de3c89fad1",
+        "type": "message",
+        "text": "expand-regionだったっけ",
+        "user": "UAZ33BKV2",
+        "ts": "1585148755.037900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZPr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "expand-regionだったっけ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "69b22075-0369-498a-89cf-b9c6fc1486ae",
+        "type": "message",
+        "text": "<https:\/\/github.com\/terryma\/vim-expand-region>",
+        "user": "UAZ33BKV2",
+        "ts": "1585148771.038300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "terryma\/vim-expand-region",
+                "title_link": "https:\/\/github.com\/terryma\/vim-expand-region",
+                "text": "Vim plugin that allows you to visually select increasingly larger regions of text using the same key combination. - terryma\/vim-expand-region",
+                "fallback": "GitHub: terryma\/vim-expand-region",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/567259?s=400&v=4",
+                "from_url": "https:\/\/github.com\/terryma\/vim-expand-region",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/terryma\/vim-expand-region"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZZF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/terryma\/vim-expand-region"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "US5UW1UNB",
+                    "UFP0GQZ4K"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f6ff0bb6-f81c-413d-9ed7-215acaab2137",
+        "type": "message",
+        "text": "便利",
+        "user": "U7B4ZD49X",
+        "ts": "1585148786.038700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kNyw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "便利"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6331bd9e-a7d2-4a65-90ea-bafae1a40ed8",
+        "type": "message",
+        "text": "おお、これだ！ありがとうございます！",
+        "user": "U78A6ESHM",
+        "ts": "1585148791.038800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vbAWI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おお、これだ！ありがとうございます！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "702baf47-67a2-4b60-a847-14d2c081e89f",
+        "type": "message",
+        "text": "vim移動はまだまだだけど、textobjとoperatorはわりと使ってる気がする",
+        "user": "UAZ33BKV2",
+        "ts": "1585148825.039800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wjk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim移動はまだまだだけど、textobjとoperatorはわりと使ってる気がする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1741255f-07dc-4e8d-adad-2e3d13868b75",
+        "type": "message",
+        "text": "vim-jp，活発すぎて入れようと思う頃には流れている",
+        "user": "US5UW1UNB",
+        "ts": "1585148839.040200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tgzj7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim-jp，活発すぎて入れようと思う頃には流れている"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9408b86e-a566-482c-acae-291274f1e4fd",
+        "type": "message",
+        "text": "expand-region+vim-asterisk+cgnで幸せになれる",
+        "user": "U7B4ZD49X",
+        "ts": "1585148847.040400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2DY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "expand-region+vim-asterisk+cgnで幸せになれる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "16375f25-7060-4d88-b8e4-e0f9edaf1949",
+        "type": "message",
+        "text": "気になるものはDMに即投げしてる",
+        "user": "U9S4G0LJW",
+        "ts": "1585148863.041500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wkk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "気になるものはDMに即投げしてる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ee7dd200-8073-4fe9-b8cc-a661f9dbe8a3",
+        "type": "message",
+        "text": "ここに流れてきたプラグイン、とりあえず star つけとけばいいのか。",
+        "user": "U78A6ESHM",
+        "ts": "1585148867.042100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CRnUw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ここに流れてきたプラグイン、とりあえず star つけとけばいいのか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6195fdbf-8812-410f-b606-a6c92bb4e419",
+        "type": "message",
+        "text": "自分のvimrcのissueに入れたいのをどんどん追加しておくようにしてる",
+        "user": "UAZ33BKV2",
+        "ts": "1585148870.042200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "a+q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自分のvimrcのissueに入れたいのをどんどん追加しておくようにしてる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ea81fe99-13fd-4a9a-8249-80f4afc34bfa",
+        "type": "message",
+        "text": "見たらすぐに入れないとですね",
+        "user": "U7B4ZD49X",
+        "ts": "1585148872.042300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kBPS2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "見たらすぐに入れないとですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4a8364f7-0ae4-4504-807b-8d2f50ceff27",
+        "type": "message",
+        "text": "手元にvimがあれば一時的に即導入できる仕組み作ってるので便利してる",
+        "user": "U9S4G0LJW",
+        "ts": "1585148890.042800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iTNK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "手元にvimがあれば一時的に即導入できる仕組み作ってるので便利してる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c82e493c-239f-4e4a-b0e9-0f6c78c2626b",
+        "type": "message",
+        "text": "cgn + dot ってかんじか．たしかだれかがtwitterでいってたような（アドベントカレンダーとかでしたっけ）",
+        "user": "US5UW1UNB",
+        "ts": "1585148974.044200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AZbJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cgn + dot ってかんじか．たしかだれかがtwitterでいってたような（アドベントカレンダーとかでしたっけ）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "424072f9-35e7-4046-862d-5f01401cd836",
+        "type": "message",
+        "text": "<https:\/\/blanktar.jp\/blog\/2015\/08\/vim-gn-command.html>\ncgnまだまだ使えてない...",
+        "user": "UAZ33BKV2",
+        "ts": "1585148987.044500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "gHmpy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/blanktar.jp\/blog\/2015\/08\/vim-gn-command.html"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\ncgnまだまだ使えてない..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6dffefb3-462e-40f8-8e26-451593b9ad95",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/yutakatay\/status\/1205503642985521153?s=19>",
+        "user": "U9S4G0LJW",
+        "ts": "1585149001.044700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/yutakatay|@yutakatay>: Vimで置換するとき無意識に :%s\/aa\/xx\/gcを使ってませんか？\n実は別の方法もあります。それが cgn\n\n使い方は簡単\n1 置換したい文字を検索する(\/, *)\n2 cgn (文字が消えるが慌てない)\n3 InsertModeになるので置換後の文字を入力\n4 Esc\n5 nで次へ\n6 . で再度置換\n7 あとはn.を繰り返すだけ!\n#vimtips_ac",
+                "ts": 1576249440,
+                "author_name": "yutakatay（ゆたかてい）",
+                "author_link": "https:\/\/twitter.com\/yutakatay\/status\/1205503642985521153",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1190678192975167489\/KyY2DKs9_normal.png",
+                "author_subname": "@yutakatay",
+                "text": "Vimで置換するとき無意識に :%s\/aa\/xx\/gcを使ってませんか？\n実は別の方法もあります。それが cgn\n\n使い方は簡単\n1 置換したい文字を検索する(\/, *)\n2 cgn (文字が消えるが慌てない)\n3 InsertModeになるので置換後の文字を入力\n4 Esc\n5 nで次へ\n6 . で再度置換\n7 あとはn.を繰り返すだけ!\n#vimtips_ac",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/yutakatay\/status\/1205503642985521153?s=19",
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/yutakatay\/status\/1205503642985521153?s=19",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vx\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/yutakatay\/status\/1205503642985521153?s=19"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "830ac508-ae19-43dc-bc24-635761bef53a",
+        "type": "message",
+        "text": "すぐそこに当人がw",
+        "user": "UAZ33BKV2",
+        "ts": "1585149016.045100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AZYqz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すぐそこに当人がw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b3f256e0-091c-4a68-b3f9-af33a5d1cb32",
+        "type": "message",
+        "text": "本人でした :exclamation:",
+        "user": "US5UW1UNB",
+        "ts": "1585149020.045300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2WHI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "本人でした "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "exclamation"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "89bffd53-1d15-49c1-a3dd-3a20a26db6bb",
+        "type": "message",
+        "text": "本家はthincaさんですけどねw",
+        "user": "U7B4ZD49X",
+        "ts": "1585149035.045800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6uC9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "本家はthincaさんですけどねw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sasu_manbou",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            },
+            {
+                "name": "thinca",
+                "users": [
+                    "US5UW1UNB"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "51cccf29-f64c-4019-899a-1147f5995305",
+        "type": "message",
+        "text": "slackパクしたんで",
+        "user": "U7B4ZD49X",
+        "ts": "1585149054.046400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mAZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "slackパクしたんで"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8ee1f938-f820-4d71-97f5-4a99f876bd2b",
+        "type": "message",
+        "text": "いいですね。\n<https:\/\/github.com\/svermeulen\/vim-subversive>\nと、vim-overとこれの選択肢があると、かなり手法が広がる",
+        "user": "UAZ33BKV2",
+        "ts": "1585149187.047200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "svermeulen\/vim-subversive",
+                "title_link": "https:\/\/github.com\/svermeulen\/vim-subversive",
+                "text": "Vim plugin providing operator motions to quickly replace text - svermeulen\/vim-subversive",
+                "fallback": "GitHub: svermeulen\/vim-subversive",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/810762?s=400&v=4",
+                "from_url": "https:\/\/github.com\/svermeulen\/vim-subversive",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/svermeulen\/vim-subversive"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "veecK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いいですね。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/svermeulen\/vim-subversive"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nと、vim-overとこれの選択肢があると、かなり手法が広がる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "こんなの書いておくと便利",
+        "files": [
+            {
+                "id": "F010FKBBNPK",
+                "created": 1585149201,
+                "timestamp": 1585149201,
+                "name": "無題",
+                "title": "無題",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "U9S4G0LJW",
+                "editable": true,
+                "size": 656,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010FKBBNPK\/______?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010FKBBNPK\/download\/______?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U9S4G0LJW\/F010FKBBNPK\/______",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F010FKBBNPK-48e6da341e",
+                "edit_link": "https:\/\/vim-jp.slack.com\/files\/U9S4G0LJW\/F010FKBBNPK\/______\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qOSO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こんなの書いておくと便利"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "U9S4G0LJW",
+        "display_as_bot": false,
+        "ts": "1585149202.047400",
+        "client_msg_id": "86d2bb5e-0f0e-462f-a7c5-36e336f97610",
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "UFP0GQZ4K"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a6cc25be-5424-4b11-9d17-f8a09c881d90",
+        "type": "message",
+        "text": "カジュアルに Vim :q するマンなので git clone で pack に入れちゃいますー。",
+        "user": "U78A6ESHM",
+        "ts": "1585149265.048500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kuCT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "カジュアルに Vim :q するマンなので git clone で pack に入れちゃいますー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b0241b9d-66ad-4ea5-801c-eee9dc9acb4e",
+        "type": "message",
+        "text": "カジュアルにvimrcいじるマンなんでPlugしちゃいますね",
+        "user": "U7B4ZD49X",
+        "ts": "1585149460.049100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sQgC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "カジュアルにvimrcいじるマンなんでPlugしちゃいますね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8b9aad83-22f5-4758-a592-5a19a7242da0",
+        "type": "message",
+        "text": "over.vim，ここまで求めるのは贅沢だろうみたいなものがあった...",
+        "user": "US5UW1UNB",
+        "ts": "1585149540.049500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kSzE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "over.vim，ここまで求めるのは贅沢だろうみたいなものがあった..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ab103aff-7e73-49c7-b0e7-43e3647a41be",
+        "type": "message",
+        "text": "vim-overか",
+        "user": "US5UW1UNB",
+        "ts": "1585149551.049700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xuILN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim-overか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "803b18a4-3ab6-4a90-a580-b5e58e641cd0",
+        "type": "message",
+        "text": "neovimだとデフォでできますよ",
+        "user": "U7B4ZD49X",
+        "ts": "1585149635.050100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jfbJX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "neovimだとデフォでできますよ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0d7f01b5-89cb-40e4-a70d-bc8de8190f9c",
+        "type": "message",
+        "text": "set inccommand=split",
+        "user": "U7B4ZD49X",
+        "ts": "1585149655.050500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xjP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "set inccommand=split"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7deb9630-bdcb-418a-a56f-f93c26cc8081",
+        "type": "message",
+        "text": "cmdwinをよく使うんですが，そこまではなかったので...",
+        "user": "US5UW1UNB",
+        "ts": "1585149667.050700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RZNru",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cmdwinをよく使うんですが，そこまではなかったので..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f471d7f1-3a8f-4627-bae4-fb9d9285d6a6",
+        "type": "message",
+        "text": "たぶん...",
+        "user": "US5UW1UNB",
+        "ts": "1585149675.050900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zVsyP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "たぶん..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "73ccd3f0-8948-4ec4-bd8c-9ecebc8240f0",
+        "type": "message",
+        "text": "どちらかというとtraces.vimみたいな",
+        "user": "U9S4G0LJW",
+        "ts": "1585149814.051100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xhfPH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どちらかというとtraces.vimみたいな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b3187a21-1e5c-4bc3-bd11-f8fa9eea0d74",
+        "type": "message",
+        "text": "これ組込みか、すごいな…",
+        "user": "U9S4G0LJW",
+        "ts": "1585149821.051400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rk=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ組込みか、すごいな…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "548ee368-872f-4870-b1b1-96b85aff3412",
+        "type": "message",
+        "text": "traces.vim知らなかった。なんとなく300スター超えてるプラグインくらいは網羅できている錯覚に陥っていた。。。Vimの世界は広い",
+        "user": "U7B4ZD49X",
+        "ts": "1585150026.052300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "iW9LJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "traces.vim知らなかった。なんとなく300スター超えてるプラグインくらいは網羅できている錯覚に陥っていた。。。Vimの世界は広い"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bacb8182-2e8c-4adf-8c89-777034224378",
+        "type": "message",
+        "text": "出所（見つけた場所）はここです <https:\/\/github.com\/skanehira\/dotfiles\/>",
+        "user": "U9S4G0LJW",
+        "ts": "1585150062.052600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U9S4G0LJW",
+            "ts": "1585150087.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "O4aZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "出所（見つけた場所）はここです "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/skanehira\/dotfiles\/"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "uhouho",
+                "users": [
+                    "US5UW1UNB",
+                    "UL6CFN8NR"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0d8846e5-8550-4b81-9f28-db341e78aa32",
+        "type": "message",
+        "text": "どっから拾ってきたのかが気になるwジャングルか",
+        "user": "U7B4ZD49X",
+        "ts": "1585150103.053600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "O5KW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どっから拾ってきたのかが気になるwジャングルか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "01700b88-6ad1-48b4-a260-379244fcc4da",
+        "type": "message",
+        "text": "cmdwinとめっちゃ相性悪いから使ってなかったけど特定のパターン打つとcmdwin解除するやつ書けばいいのか",
+        "user": "U9S4G0LJW",
+        "ts": "1585150273.054900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3039",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cmdwinとめっちゃ相性悪いから使ってなかったけど特定のパターン打つとcmdwin解除するやつ書けばいいのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "37cd5199-6660-4482-834a-d2e36a1d3682",
+        "type": "message",
+        "text": "まあ正直かっこよさだけですから無効でもよいかもです。置換中にそんなとこそんなに確認しないんでw",
+        "user": "U7B4ZD49X",
+        "ts": "1585150321.055600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0hd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まあ正直かっこよさだけですから無効でもよいかもです。置換中にそんなとこそんなに確認しないんでw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "hai-small",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "38522974-4bf0-48e8-9763-a30b6f290d6b",
+        "type": "message",
+        "text": "ですよねー",
+        "user": "U9S4G0LJW",
+        "ts": "1585150343.055800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8Fl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですよねー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2DEC843E-00D4-456C-BACC-C0F3BBFCAF65",
+        "type": "message",
+        "text": "traces.vimは便利\n正規表現苦手マンなので目に見えないと不安",
+        "user": "UDDCM376D",
+        "ts": "1585172086.057500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eddxl",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "traces.vimは便利\n正規表現苦手マンなので目に見えないと不安"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "wakaru",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b6032f0e-e9e3-4b22-878d-578a61a354da",
+        "type": "message",
+        "text": "最近はdeopleteのバグを修正しているのですが、その副次効果で補完が早くなったという声をいただいています",
+        "user": "U7JL1UKKL",
+        "ts": "1585181203.059200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wjw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最近はdeopleteのバグを修正しているのですが、その副次効果で補完が早くなったという声をいただいています"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "21fb914b-e31a-412e-85c4-a26adbe09ea3",
+        "type": "message",
+        "text": "ようやく真の力が発揮できるようになったのかなと",
+        "user": "U7JL1UKKL",
+        "ts": "1585181215.059600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LTqx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ようやく真の力が発揮できるようになったのかなと"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "fuhahahaha",
+                "users": [
+                    "U9S4G0LJW",
+                    "UDDCM376D",
+                    "U72TB62UF"
+                ],
+                "count": 3
+            },
+            {
+                "name": "+1::skin-tone-5",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e1bd172f-ead8-4099-b980-944e818d5b78",
+        "type": "message",
+        "text": "今までのdeopleteはバグのせいで本気を出していなかった",
+        "user": "U7JL1UKKL",
+        "ts": "1585181256.060300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "l8X4j",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今までのdeopleteはバグのせいで本気を出していなかった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dc9a85d8-cc0a-4533-974d-5497fde449c0",
+        "type": "message",
+        "text": "<https:\/\/nanj-short.up.seesaa.net\/image\/_nanj_short_imgs_2_5_251f8a7f.jpg>",
+        "user": "U03C6TEAZ",
+        "ts": "1585181756.060600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "512x465px image",
+                "image_url": "https:\/\/nanj-short.up.seesaa.net\/image\/_nanj_short_imgs_2_5_251f8a7f.jpg",
+                "image_width": 512,
+                "image_height": 465,
+                "image_bytes": 70513,
+                "from_url": "https:\/\/nanj-short.up.seesaa.net\/image\/_nanj_short_imgs_2_5_251f8a7f.jpg",
+                "id": 1,
+                "original_url": "https:\/\/nanj-short.up.seesaa.net\/image\/_nanj_short_imgs_2_5_251f8a7f.jpg"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "W3X",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/nanj-short.up.seesaa.net\/image\/_nanj_short_imgs_2_5_251f8a7f.jpg"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "fuita",
+                "users": [
+                    "U72TB62UF",
+                    "U8R597E9H",
+                    "UHV7G5KKP"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5483e5fa-22a7-48fd-8a51-ac2466faefe2",
+        "type": "message",
+        "text": "deniteのパフォーマンスがVim8で悪いということに気づきました",
+        "user": "U7JL1UKKL",
+        "ts": "1585189375.062100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x5W",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "deniteのパフォーマンスがVim8で悪いということに気づきました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e2a3f698-e5c3-4d52-8a40-6977829994f0",
+        "type": "message",
+        "text": "なんか対応を考えたいところ",
+        "user": "U7JL1UKKL",
+        "ts": "1585189382.062400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "83Yyx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんか対応を考えたいところ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585191136.062600",
+        "user": "U010Q37DST0",
+        "text": "<@U010Q37DST0> has joined the channel"
+    }
+]

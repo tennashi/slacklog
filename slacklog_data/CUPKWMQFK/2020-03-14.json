@@ -1,0 +1,89 @@
+[
+    {
+        "client_msg_id": "068edaee-4e44-4363-93bf-27207af19777",
+        "type": "message",
+        "text": "<https:\/\/vim-jp.slack.com\/archives\/C03C4RC9F\/p1584197115237900>\nこれ知らんかった。多分 vimlparser でもサポートされてないな",
+        "user": "U0M7GCBPD",
+        "ts": "1584255047.044600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "from_url": "https:\/\/vim-jp.slack.com\/archives\/C03C4RC9F\/p1584197115237900",
+                "fallback": "[March 14th, 2020 7:45 AM] naru123456789: `:function {'&lt;lambda&gt;42'}` こんなことできたんだ。",
+                "ts": "1584197115.237900",
+                "author_id": "UBQ2H65JQ",
+                "author_subname": "rbtnn",
+                "channel_id": "C03C4RC9F",
+                "channel_name": "random",
+                "is_msg_unfurl": true,
+                "text": "`:function {'&lt;lambda&gt;42'}` こんなことできたんだ。",
+                "author_name": "rbtnn",
+                "author_link": "https:\/\/vim-jp.slack.com\/team\/UBQ2H65JQ",
+                "author_icon": "https:\/\/avatars.slack-edge.com\/2018-09-23\/442107143383_29fb96601f522825702a_48.jpg",
+                "mrkdwn_in": [
+                    "text"
+                ],
+                "id": 1,
+                "original_url": "https:\/\/vim-jp.slack.com\/archives\/C03C4RC9F\/p1584197115237900",
+                "footer": "Posted in #random"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tKleo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/vim-jp.slack.com\/archives\/C03C4RC9F\/p1584197115237900"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nこれ知らんかった。多分 vimlparser でもサポートされてないな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584255047.044600",
+        "reply_count": 3,
+        "reply_users_count": 2,
+        "latest_reply": "1584613816.053600",
+        "reply_users": [
+            "U0M7GCBPD",
+            "UBQ2H65JQ"
+        ],
+        "replies": [
+            {
+                "user": "U0M7GCBPD",
+                "ts": "1584611593.045100"
+            },
+            {
+                "user": "UBQ2H65JQ",
+                "ts": "1584613771.053300"
+            },
+            {
+                "user": "U0M7GCBPD",
+                "ts": "1584613816.053600"
+            }
+        ],
+        "subscribed": false
+    }
+]

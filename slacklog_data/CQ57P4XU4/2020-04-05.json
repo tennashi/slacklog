@@ -1,0 +1,503 @@
+[
+    {
+        "client_msg_id": "3BB7CE49-E7DD-46BF-BBF6-C89B5E8BE49E",
+        "type": "message",
+        "text": "そもそもdeoplete.nvimのインストールがうまくいっていなかったように思えます。多分Pythonのライブラリ周りな気がする。",
+        "user": "U80CX6XDZ",
+        "ts": "1586072349.231300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uLGXT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そもそもdeoplete.nvimのインストールがうまくいっていなかったように思えます。多分Pythonのライブラリ周りな気がする。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586072349.231300",
+        "reply_count": 6,
+        "reply_users_count": 2,
+        "latest_reply": "1586097409.251500",
+        "reply_users": [
+            "UEA8SS1RN",
+            "U80CX6XDZ"
+        ],
+        "replies": [
+            {
+                "user": "UEA8SS1RN",
+                "ts": "1586073803.233100"
+            },
+            {
+                "user": "UEA8SS1RN",
+                "ts": "1586074076.233300"
+            },
+            {
+                "user": "UEA8SS1RN",
+                "ts": "1586074345.233600"
+            },
+            {
+                "user": "U80CX6XDZ",
+                "ts": "1586097100.246000"
+            },
+            {
+                "user": "U80CX6XDZ",
+                "ts": "1586097302.250900"
+            },
+            {
+                "user": "U80CX6XDZ",
+                "ts": "1586097409.251500"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "7BFEAC8B-2A66-4A29-BB0C-74ADB6BC6095",
+        "type": "message",
+        "text": "<@UEA8SS1RN> ↑今更ですが。",
+        "user": "U80CX6XDZ",
+        "ts": "1586072379.231900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7PR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "UEA8SS1RN"
+                            },
+                            {
+                                "type": "text",
+                                "text": " ↑今更ですが。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5bbc2bdb-ef3e-45f2-8c7f-0531c29f62dc",
+        "type": "message",
+        "text": "まあ、外して問題ないなら、asyncompleteならまあ必要十分かもしれませんし、ね",
+        "user": "UAZ33BKV2",
+        "ts": "1586072443.233000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fYRj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まあ、外して問題ないなら、asyncompleteならまあ必要十分かもしれませんし、ね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f4dba527-944a-423c-a2af-03320e9c22e0",
+        "type": "message",
+        "text": "おっと。後で試してみます。けど。Pythonのライブラリ、なんかいるんでしたっけ? pip3 neovimくらいしかしてないです。",
+        "user": "UEA8SS1RN",
+        "ts": "1586073803.233100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sWPTB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おっと。後で試してみます。けど。Pythonのライブラリ、なんかいるんでしたっけ? pip3 neovimくらいしかしてないです。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586072349.231300",
+        "parent_user_id": "U80CX6XDZ"
+    },
+    {
+        "client_msg_id": "f8002d65-9854-4083-85e6-26134248dcfc",
+        "type": "message",
+        "text": "Note: deoplete requires msgpack package 1.0.0+. Please install\/upgrade msgpack package by pip.\nか。",
+        "user": "UEA8SS1RN",
+        "ts": "1586074076.233300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UEA8SS1RN",
+            "ts": "1586074086.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "omDS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Note: deoplete requires msgpack package 1.0.0+. Please install\/upgrade msgpack package by pip.\nか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586072349.231300",
+        "parent_user_id": "U80CX6XDZ"
+    },
+    {
+        "client_msg_id": "16483f35-f9c6-43c8-b199-b0982061046a",
+        "type": "message",
+        "text": "入ってた。",
+        "user": "UEA8SS1RN",
+        "ts": "1586074345.233600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JLr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "入ってた。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586072349.231300",
+        "parent_user_id": "U80CX6XDZ"
+    },
+    {
+        "client_msg_id": "1076e9f0-fcae-41af-bd6b-d4bdebba8314",
+        "type": "message",
+        "text": "<https:\/\/qiita.com\/yaegassy\/items\/8b3429196ea16cf754c0>\nネ申様ありがとう",
+        "user": "UEA8SS1RN",
+        "ts": "1586083377.234000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Qiita",
+                "title": "VimでPHPのオートローダー(vendor\/autoload.php)を認識し補完や定義ジャンプを賢く行う（ついでにLaravelのファサードも補完） - Qiita",
+                "title_link": "https:\/\/qiita.com\/yaegassy\/items\/8b3429196ea16cf754c0",
+                "text": "# はじめに 個人的に最近はPythonやJavaScript(JSはみんなそうですよね)を触ってたりしますがPHPネタです。そしてVimネタです。 いや、むしろサーバーやクラウドなどのインフラをイジイジばかりか、コードのレビューを...",
+                "fallback": "Qiita: VimでPHPのオートローダー(vendor\/autoload.php)を認識し補完や定義ジャンプを賢く行う（ついでにLaravelのファサードも補完） - Qiita",
+                "image_url": "https:\/\/qiita-user-contents.imgix.net\/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&w=1200&mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3DVim%25E3%2581%25A7PHP%25E3%2581%25AE%25E3%2582%25AA%25E3%2583%25BC%25E3%2583%2588%25E3%2583%25AD%25E3%2583%25BC%25E3%2583%2580%25E3%2583%25BC%2528vendor%252Fautoload.php%2529%25E3%2582%2592%25E8%25AA%258D%25E8%25AD%2598%25E3%2581%2597%25E8%25A3%259C%25E5%25AE%258C%25E3%2582%2584%25E5%25AE%259A%25E7%25BE%25A9%25E3%2582%25B8%25E3%2583%25A3%25E3%2583%25B3%25E3%2583%2597%25E3%2582%2592%25E8%25B3%25A2%25E3%2581%258F%25E8%25A1%258C%25E3%2581%2586%25EF%25BC%2588%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A7%25E3%2581%25ABLaravel%25E3%2581%25AE%25E3%2583%2595%25E3%2582%25A1%25E3%2582%25B5%25E3%2583%25BC%25E3%2583%2589%25E2%2580%25A6%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D172c4623b642ae363aa9a402b2f5bd7c&mark-align=center%2Cmiddle&blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540yaegassy%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D1c623b1f8dc37df73410beef194d4306&blend-align=center%2Cmiddle&blend-mode=normal&s=449566633677112483900bcdae76ef8f",
+                "from_url": "https:\/\/qiita.com\/yaegassy\/items\/8b3429196ea16cf754c0",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 78079,
+                "service_icon": "https:\/\/cdn.qiita.com\/assets\/favicons\/public\/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+                "id": 1,
+                "original_url": "https:\/\/qiita.com\/yaegassy\/items\/8b3429196ea16cf754c0"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AXcMd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/qiita.com\/yaegassy\/items\/8b3429196ea16cf754c0"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nネ申様ありがとう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "88A34686-602E-4294-8D98-A74379746BFF",
+        "type": "message",
+        "text": "まずはそもdeoplete.nvimが動作しているかどうかですね。Around補完などが動いているなら動作していると思います。(ただしasyncomplete.vimなどほかの自動補完プラグインが動いているならどっちが補完ウィンドウを出しているのか分かりづらいのでOFFにするのが\n望ましい)\nその状態で自動補完が動かないならdeoplete.nvim自体のインストールに失敗しています。\n基本asyncomplete.vimでlspの補完が動くならdeoplete-vim-lspも動くはずなので。\n\ndeoplete.nvimでつまづきやすいのは3点で\n1. Neovimが参照しているPythonは想定どおりか\n1. 1にNeovimクライアントがインストール済みか\n2. :updateRemotePluginでリモートプラグインをNeovimが認識しているか\nあたりがです",
+        "user": "U80CX6XDZ",
+        "ts": "1586097100.246000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "R1FqN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まずはそもdeoplete.nvimが動作しているかどうかですね。Around補完などが動いているなら動作していると思います。(ただしasyncomplete.vimなどほかの自動補完プラグインが動いているならどっちが補完ウィンドウを出しているのか分かりづらいのでOFFにするのが\n望ましい)\nその状態で自動補完が動かないならdeoplete.nvim自体のインストールに失敗しています。\n基本asyncomplete.vimでlspの補完が動くならdeoplete-vim-lspも動くはずなので。\n\n"
+                            },
+                            {
+                                "type": "text",
+                                "text": "deoplete.nvimでつまづきやすいのは3点で\n1. Neovimが参照しているPythonは想定どおりか\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_list",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "1にNeovimクライアントがインストール済みか"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": ":updateRemotePluginでリモートプラグインをNeovimが認識しているか"
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "ordered",
+                        "indent": 0
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nあたりがです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586072349.231300",
+        "parent_user_id": "U80CX6XDZ"
+    },
+    {
+        "client_msg_id": "DE1418C6-CDCA-47E8-8ABB-70C103C5A298",
+        "type": "message",
+        "text": "まあdeoplete.nvimの拡張性の高さに、今のところ魅力を感じていないとすれば無理にasyncompleteから移る必要性はないと思いますよ。\nvim-lspの補完という点に限定すれば、おそらくasyncomplete のが品質が高い。まあ原因はdeoplete-vim-lspがアダプタしてるからなんですけども。",
+        "user": "U80CX6XDZ",
+        "ts": "1586097302.250900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sJr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まあdeoplete.nvimの拡張性の高さに、今のところ魅力を感じていないとすれば無理にasyncompleteから移る必要性はないと思いますよ。\nvim-lspの補完という点に限定すれば、おそらくasyncomplete のが品質が高い。まあ原因はdeoplete-vim-lspがアダプタしてるからなんですけども。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586072349.231300",
+        "parent_user_id": "U80CX6XDZ"
+    },
+    {
+        "client_msg_id": "9B5E6CA4-961D-48B0-8EF7-781AD54BC527",
+        "type": "message",
+        "text": "へんじ遅くて申し訳ありません。",
+        "user": "U80CX6XDZ",
+        "ts": "1586097409.251500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "adgx7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "へんじ遅くて申し訳ありません。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586072349.231300",
+        "parent_user_id": "U80CX6XDZ"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1586144775.251800",
+        "user": "U011ED2JQM6",
+        "text": "<@U011ED2JQM6> has joined the channel"
+    }
+]

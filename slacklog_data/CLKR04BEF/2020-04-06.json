@@ -1,0 +1,327 @@
+[
+    {
+        "client_msg_id": "31CEF808-FE0C-4191-9ADF-77907411885B",
+        "type": "message",
+        "text": "なんかすごそう（まだ使ってない）\n<https:\/\/github.com\/pechorin\/any-jump.vim|https:\/\/github.com\/pechorin\/any-jump.vim>",
+        "user": "U8996GYBF",
+        "ts": "1586189677.215100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "pechorin\/any-jump.vim",
+                "title_link": "https:\/\/github.com\/pechorin\/any-jump.vim",
+                "text": "Jump to any definition and references :eye: IDE madness without overhead :rocket: - pechorin\/any-jump.vim",
+                "fallback": "GitHub: pechorin\/any-jump.vim",
+                "from_url": "https:\/\/github.com\/pechorin\/any-jump.vim",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/234654984\/34bf2480-62eb-11ea-94dc-75ba14fb35c1",
+                "thumb_width": 429,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/pechorin\/any-jump.vim"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0Pr\/q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんかすごそう（まだ使ってない）\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/pechorin\/any-jump.vim",
+                                "text": "https:\/\/github.com\/pechorin\/any-jump.vim"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1586189677.215100",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1586235862.217100",
+        "reply_users": [
+            "U7B4ZD49X"
+        ],
+        "replies": [
+            {
+                "user": "U7B4ZD49X",
+                "ts": "1586235862.217100"
+            }
+        ],
+        "subscribed": false,
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "UAZ33BKV2",
+                    "U7B4ZD49X",
+                    "UAUFDS92N",
+                    "U72TB62UF"
+                ],
+                "count": 4
+            },
+            {
+                "name": "+1",
+                "users": [
+                    "U7B4ZD49X",
+                    "UK37RG2VC"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cf881c69-e35a-44a0-a4ff-ed03eb3ac82b",
+        "type": "message",
+        "text": "私もチェックしてみよう",
+        "user": "U7JL1UKKL",
+        "ts": "1586213297.215600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gf5a1bfaf8b6",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7f5a1bfaf8b64cbcdfaf82a7de92506b.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0017-72.png",
+            "first_name": "",
+            "real_name": "Shougo",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "shougo.matsu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DnZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私もチェックしてみよう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "53d10e09-56ab-431a-bf84-b940f86ca8fc",
+        "type": "message",
+        "text": "う、本体のノーマル\/ビジュアル系切り替えとexpand-regionがぶつかっとる\nマッピング変えよかな...",
+        "user": "UAZ33BKV2",
+        "ts": "1586234833.216600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mhycX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "う、本体のノーマル\/ビジュアル系切り替えとexpand-regionがぶつかっとる\nマッピング変えよかな..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "12a8f29c-9e7d-4e85-b573-3a4e83360f33",
+        "type": "message",
+        "text": "oh",
+        "user": "U78A6ESHM",
+        "ts": "1586235530.216800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mAz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "oh"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "これ使ったけどよかった",
+        "user": "U7B4ZD49X",
+        "ts": "1586235862.217100",
+        "thread_ts": "1586189677.215100",
+        "root": {
+            "client_msg_id": "31CEF808-FE0C-4191-9ADF-77907411885B",
+            "type": "message",
+            "text": "なんかすごそう（まだ使ってない）\n<https:\/\/github.com\/pechorin\/any-jump.vim|https:\/\/github.com\/pechorin\/any-jump.vim>",
+            "user": "U8996GYBF",
+            "ts": "1586189677.215100",
+            "team": "T03C4RC8V",
+            "attachments": [
+                {
+                    "service_name": "GitHub",
+                    "title": "pechorin\/any-jump.vim",
+                    "title_link": "https:\/\/github.com\/pechorin\/any-jump.vim",
+                    "text": "Jump to any definition and references :eye: IDE madness without overhead :rocket: - pechorin\/any-jump.vim",
+                    "fallback": "GitHub: pechorin\/any-jump.vim",
+                    "from_url": "https:\/\/github.com\/pechorin\/any-jump.vim",
+                    "thumb_url": "https:\/\/repository-images.githubusercontent.com\/234654984\/34bf2480-62eb-11ea-94dc-75ba14fb35c1",
+                    "thumb_width": 429,
+                    "thumb_height": 250,
+                    "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                    "id": 1,
+                    "original_url": "https:\/\/github.com\/pechorin\/any-jump.vim"
+                }
+            ],
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "0Pr\/q",
+                    "elements": [
+                        {
+                            "type": "rich_text_section",
+                            "elements": [
+                                {
+                                    "type": "text",
+                                    "text": "なんかすごそう（まだ使ってない）\n"
+                                },
+                                {
+                                    "type": "link",
+                                    "url": "https:\/\/github.com\/pechorin\/any-jump.vim",
+                                    "text": "https:\/\/github.com\/pechorin\/any-jump.vim"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1586189677.215100",
+            "reply_count": 1,
+            "reply_users_count": 1,
+            "latest_reply": "1586235862.217100",
+            "reply_users": [
+                "U7B4ZD49X"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wBc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ使ったけどよかった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "65deee72-ebe1-4e8c-a98a-ae180af52e02"
+    },
+    {
+        "client_msg_id": "8b17ff9f-3d35-493b-9de8-18b2a4a0ccf0",
+        "type": "message",
+        "text": "入れてみるかなー",
+        "user": "U8996GYBF",
+        "ts": "1586238271.217600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "48b1c10b3cf4",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-09\/327298108645_48b1c10b3cf4092337c5_72.png",
+            "first_name": "ycino",
+            "real_name": "ycino",
+            "display_name": "ycino",
+            "team": "T03C4RC8V",
+            "name": "yuki.ycino",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6Fg2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "入れてみるかなー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

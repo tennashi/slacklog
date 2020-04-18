@@ -1,0 +1,2167 @@
+[
+    {
+        "client_msg_id": "70066db1-cfc2-45aa-85eb-2aeea35482ba",
+        "type": "message",
+        "text": "<@U03C6TEAZ>\nこれは対応は不要かもしれませんが...\nefm-langserver で formatter の stdin 対応がされましたが、stdin false(ファイルが更新される)にもかかわらず、結果を(stdinから?)適用しようとしてバッファが空になります(空出力に置き換えになる)\nその後、ファイルの変更を検知してフォーマット結果を読める、という動きになっているように見えます。\nできれば空での上書きがないようにしたほうがよいのではないか、と思います。",
+        "user": "UAZ33BKV2",
+        "ts": "1584261636.210400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1584261659.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "09sF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "user",
+                                "user_id": "U03C6TEAZ"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nこれは対応は不要かもしれませんが...\nefm-langserver で formatter の stdin 対応がされましたが、stdin false(ファイルが更新される)にもかかわらず、結果を(stdinから?)適用しようとしてバッファが空になります(空出力に置き換えになる)\nその後、ファイルの変更を検知してフォーマット結果を読める、という動きになっているように見えます。\nできれば空での上書きがないようにしたほうがよいのではないか、と思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "85baf1cb-2673-4b67-bc88-dd9fe1bf3f22",
+        "type": "message",
+        "text": "やっとこsqlsのサブクエリ補完が動きはじめました。\n<https:\/\/twitter.com\/LightTiger2505\/status\/1239110193255833601>",
+        "user": "U80CX6XDZ",
+        "ts": "1584261946.211100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U80CX6XDZ",
+            "ts": "1584261956.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3HDaP",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "やっとこsqlsのサブクエリ補完が動きはじめました。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/LightTiger2505\/status\/1239110193255833601"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "subara",
+                "users": [
+                    "UEB17JJJE",
+                    "U78A6ESHM",
+                    "UFP0GQZ4K",
+                    "U771W8C56",
+                    "UBDMG6N2J"
+                ],
+                "count": 5
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4a445c10-213c-4314-b6d7-5059e19f836c",
+        "type": "message",
+        "text": "stdin false の時は `${INPUT}` がないと formatter はどのファイルか分からないでしょうから空になると思います。",
+        "user": "U03C6TEAZ",
+        "ts": "1584262263.211800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VyH=N",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "stdin false の時は "
+                            },
+                            {
+                                "type": "text",
+                                "text": "${INPUT}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " がないと formatter はどのファイルか分からないでしょうから空になると思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "484a00d1-afba-496c-b30a-12a54ef141d3",
+        "type": "message",
+        "text": "ええ、なのでformatの応答をうまく捨てれたらなあ、と思ったのですが...むずかしそうですね",
+        "user": "UAZ33BKV2",
+        "ts": "1584262535.212400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "msaZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ええ、なのでformatの応答をうまく捨てれたらなあ、と思ったのですが...むずかしそうですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0d026959-7985-47f3-aa21-970757aec58e",
+        "type": "message",
+        "text": "(いろいろやってるけど、jqでlint(formatではなく)ができない...",
+        "user": "UAZ33BKV2",
+        "ts": "1584262561.212900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "V0S",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(いろいろやってるけど、jqでlint(formatではなく)ができない..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3e98f2f6-6115-4c73-9df9-3b3cb6d72fc7",
+        "type": "message",
+        "text": "ignore-exit-code を format に入れるといい感じですか？",
+        "user": "U03C6TEAZ",
+        "ts": "1584273717.213700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZTc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ignore-exit-code を format に入れるといい感じですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bf3f4839-5948-4c9c-8c11-9b9e3f6ef603",
+        "type": "message",
+        "text": "lintなのですでにあるのですが...efmのREADMEにあるjq での json lint、結果がなんか拾えてなくて",
+        "user": "UAZ33BKV2",
+        "ts": "1584274602.214500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mtaRx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "lintなのですでにあるのですが...efmのREADMEにあるjq での json lint、結果がなんか拾えてなくて"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "73a4fa61-a3b7-453f-ad0a-061746f0d7ab",
+        "type": "message",
+        "text": "jq って、そもそも linter として使えるんですかね？ ale だと linter は jsonlint しかなくて formatter としては jq は対応してるようでしたが",
+        "user": "U7TMPGWJ0",
+        "ts": "1584279922.216300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g36a7ed02d64",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a36a7ed02d64ce6f40a20ebfe0a9f59d.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-72.png",
+            "first_name": "",
+            "real_name": "yaegassy",
+            "display_name": "yaegassy",
+            "team": "T03C4RC8V",
+            "name": "yaegassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hSb6Q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "jq って、そもそも linter として使えるんですかね？ ale だと linter は jsonlint しかなくて formatter としては jq は対応してるようでしたが"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "61d07577-fd0d-4ae6-8413-6798fa1ca831",
+        "type": "message",
+        "text": "パースできないときのエラーを吐いているのでそのポジションを取ればできなくはない気がしますが。",
+        "user": "U80CX6XDZ",
+        "ts": "1584280101.217000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g12373843afc",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a12373843afc54857a845404bdd5f5cb.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0008-72.png",
+            "first_name": "lighttiger2505",
+            "real_name": "lighttiger2505",
+            "display_name": "lighttiger2505",
+            "team": "T03C4RC8V",
+            "name": "lighttiger2505",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "tZ\/r=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パースできないときのエラーを吐いているのでそのポジションを取ればできなくはない気がしますが。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "787acd17-b114-46ad-9d18-71e3aea1c877",
+        "type": "message",
+        "text": "こんな感じのパースエラーを元にってことなのですかね。なるほど\n```$ cat a.json | jq -\njq: error: syntax error, unexpected $end (Unix shell quoting issues?) at &lt;top-level&gt;, line 1:\n-\njq: 1 compile error```",
+        "user": "U7TMPGWJ0",
+        "ts": "1584280221.218300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g36a7ed02d64",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a36a7ed02d64ce6f40a20ebfe0a9f59d.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-72.png",
+            "first_name": "",
+            "real_name": "yaegassy",
+            "display_name": "yaegassy",
+            "team": "T03C4RC8V",
+            "name": "yaegassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6Sef",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こんな感じのパースエラーを元にってことなのですかね。なるほど\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "$ cat a.json | jq -\njq: error: syntax error, unexpected $end (Unix shell quoting issues?) at <top-level>, line 1:\n-\njq: 1 compile error"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7d156a04-9006-43b1-846c-2b0ba1a5043a",
+        "type": "message",
+        "text": "ええ、efmのREADMEにもあるし、やれるかなーとやってますが、なんかとれない...stderrに吐いてるのかな?",
+        "user": "UAZ33BKV2",
+        "ts": "1584280258.218900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "o5mal",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ええ、efmのREADMEにもあるし、やれるかなーとやってますが、なんかとれない...stderrに吐いてるのかな?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "48059b10-fa39-4d48-9b05-9e0361daf041",
+        "type": "message",
+        "text": "やっぱそうだ、stderrに吐いてる...からリダイレクトすると取れるか?",
+        "user": "UAZ33BKV2",
+        "ts": "1584280301.219300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+22eW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "やっぱそうだ、stderrに吐いてる...からリダイレクトすると取れるか?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9532ea1e-80c1-4667-b458-68cb5559c895",
+        "type": "message",
+        "text": "`-` が余計かな...\n```$ cat a.json | jq\nparse error: Unfinished string at EOF at line 4, column 0```",
+        "user": "U7TMPGWJ0",
+        "ts": "1584280537.220000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g36a7ed02d64",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a36a7ed02d64ce6f40a20ebfe0a9f59d.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-72.png",
+            "first_name": "",
+            "real_name": "yaegassy",
+            "display_name": "yaegassy",
+            "team": "T03C4RC8V",
+            "name": "yaegassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U7TMPGWJ0",
+            "ts": "1584280589.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JwCU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "-",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " が余計かな...\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "$ cat a.json | jq\nparse error: Unfinished string at EOF at line 4, column 0"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4d79af71-0761-49eb-a41b-5a03d0009e06",
+        "type": "message",
+        "text": "stderr ですね",
+        "user": "U7TMPGWJ0",
+        "ts": "1584280648.220400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g36a7ed02d64",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a36a7ed02d64ce6f40a20ebfe0a9f59d.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0025-72.png",
+            "first_name": "",
+            "real_name": "yaegassy",
+            "display_name": "yaegassy",
+            "team": "T03C4RC8V",
+            "name": "yaegassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "erZUt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "stderr ですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d7894d40-1a72-4743-946a-91dfa615daaf",
+        "type": "message",
+        "text": "いまちょっと小細工して確認してます...",
+        "user": "UAZ33BKV2",
+        "ts": "1584280670.220700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mNN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いまちょっと小細工して確認してます..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b7309332-4be0-47af-b584-ac9e808e7519",
+        "type": "message",
+        "text": "むう、シェルにわたすとはいえ、\n``` lint-command: 'jq 2&gt;&amp;1'```\nでは通らんか...",
+        "user": "UAZ33BKV2",
+        "ts": "1584281582.221200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Dx3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "むう、シェルにわたすとはいえ、\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": " lint-command: 'jq 2>&1'"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nでは通らんか..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9e768870-a454-4777-afa9-15affd43179c",
+        "type": "message",
+        "text": "異常の場合には non-zero が返って format 自体が失敗するはずなんですけどね。",
+        "user": "U03C6TEAZ",
+        "ts": "1584283888.221700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=FFo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "異常の場合には non-zero が返って format 自体が失敗するはずなんですけどね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6c6a5a74-2354-45dc-8a88-a8ecc18f4377",
+        "type": "message",
+        "text": "なので空にはならないイメージです。",
+        "user": "U03C6TEAZ",
+        "ts": "1584283946.222400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GQb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なので空にはならないイメージです。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2cca2387-a7d5-4594-9b51-0e66ecf661ea",
+        "type": "message",
+        "text": "いえ、formatじゃなくlintなんです...\nformatはOK",
+        "user": "UAZ33BKV2",
+        "ts": "1584284073.222800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "i9a",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いえ、formatじゃなくlintなんです...\nformatはOK"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6e33db8b-fb39-4a63-bb96-bb2358b0b12f",
+        "type": "message",
+        "text": "lint は ignore-exit-code を false にすれば同じ動きになると思っています。",
+        "user": "U03C6TEAZ",
+        "ts": "1584284112.223200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8HRh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "lint は ignore-exit-code を false にすれば同じ動きになると思っています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "52e65dde-2d4b-49b4-b074-62d1edd8708e",
+        "type": "message",
+        "text": "そもそも lint はバッファを更新しないので。",
+        "user": "U03C6TEAZ",
+        "ts": "1584284160.223500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9lN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そもそも lint はバッファを更新しないので。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "004a369f-1ef2-4890-b569-c5693ef8bf1a",
+        "type": "message",
+        "text": "空になったとすれば efm 以外の要因な気がします。",
+        "user": "U03C6TEAZ",
+        "ts": "1584284182.223900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TvOW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "空になったとすれば efm 以外の要因な気がします。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e1dd1c4b-b702-4f23-9de7-2456a99d9cec",
+        "type": "message",
+        "text": "あ、すいません、format時の空になる件ですね?",
+        "user": "UAZ33BKV2",
+        "ts": "1584284234.224300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "a4oc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、すいません、format時の空になる件ですね?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "80d62a7e-3eab-4242-964d-9ca08b1b53e2",
+        "type": "message",
+        "text": "別の話でしたか？",
+        "user": "U03C6TEAZ",
+        "ts": "1584284273.225200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Pb=bK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "別の話でしたか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7dbb1632-696b-40f9-9994-ec462a405b05",
+        "type": "message",
+        "text": "はい、ちょっと別の話があります(混乱させてすみません)",
+        "user": "UAZ33BKV2",
+        "ts": "1584284288.225500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zumeW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はい、ちょっと別の話があります(混乱させてすみません)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a278ac3f-f34d-4214-bebb-4de0f7131bcc",
+        "type": "message",
+        "text": "1. ある種のformatterは ファイルを更新するが、そのときバッファが一度空になる現象がある\n2. jq で うまくlintできないなあ(サンプルだと)",
+        "user": "UAZ33BKV2",
+        "ts": "1584284324.226500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5Q6x",
+                "elements": [
+                    {
+                        "type": "rich_text_list",
+                        "elements": [
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "ある種のformatterは ファイルを更新するが、そのときバッファが一度空になる現象がある"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "rich_text_section",
+                                "elements": [
+                                    {
+                                        "type": "text",
+                                        "text": "jq で うまくlintできないなあ(サンプルだと)"
+                                    }
+                                ]
+                            }
+                        ],
+                        "style": "ordered",
+                        "indent": 0
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584284324.226500",
+        "reply_count": 2,
+        "reply_users_count": 2,
+        "latest_reply": "1584301809.232000",
+        "reply_users": [
+            "U7TMPGWJ0",
+            "UAZ33BKV2"
+        ],
+        "replies": [
+            {
+                "user": "U7TMPGWJ0",
+                "ts": "1584287768.230300"
+            },
+            {
+                "user": "UAZ33BKV2",
+                "ts": "1584301809.232000"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "a7bac9d4-f4aa-4060-9442-0aa064147570",
+        "type": "message",
+        "text": "formatter の件は、formatter に直接ファイルを更新させてはだめです。",
+        "user": "U03C6TEAZ",
+        "ts": "1584284362.227100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2p5=W",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "formatter の件は、formatter に直接ファイルを更新させてはだめです。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7a2ee7a0-76b3-4b88-9954-34d196ce4760",
+        "type": "message",
+        "text": "なんですよねー",
+        "user": "UAZ33BKV2",
+        "ts": "1584284376.227300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "LX0Re",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんですよねー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aaed0bf1-864f-4ca4-b15d-42c57de81c5c",
+        "type": "message",
+        "text": "markdownlintのfixはあきらめたほうがいいかな...",
+        "user": "UAZ33BKV2",
+        "ts": "1584284389.227700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lzug",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "markdownlintのfixはあきらめたほうがいいかな..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b1cd9ac9-67e2-4455-8c1c-638df3a3a892",
+        "type": "message",
+        "text": "テンポラリファイルを作ってそのファイルで format、結果のファイルを cat すればいいのかなと。",
+        "user": "U03C6TEAZ",
+        "ts": "1584284423.228400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "02uOu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "テンポラリファイルを作ってそのファイルで format、結果のファイルを cat すればいいのかなと。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ccab0b85-e408-4dc7-83af-2a91379963ee",
+        "type": "message",
+        "text": "それ用の hack を efm に入れれるかもしれませんが。",
+        "user": "U03C6TEAZ",
+        "ts": "1584284455.228900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8ES",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それ用の hack を efm に入れれるかもしれませんが。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "19b54574-27b1-4ae5-9be5-ef163c1ab3f2",
+        "type": "message",
+        "text": "設定側が実現したくてやるなら、ラップするシェルスクリプトでも作らんとですね...",
+        "user": "UAZ33BKV2",
+        "ts": "1584284493.229300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1584284512.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vDNY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "設定側が実現したくてやるなら、ラップするシェルスクリプトでも作らんとですね..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4df692c5-665e-4c8a-92b8-89daef8438d4",
+        "type": "message",
+        "text": "要求レベルは低いので、課題の1つ、くらいの認識でもっていただけるとうれしいかな、くらいです",
+        "user": "UAZ33BKV2",
+        "ts": "1584284544.230000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZmMy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "要求レベルは低いので、課題の1つ、くらいの認識でもっていただけるとうれしいかな、くらいです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "693ad6fd-e4d3-4162-8eb4-db5c03a01762",
+        "type": "message",
+        "text": "なるほど",
+        "user": "U03C6TEAZ",
+        "ts": "1584285517.230200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MnVbe",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "thread_broadcast",
+        "text": "efm-langserver の jq の linter ですが、こんな感じな設定で僕の手元では動きました。 lint-formats は他にパターンあるかも(詳しく調べてないです...すいません)\n```version: 2\ntools:\n  # ...snip\n\n  json-jq: &amp;json-jq\n    lint-command: 'jq'\n    lint-stdin: true\n    lint-offset: 1\n    lint-formats:\n      - '%m at line %l, column %c'\n\n  # ...snip\n\nlanguages:\n  # ...snip\n\n  json:\n    - &lt;&lt;: *json-jq\n\n  # ...snip```",
+        "user": "U7TMPGWJ0",
+        "ts": "1584287768.230300",
+        "thread_ts": "1584284324.226500",
+        "root": {
+            "client_msg_id": "a278ac3f-f34d-4214-bebb-4de0f7131bcc",
+            "type": "message",
+            "text": "1. ある種のformatterは ファイルを更新するが、そのときバッファが一度空になる現象がある\n2. jq で うまくlintできないなあ(サンプルだと)",
+            "user": "UAZ33BKV2",
+            "ts": "1584284324.226500",
+            "team": "T03C4RC8V",
+            "blocks": [
+                {
+                    "type": "rich_text",
+                    "block_id": "5Q6x",
+                    "elements": [
+                        {
+                            "type": "rich_text_list",
+                            "elements": [
+                                {
+                                    "type": "rich_text_section",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "ある種のformatterは ファイルを更新するが、そのときバッファが一度空になる現象がある"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "rich_text_section",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "jq で うまくlintできないなあ(サンプルだと)"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "style": "ordered",
+                            "indent": 0
+                        }
+                    ]
+                }
+            ],
+            "thread_ts": "1584284324.226500",
+            "reply_count": 2,
+            "reply_users_count": 2,
+            "latest_reply": "1584301809.232000",
+            "reply_users": [
+                "U7TMPGWJ0",
+                "UAZ33BKV2"
+            ],
+            "subscribed": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7LMx7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "efm-langserver の jq の linter ですが、こんな感じな設定で僕の手元では動きました。 lint-formats は他にパターンあるかも(詳しく調べてないです...すいません)\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "version: 2\ntools:\n  # ...snip\n\n  json-jq: &json-jq\n    lint-command: 'jq'\n    lint-stdin: true\n    lint-offset: 1\n    lint-formats:\n      - '%m at line %l, column %c'\n\n  # ...snip\n\nlanguages:\n  # ...snip\n\n  json:\n    - <<: *json-jq\n\n  # ...snip"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "client_msg_id": "eb38d2de-c462-4faa-af7c-b5010b79e78d"
+    },
+    {
+        "client_msg_id": "df351509-f77b-41e5-b36a-fc521b2c25c1",
+        "type": "message",
+        "text": "fzfのpopup使ってると、たまにvim-lspっぽいところでエラーになってpopupが死ぬなぁ",
+        "user": "UGXMRNBUM",
+        "ts": "1584293607.231200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nN5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "fzfのpopup使ってると、たまにvim-lspっぽいところでエラーになってpopupが死ぬなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584293607.231200",
+        "reply_count": 6,
+        "reply_users_count": 1,
+        "latest_reply": "1584308999.232600",
+        "reply_users": [
+            "UGXMRNBUM"
+        ],
+        "replies": [
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1584293704.231300"
+            },
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1584293731.231600"
+            },
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1584293950.231800"
+            },
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1584308243.232200"
+            },
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1584308997.232400"
+            },
+            {
+                "user": "UGXMRNBUM",
+                "ts": "1584308999.232600"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "4ee47095-294e-4068-8fc0-9db9832245d8",
+        "type": "message",
+        "text": "```BufWipeout Autocommands for \"*\" の処理中にエラーが検出されました:\nE994: ポップアップウィンドウでは許されません```\n今の所入れてるプラグインや設定でBufWipeout使ってるのvim-lspだけなのでおよそ間違いなさそう。\n\n<https:\/\/github.com\/prabirshrestha\/vim-lsp\/blob\/2de8f4d479229eedcb9bf41a878b94fb7e2662ed\/autoload\/lsp.vim#L200>",
+        "user": "UGXMRNBUM",
+        "ts": "1584293704.231300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "prabirshrestha\/vim-lsp",
+                "title_link": "https:\/\/github.com\/prabirshrestha\/vim-lsp\/blob\/2de8f4d479229eedcb9bf41a878b94fb7e2662ed\/autoload\/lsp.vim#L200",
+                "text": "async language server protocol plugin for vim and neovim - prabirshrestha\/vim-lsp",
+                "fallback": "GitHub: prabirshrestha\/vim-lsp",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/287744?s=400&v=4",
+                "from_url": "https:\/\/github.com\/prabirshrestha\/vim-lsp\/blob\/2de8f4d479229eedcb9bf41a878b94fb7e2662ed\/autoload\/lsp.vim#L200",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/prabirshrestha\/vim-lsp\/blob\/2de8f4d479229eedcb9bf41a878b94fb7e2662ed\/autoload\/lsp.vim#L200"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "52sp4",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "BufWipeout Autocommands for \"*\" の処理中にエラーが検出されました:\nE994: ポップアップウィンドウでは許されません"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n今の所入れてるプラグインや設定でBufWipeout使ってるのvim-lspだけなのでおよそ間違いなさそう。\n\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/prabirshrestha\/vim-lsp\/blob\/2de8f4d479229eedcb9bf41a878b94fb7e2662ed\/autoload\/lsp.vim#L200"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584293607.231200",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "a07cfab4-9124-4c8b-a43e-a56b7e8ea2de",
+        "type": "message",
+        "text": "こういうとき日本語化してると気軽にIssue起こせなくて面倒くさいなあ",
+        "user": "UGXMRNBUM",
+        "ts": "1584293731.231600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cFy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こういうとき日本語化してると気軽にIssue起こせなくて面倒くさいなあ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584293607.231200",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "72a07fc6-4344-4dfe-a8c4-e04bc33b9be4",
+        "type": "message",
+        "text": "`:language messages en_US.UTF-8` しておいて再現したらまたIssue切ろう…",
+        "user": "UGXMRNBUM",
+        "ts": "1584293950.231800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mmJN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":language messages en_US.UTF-8",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " しておいて再現したらまたIssue切ろう…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584293607.231200",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "8c707f6c-9808-46bc-a558-dd919060dee6",
+        "type": "message",
+        "text": "なるほど",
+        "user": "UAZ33BKV2",
+        "ts": "1584301809.232000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "q36",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584284324.226500",
+        "parent_user_id": "UAZ33BKV2"
+    },
+    {
+        "client_msg_id": "e0d82445-8b27-466e-bf66-9b2dedb9863b",
+        "type": "message",
+        "text": "```Error detected while processing BufWipeout Autocommands for \"*\":\nE994: Not allowed in a popup window```\n出よった",
+        "user": "UGXMRNBUM",
+        "ts": "1584308243.232200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "==qXE",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Error detected while processing BufWipeout Autocommands for \"*\":\nE994: Not allowed in a popup window"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n出よった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584293607.231200",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "7a46b009-af68-46e3-8a1c-039449760bef",
+        "type": "message",
+        "text": "<https:\/\/github.com\/prabirshrestha\/vim-lsp\/issues\/754>",
+        "user": "UGXMRNBUM",
+        "ts": "1584308997.232400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Sometimes vim-lsp raise error in popup-window · Issue #754 · prabirshrestha\/vim-lsp",
+                "title_link": "https:\/\/github.com\/prabirshrestha\/vim-lsp\/issues\/754",
+                "text": "Using vim-lsp, sometimes I see errors: Error detected while processing BufWipeout Autocommands for &amp;quot;*&amp;quot;: E994: Not allowed in a popup window This often occurs especially when I call fzf in...",
+                "fallback": "GitHub: Sometimes vim-lsp raise error in popup-window · Issue #754 · prabirshrestha\/vim-lsp",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/287744?s=400&v=4",
+                "from_url": "https:\/\/github.com\/prabirshrestha\/vim-lsp\/issues\/754",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/prabirshrestha\/vim-lsp\/issues\/754"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yMHW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/prabirshrestha\/vim-lsp\/issues\/754"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584293607.231200",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "97de07c2-0c21-478a-87e2-d13684185626",
+        "type": "message",
+        "text": "切った",
+        "user": "UGXMRNBUM",
+        "ts": "1584308999.232600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g162cc079f62",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/9162cc079f6266ebd22e421799673eaf.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0004-72.png",
+            "first_name": "",
+            "real_name": "kyoh86",
+            "display_name": "kyoh86",
+            "team": "T03C4RC8V",
+            "name": "chili.pepper86",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "v1p",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "切った"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584293607.231200",
+        "parent_user_id": "UGXMRNBUM"
+    },
+    {
+        "client_msg_id": "9c016e55-73c3-4868-b3b8-f21744c58834",
+        "type": "message",
+        "text": "_週末に作業時間がとれるかどうかがかなり運ゲーになってしまっている。。。_",
+        "user": "U8R597E9H",
+        "ts": "1584325659.233500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QWw7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "週末に作業時間がとれるかどうかがかなり運ゲーになってしまっている。。。",
+                                "style": {
+                                    "italic": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e1671abc-791e-4452-b284-dba4e44c589e",
+        "type": "message",
+        "text": "workspace 対応を PR 出しました。\nvim-lsp のばあい、`workspace_config` の管理が現状 per server になっているので、そこを破壊せずに対応した感じにしました。",
+        "user": "U8R597E9H",
+        "ts": "1584325703.234300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "x56",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "workspace 対応を PR 出しました。\nvim-lsp のばあい、"
+                            },
+                            {
+                                "type": "text",
+                                "text": "workspace_config",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の管理が現状 per server になっているので、そこを破壊せずに対応した感じにしました。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "40b82795-7be8-45f7-9a01-fe9ce839cba0",
+        "type": "message",
+        "text": "個人的には workspace_config はグローバルに一つというのが正しい認識かなとは思いますが、これはこれで自由度高くなっていいかもと思っています。",
+        "user": "U8R597E9H",
+        "ts": "1584325738.234900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kpG8\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "個人的には workspace_config はグローバルに一つというのが正しい認識かなとは思いますが、これはこれで自由度高くなっていいかもと思っています。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "db1f9b08-0b00-42b5-8342-fb597b6c95ee",
+        "type": "message",
+        "text": "対応後のブランチではどんなに複数の Golang のプロジェクトのファイルをまたがって編集操作をしたとしてもちゃんと補完候補が返ってくるが、\n対応前のブランチ（master）では、時折まったく補完候補が返却されないことがあるので正しく動いていると思います。",
+        "user": "U8R597E9H",
+        "ts": "1584325834.235900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NeU7h",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "対応後のブランチではどんなに複数の Golang のプロジェクトのファイルをまたがって編集操作をしたとしてもちゃんと補完候補が返ってくるが、\n対応前のブランチ（master）では、時折まったく補完候補が返却されないことがあるので正しく動いていると思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "subara",
+                "users": [
+                    "UAZ33BKV2",
+                    "U03C6TEAZ",
+                    "UBNPMJJGM",
+                    "US90LD360",
+                    "UFP0GQZ4K"
+                ],
+                "count": 5
+            }
+        ]
+    },
+    {
+        "client_msg_id": "daeff838-ff0f-4ab5-b4ba-c4e6072e2cc7",
+        "type": "message",
+        "text": "notice:\n<https:\/\/github.com\/tsuyoshicho\/vim-efm-langserver-settings\/issues\/61>\nvim-efm-langserver-settings の設定を見て、「あ、自分が出した意見が入ってる」と思うものがあったら:raising_hand:していただけると幸いです。\nSpecial Thanks として掲載しようかなと\nどなたにご協力いただいたか、記憶もログも定かではなくorz",
+        "user": "UAZ33BKV2",
+        "ts": "1584339413.238200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "chore: Update README : special thanks fom vim-jp slack member · Issue #61 · tsuyoshicho\/vim-efm-langserver-settings",
+                "title_link": "https:\/\/github.com\/tsuyoshicho\/vim-efm-langserver-settings\/issues\/61",
+                "text": "mattn (mattn) yaegassy (yaegassy) ... and other add comment",
+                "fallback": "GitHub: chore: Update README : special thanks fom vim-jp slack member · Issue #61 · tsuyoshicho\/vim-efm-langserver-settings",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/96727?s=400&v=4",
+                "from_url": "https:\/\/github.com\/tsuyoshicho\/vim-efm-langserver-settings\/issues\/61",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/tsuyoshicho\/vim-efm-langserver-settings\/issues\/61"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qgT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "notice:\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tsuyoshicho\/vim-efm-langserver-settings\/issues\/61"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nvim-efm-langserver-settings の設定を見て、「あ、自分が出した意見が入ってる」と思うものがあったら"
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "raising_hand"
+                            },
+                            {
+                                "type": "text",
+                                "text": "していただけると幸いです。\nSpecial Thanks として掲載しようかなと\nどなたにご協力いただいたか、記憶もログも定かではなくorz"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

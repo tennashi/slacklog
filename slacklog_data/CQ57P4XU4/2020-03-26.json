@@ -1,0 +1,852 @@
+[
+    {
+        "client_msg_id": "b909ef82-7e9e-419f-88f0-6f46c9ddd8df",
+        "type": "message",
+        "text": "goplsのworkspace\/symbolがCLIでも使えるようになったので当初欲しかった機能が一通り揃いました\n<https:\/\/github.com\/golang\/tools\/commit\/d58d27dcbb58a087c15685124605e849e7b1789c>",
+        "user": "U77U7B85A",
+        "ts": "1585265515.040900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g3dd644c8cfb",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/f3dd644c8cfb83c94d46cf3c44604cda.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0022-72.png",
+            "first_name": "",
+            "real_name": "daisuzu",
+            "display_name": "daisuzu",
+            "team": "T03C4RC8V",
+            "name": "daisuzu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "tools\/gopls: add cmd support for workspace_symbol · golang\/tools@d58d27d",
+                "title_link": "https:\/\/github.com\/golang\/tools\/commit\/d58d27dcbb58a087c15685124605e849e7b1789c",
+                "text": "This change adds command line support for workspace\/symbol. Symbols are formatted as &amp;#39;{span} {name} {type}&amp;#39;. $ gopls workspace_symbol -matcher fuzzy &amp;#39;wsymbols&amp;#39; $ $ workspacesymbol\/...",
+                "fallback": "GitHub: tools\/gopls: add cmd support for workspace_symbol · golang\/tools@d58d27d",
+                "from_url": "https:\/\/github.com\/golang\/tools\/commit\/d58d27dcbb58a087c15685124605e849e7b1789c",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/1222926?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/golang\/tools\/commit\/d58d27dcbb58a087c15685124605e849e7b1789c"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KKd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "goplsのworkspace\/symbolがCLIでも使えるようになったので当初欲しかった機能が一通り揃いました\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/tools\/commit\/d58d27dcbb58a087c15685124605e849e7b1789c"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "benri",
+                "users": [
+                    "UAZ33BKV2",
+                    "UEB17JJJE",
+                    "U06BRP8VD"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e88c4c77-a9e1-4f2a-a396-dddcb87c60fe",
+        "type": "message",
+        "text": "ただ最大100件しか結果が返ってこないように制限がかかっているのでなんとかしたいところ...",
+        "user": "U77U7B85A",
+        "ts": "1585265539.041200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g3dd644c8cfb",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/f3dd644c8cfb83c94d46cf3c44604cda.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0022-72.png",
+            "first_name": "",
+            "real_name": "daisuzu",
+            "display_name": "daisuzu",
+            "team": "T03C4RC8V",
+            "name": "daisuzu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sgZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただ最大100件しか結果が返ってこないように制限がかかっているのでなんとかしたいところ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "E206DAB6-FF8B-45D3-8B09-60900AAF0214",
+        "type": "message",
+        "text": "さすが",
+        "user": "UDDCM376D",
+        "ts": "1585267321.041400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UWxH\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "さすが"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "006E088C-4C0A-44AE-822E-35C356E33154",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/sebmck\/status\/1243335551681363968?s=21|https:\/\/twitter.com\/sebmck\/status\/1243335551681363968?s=21>",
+        "user": "U78A6ESHM",
+        "ts": "1585271647.041800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/sebmck|@sebmck>: Rome LSP <https:\/\/pbs.twimg.com\/media\/EUExj3mVAAY6zlp.jpg>",
+                "ts": 1585269270,
+                "author_name": "Sebastian McKenzie",
+                "author_link": "https:\/\/twitter.com\/sebmck\/status\/1243335551681363968",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1135634732958375941\/bQO-0Qgx_normal.jpg",
+                "author_subname": "@sebmck",
+                "text": "Rome LSP <https:\/\/pbs.twimg.com\/media\/EUExj3mVAAY6zlp.jpg>",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/sebmck\/status\/1243335551681363968?s=21",
+                "image_url": "https:\/\/pbs.twimg.com\/media\/EUExj3mVAAY6zlp.jpg",
+                "image_width": 1200,
+                "image_height": 526,
+                "image_bytes": 43977,
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/sebmck\/status\/1243335551681363968?s=21",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AVVOU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/sebmck\/status\/1243335551681363968?s=21",
+                                "text": "https:\/\/twitter.com\/sebmck\/status\/1243335551681363968?s=21"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8B8ACF99-239B-4FCC-AC1A-7DB2B1E11C91",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/sebmck\/status\/1243335552922832896?s=21|https:\/\/twitter.com\/sebmck\/status\/1243335552922832896?s=21>",
+        "user": "U78A6ESHM",
+        "ts": "1585271680.042100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/sebmck|@sebmck>: This does not use vscode-languageserver-node and instead uses our own LSP server implementation",
+                "ts": 1585269270,
+                "author_name": "Sebastian McKenzie",
+                "author_link": "https:\/\/twitter.com\/sebmck\/status\/1243335552922832896",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1135634732958375941\/bQO-0Qgx_normal.jpg",
+                "author_subname": "@sebmck",
+                "text": "This does not use vscode-languageserver-node and instead uses our own LSP server implementation",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/sebmck\/status\/1243335552922832896?s=21",
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/sebmck\/status\/1243335552922832896?s=21",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "EF8ma",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/sebmck\/status\/1243335552922832896?s=21",
+                                "text": "https:\/\/twitter.com\/sebmck\/status\/1243335552922832896?s=21"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "091954E6-FAC4-47FA-96F5-FB57514072D6",
+        "type": "message",
+        "text": "おお。",
+        "user": "U78A6ESHM",
+        "ts": "1585271690.042500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "H59Ey",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おお。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "804df0ce-8ce2-4127-830e-9a3e4a270202",
+        "type": "message",
+        "text": "rome 使った事なかった。",
+        "user": "U03C6TEAZ",
+        "ts": "1585271806.042700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wzN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "rome 使った事なかった。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8b50c62d-9cb8-4a8a-9f83-37db488c599d",
+        "type": "message",
+        "text": "rome って知らなかったです。リポジトリーどこなんでしょう？",
+        "user": "U78A6ESHM",
+        "ts": "1585274547.043300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e\/Ztw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "rome って知らなかったです。リポジトリーどこなんでしょう？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e98d02f0-06d6-42fc-b018-47cd1d484d4a",
+        "type": "message",
+        "text": "<https:\/\/romejs.dev\/>",
+        "user": "U03C6TEAZ",
+        "ts": "1585275877.043600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "An experimental JavaScript toolchain | Rome",
+                "title_link": "https:\/\/romejs.dev\/",
+                "text": "An experimental JavaScript toolchain",
+                "fallback": "An experimental JavaScript toolchain | Rome",
+                "from_url": "https:\/\/romejs.dev\/",
+                "service_icon": "https:\/\/romejs.dev\/img\/favicon.ico",
+                "service_name": "romejs.dev",
+                "id": 1,
+                "original_url": "https:\/\/romejs.dev\/"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SEXf=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/romejs.dev\/"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "06af75f4-b27f-4895-91f0-79026d6e5c5f",
+        "type": "message",
+        "text": "安定の Sebastian McKenzie 案件だった。",
+        "user": "U03C6TEAZ",
+        "ts": "1585275963.044000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Rom=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "安定の Sebastian McKenzie 案件だった。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "eea71176-11fb-498b-96c9-d4af8b6ef6e1",
+        "type": "message",
+        "text": "あ、まだ入ってない感じか。 <https:\/\/github.com\/facebookexperimental\/rome\/pull\/207>",
+        "user": "U03C6TEAZ",
+        "ts": "1585276545.044200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "Add VSCode and Atom LSP Extensions by sebmck · Pull Request #207 · facebookexperimental\/rome",
+                "title_link": "https:\/\/github.com\/facebookexperimental\/rome\/pull\/207",
+                "text": "This PR adds VSCode and Atom LSP extensions. I used these while developing #204. I based them off @KevinKelbie&amp;#39;s modules that they shared on Discord. Both clients currently load \/tmp\/rome-dev\/i...",
+                "fallback": "GitHub: Add VSCode and Atom LSP Extensions by sebmck · Pull Request #207 · facebookexperimental\/rome",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/12853545?s=400&v=4",
+                "from_url": "https:\/\/github.com\/facebookexperimental\/rome\/pull\/207",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/facebookexperimental\/rome\/pull\/207"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZHFR8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、まだ入ってない感じか。 "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/facebookexperimental\/rome\/pull\/207"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "C9CE83A0-9EA9-468B-B353-BDBDC4D59FDB",
+        "type": "message",
+        "text": "お、ありがとうございます！",
+        "user": "U78A6ESHM",
+        "ts": "1585279279.044700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NY6V",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "お、ありがとうございます！"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "82FDD91D-6C97-439A-BC6A-1B86CA9CDF9B",
+        "type": "message",
+        "text": "後で見てみよう",
+        "user": "U78A6ESHM",
+        "ts": "1585279287.045000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zQiR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "後で見てみよう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "67c4c4b4-9c50-41e7-aab1-9284cbf3fd36",
+        "type": "message",
+        "text": "typescript-language-serverが悲しいことになりかけてるので期待",
+        "user": "UNJ2DANJC",
+        "ts": "1585279432.045600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "76LG\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "typescript-language-serverが悲しいことになりかけてるので期待"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3b3375ad-16e2-4947-928a-38735ea10fc5",
+        "type": "message",
+        "text": "rome ドキュメント少なくて全然わからない。",
+        "user": "U03C6TEAZ",
+        "ts": "1585279751.046000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WB+U",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "rome ドキュメント少なくて全然わからない。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "608a7c18-0b7d-40a7-8bc2-8a0f2b65233a",
+        "type": "message",
+        "text": "キレときます？「こんにゃ rome」って。(既視感)",
+        "user": "U03C6TEAZ",
+        "ts": "1585279784.046500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cn0g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "キレときます？「こんにゃ rome」って。(既視感)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "fuita",
+                "users": [
+                    "U78A6ESHM",
+                    "U8CC7MDCL",
+                    "U9S4G0LJW",
+                    "U06BRP8VD",
+                    "U8R597E9H"
+                ],
+                "count": 5
+            },
+            {
+                "name": "sasumatsu",
+                "users": [
+                    "U8CC7MDCL",
+                    "UFP0GQZ4K",
+                    "UL6CFN8NR"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7351d0bb-67f3-460c-86bc-0bfbaf3046a8",
+        "type": "message",
+        "text": "とりあえずツールチェーン全部作り直す.... らしい",
+        "user": "UNJ2DANJC",
+        "ts": "1585279854.047400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "c4b0930af904",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-09-19\/766087996341_c4b0930af904f66d8057_72.png",
+            "first_name": "johejo",
+            "real_name": "johejo",
+            "display_name": "johejo",
+            "team": "T03C4RC8V",
+            "name": "mitsuo.heijo",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Kg97",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とりあえずツールチェーン全部作り直す.... らしい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c16e84a3-56b5-4593-8a60-1c471040db18",
+        "type": "message",
+        "text": "js のツールチェーン全部作り直すのやばい",
+        "user": "U776661HA",
+        "ts": "1585280911.047900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gbe992d8a8cd",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/2be992d8a8cd8b523ca0b1467e165376.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0010-72.png",
+            "first_name": "",
+            "real_name": "lambdalisue",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "lambdalisue",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3tmw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "js のツールチェーン全部作り直すのやばい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "36C12D3A-8DEA-462E-AF98-C25C90FC47C7",
+        "type": "message",
+        "text": "sebmck なら出来そうw",
+        "user": "U78A6ESHM",
+        "ts": "1585281159.048500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "fXpCm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "sebmck なら出来そうw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

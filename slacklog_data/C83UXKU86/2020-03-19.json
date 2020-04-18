@@ -1,0 +1,483 @@
+[
+    {
+        "client_msg_id": "ceedbf55-ca7c-43ec-8b42-001580f9dc32",
+        "type": "message",
+        "text": "メモリリークを直していて発見\n```def! F0(): number\n  return 0\nenddef\n\ndef! F1(): number\n  return 1\nenddef\n\ntry\n  def! F0(): number\n  enddef\ncatch\n  echo v:exception\nendtry\n\ndef! F2(): number\n  return 2\nenddef\n\necho F1()\necho F2()```",
+        "user": "U7986PPFH",
+        "ts": "1584651227.392700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ga214f7e9007",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5a214f7e90077a38c1ba15d011599e71.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "ichizok",
+            "display_name": "ichizok",
+            "team": "T03C4RC8V",
+            "name": "gclient.gaap",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "j7OZz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "メモリリークを直していて発見\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "def! F0(): number\n  return 0\nenddef\n\ndef! F1(): number\n  return 1\nenddef\n\ntry\n  def! F0(): number\n  enddef\ncatch\n  echo v:exception\nendtry\n\ndef! F2(): number\n  return 2\nenddef\n\necho F1()\necho F2()"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7509546d-61b5-4836-afc6-16b816664d02",
+        "type": "message",
+        "text": "前にちょっと話題になってた、Windowsのコンソールでコマンドウィンドウが変になるやつ、確定パターンがあったので、撮影",
+        "user": "UAZ33BKV2",
+        "ts": "1584672611.393500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "w3LGx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "前にちょっと話題になってた、Windowsのコンソールでコマンドウィンドウが変になるやつ、確定パターンがあったので、撮影"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c754a618-40a9-4967-a3a5-78e8b7a1ab1d",
+        "type": "message",
+        "text": "<https:\/\/gyazo.com\/5925117438bb70d33491416f200855a5>",
+        "user": "UAZ33BKV2",
+        "ts": "1584672695.394100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Gyazo",
+                "service_url": "https:\/\/gyazo.com",
+                "fallback": "Gyazo Photo: ",
+                "image_url": "https:\/\/i.gyazo.com\/thumb\/1000\/5925117438bb70d33491416f200855a5-gif.gif",
+                "image_width": 1000,
+                "image_height": 521,
+                "from_url": "https:\/\/gyazo.com\/5925117438bb70d33491416f200855a5",
+                "image_bytes": 1389929,
+                "title_link": "https:\/\/gyazo.com\/5925117438bb70d33491416f200855a5",
+                "service_icon": "https:\/\/gyazo.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/gyazo.com\/5925117438bb70d33491416f200855a5"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "f97H",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/gyazo.com\/5925117438bb70d33491416f200855a5"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c6702091-7182-4753-a411-707c0eec85b8",
+        "type": "message",
+        "text": "わかってれば、あわてないが...知らないとビビる",
+        "user": "UAZ33BKV2",
+        "ts": "1584672767.394600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3C=d",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "わかってれば、あわてないが...知らないとビビる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "86a52a14-a3dd-4a08-be78-68329b0447a9",
+        "type": "message",
+        "text": "再現手順があるのはいい話",
+        "user": "U9S4G0LJW",
+        "ts": "1584673076.394800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8jSnm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "再現手順があるのはいい話"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b6147509-263b-4034-9b61-c7a2c3a529c7",
+        "type": "message",
+        "text": "ただ、自分のぐっちゃぐちゃな環境(プラグインが多い)こともあって、他での再現性は不明...\n一応Windowsのcmdでgit rebase -iして、最初の行に居る状態でEscすると出ます、一度移動すると出ないっぽいが、場合によっては出たりはする(commit のeditでも出たり出なかったり)",
+        "user": "UAZ33BKV2",
+        "ts": "1584673267.396300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "msn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただ、自分のぐっちゃぐちゃな環境(プラグインが多い)こともあって、他での再現性は不明...\n一応Windowsのcmdでgit rebase -iして、最初の行に居る状態でEscすると出ます、一度移動すると出ないっぽいが、場合によっては出たりはする(commit のeditでも出たり出なかったり)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0c7911de-3108-4366-83c4-99c488ec9d66",
+        "type": "message",
+        "text": "右下の「金金」のあたりに 8.1.2132 が適用されていない vim.exe を Insider build cmd.exe で運用した結果の面影が見えます\nもしくは git core.editor が呼ぶ vim.exe が notermguicolor 状態であっても「金金」にはなります (未PR)",
+        "user": "UFZL441S8",
+        "ts": "1584686756.402200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g6d8122d8d38",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c6d8122d8d387de4854743595cfcd9a0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0003-72.png",
+            "first_name": "",
+            "real_name": "Nobuhiro Takasaki",
+            "display_name": "ntak",
+            "team": "T03C4RC8V",
+            "name": "mail",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CSM=X",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "右下の「金金」のあたりに 8.1.2132 が適用されていない vim.exe を Insider build cmd.exe で運用した結果の面影が見えます\nもしくは git core.editor が呼ぶ vim.exe が notermguicolor 状態であっても「金金」にはなります (未PR)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "57e0ebf1-f62b-4a44-89ce-4c819e955434",
+        "type": "message",
+        "text": "金金...",
+        "user": "U03C6TEAZ",
+        "ts": "1584686856.402400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/W=fa",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "金金..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "thinking_face",
+                "users": [
+                    "U9S4G0LJW",
+                    "UHV7G5KKP"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aaf10cd5-598a-406a-b88e-4dff3105e882",
+        "type": "message",
+        "text": "ふたつの…金…",
+        "user": "UFZL441S8",
+        "ts": "1584686893.402800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g6d8122d8d38",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/c6d8122d8d387de4854743595cfcd9a0.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0003-72.png",
+            "first_name": "",
+            "real_name": "Nobuhiro Takasaki",
+            "display_name": "ntak",
+            "team": "T03C4RC8V",
+            "name": "mail",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IdJG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ふたつの…金…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "thinking_face",
+                "users": [
+                    "U9S4G0LJW",
+                    "UHV7G5KKP"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7d57b690-3aee-49f0-adce-fb0592d6e24e",
+        "type": "message",
+        "text": "<https:\/\/ja.wikipedia.org\/wiki\/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91>",
+        "user": "U03C6TEAZ",
+        "ts": "1584687213.404300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "image_url": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/8\/8b\/Mon-Mon-Tue-Wed-Thu-Fri-Fri.JPG",
+                "image_width": 306,
+                "image_height": 457,
+                "image_bytes": 21651,
+                "title": "月月火水木金金",
+                "title_link": "https:\/\/ja.wikipedia.org\/wiki\/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91",
+                "from_url": "https:\/\/ja.wikipedia.org\/wiki\/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91",
+                "author_name": "Wikipedia",
+                "author_link": "https:\/\/ja.wikipedia.org\/",
+                "text": "月月火水木金金（げつげつかすいもくきんきん）とは、土日返上で働くという意味を表す慣用表現である。\n本項目では軍歌「月月火水木金金」についても記述する。",
+                "fallback": "wikipedia: 月月火水木金金",
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/wikipedia.png",
+                "id": 1,
+                "original_url": "https:\/\/ja.wikipedia.org\/wiki\/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HSF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ja.wikipedia.org\/wiki\/%E6%9C%88%E6%9C%88%E7%81%AB%E6%B0%B4%E6%9C%A8%E9%87%91%E9%87%91"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "085a4b38-814e-42f6-8679-5c018a8fa49e",
+        "type": "message",
+        "text": "社畜",
+        "user": "U9S4G0LJW",
+        "ts": "1584687257.404800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2NL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "社畜"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

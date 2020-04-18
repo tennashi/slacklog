@@ -1,0 +1,134 @@
+[
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/e49b4bb89505fad28cf89f0891aef3e2d397919e|patch 8.2.0370: the typebuf_was_filled flag is sometimes not reset>\npatch 8.2.0370: the typebuf_was_filled flag is sometimes not reset\n\nProblem:    The typebuf_was_filled flag is sometimes not reset, which may\n            cause a hang.\nSolution:   Make sure typebuf_was_filled is reset when the typeahead buffer is\n            empty.",
+        "ts": "1583929101.016700",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0370: the typebuf_was_filled flag is sometimes not reset · vim\/vim@e49b4bb",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/e49b4bb89505fad28cf89f0891aef3e2d397919e",
+                "text": "Problem: The typebuf_was_filled flag is sometimes not reset, which may cause a hang. Solution: Make sure typebuf_was_filled is reset when the typeahead buffer is empty.",
+                "fallback": "GitHub: patch 8.2.0370: the typebuf_was_filled flag is sometimes not reset · vim\/vim@e49b4bb",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/e49b4bb89505fad28cf89f0891aef3e2d397919e",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/e49b4bb89505fad28cf89f0891aef3e2d397919e"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583929103.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/cee52204ca030ce7814844e4dab8b4ed897ba3cc|patch 8.2.0371: crash with combination of terminal popup and autocmd>\npatch 8.2.0371: crash with combination of terminal popup and autocmd\n\nProblem:    Crash with combination of terminal popup and autocmd.\nSolution:   Disallow closing a popup that is the current window.  Add a check\n            that the current buffer is valid. (closes #5754)",
+        "ts": "1583933907.016900",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0371: crash with combination of terminal popup and autocmd · vim\/vim@cee5220",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/cee52204ca030ce7814844e4dab8b4ed897ba3cc",
+                "text": "Problem: Crash with combination of terminal popup and autocmd. Solution: Disallow closing a popup that is the current window. Add a check that the current buffer is valid. (closes...",
+                "fallback": "GitHub: patch 8.2.0371: crash with combination of terminal popup and autocmd · vim\/vim@cee5220",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/cee52204ca030ce7814844e4dab8b4ed897ba3cc",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/cee52204ca030ce7814844e4dab8b4ed897ba3cc"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583933910.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/66b98854d86f641db036fd1e6cf20f7b8905344e|patch 8.2.0372: prop_find() may not find text property at start of th…>\npatch 8.2.0372: prop_find() may not find text property at start of the line\n\nProblem:    Prop_find() may not find text property at start of the line.\nSolution:   Adjust the loop to find properties. (Axel Forsman, closes #5761,\n            closes #5663)",
+        "ts": "1583950709.017100",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0372: prop_find() may not find text property at start of th… · vim\/vim@66b9885",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/66b98854d86f641db036fd1e6cf20f7b8905344e",
+                "text": "…e line Problem: Prop_find() may not find text property at start of the line. Solution: Adjust the loop to find properties. (Axel Forsman, closes #5761, closes #5663)",
+                "fallback": "GitHub: patch 8.2.0372: prop_find() may not find text property at start of th… · vim\/vim@66b9885",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/66b98854d86f641db036fd1e6cf20f7b8905344e",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/66b98854d86f641db036fd1e6cf20f7b8905344e"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583950711.000000"
+        }
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/github.com\/vim\/vim\/commit\/3a05ce63feae040cd817be289e84c2a7e653d59d|patch 8.2.0373: type of term_sendkeys() is unknown>\npatch 8.2.0373: type of term_sendkeys() is unknown\n\nProblem:    Type of term_sendkeys() is unknown.\nSolution:   Just return zero. (closes #5762)",
+        "ts": "1583951911.017300",
+        "username": "Recent Commits to vim:master",
+        "icons": {
+            "image_36": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_36.png",
+            "image_48": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_48.png",
+            "image_72": "https:\/\/a.slack-edge.com\/80588\/img\/services\/rss_72.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "patch 8.2.0373: type of term_sendkeys() is unknown · vim\/vim@3a05ce6",
+                "title_link": "https:\/\/github.com\/vim\/vim\/commit\/3a05ce63feae040cd817be289e84c2a7e653d59d",
+                "text": "Problem: Type of term_sendkeys() is unknown. Solution: Just return zero. (closes #5762)",
+                "fallback": "GitHub: patch 8.2.0373: type of term_sendkeys() is unknown · vim\/vim@3a05ce6",
+                "from_url": "https:\/\/github.com\/vim\/vim\/commit\/3a05ce63feae040cd817be289e84c2a7e653d59d",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/8530623?s=200&v=4",
+                "thumb_width": 200,
+                "thumb_height": 200,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/vim\/vim\/commit\/3a05ce63feae040cd817be289e84c2a7e653d59d"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1583951912.000000"
+        }
+    }
+]

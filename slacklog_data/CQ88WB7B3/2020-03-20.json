@@ -1,0 +1,131 @@
+[
+    {
+        "client_msg_id": "38857bad-1316-46e6-ac3d-857220ae7637",
+        "type": "message",
+        "text": "cocって設定をvimrcに書けなかったっけか",
+        "user": "U72TB62UF",
+        "ts": "1584773336.083300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jlf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cocって設定をvimrcに書けなかったっけか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fd48bf88-c51e-43ee-8983-ad3605bcaba4",
+        "type": "message",
+        "text": "deopleteとcocの両方が入っていると、coc側でcompoptの設定が複数有ると言われてエラーになる",
+        "user": "U72TB62UF",
+        "ts": "1584773412.083900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "T1c",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "deopleteとcocの両方が入っていると、coc側でcompoptの設定が複数有ると言われてエラーになる"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "67c88a1b-ebb2-4584-84e3-d08c729ae115",
+        "type": "message",
+        "text": "deopleteを有効にしたとき、vimrc側から `\"suggest.autoTrigger\":\"none\"` をセットしてcocのエラーが出ないようにしたいのだけれども、wikiのどこに書いてないのかなぁ",
+        "user": "U72TB62UF",
+        "ts": "1584773939.084800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g1dffe3b4b3a",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/b1dffe3b4b3a420d7537059b762a5ea4.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "",
+            "real_name": "takets",
+            "display_name": "takets",
+            "team": "T03C4RC8V",
+            "name": "nolifeking00",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U72TB62UF",
+            "ts": "1584773974.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Obk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "deopleteを有効にしたとき、vimrc側から "
+                            },
+                            {
+                                "type": "text",
+                                "text": "\"suggest.autoTrigger\":\"none\"",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " をセットしてcocのエラーが出ないようにしたいのだけれども、wikiのどこに書いてないのかなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

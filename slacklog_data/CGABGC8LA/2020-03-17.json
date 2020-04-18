@@ -1,0 +1,2066 @@
+[
+    {
+        "client_msg_id": "565e813d-560f-46c1-b086-76060bf22883",
+        "type": "message",
+        "text": "csv の中に JSON があるのではなく、実際はテーブルのカラムの中に JSON が入っていて、今回検証用に CSV (というか TSV) としてエクスポートしただけです。",
+        "user": "U03C6TEAZ",
+        "ts": "1584428899.486300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8gy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "csv の中に JSON があるのではなく、実際はテーブルのカラムの中に JSON が入っていて、今回検証用に CSV (というか TSV) としてエクスポートしただけです。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "U03C71D7H"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3809e217-4ab4-4ef9-81d1-6cf35dd5f6df",
+        "type": "message",
+        "text": "gotags に exclude ってないのね…再帰的にたどってるときにアクセス権のないディレクトリがあるとそこで読み込みが止まっちゃってエラーになる…",
+        "user": "U06BRP8VD",
+        "ts": "1584431938.487200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "TF\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "gotags に exclude ってないのね…再帰的にたどってるときにアクセス権のないディレクトリがあるとそこで読み込みが止まっちゃってエラーになる…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e6df3ef3-1a91-4356-acd2-7a06d05d77b6",
+        "type": "message",
+        "text": "引数が file(s) なのであらかじめ絞るしかなさそう。",
+        "user": "U03C6TEAZ",
+        "ts": "1584431994.487500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nUg0f",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "引数が file(s) なのであらかじめ絞るしかなさそう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4835f85c-5c31-4f25-a435-3c741b9980d7",
+        "type": "message",
+        "text": "ですね。いまはfind…",
+        "user": "U06BRP8VD",
+        "ts": "1584432151.487900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IMfy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ですね。いまはfind…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "13b1b7a0-7d0c-4aa2-8f69-d8991738aa71",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/_marony\/status\/1239798825339895808>",
+        "user": "U06ECBRTJ",
+        "ts": "1584441045.488200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/_marony|@_marony>: Go言語に文句は言わないがマスコットが可愛くないことについては文句を言い続けるぞ！",
+                "ts": 1584426048,
+                "author_name": "まろ@関数型言語作曲機械学習勉強してない",
+                "author_link": "https:\/\/twitter.com\/_marony\/status\/1239798825339895808",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1177057868492595200\/1m1rLY8P_normal.jpg",
+                "author_subname": "@_marony",
+                "text": "Go言語に文句は言わないがマスコットが可愛くないことについては文句を言い続けるぞ！",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/_marony\/status\/1239798825339895808",
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/_marony\/status\/1239798825339895808",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "SleWF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/_marony\/status\/1239798825339895808"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c20de0be-6324-446a-99f6-bdb1372577a4",
+        "type": "message",
+        "text": "ふふっ ってなりました",
+        "user": "U06ECBRTJ",
+        "ts": "1584441053.488700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "X4\/O",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ふふっ ってなりました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6e72e990-326e-4430-9070-a971f45b3c55",
+        "type": "message",
+        "text": "えーかわいいじゃんあれ",
+        "user": "U9S4G0LJW",
+        "ts": "1584441063.489000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UTT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "えーかわいいじゃんあれ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b6c52270-1c82-41ab-ad83-bb2d9addf268",
+        "type": "message",
+        "text": "キモカワイイ…かな",
+        "user": "U6XP9LZ6V",
+        "ts": "1584441154.489700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aa8p",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "キモカワイイ…かな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8386ce21-4e49-48c5-8648-7cc250500772",
+        "type": "message",
+        "text": "D言語くんもなかなかですよね",
+        "user": "U06ECBRTJ",
+        "ts": "1584441164.489900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7JB5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "D言語くんもなかなかですよね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6480c604-de4b-4626-9056-cbe02381119a",
+        "type": "message",
+        "text": "Lispエイリアン…",
+        "user": "UAUFDS92N",
+        "ts": "1584441293.490500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7c7dc2cc9ade",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-23\/367829135376_7c7dc2cc9adecdef7fd3_72.png",
+            "first_name": "ひがし",
+            "real_name": "ひがし",
+            "display_name": "ひがし",
+            "team": "T03C4RC8V",
+            "name": "higashi.ict",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IiAE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Lispエイリアン…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f00f5ae7-c3e5-4136-b873-a2f8410b6ee4",
+        "type": "message",
+        "text": "<https:\/\/raw.githubusercontent.com\/egonelbre\/gophers\/master\/.thumb\/animation\/gopher-dance-long-3x.gif>",
+        "user": "U03C6TEAZ",
+        "ts": "1584441296.490700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "192x192px image",
+                "image_url": "https:\/\/raw.githubusercontent.com\/egonelbre\/gophers\/master\/.thumb\/animation\/gopher-dance-long-3x.gif",
+                "image_width": 192,
+                "image_height": 192,
+                "image_bytes": 59058,
+                "is_animated": true,
+                "from_url": "https:\/\/raw.githubusercontent.com\/egonelbre\/gophers\/master\/.thumb\/animation\/gopher-dance-long-3x.gif",
+                "id": 1,
+                "original_url": "https:\/\/raw.githubusercontent.com\/egonelbre\/gophers\/master\/.thumb\/animation\/gopher-dance-long-3x.gif"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "m3R",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/raw.githubusercontent.com\/egonelbre\/gophers\/master\/.thumb\/animation\/gopher-dance-long-3x.gif"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "69b9bbe795f19442",
+                "users": [
+                    "UAUFDS92N",
+                    "U9S4G0LJW",
+                    "UK0JC4CM8",
+                    "UEA8T80GY",
+                    "UKHUVMBJR",
+                    "UMUPYCYN8",
+                    "UGP5AJKU4",
+                    "UEBF2KQTD",
+                    "UGXMRNBUM"
+                ],
+                "count": 9
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aaafe52c-4154-4b90-b435-7ed179b80151",
+        "type": "message",
+        "text": "かわいい",
+        "user": "U03C6TEAZ",
+        "ts": "1584441311.491100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kyZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "かわいい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8d478ce2-d93a-496b-b816-25af8fef7503",
+        "type": "message",
+        "text": "僕の Windows Terminal の背景、これです。",
+        "user": "U03C6TEAZ",
+        "ts": "1584441333.491400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WQA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "僕の Windows Terminal の背景、これです。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ada5e108-94ac-4d99-9a94-cf6e5a90e36c",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/mattn_jp\/status\/1228358194340093952>",
+        "user": "U03C6TEAZ",
+        "ts": "1584441353.491900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/mattn_jp|@mattn_jp>: Windows Terminal がいい感じになった。 <https:\/\/pbs.twimg.com\/tweet_video_thumb\/EQwBQsNUUAAjI6R.jpg>",
+                "ts": 1581698389,
+                "author_name": "mattn",
+                "author_link": "https:\/\/twitter.com\/mattn_jp\/status\/1228358194340093952",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1022150732634419200\/yZg4xLsO_normal.jpg",
+                "author_subname": "@mattn_jp",
+                "text": "Windows Terminal がいい感じになった。",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/mattn_jp\/status\/1228358194340093952",
+                "thumb_url": "https:\/\/pbs.twimg.com\/tweet_video_thumb\/EQwBQsNUUAAjI6R.jpg",
+                "thumb_width": 988,
+                "thumb_height": 652,
+                "video_html_width": 988,
+                "video_html_height": 652,
+                "video_html": "<video autoplay loop muted poster=\"https:\/\/pbs.twimg.com\/tweet_video_thumb\/EQwBQsNUUAAjI6R.jpg\" width=\"988\" height=\"652\"><source type=\"video\/mp4\" src=\"https:\/\/video.twimg.com\/tweet_video\/EQwBQsNUUAAjI6R.mp4\"><\/video>",
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/mattn_jp\/status\/1228358194340093952",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Yc1p",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/mattn_jp\/status\/1228358194340093952"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "",
+        "files": [
+            {
+                "id": "FV6F3DF3L",
+                "created": 1584441354,
+                "timestamp": 1584441354,
+                "name": "image.png",
+                "title": "image.png",
+                "mimetype": "image\/png",
+                "filetype": "png",
+                "pretty_type": "PNG",
+                "user": "U03C71D7H",
+                "editable": false,
+                "size": 99359,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FV6F3DF3L\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-FV6F3DF3L\/download\/image.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_64": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV6F3DF3L-2ad22ee76d\/image_64.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_80": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV6F3DF3L-2ad22ee76d\/image_80.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV6F3DF3L-2ad22ee76d\/image_360.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "thumb_360_w": 236,
+                "thumb_360_h": 236,
+                "thumb_160": "https:\/\/files.slack.com\/files-tmb\/T03C4RC8V-FV6F3DF3L-2ad22ee76d\/image_160.png?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "image_exif_rotation": 1,
+                "original_w": 236,
+                "original_h": 236,
+                "thumb_tiny": "AwAwADDToJAGTRURO5vYUmxpAZGP3V4phLnpn8TTZTLvUJgL3JqSpZSGh3XrmpVkDe1VpZ1iYKwPPcU\/GORRdoLJkjSZXGKaKiztTrnHrQreh\/MUrhYmopobjqPyoyfb86AGvGkhG9c46U4kdKTnPNJn5jQMiY4JB7ioDIUbjkVpzR+YhHfsay5EbeRjBHUU7WEnclW5Q8E4+tL9oTP3hUHlA8Hk0jRBTgUaDLQnDcLyadnj3qqu9elSJvZgAMk0gP\/Z",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/U03C71D7H\/FV6F3DF3L\/image.png",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-FV6F3DF3L-2ff9d1744a",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "user": "U03C71D7H",
+        "display_as_bot": false,
+        "ts": "1584441358.492100",
+        "client_msg_id": "8ff56b32-b0a0-4557-a7d1-c6f3b0415899",
+        "reactions": [
+            {
+                "name": "zimbu",
+                "users": [
+                    "UKHUVMBJR",
+                    "UAUFDS92N",
+                    "U9S4G0LJW",
+                    "U8CC7MDCL",
+                    "UEBF2KQTD"
+                ],
+                "count": 5
+            }
+        ]
+    },
+    {
+        "client_msg_id": "806666bf-4503-489a-97ee-0f37e0d6cdc8",
+        "type": "message",
+        "text": "Zimbu モンキーは tyru さんのブログに行けばいつでも会える。",
+        "user": "U03C6TEAZ",
+        "ts": "1584441436.493400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xkobo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Zimbu モンキーは tyru さんのブログに行けばいつでも会える。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7c393b0b-39c0-44ee-bf54-d45973d1c902",
+        "type": "message",
+        "text": "こいつもはや Bram 自身のアバターという",
+        "user": "U03C71D7H",
+        "ts": "1584441479.493700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FL4q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こいつもはや Bram 自身のアバターという"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ee9f14f1-bd82-4d4a-a858-9d63ee5d924a",
+        "type": "message",
+        "text": "入荷 :gopher-dance:",
+        "user": "U9S4G0LJW",
+        "ts": "1584441520.494100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Rlun",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "入荷 "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "gopher-dance"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d851fac5-fe3b-4a35-9f5f-3e68abfd4fa4",
+        "type": "message",
+        "text": "CC0は最高",
+        "user": "U9S4G0LJW",
+        "ts": "1584441523.494400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PTR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "CC0は最高"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "10f626f5-45c2-4a5f-ae7a-de0035630ddd",
+        "type": "message",
+        "text": "Vim には公式マスコットいないなぁ",
+        "user": "U03C71D7H",
+        "ts": "1584441533.494900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bOSN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vim には公式マスコットいないなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7a7ad3c4-d260-4e23-8e32-bc5f228bd8b1",
+        "type": "message",
+        "text": "<https:\/\/ih0.redbubble.net\/image.673424615.3130\/st,small,507x507-pad,600x600,f8f8f8.u5.jpg>",
+        "user": "U03C6TEAZ",
+        "ts": "1584441556.495600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "600x600px image",
+                "image_url": "https:\/\/ih0.redbubble.net\/image.673424615.3130\/st,small,507x507-pad,600x600,f8f8f8.u5.jpg",
+                "image_width": 600,
+                "image_height": 600,
+                "image_bytes": 26702,
+                "from_url": "https:\/\/ih0.redbubble.net\/image.673424615.3130\/st,small,507x507-pad,600x600,f8f8f8.u5.jpg",
+                "id": 1,
+                "original_url": "https:\/\/ih0.redbubble.net\/image.673424615.3130\/st,small,507x507-pad,600x600,f8f8f8.u5.jpg"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/moW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/ih0.redbubble.net\/image.673424615.3130\/st,small,507x507-pad,600x600,f8f8f8.u5.jpg"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b12242cb-5419-423f-97d0-c232b7f1b4df",
+        "type": "message",
+        "text": "もしくは",
+        "user": "U03C6TEAZ",
+        "ts": "1584441584.495900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ufvII",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もしくは"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "005ff3a3-c043-4e4e-9594-e0258661c5de",
+        "type": "message",
+        "text": "<https:\/\/i.imgur.com\/cf7qZsG.jpg>",
+        "user": "U03C6TEAZ",
+        "ts": "1584441586.496100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "1058x887px image",
+                "image_url": "https:\/\/i.imgur.com\/cf7qZsG.jpg",
+                "image_width": 1058,
+                "image_height": 887,
+                "image_bytes": 110809,
+                "from_url": "https:\/\/i.imgur.com\/cf7qZsG.jpg",
+                "id": 1,
+                "original_url": "https:\/\/i.imgur.com\/cf7qZsG.jpg"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bmY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/i.imgur.com\/cf7qZsG.jpg"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "843d2a15-895c-41f1-b517-20ed2fa68be1",
+        "type": "message",
+        "text": "Vim力というか魔力が高そう",
+        "user": "UAZ33BKV2",
+        "ts": "1584448954.496800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "W6XG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vim力というか魔力が高そう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2513b5ca-2687-4331-b98d-d920207051b9",
+        "type": "message",
+        "text": "ゴーファーくんマスコットほしかったんですけどグーグルのショップで仕入れられなくて泣く泣く諦めました",
+        "user": "UGP5AJKU4",
+        "ts": "1584449877.498100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "88371f1c18ce",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-03-05\/566476208928_88371f1c18cebcd59515_72.jpg",
+            "first_name": "yy_yank",
+            "real_name": "yy_yank",
+            "display_name": "yy_yank",
+            "team": "T03C4RC8V",
+            "name": "yy.yank.me",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "EtQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ゴーファーくんマスコットほしかったんですけどグーグルのショップで仕入れられなくて泣く泣く諦めました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "be76dcd0-020e-40d7-a2ef-233d2a59d3fb",
+        "type": "message",
+        "text": "gopher のぬいぐるみ貰ったの、9年も前か。",
+        "user": "U03C6TEAZ",
+        "ts": "1584450032.498700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KdJ2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "gopher のぬいぐるみ貰ったの、9年も前か。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f25fde09-2ddb-4662-9c34-0b09c16e8aad",
+        "type": "message",
+        "text": "gopherくんがライナスの毛布になってる子供がいそうだ...",
+        "user": "UAZ33BKV2",
+        "ts": "1584450295.499300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yXb",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "gopherくんがライナスの毛布になってる子供がいそうだ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ed95a3f4-72d9-46fc-a174-ea971a5dfade",
+        "type": "message",
+        "text": "これ kaoriya さんの欲しそうな奴？ <https:\/\/github.com\/golang\/go\/commit\/fb1cd942225f66a6a8506d28bf317063efe50979>",
+        "user": "U03C6TEAZ",
+        "ts": "1584460221.000100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "runtime\/pprof: export max rss when saving memory profiles. · golang\/go@fb1cd94",
+                "title_link": "https:\/\/github.com\/golang\/go\/commit\/fb1cd942225f66a6a8506d28bf317063efe50979",
+                "text": "NB: Adds syscall to deps on runtime\/pprof. Change-Id: I5dd14c2b25eb9c3c446832f5818de45fafd48a27 Reviewed-on: <https:\/\/go-review.googlesource.com\/c\/go\/+\/183844> Run-TryBot: Jeremy Faller &lt;jeremy@go...",
+                "fallback": "GitHub: runtime\/pprof: export max rss when saving memory profiles. · golang\/go@fb1cd94",
+                "from_url": "https:\/\/github.com\/golang\/go\/commit\/fb1cd942225f66a6a8506d28bf317063efe50979",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/3063869?s=200&v=4",
+                "thumb_width": 250,
+                "thumb_height": 250,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/golang\/go\/commit\/fb1cd942225f66a6a8506d28bf317063efe50979"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "b=vrS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ kaoriya さんの欲しそうな奴？ "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/golang\/go\/commit\/fb1cd942225f66a6a8506d28bf317063efe50979"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "30153ad4-d74d-4ab3-97f4-a770caf85bb4",
+        "type": "message",
+        "text": "おおちょっとおもしろげ",
+        "user": "U06BRP8VD",
+        "ts": "1584506569.000800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DUw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おおちょっとおもしろげ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c23de44b-a7e0-441d-90e6-ce2ec7d6a6cd",
+        "type": "message",
+        "text": "Actions上でgoxzがこんなエラー吐いてとまって???ってなってる。\n\n```[goxz] [!!ERROR!!] mkdir \/home\/runner\/work\/nvgd\/src\/github.com\/koron\/nvgd\/goxz\/.goxz-089982683\/nvgd_refs\/tags\/v1.5.0-beta.1_darwin_amd64: no such file or directory```",
+        "user": "U06BRP8VD",
+        "ts": "1584506596.001400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=\/sHN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Actions上でgoxzがこんなエラー吐いてとまって???ってなってる。\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "[goxz] [!!ERROR!!] mkdir \/home\/runner\/work\/nvgd\/src\/github.com\/koron\/nvgd\/goxz\/.goxz-089982683\/nvgd_refs\/tags\/v1.5.0-beta.1_darwin_amd64: no such file or directory"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e869f9e3-a9bc-45a5-8717-e7b254185a74",
+        "type": "message",
+        "text": "-pvにスラッシュあるとダメかも",
+        "user": "U7H4TJEG0",
+        "ts": "1584506813.001700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nW0Fw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "-pvにスラッシュあるとダメかも"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8f2c57b5-4db9-4e09-8083-21c7b26a6dfd",
+        "type": "message",
+        "text": "あーそういうこと…これはめんどい",
+        "user": "U06BRP8VD",
+        "ts": "1584506852.002000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OfS5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あーそういうこと…これはめんどい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d82b7fc3-78c1-452b-b0a3-81908cfa2425",
+        "type": "message",
+        "text": "`${GITHUB_REF##*\/}` ？",
+        "user": "U7H4TJEG0",
+        "ts": "1584506905.002200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YVKE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "${GITHUB_REF##*\/}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " ？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a912e97f-f7cf-4846-a2b7-9918c98c4451",
+        "type": "message",
+        "text": "使う場所が多いからいったん環境変数TAGを宣言してみたけど…",
+        "user": "U06BRP8VD",
+        "ts": "1584507165.002800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9A9u",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "使う場所が多いからいったん環境変数TAGを宣言してみたけど…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6105b55d-ccc1-4300-9b2d-0714fb5c51eb",
+        "type": "message",
+        "text": "itchynyさんのmmvのrelease.yamlを参考に、makefileなしでリリースできるworkflow作った。<https:\/\/github.com\/koron\/nvgd\/blob\/master\/.github\/workflows\/release.yml>",
+        "user": "U06BRP8VD",
+        "ts": "1584508617.003500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "koron\/nvgd",
+                "title_link": "https:\/\/github.com\/koron\/nvgd\/blob\/master\/.github\/workflows\/release.yml",
+                "text": "Filterable (grep, head and tail) HTTP file server. Contribute to koron\/nvgd development by creating an account on GitHub.",
+                "fallback": "GitHub: koron\/nvgd",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/468368?s=400&v=4",
+                "from_url": "https:\/\/github.com\/koron\/nvgd\/blob\/master\/.github\/workflows\/release.yml",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/koron\/nvgd\/blob\/master\/.github\/workflows\/release.yml"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "8MH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "itchynyさんのmmvのrelease.yamlを参考に、makefileなしでリリースできるworkflow作った。"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/koron\/nvgd\/blob\/master\/.github\/workflows\/release.yml"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584508617.003500",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584682967.033300",
+        "reply_users": [
+            "U06BRP8VD"
+        ],
+        "replies": [
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584682967.033300"
+            }
+        ],
+        "subscribed": false,
+        "reactions": [
+            {
+                "name": "tada",
+                "users": [
+                    "U7H4TJEG0",
+                    "UAZ33BKV2",
+                    "UG6DF6W87"
+                ],
+                "count": 3
+            },
+            {
+                "name": "subara",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9894a5f7-31ed-4624-b59a-cdb6c6670f81",
+        "type": "message",
+        "text": "<https:\/\/github.com\/koron\/nvgd\/actions?query=workflow%3ARelease> この激闘の履歴w",
+        "user": "U06BRP8VD",
+        "ts": "1584509041.004200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "koron\/nvgd",
+                "title_link": "https:\/\/github.com\/koron\/nvgd\/actions?query=workflow%3ARelease",
+                "text": "Filterable (grep, head and tail) HTTP file server. Contribute to koron\/nvgd development by creating an account on GitHub.",
+                "fallback": "GitHub: koron\/nvgd",
+                "thumb_url": "https:\/\/avatars0.githubusercontent.com\/u\/468368?s=400&v=4",
+                "from_url": "https:\/\/github.com\/koron\/nvgd\/actions?query=workflow%3ARelease",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/koron\/nvgd\/actions?query=workflow%3ARelease"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OHh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/koron\/nvgd\/actions?query=workflow%3ARelease"
+                            },
+                            {
+                                "type": "text",
+                                "text": " この激闘の履歴w"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "otz",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6d26bbe2-48d4-426b-a724-2ef86ee33ed2",
+        "type": "message",
+        "text": "問題点は各ステップのテストがGitHub Actionsでしかできないことw",
+        "user": "U06BRP8VD",
+        "ts": "1584509327.005000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rsEFF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "問題点は各ステップのテストがGitHub Actionsでしかできないことw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aca233d4-7eb1-484d-a3c4-afa6943eb836",
+        "type": "message",
+        "text": "完全に好みですが `run: echo \"::add-path::$(go env GOPATH)\/bin\"` でPATH通してしまえば `${{ env.GOPATH }}\/bin\/` 書かなくても良くなりそう。",
+        "user": "U7H4TJEG0",
+        "ts": "1584509519.006100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "faHG",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "完全に好みですが "
+                            },
+                            {
+                                "type": "text",
+                                "text": "run: echo \"::add-path::$(go env GOPATH)\/bin\"",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " でPATH通してしまえば "
+                            },
+                            {
+                                "type": "text",
+                                "text": "${{ env.GOPATH }}\/bin\/",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 書かなくても良くなりそう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ea6da31d-df37-4eb2-8231-7ba6d6f91c77",
+        "type": "message",
+        "text": "それ、最初あったんですが",
+        "user": "U06BRP8VD",
+        "ts": "1584509544.006700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "B+eq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それ、最初あったんですが"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584509544.006700",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584509716.008300",
+        "reply_users": [
+            "U06BRP8VD"
+        ],
+        "replies": [
+            {
+                "user": "U06BRP8VD",
+                "ts": "1584509716.008300"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "85ab399b-eff9-4148-b8a8-f7d005aca417",
+        "type": "message",
+        "text": "binを自分で掘らないとgo get でbinに書いてもらえない、みたいな現象に遭遇した際に切り分けて消しちゃったんですよ。",
+        "user": "U06BRP8VD",
+        "ts": "1584509579.007600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lHg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "binを自分で掘らないとgo get でbinに書いてもらえない、みたいな現象に遭遇した際に切り分けて消しちゃったんですよ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9d36ad6b-e790-4101-844a-79ec8a3313c4",
+        "type": "message",
+        "text": "で、いずれ復活させるかも。",
+        "user": "U06BRP8VD",
+        "ts": "1584509597.007900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wcx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "で、いずれ復活させるかも。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "89b3ded3-5c8e-4668-a019-a2bf706c88a2",
+        "type": "message",
+        "text": "いまはしばらくActionsいじりたくない気持ちw",
+        "user": "U06BRP8VD",
+        "ts": "1584509692.008200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U06BRP8VD",
+            "ts": "1584509741.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "b\/R",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いまはしばらくActionsいじりたくない気持ちw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a95b7d8-4c78-4f03-ab5b-250153b7effb",
+        "type": "message",
+        "text": "itchynyさんのを参考にして始めたので、当然最初はあったw",
+        "user": "U06BRP8VD",
+        "ts": "1584509716.008300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wRXh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "itchynyさんのを参考にして始めたので、当然最初はあったw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584509544.006700",
+        "parent_user_id": "U06BRP8VD"
+    },
+    {
+        "client_msg_id": "4a1c71e0-a573-449a-8808-a06320abb17b",
+        "type": "message",
+        "text": "あらら、bin作らないといけないのなんでだろう…",
+        "user": "U7H4TJEG0",
+        "ts": "1584509766.008800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g374ddea3465",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/e374ddea34651a9a43de332bfcba64a3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "itchyny",
+            "display_name": "itchyny",
+            "team": "T03C4RC8V",
+            "name": "itchyny",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0Sq4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あらら、bin作らないといけないのなんでだろう…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6e0f5f3a-d84a-4951-9064-f9d185d73935",
+        "type": "message",
+        "text": "workspace &amp;&amp; GOPATH をずらしてるのとか、関係があるかもなぁとか考えてます。",
+        "user": "U06BRP8VD",
+        "ts": "1584509901.009600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U06BRP8VD",
+            "ts": "1584509916.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Sqx3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "workspace && GOPATH をずらしてるのとか、関係があるかもなぁとか考えてます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e65554bb-242f-48e4-a243-0f2ad4706eb9",
+        "type": "message",
+        "text": "テストのためあまりにリトライしたんでbashにこんなヒストリができてるwww\n\n```git tag -d v1.5.0-beta.1 &amp;&amp; git commit -a --amend -m 'build and release with github actions' &amp;&amp; git tag -a v1.5.0-beta.1 -m 'beta tes\nt to release with Github Actions' &amp;&amp; git push origin :v1.5.0-beta.1 &amp;&amp; git push --tags```",
+        "user": "U06BRP8VD",
+        "ts": "1584510053.010400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U06BRP8VD",
+            "ts": "1584510077.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FwkIW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "テストのためあまりにリトライしたんでbashにこんなヒストリができてるwww\n\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "git tag -d v1.5.0-beta.1 && git commit -a --amend -m 'build and release with github actions' && git tag -a v1.5.0-beta.1 -m 'beta tes\nt to release with Github Actions' && git push origin :v1.5.0-beta.1 && git push --tags"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

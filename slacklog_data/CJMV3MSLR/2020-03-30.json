@@ -1,0 +1,1862 @@
+[
+    {
+        "client_msg_id": "10257a91-292c-43be-b761-70f6478a1dcd",
+        "type": "message",
+        "text": "自分なら、Terminal-Jobモードにしてコピーしちゃうかな",
+        "user": "UDDCM376D",
+        "ts": "1585553816.069800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2p+S",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自分なら、Terminal-Jobモードにしてコピーしちゃうかな"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ec7725af-5a96-4bd9-bd8d-57455f23dca7",
+        "type": "message",
+        "text": "`質問です`\n\n<https:\/\/vim-jp.slack.com\/archives\/CQ57P4XU4\/p1585396700088700|https:\/\/vim-jp.slack.com\/archives\/CQ57P4XU4\/p1585396700088700>\nで出している挙動ですが、何かしらの設定不備でしょうか？\n改めて…",
+        "user": "UAZ33BKV2",
+        "ts": "1585567013.072800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "from_url": "https:\/\/vim-jp.slack.com\/archives\/CQ57P4XU4\/p1585396700088700",
+                "fallback": "[March 28th, 2020 4:58 AM] tsuyoshi_cho: すみません、asyncompleteの挙動なのですが、C-eにasyncomplete#cancel_popup() がマップされてる状態での録画です。\nキャンセルした後、スペースの入力で再度補完が表示されてますが、これって期待動作でしたっけ?\n<https:\/\/gyazo.com\/e028bb17c6f6ee17d71b3bebf50cbe51>",
+                "ts": "1585396700.088700",
+                "author_id": "UAZ33BKV2",
+                "author_subname": "Tsuyoshi CHO",
+                "channel_id": "CQ57P4XU4",
+                "channel_name": "lsp",
+                "is_msg_unfurl": true,
+                "text": "すみません、asyncompleteの挙動なのですが、C-eにasyncomplete#cancel_popup() がマップされてる状態での録画です。\nキャンセルした後、スペースの入力で再度補完が表示されてますが、これって期待動作でしたっけ?\n<https:\/\/gyazo.com\/e028bb17c6f6ee17d71b3bebf50cbe51>",
+                "author_name": "Tsuyoshi CHO",
+                "author_link": "https:\/\/vim-jp.slack.com\/team\/UAZ33BKV2",
+                "author_icon": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_48.png",
+                "mrkdwn_in": [
+                    "text"
+                ],
+                "id": 1,
+                "original_url": "https:\/\/vim-jp.slack.com\/archives\/CQ57P4XU4\/p1585396700088700",
+                "footer": "Posted in #lsp"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "mZCK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "`質問です`\n\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/vim-jp.slack.com\/archives\/CQ57P4XU4\/p1585396700088700",
+                                "text": "https:\/\/vim-jp.slack.com\/archives\/CQ57P4XU4\/p1585396700088700"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nで出している挙動ですが、何かしらの設定不備でしょうか？\n改めて…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e5997d6d-db48-4e0e-b24f-1f42b6352e4b",
+        "type": "message",
+        "text": "どんな感じの map でしょうか？",
+        "user": "U03C6TEAZ",
+        "ts": "1585571281.073200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N87h",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どんな感じの map でしょうか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2ca2a245-e499-4707-92ea-61afd48100dd",
+        "type": "message",
+        "text": "```function! s:popup_cancel(rawchar, ...) abort \" {{{\n  let result = ''\n  if dein#is_sourced('asyncomplete.vim')\n    let result = result . asyncomplete#cancel_popup()\n    if a:0\n      let result = result . a:1\n    endif\n  else\n    let result = result . a:rawchar\n  endif\n  return result\nendfunction \" }}}\n\ninoremap &lt;expr&gt;&lt;silent&gt; &lt;C-e&gt;\n    \\ pumvisible() ? &lt;SID&gt;popup_cancel(\"\\&lt;C-e&gt;\"            ) : \"\\&lt;C-e&gt;\"```\nこんな感じで、cancel_popupが発動することは確認できています(失敗してたときは、C-eで閉じても直ぐに再popupだったし、確認もしてます)",
+        "user": "UAZ33BKV2",
+        "ts": "1585571527.074900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "EzK",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "function! s:popup_cancel(rawchar, ...) abort \" {{{\n  let result = ''\n  if dein#is_sourced('asyncomplete.vim')\n    let result = result . asyncomplete#cancel_popup()\n    if a:0\n      let result = result . a:1\n    endif\n  else\n    let result = result . a:rawchar\n  endif\n  return result\nendfunction \" }}}\n\ninoremap <expr><silent> <C-e>\n    \\ pumvisible() ? <SID>popup_cancel(\"\\<C-e>\"            ) : \"\\<C-e>\""
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nこんな感じで、cancel_popupが発動することは確認できています(失敗してたときは、C-eで閉じても直ぐに再popupだったし、確認もしてます)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1d78ef7b-c88a-45b8-94d7-e59d048e0ee0",
+        "type": "message",
+        "text": "で、キャンセルしたら再popupはしないのですが、その後のスペースで同じ候補でpopupします。\n位置と入れた文字(スペース)を考えるとpopupするのはなんか変だなと",
+        "user": "UAZ33BKV2",
+        "ts": "1585571585.075900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ERr3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "で、キャンセルしたら再popupはしないのですが、その後のスペースで同じ候補でpopupします。\n位置と入れた文字(スペース)を考えるとpopupするのはなんか変だなと"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "26f7b604-449c-4c49-af93-73256eb21e7e",
+        "type": "message",
+        "text": "refresh pattern じゃないすかね。",
+        "user": "U03C6TEAZ",
+        "ts": "1585571618.076200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Hwabg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "refresh pattern じゃないすかね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2b27ace4-e2e0-4be9-88d1-48f06200ff4d",
+        "type": "message",
+        "text": "あー...特に設定してませんが、ちょっと調整したほうがよさそう?",
+        "user": "UAZ33BKV2",
+        "ts": "1585571650.076800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZvAsr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー...特に設定してませんが、ちょっと調整したほうがよさそう?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "19df6f84-9f0a-433b-8b04-28485392b26b",
+        "type": "message",
+        "text": "ありがとうございます。ただ該当する設定にあたりそうなの triggerくらいしかないと思いますが\n```PP g:asyncomplete_triggers:\ng:asyncomplete_triggers = {'*': ['.', '&gt;', ':']}```\n特に変更はなく...?",
+        "user": "UAZ33BKV2",
+        "ts": "1585572031.077700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "trj8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありがとうございます。ただ該当する設定にあたりそうなの triggerくらいしかないと思いますが\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "PP g:asyncomplete_triggers:\ng:asyncomplete_triggers = {'*': ['.', '>', ':']}"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n特に変更はなく...?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "27179094-42dc-4a02-8f5b-30b25a0c7560",
+        "type": "message",
+        "text": "```:echo b:asyncompleter_refresh_pattern```",
+        "user": "U03C6TEAZ",
+        "ts": "1585572537.078100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "B8+p",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":echo b:asyncompleter_refresh_pattern"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "024343a5-959d-4b63-935b-eae652a6cf39",
+        "type": "message",
+        "text": "これで何が表示されますか？",
+        "user": "U03C6TEAZ",
+        "ts": "1585572543.078300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MaZ2",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これで何が表示されますか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "326d79d4-0535-4b8d-829d-511399d85d93",
+        "type": "message",
+        "text": "空白込みなので\n```:echo string(b:asyncompleter_refresh_pattern)```",
+        "user": "U03C6TEAZ",
+        "ts": "1585572567.078900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "L36t4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "空白込みなので\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":echo string(b:asyncompleter_refresh_pattern)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "803eccbe-5962-412d-bd91-6e18ee4ce210",
+        "type": "message",
+        "text": "の方がいいかな。",
+        "user": "U03C6TEAZ",
+        "ts": "1585572570.079100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=jGo",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "の方がいいかな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "78dd0eed-67b7-454d-a060-1fa0ac061cc3",
+        "type": "message",
+        "text": "vim-lsp-settings がファイルタイプに応じて設定してるんですが、そこに空白にマッチする物が入ってしまってるのかもしれないです。",
+        "user": "U03C6TEAZ",
+        "ts": "1585572622.079800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ino2+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "vim-lsp-settings がファイルタイプに応じて設定してるんですが、そこに空白にマッチする物が入ってしまってるのかもしれないです。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c853ed11-537a-4d7f-830e-7ffb461b7249",
+        "type": "message",
+        "text": "空のファイルタイプなので、未定義でした",
+        "user": "UAZ33BKV2",
+        "ts": "1585573704.080100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zgLwK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "空のファイルタイプなので、未定義でした"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3b3c5f9c-3b6a-4211-b957-aa3774d0f430",
+        "type": "message",
+        "text": "たとえば `text` でも同じです(未定義)\n上の画像でいうと、動作してるの `asyncomplete-nextword` ですので、そっち自体の不具合(というか動作特性)\nの可能性がありそうですね....",
+        "user": "UAZ33BKV2",
+        "ts": "1585573818.081700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HE4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "たとえば "
+                            },
+                            {
+                                "type": "text",
+                                "text": "text",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " でも同じです(未定義)\n上の画像でいうと、動作してるの "
+                            },
+                            {
+                                "type": "text",
+                                "text": "asyncomplete-nextword",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " ですので、そっち自体の不具合(というか動作特性)\nの可能性がありそうですね...."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5cfcdd63-aa0c-4b22-8d54-46c44d6e44a9",
+        "type": "message",
+        "text": "```b:asyncomplete_triggers = {\n  '.': {'emoji': ['.'], 'nextword': ['.'], 'omni': ['.'], 'vsnip': ['.']},\n  '\/': {'file': ['\/']},\n  ':': {'emoji': [':'], 'nextword': [':'], 'omni': [':'], 'vsnip': [':']},\n  '&gt;': {'emoji': ['&gt;'], 'nextword': ['&gt;'], 'omni': ['&gt;'], 'vsnip': ['&gt;']}\n}```\ntextでbufferのトリガはこうでした(参考)",
+        "user": "UAZ33BKV2",
+        "ts": "1585574085.082400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vp2",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "b:asyncomplete_triggers = {\n  '.': {'emoji': ['.'], 'nextword': ['.'], 'omni': ['.'], 'vsnip': ['.']},\n  '\/': {'file': ['\/']},\n  ':': {'emoji': [':'], 'nextword': [':'], 'omni': [':'], 'vsnip': [':']},\n  '>': {'emoji': ['>'], 'nextword': ['>'], 'omni': ['>'], 'vsnip': ['>']}\n}"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\ntextでbufferのトリガはこうでした(参考)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "569c0da7-9e54-4983-b14d-0fb5606e5d10",
+        "type": "message",
+        "text": "asyncompleteがcompletorを呼び出す契機が上のtriggerだと思うんですが、なぜに...",
+        "user": "UAZ33BKV2",
+        "ts": "1585574719.083100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BE8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "asyncompleteがcompletorを呼び出す契機が上のtriggerだと思うんですが、なぜに..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bd47239d-a758-4fcf-bd8a-8ae7dc138cd7",
+        "type": "message",
+        "text": "```function! s:update_trigger_characters() ```\nでログ出してるみたいなので、そちらを取ってみます。",
+        "user": "UAZ33BKV2",
+        "ts": "1585574737.083700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "o9r",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "function! s:update_trigger_characters() "
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nでログ出してるみたいなので、そちらを取ってみます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "部分を切り出しましたが、特別なことはないですね...",
+        "files": [
+            {
+                "id": "F0110TUJB52",
+                "created": 1585575092,
+                "timestamp": 1585575092,
+                "name": "asyncomplete.log",
+                "title": "asyncomplete.log",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "UAZ33BKV2",
+                "editable": true,
+                "size": 361,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F0110TUJB52\/asyncomplete.log?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F0110TUJB52\/download\/asyncomplete.log?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/UAZ33BKV2\/F0110TUJB52\/asyncomplete.log",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F0110TUJB52-3ad490b985",
+                "edit_link": "https:\/\/vim-jp.slack.com\/files\/UAZ33BKV2\/F0110TUJB52\/asyncomplete.log\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "H9u",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "部分を切り出しましたが、特別なことはないですね..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "UAZ33BKV2",
+        "display_as_bot": false,
+        "ts": "1585575093.084100",
+        "client_msg_id": "b93ad845-24aa-4b3e-8a60-a9942cbd17b0"
+    },
+    {
+        "type": "message",
+        "text": "一応ログ(操作が微妙ですが)",
+        "files": [
+            {
+                "id": "F0113DRLEDV",
+                "created": 1585575123,
+                "timestamp": 1585575123,
+                "name": "asyncomplete.log",
+                "title": "asyncomplete.log",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "UAZ33BKV2",
+                "editable": true,
+                "size": 210372,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F0113DRLEDV\/asyncomplete.log?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F0113DRLEDV\/download\/asyncomplete.log?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/UAZ33BKV2\/F0113DRLEDV\/asyncomplete.log",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F0113DRLEDV-be56bf174e",
+                "edit_link": "https:\/\/vim-jp.slack.com\/files\/UAZ33BKV2\/F0113DRLEDV\/asyncomplete.log\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "y\/vu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "一応ログ(操作が微妙ですが)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "UAZ33BKV2",
+        "display_as_bot": false,
+        "ts": "1585575128.084400",
+        "client_msg_id": "cad67f90-6cb1-431e-9868-ef48ad67b4c0"
+    },
+    {
+        "client_msg_id": "8bfea0b0-5867-4978-aa8d-ca8c16730a19",
+        "type": "message",
+        "text": "エラーが起きてるのはなんだろう。",
+        "user": "U03C6TEAZ",
+        "ts": "1585576732.084800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "dYaZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "エラーが起きてるのはなんだろう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e48dfcb2-1762-44bd-904a-e975c3ef7144",
+        "type": "message",
+        "text": "&gt; [\"core\",\"s:trigger\",\"error\",\"Vim(let):E129: 関数名が要求されます\"]",
+        "user": "U03C6TEAZ",
+        "ts": "1585576748.085300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "jxH",
+                "elements": [
+                    {
+                        "type": "rich_text_quote",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "[\"core\",\"s:trigger\",\"error\",\"Vim(let):E129: 関数名が要求されます\"]"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "58ca29fe-0a4d-4f42-97bb-47f0f8d743c5",
+        "type": "message",
+        "text": "それも謎なんですよね...\n(別の分析のときにログ見て)",
+        "user": "UAZ33BKV2",
+        "ts": "1585576751.085400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N60Yd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それも謎なんですよね...\n(別の分析のときにログ見て)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "830d3964-6d9f-4369-8c60-9a54e3a53870",
+        "type": "message",
+        "text": "ただ不明すぎてスルーしてた...",
+        "user": "UAZ33BKV2",
+        "ts": "1585576759.085700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N+T5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただ不明すぎてスルーしてた..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c541c659-03ca-48da-81b9-8df93032e921",
+        "type": "message",
+        "text": "関数から、どれかのソースのtrigger時の失敗のようなので、1つづつoffして詰めました。\n<https:\/\/github.com\/yami-beta\/asyncomplete-omni.vimとく>\nをoffにしたら出なくなりました.",
+        "user": "UAZ33BKV2",
+        "ts": "1585578262.086600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "+Jly",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "関数から、どれかのソースのtrigger時の失敗のようなので、1つづつoffして詰めました。\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yami-beta\/asyncomplete-omni.vimとく"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nをoffにしたら出なくなりました."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a2818168-9c2e-4be0-8443-ecb52600707d",
+        "type": "message",
+        "text": "今はほぼ使ってないので、omniはoffります...",
+        "user": "UAZ33BKV2",
+        "ts": "1585578369.086900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bYI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今はほぼ使ってないので、omniはoffります..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d0bd6e1d-97f3-4004-920d-24dcf1515105",
+        "type": "message",
+        "text": "そしてoffでもスペースでの補完は出ますね",
+        "user": "UAZ33BKV2",
+        "ts": "1585578542.087200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AzSc",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そしてoffでもスペースでの補完は出ますね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "ログ取りました",
+        "files": [
+            {
+                "id": "F0111J8TLJU",
+                "mode": "tombstone"
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "DaZZN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ログ取りました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "UAZ33BKV2",
+        "display_as_bot": false,
+        "ts": "1585578557.087300",
+        "client_msg_id": "a23eb37a-f6ec-4120-b191-9706564ff30d"
+    },
+    {
+        "type": "message",
+        "text": "上げなおし",
+        "files": [
+            {
+                "id": "F0111JQ97LG",
+                "created": 1585578811,
+                "timestamp": 1585578811,
+                "name": "asyncomplete.log",
+                "title": "asyncomplete.log",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "UAZ33BKV2",
+                "editable": true,
+                "size": 73898,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F0111JQ97LG\/asyncomplete.log?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F0111JQ97LG\/download\/asyncomplete.log?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/UAZ33BKV2\/F0111JQ97LG\/asyncomplete.log",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F0111JQ97LG-bb955a4275",
+                "edit_link": "https:\/\/vim-jp.slack.com\/files\/UAZ33BKV2\/F0111JQ97LG\/asyncomplete.log\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ZBAh",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "上げなおし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "UAZ33BKV2",
+        "display_as_bot": false,
+        "ts": "1585578812.087700",
+        "client_msg_id": "e2968b7e-7eec-408a-a80c-9f991a0f26e4"
+    },
+    {
+        "client_msg_id": "06b1597a-5ddc-4570-8ec8-f19db1cd8fcd",
+        "type": "message",
+        "text": "それでもまだおかしい感じですか？",
+        "user": "U03C6TEAZ",
+        "ts": "1585580190.088200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wDBC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それでもまだおかしい感じですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "567930d0-77d7-430f-b558-be022ba47c72",
+        "type": "message",
+        "text": "はい、これでもgifの動作が発生します。",
+        "user": "UAZ33BKV2",
+        "ts": "1585580253.088600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pYY0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はい、これでもgifの動作が発生します。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6ca1d9c9-0743-43cd-b0b6-24d71e69908f",
+        "type": "message",
+        "text": "操作に大きく支障があるわけではないので、おいおい直せれればな、と思います。",
+        "user": "UAZ33BKV2",
+        "ts": "1585581039.089100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=LuhW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "操作に大きく支障があるわけではないので、おいおい直せれればな、と思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "38957bbd-ecd1-45ea-91ef-6ab4fe5d81c8",
+        "type": "message",
+        "text": "これなんの language-server が動いてるんですか？",
+        "user": "U03C6TEAZ",
+        "ts": "1585581679.089400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UnH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これなんの language-server が動いてるんですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bb976d07-4fdf-47ce-9afe-2fb250285dd6",
+        "type": "message",
+        "text": "language-server じゃないか、asyncomplete-source",
+        "user": "U03C6TEAZ",
+        "ts": "1585581715.089900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oQGC0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "language-server じゃないか、asyncomplete-source"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "588dface-d6d9-46b9-a764-40e67c7143b0",
+        "type": "message",
+        "text": "ログにありますが、file,emoji,nextword などですね",
+        "user": "UAZ33BKV2",
+        "ts": "1585597795.091600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aE3L",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ログにありますが、file,emoji,nextword などですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7b2c1c52-3105-4daa-9337-22f19a7ae6df",
+        "type": "message",
+        "text": "どの source かに空白でも refresh するようなのがいるんだと思います。",
+        "user": "U03C6TEAZ",
+        "ts": "1585612839.092200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "U0CL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "どの source かに空白でも refresh するようなのがいるんだと思います。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2aa620c4-a21e-4b7a-92df-7225c846ce6b",
+        "type": "message",
+        "text": "ただ、各ログを見るとrefreshを立ててませんが、自発的にできるんですっけ?\n<https:\/\/github.com\/yuki-ycino\/asyncomplete-dictionary\/pull\/2>\nで遅延させようと四苦八苦して、いろいろ調べたりやったりしたので、あるなら知りたい...w",
+        "user": "UAZ33BKV2",
+        "ts": "1585612962.093700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "feat: improve 2nd by tsuyoshicho · Pull Request #2 · yuki-ycino\/asyncomplete-dictionary",
+                "title_link": "https:\/\/github.com\/yuki-ycino\/asyncomplete-dictionary\/pull\/2",
+                "text": "split load dictionary\/cache create minlen skip completion data set process log add known problem no fix filetype load dictionary sleep do not adaptive?",
+                "fallback": "GitHub: feat: improve 2nd by tsuyoshicho · Pull Request #2 · yuki-ycino\/asyncomplete-dictionary",
+                "thumb_url": "https:\/\/avatars1.githubusercontent.com\/u\/5423775?s=400&v=4",
+                "from_url": "https:\/\/github.com\/yuki-ycino\/asyncomplete-dictionary\/pull\/2",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/yuki-ycino\/asyncomplete-dictionary\/pull\/2"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NPwh3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただ、各ログを見るとrefreshを立ててませんが、自発的にできるんですっけ?\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/yuki-ycino\/asyncomplete-dictionary\/pull\/2"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nで遅延させようと四苦八苦して、いろいろ調べたりやったりしたので、あるなら知りたい...w"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0c528969-7747-4517-9eb0-9c724a992c96",
+        "type": "message",
+        "text": "能動的になってるかは分からないですが `asyncomplete#sources#dictionary#completor` がどこから呼ばれてるか調べると良さそう。",
+        "user": "U03C6TEAZ",
+        "ts": "1585613322.094700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7O5Pm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "能動的になってるかは分からないですが "
+                            },
+                            {
+                                "type": "text",
+                                "text": "asyncomplete#sources#dictionary#completor",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " がどこから呼ばれてるか調べると良さそう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e2f7d931-a712-4550-aa61-bd80185ca867",
+        "type": "message",
+        "text": "呼び出し契機についてはもうちょっと勉強しないとですね...たしかに",
+        "user": "UAZ33BKV2",
+        "ts": "1585613423.095200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4sAj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "呼び出し契機についてはもうちょっと勉強しないとですね...たしかに"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cdc65aa4-19fe-4fed-ad2e-996f86109bcc",
+        "type": "message",
+        "text": "on_change(文字の変更)かforce_fresh(基本手動)で\n``` if l:matches['refresh'] || l:matches['status'] ==# 'idle' || l:matches['status'] ==# 'failure'```\nのどれかのとき、かな... on\/offで調べるかなあ...",
+        "user": "UAZ33BKV2",
+        "ts": "1585613671.096200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UAZ33BKV2",
+            "ts": "1585615916.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JP8GA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "on_change(文字の変更)かforce_fresh(基本手動)で\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": " if l:matches['refresh'] || l:matches['status'] ==# 'idle' || l:matches['status'] ==# 'failure'"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nのどれかのとき、かな... on\/offで調べるかなあ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c79c35f9-b205-4abf-8182-cdc2bfe480e4",
+        "type": "message",
+        "text": "質問です。現状 popup の機能にカーソルの移動に合わせて popup が追跡する機能ってあるでしょうか？\n今だと CursorMoved で制御しないと無い認識ですが、previewpopup オプションというのを見つけて preview を使ってみたいなと思いつつ…",
+        "user": "U0M7GCBPD",
+        "ts": "1585625228.099700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eY\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "質問です。現状 popup の機能にカーソルの移動に合わせて popup が追跡する機能ってあるでしょうか？\n今だと CursorMoved で制御しないと無い認識ですが、previewpopup オプションというのを見つけて preview を使ってみたいなと思いつつ…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "900b2ac9-19d0-436b-a5fe-930bb2de44a2",
+        "type": "message",
+        "text": "僕が知る限りはないですね、カーソル位置に出てきてカーソル動かすと閉じるのは知ってますが…",
+        "user": "U9S4G0LJW",
+        "ts": "1585625319.100200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "T4Lg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "僕が知る限りはないですね、カーソル位置に出てきてカーソル動かすと閉じるのは知ってますが…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cfa7757a-59d9-4c89-b87e-3bbb52ad11eb",
+        "type": "message",
+        "text": "確かに閉じるのは popup の option で指定できた気がしますね (関数に指定するやつ)",
+        "user": "U0M7GCBPD",
+        "ts": "1585625510.100700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gfdf83c448b8",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5fdf83c448b8503add52517c7de0e3cc.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0026-72.png",
+            "first_name": "",
+            "real_name": "tyru",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "tyru",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "syU8u",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "確かに閉じるのは popup の option で指定できた気がしますね (関数に指定するやつ)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

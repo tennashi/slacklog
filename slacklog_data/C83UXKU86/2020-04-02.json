@@ -1,0 +1,89 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585845361.080800",
+        "user": "U010Z8NDLTB",
+        "text": "<@U010Z8NDLTB> has joined the channel"
+    },
+    {
+        "client_msg_id": "f7f72b58-761b-47b3-a540-78a360ad45aa",
+        "type": "message",
+        "text": "あ、lambdaの高速化がマージされてた。8.2.0499",
+        "user": "U6XP9LZ6V",
+        "ts": "1585875428.081400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g817559eedcf",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/7817559eedcf07a777dbf9dd734cc0b1.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0001-72.png",
+            "first_name": "Ken",
+            "real_name": "Ken Takata",
+            "display_name": "k-takata",
+            "team": "T03C4RC8V",
+            "name": "k-takata",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U6XP9LZ6V",
+            "ts": "1585875481.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/ptU0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、lambdaの高速化がマージされてた。8.2.0499"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tada",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW",
+                    "U7H4TJEG0",
+                    "UD73ZNZAP",
+                    "U06BRP8VD",
+                    "U7JL1UKKL",
+                    "UEBF2KQTD",
+                    "U0M7GCBPD",
+                    "U776661HA",
+                    "UBNPMJJGM"
+                ],
+                "count": 10
+            },
+            {
+                "name": "goodpoem",
+                "users": [
+                    "U9S4G0LJW",
+                    "U06BRP8VD",
+                    "UEACRCY0Z",
+                    "U0M7GCBPD"
+                ],
+                "count": 4
+            },
+            {
+                "name": "automaticyusho",
+                "users": [
+                    "U9S4G0LJW",
+                    "U06BRP8VD",
+                    "UEBF2KQTD",
+                    "U0M7GCBPD"
+                ],
+                "count": 4
+            }
+        ]
+    }
+]

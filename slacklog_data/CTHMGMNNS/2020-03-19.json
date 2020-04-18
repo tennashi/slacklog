@@ -1,0 +1,69 @@
+[
+    {
+        "client_msg_id": "e43b2e67-888f-486c-b1de-61c933f5ee28",
+        "type": "message",
+        "text": "<https:\/\/b.hatena.ne.jp\/entry\/s\/github.com\/secretlint\/secretlint>\nほう",
+        "user": "UAZ33BKV2",
+        "ts": "1584626353.086900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "はてなブックマーク",
+                "title": "『GitHub - secretlint\/secretlint: Pluggable linting tool to prevent committing credential.』へのコメント",
+                "title_link": "https:\/\/b.hatena.ne.jp\/entry\/s\/github.com\/secretlint\/secretlint",
+                "text": "この記事に対して3件のコメントがあります。コメントは「これ入れとけば、忘れてた事故を未然に防げそう。」、「opt-inアプローチでプラガブルなgit-secrets的なやつ by azuさん」、「なにやらazuさんがpublishした模様。credentialなファイルのコミットとか防いでくれるってことか。CIに載っちゃうと（既にpush済み=Internet）だからまずいってことで、pre-commitのタイミングで使うイメージかな。」です。",
+                "fallback": "はてなブックマーク: 『GitHub - secretlint\/secretlint: Pluggable linting tool to prevent committing credential.』へのコメント",
+                "thumb_url": "https:\/\/repository-images.githubusercontent.com\/239106765\/29bc0580-5b2f-11ea-89e2-d985890508c1",
+                "from_url": "https:\/\/b.hatena.ne.jp\/entry\/s\/github.com\/secretlint\/secretlint",
+                "thumb_width": 1694,
+                "thumb_height": 832,
+                "service_icon": "https:\/\/b.st-hatena.com\/images\/v4\/public\/apple-touch-icon-precomposed.png?version=b1c87ac90dc8918b3e83526dd4b31e786c05d0d9",
+                "id": 1,
+                "original_url": "https:\/\/b.hatena.ne.jp\/entry\/s\/github.com\/secretlint\/secretlint"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7Tuv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/b.hatena.ne.jp\/entry\/s\/github.com\/secretlint\/secretlint"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nほう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "UEX9VPSET"
+                ],
+                "count": 1
+            }
+        ]
+    }
+]

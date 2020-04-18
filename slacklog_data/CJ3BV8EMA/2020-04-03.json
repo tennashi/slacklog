@@ -1,0 +1,58 @@
+[
+    {
+        "client_msg_id": "21AE54F9-6040-448C-A426-A7E942283795",
+        "type": "message",
+        "text": "ジャスティンさん休暇中なのか",
+        "user": "UBDMG6N2J",
+        "ts": "1585898520.033900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "e1af7e8ace2d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-02-05\/543547017591_e1af7e8ace2d2e220e83_72.png",
+            "first_name": "akiyosi",
+            "real_name": "akiyosi",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "akiyoshimaruyama",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lBbY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ジャスティンさん休暇中なのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U72TB62UF",
+                    "U7JL1UKKL",
+                    "UEBF2KQTD"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1585912223.034300",
+        "user": "UMRAUJY22",
+        "text": "<@UMRAUJY22> has joined the channel"
+    }
+]

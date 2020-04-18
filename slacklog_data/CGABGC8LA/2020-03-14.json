@@ -1,0 +1,205 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584201148.416800",
+        "user": "U0102N1F8H4",
+        "text": "<@U0102N1F8H4> has joined the channel"
+    },
+    {
+        "client_msg_id": "1c18e271-187c-4f7e-82f7-44e83e2f2174",
+        "type": "message",
+        "text": "macOSでRSS取るにはどうしたら良いのかな? golangで",
+        "user": "U06BRP8VD",
+        "ts": "1584246573.417100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BvFR4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "macOSでRSS取るにはどうしたら良いのかな? golangで"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0f0c8b89-ace5-41e4-ac77-0e67cd1f62c5",
+        "type": "message",
+        "text": "cgo で取らんとあかんそうだ…",
+        "user": "U06BRP8VD",
+        "ts": "1584247221.417400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "nZL6c",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cgo で取らんとあかんそうだ…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "59483e8f-9602-4282-8ab2-5defff8f3be5",
+        "type": "message",
+        "text": "うん。実機が無いと時間の無駄だなコレ",
+        "user": "U06BRP8VD",
+        "ts": "1584248412.417900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "k8Zb7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "うん。実機が無いと時間の無駄だなコレ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1bcddc44-4d71-43fc-b425-067b23c852a8",
+        "type": "message",
+        "text": "<https:\/\/github.com\/koron-go\/phymem> とりあえずWinとLinuxでだけ動く、現在の物理メモリの使用量を取得するやつ",
+        "user": "U06BRP8VD",
+        "ts": "1584249392.418400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "U06BRP8VD",
+            "ts": "1584253399.000000"
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "koron-go\/phymem",
+                "title_link": "https:\/\/github.com\/koron-go\/phymem",
+                "text": "get physical memory usage (RSS or Working Set). Contribute to koron-go\/phymem development by creating an account on GitHub.",
+                "fallback": "GitHub: koron-go\/phymem",
+                "thumb_url": "https:\/\/avatars3.githubusercontent.com\/u\/37774098?s=400&v=4",
+                "from_url": "https:\/\/github.com\/koron-go\/phymem",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/koron-go\/phymem"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "BJvZm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/koron-go\/phymem"
+                            },
+                            {
+                                "type": "text",
+                                "text": " とりあえずWinとLinuxでだけ動く、現在の物理メモリの使用量を取得するやつ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "partyparrot",
+                "users": [
+                    "UEA8T80GY",
+                    "U9S4G0LJW",
+                    "UDDCM376D"
+                ],
+                "count": 3
+            },
+            {
+                "name": "ultrafastparrot",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW",
+                    "UDDCM376D"
+                ],
+                "count": 3
+            }
+        ]
+    }
+]

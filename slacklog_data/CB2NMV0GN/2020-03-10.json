@@ -1,0 +1,221 @@
+[
+    {
+        "client_msg_id": "a030a2fb-a0b0-4e61-b88c-01b8e11712be",
+        "type": "message",
+        "text": "<https:\/\/twitter.com\/zaru\/status\/1237295971396009985>",
+        "user": "U03C6TEAZ",
+        "ts": "1583829350.004600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "fallback": "<https:\/\/twitter.com\/zaru|@zaru>: あ、Ruby2.7 から require 'open-uri' の open は <http:\/\/URI.open> として使ってねって警告が出るようになったのか",
+                "ts": 1583829322,
+                "author_name": "私はおとうふ",
+                "author_link": "https:\/\/twitter.com\/zaru\/status\/1237295971396009985",
+                "author_icon": "https:\/\/pbs.twimg.com\/profile_images\/1217798200125353989\/ijedsDvh_normal.jpg",
+                "author_subname": "@zaru",
+                "text": "あ、Ruby2.7 から require 'open-uri' の open は <http:\/\/URI.open> として使ってねって警告が出るようになったのか",
+                "service_name": "twitter",
+                "service_url": "https:\/\/twitter.com\/",
+                "from_url": "https:\/\/twitter.com\/zaru\/status\/1237295971396009985",
+                "id": 1,
+                "original_url": "https:\/\/twitter.com\/zaru\/status\/1237295971396009985",
+                "footer": "Twitter",
+                "footer_icon": "https:\/\/a.slack-edge.com\/80588\/img\/services\/twitter_pixel_snapped_32.png"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "b79",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/twitter.com\/zaru\/status\/1237295971396009985"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b99c339a-fa15-486f-b13b-027f5387e0f6",
+        "type": "message",
+        "text": "ヘー",
+        "user": "U03C6TEAZ",
+        "ts": "1583829353.004900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KevC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ヘー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d427aff2-c3ad-4bb3-bb7d-28b2cb002d41",
+        "type": "message",
+        "text": "いい話やん。",
+        "user": "U03C6TEAZ",
+        "ts": "1583829364.005100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FvF0C",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いい話やん。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9f0aa8e4-aa2c-4270-8436-90489e20d8f7",
+        "type": "message",
+        "text": "そして勝手にリンクをはる Twitter さん",
+        "user": "U03C71D7H",
+        "ts": "1583829392.005500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ExB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そして勝手にリンクをはる Twitter さん"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a2e36ad-edf4-4752-8e0c-512f75e97557",
+        "type": "message",
+        "text": "今の open-uri ってローカルに `mkdir http: &amp;&amp; touch http:\/example.com` したあと実行するとどうなるんだろう。",
+        "user": "U03C6TEAZ",
+        "ts": "1583829809.006400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OHfx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "今の open-uri ってローカルに "
+                            },
+                            {
+                                "type": "text",
+                                "text": "mkdir http: && touch http:\/example.com",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " したあと実行するとどうなるんだろう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,4763 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1584892382.002900",
+        "user": "UEA8SS1RN",
+        "text": "<@UEA8SS1RN> has joined the channel"
+    },
+    {
+        "client_msg_id": "6226eb51-6729-4628-8c8e-8b812359e56d",
+        "type": "message",
+        "text": "ここって、dockerに関する質問しても良いのかしら。それともvimと絡んでないと駄目？",
+        "user": "UEA8SS1RN",
+        "ts": "1584922682.003900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "MTB5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ここって、dockerに関する質問しても良いのかしら。それともvimと絡んでないと駄目？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cc737031-f5f9-46e3-9992-c2c649a3af20",
+        "type": "message",
+        "text": "絡んでなくても全然かまいません。",
+        "user": "U03C6TEAZ",
+        "ts": "1584922903.004200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UAMv",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "絡んでなくても全然かまいません。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "653cf4ce-cdac-4021-bee4-7dcb7cc4df76",
+        "type": "message",
+        "text": "```FROM php:7.2-fpm-alpine\n\nRUN apk --update add --no-cache build-base autoconf freetype-dev libpng-dev libjpeg-turbo-dev\nRUN docker-php-ext-configure gd --with-freetype-dir=\/usr\/include\/ --with-jpeg-dir=\/usr\/include\/ \\\n    &amp;&amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql```\nこんなDockerfileを、macでbuildすると成功して、ArchLinuxでbuildすると、\n```rm: can't remove '\/usr\/src\/php\/sapi\/phpdbg\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/standard\/tests\/network': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/standard\/tests\/url': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/mysqlnd': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/phar\/tests\/tar\/files': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/phar\/tests\/cache_list\/files': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/mbstring\/oniguruma\/src': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/hash\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/gmp\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/xsl\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/gd\/libgd': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/soap\/tests\/soap12': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/soap\/tests\/interop\/Round3\/GroupD': Directory not empty\nrm: can't remove '\/usr\/src\/php\/Zend\/tests\/return_types': Directory not empty\nrm: can't remove '\/usr\/src\/php\/tests\/output': Directory not empty```\nと怒られます。\n実際、macでは、\/usr\/src\/php.tar.xzと、php.tar.xz.ascしか無いですが、Archの方は、php.tar.xzが展開さて、php directoryが存在している状態になってます。\nこれってどういう現象でしょうか。というか、`docker-php-ext-configure`でphp.tar.xzが展開されているのはわかったのですが、どう対処したら良いのかわかりません。\nどなたか智恵を。",
+        "user": "UEA8SS1RN",
+        "ts": "1584923518.008600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UEA8SS1RN",
+            "ts": "1584923550.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/nf",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "FROM php:7.2-fpm-alpine\n\nRUN apk --update add --no-cache build-base autoconf freetype-dev libpng-dev libjpeg-turbo-dev\nRUN docker-php-ext-configure gd --with-freetype-dir=\/usr\/include\/ --with-jpeg-dir=\/usr\/include\/ \\\n    && docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nこんなDockerfileを、macでbuildすると成功して、ArchLinuxでbuildすると、\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "rm: can't remove '\/usr\/src\/php\/sapi\/phpdbg\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/standard\/tests\/network': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/standard\/tests\/url': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/mysqlnd': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/phar\/tests\/tar\/files': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/phar\/tests\/cache_list\/files': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/mbstring\/oniguruma\/src': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/hash\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/gmp\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/xsl\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/gd\/libgd': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/soap\/tests\/soap12': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/soap\/tests\/interop\/Round3\/GroupD': Directory not empty\nrm: can't remove '\/usr\/src\/php\/Zend\/tests\/return_types': Directory not empty\nrm: can't remove '\/usr\/src\/php\/tests\/output': Directory not empty"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nと怒られます。\n実際、macでは、\/usr\/src\/php.tar.xzと、php.tar.xz.ascしか無いですが、Archの方は、php.tar.xzが展開さて、php directoryが存在している状態になってます。\nこれってどういう現象でしょうか。というか、"
+                            },
+                            {
+                                "type": "text",
+                                "text": "docker-php-ext-configure",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "でphp.tar.xzが展開されているのはわかったのですが、どう対処したら良いのかわかりません。\nどなたか智恵を。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "Ubuntuですが、そのまま行けましたね",
+        "files": [
+            {
+                "id": "F010KP7KH55",
+                "created": 1584925687,
+                "timestamp": 1584925687,
+                "name": "無題",
+                "title": "無題",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "UDDCM376D",
+                "editable": false,
+                "size": 890,
+                "mode": "hosted",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010KP7KH55\/______?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F010KP7KH55\/download\/______?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/UDDCM376D\/F010KP7KH55\/______",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F010KP7KH55-b6b04fc1b9",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Rm3PI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Ubuntuですが、そのまま行けましたね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "UDDCM376D",
+        "display_as_bot": false,
+        "ts": "1584925688.009100",
+        "client_msg_id": "f464b4d0-2b18-4cc5-9955-33c284227c1d"
+    },
+    {
+        "client_msg_id": "40370643-8eff-417e-9d62-2e287362d530",
+        "type": "message",
+        "text": "Dockerの環境の差分があるのかなぁ",
+        "user": "UDDCM376D",
+        "ts": "1584925759.009700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5zi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Dockerの環境の差分があるのかなぁ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e5cdd324-d4bc-4c72-953c-71d732e02854",
+        "type": "message",
+        "text": "ArchのDockerのバージョンはMacと同じですか？",
+        "user": "UDDCM376D",
+        "ts": "1584925829.010200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zO26z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ArchのDockerのバージョンはMacと同じですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1684f2c6-7c02-4bae-83e3-6d323ede2c30",
+        "type": "message",
+        "text": "一緒ですね。19.03.8です。",
+        "user": "UEA8SS1RN",
+        "ts": "1584925873.010700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "77OEQ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "一緒ですね。19.03.8です。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c6f8f9b9-1acd-44ee-b6b1-79a19b5c5b92",
+        "type": "message",
+        "text": "なんだろう。",
+        "user": "UEA8SS1RN",
+        "ts": "1584925881.011100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0wLm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんだろう。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fa13f7e3-d194-4c8d-8254-95f186db6282",
+        "type": "message",
+        "text": "冪等性を考えると、phpのセットアップをホストの機能に依存しないようにする(マルチステージビルドでPHP環境作るものを用意して、そっからimport的な)\nといいのではないかという気がします",
+        "user": "UAZ33BKV2",
+        "ts": "1584925950.012100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "84bR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "冪等性を考えると、phpのセットアップをホストの機能に依存しないようにする(マルチステージビルドでPHP環境作るものを用意して、そっからimport的な)\nといいのではないかという気がします"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b28aec8a-7e18-44c8-aa1a-6a88dc319521",
+        "type": "message",
+        "text": "あれ、ホスト依存しているんですか？",
+        "user": "UDDCM376D",
+        "ts": "1584925996.012900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NKIsU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれ、ホスト依存しているんですか？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d79ce2f1-7825-4f3a-92f0-242d45956bd6",
+        "type": "message",
+        "text": "Dockerfileの中身を見ているけど、依存していないように見える",
+        "user": "UDDCM376D",
+        "ts": "1584926015.013300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Fhg+=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Dockerfileの中身を見ているけど、依存していないように見える"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cafc4306-90bb-4500-9f68-22d4ec5631d8",
+        "type": "message",
+        "text": "あ、依存ではない...か? でも docker-php-ext-configureって最初から入ってる?",
+        "user": "UAZ33BKV2",
+        "ts": "1584926035.013900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wa9i+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あ、依存ではない...か? でも docker-php-ext-configureって最初から入ってる?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "050cb422-4904-4141-bd32-e2810740761f",
+        "type": "message",
+        "text": "alpineなので最初から入ってます。",
+        "user": "UEA8SS1RN",
+        "ts": "1584926058.014500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OqPtw",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "alpineなので最初から入ってます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5e977523-2ef5-41e3-9d64-7d138baa2607",
+        "type": "message",
+        "text": "```php:7.2-fpm-alpine```\nに入っているんじゃないかなと",
+        "user": "UDDCM376D",
+        "ts": "1584926059.014600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WSt3y",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "php:7.2-fpm-alpine"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nに入っているんじゃないかなと"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7ffa2af1-699b-493e-a978-9e0d9f36b741",
+        "type": "message",
+        "text": "あー、すんません検討違いでした、無視しておいてください",
+        "user": "UAZ33BKV2",
+        "ts": "1584926080.015300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RRP5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー、すんません検討違いでした、無視しておいてください"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8ee5c8c9-0237-4b0c-800d-4e2b13f06cbc",
+        "type": "message",
+        "text": "なので、そもそもビルドで挙動が変わるのは変な感じはありますね",
+        "user": "UDDCM376D",
+        "ts": "1584926084.015400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "v=Pz3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なので、そもそもビルドで挙動が変わるのは変な感じはありますね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dc9c21d5-a70f-4876-a959-2b55f5f65c28",
+        "type": "message",
+        "text": "バグの予感",
+        "user": "UK7DT8URY",
+        "ts": "1584926097.015800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "YyF",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "バグの予感"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4e601192-7889-45e8-bbbc-084d4e20325c",
+        "type": "message",
+        "text": "docker-php-ext-configure のバグ?",
+        "user": "UEA8SS1RN",
+        "ts": "1584926112.016100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Xuf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "docker-php-ext-configure のバグ?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d19ecb60-2ec4-4804-92ef-73f18a9c30fe",
+        "type": "message",
+        "text": "```\/usr\/include\/ ```\nがホスト側の話かと思ってしまった...",
+        "user": "UAZ33BKV2",
+        "ts": "1584926122.016200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "RMt3",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/usr\/include\/ "
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nがホスト側の話かと思ってしまった..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6f66f8b2-ac40-4ea4-96b9-701e95a990e8",
+        "type": "message",
+        "text": "全部中のログですね。",
+        "user": "UEA8SS1RN",
+        "ts": "1584926140.016700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QwDr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "全部中のログですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b02ecf3d-0ce5-4917-a0e0-4df5c7eeb6a4",
+        "type": "message",
+        "text": "そりゃそうですよね、謎だなあ",
+        "user": "UAZ33BKV2",
+        "ts": "1584926163.017300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ti6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そりゃそうですよね、謎だなあ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e13f7b1b-8632-435d-95fe-5732d8d1ad40",
+        "type": "message",
+        "text": "docker-php-ext-configure の 中身を除くと良いかもですね\nディレクトリが展開される契機はなにか、を知れば差分をしれそう",
+        "user": "UDDCM376D",
+        "ts": "1584926165.017500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UDDCM376D",
+            "ts": "1584926177.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GVkr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "docker-php-ext-configure の 中身を除くと良いかもですね\nディレクトリが展開される契機はなにか、を知れば差分をしれそう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0fdeca82-6ce3-4af6-b338-f38f3be34929",
+        "type": "message",
+        "text": "もしくはMacとArchのビルドログを比較して、どこで差分出ているのか",
+        "user": "UDDCM376D",
+        "ts": "1584926204.018100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wiq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もしくはMacとArchのビルドログを比較して、どこで差分出ているのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cf55c3a8-f9e3-4c80-93b9-f5abd537660f",
+        "type": "message",
+        "text": "を見るのが早いかも",
+        "user": "UDDCM376D",
+        "ts": "1584926211.018300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rAL",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "を見るのが早いかも"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "651c44c6-6671-48d4-9bb4-d85e396624c6",
+        "type": "message",
+        "text": "何かしらの判定があってディレクトリ展開しているなら、その判定条件が差分なはずなので、\nその判定条件を調べるって感じですかね",
+        "user": "UDDCM376D",
+        "ts": "1584926252.019100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vnyH",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "何かしらの判定があってディレクトリ展開しているなら、その判定条件が差分なはずなので、\nその判定条件を調べるって感じですかね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6a1bb198-5c94-447b-98f2-70a7413aff69",
+        "type": "message",
+        "text": "ただ、中から、外って見えないですよね。外が何かの判定って出来るのかな。",
+        "user": "UEA8SS1RN",
+        "ts": "1584926296.019700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hHpp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただ、中から、外って見えないですよね。外が何かの判定って出来るのかな。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "05caf2d8-25e0-4357-b716-6f6e64718c3e",
+        "type": "message",
+        "text": "とりあえずdocker-php-ext-configure追ってみます。",
+        "user": "UEA8SS1RN",
+        "ts": "1584926316.020000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0Xd",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "とりあえずdocker-php-ext-configure追ってみます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fc73380b-2b30-4842-8608-547fd59e4d78",
+        "type": "message",
+        "text": "(RUNしかしてませんしねえ ADD\/COPYもないので、初回のルート取り込みくらいだし、それも同じはず)",
+        "user": "UAZ33BKV2",
+        "ts": "1584926355.021000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "P4oQT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(RUNしかしてませんしねえ ADD\/COPYもないので、初回のルート取り込みくらいだし、それも同じはず)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "315d8e0c-ad35-4d20-b321-dd6f7f5716a8",
+        "type": "message",
+        "text": "夢であってほしい。",
+        "user": "UEA8SS1RN",
+        "ts": "1584926415.021500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "466w",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "夢であってほしい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "608ba490-bd34-4e60-8ee8-437f64cb91dd",
+        "type": "message",
+        "text": "```Installing shared extensions:     \/usr\/local\/lib\/php\/extensions\/no-debug-non-zts-20170718\/\nfind . -name \\*.gcno -o -name \\*.gcda | xargs rm -f\nfind . -name \\*.lo -o -name \\*.o | xargs rm -f\nfind . -name \\*.la -o -name \\*.a | xargs rm -f\nfind . -name \\*.so | xargs rm -f\nfind . -name .libs -a -type d|xargs rm -rf\nrm -f <http:\/\/libphp.la|libphp.la>       modules\/* libs\/*\nWARNING: Ignoring APKINDEX.70f61090.tar.gz: No such file or directory\nWARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory\n(1\/4) Purging .phpize-deps-configure (20200323.012316)\n(2\/4) Purging dpkg-dev (1.19.7-r1)\n(3\/4) Purging dpkg (1.19.7-r1)\n(4\/4) Purging re2c (1.3-r0)\nExecuting busybox-1.31.1-r9.trigger\nOK: 226 MiB in 60 packages\nRemoving intermediate container c1f923c5bf9c\n ---&gt; 4df79b02e0ff\nSuccessfully built 4df79b02e0ff\nSuccessfully tagged lastest:latest```\nこっちmacのログ.",
+        "user": "UEA8SS1RN",
+        "ts": "1584926796.022000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "L6lS",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Installing shared extensions:     \/usr\/local\/lib\/php\/extensions\/no-debug-non-zts-20170718\/\nfind . -name \\*.gcno -o -name \\*.gcda | xargs rm -f\nfind . -name \\*.lo -o -name \\*.o | xargs rm -f\nfind . -name \\*.la -o -name \\*.a | xargs rm -f\nfind . -name \\*.so | xargs rm -f\nfind . -name .libs -a -type d|xargs rm -rf\nrm -f libphp.la       modules\/* libs\/*\nWARNING: Ignoring APKINDEX.70f61090.tar.gz: No such file or directory\nWARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory\n(1\/4) Purging .phpize-deps-configure (20200323.012316)\n(2\/4) Purging dpkg-dev (1.19.7-r1)\n(3\/4) Purging dpkg (1.19.7-r1)\n(4\/4) Purging re2c (1.3-r0)\nExecuting busybox-1.31.1-r9.trigger\nOK: 226 MiB in 60 packages\nRemoving intermediate container c1f923c5bf9c\n ---> 4df79b02e0ff\nSuccessfully built 4df79b02e0ff\nSuccessfully tagged lastest:latest"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nこっちmacのログ."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ac9e2cc5-93c4-49b5-a8cc-b808c422cc93",
+        "type": "message",
+        "text": "```Installing shared extensions:     \/usr\/local\/lib\/php\/extensions\/no-debug-non-zts-20170718\/\nfind . -name \\*.gcno -o -name \\*.gcda | xargs rm -f\nfind . -name \\*.lo -o -name \\*.o | xargs rm -f\nfind . -name \\*.la -o -name \\*.a | xargs rm -f\nfind . -name \\*.so | xargs rm -f\nfind . -name .libs -a -type d|xargs rm -rf\nrm -f <http:\/\/libphp.la|libphp.la>       modules\/* libs\/*\nWARNING: Ignoring APKINDEX.70f61090.tar.gz: No such file or directory\nWARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory\n(1\/4) Purging .phpize-deps-configure (20200323.012116)\n(2\/4) Purging dpkg-dev (1.19.7-r1)\n(3\/4) Purging dpkg (1.19.7-r1)\n(4\/4) Purging re2c (1.3-r0)\nExecuting busybox-1.31.1-r9.trigger\nOK: 226 MiB in 60 packages\nrm: can't remove '\/usr\/src\/php\/sapi\/phpdbg\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/standard\/tests\/network': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/standard\/tests\/url': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/mysqlnd': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/phar\/tests\/tar\/files': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/phar\/tests\/cache_list\/files': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/mbstring\/oniguruma\/src': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/hash\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/gmp\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/xsl\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/gd\/libgd': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/soap\/tests\/soap12': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/soap\/tests\/interop\/Round3\/GroupD': Directory not empty\nrm: can't remove '\/usr\/src\/php\/Zend\/tests\/return_types': Directory not empty\nrm: can't remove '\/usr\/src\/php\/tests\/output': Directory not empty\nThe command '\/bin\/sh -c docker-php-ext-configure gd --with-freetype-dir=\/usr\/include\/ --with-jpeg-dir=\/usr\/include\/     &amp;&amp; docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql' returned a non-zero code: 1```\nこっちArchLinuxのログ。",
+        "user": "UEA8SS1RN",
+        "ts": "1584926852.022700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "amo",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Installing shared extensions:     \/usr\/local\/lib\/php\/extensions\/no-debug-non-zts-20170718\/\nfind . -name \\*.gcno -o -name \\*.gcda | xargs rm -f\nfind . -name \\*.lo -o -name \\*.o | xargs rm -f\nfind . -name \\*.la -o -name \\*.a | xargs rm -f\nfind . -name \\*.so | xargs rm -f\nfind . -name .libs -a -type d|xargs rm -rf\nrm -f libphp.la       modules\/* libs\/*\nWARNING: Ignoring APKINDEX.70f61090.tar.gz: No such file or directory\nWARNING: Ignoring APKINDEX.ca2fea5b.tar.gz: No such file or directory\n(1\/4) Purging .phpize-deps-configure (20200323.012116)\n(2\/4) Purging dpkg-dev (1.19.7-r1)\n(3\/4) Purging dpkg (1.19.7-r1)\n(4\/4) Purging re2c (1.3-r0)\nExecuting busybox-1.31.1-r9.trigger\nOK: 226 MiB in 60 packages\nrm: can't remove '\/usr\/src\/php\/sapi\/phpdbg\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/standard\/tests\/network': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/standard\/tests\/url': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/mysqlnd': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/phar\/tests\/tar\/files': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/phar\/tests\/cache_list\/files': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/mbstring\/oniguruma\/src': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/hash\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/gmp\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/xsl\/tests': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/gd\/libgd': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/soap\/tests\/soap12': Directory not empty\nrm: can't remove '\/usr\/src\/php\/ext\/soap\/tests\/interop\/Round3\/GroupD': Directory not empty\nrm: can't remove '\/usr\/src\/php\/Zend\/tests\/return_types': Directory not empty\nrm: can't remove '\/usr\/src\/php\/tests\/output': Directory not empty\nThe command '\/bin\/sh -c docker-php-ext-configure gd --with-freetype-dir=\/usr\/include\/ --with-jpeg-dir=\/usr\/include\/     && docker-php-ext-install -j$(nproc) gd mysqli pdo_mysql' returned a non-zero code: 1"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nこっちArchLinuxのログ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3db672f5-c2e2-44fa-9d36-b795b319efb6",
+        "type": "message",
+        "text": "Archの方が処理終わった後に掃除しようとしてコケれるっぽい。",
+        "user": "UEA8SS1RN",
+        "ts": "1584926873.023300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "j2kS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Archの方が処理終わった後に掃除しようとしてコケれるっぽい。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8a86032e-10c5-4900-a814-dd630c77629c",
+        "type": "message",
+        "text": "ぱっと見、コケるまではおなじっぽい",
+        "user": "UDDCM376D",
+        "ts": "1584926924.023700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=A7OV",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ぱっと見、コケるまではおなじっぽい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a3967e01-7d8a-4bad-abeb-eda07e0a7d78",
+        "type": "message",
+        "text": "ふむ…",
+        "user": "UDDCM376D",
+        "ts": "1584926928.024000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6JP1g",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ふむ…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f3a882e3-42fb-4fe1-9f3c-28c4f78eda0e",
+        "type": "message",
+        "text": "エラー自体は、たぶんrmが `-f` がなくて失敗ですかね",
+        "user": "UAZ33BKV2",
+        "ts": "1584926929.024100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "AQrZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "エラー自体は、たぶんrmが "
+                            },
+                            {
+                                "type": "text",
+                                "text": "-f",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " がなくて失敗ですかね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ea388bf4-12c0-4ee8-a235-b68723af4a94",
+        "type": "message",
+        "text": "逆になんでmacはファイルが先に消えてる(か生成されてないか)なのか",
+        "user": "UAZ33BKV2",
+        "ts": "1584926968.025100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7VT\/",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "逆になんでmacはファイルが先に消えてる(か生成されてないか)なのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f928ae5a-08f8-42a6-ba7e-031c5b1fe455",
+        "type": "message",
+        "text": "勝手に展開(archだけ)、はさすがにない気はする...",
+        "user": "UAZ33BKV2",
+        "ts": "1584927006.026100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "N+0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "勝手に展開(archだけ)、はさすがにない気はする..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "42677fa4-d0ef-4f3b-8cb6-d28bc8e82a79",
+        "type": "message",
+        "text": "あれ、archで成功してしまった……",
+        "user": "UK7DT8URY",
+        "ts": "1584927020.026600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WaQOr",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あれ、archで成功してしまった……"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0b8f1a21-c3a4-4b84-a8c3-2a438a149956",
+        "type": "message",
+        "text": "なんか見たことある気が",
+        "user": "U9S4G0LJW",
+        "ts": "1584927023.026900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "zNHN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんか見たことある気が"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1b35d19e-3fe2-44ff-b925-ac5284284c5e",
+        "type": "message",
+        "text": "成功者がいた",
+        "user": "UDDCM376D",
+        "ts": "1584927034.027500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ncs",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "成功者がいた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b137cecc-9306-448e-bbb1-a04a3f78f7ad",
+        "type": "message",
+        "text": "ファイルシステムにxfs使ってます？",
+        "user": "U9S4G0LJW",
+        "ts": "1584927034.027600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5mwRm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ファイルシステムにxfs使ってます？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "69b9bbe795f19442",
+                "users": [
+                    "U06BRP8VD",
+                    "UK7DT8URY",
+                    "U0M7GCBPD"
+                ],
+                "count": 3
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a7a1cd98-bfa8-479d-a571-17a4f9a1c768",
+        "type": "message",
+        "text": "もしそうならあのfs、Docker未対応です",
+        "user": "U9S4G0LJW",
+        "ts": "1584927049.028200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Cyt9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "もしそうならあのfs、Docker未対応です"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c5685a1d-d2fd-42a6-a091-3ebec4bf0d98",
+        "type": "message",
+        "text": "ぎゃ、、、",
+        "user": "UEA8SS1RN",
+        "ts": "1584927094.028400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hKHY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ぎゃ、、、"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a90d9c30-7c25-4da5-b1ad-c7dbd5743798",
+        "type": "message",
+        "text": "ext4?",
+        "user": "UEA8SS1RN",
+        "ts": "1584927110.028600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "40x=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ext4?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3e5c5fe9-e461-4153-91bc-6390b76f70eb",
+        "type": "message",
+        "text": "xfs使ってます。",
+        "user": "UEA8SS1RN",
+        "ts": "1584927125.028900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "f4yq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "xfs使ってます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "grin",
+                "users": [
+                    "U06BRP8VD"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1e1e90bd-9b3c-4e0b-83bb-dfa3a0456bec",
+        "type": "message",
+        "text": "deltaさんのファイルシステムはなんだろう",
+        "user": "UDDCM376D",
+        "ts": "1584927140.029600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OHjJ0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "deltaさんのファイルシステムはなんだろう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "text": "Archのログです",
+        "files": [
+            {
+                "id": "F01057HB5M0",
+                "created": 1584927146,
+                "timestamp": 1584927146,
+                "name": "arch_build.log",
+                "title": "arch_build.log",
+                "mimetype": "text\/plain",
+                "filetype": "text",
+                "pretty_type": "Plain Text",
+                "user": "UK7DT8URY",
+                "editable": true,
+                "size": 98429,
+                "mode": "snippet",
+                "is_external": false,
+                "external_type": "",
+                "is_public": true,
+                "public_url_shared": false,
+                "display_as_bot": false,
+                "username": "",
+                "url_private": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F01057HB5M0\/arch_build.log?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "url_private_download": "https:\/\/files.slack.com\/files-pri\/T03C4RC8V-F01057HB5M0\/download\/arch_build.log?t=xoxe-3412862301-1054097809041-1054097809121-28c3f72db0fbb1e9a297cc7666cd9285",
+                "permalink": "https:\/\/vim-jp.slack.com\/files\/UK7DT8URY\/F01057HB5M0\/arch_build.log",
+                "permalink_public": "https:\/\/slack-files.com\/T03C4RC8V-F01057HB5M0-9cc8c1e970",
+                "edit_link": "https:\/\/vim-jp.slack.com\/files\/UK7DT8URY\/F01057HB5M0\/arch_build.log\/edit",
+                "is_starred": false,
+                "has_rich_preview": false
+            }
+        ],
+        "upload": true,
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yQqK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Archのログです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "user": "UK7DT8URY",
+        "display_as_bot": false,
+        "ts": "1584927147.030000",
+        "client_msg_id": "df8422e5-cf41-45ec-aa83-a48e336a253f"
+    },
+    {
+        "client_msg_id": "5ec4d3f6-17ec-4bae-81bd-90a847115e3e",
+        "type": "message",
+        "text": "<https:\/\/qiita.com\/amatsus\/items\/aa2a58b0d5800312b6fa>",
+        "user": "UDDCM376D",
+        "ts": "1584927172.031300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Qiita",
+                "title": "DockerでOverlayFS over XFSするために - Qiita",
+                "title_link": "https:\/\/qiita.com\/amatsus\/items\/aa2a58b0d5800312b6fa",
+                "text": "OverlayFSは上側に重ねるファイルシステムがファイルタイプを返すd_typeをサポートしていないと使えません。d_typeをサポートしないファイルシステムでOverlayするとwhiteoutファイルをDT_CHRと判定できない...",
+                "fallback": "Qiita: DockerでOverlayFS over XFSするために - Qiita",
+                "image_url": "https:\/\/qiita-user-contents.imgix.net\/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&w=1200&mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3DDocker%25E3%2581%25A7OverlayFS%2520over%2520XFS%25E3%2581%2599%25E3%2582%258B%25E3%2581%259F%25E3%2582%2581%25E3%2581%25AB%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D17d7f938ae230d7d5c7f034ed87fe0c6&mark-align=center%2Cmiddle&blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540amatsus%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D6cd21aa2f25cfd77cae7c83559eb4973&blend-align=center%2Cmiddle&blend-mode=normal&s=5e93dfced224aeba5db3d9cfa00d0bfc",
+                "from_url": "https:\/\/qiita.com\/amatsus\/items\/aa2a58b0d5800312b6fa",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 39220,
+                "service_icon": "https:\/\/cdn.qiita.com\/assets\/favicons\/public\/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+                "id": 1,
+                "original_url": "https:\/\/qiita.com\/amatsus\/items\/aa2a58b0d5800312b6fa"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WE0tk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/qiita.com\/amatsus\/items\/aa2a58b0d5800312b6fa"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "panda_dogeza",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5128894a-58bc-4043-a016-4c50eca67306",
+        "type": "message",
+        "text": "こっちのfsはext4ですね。",
+        "user": "UK7DT8URY",
+        "ts": "1584927180.032200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cLLHW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こっちのfsはext4ですね。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e5db18ec-33ea-4942-b484-a39688672e7d",
+        "type": "message",
+        "text": "これ、ファイルシステムが原因くさい",
+        "user": "UDDCM376D",
+        "ts": "1584927183.032300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "rmy",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ、ファイルシステムが原因くさい"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "63504cb8-5664-41e9-ace8-b970a0bb0a5f",
+        "type": "message",
+        "text": "\/var\/lib\/dockerの入っているpartitionだけext4にすれば良いのかにゃ?",
+        "user": "UEA8SS1RN",
+        "ts": "1584927220.033100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "5iPR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/var\/lib\/dockerの入っているpartitionだけext4にすれば良いのかにゃ?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "762fee49-acc7-4cf2-a51a-37b533428461",
+        "type": "message",
+        "text": "(あっちこっちで質問魔)",
+        "user": "UEA8SS1RN",
+        "ts": "1584927249.034100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uzFp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "(あっちこっちで質問魔)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8a387c72-32fa-42c5-bd7c-f0f4ef4cf96a",
+        "type": "message",
+        "text": "```d_typeをサポートしないファイルシステムでOverlayするとwhiteoutファイルをDT_CHRと判定できないため、消したはずのファイル(やディレクトリ)が中途半端に見えてしまいます。```\n",
+        "user": "UDDCM376D",
+        "ts": "1584927252.034200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "aBE46",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "d_typeをサポートしないファイルシステムでOverlayするとwhiteoutファイルをDT_CHRと判定できないため、消したはずのファイル(やディレクトリ)が中途半端に見えてしまいます。"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": []
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "naruhodo",
+                "users": [
+                    "UK7DT8URY",
+                    "UEA8SS1RN"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "32da6873-9b4b-4f70-94e6-eba647262970",
+        "type": "message",
+        "text": "完全にこれや。",
+        "user": "UEA8SS1RN",
+        "ts": "1584927270.035000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "cPu",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "完全にこれや。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2b173bbf-8496-4a15-b449-5c9d92a094f0",
+        "type": "message",
+        "text": "それそれ、overlayfs絡みで対応してない仕様があるのでファイルの削除が認識できない",
+        "user": "U9S4G0LJW",
+        "ts": "1584927271.035100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "w+SRq",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それそれ、overlayfs絡みで対応してない仕様があるのでファイルの削除が認識できない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5be3c147-f7d9-4fa5-9ffd-42056168915f",
+        "type": "message",
+        "text": "コンテナが作成されるところがext4にすれば行けそうな雰囲気",
+        "user": "UDDCM376D",
+        "ts": "1584927285.035300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2tA0V",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "コンテナが作成されるところがext4にすれば行けそうな雰囲気"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "fb1be991-ee5c-4dc8-bdb6-731b2a8c63c2",
+        "type": "message",
+        "text": "`\/var\/lib\/docker`配下で良さそうな雰囲気（やったことがない）",
+        "user": "UDDCM376D",
+        "ts": "1584927303.035500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "VWtL0",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/var\/lib\/docker",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "配下で良さそうな雰囲気（やったことがない）"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e8fcab29-9e96-4ee7-901a-ed3b67961e15",
+        "type": "message",
+        "text": "\/home 別パーティションに切ってるから、resizeして、\/var\/lib\/dockerにmountかなー",
+        "user": "UEA8SS1RN",
+        "ts": "1584927343.036300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "JhqXp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/home 別パーティションに切ってるから、resizeして、\/var\/lib\/dockerにmountかなー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "664c7332-bdec-4eeb-b44e-404972bbb14a",
+        "type": "message",
+        "text": "これ、前に踏みぬいて半日くらい消えたなあ…",
+        "user": "U9S4G0LJW",
+        "ts": "1584927372.037000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "2Wp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ、前に踏みぬいて半日くらい消えたなあ…"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a5dad6c7-73f2-4a0a-ba8e-256de099d177",
+        "type": "message",
+        "text": ":totemoturai:",
+        "user": "UDDCM376D",
+        "ts": "1584927380.037200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=UBe",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "totemoturai"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7b74ff91-6261-48e0-9107-61bbf7c1b669",
+        "type": "message",
+        "text": "うあー",
+        "user": "UAZ33BKV2",
+        "ts": "1584927392.037700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vkaYK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "うあー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "db0f985e-7c8d-4e5a-b588-875839267170",
+        "type": "message",
+        "text": ":tiken:",
+        "user": "UK7DT8URY",
+        "ts": "1584927403.038100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ek\/s",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "tiken"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "53046e71-7fca-4186-a1cf-346103fb2ede",
+        "type": "message",
+        "text": "これは大きな知見だ。",
+        "user": "UEA8SS1RN",
+        "ts": "1584927419.038500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1hhhZ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これは大きな知見だ。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d45e828f-4f63-493d-a8f0-10d98e2b98af",
+        "type": "message",
+        "text": ":tiken:",
+        "user": "UDDCM376D",
+        "ts": "1584927454.039400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wcj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "tiken"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1b1f50ed-3072-4460-8511-450eff9d1800",
+        "type": "message",
+        "text": "linuxって、single user modeってあるんだっけ? FreeBSDだとsingle user modeで立ち上げれば、daemon走ってない、mountもされてない状況に入れるんだけど。",
+        "user": "UEA8SS1RN",
+        "ts": "1584927471.039700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "q=jC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "linuxって、single user modeってあるんだっけ? FreeBSDだとsingle user modeで立ち上げれば、daemon走ってない、mountもされてない状況に入れるんだけど。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5b748aa3-e271-4950-9f51-2b61d2a0d4fd",
+        "type": "message",
+        "text": "systemctlでdockerだけ切ってしまえばいいのでは",
+        "user": "U9S4G0LJW",
+        "ts": "1584927503.040500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Bbe",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "systemctlでdockerだけ切ってしまえばいいのでは"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "23ea035d-247d-471e-93e7-b7ddee29add0",
+        "type": "message",
+        "text": "それだ",
+        "user": "UK7DT8URY",
+        "ts": "1584927509.040900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Ggmik",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "それだ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "36c7d573-b415-4c65-9767-79c664b579b3",
+        "type": "message",
+        "text": "ありはしますが、たしかにサービス停止が無難",
+        "user": "UAZ33BKV2",
+        "ts": "1584927520.041200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qCoC=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ありはしますが、たしかにサービス停止が無難"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c0415e18-fa5e-4f7a-89b1-6edb09d955d8",
+        "type": "message",
+        "text": "\/homeを一端umountしないと、resize出来ないですよね?",
+        "user": "UEA8SS1RN",
+        "ts": "1584927556.041800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pnm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/homeを一端umountしないと、resize出来ないですよね?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2676277b-03cd-4f24-8d17-39e8ebe64772",
+        "type": "message",
+        "text": "あー、homeのリサイズなら、たしかにシングルユーザーになってやったほうがよさげか",
+        "user": "UAZ33BKV2",
+        "ts": "1584927581.042300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "lK4s",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー、homeのリサイズなら、たしかにシングルユーザーになってやったほうがよさげか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "729bbe37-5078-488c-a718-c9e18bfd5a50",
+        "type": "message",
+        "text": "最近はライブリサイズできるらしいが、シングルになったほうが安全な気はする",
+        "user": "U9S4G0LJW",
+        "ts": "1584927639.043000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "1k+",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "最近はライブリサイズできるらしいが、シングルになったほうが安全な気はする"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "cab0021e-07ee-4a97-9f66-4e4c9493ae56",
+        "type": "message",
+        "text": "私はこういうときなんかのインストールイメージでマシンを立ち上げちゃう",
+        "user": "U03C71D7H",
+        "ts": "1584927720.044800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FRgj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "私はこういうときなんかのインストールイメージでマシンを立ち上げちゃう"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW",
+                    "U8CC7MDCL",
+                    "UEA8SS1RN"
+                ],
+                "count": 4
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a15084da-ad8e-407e-8c41-0a74fcde1a4e",
+        "type": "message",
+        "text": "何かしらのGUI出るライブディストロ動かしてGParted辺り入れるのが一番楽",
+        "user": "U9S4G0LJW",
+        "ts": "1584927733.045100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "e4a5",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "何かしらのGUI出るライブディストロ動かしてGParted辺り入れるのが一番楽"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5636264e-65eb-49d2-9ab4-a38abbc3e2f5",
+        "type": "message",
+        "text": "xfsで成功してしまったのですが()",
+        "user": "UK7DT8URY",
+        "ts": "1584928372.045800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "pr4",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "xfsで成功してしまったのですが()"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "504bde0b-881f-476c-b8c0-0caa3da01437",
+        "type": "message",
+        "text": "マジデ!!!!!",
+        "user": "UEA8SS1RN",
+        "ts": "1584928447.046100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/e92",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "マジデ!!!!!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ef2c26ee-716b-4ce6-bf89-87bbb0a61887",
+        "type": "message",
+        "text": "```$ cat \/etc\/fstab\n# \/dev\/nvme0n1p5\nUUID=2a0e38bd-15eb-4cab-9e2f-3065a494d675       \/               xfs             rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota        0 1\n\n# \/dev\/nvme0n1p6\nUUID=87fa2305-8368-4c57-a93d-30d424fdca21       \/home           xfs             rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota        0 2\n\n# \/dev\/nvme0n1p2\nUUID=9A1C-78D9          \/boot           vfat            rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro        0 2\n\n\/swap                   none            swap            defaults        0 0```\nわしのfstab。mount option、なにか違うのかな。。。",
+        "user": "UEA8SS1RN",
+        "ts": "1584928516.046800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "PSu",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "$ cat \/etc\/fstab\n# \/dev\/nvme0n1p5\nUUID=2a0e38bd-15eb-4cab-9e2f-3065a494d675       \/               xfs             rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota        0 1\n\n# \/dev\/nvme0n1p6\nUUID=87fa2305-8368-4c57-a93d-30d424fdca21       \/home           xfs             rw,relatime,attr2,inode64,logbufs=8,logbsize=32k,noquota        0 2\n\n# \/dev\/nvme0n1p2\nUUID=9A1C-78D9          \/boot           vfat            rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro        0 2\n\n\/swap                   none            swap            defaults        0 0"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\nわしのfstab。mount option、なにか違うのかな。。。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1f8ac147-4036-4f34-b0ee-487c69acc828",
+        "type": "message",
+        "text": "overlay使ってなければならないけどそのへん？",
+        "user": "U9S4G0LJW",
+        "ts": "1584928822.047800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=2AAY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "overlay使ってなければならないけどそのへん？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f8b68bf7-8ba2-4881-838f-73d43eae1ace",
+        "type": "message",
+        "text": "こんな状況です。\n```Filesystem      Size  Used Avail Use% Mounted on\ndev             954M     0  954M   0% \/dev\nrun             963M  872K  962M   1% \/run\n\/dev\/sda2       125G  8.9G  110G   8% \/\ntmpfs           963M     0  963M   0% \/dev\/shm\ntmpfs           963M     0  963M   0% \/sys\/fs\/cgroup\ntmpfs           963M  7.5M  955M   1% \/tmp\n\/dev\/sda1       300M  280K  300M   1% \/boot\/efi\ntmpfs           193M   28K  193M   1% \/run\/user\/1000\n\/dev\/sdb1        16G  666M   16G   5% \/var\/lib\/docker```",
+        "user": "UK7DT8URY",
+        "ts": "1584928879.048100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "CsU7x",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "こんな状況です。\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Filesystem      Size  Used Avail Use% Mounted on\ndev             954M     0  954M   0% \/dev\nrun             963M  872K  962M   1% \/run\n\/dev\/sda2       125G  8.9G  110G   8% \/\ntmpfs           963M     0  963M   0% \/dev\/shm\ntmpfs           963M     0  963M   0% \/sys\/fs\/cgroup\ntmpfs           963M  7.5M  955M   1% \/tmp\n\/dev\/sda1       300M  280K  300M   1% \/boot\/efi\ntmpfs           193M   28K  193M   1% \/run\/user\/1000\n\/dev\/sdb1        16G  666M   16G   5% \/var\/lib\/docker"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a97ef910-c122-4c83-8ad6-90a3c9f3840a",
+        "type": "message",
+        "text": "単純に別ディスク作成して、 `\/var\/lib\/docker` にアタッチしてdocker再起動しただけ\nこれだと見てくれないという事かな……",
+        "user": "UK7DT8URY",
+        "ts": "1584928944.049600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "edited": {
+            "user": "UK7DT8URY",
+            "ts": "1584928951.000000"
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9u9Mz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "単純に別ディスク作成して、 "
+                            },
+                            {
+                                "type": "text",
+                                "text": "\/var\/lib\/docker",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " にアタッチしてdocker再起動しただけ\nこれだと見てくれないという事かな……"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "165a1664-c753-4c25-b029-86c30f59a291",
+        "type": "message",
+        "text": "`docker info`(でしたっけ)の結果ってどうなってます？",
+        "user": "U9S4G0LJW",
+        "ts": "1584928961.050400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4Rm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "docker info",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "(でしたっけ)の結果ってどうなってます？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f4d7130d-b5e5-4ed6-b10c-afd57bba1d60",
+        "type": "message",
+        "text": "あーそこ再マウントしてるか",
+        "user": "U9S4G0LJW",
+        "ts": "1584928985.050800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0J+=X",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あーそこ再マウントしてるか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3455f6cb-ab41-430a-81bf-471a7abd6666",
+        "type": "message",
+        "text": "```[zdelta@0delta-pc ~]$ docker info\nClient:\n Debug Mode: false\n\nServer:\n Containers: 0\n  Running: 0\n  Paused: 0\n  Stopped: 0\n Images: 5\n Server Version: 19.03.5-ce\n Storage Driver: overlay2\n  Backing Filesystem: xfs\n  Supports d_type: true\n  Native Overlay Diff: false\n Logging Driver: json-file\n Cgroup Driver: cgroupfs\n Plugins:\n  Volume: local\n  Network: bridge host ipvlan macvlan null overlay\n  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog\n Swarm: inactive\n Runtimes: runc\n Default Runtime: runc\n Init Binary: docker-init\n containerd version: d50db0a42053864a270f648048f9a8b4f24eced3.m\n runc version: d736ef14f0288d6993a1845745d6756cfc9ddd5a\n init version: fec3683\n Security Options:\n  apparmor\n  seccomp\n   Profile: default\n Kernel Version: 5.4.2-1-MANJARO\n Operating System: Manjaro Linux\n OSType: linux\n Architecture: x86_64\n CPUs: 3\n Total Memory: 7.391GiB\n Name: 0delta-pc\n ID: HA5E:XUXL:SLDZ:XKQJ:5AQD:3GEG:XUBS:L35M:63BI:UQM5:7L6L:RU6B\n Docker Root Dir: \/var\/lib\/docker\n Debug Mode: false\n Registry: <https:\/\/index.docker.io\/v1\/>\n Labels:\n Experimental: false\n Insecure Registries:\n  127.0.0.0\/8\n Live Restore Enabled: false```",
+        "user": "UK7DT8URY",
+        "ts": "1584929000.051100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HzpYu",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "[zdelta@0delta-pc ~]$ docker info\nClient:\n Debug Mode: false\n\nServer:\n Containers: 0\n  Running: 0\n  Paused: 0\n  Stopped: 0\n Images: 5\n Server Version: 19.03.5-ce\n Storage Driver: overlay2\n  Backing Filesystem: xfs\n  Supports d_type: true\n  Native Overlay Diff: false\n Logging Driver: json-file\n Cgroup Driver: cgroupfs\n Plugins:\n  Volume: local\n  Network: bridge host ipvlan macvlan null overlay\n  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog\n Swarm: inactive\n Runtimes: runc\n Default Runtime: runc\n Init Binary: docker-init\n containerd version: d50db0a42053864a270f648048f9a8b4f24eced3.m\n runc version: d736ef14f0288d6993a1845745d6756cfc9ddd5a\n init version: fec3683\n Security Options:\n  apparmor\n  seccomp\n   Profile: default\n Kernel Version: 5.4.2-1-MANJARO\n Operating System: Manjaro Linux\n OSType: linux\n Architecture: x86_64\n CPUs: 3\n Total Memory: 7.391GiB\n Name: 0delta-pc\n ID: HA5E:XUXL:SLDZ:XKQJ:5AQD:3GEG:XUBS:L35M:63BI:UQM5:7L6L:RU6B\n Docker Root Dir: \/var\/lib\/docker\n Debug Mode: false\n Registry: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/index.docker.io\/v1\/"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n Labels:\n Experimental: false\n Insecure Registries:\n  127.0.0.0\/8\n Live Restore Enabled: false"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3fb67100-f650-422c-8f21-a005b07163d1",
+        "type": "message",
+        "text": "```$ docker info\nClient:\n Debug Mode: false\n\nServer:\n Containers: 33\n  Running: 0\n  Paused: 0\n  Stopped: 33\n Images: 27\n Server Version: 19.03.8-ce\n Storage Driver: overlay2\n  Backing Filesystem: &lt;unknown&gt;\n  Supports d_type: true\n  Native Overlay Diff: false\n Logging Driver: json-file\n Cgroup Driver: cgroupfs\n Plugins:\n  Volume: local\n  Network: bridge host ipvlan macvlan null overlay\n  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog\n Swarm: inactive\n Runtimes: runc\n Default Runtime: runc\n Init Binary: docker-init\n containerd version: d76c121f76a5fc8a462dc64594aea72fe18e1178.m\n runc version: dc9208a3303feef5b3839f4323d9beb36df0a9dd\n init version: fec3683\n Security Options:\n  seccomp\n   Profile: default\n Kernel Version: 5.5.10-arch1-1\n Operating System: Arch Linux\n OSType: linux\n Architecture: x86_64\n CPUs: 8\n Total Memory: 15.31GiB\n Name: ichiro\n ID: LEDM:KS55:WRHM:MCB5:YNRB:T7C5:QF7X:3LJX:OFSW:D33D:UL62:LIOX\n Docker Root Dir: \/var\/lib\/docker\n Debug Mode: false\n Username: vikke\n Registry: <https:\/\/index.docker.io\/v1\/>\n Labels:\n Experimental: false\n Insecure Registries:\n  127.0.0.0\/8\n Live Restore Enabled: false```",
+        "user": "UEA8SS1RN",
+        "ts": "1584929009.051700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Y2vgN",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "$ docker info\nClient:\n Debug Mode: false\n\nServer:\n Containers: 33\n  Running: 0\n  Paused: 0\n  Stopped: 33\n Images: 27\n Server Version: 19.03.8-ce\n Storage Driver: overlay2\n  Backing Filesystem: <unknown>\n  Supports d_type: true\n  Native Overlay Diff: false\n Logging Driver: json-file\n Cgroup Driver: cgroupfs\n Plugins:\n  Volume: local\n  Network: bridge host ipvlan macvlan null overlay\n  Log: awslogs fluentd gcplogs gelf journald json-file local logentries splunk syslog\n Swarm: inactive\n Runtimes: runc\n Default Runtime: runc\n Init Binary: docker-init\n containerd version: d76c121f76a5fc8a462dc64594aea72fe18e1178.m\n runc version: dc9208a3303feef5b3839f4323d9beb36df0a9dd\n init version: fec3683\n Security Options:\n  seccomp\n   Profile: default\n Kernel Version: 5.5.10-arch1-1\n Operating System: Arch Linux\n OSType: linux\n Architecture: x86_64\n CPUs: 8\n Total Memory: 15.31GiB\n Name: ichiro\n ID: LEDM:KS55:WRHM:MCB5:YNRB:T7C5:QF7X:3LJX:OFSW:D33D:UL62:LIOX\n Docker Root Dir: \/var\/lib\/docker\n Debug Mode: false\n Username: vikke\n Registry: "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/index.docker.io\/v1\/"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n Labels:\n Experimental: false\n Insecure Registries:\n  127.0.0.0\/8\n Live Restore Enabled: false"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "57a80d4c-a4a7-4183-a018-470d98e3f109",
+        "type": "message",
+        "text": "`Backing Filesystem: &lt;unknown&gt;`",
+        "user": "U06ECBRTJ",
+        "ts": "1584929024.051900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bBK",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Backing Filesystem: <unknown>",
+                                "style": {
+                                    "code": true
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "14f19c19-8e54-49a3-bca9-4b7f76ff1ce2",
+        "type": "message",
+        "text": "はい。このへんか\n``` Storage Driver: overlay2\n  Backing Filesystem: xfs\n  Supports d_type: true```",
+        "user": "UK7DT8URY",
+        "ts": "1584929029.052100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "u2ptm",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "はい。このへんか\n"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": " Storage Driver: overlay2\n  Backing Filesystem: xfs\n  Supports d_type: true"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584929029.052100",
+        "reply_count": 1,
+        "reply_users_count": 1,
+        "latest_reply": "1584972985.071000",
+        "reply_users": [
+            "UEA8SS1RN"
+        ],
+        "replies": [
+            {
+                "user": "UEA8SS1RN",
+                "ts": "1584972985.071000"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "2243e6bd-b891-4045-a227-9e532fb8eb31",
+        "type": "message",
+        "text": "なるほど。ココで既にdockerがおかしいって言っていたのか",
+        "user": "UK7DT8URY",
+        "ts": "1584929090.052900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcc9d2f72101",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/6cc9d2f7210145f0277ba2604a9eac76.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "0Delta",
+            "real_name": "0Delta",
+            "display_name": "0Δ",
+            "team": "T03C4RC8V",
+            "name": "0deltast",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4trMz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なるほど。ココで既にdockerがおかしいって言っていたのか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e4995fdc-cb92-43d0-92e1-f6d67e83c74a",
+        "type": "message",
+        "text": "```ストレージ・ドライバを設定するには dockerd コマンドで --storage-driver=&lt;名前&gt; オプションを使うか、あるいは、 \/etc\/default\/docker ファイル中の DOCKER_OPTS 行を編集します。```\n<http:\/\/docs.docker.jp\/engine\/userguide\/storagedriver\/selectadriver.html#a-pluggable-storage-driver-architecture>",
+        "user": "UEA8SS1RN",
+        "ts": "1584929245.053500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "h6Uti",
+                "elements": [
+                    {
+                        "type": "rich_text_preformatted",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ストレージ・ドライバを設定するには dockerd コマンドで --storage-driver=<名前> オプションを使うか、あるいは、 \/etc\/default\/docker ファイル中の DOCKER_OPTS 行を編集します。"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "http:\/\/docs.docker.jp\/engine\/userguide\/storagedriver\/selectadriver.html#a-pluggable-storage-driver-architecture"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2c4c7abd-47ad-4d16-bde8-d4a5e5667be7",
+        "type": "message",
+        "text": "いまはxfsもd_type trueなのか?",
+        "user": "UAZ33BKV2",
+        "ts": "1584929256.053800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "WGS",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いまはxfsもd_type trueなのか?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "d253bcd4-2828-4e61-b63d-e7659d89a34e",
+        "type": "message",
+        "text": "infoの結果がそう言ってますねー。",
+        "user": "UEA8SS1RN",
+        "ts": "1584929316.054200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yvW",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "infoの結果がそう言ってますねー。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b8849c73-a22c-42e7-9382-bcf584ccc402",
+        "type": "message",
+        "text": "ぐぬぬぬぬ",
+        "user": "UEA8SS1RN",
+        "ts": "1584929324.054400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "k3Zk",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ぐぬぬぬぬ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7647d285-7454-4e6b-8cb8-8d8b937f117e",
+        "type": "message",
+        "text": "`\/etc\/default\/docker` が無い。。。",
+        "user": "UEA8SS1RN",
+        "ts": "1584929778.054600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "blAR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/etc\/default\/docker",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " が無い。。。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "e773d0aa-0577-4060-bee8-7adb1ec9d300",
+        "type": "message",
+        "text": "`\/etc\/systemd\/system\/multi-user.targe.wants\/docker.service` に書くのがいいかな…？",
+        "user": "U06ECBRTJ",
+        "ts": "1584929980.055700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "wYloB",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/etc\/systemd\/system\/multi-user.targe.wants\/docker.service",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " に書くのがいいかな…？"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "41b7934a-aa4b-4324-9484-5d9287733da2",
+        "type": "message",
+        "text": "`\/etc\/default\/docker` だと、systemd には反映されないっぽいし",
+        "user": "U06ECBRTJ",
+        "ts": "1584930071.056100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/E14",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/etc\/default\/docker",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " だと、systemd には反映されないっぽいし"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "7685293a-7cd8-4482-8371-698194fa65f8",
+        "type": "message",
+        "text": "`\/etc\/docker\/daemon.json` に書けばよいのでは",
+        "user": "U8CC7MDCL",
+        "ts": "1584931356.057000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "=veg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\/etc\/docker\/daemon.json",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " に書けばよいのでは"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a9d6a73e-0df6-4006-8f7a-94eb5f6d9dda",
+        "type": "message",
+        "text": "パーティションリサイズしたら、\/home mount出来なくなったwww",
+        "user": "UEA8SS1RN",
+        "ts": "1584932333.058100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "P2paA",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パーティションリサイズしたら、\/home mount出来なくなったwww"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "totemoturai",
+                "users": [
+                    "U9S4G0LJW",
+                    "UK7DT8URY",
+                    "U06ECBRTJ",
+                    "UDDCM376D",
+                    "UBDMG6N2J",
+                    "U8CC7MDCL",
+                    "U0M7GCBPD"
+                ],
+                "count": 7
+            },
+            {
+                "name": "aiya",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a8c9faa7-dd56-4a88-a943-fab6dc60faaf",
+        "type": "message",
+        "text": "ところで、`\/etc\/systemd\/system\/multi-user.targe.wants\/docker.service`ないしは`\/etc\/docker\/daemon.json` になんて書けば良かったんですか？後学の為に。",
+        "user": "UEA8SS1RN",
+        "ts": "1584938665.060200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6Mf2h",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ところで、"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\/etc\/systemd\/system\/multi-user.targe.wants\/docker.service",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "ないしは"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\/etc\/docker\/daemon.json",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " になんて書けば良かったんですか？後学の為に。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584938665.060200",
+        "reply_count": 2,
+        "reply_users_count": 2,
+        "latest_reply": "1584939888.061000",
+        "reply_users": [
+            "U06ECBRTJ",
+            "U8CC7MDCL"
+        ],
+        "replies": [
+            {
+                "user": "U06ECBRTJ",
+                "ts": "1584939429.060800"
+            },
+            {
+                "user": "U8CC7MDCL",
+                "ts": "1584939888.061000"
+            }
+        ],
+        "subscribed": false
+    },
+    {
+        "client_msg_id": "7ac6312d-7252-4f96-a740-3fb84d8217a4",
+        "type": "message",
+        "text": "パーティションリサイズの前に FS のリサイズをしないと? (さすがにそこはしましたかね…)",
+        "user": "U03C71D7H",
+        "ts": "1584939162.060700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kdp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "パーティションリサイズの前に FS のリサイズをしないと? (さすがにそこはしましたかね…)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0d1f4254-6451-41eb-899d-023860a7238a",
+        "type": "message",
+        "text": "docker が Backing filesystem として、 xfs を認識してないので、そこに何か書いて、解決する状況じゃないかもです",
+        "user": "U06ECBRTJ",
+        "ts": "1584939429.060800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "g5b032d7b2d4",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/35b032d7b2d4182b0c2de1ef85ba91f2.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0012-72.png",
+            "first_name": "raa0121",
+            "real_name": "raa0121",
+            "display_name": "raa0121",
+            "team": "T03C4RC8V",
+            "name": "raa0121",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "kN9Q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "docker が Backing filesystem として、 xfs を認識してないので、そこに何か書いて、解決する状況じゃないかもです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584938665.060200",
+        "parent_user_id": "UEA8SS1RN"
+    },
+    {
+        "client_msg_id": "8daf1342-6518-449f-a878-3bc8786eef10",
+        "type": "message",
+        "text": "storage-driver変更でやりくりするもんだと思ってたのでそれならdaemon.jsonに書けば…と思ってアレしました",
+        "user": "U8CC7MDCL",
+        "ts": "1584939888.061000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "585d265f5411",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2017-12-09\/284380828226_585d265f54113004e478_72.jpg",
+            "first_name": "dohq",
+            "real_name": "dohq",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "dorastone",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0m86",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "storage-driver変更でやりくりするもんだと思ってたのでそれならdaemon.jsonに書けば…と思ってアレしました"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "thread_ts": "1584938665.060200",
+        "parent_user_id": "UEA8SS1RN"
+    },
+    {
+        "client_msg_id": "fa28a921-776c-4c59-8b0e-4b8980138051",
+        "type": "message",
+        "text": "<https:\/\/serverfault.com\/questions\/81262\/how-can-you-shrink-an-xfs-filesystem>\nxfs cannot be shrunk.これか。",
+        "user": "UEA8SS1RN",
+        "ts": "1584940078.061600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gcaaa467a1f7",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5caaa467a1f7be2b0276c545ad675cbe.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Ichiro MATSUNAGA",
+            "display_name": "vikke",
+            "team": "T03C4RC8V",
+            "name": "vikke.bsd",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Server Fault",
+                "title": "How can you shrink an XFS filesystem?",
+                "title_link": "https:\/\/serverfault.com\/questions\/81262\/how-can-you-shrink-an-xfs-filesystem",
+                "text": "I have an xfs filesystem that has some free space. Can I shrink it? I know of xfs_growfs. And there is resize2fs and resize_reiserfs. Side question: is xfs not a good filesystem choice for bulk",
+                "fallback": "Server Fault: How can you shrink an XFS filesystem?",
+                "thumb_url": "https:\/\/cdn.sstatic.net\/Sites\/serverfault\/img\/apple-touch-icon@2.png?v=9b1f48ae296b",
+                "from_url": "https:\/\/serverfault.com\/questions\/81262\/how-can-you-shrink-an-xfs-filesystem",
+                "thumb_width": 316,
+                "thumb_height": 316,
+                "service_icon": "https:\/\/cdn.sstatic.net\/Sites\/serverfault\/img\/apple-touch-icon.png?v=6c3100d858bb",
+                "id": 1,
+                "original_url": "https:\/\/serverfault.com\/questions\/81262\/how-can-you-shrink-an-xfs-filesystem"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uQ+r",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/serverfault.com\/questions\/81262\/how-can-you-shrink-an-xfs-filesystem"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nxfs cannot be shrunk.これか。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<@U06ECBRTJ> has a poll for you!",
+        "ts": "1584944442.062500",
+        "username": "Polly",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-06-02\/641615704003_48.png"
+        },
+        "bot_id": "BK1EN2J8G",
+        "blocks": [
+            {
+                "type": "section",
+                "block_id": "LVgm",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*自前で作った image の docker repository ってどこ使ってますか？*\nYou may vote for multiple options",
+                    "verbatim": true
+                }
+            },
+            {
+                "type": "actions",
+                "block_id": "z8B",
+                "elements": [
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).VotingButton(0)",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "1",
+                            "emoji": true
+                        },
+                        "value": "one"
+                    },
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).VotingButton(1)",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "2",
+                            "emoji": true
+                        },
+                        "value": "two"
+                    },
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).VotingButton(2)",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "3",
+                            "emoji": true
+                        },
+                        "value": "three"
+                    },
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).VotingButton(3)",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "4",
+                            "emoji": true
+                        },
+                        "value": "four"
+                    },
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).VotingButton(4)",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "5",
+                            "emoji": true
+                        },
+                        "value": "five"
+                    }
+                ]
+            },
+            {
+                "type": "actions",
+                "block_id": "4iBV",
+                "elements": [
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).VotingButton(5)",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "6",
+                            "emoji": true
+                        },
+                        "value": "six"
+                    },
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).AddOptionButton",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "+ Add Option",
+                            "emoji": true
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "section",
+                "block_id": "HKVl",
+                "fields": [
+                    {
+                        "type": "mrkdwn",
+                        "text": "*1*: Docker Hub  \n\n`████████████████████ ⁢ ⁢ ⁢ ⁢ ⁢`  |  83% (10)\n\n<@UDDCM376D>, <@UNJ2DANJC>, <@U03C71D7H> + 7 more",
+                        "verbatim": true
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": "*2*: AWS ECR  \n\n`⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ `  |  0% (0)",
+                        "verbatim": true
+                    }
+                ]
+            },
+            {
+                "type": "section",
+                "block_id": "mn5Z+",
+                "fields": [
+                    {
+                        "type": "mrkdwn",
+                        "text": "*3*: GCP Container Registry  \n\n`⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ `  |  0% (0)",
+                        "verbatim": true
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": "*4*: Microsoft Azure Container Registry  \n\n`████ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢`  |  17% (2)\n\n<@UNJ2DANJC>, <@U776661HA>",
+                        "verbatim": true
+                    }
+                ]
+            },
+            {
+                "type": "section",
+                "block_id": "9V9",
+                "fields": [
+                    {
+                        "type": "mrkdwn",
+                        "text": "*5*: GitHub Package Registry  \n\n`⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ `  |  0% (0)",
+                        "verbatim": true
+                    },
+                    {
+                        "type": "mrkdwn",
+                        "text": "*6*: quay.io  \n\n`⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ ⁢ `  |  0% (0)",
+                        "verbatim": true
+                    }
+                ]
+            },
+            {
+                "type": "context",
+                "block_id": "=Rvm",
+                "elements": [
+                    {
+                        "type": "mrkdwn",
+                        "text": "*Total Votes*: 10",
+                        "verbatim": true
+                    }
+                ]
+            },
+            {
+                "type": "section",
+                "block_id": "LBrkF",
+                "text": {
+                    "type": "mrkdwn",
+                    "text": "*Comments (1 Total)*\n:speech_balloon: <@U06BRP8VD>: 仕事では Harbor 使ってる",
+                    "verbatim": true
+                }
+            },
+            {
+                "type": "actions",
+                "block_id": "hWSVx",
+                "elements": [
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).AddCommentButton",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "Add a Comment",
+                            "emoji": true
+                        }
+                    },
+                    {
+                        "type": "button",
+                        "action_id": "PollMessage(fXcurMqh3GPyHPvCL).ViewAllResponsesButton",
+                        "text": {
+                            "type": "plain_text",
+                            "text": "View All Responses",
+                            "emoji": true
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "divider",
+                "block_id": "7vPh"
+            },
+            {
+                "type": "context",
+                "block_id": "tgH+6",
+                "elements": [
+                    {
+                        "type": "mrkdwn",
+                        "text": "Owner: @raa0121  |  *:clock930: Closes:* <!date^1587536441^{date_short} at {time}|Apr 22, 2020 at 06:20 AM>  |  :unlock: Responses are Non-Anonymous",
+                        "verbatim": true
+                    }
+                ]
+            }
+        ],
+        "edited": {
+            "user": "BK1EN2J8G",
+            "ts": "1584953316.000000"
+        }
+    },
+    {
+        "client_msg_id": "8d6039d6-a91d-487f-8315-00cb9469d292",
+        "type": "message",
+        "text": "なんも契約しとらんので必然的にHub行き",
+        "user": "U9S4G0LJW",
+        "ts": "1584944701.063300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "K=CXj",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "なんも契約しとらんので必然的にHub行き"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c88a4349-011d-4245-99f9-14670ecef2f1",
+        "type": "message",
+        "text": "これ見て、見付けた記事\n<https:\/\/qiita.com\/suecharo\/items\/a5e0cd3fe6d31443c536>\n<https:\/\/qiita.com\/homines22\/items\/6d28461d97906e42f57c>",
+        "user": "UAZ33BKV2",
+        "ts": "1584944822.063700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "Qiita",
+                "title": "増え続ける Dockerfile 用の GitHub Repository をなんとかする - Qiita",
+                "title_link": "https:\/\/qiita.com\/suecharo\/items\/a5e0cd3fe6d31443c536",
+                "text": "# 色々思ったこと - Dockerfile がついていない Docker Image は pull したくない． - Dockerfile をつけるために，Docker repository と GitHub repository...",
+                "fallback": "Qiita: 増え続ける Dockerfile 用の GitHub Repository をなんとかする - Qiita",
+                "image_url": "https:\/\/qiita-user-contents.imgix.net\/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&w=1200&mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3D%25E5%25A2%2597%25E3%2581%2588%25E7%25B6%259A%25E3%2581%2591%25E3%2582%258B%2520Dockerfile%2520%25E7%2594%25A8%25E3%2581%25AE%2520GitHub%2520Repository%2520%25E3%2582%2592%25E3%2581%25AA%25E3%2582%2593%25E3%2581%25A8%25E3%2581%258B%25E3%2581%2599%25E3%2582%258B%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Dff489a870946fdc42c63e54a602a0491&mark-align=center%2Cmiddle&blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540suecharo%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D20059c057090b64f9fbd60d7e7aebe47&blend-align=center%2Cmiddle&blend-mode=normal&s=86ab1646cc936529e4b217a855428cf1",
+                "from_url": "https:\/\/qiita.com\/suecharo\/items\/a5e0cd3fe6d31443c536",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 54706,
+                "service_icon": "https:\/\/cdn.qiita.com\/assets\/favicons\/public\/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+                "id": 1,
+                "original_url": "https:\/\/qiita.com\/suecharo\/items\/a5e0cd3fe6d31443c536"
+            },
+            {
+                "service_name": "Qiita",
+                "title": "【GitHub Actions】GitHub Package Registryを利用して同一Dockerイメージをjobで共有する - Qiita",
+                "title_link": "https:\/\/qiita.com\/homines22\/items\/6d28461d97906e42f57c",
+                "text": "皆さんはGitHub ActionsやGitHub Registryを利用していますか？ まだGAになっていないので使っていない方もいるかもしれませんが、来週の11\/13(水)にGAとなるので今のうちにお試しで使ってみることをお勧めし...",
+                "fallback": "Qiita: 【GitHub Actions】GitHub Package Registryを利用して同一Dockerイメージをjobで共有する - Qiita",
+                "image_url": "https:\/\/qiita-user-contents.imgix.net\/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-1.2.2&w=1200&mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D380%26txt%3D%25E3%2580%2590GitHub%2520Actions%25E3%2580%2591GitHub%2520Package%2520Registry%25E3%2582%2592%25E5%2588%25A9%25E7%2594%25A8%25E3%2581%2597%25E3%2581%25A6%25E5%2590%258C%25E4%25B8%2580Docker%25E3%2582%25A4%25E3%2583%25A1%25E3%2583%25BC%25E3%2582%25B8%25E3%2582%2592job%25E3%2581%25A7%25E5%2585%25B1%25E6%259C%2589%25E3%2581%2599%25E3%2582%258B%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3D7057165f62312bb55225b3cf6dc77823&mark-align=center%2Cmiddle&blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-1.2.2%26w%3D840%26h%3D500%26txt%3D%2540homines22%26txt-color%3D%2523333%26txt-font%3DAvenir-Black%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3D1cb1e66f239476b1823c8058c1d459b1&blend-align=center%2Cmiddle&blend-mode=normal&s=d827a01ee28af9547cfb73356a8a6584",
+                "from_url": "https:\/\/qiita.com\/homines22\/items\/6d28461d97906e42f57c",
+                "image_width": 476,
+                "image_height": 250,
+                "image_bytes": 60790,
+                "service_icon": "https:\/\/cdn.qiita.com\/assets\/favicons\/public\/apple-touch-icon-ec5ba42a24ae923f16825592efdc356f.png",
+                "id": 2,
+                "original_url": "https:\/\/qiita.com\/homines22\/items\/6d28461d97906e42f57c"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xoHC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "これ見て、見付けた記事\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/qiita.com\/suecharo\/items\/a5e0cd3fe6d31443c536"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/qiita.com\/homines22\/items\/6d28461d97906e42f57c"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "531993ff-cffc-410f-acce-c457e0fb2f40",
+        "type": "message",
+        "text": "仕事では Harbor つかってる。",
+        "user": "U06BRP8VD",
+        "ts": "1584945598.064400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Wp1tJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "仕事では Harbor つかってる。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "aeb3a18d-7b63-4469-bfe2-ae66672e7f5e",
+        "type": "message",
+        "text": "<https:\/\/goharbor.io\/>",
+        "user": "U06BRP8VD",
+        "ts": "1584945670.064700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gb5a6f711a4e",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/4b5a6f711a4e22e617b74058239ade53.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0007-72.png",
+            "first_name": "KoRoN",
+            "real_name": "KoRoN",
+            "display_name": "koron",
+            "team": "T03C4RC8V",
+            "name": "koron",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "title": "Harbor",
+                "title_link": "https:\/\/goharbor.io\/",
+                "text": "Our mission is to be the trusted cloud native repository for Kubernetes",
+                "fallback": "Harbor",
+                "thumb_url": "https:\/\/goharbor.io\/img\/logos\/harbor-icon-color.png",
+                "from_url": "https:\/\/goharbor.io\/",
+                "thumb_width": 1501,
+                "thumb_height": 1501,
+                "service_name": "goharbor.io",
+                "id": 1,
+                "original_url": "https:\/\/goharbor.io\/"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "y1rx",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/goharbor.io\/"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "f1ec90c1-19c4-4273-b42f-d994b9989ae2",
+        "type": "message",
+        "text": "harbor ってもしかして appharbor の harbor?",
+        "user": "U03C6TEAZ",
+        "ts": "1584945981.065100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "yowMf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "harbor ってもしかして appharbor の harbor?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6daf857a-da75-41d1-81f8-300b8576fcb6",
+        "type": "message",
+        "text": "違うぽかった。",
+        "user": "U03C6TEAZ",
+        "ts": "1584946011.065300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "30e238cd92e6",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-07-31\/407982080133_30e238cd92e6c88883f9_72.png",
+            "first_name": "mattn",
+            "real_name": "mattn",
+            "display_name": "mattn",
+            "team": "T03C4RC8V",
+            "name": "mattn",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "O=WX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "違うぽかった。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b6fa61c2-d718-43b6-adc3-72443d53c97a",
+        "type": "message",
+        "text": "毎回パッケージ落としてくるのが嫌で、シェルスクリプト使ってパッケージキャッシュ共有してイメージ構築してるけどこのへん上手くできないものか",
+        "user": "U9S4G0LJW",
+        "ts": "1584946310.067400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vnvGa",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "毎回パッケージ落としてくるのが嫌で、シェルスクリプト使ってパッケージキャッシュ共有してイメージ構築してるけどこのへん上手くできないものか"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

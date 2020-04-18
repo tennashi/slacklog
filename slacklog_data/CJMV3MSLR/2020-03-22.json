@@ -1,0 +1,1331 @@
+[
+    {
+        "client_msg_id": "3a1dcb00-4889-45bf-817b-05019407a513",
+        "type": "message",
+        "text": "`\"set` と `luadll=...` に分かれてしまっていますね",
+        "user": "U7986PPFH",
+        "ts": "1584861907.036600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ga214f7e9007",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5a214f7e90077a38c1ba15d011599e71.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "ichizok",
+            "display_name": "ichizok",
+            "team": "T03C4RC8V",
+            "name": "gclient.gaap",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "IRN",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "\"set",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " と "
+                            },
+                            {
+                                "type": "text",
+                                "text": "luadll=...",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " に分かれてしまっていますね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "6c4a9e74-d063-4fab-afc2-6ccaa244d68c",
+        "type": "message",
+        "text": "環境変数内には空白やクォート込みではいってますが、それでもアカンですか...\nそんな気はしてたんですが、やっぱり?",
+        "user": "UAZ33BKV2",
+        "ts": "1584862030.038400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "0sUKE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "環境変数内には空白やクォート込みではいってますが、それでもアカンですか...\nそんな気はしてたんですが、やっぱり?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "3fd85e13-0503-4779-a785-e274befa5538",
+        "type": "message",
+        "text": "themis の方で `eval ${THEMIS_VIM} ...` にする必要があるみたいです",
+        "user": "U7986PPFH",
+        "ts": "1584862061.038800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ga214f7e9007",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5a214f7e90077a38c1ba15d011599e71.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "ichizok",
+            "display_name": "ichizok",
+            "team": "T03C4RC8V",
+            "name": "gclient.gaap",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sav",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "themis の方で "
+                            },
+                            {
+                                "type": "text",
+                                "text": "eval ${THEMIS_VIM} ...",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " にする必要があるみたいです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "67adc438-32ed-4470-a3ff-283bb7b3c988",
+        "type": "message",
+        "text": "<https:\/\/github.com\/tsuyoshicho\/vital.vim\/runs\/524997858>\n<https:\/\/github.com\/tsuyoshicho\/vital.vim\/runs\/524997858上のはログへのリンク|なるほど、>上のはログへのリンク",
+        "user": "UAZ33BKV2",
+        "ts": "1584862129.039200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "attachments": [
+            {
+                "service_name": "GitHub",
+                "title": "tsuyoshicho\/vital.vim",
+                "title_link": "https:\/\/github.com\/tsuyoshicho\/vital.vim\/runs\/524997858",
+                "text": "A comprehensive Vim utility functions for Vim plugins - tsuyoshicho\/vital.vim",
+                "fallback": "GitHub: tsuyoshicho\/vital.vim",
+                "thumb_url": "https:\/\/avatars2.githubusercontent.com\/u\/96727?s=400&v=4",
+                "from_url": "https:\/\/github.com\/tsuyoshicho\/vital.vim\/runs\/524997858",
+                "thumb_width": 400,
+                "thumb_height": 400,
+                "service_icon": "https:\/\/a.slack-edge.com\/80588\/img\/unfurl_icons\/github.png",
+                "id": 1,
+                "original_url": "https:\/\/github.com\/tsuyoshicho\/vital.vim\/runs\/524997858"
+            }
+        ],
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "KqJLR",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tsuyoshicho\/vital.vim\/runs\/524997858"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n"
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/github.com\/tsuyoshicho\/vital.vim\/runs\/524997858上のはログへのリンク",
+                                "text": "なるほど、"
+                            },
+                            {
+                                "type": "text",
+                                "text": "上のはログへのリンク"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "bdab70d5-fdc9-48f3-8b93-d7ad48e8b113",
+        "type": "message",
+        "text": "そこ直してみて動くか確認かなあ...",
+        "user": "UAZ33BKV2",
+        "ts": "1584862187.039600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "53E=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そこ直してみて動くか確認かなあ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ed481bcb-6f09-440f-a7e8-4610e3607fa8",
+        "type": "message",
+        "text": "すみません `eval` だと `source ${STARTUP_SCRIPT}\"` が分かれてしまうのでダメですね",
+        "user": "U7986PPFH",
+        "ts": "1584865394.040600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ga214f7e9007",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/5a214f7e90077a38c1ba15d011599e71.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0009-72.png",
+            "first_name": "",
+            "real_name": "ichizok",
+            "display_name": "ichizok",
+            "team": "T03C4RC8V",
+            "name": "gclient.gaap",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9sQX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "すみません "
+                            },
+                            {
+                                "type": "text",
+                                "text": "eval",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " だと "
+                            },
+                            {
+                                "type": "text",
+                                "text": "source ${STARTUP_SCRIPT}\"",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " が分かれてしまうのでダメですね"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ae047d98-58ab-4b34-b0f4-b8957c1da07f",
+        "type": "message",
+        "text": "あー、それもありますねえ...",
+        "user": "UAZ33BKV2",
+        "ts": "1584867157.041000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "uVSJ",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "あー、それもありますねえ..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "18b03c9f-c9ba-4e65-a878-68944f52c6b5",
+        "type": "message",
+        "text": ".themisrc ではダメですか?",
+        "user": "U03C71D7H",
+        "ts": "1584867167.041300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "bmM",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ".themisrc ではダメですか?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9d13c2d4-c9b2-4255-ba26-1de3faeb1cef",
+        "type": "message",
+        "text": "workflow側の設定なので、あまり.themisrc側に混ぜたくなくて",
+        "user": "UAZ33BKV2",
+        "ts": "1584867195.041800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Hcmg",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "workflow側の設定なので、あまり.themisrc側に混ぜたくなくて"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "8b707180-e7f7-4198-a134-b03b965fb0b8",
+        "type": "message",
+        "text": "混ぜなくても workflow の最中だけファイル設置するのは?",
+        "user": "U03C71D7H",
+        "ts": "1584867243.042200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "qf=K",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "混ぜなくても workflow の最中だけファイル設置するのは?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "dbb13200-2366-4012-be41-ffb74afe0054",
+        "type": "message",
+        "text": "そうですね、すでにあるファイルとは位置を変えれば読んではくれますよね\nそれはよさげ",
+        "user": "UAZ33BKV2",
+        "ts": "1584867272.042700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "9Qn\/Z",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "そうですね、すでにあるファイルとは位置を変えれば読んではくれますよね\nそれはよさげ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a0321ae-3dca-4d52-9ba5-2aaedc9b41a0",
+        "type": "message",
+        "text": "ただ、このこととは別で、THEMIS_ARGSで空白が含まれてても動くこと(エスケープすべきかもしれませんが)は必要な気はしますが...",
+        "user": "UAZ33BKV2",
+        "ts": "1584867306.043800",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ktLO",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "ただ、このこととは別で、THEMIS_ARGSで空白が含まれてても動くこと(エスケープすべきかもしれませんが)は必要な気はしますが..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0a97a263-1d3f-431d-a2dc-4299da987903",
+        "type": "message",
+        "text": "`~\/.themisrc` とかに置いとけばいいはず (GHA の work は HOME の中だったと思う)",
+        "user": "U03C71D7H",
+        "ts": "1584867314.044000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hFE",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "~\/.themisrc",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " とかに置いとけばいいはず (GHA の work は HOME の中だったと思う)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "1dbac59d-6db4-40ba-b3f1-47cc8e319ba5",
+        "type": "message",
+        "text": "いえ、作業ターゲットは `${GITHUB_WORKSPACE}` だかをメインにしてて、`~` 以下だとちょっと都合がよくなかったような",
+        "user": "UAZ33BKV2",
+        "ts": "1584867378.045100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "\/NC6",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "いえ、作業ターゲットは "
+                            },
+                            {
+                                "type": "text",
+                                "text": "${GITHUB_WORKSPACE}",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " だかをメインにしてて、"
+                            },
+                            {
+                                "type": "text",
+                                "text": "~",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " 以下だとちょっと都合がよくなかったような"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "eefddf6c-d38f-4b4d-b5a2-8c674b5452b8",
+        "type": "message",
+        "text": "まあ対象ファイルの上層のどこかにあれば大丈夫",
+        "user": "U03C71D7H",
+        "ts": "1584867411.045500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "3zC",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "まあ対象ファイルの上層のどこかにあれば大丈夫"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "62d811d2-22d2-4446-93c0-d605e2ac2a24",
+        "type": "message",
+        "text": ":hai-small:",
+        "user": "UAZ33BKV2",
+        "ts": "1584867443.046000",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "6CZU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "emoji",
+                                "name": "hai-small"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b1d35146-bf03-4b99-9eab-7a4c56f4a4a6",
+        "type": "message",
+        "text": "THEMIS_ARGS はなにかの時にどうしても必要だってので足したやつであんまり変更することを想定していないです",
+        "user": "U03C71D7H",
+        "ts": "1584867469.046400",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Mbqp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "THEMIS_ARGS はなにかの時にどうしても必要だってので足したやつであんまり変更することを想定していないです"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ed9cfd29-ed9f-42eb-999c-976744f03c8f",
+        "type": "message",
+        "text": "...なるほど、個人的には手動でテスト動かすときにいろいろ試すに使うという想定で、わりと主要な機能な気がしてました。",
+        "user": "UAZ33BKV2",
+        "ts": "1584867565.047200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "ejI",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "...なるほど、個人的には手動でテスト動かすときにいろいろ試すに使うという想定で、わりと主要な機能な気がしてました。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "78359d75-91f7-45c3-85dd-24b57bbf4b71",
+        "type": "message",
+        "text": "上手く行きました、ありがとうございます。",
+        "user": "UAZ33BKV2",
+        "ts": "1584868029.047600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "ed16847a152d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-05-31\/373472791093_ed16847a152da533e013_72.png",
+            "first_name": "",
+            "real_name": "Tsuyoshi CHO",
+            "display_name": "tsuyoshi_cho",
+            "team": "T03C4RC8V",
+            "name": "tsuyoshi_cho",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "FXn",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "上手く行きました、ありがとうございます。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/teratail.com\/questions\/248713?rss=all|【Vim】netrw(標準ファイラー)でファイルをデフォルトのソフトで開きたい>\n問題\nVim標準のファイラー「netrw」でファイルを開くときに、vimでなくデフォルトのソフトで開く方法がわかりません（gvimrcにどう設定すればいいかわかりませ）。\n解決方法をご教示ください。  \n環境\nWindows10\nVim + netrw\n\n<https:\/\/teratail.com\/questions\/248713?rss=all|続きを見る>",
+        "ts": "1584875480.047700",
+        "username": "[Vim]の新着質問一覧｜teratail（テラテイル）",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/814941997319_48.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "teratail[テラテイル]",
+                "title": "【Vim】netrw(標準ファイラー)でファイルをデフォルトのソフトで開きたい｜teratail",
+                "title_link": "https:\/\/teratail.com\/questions\/248713?rss=all",
+                "text": "問題Vim標準のファイラー「netrw」でファイルを開くときに、vimでなくデフォルトのソフトで開く方法がわかりません（gvimrcにどう設定すればいいかわかりませ）。解決方法をご教示ください。 環境Windows10Vim + netrw",
+                "fallback": "teratail[テラテイル]: 【Vim】netrw(標準ファイラー)でファイルをデフォルトのソフトで開きたい｜teratail",
+                "thumb_url": "https:\/\/teratail.com\/img\/imgFacebookShare.png",
+                "from_url": "https:\/\/teratail.com\/questions\/248713?rss=all",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/teratail.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/teratail.com\/questions\/248713?rss=all"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584875482.000000"
+        }
+    },
+    {
+        "client_msg_id": "9c2270fe-3f98-441a-a739-d8a8369b5307",
+        "type": "message",
+        "text": "回答Done",
+        "user": "UDDCM376D",
+        "ts": "1584877328.048100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "hONp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "回答Done"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sasugori",
+                "users": [
+                    "UAZ33BKV2",
+                    "U9S4G0LJW"
+                ],
+                "count": 2
+            }
+        ]
+    },
+    {
+        "client_msg_id": "b20f4ce4-5347-4b9a-8719-dec448f6f97e",
+        "type": "message",
+        "text": "netrwに詳しいマン強い",
+        "user": "U9S4G0LJW",
+        "ts": "1584877493.048600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Sh=R3",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "netrwに詳しいマン強い"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ba61c87c-0c07-46a9-8fea-70a7a3713075",
+        "type": "message",
+        "text": "実装気になって見に行ったらrundll呼んでてプロの仕事やってなった",
+        "user": "U9S4G0LJW",
+        "ts": "1584877512.049100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "b6fceab653cf",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2018-03-19\/331496519296_b6fceab653cf61d7dd8b_72.png",
+            "first_name": "kuu",
+            "real_name": "kuu",
+            "display_name": "kuu",
+            "team": "T03C4RC8V",
+            "name": "kuu",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "F++q",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "実装気になって見に行ったらrundll呼んでてプロの仕事やってなった"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2edb9421-ab72-49ac-afc9-d2a75de00835",
+        "type": "message",
+        "text": "たまたま `x` を押したらなんかアプリ動いたのがきっかけで知っていた",
+        "user": "UDDCM376D",
+        "ts": "1584877602.049600",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "sa2J9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "たまたま "
+                            },
+                            {
+                                "type": "text",
+                                "text": "x",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " を押したらなんかアプリ動いたのがきっかけで知っていた"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "tiken",
+                "users": [
+                    "UAZ33BKV2"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "type": "message",
+        "subtype": "bot_message",
+        "text": "<https:\/\/teratail.com\/questions\/248722?rss=all|【Vim】netrw(ファイラー)でフォルダをデフォルトのソフトで開きたい>\n問題\nVim標準のファイラー「netrw」でファイルを開くときに、xキーでデフォルトのソフトで開けることがわかりました。\nしかし、フォルダを指定したソフト（VScode）で開く方法がわかりません。\n解決方法をご教示ください。  \n環境\nWindows10\nVim + netrw\n\n<https:\/\/teratail.com\/questions\/248722?rss=all|続きを見る>",
+        "ts": "1584879083.049800",
+        "username": "[Vim]の新着質問一覧｜teratail（テラテイル）",
+        "icons": {
+            "image_48": "https:\/\/s3-us-west-2.amazonaws.com\/slack-files2\/bot_icons\/2019-10-29\/814941997319_48.png"
+        },
+        "bot_id": "BPV6T0C1J",
+        "attachments": [
+            {
+                "service_name": "teratail[テラテイル]",
+                "title": "【Vim】netrw(ファイラー)でフォルダをデフォルトのソフトで開きたい｜teratail",
+                "title_link": "https:\/\/teratail.com\/questions\/248722?rss=all",
+                "text": "問題Vim標準のファイラー「netrw」でファイルを開くときに、xキーでデフォルトのソフトで開けることがわかりました。しかし、フォルダを指定したソフト（VScode）で開く方法がわかりません。解決方法をご教示ください。 環境Windows10Vim + netrw",
+                "fallback": "teratail[テラテイル]: 【Vim】netrw(ファイラー)でフォルダをデフォルトのソフトで開きたい｜teratail",
+                "thumb_url": "https:\/\/teratail.com\/img\/imgFacebookShare.png",
+                "from_url": "https:\/\/teratail.com\/questions\/248722?rss=all",
+                "thumb_width": 1200,
+                "thumb_height": 630,
+                "service_icon": "https:\/\/teratail.com\/favicon.ico",
+                "id": 1,
+                "original_url": "https:\/\/teratail.com\/questions\/248722?rss=all"
+            }
+        ],
+        "edited": {
+            "user": "BPV6T0C1J",
+            "ts": "1584879084.000000"
+        }
+    },
+    {
+        "client_msg_id": "e072a6d3-43fd-4c23-aca3-567c686deaff",
+        "type": "message",
+        "text": "おかわりきたで",
+        "user": "U03C71D7H",
+        "ts": "1584884843.050100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "04a676b32692",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2015-01-15\/3417067010_04a676b32692fb2507e1_72.jpg",
+            "first_name": "thinca",
+            "real_name": "thinca",
+            "display_name": "thinca",
+            "team": "T03C4RC8V",
+            "name": "thinca",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Pxvp",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "おかわりきたで"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "9e7ea19f-4f9d-445f-add8-896e98dd9c31",
+        "type": "message",
+        "text": "回答だけしておいた\nなんか、他のツリープラグインを使ったほうが良いかも説（デフォ以外はよく知らない",
+        "user": "UDDCM376D",
+        "ts": "1584884941.050700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QCU",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "回答だけしておいた\nなんか、他のツリープラグインを使ったほうが良いかも説（デフォ以外はよく知らない"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0891471b-7b52-413b-9292-09a9335ad33e",
+        "type": "message",
+        "text": "Vim でしかも netrw を開いて他のエディターを開きたいってどういう場合なんだろうかw",
+        "user": "U78A6ESHM",
+        "ts": "1584885284.051900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "UHf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Vim でしかも netrw を開いて他のエディターを開きたいってどういう場合なんだろうかw"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sorena",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "44086ece-f6b0-493f-9278-f8fa88df935b",
+        "type": "message",
+        "text": "たしかに",
+        "user": "UDDCM376D",
+        "ts": "1584885303.052100",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Jji",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "たしかに"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a42d5fb0-3471-4e49-9944-2263242eb48a",
+        "type": "message",
+        "text": "OpenVsCode という Vim plugin が待たれる( <https:\/\/marketplace.visualstudio.com\/items?itemName=mattn.OpenVim>)",
+        "user": "U78A6ESHM",
+        "ts": "1584885357.052900",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "aa245483338d",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-14\/833953864853_aa245483338df08cd3b2_72.png",
+            "first_name": "heavenshell",
+            "real_name": "heavenshell",
+            "display_name": "heavenshell",
+            "team": "T03C4RC8V",
+            "name": "heavenshell",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "HVZ8",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "OpenVsCode という Vim plugin が待たれる( "
+                            },
+                            {
+                                "type": "link",
+                                "url": "https:\/\/marketplace.visualstudio.com\/items?itemName=mattn.OpenVim"
+                            },
+                            {
+                                "type": "text",
+                                "text": ")"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "sasumatsu",
+                "users": [
+                    "U9S4G0LJW"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2c785a6b-27ea-4ce4-9321-79ff58286f18",
+        "type": "message",
+        "text": "3,483 installs\n結構ダウンロードされている",
+        "user": "UDDCM376D",
+        "ts": "1584885950.053300",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "557c3073c5b3",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-06-23\/667212021009_557c3073c5b377011dbb_72.png",
+            "first_name": "ゴリラ",
+            "real_name": "ゴリラ",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "sho19921005",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "7pY",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "3,483 installs\n結構ダウンロードされている"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

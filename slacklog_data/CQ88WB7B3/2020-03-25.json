@@ -1,0 +1,265 @@
+[
+    {
+        "client_msg_id": "10707bec-4285-48ec-b876-4ba68ee83e28",
+        "type": "message",
+        "text": "cocの拡張ってdocとかないんでhelp引けないじゃないですか。\nパラメーター（coc-settings.jsonに設定するやつ）確認するときどうしてますか？？\n\n私は今はGitHubで見るか `~\/.config\/coc\/extensions\/node_modules\/xxx\/package.json`\nを見るかなんですけど、今使ってる設定情報がすべて記載されたjsonなんかを表示できれば個人的にはだいぶ楽になるんですが・・・",
+        "user": "U7B4ZD49X",
+        "ts": "1585147029.003500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "56G",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "cocの拡張ってdocとかないんでhelp引けないじゃないですか。\nパラメーター（coc-settings.jsonに設定するやつ）確認するときどうしてますか？？\n\n私は今はGitHubで見るか "
+                            },
+                            {
+                                "type": "text",
+                                "text": "~\/.config\/coc\/extensions\/node_modules\/xxx\/package.json",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": "\nを見るかなんですけど、今使ってる設定情報がすべて記載されたjsonなんかを表示できれば個人的にはだいぶ楽になるんですが・・・"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "57789da5-8629-4e7f-b0be-8f8d7815f8fd",
+        "type": "message",
+        "text": "coc-json を入れれば coc-settings.json のキーを打つとき補完候補に出てくるので，そこからそれっぽいやつを見つける...というテキトーな対応しかしてないですね...",
+        "user": "UL6CFN8NR",
+        "ts": "1585147443.005200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "0edf66561724",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-07-28\/696621453314_0edf66561724b8e38e6a_72.png",
+            "first_name": "monaqa",
+            "real_name": "monaqa",
+            "display_name": "monaqa",
+            "team": "T03C4RC8V",
+            "name": "mogassy",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "4rM9",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "coc-json を入れれば coc-settings.json のキーを打つとき補完候補に出てくるので，そこからそれっぽいやつを見つける...というテキトーな対応しかしてないですね..."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "reactions": [
+            {
+                "name": "eyes",
+                "users": [
+                    "U7B4ZD49X"
+                ],
+                "count": 1
+            }
+        ]
+    },
+    {
+        "client_msg_id": "03441c0a-0f06-4b7d-b817-04164d2130e8",
+        "type": "message",
+        "text": "`:options` の coc 版の機運...ｺﾞｺﾞｺﾞ",
+        "user": "US5UW1UNB",
+        "ts": "1585148524.006200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "gda34283a48f",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/da34283a48f2b5323a65e4bf548a3b25.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0011-72.png",
+            "first_name": "luma",
+            "real_name": "luma",
+            "display_name": "luma",
+            "team": "T03C4RC8V",
+            "name": "markermails",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "Bye",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": ":options",
+                                "style": {
+                                    "code": true
+                                }
+                            },
+                            {
+                                "type": "text",
+                                "text": " の coc 版の機運...ｺﾞｺﾞｺﾞ"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "a453710d-98e4-4ac0-a89e-a32826b94452",
+        "type": "message",
+        "text": "うーんやっぱりないのかな。みんな困ってないんかな・・・\nオプション結構デフォルトいい感じに倒してくれてること多いんでそんなにいじることないですが、オプションをまんべんなく眺めたいときだってあるんじゃないですかね。。。",
+        "user": "U7B4ZD49X",
+        "ts": "1585148711.007700",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "P3Qf",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "うーんやっぱりないのかな。みんな困ってないんかな・・・\nオプション結構デフォルトいい感じに倒してくれてること多いんでそんなにいじることないですが、オプションをまんべんなく眺めたいときだってあるんじゃないですかね。。。"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "5b822fcb-164e-4b50-933f-569fadb97b31",
+        "type": "message",
+        "text": "CocLocalConfig とか出してくれないんですかねー",
+        "user": "U8R597E9H",
+        "ts": "1585152008.008500",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "479264cbe2e1",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2020-02-25\/956372982963_479264cbe2e1ea3d83ee_72.png",
+            "first_name": "",
+            "real_name": "hrsh7th",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "hrsh7th",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "eVF7I",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "CocLocalConfig とか出してくれないんですかねー"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ef384843-6eba-46e5-933e-316506481bf5",
+        "type": "message",
+        "text": "自分の設定したやつしか出してくれないんですよ :cry:\n全体を舐め回したいのに",
+        "user": "U7B4ZD49X",
+        "ts": "1585153214.009200",
+        "team": "T03C4RC8V",
+        "user_team": "T03C4RC8V",
+        "source_team": "T03C4RC8V",
+        "user_profile": {
+            "avatar_hash": "7abadc2cdb88",
+            "image_72": "https:\/\/avatars.slack-edge.com\/2019-11-03\/819248061205_7abadc2cdb885adbac35_72.png",
+            "first_name": "",
+            "real_name": "yutakatay",
+            "display_name": "",
+            "team": "T03C4RC8V",
+            "name": "yutakatay",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "y0cGX",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "自分の設定したやつしか出してくれないんですよ "
+                            },
+                            {
+                                "type": "emoji",
+                                "name": "cry"
+                            },
+                            {
+                                "type": "text",
+                                "text": "\n全体を舐め回したいのに"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
